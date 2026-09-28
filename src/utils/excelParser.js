@@ -1,0 +1,345 @@
+import * as XLSX from 'xlsx';
+
+const timeSlotOrder = [
+  '09:00-10:00', '10:00-11:00', '11:00-11:15',
+  '11:15-12:15', '12:15-01:15', '01:15-02:15',
+  '02:15-03:15', '03:15-04:15'
+];
+
+/**
+ * Advanced Excel parser specifically optimized for Gayatri Vidya Parishad Timetable Workbooks
+ * Handles 50+ sheets, dynamic header locations, faculty mappings, multiline cells, parallel lab batches, and 2-hour lab slot expansion.
+ * 
+ * @param {File} file 
+ * @returns {Promise<{
+ *   timetableData: Object, 
+ *   labData: Object,
+ *   facultyMap: Object, 
+ *   summaryStats: { branchCount: number, facultyCount: number, labCount: number, fileName: string }
+ * }>}
+ */
+export async function parseExcelFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      try {
+        const data = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+        
+        const timetableData = {};
+        const labData = {};
+        const facultyMap = {}; // shortName -> { fullName, dept, designation, totalLoad }
+
+        // 1. Extract Master Faculty List if Faculty_Workload_Summary exists
+        const facultyList = [];
+        if (workbook.Sheets['Faculty_Workload_Summary']) {
+          const fwSheet = workbook.Sheets['Faculty_Workload_Summary'];
+          const fwRows = XLSX.utils.sheet_to_json(fwSheet, { header: 1, defval: '' });
+          for (let r = 1; r < fwRows.length; r++) {
+            const row = fwRows[r];
+            const sno = row[0] ? String(row[0]).trim() : '';
+            const fullName = row[1] ? String(row[1]).trim() : '';
+            const shortName = row[2] ? String(row[2]).trim() : '';
+            const dept = row[3] ? String(row[3]).trim() : '';
+            const designation = row[4] ? String(row[4]).trim() : '';
+            const theoryLoad = row[5] ? Number(row[5]) || 0 : 0;
+            const labLoad = row[6] ? Number(row[6]) || 0 : 0;
+            const totalLoad = row[8] ? Number(row[8]) || 0 : 0;
+            const assignments = row[10] ? String(row[10]).trim() : '';
+
+            if (shortName && fullName) {
+              facultyMap[shortName] = { fullName, dept, designation, theoryLoad, labLoad, totalLoad, assignments };
+              facultyList.push({
+                sno,
+                fullName,
+                shortName,
+                dept,
+                designation,
+                theoryLoad,
+                labLoad,
+                totalLoad,
+                assignments
+              });
+            }
+          }
+        }
+
+        // List of recognized academic branches
+        const knownBranches = [
+          'CHEMICAL', 'CIVIL', 'EEE', 'MECH', 'MECH-ROBOTICS',
+          'ECE-1', 'ECE-2', 'ECE-3', 'CSE-1', 'CSE-2',
+          'CSE(AI&ML)-1', 'CSE(AI&ML)-2', 'CSE (CS & DS)'
+        ];
+
+        // 2. Iterate through all sheets in workbook
+        workbook.SheetNames.forEach((sheetName) => {
+          const cleanSheetName = sheetName.trim();
+          const upperSheetName = cleanSheetName.toUpperCase();
+
+          // Skip non-data summary or meta sheets
+          if (
+            upperSheetName.includes('HOME') ||
+            upperSheetName.includes('SUMMARY') ||
+            upperSheetName.includes('SHEET1') ||
+            upperSheetName.includes('SHEET2') ||
+            upperSheetName.includes('SHEET3') ||
+            upperSheetName.includes('COPY OF') ||
+            upperSheetName.includes('TIMETABLE_FINAL')
+          ) {
+            return;
+          }
+
+          const worksheet = workbook.Sheets[sheetName];
+          const rawRows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
+          if (!rawRows || rawRows.length < 2) return;
+
+          // Find row containing 'Day'
+          let headerRowIdx = -1;
+          for (let r = 0; r < Math.min(15, rawRows.length); r++) {
+            if (rawRows[r] && rawRows[r][0] && String(rawRows[r][0]).trim().toUpperCase() === 'DAY') {
+              headerRowIdx = r;
+              break;
+            }
+          }
+
+          if (headerRowIdx === -1) return;
+
+          const headerRow = rawRows[headerRowIdx].map(c => String(c).trim());
+          const isTabularMaster = (headerRow[0].toUpperCase() === 'DAY' && headerRow[1].toUpperCase() === 'BRANCH');
+
+          if (isTabularMaster) {
+            // Master Timetable Sheet
+            let currentDay = '';
+            let currentBranch = '';
+
+            for (let r = headerRowIdx + 1; r < rawRows.length; r++) {
+              const row = rawRows[r];
+              if (!row || row.length === 0) continue;
+
+              let day = row[0] ? String(row[0]).trim().toUpperCase() : '';
+              if (day && ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'].some(d => day.startsWith(d))) {
+                currentDay = day.substring(0, 3);
+              } else if (!day) {
+                day = currentDay;
+              }
+
+              let branch = row[1] ? String(row[1]).trim().toUpperCase() : '';
+              if (branch) {
+                currentBranch = branch;
+              } else {
+                branch = currentBranch;
+              }
+
+              if (!day || !branch || day === 'SUBJECT NAME' || day === 'LAB DETAILS') break;
+
+              if (!timetableData[branch]) timetableData[branch] = {};
+              if (!timetableData[branch][day]) timetableData[branch][day] = {};
+
+              for (let c = 2; c < headerRow.length; c++) {
+                const timeSlot = normalizeTimeSlot(headerRow[c]);
+                const cellVal = row[c] ? String(row[c]).trim() : '';
+
+                if (timeSlot && cellVal && cellVal.toUpperCase() !== 'BREAK' && cellVal.toUpperCase() !== 'LUNCH') {
+                  const parsed = parseCellContent(cellVal, facultyMap);
+                  if (!timetableData[branch][day][timeSlot]) {
+                    timetableData[branch][day][timeSlot] = [];
+                  }
+                  timetableData[branch][day][timeSlot].push(parsed);
+                }
+              }
+            }
+          } else {
+            // Individual Branch sheet or Lab sheet
+            const isAcademicBranch = knownBranches.some(b => b === upperSheetName) || 
+                                     upperSheetName.startsWith('CSE') || 
+                                     upperSheetName.startsWith('ECE') || 
+                                     upperSheetName.startsWith('MECH') || 
+                                     upperSheetName.startsWith('CIVIL') || 
+                                     upperSheetName.startsWith('EEE') || 
+                                     upperSheetName.startsWith('CHEMICAL');
+
+            const targetStore = isAcademicBranch ? timetableData : labData;
+            const storeKey = cleanSheetName;
+
+            if (!targetStore[storeKey]) targetStore[storeKey] = {};
+
+            let currentDay = '';
+            for (let r = headerRowIdx + 1; r < rawRows.length; r++) {
+              const row = rawRows[r];
+              if (!row || row.length === 0) continue;
+
+              let day = row[0] ? String(row[0]).trim().toUpperCase() : '';
+              if (day && ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'].some(d => day.startsWith(d))) {
+                currentDay = day.substring(0, 3);
+              } else if (!day) {
+                day = currentDay;
+              }
+
+              if (!day || day === 'SUBJECT NAME' || day === 'LAB DETAILS') break;
+              if (!targetStore[storeKey][day]) targetStore[storeKey][day] = {};
+
+              for (let c = 1; c < headerRow.length; c++) {
+                const timeSlot = normalizeTimeSlot(headerRow[c]);
+                const cellVal = row[c] ? String(row[c]).trim() : '';
+
+                if (timeSlot && cellVal && cellVal.toUpperCase() !== 'BREAK' && cellVal.toUpperCase() !== 'LUNCH') {
+                  const parsed = parseCellContent(cellVal, facultyMap);
+                  if (!targetStore[storeKey][day][timeSlot]) {
+                    targetStore[storeKey][day][timeSlot] = [];
+                  }
+                  targetStore[storeKey][day][timeSlot].push(parsed);
+                }
+              }
+            }
+          }
+        });
+
+        // 3. Perform 2-Hour Lab Slot Expansion across all branches
+        expandTwoHourLabSlots(timetableData);
+        expandTwoHourLabSlots(labData);
+
+        const branchCount = Object.keys(timetableData).length;
+        const facultyCount = Object.keys(facultyMap).length;
+        const labCount = Object.keys(labData).length;
+
+        resolve({
+          timetableData,
+          labData,
+          facultyMap,
+          facultyList,
+          summaryStats: {
+            branchCount,
+            facultyCount,
+            labCount,
+            fileName: file.name
+          }
+        });
+
+      } catch (err) {
+        reject(new Error('Failed to parse Excel file: ' + err.message));
+      }
+    };
+
+    reader.onerror = (err) => reject(err);
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+/**
+ * Expands 2-hour lab sessions into the adjacent empty time slot
+ */
+function expandTwoHourLabSlots(store) {
+  Object.keys(store).forEach(key => {
+    Object.keys(store[key]).forEach(day => {
+      timeSlotOrder.forEach((slot, idx) => {
+        const entries = store[key][day][slot];
+        if (entries && entries.length > 0) {
+          const hasLab = entries.some(e => e.isLab);
+          if (hasLab && idx + 1 < timeSlotOrder.length) {
+            const nextSlot = timeSlotOrder[idx + 1];
+            if (nextSlot !== '11:00-11:15' && nextSlot !== '01:15-02:15') {
+              if (!store[key][day][nextSlot] || store[key][day][nextSlot].length === 0) {
+                store[key][day][nextSlot] = entries.map(e => ({ ...e, isContinued: true }));
+              }
+            }
+          }
+        }
+      });
+    });
+  });
+}
+
+/**
+ * Standardize time slot strings
+ */
+function normalizeTimeSlot(slotStr) {
+  if (!slotStr) return '';
+  const clean = slotStr.trim();
+  if (clean.includes('09:00')) return '09:00-10:00';
+  if (clean.includes('10:00')) return '10:00-11:00';
+  if (clean.includes('11:00-11:15')) return '11:00-11:15';
+  if (clean.includes('11:15')) return '11:15-12:15';
+  if (clean.includes('12:15')) return '12:15-01:15';
+  if (clean.includes('01:15-02:15')) return '01:15-02:15';
+  if (clean.includes('02:15')) return '02:15-03:15';
+  if (clean.includes('03:15')) return '03:15-04:15';
+  return clean;
+}
+
+/**
+ * Parses multiline cell content into Subject, Faculty, Room
+ */
+function parseCellContent(val, facultyMap = {}) {
+  if (!val) return { subject: '', faculty: '', room: '' };
+
+  const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('PRACTICAL');
+  const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+
+  if (lines.length >= 3) {
+    const subject = lines[0];
+    const facultyInitials = lines[1];
+    const room = lines[2];
+    
+    const fullFaculty = resolveFacultyNames(facultyInitials, facultyMap);
+    return { subject, faculty: fullFaculty || facultyInitials, room, isLab };
+  } else if (lines.length === 2) {
+    const subject = lines[0];
+    const secondLine = lines[1];
+
+    if (secondLine.startsWith('G-') || secondLine.startsWith('E-') || secondLine.startsWith('C-') || secondLine.includes('LAB')) {
+      return { subject, faculty: '', room: secondLine, isLab };
+    } else {
+      const fullFaculty = resolveFacultyNames(secondLine, facultyMap);
+      return { subject, faculty: fullFaculty || secondLine, room: '', isLab };
+    }
+  }
+
+  return { subject: val, faculty: '', room: '', isLab };
+}
+
+const facultyAliases = {
+  'DDAK': 'Mr. D Arun Kumar',
+  'VVBR': 'Mr. V Bhaskar Rao',
+  'VVLUR': 'Dr. VVL Usha Ramani',
+  'Dr. Dr.': 'Dr. VVL Usha Ramani'
+};
+
+/**
+ * Resolves faculty initials to full names
+ */
+function resolveFacultyNames(initialsStr, facultyMap) {
+  if (!initialsStr || !facultyMap || Object.keys(facultyMap).length === 0) return initialsStr;
+
+  let cleanStr = initialsStr.replace(/Dr\.\s*Dr\.\s*/gi, 'Dr. ');
+  const tokens = cleanStr.split(/[\s,]+/).filter(Boolean);
+  const resolved = [];
+
+  let i = 0;
+  while (i < tokens.length) {
+    let token = tokens[i];
+
+    if (token === 'CSP') {
+      i++;
+      continue;
+    }
+    
+    if ((token === 'Dr.' || token === 'Mr.' || token === 'Mrs.' || token === 'Ms.') && i + 1 < tokens.length) {
+      token = `${token} ${tokens[i + 1]}`;
+      i++;
+    }
+
+    if (facultyAliases[token]) {
+      resolved.push(facultyAliases[token]);
+    } else if (facultyMap[token]) {
+      const info = facultyMap[token];
+      resolved.push(typeof info === 'object' ? info.fullName : info);
+    } else {
+      resolved.push(token);
+    }
+    i++;
+  }
+
+  const uniqueNames = Array.from(new Set(resolved));
+  return uniqueNames.join(', ') || initialsStr;
+}

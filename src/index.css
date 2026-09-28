@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: "Bookman Old Style", "URW Bookman", "Bookman", "Times New Roman", Times, Georgia, serif;
+  }
+}
+
+/* Custom Table Grid Styling - Darker Lines & Centered Alignment */
+table {
+  border-collapse: collapse !important;
+}
+
+th, td {
+  border-color: #cbd5e1 !important; /* Darker slate-300 borders */
+}
+
+/* Thick outer border for timetable cards */
+.timetable-card {
+  border: 2px solid #334155 !important;
+}
+
+/* Active Tab Styles */
+.btn-tab {
+  @apply px-5 py-2 text-sm font-medium rounded-md transition-all duration-150 shadow-sm border;
+}
+
+.btn-tab-active {
+  @apply bg-blue-600 text-white border-blue-600 shadow-md hover:bg-blue-700;
+}
+
+.btn-tab-inactive {
+  @apply bg-gray-200 text-gray-700 border-gray-300 hover:bg-gray-300 hover:text-gray-900;
+}
+
+/* Screen vs Print utility */
+.print-only {
+  display: none !important;
+}
+
+/* HIGH-QUALITY PDF & PRINT STYLES */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 6mm 8mm;
+  }
+
+  html, body {
+    background: white !important;
+    color: black !important;
+    font-size: 8.5pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .no-print, nav, button, .modal, footer, header {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+
+  .max-w-7xl, main {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* MASTER TIMETABLE: Force each branch onto its own single printed page */
+  .master-print-container {
+    display: block !important;
+  }
+
+  .branch-print-page {
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .branch-print-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /* SINGLE PAGE PRINT FOR BRANCH VIEW, INDIVIDUAL VIEW & LAB VIEW */
+  .timetable-card {
+    box-shadow: none !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    width: 100% !important;
+  }
+
+  /* Compact branding header inside table cards for print */
+  .timetable-card > div:first-child,
+  .workload-card > div:first-child {
+    padding: 4px 8px !important;
+    background-color: #f8fafc !important;
+    border-bottom: 1.5px solid #000 !important;
+  }
+
+  .timetable-card h2, .workload-card h2 {
+    font-size: 8pt !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+  }
+
+  .timetable-card p, .timetable-card h3,
+  .workload-card p, .workload-card h3 {
+    font-size: 7pt !important;
+    line-height: 1.1 !important;
+    margin-top: 2px !important;
+  }
+
+  /* Table Grid styling */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+  }
+
+  th {
+    background-color: #e2e8f0 !important;
+    color: #000 !important;
+    border: 1px solid #475569 !important;
+    padding: 4px 2px !important;
+    font-size: 7.5pt !important;
+    font-weight: 700 !important;
+  }
+
+  td {
+    border: 1px solid #475569 !important;
+    padding: 3px 2px !important;
+    font-size: 7.5pt !important;
+    vertical-align: middle !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Prevent overflow within cells */
+  td div {
+    min-height: auto !important;
+  }
+
+  /* FACULTY WORKLOAD SHEET PRINT STYLING (Multi-page clean layout with repeating header) */
+  .workload-card {
+    box-shadow: none !important;
+    border: 1px solid #475569 !important;
+    border-radius: 0 !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .workload-print-table {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .workload-print-table thead {
+    display: table-header-group !important;
+  }
+
+  .workload-print-table tbody {
+    display: table-row-group !important;
+  }
+
+  .workload-print-table tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .workload-print-table th, 
+  .workload-print-table td {
+    padding: 4px 5px !important;
+    font-size: 6.8pt !important;
+    border: 1px solid #64748b !important;
+    line-height: 1.2 !important;
+  }
+}
