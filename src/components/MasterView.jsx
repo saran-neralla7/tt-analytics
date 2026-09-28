@@ -3,7 +3,7 @@ import TimetableGrid from './TimetableGrid';
 import { branches } from '../data/mockData';
 import { Layers, GraduationCap, Clock, Award } from 'lucide-react';
 
-export default function MasterView({ timetableData, branchLegends = {}, universityInfo, onSlotClick }) {
+export default function MasterView({ timetableData, branchLegends = {}, universityInfo, facultyList = [], onSlotClick }) {
   const availableBranchKeys = Object.keys(timetableData);
 
   // Calculate master stats
@@ -11,6 +11,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
   let totalLabs = 0;
   const uniqueFaculty = new Set();
   const uniqueLabs = new Set();
+  const nonFacultyKeywords = ['COMP.', 'LAB-1', 'LAB-2', 'LAB-3', 'LAB-4', 'COUNSELLING', 'LIBRARY', 'SPORTS', 'YOGA'];
 
   availableBranchKeys.forEach((branchKey) => {
     const branchSched = timetableData[branchKey] || {};
@@ -23,7 +24,12 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
             totalClasses++;
             if (cell.isLab) totalLabs++;
             if (cell.faculty) {
-              cell.faculty.split(',').forEach(f => uniqueFaculty.add(f.trim()));
+              cell.faculty.split(',').forEach(f => {
+                const trimmed = f.trim();
+                if (trimmed && !nonFacultyKeywords.includes(trimmed.toUpperCase())) {
+                  uniqueFaculty.add(trimmed);
+                }
+              });
             }
             if (cell.room && cell.isLab) {
               uniqueLabs.add(cell.room.trim());
@@ -64,7 +70,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
           </div>
           <div>
             <div className="text-xs text-gray-500 font-medium">Faculty Members</div>
-            <div className="text-lg font-bold text-gray-900">{uniqueFaculty.size || 77}</div>
+            <div className="text-lg font-bold text-gray-900">{facultyList && facultyList.length > 0 ? facultyList.length : (uniqueFaculty.size || 77)}</div>
           </div>
         </div>
 

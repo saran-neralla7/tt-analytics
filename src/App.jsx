@@ -57,6 +57,7 @@ export default function App() {
             timetableData={timetableData}
             branchLegends={branchLegends}
             universityInfo={universityInfo}
+            facultyList={facultyList}
             onSlotClick={handleSlotClick}
           />
         )}

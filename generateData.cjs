@@ -91,8 +91,8 @@ function resolveFacultyNames(initialsStr) {
   while (i < tokens.length) {
     let token = tokens[i];
 
-    // Ignore subject code mistakenly placed in faculty row
-    if (token === 'CSP') {
+    // Ignore subject code or room tokens mistakenly placed in faculty row
+    if (token === 'CSP' || token === 'COMP.' || token.startsWith('LAB-')) {
       i++;
       continue;
     }
@@ -120,6 +120,13 @@ function resolveFacultyNames(initialsStr) {
 // Helper: extract room from the end of a string if present (e.g. "Dr. KVNL, SA, Dr. KVP, GVPCE CHEM. LAB." or "DAK KS, G-303")
 function extractRoomFromEnd(str) {
   if (!str) return { facultyStr: '', roomStr: '' };
+  
+  const roomPattern = /,\s*(((?:COMP\.\s*LAB-[0-9]|CHEM\.\s*LAB\.?|PHY\s*LAB|A-[0-9]+(?:,\s*[0-9]+)?|G-[0-9]+|E-[0-9]+|C-[0-9]+|GVPCE[^\n,]*)[,\s]*)+)$/i;
+  const match = str.match(roomPattern);
+  if (match) {
+    return { facultyStr: str.slice(0, match.index).trim(), roomStr: match[1].trim() };
+  }
+
   const lastCommaIdx = str.lastIndexOf(',');
   if (lastCommaIdx !== -1) {
     const candidateRoom = str.slice(lastCommaIdx + 1).trim();
@@ -142,9 +149,15 @@ function extractRoomFromEnd(str) {
 function parseCellContent(val) {
   if (!val) return null;
   val = val.trim();
-  if (!val || val.toUpperCase() === 'BREAK' || val.toUpperCase() === 'LUNCH') return null;
+  const upper = val.toUpperCase();
+  if (!val || upper === 'BREAK' || upper === 'LUNCH') return null;
+
+  // Extracurricular and non-instructional slots
+  if (upper === 'YOGA' || upper === 'SPORTS' || upper.includes('YOGA /') || upper.includes('YOGA/') || upper.includes('YOGA\n') || upper.includes('LIBRARY') || upper.includes('COUNSELLING')) {
+    return { subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false };
+  }
   
-  const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('PRACTICAL');
+  const isLab = upper.includes('LAB') || upper.includes('PRACTICAL');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
 
   if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
