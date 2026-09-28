@@ -117,9 +117,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
     // 2. Partial continuing lab merge
     const hasContinuingLab = currentItems.some(item =>
-      (item.isLab || item.subject?.includes('LAB')) &&
+      (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) &&
       nextItems.some(nItem =>
-        (nItem.isLab || nItem.isContinued || nItem.subject?.includes('LAB')) &&
+        (nItem.isLab || nItem.isContinued || nItem.subject?.includes('LAB') || nItem.subject?.includes('3DDA')) &&
         nItem.subject === item.subject &&
         nItem.branch === item.branch
       )

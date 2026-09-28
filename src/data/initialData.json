@@ -2700,7 +2700,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false
+            "isLab": true
           }
         ],
         "03:15-04:15": [
@@ -2708,7 +2708,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false,
+            "isLab": true,
             "isContinued": true
           }
         ]
@@ -3157,7 +3157,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false
+            "isLab": true
           }
         ],
         "03:15-04:15": [
@@ -3165,7 +3165,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false,
+            "isLab": true,
             "isContinued": true
           }
         ]
@@ -3224,7 +3224,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false
+            "isLab": true
           }
         ],
         "03:15-04:15": [
@@ -3232,7 +3232,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false,
+            "isLab": true,
             "isContinued": true
           }
         ]
@@ -3619,7 +3619,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false
+            "isLab": true
           }
         ],
         "03:15-04:15": [
@@ -3627,7 +3627,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false,
+            "isLab": true,
             "isContinued": true
           }
         ]
@@ -4064,7 +4064,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false
+            "isLab": true
           }
         ],
         "03:15-04:15": [
@@ -4072,7 +4072,7 @@
             "subject": "3DDA",
             "faculty": "Faculty-2",
             "room": "G-204",
-            "isLab": false,
+            "isLab": true,
             "isContinued": true
           }
         ]
@@ -5405,35 +5405,85 @@
     "COMP. LAB-1": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / PSUC LAB",
+            "branch": "MECH",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CIVIL / AITA LAB",
+            "branch": "CIVIL",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-1 / PSUC LAB",
             "branch": "CSE-1",
             "subject": "PSUC LAB"
           }
         },
         "TUE": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / PSUC LAB",
+            "branch": "MECH",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE-1 / PSUC LAB",
+            "branch": "CSE-1",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE (CS & DS) / PSUC LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE-2 / PSUC LAB",
+            "branch": "CSE-2",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-2 / PSUC LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "PSUC LAB"
           }
         },
         "THU": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE-2 / PSUC LAB",
+            "branch": "CSE-2",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE(AI&ML)-2 / PSUC LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / PSUC LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "PSUC LAB"
           }
         },
         "FRI": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / PSUC LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE (CS & DS) / PSUC LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / PSUC LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "PSUC LAB"
@@ -5461,35 +5511,75 @@
     "COMP. LAB-2": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE(AI&ML)-2 / AITA LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE(AI&ML)-1 / AITA LAB",
+            "branch": "CSE(AI&ML)-1",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-1 / AITA LAB",
             "branch": "ECE-1",
             "subject": "AITA LAB"
           }
         },
         "TUE": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE(AI&ML)-2 / AITA LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / PSUC LAB",
+            "branch": "ECE-1",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / AITA LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "AITA LAB"
           }
         },
         "WED": {
-          "": {
+          "11:15-01:15": {
+            "raw": "CHEMICAL / AITA LAB",
+            "branch": "CHEMICAL",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE (CS & DS) / AITA LAB",
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB"
           }
         },
         "THU": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE (CS & DS) / AITA LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "AITA LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / PSUC LAB",
+            "branch": "ECE-1",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-1 / AITA LAB",
             "branch": "CSE-1",
             "subject": "AITA LAB"
           }
         },
         "FRI": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / AITA LAB",
+            "branch": "MECH",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-1 / AITA LAB",
             "branch": "CSE-1",
             "subject": "AITA LAB"
@@ -5512,35 +5602,80 @@
     "COMP. LAB-3": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-2 / FWD LAB",
             "branch": "CSE-2",
             "subject": "FWD LAB"
           }
         },
         "TUE": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB"
+          },
+          "11:15-01:15": {
+            "raw": "EEE / AITA LAB",
+            "branch": "EEE",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-2 / FWD LAB",
             "branch": "CSE-2",
             "subject": "FWD LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "ECE-1 / AITA LAB",
+            "branch": "ECE-1",
+            "subject": "AITA LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE (CS & DS) / FDS LAB",
             "branch": "CSE (CS & DS)",
             "subject": "FDS LAB"
           }
         },
         "THU": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE (CS & DS) / CSP LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "CSP LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-3 / PSUC LAB",
+            "branch": "ECE-3",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-1 / FWD LAB",
             "branch": "CSE-1",
             "subject": "FWD LAB"
           }
         },
         "FRI": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CHEMICAL / PSUC LAB",
+            "branch": "CHEMICAL",
+            "subject": "PSUC LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CIVIL / PSUC LAB",
+            "branch": "CIVIL",
+            "subject": "PSUC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE-1 / FWD LAB",
             "branch": "CSE-1",
             "subject": "FWD LAB"
@@ -5583,21 +5718,51 @@
     "COMP. LAB-4": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / ESS. ENG. LAB",
+            "branch": "MECH",
+            "subject": "ESS. ENG. LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / ESS. ENG. LAB",
+            "branch": "ECE-1",
+            "subject": "ESS. ENG. LAB"
+          },
+          "02:15-04:15": {
             "raw": "CIVIL / ESS. ENG. LAB",
             "branch": "CIVIL",
             "subject": "ESS. ENG. LAB"
           }
         },
         "TUE": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / ESS. ENG. LAB",
+            "branch": "MECH",
+            "subject": "ESS. ENG. LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CHEMICAL / ESS. ENG. LAB",
+            "branch": "CHEMICAL",
+            "subject": "ESS. ENG. LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / ESS. ENG. LAB",
             "branch": "ECE-2",
             "subject": "ESS. ENG. LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / ESS. ENG. LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "ESS. ENG. LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / ESS. ENG. LAB",
+            "branch": "ECE-1",
+            "subject": "ESS. ENG. LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-3 / ESS. ENG. LAB",
             "branch": "ECE-3",
             "subject": "ESS. ENG. LAB"
@@ -5605,7 +5770,12 @@
         },
         "THU": {},
         "FRI": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-2 / ESS. ENG. LAB",
+            "branch": "ECE-2",
+            "subject": "ESS. ENG. LAB"
+          },
+          "02:15-04:15": {
             "raw": "EEE / ESS. ENG. LAB",
             "branch": "EEE",
             "subject": "ESS. ENG. LAB"
@@ -5623,35 +5793,70 @@
     "CHEM. LAB.": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "EEE / ENGG. CHEM LAB",
+            "branch": "EEE",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / ENGG. CHEM LAB",
+            "branch": "ECE-1",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / ENGG. CHEM LAB",
             "branch": "ECE-2",
             "subject": "ENGG. CHEM LAB"
           }
         },
         "TUE": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / ENGG. CHEM LAB",
+            "branch": "ECE-1",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / ENGG. CHEM LAB",
             "branch": "ECE-2",
             "subject": "ENGG. CHEM LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "EEE / ENGG. CHEM LAB",
+            "branch": "EEE",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "11:15-01:15": {
+            "raw": "ECE-1 / ENGG. CHEM LAB",
+            "branch": "ECE-1",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / ENGG. CHEM LAB",
             "branch": "ECE-2",
             "subject": "ENGG. CHEM LAB"
           }
         },
         "THU": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / ENGG. CHEM LAB",
+            "branch": "ECE-1",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-3 / ENGG. CHEM LAB",
             "branch": "ECE-3",
             "subject": "ENGG. CHEM LAB"
           }
         },
         "FRI": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-2 / ENGG. CHEM LAB",
+            "branch": "ECE-2",
+            "subject": "ENGG. CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-3 / ENGG. CHEM LAB",
             "branch": "ECE-3",
             "subject": "ENGG. CHEM LAB"
@@ -5669,35 +5874,60 @@
     "PHY LAB": {
       "schedule": {
         "MON": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE-1 / ENGG. PHY. LAB",
             "branch": "CSE-1",
             "subject": "ENGG. PHY. LAB"
           }
         },
         "TUE": {
-          "": {
+          "11:15-01:15": {
             "raw": "CSE-1 / ENGG. PHY. LAB",
             "branch": "CSE-1",
             "subject": "ENGG. PHY. LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE (CS & DS) / ENGG. PHY. LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "ENGG. PHY. LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE-2 / ENGG. PHY. LAB",
+            "branch": "CSE-2",
+            "subject": "ENGG. PHY. LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "ENGG. PHY. LAB"
           }
         },
         "THU": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CSE-2 / ENGG. PHY. LAB",
+            "branch": "CSE-2",
+            "subject": "ENGG. PHY. LAB"
+          },
+          "11:15-01:15": {
+            "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "ENGG. PHY. LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / ENGG. PHY. LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "ENGG. PHY. LAB"
           }
         },
         "FRI": {
-          "": {
+          "11:15-01:15": {
+            "raw": "CSE (CS & DS) / ENGG. PHY. LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "ENGG. PHY. LAB"
+          },
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / ENGG. PHY. LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "ENGG. PHY. LAB"
@@ -5715,35 +5945,60 @@
     "A-406": {
       "schedule": {
         "MON": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / DLD LAB",
+            "branch": "ECE-1",
+            "subject": "DLD LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / DLD LAB",
             "branch": "ECE-2",
             "subject": "DLD LAB"
           }
         },
         "TUE": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / DLD LAB",
+            "branch": "ECE-1",
+            "subject": "DLD LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / DLD LAB",
             "branch": "ECE-2",
             "subject": "DLD LAB"
           }
         },
         "WED": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / DLD LAB",
+            "branch": "ECE-1",
+            "subject": "DLD LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-2 / DLD LAB",
             "branch": "ECE-2",
             "subject": "DLD LAB"
           }
         },
         "THU": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-1 / DLD LAB",
+            "branch": "ECE-1",
+            "subject": "DLD LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-3 / DLD LAB",
             "branch": "ECE-3",
             "subject": "DLD LAB"
           }
         },
         "FRI": {
-          "": {
+          "11:15-01:15": {
+            "raw": "ECE-2 / DLD LAB",
+            "branch": "ECE-2",
+            "subject": "DLD LAB"
+          },
+          "02:15-04:15": {
             "raw": "ECE-3 / DLD LAB",
             "branch": "ECE-3",
             "subject": "DLD LAB"
@@ -5761,7 +6016,7 @@
     "A-301,302": {
       "schedule": {
         "MON": {
-          "": {
+          "02:15-04:15": {
             "raw": "ECE-3 / AITA LAB",
             "branch": "ECE-3",
             "subject": "AITA LAB"
@@ -5769,21 +6024,21 @@
         },
         "TUE": {},
         "WED": {
-          "": {
+          "02:15-04:15": {
             "raw": "EEE / PSUC LAB",
             "branch": "EEE",
             "subject": "PSUC LAB"
           }
         },
         "THU": {
-          "": {
+          "02:15-04:15": {
             "raw": "MECH / AITA LAB",
             "branch": "MECH",
             "subject": "AITA LAB"
           }
         },
         "FRI": {
-          "": {
+          "02:15-04:15": {
             "raw": "MECH-ROBOTICS / AITA LAB",
             "branch": "MECH-ROBOTICS",
             "subject": "AITA LAB"
@@ -5806,14 +6061,14 @@
     "A-303,304": {
       "schedule": {
         "MON": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE-2 / AITA LAB",
             "branch": "CSE-2",
             "subject": "AITA LAB"
           }
         },
         "TUE": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE-2 / AITA LAB",
             "branch": "CSE-2",
             "subject": "AITA LAB"
@@ -5821,14 +6076,14 @@
         },
         "WED": {},
         "THU": {
-          "": {
+          "02:15-04:15": {
             "raw": "ECE-2 / AITA LAB",
             "branch": "ECE-2",
             "subject": "AITA LAB"
           }
         },
         "FRI": {
-          "": {
+          "02:15-04:15": {
             "raw": "ECE-2 / AITA LAB",
             "branch": "ECE-2",
             "subject": "AITA LAB"
@@ -5846,7 +6101,7 @@
     "C-208": {
       "schedule": {
         "MON": {
-          "": {
+          "02:15-04:15": {
             "raw": "ECE-2 / PSUC LAB",
             "branch": "ECE-2",
             "subject": "PSUC LAB"
@@ -5854,7 +6109,7 @@
         },
         "TUE": {},
         "WED": {
-          "": {
+          "02:15-04:15": {
             "raw": "ECE-2 / PSUC LAB",
             "branch": "ECE-2",
             "subject": "PSUC LAB"
@@ -5874,7 +6129,7 @@
     "E-319": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
             "raw": "EEE / FEEE LAB",
             "branch": "EEE",
             "subject": "FEEE LAB"
@@ -5882,7 +6137,7 @@
         },
         "TUE": {},
         "WED": {
-          "": {
+          "09:00-11:00": {
             "raw": "EEE / FEEE LAB",
             "branch": "EEE",
             "subject": "FEEE LAB"
@@ -5902,7 +6157,7 @@
     "G-202": {
       "schedule": {
         "MON": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-1 / 3DDA",
             "branch": "CSE(AI&ML)-1",
             "subject": "3DDA"
@@ -5925,7 +6180,7 @@
       "schedule": {
         "MON": {},
         "TUE": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE(AI&ML)-2 / 3DDA",
             "branch": "CSE(AI&ML)-2",
             "subject": "3DDA"
@@ -5948,7 +6203,7 @@
         "MON": {},
         "TUE": {},
         "WED": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE-1 / 3DDA",
             "branch": "CSE-1",
             "subject": "3DDA"
@@ -5972,7 +6227,7 @@
         "WED": {},
         "THU": {},
         "FRI": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE-2 / 3DDA",
             "branch": "CSE-2",
             "subject": "3DDA"
@@ -5993,7 +6248,7 @@
         "TUE": {},
         "WED": {},
         "THU": {
-          "": {
+          "02:15-04:15": {
             "raw": "CSE (CS & DS) / 3DDA",
             "branch": "CSE (CS & DS)",
             "subject": "3DDA"
@@ -6012,21 +6267,36 @@
     "GVPCE CHEM. LAB.": {
       "schedule": {
         "MON": {
-          "": {
+          "09:00-11:00": {
+            "raw": "CHEMICAL / PAC LAB",
+            "branch": "CHEMICAL",
+            "subject": "PAC LAB"
+          },
+          "02:15-04:15": {
             "raw": "CHEMICAL / PCE LAB",
             "branch": "CHEMICAL",
             "subject": "PCE LAB"
           }
         },
         "TUE": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / CHEM LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "CIVIL / CHEM LAB",
             "branch": "CIVIL",
             "subject": "CHEM LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / CHEM LAB",
+            "branch": "MECH",
+            "subject": "CHEM LAB"
+          },
+          "02:15-04:15": {
             "raw": "MECH / CHEM LAB",
             "branch": "MECH",
             "subject": "CHEM LAB"
@@ -6057,14 +6327,19 @@
       "schedule": {
         "MON": {},
         "TUE": {
-          "": {
+          "02:15-04:15": {
             "raw": "MECH-ROBOTICS / EME LAB",
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB"
           }
         },
         "WED": {
-          "": {
+          "09:00-11:00": {
+            "raw": "MECH / EME LAB",
+            "branch": "MECH",
+            "subject": "EME LAB"
+          },
+          "02:15-04:15": {
             "raw": "MECH / EME LAB",
             "branch": "MECH",
             "subject": "EME LAB"
@@ -6085,7 +6360,7 @@
       "schedule": {
         "MON": {},
         "TUE": {
-          "": {
+          "09:00-11:00": {
             "raw": "CIVIL / S&G LAB",
             "branch": "CIVIL",
             "subject": "S&G LAB"

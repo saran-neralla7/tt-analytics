@@ -282,6 +282,12 @@ function expandTwoHourLabSlots(store) {
 function normalizeTimeSlot(slotStr) {
   if (!slotStr) return '';
   const clean = slotStr.trim();
+  // 2-hour lab slots
+  if (clean.includes('09:00-11:00') || (clean.includes('09:00') && clean.includes('11:00'))) return '09:00-11:00';
+  if (clean.includes('11:15-01:15') || (clean.includes('11:15') && clean.includes('01:15'))) return '11:15-01:15';
+  if (clean.includes('02:15-04:15') || (clean.includes('02:15') && clean.includes('04:15'))) return '02:15-04:15';
+
+  // Standard 1-hour slots
   if (clean.includes('09:00')) return '09:00-10:00';
   if (clean.includes('10:00')) return '10:00-11:00';
   if (clean.includes('11:00-11:15')) return '11:00-11:15';
@@ -299,7 +305,8 @@ function normalizeTimeSlot(slotStr) {
 function parseCellContent(val, facultyMap = {}) {
   if (!val) return { subject: '', faculty: '', room: '' };
 
-  const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('PRACTICAL');
+  const upper = val.toUpperCase();
+  const isLab = upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
 
   if (lines.length === 1 && val.includes('/') && !val.includes('(')) {

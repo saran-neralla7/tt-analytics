@@ -157,7 +157,7 @@ function parseCellContent(val) {
     return { subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false };
   }
   
-  const isLab = upper.includes('LAB') || upper.includes('PRACTICAL');
+  const isLab = upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
 
   if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
@@ -370,13 +370,21 @@ for (const sheetName of dedicatedLabSheets) {
   if (!wb.Sheets[sheetName]) continue;
   const ws = wb.Sheets[sheetName];
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
-  if (!rows || rows.length < 2) continue;
+  // Dynamically find header row containing 'Day'
+  let headerRowIdx = -1;
+  for (let r = 0; r < Math.min(10, rows.length); r++) {
+    if (rows[r] && rows[r].some(c => String(c).trim().toUpperCase() === 'DAY')) {
+      headerRowIdx = r;
+      break;
+    }
+  }
+  if (headerRowIdx === -1) continue;
 
-  const header = rows[0]; // e.g. ['Day', '09:00-11:00', '11:15-01:15', '02:15-04:15']
+  const header = rows[headerRowIdx]; // e.g. ['Day', '09:00-11:00', '11:15-01:15', '02:15-04:15']
   labSheetsData[sheetName] = { schedule: {}, labDetails: [] };
 
   let detailsStart = rows.length;
-  for (let r = 1; r < rows.length; r++) {
+  for (let r = headerRowIdx + 1; r < rows.length; r++) {
     const row = rows[r];
     if (!row) continue;
     if (String(row[0]).toUpperCase().includes('LAB DETAILS')) {
@@ -387,9 +395,9 @@ for (const sheetName of dedicatedLabSheets) {
     if (['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].includes(day)) {
       labSheetsData[sheetName].schedule[day] = {};
       for (let c = 1; c < header.length; c++) {
-        const slot = header[c];
+        const slot = String(header[c] || '').trim();
         const val = String(row[c] || '').trim();
-        if (val) {
+        if (slot && val) {
           const parts = val.split('/').map(p => p.trim());
           labSheetsData[sheetName].schedule[day][slot] = {
             raw: val,

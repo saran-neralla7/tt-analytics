@@ -86,7 +86,7 @@ export default function TimetableGrid({
 
     // 2. Partial lab merge (e.g. AITA LAB spans 2 hours for Batch A while Batch B has 2 1-hour tutorials)
     const hasContinuedLab = currentItems.some(item => 
-      (item.isLab || item.subject.includes('LAB')) && 
+      (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) && 
       nextItems.some(nItem => (nItem.isContinued || nItem.subject === item.subject) && nItem.subject === item.subject)
     );
 
