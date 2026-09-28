@@ -63,6 +63,32 @@ export async function parseExcelFile(file) {
               });
             }
           }
+        } else if (workbook.Sheets['Sheet3']) {
+          const s3Sheet = workbook.Sheets['Sheet3'];
+          const s3Rows = XLSX.utils.sheet_to_json(s3Sheet, { header: 1, defval: '' });
+          for (let r = 1; r < s3Rows.length; r++) {
+            const row = s3Rows[r];
+            const sno = row[0] ? String(row[0]).trim() : '';
+            const fullName = row[1] ? String(row[1]).trim() : '';
+            const shortName = row[2] ? String(row[2]).trim() : '';
+            const dept = row[3] ? String(row[3]).trim() : '';
+            const designation = row[4] ? String(row[4]).trim() : '';
+
+            if (shortName && fullName && !facultyMap[shortName]) {
+              facultyMap[shortName] = { fullName, dept, designation, theoryLoad: 0, labLoad: 0, totalLoad: 0, assignments: '' };
+              facultyList.push({
+                sno,
+                fullName,
+                shortName,
+                dept,
+                designation,
+                theoryLoad: 0,
+                labLoad: 0,
+                totalLoad: 0,
+                assignments: ''
+              });
+            }
+          }
         }
 
         // List of recognized academic branches

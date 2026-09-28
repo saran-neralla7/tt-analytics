@@ -24,8 +24,14 @@ const dayNames = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 // 1. Parse Faculty_Workload_Summary
 const facultyMap = {};
 const facultyList = [];
-if (wb.Sheets['Faculty_Workload_Summary']) {
-  const fwSheet = wb.Sheets['Faculty_Workload_Summary'];
+let fwSheet = wb.Sheets['Faculty_Workload_Summary'];
+if (!fwSheet && fs.existsSync('./1st Sem TIME TABLE 2026-2027_1.1.xlsx')) {
+  console.log('Faculty_Workload_Summary missing in current file; loading from root Excel');
+  const backupWb = XLSX.readFile('./1st Sem TIME TABLE 2026-2027_1.1.xlsx');
+  fwSheet = backupWb.Sheets['Faculty_Workload_Summary'];
+}
+
+if (fwSheet) {
   const fwRows = XLSX.utils.sheet_to_json(fwSheet, { header: 1, defval: '' });
   for (let r = 1; r < fwRows.length; r++) {
     const row = fwRows[r];
@@ -34,10 +40,16 @@ if (wb.Sheets['Faculty_Workload_Summary']) {
     const shortName = row[2] ? String(row[2]).trim() : '';
     const dept = row[3] ? String(row[3]).trim() : '';
     const designation = row[4] ? String(row[4]).trim() : '';
-    const theoryLoad = row[5] ? Number(row[5]) || 0 : 0;
+    let theoryLoad = row[5] ? Number(row[5]) || 0 : 0;
     const labLoad = row[6] ? Number(row[6]) || 0 : 0;
-    const totalLoad = row[8] ? Number(row[8]) || 0 : 0;
+    let totalLoad = row[8] ? Number(row[8]) || 0 : 0;
     const assignments = row[10] ? String(row[10]).trim() : '';
+
+    // In ECE-3, Thursday 09:00 DLD period was added for Dr. M Neelima (Dr. MN)
+    if (shortName === 'Dr. MN') {
+      theoryLoad += 1;
+      totalLoad += 1;
+    }
 
     if (shortName && fullName) {
       facultyMap[shortName] = { fullName, dept, designation, totalLoad, assignments };

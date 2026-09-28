@@ -73,7 +73,7 @@
         "11:15-12:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Mr. PBS Krishnamuraju, Dr. I Rajasekhar, Dr. VVL Usha Ramani",
+            "faculty": "Mr. PBS Krishnam Raju, Dr. I Rajasekhar, Dr. VVL Usha Ramani",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -81,7 +81,7 @@
         "12:15-01:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Mr. PBS Krishnamuraju, Dr. I Rajasekhar, Dr. VVL Usha Ramani",
+            "faculty": "Mr. PBS Krishnam Raju, Dr. I Rajasekhar, Dr. VVL Usha Ramani",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -104,7 +104,7 @@
           },
           {
             "subject": "ESS. ENG. TUT",
-            "faculty": "Mr. PBS Krishnamuraju",
+            "faculty": "Mr. PBS Krishnam Raju",
             "room": "E-311",
             "isLab": false
           }
@@ -240,7 +240,7 @@
         "12:15-01:15": [
           {
             "subject": "ESS. ENG. TUT",
-            "faculty": "Mr. PBS Krishnamuraju",
+            "faculty": "Mr. PBS Krishnam Raju",
             "room": "E-311",
             "isLab": false
           },
@@ -597,7 +597,7 @@
           },
           {
             "subject": "ESS. ENG. TUT",
-            "faculty": "Mr. PBS Krishnamuraju",
+            "faculty": "Mr. PBS Krishnam Raju",
             "room": "E-309",
             "isLab": false
           }
@@ -858,7 +858,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -873,7 +873,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -1298,7 +1298,7 @@
         "09:00-10:00": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. Ch Alekya, Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. Ch Alekya, Dr. N Vijaya Lakshmi, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -1306,7 +1306,7 @@
         "10:00-11:00": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. Ch Alekya, Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. Ch Alekya, Dr. N Vijaya Lakshmi, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -1665,7 +1665,7 @@
         "11:15-12:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. Ch Alekya, Mr. PBS Krishnamuraju, Dr. I Rajasekhar",
+            "faculty": "Dr. Ch Alekya, Mr. PBS Krishnam Raju, Dr. I Rajasekhar",
             "room": "COMP. LAB-4",
             "isLab": true
           },
@@ -1685,7 +1685,7 @@
         "12:15-01:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. Ch Alekya, Mr. PBS Krishnamuraju, Dr. I Rajasekhar",
+            "faculty": "Dr. Ch Alekya, Mr. PBS Krishnam Raju, Dr. I Rajasekhar",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -1980,7 +1980,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. BM Florence, Dr. J RajaRatnam, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. BM Florence, Dr. J RajaRatnam, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -2002,7 +2002,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. BM Florence, Dr. J RajaRatnam, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. BM Florence, Dr. J RajaRatnam, Mr. PBS Krishnam Raju",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -2392,6 +2392,14 @@
         ]
       },
       "THU": {
+        "09:00-10:00": [
+          {
+            "subject": "DLD",
+            "faculty": "Dr. M Neelima",
+            "room": "E-312",
+            "isLab": false
+          }
+        ],
         "11:15-12:15": [
           {
             "subject": "PSUC LAB",
@@ -6070,17 +6078,6 @@
     },
     {
       "sno": "2",
-      "fullName": "Mr. PBS Krishnam Raju",
-      "shortName": "PBSKR",
-      "dept": "",
-      "designation": "",
-      "theoryLoad": 0,
-      "labLoad": 6,
-      "totalLoad": 7,
-      "assignments": "CHEMICAL → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "3",
       "fullName": "Dr. S Padma",
       "shortName": "Dr. SP",
       "dept": "Chemical",
@@ -6091,7 +6088,7 @@
       "assignments": "CHEMICAL → Principles of Chemical Engineering (PCE) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "4",
+      "sno": "3",
       "fullName": "Dr. B Santosh Kumar",
       "shortName": "Dr. BSK",
       "dept": "Chemistry",
@@ -6102,7 +6099,7 @@
       "assignments": "CSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "5",
+      "sno": "4",
       "fullName": "Dr. KV NagaLakshmi",
       "shortName": "Dr. KVNL",
       "dept": "Chemistry",
@@ -6113,7 +6110,7 @@
       "assignments": "CHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nCHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "6",
+      "sno": "5",
       "fullName": "Dr. KV Padmavathi",
       "shortName": "Dr. KVP",
       "dept": "Chemistry",
@@ -6124,7 +6121,7 @@
       "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "7",
+      "sno": "6",
       "fullName": "Dr. M Rama Rajeswari",
       "shortName": "Dr. MRR",
       "dept": "Chemistry",
@@ -6135,7 +6132,7 @@
       "assignments": "CHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "8",
+      "sno": "7",
       "fullName": "Dr. P Srinivas Rao",
       "shortName": "Dr. PSR",
       "dept": "Chemistry",
@@ -6146,7 +6143,7 @@
       "assignments": "CIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods"
     },
     {
-      "sno": "9",
+      "sno": "8",
       "fullName": "Dr. Rani Nanda",
       "shortName": "Dr. RN",
       "dept": "Chemistry",
@@ -6157,7 +6154,7 @@
       "assignments": "CIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
     },
     {
-      "sno": "10",
+      "sno": "9",
       "fullName": "Mr. S Ashok",
       "shortName": "SA",
       "dept": "Chemistry",
@@ -6168,7 +6165,7 @@
       "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "11",
+      "sno": "10",
       "fullName": "Dr. D Manasa",
       "shortName": "Dr. DM",
       "dept": "CIVIL",
@@ -6179,7 +6176,7 @@
       "assignments": "CSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nEEE → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
-      "sno": "12",
+      "sno": "11",
       "fullName": "Dr. B Vidya",
       "shortName": "Dr. BV",
       "dept": "CIVIL",
@@ -6190,7 +6187,7 @@
       "assignments": "CIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
-      "sno": "13",
+      "sno": "12",
       "fullName": "Dr. G Santosh Kumar",
       "shortName": "Dr. GSK",
       "dept": "CIVIL",
@@ -6201,7 +6198,7 @@
       "assignments": "CHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
-      "sno": "14",
+      "sno": "13",
       "fullName": "Mr. P Manikanta",
       "shortName": "PM",
       "dept": "CIVIL",
@@ -6212,7 +6209,7 @@
       "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
-      "sno": "15",
+      "sno": "14",
       "fullName": "Mr. V Bhaskar Rao",
       "shortName": "VBR",
       "dept": "CIVIL",
@@ -6223,7 +6220,7 @@
       "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "16",
+      "sno": "15",
       "fullName": "Mrs. G Sravani",
       "shortName": "GS",
       "dept": "CIVIL",
@@ -6234,7 +6231,7 @@
       "assignments": "CIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
-      "sno": "17",
+      "sno": "16",
       "fullName": "Dr. Bh Padma",
       "shortName": "Dr. BHP",
       "dept": "CSE",
@@ -6242,10 +6239,10 @@
       "theoryLoad": 3,
       "labLoad": 8,
       "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "18",
+      "sno": "17",
       "fullName": "Dr. D Chandravathi",
       "shortName": "Dr. DC",
       "dept": "CSE",
@@ -6256,7 +6253,7 @@
       "assignments": "CSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "19",
+      "sno": "18",
       "fullName": "Dr. K Rohini",
       "shortName": "Dr. KR",
       "dept": "CSE",
@@ -6264,10 +6261,10 @@
       "theoryLoad": 9,
       "labLoad": 6,
       "totalLoad": 15,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science (FDS) – 3 theory = 3 periods\nCSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Foundations of Data Science / Principles of Cyber Security (FDS / CSP) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "20",
+      "sno": "19",
       "fullName": "Mr. A Dhanunjaya Prasad",
       "shortName": "ADP",
       "dept": "CSE",
@@ -6275,10 +6272,10 @@
       "theoryLoad": 6,
       "labLoad": 8,
       "totalLoad": 14,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles (PCS) – 3 theory = 3 periods\nCSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Foundations of Data Science / Principles of Cyber Security (FDS / CSP) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "21",
+      "sno": "20",
       "fullName": "Mr. B Bala Krishna",
       "shortName": "BBK",
       "dept": "CSE",
@@ -6289,7 +6286,7 @@
       "assignments": "CIVIL → Problem solving using C (PSUC) – 3 theory = 3 periods\nCIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "22",
+      "sno": "21",
       "fullName": "Mr. D Arun Kumar",
       "shortName": "DAK",
       "dept": "CSE",
@@ -6300,7 +6297,7 @@
       "assignments": "CSE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "23",
+      "sno": "22",
       "fullName": "Mr. M Anil",
       "shortName": "MA",
       "dept": "CSE",
@@ -6311,7 +6308,7 @@
       "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "24",
+      "sno": "23",
       "fullName": "Mrs. DMV Priya",
       "shortName": "DMVP",
       "dept": "CSE",
@@ -6322,7 +6319,7 @@
       "assignments": "CHEMICAL → Problem solving using C (PSUC) – 3 theory = 3 periods\nCHEMICAL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "25",
+      "sno": "24",
       "fullName": "Ms. C Aparna",
       "shortName": "CA",
       "dept": "CSE",
@@ -6330,10 +6327,10 @@
       "theoryLoad": 6,
       "labLoad": 8,
       "totalLoad": 14,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nEEE → Problem solving using C (PSUC) – 3 theory = 3 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nEEE → Problem solving using C (PSUC) – 3 theory = 3 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "26",
+      "sno": "25",
       "fullName": "Ms. K Swathi",
       "shortName": "KS",
       "dept": "CSE",
@@ -6344,7 +6341,7 @@
       "assignments": "CSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "27",
+      "sno": "26",
       "fullName": "Ms. S Laxmi Aparna",
       "shortName": "SLA",
       "dept": "CSE",
@@ -6355,7 +6352,7 @@
       "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "28",
+      "sno": "27",
       "fullName": "Dr. DBV Jagannadham",
       "shortName": "Dr. DBVJ",
       "dept": "ECE",
@@ -6366,7 +6363,7 @@
       "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-3 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "29",
+      "sno": "28",
       "fullName": "Dr. I Srinivas Rao",
       "shortName": "Dr. ISR",
       "dept": "ECE",
@@ -6374,10 +6371,10 @@
       "theoryLoad": 4,
       "labLoad": 8,
       "totalLoad": 12,
-      "assignments": "CHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "30",
+      "sno": "29",
       "fullName": "Dr. V Adinarayana",
       "shortName": "Dr. VA",
       "dept": "ECE",
@@ -6388,18 +6385,18 @@
       "assignments": "CHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "31",
+      "sno": "30",
       "fullName": "Dr. M Neelima",
       "shortName": "Dr. MN",
       "dept": "ECE",
       "designation": "Assistant Professor",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 8,
-      "totalLoad": 11,
+      "totalLoad": 12,
       "assignments": "CSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-3 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-3 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "32",
+      "sno": "31",
       "fullName": "Mrs. V Sridevi",
       "shortName": "VS",
       "dept": "ECE",
@@ -6410,7 +6407,7 @@
       "assignments": "CHEMICAL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "33",
+      "sno": "32",
       "fullName": "Ms. B Divya Sati",
       "shortName": "BDS",
       "dept": "ECE",
@@ -6421,7 +6418,7 @@
       "assignments": "CSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-3 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "34",
+      "sno": "33",
       "fullName": "Ms. K Jhansi Rani",
       "shortName": "KJR",
       "dept": "ECE",
@@ -6432,7 +6429,7 @@
       "assignments": "CSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "35",
+      "sno": "34",
       "fullName": "Ms. PR Sri Satya",
       "shortName": "PRSS",
       "dept": "ECE",
@@ -6443,7 +6440,7 @@
       "assignments": "CSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "36",
+      "sno": "35",
       "fullName": "Mr. PK DAS",
       "shortName": "PKD",
       "dept": "EEE",
@@ -6454,7 +6451,7 @@
       "assignments": "CSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "37",
+      "sno": "36",
       "fullName": "Dr. A Ravi Shankar",
       "shortName": "Dr. ARS",
       "dept": "EEE",
@@ -6465,7 +6462,7 @@
       "assignments": "CSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering (FEEE) – 3 theory = 3 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "38",
+      "sno": "37",
       "fullName": "Dr. MV Pankaj Lahari",
       "shortName": "Dr. MVPL",
       "dept": "EEE",
@@ -6476,7 +6473,7 @@
       "assignments": "CSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "39",
+      "sno": "38",
       "fullName": "Dr. BM Florence",
       "shortName": "Dr. BMF",
       "dept": "English",
@@ -6487,7 +6484,7 @@
       "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "40",
+      "sno": "39",
       "fullName": "Dr. Ch Alekya",
       "shortName": "Dr. CHA",
       "dept": "English",
@@ -6498,7 +6495,7 @@
       "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Tutorial (ESS. ENG. Tut) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "41",
+      "sno": "40",
       "fullName": "Dr. I Rajasekhar",
       "shortName": "Dr. IRS",
       "dept": "English",
@@ -6509,7 +6506,7 @@
       "assignments": "CHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "42",
+      "sno": "41",
       "fullName": "Dr. J RajaRatnam",
       "shortName": "Dr. JRR",
       "dept": "English",
@@ -6520,7 +6517,7 @@
       "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "43",
+      "sno": "42",
       "fullName": "Dr. N Vijaya Lakshmi",
       "shortName": "Dr. NVL",
       "dept": "English",
@@ -6531,7 +6528,7 @@
       "assignments": "CIVIL → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "44",
+      "sno": "43",
       "fullName": "Dr. VVL Usha Ramani",
       "shortName": "Dr. VVLUR",
       "dept": "English",
@@ -6542,18 +6539,18 @@
       "assignments": "CHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Tutorial (ESS. ENG. Tut) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "45",
-      "fullName": "Mr. PBS Krishnamuraju",
+      "sno": "44",
+      "fullName": "Mr. PBS Krishnam Raju",
       "shortName": "PBSKR",
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 4,
-      "totalLoad": 4,
-      "assignments": "ECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "labLoad": 10,
+      "totalLoad": 11,
+      "assignments": "CHEMICAL → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "46",
+      "sno": "45",
       "fullName": "Dr. M Bhanu Sridhar",
       "shortName": "Dr. MBS",
       "dept": "IT",
@@ -6561,10 +6558,10 @@
       "theoryLoad": 3,
       "labLoad": 8,
       "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "47",
+      "sno": "46",
       "fullName": "Mr. CH VVD Prasad",
       "shortName": "CHVVDP",
       "dept": "IT",
@@ -6575,7 +6572,7 @@
       "assignments": "ECE-3 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-3 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "48",
+      "sno": "47",
       "fullName": "Mr. S Vinod Manikantha",
       "shortName": "SVM",
       "dept": "IT",
@@ -6583,10 +6580,10 @@
       "theoryLoad": 6,
       "labLoad": 6,
       "totalLoad": 12,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "49",
+      "sno": "48",
       "fullName": "Dr. K L Sai Prasad",
       "shortName": "Dr. KLSP",
       "dept": "Mathematics",
@@ -6597,7 +6594,7 @@
       "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods"
     },
     {
-      "sno": "50",
+      "sno": "49",
       "fullName": "Dr. KVS Sarma",
       "shortName": "Dr. KVSS",
       "dept": "Mathematics",
@@ -6608,7 +6605,7 @@
       "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods"
     },
     {
-      "sno": "51",
+      "sno": "50",
       "fullName": "Dr. SS Ayyappa Sastri",
       "shortName": "Dr. SSAS",
       "dept": "Mathematics",
@@ -6619,7 +6616,7 @@
       "assignments": "CIVIL → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nECE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "52",
+      "sno": "51",
       "fullName": "Dr. A Suseelatha",
       "shortName": "Dr. ASL",
       "dept": "Mathematics",
@@ -6630,7 +6627,7 @@
       "assignments": "CHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-1 → Calculus and Linear Algebra (CAL & LA) –  = 0 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "53",
+      "sno": "52",
       "fullName": "Dr. B Bharathi",
       "shortName": "Dr. BB",
       "dept": "Mathematics",
@@ -6641,7 +6638,7 @@
       "assignments": "CHEMICAL → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods"
     },
     {
-      "sno": "54",
+      "sno": "53",
       "fullName": "Dr. Ch Appala Naidu",
       "shortName": "Dr. CHAN",
       "dept": "Mathematics",
@@ -6652,7 +6649,7 @@
       "assignments": "CHEMICAL → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nECE-1 → Calculus and Linear Algebra (CAL & LA) –  = 0 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "55",
+      "sno": "54",
       "fullName": "Dr. Ch V Sreedhar",
       "shortName": "Dr. CHVS",
       "dept": "Mathematics",
@@ -6663,7 +6660,7 @@
       "assignments": "CIVIL → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "56",
+      "sno": "55",
       "fullName": "Dr. N Giribabu",
       "shortName": "Dr. NGB",
       "dept": "Mathematics",
@@ -6674,7 +6671,7 @@
       "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nECE-1 → Calculus and Linear Algebra (CAL & LA) –  = 0 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nECE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nECE-3 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "57",
+      "sno": "56",
       "fullName": "Dr. S Ashok Kumar",
       "shortName": "Dr. SAK",
       "dept": "Mathematics",
@@ -6685,7 +6682,7 @@
       "assignments": "CIVIL → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods"
     },
     {
-      "sno": "58",
+      "sno": "57",
       "fullName": "Dr. T Poornakantha",
       "shortName": "Dr. TPK",
       "dept": "Mathematics",
@@ -6696,7 +6693,7 @@
       "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nCSE-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory + 1 tutorial = 4 periods\nECE-1 → Calculus and Linear Algebra Tutorial (CAL & LA Tut) – 1 tutorial = 1 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 1 tutorial = 1 periods"
     },
     {
-      "sno": "59",
+      "sno": "58",
       "fullName": "Dr. BVS Arun Kumar",
       "shortName": "Dr. BVSAK",
       "dept": "Mechanical",
@@ -6707,7 +6704,7 @@
       "assignments": "CSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "60",
+      "sno": "59",
       "fullName": "Dr. M Bhaskar Kumar",
       "shortName": "Dr. MBK",
       "dept": "Mechanical",
@@ -6718,7 +6715,7 @@
       "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "61",
+      "sno": "60",
       "fullName": "Dr. Anand Solanki",
       "shortName": "Dr. AS",
       "dept": "Mechanical",
@@ -6729,7 +6726,7 @@
       "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "62",
+      "sno": "61",
       "fullName": "Mr. Y Prasad Reddy",
       "shortName": "YPR",
       "dept": "Mechanical",
@@ -6740,7 +6737,7 @@
       "assignments": "CSE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-3 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "63",
+      "sno": "62",
       "fullName": "Ms. K Manikyakanthi",
       "shortName": "KMK",
       "dept": "Mechanical",
@@ -6751,7 +6748,7 @@
       "assignments": "CHEMICAL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "64",
+      "sno": "63",
       "fullName": "Ms. P KiranMayi",
       "shortName": "PKM",
       "dept": "Mechanical",
@@ -6762,7 +6759,7 @@
       "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "65",
+      "sno": "64",
       "fullName": "Ms. Taj",
       "shortName": "TAJ",
       "dept": "Mechanical",
@@ -6770,120 +6767,10 @@
       "theoryLoad": 2,
       "labLoad": 10,
       "totalLoad": 12,
-      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "67",
-      "fullName": "Dr. B Nagarjun",
-      "shortName": "Dr. BN",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "68",
-      "fullName": "Dr. B Rajesh Babu",
-      "shortName": "Dr. BRB",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "69",
-      "fullName": "Dr. Ch Rajesh",
-      "shortName": "Dr. CHR",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "70",
-      "fullName": "Dr. Ch S Lakshmi",
-      "shortName": "Dr. CHSL",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "72",
-      "fullName": "Dr. NSSV Raja Rao",
-      "shortName": "Dr. NSSVRR",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 1,
-      "labLoad": 12,
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "75",
-      "fullName": "Mr. K AyyaRaju",
-      "shortName": "KAR",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "77",
-      "fullName": "Mr. PSS Appalacharyulu",
-      "shortName": "PSSA",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 1,
-      "labLoad": 12,
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "78",
-      "fullName": "Mr. VVV Satyanarayana",
-      "shortName": "VVVSN",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 10,
-      "totalLoad": 13,
-      "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "71",
-      "fullName": "Dr. D Santhosh Kumar",
-      "shortName": "Dr. DSK",
-      "dept": "Physics",
-      "designation": "Senior Assistant Professor",
-      "theoryLoad": 4,
-      "labLoad": 8,
-      "totalLoad": 12,
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "76",
-      "fullName": "Mr. NV Siva Krishna",
-      "shortName": "NVSK",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "theoryLoad": 3,
-      "labLoad": 8,
-      "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
-    },
-    {
-      "sno": "66",
+      "sno": "65",
       "fullName": "Dr. R Praveena",
       "shortName": "Dr. RP",
       "dept": "Physics",
@@ -6894,7 +6781,73 @@
       "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "73",
+      "sno": "66",
+      "fullName": "Dr. B Nagarjun",
+      "shortName": "Dr. BN",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "67",
+      "fullName": "Dr. B Rajesh Babu",
+      "shortName": "Dr. BRB",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "68",
+      "fullName": "Dr. Ch Rajesh",
+      "shortName": "Dr. CHR",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "69",
+      "fullName": "Dr. Ch S Lakshmi",
+      "shortName": "Dr. CHSL",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "70",
+      "fullName": "Dr. D Santhosh Kumar",
+      "shortName": "Dr. DSK",
+      "dept": "Physics",
+      "designation": "Senior Assistant Professor",
+      "theoryLoad": 4,
+      "labLoad": 8,
+      "totalLoad": 12,
+      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "71",
+      "fullName": "Dr. NSSV Raja Rao",
+      "shortName": "Dr. NSSVRR",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 1,
+      "labLoad": 12,
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "72",
       "fullName": "Dr. PV Rajeswari",
       "shortName": "Dr. PVR",
       "dept": "Physics",
@@ -6905,7 +6858,7 @@
       "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
-      "sno": "74",
+      "sno": "73",
       "fullName": "Dr.V Siva Jahnavy",
       "shortName": "Dr. VSJ",
       "dept": "Physics",
@@ -6914,6 +6867,50 @@
       "labLoad": 6,
       "totalLoad": 9,
       "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "74",
+      "fullName": "Mr. K AyyaRaju",
+      "shortName": "KAR",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "75",
+      "fullName": "Mr. NV Siva Krishna",
+      "shortName": "NVSK",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "76",
+      "fullName": "Mr. PSS Appalacharyulu",
+      "shortName": "PSSA",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 1,
+      "labLoad": 12,
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    {
+      "sno": "77",
+      "fullName": "Mr. VVV Satyanarayana",
+      "shortName": "VVVSN",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "theoryLoad": 3,
+      "labLoad": 10,
+      "totalLoad": 13,
+      "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     }
   ],
   "facultyMap": {
@@ -6923,13 +6920,6 @@
       "designation": "Assistant Professor",
       "totalLoad": 10,
       "assignments": "CSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
-    },
-    "PBSKR": {
-      "fullName": "Mr. PBS Krishnamuraju",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "totalLoad": 4,
-      "assignments": "ECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr. SP": {
       "fullName": "Dr. S Padma",
@@ -7034,7 +7024,7 @@
       "dept": "CSE",
       "designation": "Professor",
       "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Dr. DC": {
       "fullName": "Dr. D Chandravathi",
@@ -7048,14 +7038,14 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "totalLoad": 15,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science (FDS) – 3 theory = 3 periods\nCSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Foundations of Data Science / Principles of Cyber Security (FDS / CSP) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     "ADP": {
       "fullName": "Mr. A Dhanunjaya Prasad",
       "dept": "CSE",
       "designation": "Assistant Professor",
       "totalLoad": 14,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles (PCS) – 3 theory = 3 periods\nCSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Foundations of Data Science / Principles of Cyber Security (FDS / CSP) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods"
     },
     "BBK": {
       "fullName": "Mr. B Bala Krishna",
@@ -7090,7 +7080,7 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "totalLoad": 14,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nEEE → Problem solving using C (PSUC) – 3 theory = 3 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C (PSUC) – 3 theory = 3 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nEEE → Problem solving using C (PSUC) – 3 theory = 3 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     "KS": {
       "fullName": "Ms. K Swathi",
@@ -7118,7 +7108,7 @@
       "dept": "ECE",
       "designation": "Associate Professor",
       "totalLoad": 12,
-      "assignments": "CHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Dr. VA": {
       "fullName": "Dr. V Adinarayana",
@@ -7131,7 +7121,7 @@
       "fullName": "Dr. M Neelima",
       "dept": "ECE",
       "designation": "Assistant Professor",
-      "totalLoad": 11,
+      "totalLoad": 12,
       "assignments": "CSE(AI&ML)-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nECE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nECE-3 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-3 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "VS": {
@@ -7225,12 +7215,19 @@
       "totalLoad": 12,
       "assignments": "CHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Tutorial (ESS. ENG. Tut) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
+    "PBSKR": {
+      "fullName": "Mr. PBS Krishnam Raju",
+      "dept": "English",
+      "designation": "Assistant Professor",
+      "totalLoad": 11,
+      "assignments": "CHEMICAL → Essential English (ESS. ENG.) – 1 tutorial = 1 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+    },
     "Dr. MBS": {
       "fullName": "Dr. M Bhanu Sridhar",
       "dept": "IT",
       "designation": "Professor",
       "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Cyber Security Principles Lab (CSP LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     "CHVVDP": {
       "fullName": "Mr. CH VVD Prasad",
@@ -7244,7 +7241,7 @@
       "dept": "IT",
       "designation": "Assistant Professor",
       "totalLoad": 12,
-      "assignments": "CSE (CS & DS) → Foundations of Data Science Lab (FDS LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Foundations of Data Science / Cyber Security Principles LAB (FDS / CSP LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     },
     "Dr. KLSP": {
       "fullName": "Dr. K L Sai Prasad",
@@ -7363,7 +7360,14 @@
       "dept": "Mechanical",
       "designation": "Assistant Professor",
       "totalLoad": 12,
-      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    "Dr. RP": {
+      "fullName": "Dr. R Praveena",
+      "dept": "Physics",
+      "designation": "Associate Professor",
+      "totalLoad": 9,
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr. BN": {
       "fullName": "Dr. B Nagarjun",
@@ -7377,7 +7381,7 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "totalLoad": 13,
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. CHR": {
       "fullName": "Dr. Ch Rajesh",
@@ -7393,34 +7397,6 @@
       "totalLoad": 13,
       "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
-    "Dr. NSSVRR": {
-      "fullName": "Dr. NSSV Raja Rao",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    "KAR": {
-      "fullName": "Mr. K AyyaRaju",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "totalLoad": 13,
-      "assignments": "CHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    "PSSA": {
-      "fullName": "Mr. PSS Appalacharyulu",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "totalLoad": 13,
-      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
-    },
-    "VVVSN": {
-      "fullName": "Mr. VVV Satyanarayana",
-      "dept": "Physics",
-      "designation": "Assistant Professor",
-      "totalLoad": 13,
-      "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
-    },
     "Dr. DSK": {
       "fullName": "Dr. D Santhosh Kumar",
       "dept": "Physics",
@@ -7428,19 +7404,12 @@
       "totalLoad": 12,
       "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
-    "NVSK": {
-      "fullName": "Mr. NV Siva Krishna",
+    "Dr. NSSVRR": {
+      "fullName": "Dr. NSSV Raja Rao",
       "dept": "Physics",
       "designation": "Assistant Professor",
-      "totalLoad": 11,
-      "assignments": "CSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
-    },
-    "Dr. RP": {
-      "fullName": "Dr. R Praveena",
-      "dept": "Physics",
-      "designation": "Associate Professor",
-      "totalLoad": 9,
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. PVR": {
       "fullName": "Dr. PV Rajeswari",
@@ -7455,6 +7424,34 @@
       "designation": "Assistant Professor",
       "totalLoad": 9,
       "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+    },
+    "KAR": {
+      "fullName": "Mr. K AyyaRaju",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "totalLoad": 13,
+      "assignments": "CHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    "NVSK": {
+      "fullName": "Mr. NV Siva Krishna",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-2 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nEEE → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+    },
+    "PSSA": {
+      "fullName": "Mr. PSS Appalacharyulu",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "totalLoad": 13,
+      "assignments": "CSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+    },
+    "VVVSN": {
+      "fullName": "Mr. VVV Satyanarayana",
+      "dept": "Physics",
+      "designation": "Assistant Professor",
+      "totalLoad": 13,
+      "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     }
   },
   "knownBranches": [
