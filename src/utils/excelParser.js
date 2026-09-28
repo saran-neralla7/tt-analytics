@@ -300,7 +300,14 @@ function parseCellContent(val, facultyMap = {}) {
   if (!val) return { subject: '', faculty: '', room: '' };
 
   const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('PRACTICAL');
-  const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+  let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+
+  if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
+    const slashParts = val.split('/').map(l => l.trim()).filter(Boolean);
+    if (slashParts.length >= 2) {
+      lines = slashParts;
+    }
+  }
 
   if (lines.length >= 3) {
     const subject = lines[0];
@@ -312,6 +319,23 @@ function parseCellContent(val, facultyMap = {}) {
   } else if (lines.length === 2) {
     const subject = lines[0];
     const secondLine = lines[1];
+
+    const lastCommaIdx = secondLine.lastIndexOf(',');
+    if (lastCommaIdx !== -1) {
+      const candidateRoom = secondLine.slice(lastCommaIdx + 1).trim();
+      if (
+        candidateRoom.startsWith('G-') || 
+        candidateRoom.startsWith('E-') || 
+        candidateRoom.startsWith('C-') || 
+        candidateRoom.startsWith('A-') || 
+        candidateRoom.includes('LAB') ||
+        candidateRoom.includes('GVPCE')
+      ) {
+        const candidateFaculty = secondLine.slice(0, lastCommaIdx).trim();
+        const fullFaculty = resolveFacultyNames(candidateFaculty, facultyMap);
+        return { subject, faculty: fullFaculty || candidateFaculty, room: candidateRoom, isLab };
+      }
+    }
 
     if (secondLine.startsWith('G-') || secondLine.startsWith('E-') || secondLine.startsWith('C-') || secondLine.includes('LAB')) {
       return { subject, faculty: '', room: secondLine, isLab };

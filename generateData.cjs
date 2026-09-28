@@ -138,14 +138,21 @@ function extractRoomFromEnd(str) {
   return { facultyStr: str, roomStr: '' };
 }
 
-// Helper: parse cell content (multiline: subject\nfaculty\nroom)
+// Helper: parse cell content (multiline: subject\nfaculty\nroom or slash-separated: subject/faculty/room)
 function parseCellContent(val) {
   if (!val) return null;
   val = val.trim();
   if (!val || val.toUpperCase() === 'BREAK' || val.toUpperCase() === 'LUNCH') return null;
   
   const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('PRACTICAL');
-  const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+  let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+
+  if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
+    const slashParts = val.split('/').map(l => l.trim()).filter(Boolean);
+    if (slashParts.length >= 2) {
+      lines = slashParts;
+    }
+  }
 
   if (lines.length >= 3) {
     return { subject: lines[0], faculty: resolveFacultyNames(lines[1]), room: lines[2], isLab };
@@ -280,6 +287,60 @@ for (const branch of knownBranches) {
   }
   
   console.log(`✅ ${branch}: parsed ${Object.keys(timetableData[branch]).length} days`);
+}
+
+// Cross-reference Master Sheet (Timetable_Final) to auto-fill any omitted periods in branch sheets
+if (wb.Sheets['Timetable_Final']) {
+  const tfWs = wb.Sheets['Timetable_Final'];
+  const tfRows = XLSX.utils.sheet_to_json(tfWs, { header: 1, defval: '' });
+  
+  let tfHeaderRow = -1;
+  for (let r = 0; r < 10; r++) {
+    if (tfRows[r] && tfRows[r].some(c => typeof c === 'string' && c.toUpperCase().includes('DAY'))) {
+      tfHeaderRow = r;
+      break;
+    }
+  }
+
+  if (tfHeaderRow !== -1) {
+    const tfHeader = tfRows[tfHeaderRow];
+    const tfSlotCols = {};
+    for (let c = 0; c < tfHeader.length; c++) {
+      const h = String(tfHeader[c] || '').trim();
+      timeSlots.forEach(ts => {
+        if (h.includes(ts)) tfSlotCols[ts] = c;
+      });
+    }
+
+    let tfCurrentDay = '';
+    for (let r = tfHeaderRow + 1; r < tfRows.length; r++) {
+      const row = tfRows[r];
+      if (!row) continue;
+      const dayCell = String(row[0] || '').trim().toUpperCase();
+      if (dayNames.includes(dayCell)) {
+        tfCurrentDay = dayCell;
+      }
+      const branchCell = String(row[1] || '').trim().toUpperCase();
+      if (!tfCurrentDay || !branchCell || !knownBranches.includes(branchCell)) continue;
+
+      for (const [slot, col] of Object.entries(tfSlotCols)) {
+        const tfVal = String(row[col] || '').trim();
+        if (!tfVal || tfVal.toUpperCase() === 'BREAK' || tfVal.toUpperCase() === 'LUNCH') continue;
+
+        if (!timetableData[branchCell]) timetableData[branchCell] = {};
+        if (!timetableData[branchCell][tfCurrentDay]) timetableData[branchCell][tfCurrentDay] = {};
+
+        // If the branch sheet had nothing for this slot, fill from master!
+        if (!timetableData[branchCell][tfCurrentDay][slot] || timetableData[branchCell][tfCurrentDay][slot].length === 0) {
+          const parsed = parseCellContent(tfVal);
+          if (parsed) {
+            console.log(`[Master Auto-fill] Filled gap in ${branchCell} ${tfCurrentDay} ${slot} from Timetable_Final: ${parsed.subject}`);
+            timetableData[branchCell][tfCurrentDay][slot] = [parsed];
+          }
+        }
+      }
+    }
+  }
 }
 
 // 3. Parse Dedicated Laboratory Sheets
