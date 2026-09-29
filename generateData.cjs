@@ -863,15 +863,134 @@ if (!hasDedicatedLabSheets || Object.keys(roomLabs).length === 0) {
   }
 }
 
+// 6. Parse or Dynamically Generate Lab Sheets Summary from Sheet2 & Timetable_Final
+console.log('Generating dynamic Lab Sheets Summary from Sheet2 & Timetable_Final...');
+const rawLabSummary = [];
+const labSummaryMap = {};
+
+s2Rows.forEach(r => {
+  const short = (r.sub_short || '').trim();
+  const name = (r.Subject_Name || '').trim();
+  const branch = (r.Branch || '').trim();
+  const room = (r.Room_no || '').trim();
+  const labHrs = Number(r.Lab_Hours) || 0;
+  const freq = Number(r.Frequency) || 0;
+
+  if (labHrs > 0 || short.toUpperCase().includes('LAB') || short === '3DDA') {
+    if (!labSummaryMap[short]) {
+      const entry = {
+        sno: rawLabSummary.length + 1,
+        labName: name,
+        subShort: short,
+        rooms: new Set(),
+        branches: [],
+        required: 0,
+        labHours: labHrs || 2
+      };
+      labSummaryMap[short] = entry;
+      rawLabSummary.push(entry);
+    }
+    if (room) {
+      room.split(/[\n,]+/).map(s => s.trim()).filter(Boolean).forEach(rm => labSummaryMap[short].rooms.add(rm));
+    }
+    labSummaryMap[short].branches.push({ branch, freq, room });
+    labSummaryMap[short].required += freq;
+  }
+});
+
+const allottedByCourseAndBranch = {};
+const summaryLabCols = [2, 5, 8];
+let sumCurD = '', sumCurB = '';
+
+for (let r = 1; r < rowsFinal.length; r++) {
+  const row = rowsFinal[r];
+  if (row[0] && row[0].trim()) sumCurD = row[0].trim().toUpperCase();
+  if (row[1] && row[1].trim()) sumCurB = row[1].trim();
+  if (!dayNames.includes(sumCurD) || !sumCurB) continue;
+
+  summaryLabCols.forEach(c => {
+    const val = String(row[c] || '').trim();
+    if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
+    const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA') || val.toUpperCase().includes('PRACTICAL');
+    if (!isLab) return;
+
+    const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+    const subj = lines[0];
+
+    if (!allottedByCourseAndBranch[subj]) {
+      allottedByCourseAndBranch[subj] = {};
+    }
+    allottedByCourseAndBranch[subj][sumCurB] = (allottedByCourseAndBranch[subj][sumCurB] || 0) + 1;
+  });
+}
+
+const wsLabSummary = wb.Sheets['Lab Sheets Summary'];
+const sheetSummaryMap = {};
+if (wsLabSummary) {
+  const sheetSummaryRows = XLSX.utils.sheet_to_json(wsLabSummary, { defval: '' });
+  sheetSummaryRows.forEach(sr => {
+    const code = (sr['sub_short'] || '').trim();
+    if (code) {
+      sheetSummaryMap[code] = sr;
+    }
+  });
+}
+
+const labSummary = rawLabSummary.map(item => {
+  const sheetRow = sheetSummaryMap[item.subShort] || {};
+  const allottedCounts = allottedByCourseAndBranch[item.subShort] || {};
+  const totalAllotted = Object.values(allottedCounts).reduce((a, b) => a + b, 0);
+  const pending = Math.max(0, item.required - totalAllotted);
+  const extra = Math.max(0, totalAllotted - item.required);
+
+  const branchStatusList = item.branches.map(b => {
+    const allot = allottedCounts[b.branch] || 0;
+    const isDone = allot >= b.freq;
+    return {
+      branch: b.branch,
+      required: b.freq,
+      allotted: allot,
+      status: isDone ? 'ALLOTTED' : 'PENDING'
+    };
+  });
+
+  const branchSummaryText = branchStatusList.map(b => `${b.branch} (${b.allotted}/${b.required})`).join(', ');
+  const roomDisplay = (sheetRow['Room_no'] && sheetRow['Room_no'].trim()) || Array.from(item.rooms).join(', ');
+
+  return {
+    sno: item.sno,
+    labName: sheetRow['Lab Name'] || item.labName,
+    subShort: item.subShort,
+    roomNo: roomDisplay,
+    branches: branchSummaryText,
+    branchStatusList,
+    required: item.required,
+    allotted: totalAllotted,
+    pending,
+    extra,
+    labHours: item.labHours,
+    remarks: pending === 0 ? 'All allotted' : `Pending: ${pending}`
+  };
+});
+
+const labSummaryTotals = {
+  required: labSummary.reduce((acc, r) => acc + r.required, 0),
+  allotted: labSummary.reduce((acc, r) => acc + r.allotted, 0),
+  pending: labSummary.reduce((acc, r) => acc + r.pending, 0),
+  extra: labSummary.reduce((acc, r) => acc + r.extra, 0)
+};
+
 // Assemble labSheetsData with backwards-compatible root keys
 const labSheetsData = {
   roomLabs,
   consolidatedLabs,
   masterLabSchedule,
+  labSummary,
+  labSummaryTotals,
   ...roomLabs
 };
 
-console.log(`Dedicated lab rooms: ${Object.keys(roomLabs).length}, Consolidated course labs: ${Object.keys(consolidatedLabs).length}`);
+console.log(`Dedicated lab rooms: ${Object.keys(roomLabs).length}, Consolidated course labs: ${Object.keys(consolidatedLabs).length}, Lab Summary items: ${labSummary.length}`);
 
 // Write output (only counting faculty with assigned workload in facultyList)
 const output = {

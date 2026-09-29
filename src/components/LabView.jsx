@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { days, periodSlots } from '../data/mockData';
-import { FlaskConical, Clock, Layers, Users, Building, Table, BookOpen, Filter } from 'lucide-react';
+import { FlaskConical, Clock, Layers, Users, Building, Table, BookOpen, Filter, FileSpreadsheet, Search } from 'lucide-react';
 import initialData from '../data/initialData.json';
 
 export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick }) {
@@ -15,6 +15,19 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
 
   const masterLabSchedule = useMemo(() => {
     return labSheetsData.masterLabSchedule || initialData.labSheetsData?.masterLabSchedule || {};
+  }, [labSheetsData]);
+
+  const labSummary = useMemo(() => {
+    return labSheetsData.labSummary || initialData.labSheetsData?.labSummary || [];
+  }, [labSheetsData]);
+
+  const labSummaryTotals = useMemo(() => {
+    return labSheetsData.labSummaryTotals || initialData.labSheetsData?.labSummaryTotals || {
+      required: 112,
+      allotted: 112,
+      pending: 0,
+      extra: 0
+    };
   }, [labSheetsData]);
 
   // Course lab names
@@ -53,11 +66,25 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
     ];
   }, [masterLabSchedule]);
 
-  // View mode: 'course' | 'room' | 'master'
+  // View mode: 'course' | 'room' | 'master' | 'summary'
   const [viewMode, setViewMode] = useState('course');
   const [selectedCourse, setSelectedCourse] = useState(courseLabKeys[0] || 'Problem solving using C lab');
   const [selectedRoom, setSelectedRoom] = useState(roomLabKeys[0] || 'COMP. LAB-1');
   const [selectedBranch, setSelectedBranch] = useState('ALL');
+  const [summarySearch, setSummarySearch] = useState('');
+
+  // Filtered lab summary
+  const filteredLabSummary = useMemo(() => {
+    if (!summarySearch.trim()) return labSummary;
+    const q = summarySearch.toLowerCase().trim();
+    return labSummary.filter(item =>
+      (item.labName || '').toLowerCase().includes(q) ||
+      (item.subShort || '').toLowerCase().includes(q) ||
+      (item.roomNo || '').toLowerCase().includes(q) ||
+      (item.branches || '').toLowerCase().includes(q) ||
+      (item.remarks || '').toLowerCase().includes(q)
+    );
+  }, [labSummary, summarySearch]);
 
   // Time slot columns used in lab sheets (2-hour blocks)
   const labTimeSlots = [
@@ -121,7 +148,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
       {/* View Mode Switcher Pills */}
       <div className="no-print flex justify-center mb-5">
-        <div className="inline-flex p-1.5 bg-gray-200/80 rounded-xl border border-gray-300 shadow-sm gap-1.5">
+        <div className="inline-flex p-1.5 bg-gray-200/80 rounded-xl border border-gray-300 shadow-sm gap-1.5 flex-wrap justify-center">
           <button
             onClick={() => setViewMode('course')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all ${
@@ -154,12 +181,23 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
           >
             <Table className="w-4 h-4" /> Master Laboratory Timetable
           </button>
+
+          <button
+            onClick={() => setViewMode('summary')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all ${
+              viewMode === 'summary'
+                ? 'bg-purple-700 text-white shadow-md'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-white/60'
+            }`}
+          >
+            <FileSpreadsheet className="w-4 h-4" /> Lab Sheets Summary
+          </button>
         </div>
       </div>
 
       {/* Selectors Bar based on active viewMode */}
       <div className="no-print flex justify-center mb-6">
-        <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3 rounded-xl border border-gray-300 shadow-sm">
+        <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3 rounded-xl border border-gray-300 shadow-sm w-full max-w-2xl">
           {viewMode === 'course' && (
             <div className="flex items-center gap-2">
               <label htmlFor="course-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
@@ -220,6 +258,30 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
               </select>
             </div>
           )}
+
+          {viewMode === 'summary' && (
+            <div className="flex items-center gap-2 w-full max-w-lg">
+              <label htmlFor="summary-search" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5 whitespace-nowrap">
+                <Search className="w-4 h-4 text-purple-600" /> Filter:
+              </label>
+              <input
+                id="summary-search"
+                type="text"
+                placeholder="Search by lab name, code, room, branch..."
+                value={summarySearch}
+                onChange={(e) => setSummarySearch(e.target.value)}
+                className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-semibold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5"
+              />
+              {summarySearch && (
+                <button
+                  onClick={() => setSummarySearch('')}
+                  className="text-xs text-gray-500 hover:text-gray-800 font-bold px-2 py-1"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
 
@@ -230,8 +292,12 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
             <Clock className="w-5 h-5" />
           </div>
           <div>
-            <div className="text-xs text-gray-500 font-medium">Occupied Lab Sessions</div>
-            <div className="text-lg font-bold text-gray-900">{totalOccupiedSessions} Sessions (2 hrs each)</div>
+            <div className="text-xs text-gray-500 font-medium">
+              {viewMode === 'summary' ? 'Total Required Sessions' : 'Occupied Lab Sessions'}
+            </div>
+            <div className="text-lg font-bold text-gray-900">
+              {viewMode === 'summary' ? `${labSummaryTotals.required} Sessions Required` : `${totalOccupiedSessions} Sessions (2 hrs each)`}
+            </div>
           </div>
         </div>
 
@@ -240,8 +306,12 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
             <Layers className="w-5 h-5" />
           </div>
           <div>
-            <div className="text-xs text-gray-500 font-medium">Participating Branches</div>
-            <div className="text-lg font-bold text-gray-900">{activeBranchesSet.size} Branches Active</div>
+            <div className="text-xs text-gray-500 font-medium">
+              {viewMode === 'summary' ? 'Allotted Sessions Status' : 'Participating Branches'}
+            </div>
+            <div className="text-lg font-bold text-emerald-700">
+              {viewMode === 'summary' ? `${labSummaryTotals.allotted} Allotted (${labSummaryTotals.pending} Pending)` : `${activeBranchesSet.size} Branches Active`}
+            </div>
           </div>
         </div>
 
@@ -252,7 +322,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
           <div>
             <div className="text-xs text-gray-500 font-medium">Active Schedule Mode</div>
             <div className="text-lg font-bold text-emerald-700 capitalize">
-              {viewMode === 'course' ? 'Course Schedule' : viewMode === 'room' ? 'Room Allocation' : 'Master Lab Timetable'}
+              {viewMode === 'course' ? 'Course Schedule' : viewMode === 'room' ? 'Room Allocation' : viewMode === 'master' ? 'Master Lab Timetable' : 'Lab Sheets Summary'}
             </div>
           </div>
         </div>
@@ -602,6 +672,111 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* 4. VIEW MODE: LAB SHEETS SUMMARY */}
+      {viewMode === 'summary' && (
+        <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6">
+          <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
+            <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
+              {universityInfo.name}
+            </h2>
+            <h3 className="text-xs font-black text-purple-900 mt-1 uppercase font-mono">
+              LABORATORY SHEETS SUMMARY & ALLOTMENT REGISTER
+            </h3>
+            <p className="text-xs text-gray-500 mt-0.5 font-mono">
+              Academic Year {universityInfo.academicYear} | Total Lab Sessions Required: {labSummaryTotals.required} | Allotted: {labSummaryTotals.allotted} | Pending: {labSummaryTotals.pending}
+            </p>
+          </div>
+
+          <div className="w-full">
+            <table className="w-full text-xs text-left border-collapse table-fixed">
+              <thead>
+                <tr className="bg-gray-100 text-gray-900 font-extrabold border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                  <th className="py-2.5 px-1.5 text-center w-[3%] border-r border-gray-300">S.No</th>
+                  <th className="py-2.5 px-2.5 w-[20%] border-r border-gray-300">Lab Name</th>
+                  <th className="py-2.5 px-2 w-[9%] border-r border-gray-300">Code</th>
+                  <th className="py-2.5 px-2 w-[13%] border-r border-gray-300">Room_no</th>
+                  <th className="py-2.5 px-2.5 w-[26%] border-r border-gray-300">Branches</th>
+                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Required</th>
+                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Allotted</th>
+                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Pending</th>
+                  <th className="py-2.5 px-1 text-center w-[4%] border-r border-gray-300">Extra</th>
+                  <th className="py-2.5 px-1 text-center w-[4%] border-r border-gray-300">Lab_Hours</th>
+                  <th className="py-2.5 px-2 text-center w-[10%]">Remarks</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {filteredLabSummary.map((row) => (
+                  <tr key={row.sno} className="hover:bg-purple-50/40 transition-colors">
+                    <td className="py-2.5 px-1.5 text-center font-bold text-gray-500 border-r border-gray-200 align-top">
+                      {row.sno}
+                    </td>
+                    <td className="py-2.5 px-2.5 font-bold text-gray-900 border-r border-gray-200 align-top break-words whitespace-normal leading-snug">
+                      {row.labName}
+                    </td>
+                    <td className="py-2.5 px-2 font-mono font-bold text-purple-800 border-r border-gray-200 align-top break-words whitespace-normal">
+                      {row.subShort}
+                    </td>
+                    <td className="py-2.5 px-2 font-mono text-[11px] text-gray-700 border-r border-gray-200 align-top break-words whitespace-normal leading-tight">
+                      {row.roomNo}
+                    </td>
+                    <td className="py-2.5 px-2.5 text-[11px] text-gray-800 border-r border-gray-200 align-top break-words whitespace-normal leading-tight">
+                      {row.branches}
+                    </td>
+                    <td className="py-2.5 px-1.5 text-center font-black text-gray-900 border-r border-gray-200 align-top">
+                      {row.required}
+                    </td>
+                    <td className="py-2.5 px-1.5 text-center font-black text-emerald-700 border-r border-gray-200 align-top">
+                      {row.allotted}
+                    </td>
+                    <td className={`py-2.5 px-1.5 text-center font-black border-r border-gray-200 align-top ${row.pending > 0 ? 'text-amber-700' : 'text-emerald-700'}`}>
+                      {row.pending}
+                    </td>
+                    <td className="py-2.5 px-1 text-center text-gray-500 border-r border-gray-200 align-top">
+                      {row.extra}
+                    </td>
+                    <td className="py-2.5 px-1 text-center text-gray-600 border-r border-gray-200 align-top">
+                      {row.labHours}
+                    </td>
+                    <td className="py-2.5 px-2 text-center text-[10.5px] font-semibold align-top break-words whitespace-normal">
+                      <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold ${row.pending === 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}`}>
+                        {row.pending === 0 ? 'All allotted' : `Pending: ${row.pending}`}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+              <tfoot>
+                <tr className="bg-gray-100 border-t-2 border-slate-700 font-black text-gray-900 text-[11.5px]">
+                  <td colSpan={5} className="py-3 px-4 text-right uppercase tracking-wider border-r border-gray-300">
+                    Grand Total
+                  </td>
+                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-gray-900">
+                    {labSummaryTotals.required}
+                  </td>
+                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-emerald-700">
+                    {labSummaryTotals.allotted}
+                  </td>
+                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-emerald-700">
+                    {labSummaryTotals.pending}
+                  </td>
+                  <td className="py-3 px-1 text-center border-r border-gray-300 text-gray-600">
+                    {labSummaryTotals.extra}
+                  </td>
+                  <td className="py-3 px-1 text-center border-r border-gray-300 text-gray-400">
+                    —
+                  </td>
+                  <td className="py-3 px-2 text-center">
+                    <span className="inline-block px-2 py-0.5 rounded bg-emerald-700 text-white text-[10px] font-black uppercase tracking-wider">
+                      {labSummaryTotals.pending === 0 ? '100% Done' : `Pending: ${labSummaryTotals.pending}`}
+                    </span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
         </div>
       )}
     </div>

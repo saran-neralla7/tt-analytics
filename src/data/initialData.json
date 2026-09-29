@@ -8712,6 +8712,665 @@
         }
       }
     },
+    "labSummary": [
+      {
+        "sno": 1,
+        "labName": "3D Design and Animation",
+        "subShort": "3DDA",
+        "roomNo": "G-304, G-305, G-302, G-303, G-405",
+        "branches": "CSE-1 (1/1), CSE-2 (1/1), CSE(AI&ML)-1 (1/1), CSE(AI&ML)-2 (1/1), CSE (CS & DS) (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CSE-1",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE-2",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 5,
+        "allotted": 5,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 2,
+        "labName": "Engineering Physics lab",
+        "subShort": "ENGG. PHY. LAB",
+        "roomNo": "PHY LAB",
+        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "CSE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 10,
+        "allotted": 10,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 3,
+        "labName": "Problem solving using C lab",
+        "subShort": "PSUC LAB",
+        "roomNo": "COMP. LAB-1, COMP. LAB-2, C-208, COMP. LAB-3, A-301,302",
+        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2), ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CSE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-3",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "EEE",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CIVIL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CHEMICAL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 21,
+        "allotted": 21,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 4,
+        "labName": "AI Tools and Applications Lab",
+        "subShort": "AITA LAB",
+        "roomNo": "COMP. LAB-2, A-303,304, COMP. LAB-3, A-301,302, COMP. LAB-1",
+        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2), ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CSE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-3",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "EEE",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CIVIL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CHEMICAL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 21,
+        "allotted": 21,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 5,
+        "labName": "Fundamentals of Web Designing Lab",
+        "subShort": "FWD LAB",
+        "roomNo": "COMP. LAB-3",
+        "branches": "CSE-1 (2/2), CSE-2 (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "CSE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 4,
+        "allotted": 4,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 6,
+        "labName": "Foundations of Artificial Intelligence & Machine Learning Lab",
+        "subShort": "FAI & ML LAB",
+        "roomNo": "COMP. LAB-1, COMP. LAB-3",
+        "branches": "CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 4,
+        "allotted": 4,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 7,
+        "labName": "Foundations of Data Science Lab",
+        "subShort": "FDS LAB",
+        "roomNo": "COMP. LAB-3",
+        "branches": "CSE (CS & DS) (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 1,
+        "allotted": 1,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 8,
+        "labName": "Cyber Security Principles Lab",
+        "subShort": "CSP LAB",
+        "roomNo": "COMP. LAB-3",
+        "branches": "CSE (CS & DS) (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CSE (CS & DS)",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 1,
+        "allotted": 1,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 9,
+        "labName": "Engineering Chemistry Lab",
+        "subShort": "ENGG. CHEM LAB",
+        "roomNo": "CHEM. LAB.",
+        "branches": "ECE-1 (4/4), ECE-2 (4/4), ECE-3 (2/2), EEE (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "ECE-1",
+            "required": 4,
+            "allotted": 4,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-2",
+            "required": 4,
+            "allotted": 4,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-3",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "EEE",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 12,
+        "allotted": 12,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 10,
+        "labName": "Digital Logic Design Lab",
+        "subShort": "DLD LAB",
+        "roomNo": "A-406",
+        "branches": "ECE-1 (4/4), ECE-2 (4/4), ECE-3 (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "ECE-1",
+            "required": 4,
+            "allotted": 4,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-2",
+            "required": 4,
+            "allotted": 4,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-3",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 10,
+        "allotted": 10,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 11,
+        "labName": "Essential English Lab",
+        "subShort": "ESS. ENG. LAB",
+        "roomNo": "COMP. LAB-4",
+        "branches": "ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "ECE-1",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-2",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "ECE-3",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "EEE",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CIVIL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CHEMICAL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 11,
+        "allotted": 11,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 12,
+        "labName": "Chemistry Lab",
+        "subShort": "CHEM LAB",
+        "roomNo": "GVPCE CHEM. LAB.",
+        "branches": "MECH (2/2), CIVIL (1/1), MECH-ROBOTICS (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "MECH",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "CIVIL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 4,
+        "allotted": 4,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 13,
+        "labName": "Elements of Mechanical Engineering Lab",
+        "subShort": "EME LAB",
+        "roomNo": "GVPCE MECH. LAB",
+        "branches": "MECH (2/2), MECH-ROBOTICS (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "MECH",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 3,
+        "allotted": 3,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 14,
+        "labName": "Fundamentals of Electrical and Electronics Engineering Lab",
+        "subShort": "FEEE LAB",
+        "roomNo": "E-319",
+        "branches": "EEE (2/2)",
+        "branchStatusList": [
+          {
+            "branch": "EEE",
+            "required": 2,
+            "allotted": 2,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 2,
+        "allotted": 2,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 15,
+        "labName": "Surveying and Geomatics Lab",
+        "subShort": "S&G LAB",
+        "roomNo": "GVPCE SUR. LAB",
+        "branches": "CIVIL (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CIVIL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 1,
+        "allotted": 1,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 16,
+        "labName": "Physical and Analytical Chemistry Lab",
+        "subShort": "PAC LAB",
+        "roomNo": "GVPCE CHEM. LAB.",
+        "branches": "CHEMICAL (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CHEMICAL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 1,
+        "allotted": 1,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      },
+      {
+        "sno": 17,
+        "labName": "Principles of Chemical Engineering Lab",
+        "subShort": "PCE LAB",
+        "roomNo": "GVPCE CHEM. LAB.",
+        "branches": "CHEMICAL (1/1)",
+        "branchStatusList": [
+          {
+            "branch": "CHEMICAL",
+            "required": 1,
+            "allotted": 1,
+            "status": "ALLOTTED"
+          }
+        ],
+        "required": 1,
+        "allotted": 1,
+        "pending": 0,
+        "extra": 0,
+        "labHours": 2,
+        "remarks": "All allotted"
+      }
+    ],
+    "labSummaryTotals": {
+      "required": 112,
+      "allotted": 112,
+      "pending": 0,
+      "extra": 0
+    },
     "GVPCE CHEM. LAB.": {
       "schedule": {
         "MON": {
