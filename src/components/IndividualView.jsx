@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { days, periodSlots } from '../data/mockData';
-import { UserCheck, Clock, BookOpen, MapPin, Filter, Users, ChevronDown, ChevronUp, Layers } from 'lucide-react';
+import { UserCheck, Filter, Users, Table } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 
@@ -39,9 +39,20 @@ function has2HourFacultyMerge(daySched, idx) {
 }
 
 /**
- * Single Faculty Timetable Card (Reusable for both single view and all-faculty stacked view)
+ * Single Faculty Timetable Card
+ * - When showBreakdown is true (single faculty view), renders the Assigned Subjects Breakdown card.
+ * - When showBreakdown is false (all faculty view), renders ONLY the timetable grid.
  */
-function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlotClick, isMultiView = false, index = 1, totalCount = 1 }) {
+function FacultyTimetableCard({ 
+  facultyObj, 
+  timetableData, 
+  universityInfo, 
+  onSlotClick, 
+  showBreakdown = true,
+  isMultiView = false, 
+  index = 1, 
+  totalCount = 1 
+}) {
   const facFull = facultyObj.fullName;
   const facShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
   const facShortWithTitle = facultyObj.shortName?.trim();
@@ -90,8 +101,10 @@ function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlo
     return result;
   }, [facFull, facShort, facShortWithTitle, timetableData]);
 
-  // Parse course assignments with scheduled slots
+  // Parse course assignments with scheduled slots (only when breakdown is needed)
   const parsedAssignments = useMemo(() => {
+    if (!showBreakdown) return [];
+
     if (facultyObj.assignedCourses && facultyObj.assignedCourses.length > 0) {
       return facultyObj.assignedCourses.map(course => {
         const branch = course.branch;
@@ -202,19 +215,14 @@ function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlo
           scheduledSlots
         };
       });
-  }, [facultyObj, facultySchedule]);
+  }, [facultyObj, facultySchedule, showBreakdown]);
 
   // Compute workload metrics
   let totalHours = 0;
-  let totalLabs = 0;
-  const taughtSubjects = new Set();
-
   days.forEach(day => {
     Object.values(facultySchedule[day] || {}).forEach(items => {
-      items.forEach(cell => {
+      items.forEach(() => {
         totalHours += 1;
-        if (cell.isLab) totalLabs += 1;
-        if (cell.subject) taughtSubjects.add(cell.subject);
       });
     });
   });
@@ -222,7 +230,7 @@ function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlo
   return (
     <div 
       id={`faculty-${facShort || facultyObj.sno}`}
-      className={`w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 faculty-print-page transition-all`}
+      className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 faculty-print-page transition-all"
     >
       {/* Faculty Card Header Banner */}
       <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
@@ -545,110 +553,112 @@ function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlo
         </table>
       </div>
 
-      {/* Assigned Subjects & Master Workload Breakdown */}
-      <div className="bg-slate-50 border-t-2 border-slate-700">
-        <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-blue-400" />
-            <h4 className="text-xs font-bold tracking-wide uppercase font-serif">
-              Assigned Subjects & Workload Breakdown ({facFull})
-            </h4>
+      {/* Assigned Subjects & Workload Breakdown: SHOWN ONLY WHEN SINGLE FACULTY IS SELECTED */}
+      {showBreakdown && (
+        <div className="bg-slate-50 border-t-2 border-slate-700">
+          <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <Table className="w-4 h-4 text-blue-400" />
+              <h4 className="text-xs font-bold tracking-wide uppercase font-serif">
+                Assigned Subjects & Workload Breakdown ({facFull})
+              </h4>
+            </div>
+            <div className="flex items-center gap-2 text-xs font-semibold">
+              <span className="bg-blue-600 text-white px-2.5 py-0.5 rounded text-[11px]">
+                Theory: {facultyObj.theoryLoad || 0} Hrs
+              </span>
+              <span className="bg-purple-600 text-white px-2.5 py-0.5 rounded text-[11px]">
+                Lab: {facultyObj.labLoad || 0} Hrs
+              </span>
+              <span className="bg-amber-600 text-white px-2.5 py-0.5 rounded text-[11px]">
+                Tut: {facultyObj.tutLoad || 0} Hrs
+              </span>
+              <span className="bg-emerald-600 text-white px-2.5 py-0.5 rounded text-[11px] font-bold">
+                Total: {facultyObj.totalLoad || totalHours} Hrs/Wk
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-xs font-semibold">
-            <span className="bg-blue-600/90 text-white px-2 py-0.5 rounded text-[11px]">
-              Theory: {facultyObj.theoryLoad || 0} Hrs
-            </span>
-            <span className="bg-purple-600/90 text-white px-2 py-0.5 rounded text-[11px]">
-              Lab: {facultyObj.labLoad || 0} Hrs
-            </span>
-            <span className="bg-amber-600/90 text-white px-2 py-0.5 rounded text-[11px]">
-              Tut: {facultyObj.tutLoad || 0} Hrs
-            </span>
-            <span className="bg-emerald-600 text-white px-2.5 py-0.5 rounded text-[11px] font-bold">
-              Total: {facultyObj.totalLoad || totalHours} Hrs/Wk
-            </span>
-          </div>
-        </div>
 
-        <div className="p-4 sm:p-5">
-          {parsedAssignments.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-              {parsedAssignments.map((asgn, idx) => (
-                <div
-                  key={idx}
-                  className="p-3.5 rounded-lg border border-slate-300 bg-white hover:border-blue-400 transition-all shadow-xs flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center justify-between gap-2 mb-1.5">
-                      <span className="px-2 py-0.5 rounded font-black text-[11px] bg-slate-800 text-white tracking-wider">
-                        {asgn.branch}
-                      </span>
-                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                        asgn.isLab 
-                          ? 'bg-purple-100 text-purple-800 border border-purple-300' 
-                          : asgn.isTutorial 
-                          ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                          : 'bg-blue-100 text-blue-800 border border-blue-300'
-                      }`}>
-                        {asgn.isLab ? 'Laboratory' : asgn.isTutorial ? 'Tutorial' : 'Theory'}
-                      </span>
+          <div className="p-4 sm:p-5">
+            {parsedAssignments.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                {parsedAssignments.map((asgn, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-lg border border-slate-300 bg-white hover:border-blue-400 transition-all shadow-xs flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="px-2 py-0.5 rounded font-black text-[11px] bg-slate-800 text-white tracking-wider">
+                          {asgn.branch}
+                        </span>
+                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                          asgn.isLab 
+                            ? 'bg-purple-100 text-purple-800 border border-purple-300' 
+                            : asgn.isTutorial 
+                            ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                            : 'bg-blue-100 text-blue-800 border border-blue-300'
+                        }`}>
+                          {asgn.isLab ? 'Laboratory' : asgn.isTutorial ? 'Tutorial' : 'Theory'}
+                        </span>
+                      </div>
+
+                      <div className="font-bold text-slate-900 text-xs sm:text-sm leading-snug">
+                        {asgn.name || asgn.code}
+                      </div>
+
+                      {asgn.code && asgn.code !== asgn.name && (
+                        <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
+                          Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
+                        </div>
+                      )}
+
+                      {asgn.room && (
+                        <div className="text-[11px] font-semibold text-slate-600 mt-0.5">
+                          Assigned Room: <span className="font-mono text-slate-800 font-bold">{asgn.room}</span>
+                        </div>
+                      )}
+
+                      <div className="text-[11px] font-medium text-slate-600 mt-1">
+                        Load: <span className="font-bold text-slate-800">{asgn.loadDetail || `${asgn.periods} periods`}</span>
+                      </div>
                     </div>
 
-                    <div className="font-bold text-slate-900 text-xs sm:text-sm leading-snug">
-                      {asgn.name || asgn.code}
-                    </div>
-
-                    {asgn.code && asgn.code !== asgn.name && (
-                      <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
-                        Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
+                    <div className="mt-3 pt-2.5 border-t border-slate-200">
+                      <div className="text-[10px] uppercase font-bold text-slate-500 mb-1 flex items-center justify-between">
+                        <span>Timetable Slots:</span>
+                        <span className="text-emerald-700 font-bold">
+                          {asgn.scheduledSlots.length} Active {asgn.scheduledSlots.length === 1 ? 'Slot' : 'Slots'}
+                        </span>
                       </div>
-                    )}
-
-                    {asgn.room && (
-                      <div className="text-[11px] font-semibold text-slate-600 mt-0.5">
-                        Assigned Room: <span className="font-mono text-slate-800 font-bold">{asgn.room}</span>
-                      </div>
-                    )}
-
-                    <div className="text-[11px] font-medium text-slate-600 mt-1">
-                      Load: <span className="font-bold text-slate-800">{asgn.loadDetail || `${asgn.periods} periods`}</span>
+                      {asgn.scheduledSlots.length > 0 ? (
+                        <div className="flex flex-wrap gap-1.5">
+                          {asgn.scheduledSlots.map((s, sIdx) => (
+                            <span
+                              key={sIdx}
+                              className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 font-mono"
+                            >
+                              {s.day} {s.slot} {s.room ? `• ${s.room}` : ''}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <span className="text-[10.5px] italic text-slate-400">
+                          Pre-assigned in master workload
+                        </span>
+                      )}
                     </div>
                   </div>
-
-                  <div className="mt-3 pt-2.5 border-t border-slate-200">
-                    <div className="text-[10px] uppercase font-bold text-slate-500 mb-1 flex items-center justify-between">
-                      <span>Timetable Slots:</span>
-                      <span className="text-emerald-700 font-bold">
-                        {asgn.scheduledSlots.length} Active {asgn.scheduledSlots.length === 1 ? 'Slot' : 'Slots'}
-                      </span>
-                    </div>
-                    {asgn.scheduledSlots.length > 0 ? (
-                      <div className="flex flex-wrap gap-1.5">
-                        {asgn.scheduledSlots.map((s, sIdx) => (
-                          <span
-                            key={sIdx}
-                            className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 font-mono"
-                          >
-                            {s.day} {s.slot} {s.room ? `• ${s.room}` : ''}
-                          </span>
-                        ))}
-                      </div>
-                    ) : (
-                      <span className="text-[10.5px] italic text-slate-400">
-                        Pre-assigned in master workload
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-4 text-slate-500 text-xs italic">
-              No specific course assignments recorded in the Master Workload Summary for this faculty.
-            </div>
-          )}
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-4 text-slate-500 text-xs italic">
+                No specific course assignments recorded in the Master Workload Summary for this faculty.
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -689,14 +699,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   // Faculty selection state ('ALL' or faculty fullName)
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
-  // State to toggle full multi-department table if user wants to see all rows
-  const [showAllDeptsTable, setShowAllDeptsTable] = useState(false);
-
   // When department changes, update selected faculty
   const handleDeptChange = (newDept) => {
     setSelectedDept(newDept);
-    // If 'ALL' was selected, keep 'ALL'
-    // If a specific faculty was selected, check if they exist in newDept, otherwise default to 'ALL'
     if (selectedFaculty !== 'ALL') {
       const newFiltered = newDept === 'ALL'
         ? facultyMembers
@@ -742,15 +747,10 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     };
   };
 
-  // Active department stats row (or All Departments)
+  // Active department stats row
   const activeDeptStats = useMemo(() => {
     return computeDeptStats(selectedDept);
   }, [facultyMembers, selectedDept]);
-
-  // All individual department stats for the full table view
-  const allDeptStatsList = useMemo(() => {
-    return departments.filter(d => d !== 'ALL').map(d => computeDeptStats(d));
-  }, [departments, facultyMembers]);
 
   // Currently selected faculty object if single view
   const currentFacultyObj = useMemo(() => {
@@ -815,148 +815,165 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         </div>
       </div>
 
-      {/* DEPARTMENT WORKLOAD STATISTICS ROW (Matching Google Sheets Department_Workload_Summary) */}
-      <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card mb-6">
-        <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
-          <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded font-black text-xs bg-blue-600 text-white tracking-wider">
-              DEPARTMENT STATISTICS
-            </span>
-            <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
-              Workload Summary • <span className="text-blue-300 underline decoration-blue-400">{activeDeptStats.department}</span>
-            </h3>
-          </div>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setShowAllDeptsTable(!showAllDeptsTable)}
-              className="no-print text-xs font-bold text-slate-200 hover:text-white bg-slate-700 hover:bg-slate-600 px-2.5 py-1 rounded transition-colors flex items-center gap-1"
-            >
-              {showAllDeptsTable ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-              {showAllDeptsTable ? 'Hide All Departments' : 'View All Departments'}
-            </button>
-          </div>
-        </div>
+      {/* DEPARTMENT WORKLOAD STATISTICS & FACULTY TABLE - ONLY SHOWN WHEN A SPECIFIC DEPARTMENT IS SELECTED */}
+      {selectedDept !== 'ALL' && (
+        <div className="space-y-6 mb-6">
+          {/* 1. Department Summary Row with Big Bold Numbers */}
+          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+            <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
+              <div className="flex items-center gap-2">
+                <span className="px-2.5 py-0.5 rounded font-black text-xs bg-blue-600 text-white tracking-wider">
+                  STATISTICS
+                </span>
+                <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
+                  Workload Summary • <span className="text-blue-300 underline decoration-blue-400">{selectedDept}</span>
+                </h3>
+              </div>
+              <span className="text-[11px] text-slate-300 font-mono">
+                Faculty Count: <span className="font-bold text-white">{activeDeptStats.facultyCount}</span>
+              </span>
+            </div>
 
-        {/* The Exact Row Displayed with Basic Numbers, Bold and Big Font Size */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px]">
-            <thead>
-              <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
-                <th className="py-2.5 px-3 border-r border-gray-300 text-left w-36">Department</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-24">Faculty Count</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-20">Professor</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-28">Associate Professor</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-28">Assistant Professor</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-16">Other</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-blue-50/60 text-blue-950">Theory Workload</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-purple-50/60 text-purple-950">Lab Workload</th>
-                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-amber-50/60 text-amber-950">Tutorial Workload</th>
-                <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950">Total Workload</th>
-              </tr>
-            </thead>
-            <tbody>
-              {/* Highlighted Row for Selected Department */}
-              <tr className="border-b-2 border-slate-700 bg-white hover:bg-slate-50 transition-colors">
-                <td className="py-4 px-3 text-left font-black text-sm sm:text-base text-slate-900 border-r border-gray-300 font-serif">
-                  {activeDeptStats.department}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-900 border-r border-gray-300 font-mono">
-                  {activeDeptStats.facultyCount}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
-                  {activeDeptStats.prof}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
-                  {activeDeptStats.assoc}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
-                  {activeDeptStats.asst}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-400 border-r border-gray-300 font-mono">
-                  {activeDeptStats.other}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-700 bg-blue-50/40 border-r border-gray-300 font-mono">
-                  {activeDeptStats.theoryWorkload}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-purple-700 bg-purple-50/40 border-r border-gray-300 font-mono">
-                  {activeDeptStats.labWorkload}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-amber-700 bg-amber-50/40 border-r border-gray-300 font-mono">
-                  {activeDeptStats.tutorialWorkload}
-                </td>
-                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-emerald-700 bg-emerald-50/40 font-mono">
-                  {activeDeptStats.totalWorkload}
-                </td>
-              </tr>
-
-              {/* Optional Expanded View of All Departments */}
-              {showAllDeptsTable && allDeptStatsList.map((dStat, idx) => (
-                <tr 
-                  key={dStat.department} 
-                  className={`border-b border-gray-200 transition-colors ${
-                    dStat.department === selectedDept ? 'bg-amber-50/60 font-bold' : idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'
-                  }`}
-                >
-                  <td className="py-2.5 px-3 text-left font-bold text-xs text-slate-800 border-r border-gray-200">
-                    {dStat.department}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-slate-800 border-r border-gray-200 font-mono">
-                    {dStat.facultyCount}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
-                    {dStat.prof}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
-                    {dStat.assoc}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
-                    {dStat.asst}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-slate-400 border-r border-gray-200 font-mono">
-                    {dStat.other}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-blue-800 border-r border-gray-200 font-mono">
-                    {dStat.theoryWorkload}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-purple-800 border-r border-gray-200 font-mono">
-                    {dStat.labWorkload}
-                  </td>
-                  <td className="py-2.5 px-3 font-bold text-sm text-amber-800 border-r border-gray-200 font-mono">
-                    {dStat.tutorialWorkload}
-                  </td>
-                  <td className="py-2.5 px-3 font-black text-sm text-emerald-800 font-mono">
-                    {dStat.totalWorkload}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* QUICK JUMP NAVIGATION BAR FOR ALL FACULTY VIEW */}
-      {selectedFaculty === 'ALL' && filteredFacultyList.length > 1 && (
-        <div className="no-print bg-white p-3.5 rounded-xl border border-gray-300 shadow-sm mb-6">
-          <div className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-            <Users className="w-3.5 h-3.5 text-blue-600" />
-            Showing All {filteredFacultyList.length} Faculty Members ({selectedDept === 'ALL' ? 'All Departments' : selectedDept}) • Quick Jump:
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px]">
+                <thead>
+                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-36">Department</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-24">Faculty Count</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-20">Professor</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-28">Associate Professor</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-28">Assistant Professor</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-16">Other</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-blue-50/60 text-blue-950 font-black">Theory Workload</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-amber-50/60 text-amber-950 font-black">Tutorial Workload</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-purple-50/60 text-purple-950 font-black">Lab Workload</th>
+                    <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950 font-black">Total Workload</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b-2 border-slate-700 bg-white">
+                    <td className="py-4 px-3 text-left font-black text-sm sm:text-base text-slate-900 border-r border-gray-300 font-serif">
+                      {activeDeptStats.department}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-900 border-r border-gray-300 font-mono">
+                      {activeDeptStats.facultyCount}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                      {activeDeptStats.prof}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                      {activeDeptStats.assoc}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                      {activeDeptStats.asst}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-400 border-r border-gray-300 font-mono">
+                      {activeDeptStats.other}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-700 bg-blue-50/40 border-r border-gray-300 font-mono">
+                      {activeDeptStats.theoryWorkload}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-amber-700 bg-amber-50/40 border-r border-gray-300 font-mono">
+                      {activeDeptStats.tutorialWorkload}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-purple-700 bg-purple-50/40 border-r border-gray-300 font-mono">
+                      {activeDeptStats.labWorkload}
+                    </td>
+                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-emerald-700 bg-emerald-50/40 font-mono">
+                      {activeDeptStats.totalWorkload}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {filteredFacultyList.map((f, fIdx) => {
-              const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
-              return (
-                <button
-                  key={f.fullName}
-                  onClick={() => {
-                    const el = document.getElementById(`faculty-${cleanShort || f.sno}`);
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="px-2.5 py-1 rounded text-xs font-bold bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-800 border border-slate-300 transition-all cursor-pointer"
-                >
-                  {f.fullName} {cleanShort ? `(${cleanShort})` : ''}
-                </button>
-              );
-            })}
+
+          {/* 2. Department Faculty Table: S.No, Name of the Faculty, Designation, Theory, Tutorial, Lab, Total Workload */}
+          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+            <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4 text-blue-400" />
+                <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
+                  Faculty Workload Distribution • {selectedDept} Department ({filteredFacultyList.length} Faculty)
+                </h3>
+              </div>
+              <span className="text-[11px] text-slate-300 font-mono">
+                Click a faculty to view timetable
+              </span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs text-center border-collapse table-fixed min-w-[850px]">
+                <thead>
+                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-16 text-center">S.No</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-64">Name of the Faculty</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-48">Designation</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-24 bg-blue-50/60 text-blue-950 font-black">Theory</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-24 bg-amber-50/60 text-amber-950 font-black">Tutorial</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-24 bg-purple-50/60 text-purple-950 font-black">Lab</th>
+                    <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950 font-black">Total Workload</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  {filteredFacultyList.map((f, idx) => {
+                    const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+                    const isSelected = selectedFaculty === f.fullName;
+                    return (
+                      <tr
+                        key={f.fullName}
+                        onClick={() => setSelectedFaculty(f.fullName)}
+                        className={`border-b border-gray-200 transition-colors cursor-pointer ${
+                          isSelected ? 'bg-blue-100/90 font-bold' : idx % 2 === 0 ? 'bg-white hover:bg-slate-100/80' : 'bg-gray-50/60 hover:bg-slate-100/80'
+                        }`}
+                        title="Click to select this faculty member"
+                      >
+                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono text-center text-slate-600 font-bold">
+                          {idx + 1}
+                        </td>
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left font-bold text-slate-900">
+                          {f.fullName} {cleanShort && <span className="text-blue-700 font-mono font-bold">({cleanShort})</span>}
+                        </td>
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left text-slate-700 font-medium">
+                          {f.designation || 'Assistant Professor'}
+                        </td>
+                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono font-bold text-blue-800 text-sm">
+                          {f.theoryLoad || 0}
+                        </td>
+                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono font-bold text-amber-800 text-sm">
+                          {f.tutLoad || 0}
+                        </td>
+                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono font-bold text-purple-800 text-sm">
+                          {f.labLoad || 0}
+                        </td>
+                        <td className="py-2.5 px-3 font-mono font-black text-emerald-800 text-base">
+                          {f.totalLoad || 0}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+                <tfoot>
+                  <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900">
+                    <td colSpan={3} className="py-3 px-3 text-right uppercase tracking-wider text-xs border-r border-gray-300">
+                      Total ({filteredFacultyList.length} Faculty):
+                    </td>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-blue-900">
+                      {activeDeptStats.theoryWorkload}
+                    </td>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-amber-900">
+                      {activeDeptStats.tutorialWorkload}
+                    </td>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-purple-900">
+                      {activeDeptStats.labWorkload}
+                    </td>
+                    <td className="py-3 px-3 font-mono text-lg text-emerald-900">
+                      {activeDeptStats.totalWorkload}
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
           </div>
         </div>
       )}
@@ -971,6 +988,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               timetableData={timetableData}
               universityInfo={universityInfo}
               onSlotClick={onSlotClick}
+              showBreakdown={false}
               isMultiView={true}
               index={idx + 1}
               totalCount={filteredFacultyList.length}
@@ -983,6 +1001,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           timetableData={timetableData}
           universityInfo={universityInfo}
           onSlotClick={onSlotClick}
+          showBreakdown={true}
           isMultiView={false}
         />
       ) : (
