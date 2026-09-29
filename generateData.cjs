@@ -1,12 +1,11 @@
 /**
- * Regenerates initialData.json from the Excel file, correctly handling:
- * - Timetable_Master as authoritative college schedule
- * - Timetable_Final for tutorial splits
- * - Timetable_Labs_Rearrange for master laboratory timetable
+ * Regenerates initialData.json from the Excel file:
+ * - Timetable_Final is the PRIMARY AUTHORITATIVE source of truth for branch timetables & faculty individual timetables
+ * - Pre-computes masterFacultyTimetables directly from Timetable_Final
+ * - Reconciles any multi-faculty lab teams from branch legends & Faculty_Workload_Summary
  * - 6 Consolidated course lab sheets and 19 dedicated room lab sheets
+ * - Timetable_Labs_Rearrange for master laboratory timetable
  * - Strict token-based faculty matching (preventing false matches like SP in SPORTS, GS in GSK, DM in DMVP)
- * - Pre-computed masterFacultyTimetables for all 77 faculty members
- * - Preserving horizontal 2-hour lab merges and parallel batch continuations
  */
 const XLSX = require('./node_modules/xlsx');
 const fs = require('fs');
@@ -118,7 +117,6 @@ function matchFacultyInText(text) {
 
   const matched = new Set();
   lines.forEach((line) => {
-    // Remove titles first
     const cleanLine = line.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/gi, ' ').replace(/[\(\),\/]/g, ' ');
     const tokens = cleanLine.split(/\s+/).filter(Boolean);
     tokens.forEach(tok => {
@@ -268,239 +266,67 @@ knownBranches.forEach(b => {
 });
 console.log(`Branch legends parsed for: ${Object.keys(branchLegends).length} branches`);
 
-// 3. Parse Branch Sheets into timetableData
+// 3. Parse Timetable_Final into timetableData (authoritative sheet for branch schedules)
+const wsFinal = wb.Sheets['Timetable_Final'] || wb.Sheets['Timetable_Master'];
+const rowsFinal = XLSX.utils.sheet_to_json(wsFinal, { header: 1, defval: '' });
+
 const timetableData = {};
+knownBranches.forEach(b => {
+  timetableData[b] = {};
+  dayNames.forEach(d => timetableData[b][d] = {});
+});
 
-for (const branch of knownBranches) {
-  if (!wb.SheetNames.includes(branch)) {
-    console.log(`SKIP: ${branch} not in workbook`);
-    continue;
-  }
-  
-  const ws = wb.Sheets[branch];
-  const rawData = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '', raw: false });
-  const merges = ws['!merges'] || [];
-  
-  let headerRow = -1;
-  for (let r = 0; r < 15; r++) {
-    const row = rawData[r];
-    if (row && row.some(cell => typeof cell === 'string' && cell.trim().toUpperCase() === 'DAY')) {
-      headerRow = r;
-      break;
+const slotCols = [
+  { slot: '09:00-10:00', nextSlot: '10:00-11:00', c: 2 },
+  { slot: '10:00-11:00', nextSlot: null, c: 3 },
+  { slot: '11:15-12:15', nextSlot: '12:15-01:15', c: 5 },
+  { slot: '12:15-01:15', nextSlot: null, c: 6 },
+  { slot: '02:15-03:15', nextSlot: '03:15-04:15', c: 8 },
+  { slot: '03:15-04:15', nextSlot: null, c: 9 }
+];
+
+const branchSessionsMap = {}; // branch -> day -> slot -> array of sessions
+
+let curDay = '', curBranch = '';
+for (let r = 1; r < rowsFinal.length; r++) {
+  const row = rowsFinal[r];
+  if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
+  if (row[1] && row[1].trim()) curBranch = row[1].trim();
+  if (!dayNames.includes(curDay) || !curBranch || !timetableData[curBranch]) continue;
+
+  if (!branchSessionsMap[curBranch]) branchSessionsMap[curBranch] = {};
+  if (!branchSessionsMap[curBranch][curDay]) branchSessionsMap[curBranch][curDay] = {};
+
+  slotCols.forEach(({ slot, nextSlot, c }) => {
+    const val = String(row[c] || '').trim();
+    if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
+
+    const parsed = parseCellContent(val);
+    if (!parsed) return;
+
+    if (!timetableData[curBranch][curDay][slot]) {
+      timetableData[curBranch][curDay][slot] = [];
     }
-  }
-  if (headerRow === -1) { console.log(`SKIP: ${branch} - no header`); continue; }
+    timetableData[curBranch][curDay][slot].push(parsed);
 
-  const header = rawData[headerRow];
-  const slotCols = {};
-  for (let c = 0; c < header.length; c++) {
-    const h = (header[c] || '').toString().trim();
-    if (timeSlots.includes(h)) {
-      slotCols[h] = c;
+    if (!branchSessionsMap[curBranch][curDay][slot]) {
+      branchSessionsMap[curBranch][curDay][slot] = [];
     }
-  }
+    branchSessionsMap[curBranch][curDay][slot].push({ ...parsed, nextSlot, raw: val });
 
-  let dataEndRow = rawData.length;
-  for (let r = headerRow + 1; r < rawData.length; r++) {
-    const row = rawData[r];
-    if (!row) continue;
-    for (let c = 0; c < Math.min(row.length, 10); c++) {
-      const val = (row[c] || '').toString().trim();
-      if (val === 'Subject Name' || val === 'S.NO' || val === 'S. NO' ||
-          val === 'Timetable Incharge' || val === 'Short Form') {
-        dataEndRow = r;
-        break;
+    // Handle horizontal 2-hour lab span
+    if (parsed.isLab && nextSlot) {
+      if (!timetableData[curBranch][curDay][nextSlot]) {
+        timetableData[curBranch][curDay][nextSlot] = [];
       }
+      timetableData[curBranch][curDay][nextSlot].push({ ...parsed, isContinued: true });
     }
-    if (dataEndRow !== rawData.length) break;
-  }
-
-  const mergeContinuations = new Set();
-  const mergeMap = {};
-  
-  for (const m of merges) {
-    for (let r = m.s.r; r <= m.e.r; r++) {
-      for (let c = m.s.c; c <= m.e.c; c++) {
-        if (r !== m.s.r || c !== m.s.c) {
-          mergeContinuations.add(`${r},${c}`);
-        }
-      }
-    }
-    mergeMap[`${m.s.r},${m.s.c}`] = m;
-  }
-
-  timetableData[branch] = {};
-  let currentDay = '';
-  
-  for (let r = headerRow + 1; r < dataEndRow; r++) {
-    const row = rawData[r];
-    if (!row || row.every(c => !c || c.toString().trim() === '')) continue;
-
-    const dayCell = (row[0] || '').toString().trim().toUpperCase();
-    if (dayNames.includes(dayCell)) {
-      currentDay = dayCell;
-    }
-    if (!currentDay) continue;
-    if (!timetableData[branch][currentDay]) timetableData[branch][currentDay] = {};
-
-    for (const [slot, col] of Object.entries(slotCols)) {
-      const key = `${r},${col}`;
-      if (mergeContinuations.has(key)) continue;
-      
-      const cellValue = (row[col] || '').toString().trim();
-      if (!cellValue || cellValue.toUpperCase() === 'BREAK' || cellValue.toUpperCase() === 'LUNCH') continue;
-
-      const parsed = parseCellContent(cellValue);
-      if (!parsed) continue;
-
-      if (!timetableData[branch][currentDay][slot]) {
-        timetableData[branch][currentDay][slot] = [];
-      }
-      timetableData[branch][currentDay][slot].push(parsed);
-
-      const merge = mergeMap[key];
-      if (merge && merge.e.c > merge.s.c) {
-        for (const [nextSlot, nextCol] of Object.entries(slotCols)) {
-          if (nextCol > col && nextCol <= merge.e.c) {
-            if (!timetableData[branch][currentDay][nextSlot]) {
-              timetableData[branch][currentDay][nextSlot] = [];
-            }
-            timetableData[branch][currentDay][nextSlot].push({ ...parsed, isContinued: true });
-          }
-        }
-      }
-    }
-  }
+  });
 }
 
-// 4. Fill gaps and sync parallel continuation rows from Timetable_Master
-const wsMaster = wb.Sheets['Timetable_Master'];
-if (wsMaster) {
-  const masterRows = XLSX.utils.sheet_to_json(wsMaster, { header: 1, defval: '' });
-  let mHeaderRow = -1;
-  for (let r = 0; r < 10; r++) {
-    if (masterRows[r] && masterRows[r].some(c => String(c).toUpperCase().includes('DAY'))) {
-      mHeaderRow = r;
-      break;
-    }
-  }
+console.log(`Parsed timetableData for ${Object.keys(timetableData).length} branches from Timetable_Final`);
 
-  if (mHeaderRow !== -1) {
-    const mHeader = masterRows[mHeaderRow];
-    const mSlotCols = {};
-    mHeader.forEach((h, c) => {
-      const hs = String(h || '').trim();
-      timeSlots.forEach(ts => {
-        if (hs.includes(ts)) mSlotCols[ts] = c;
-      });
-    });
-
-    let curDay = '', curBranch = '';
-    for (let r = mHeaderRow + 1; r < masterRows.length; r++) {
-      const row = masterRows[r];
-      if (!row) continue;
-      const dCell = String(row[0] || '').trim().toUpperCase();
-      const bCell = String(row[1] || '').trim().toUpperCase();
-      if (dayNames.includes(dCell)) curDay = dCell;
-      const matchedB = knownBranches.find(b => b.toUpperCase() === bCell);
-      if (matchedB) curBranch = matchedB;
-      if (!curDay || !curBranch || !timetableData[curBranch]) continue;
-      if (!timetableData[curBranch][curDay]) timetableData[curBranch][curDay] = {};
-
-      for (const [slot, col] of Object.entries(mSlotCols)) {
-        const val = String(row[col] || '').trim();
-        if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) continue;
-
-        const parsed = parseCellContent(val);
-        if (!parsed) continue;
-
-        if (!timetableData[curBranch][curDay][slot]) {
-          timetableData[curBranch][curDay][slot] = [];
-        }
-
-        // If slot is empty or parallel session not yet added
-        const currentList = timetableData[curBranch][curDay][slot];
-        const alreadyExists = currentList.some(s => {
-          const s1 = normSubj(s.subject);
-          const s2 = normSubj(parsed.subject);
-          return s1 === s2 || s1.includes(s2) || s2.includes(s1);
-        });
-
-        if (!alreadyExists) {
-          currentList.push(parsed);
-          // If lab, also add continuation
-          if (parsed.isLab && labNextSlot[slot]) {
-            if (!timetableData[curBranch][curDay][labNextSlot[slot]]) {
-              timetableData[curBranch][curDay][labNextSlot[slot]] = [];
-            }
-            timetableData[curBranch][curDay][labNextSlot[slot]].push({ ...parsed, isContinued: true });
-          }
-        }
-      }
-    }
-  }
-}
-
-// 5. Reconcile tutorial splits from Timetable_Final
-const wsFinal = wb.Sheets['Timetable_Final'];
-if (wsFinal) {
-  const finalRows = XLSX.utils.sheet_to_json(wsFinal, { header: 1, defval: '' });
-  let fHeaderRow = -1;
-  for (let r = 0; r < 10; r++) {
-    if (finalRows[r] && finalRows[r].some(c => String(c).toUpperCase().includes('DAY'))) {
-      fHeaderRow = r;
-      break;
-    }
-  }
-
-  if (fHeaderRow !== -1) {
-    const fHeader = finalRows[fHeaderRow];
-    const fSlotCols = {};
-    fHeader.forEach((h, c) => {
-      const hs = String(h || '').trim();
-      timeSlots.forEach(ts => {
-        if (hs.includes(ts)) fSlotCols[ts] = c;
-      });
-    });
-
-    let curDay = '', curBranch = '';
-    for (let r = fHeaderRow + 1; r < finalRows.length; r++) {
-      const row = finalRows[r];
-      if (!row) continue;
-      const dCell = String(row[0] || '').trim().toUpperCase();
-      const bCell = String(row[1] || '').trim().toUpperCase();
-      if (dayNames.includes(dCell)) curDay = dCell;
-      const matchedB = knownBranches.find(b => b.toUpperCase() === bCell);
-      if (matchedB) curBranch = matchedB;
-      if (!curDay || !curBranch || !timetableData[curBranch] || !timetableData[curBranch][curDay]) continue;
-
-      for (const [slot, col] of Object.entries(fSlotCols)) {
-        const val = String(row[col] || '').trim();
-        if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) continue;
-
-        const facs = matchFacultyInText(val);
-        if (facs.length === 0) continue;
-
-        const sessions = timetableData[curBranch][curDay][slot] || [];
-        const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
-        const cellSubj = normSubj(lines[0] || '');
-
-        sessions.forEach(sess => {
-          const sSubj = normSubj(sess.subject);
-          if (sSubj === cellSubj || sSubj.includes(cellSubj) || cellSubj.includes(sSubj)) {
-            const curFacs = sess.faculty ? sess.faculty.split(', ').map(x => x.trim()) : [];
-            facs.forEach(f => {
-              if (!curFacs.includes(f)) curFacs.push(f);
-            });
-            sess.faculty = curFacs.join(', ');
-          }
-        });
-      }
-    }
-  }
-}
-
-// 6. Pre-compute masterFacultyTimetables for all 77 faculty
+// 4. Pre-compute masterFacultyTimetables directly from Timetable_Final
 const masterFacultyTimetables = {};
 facultyList.forEach(f => {
   masterFacultyTimetables[f.fullName] = { MON: {}, TUE: {}, WED: {}, THU: {}, FRI: {} };
@@ -509,204 +335,121 @@ facultyList.forEach(f => {
 function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isContinued = false) {
   if (!masterFacultyTimetables[facName] || !masterFacultyTimetables[facName][day]) return;
   const list = masterFacultyTimetables[facName][day][slot] || [];
-
   let cleanSubj = (subject || '').split('\n')[0].trim();
   if (cleanSubj.includes('/') && !cleanSubj.includes('(')) {
     cleanSubj = cleanSubj.split('/')[0].trim();
   }
   const normS = normSubj(cleanSubj);
-
   const exists = list.some(x => {
     if (x.branch !== branch) return false;
     const xNorm = normSubj(x.subject);
     return xNorm === normS || xNorm.includes(normS) || normS.includes(xNorm);
   });
-
   if (!exists) {
     list.push({ branch, subject: cleanSubj, room, isLab, isContinued });
     masterFacultyTimetables[facName][day][slot] = list;
   }
 }
 
-// Collect from Timetable_Master
-if (wsMaster) {
-  const masterRows = XLSX.utils.sheet_to_json(wsMaster, { header: 1, defval: '' });
-  const mHeader = masterRows[0] || [];
-  const mSlotCols = {};
-  mHeader.forEach((h, c) => {
-    const hs = String(h || '').trim();
-    timeSlots.forEach(ts => {
-      if (hs.includes(ts)) mSlotCols[ts] = c;
+// Pass 1: Extract directly from Timetable_Final
+curDay = ''; curBranch = '';
+for (let r = 1; r < rowsFinal.length; r++) {
+  const row = rowsFinal[r];
+  if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
+  if (row[1] && row[1].trim()) curBranch = row[1].trim();
+  if (!dayNames.includes(curDay) || !curBranch) continue;
+
+  slotCols.forEach(({ slot, nextSlot, c }) => {
+    const val = String(row[c] || '').trim();
+    if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
+    const facs = matchFacultyInText(val);
+    if (facs.length === 0) return;
+
+    const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA');
+    const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+    let subject = lines[0] || val;
+    if (subject.includes('/') && !subject.includes('(')) {
+      subject = subject.split('/')[0].trim();
+    }
+    const room = lines.length > 2 ? lines[2] : (lines.length === 2 && (lines[1].includes('LAB') || lines[1].startsWith('G-') || lines[1].startsWith('E-') || lines[1].startsWith('C-') || lines[1].startsWith('A-')) ? lines[1] : '');
+
+    facs.forEach(fn => {
+      addFacultySlot(fn, curDay, slot, curBranch, subject, room, isLab, false);
+      if (isLab && nextSlot) {
+        addFacultySlot(fn, curDay, nextSlot, curBranch, subject, room, isLab, true);
+      }
     });
   });
-
-  let curDay = '', curBranch = '';
-  for (let r = 1; r < masterRows.length; r++) {
-    const row = masterRows[r];
-    if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
-    if (row[1] && row[1].trim()) curBranch = row[1].trim();
-    if (!dayNames.includes(curDay) || !curBranch) continue;
-
-    for (const [slot, col] of Object.entries(mSlotCols)) {
-      const val = String(row[col] || '').trim();
-      if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) continue;
-      const facs = matchFacultyInText(val);
-      if (facs.length === 0) continue;
-
-      const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA');
-      const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
-      const subject = lines[0] || val;
-      const room = lines.length > 2 ? lines[2] : (lines.length === 2 && (lines[1].includes('LAB') || lines[1].startsWith('G-') || lines[1].startsWith('E-') || lines[1].startsWith('C-') || lines[1].startsWith('A-')) ? lines[1] : '');
-
-      facs.forEach(fn => {
-        addFacultySlot(fn, curDay, slot, curBranch, subject, room, isLab, false);
-        if (isLab && labNextSlot[slot]) {
-          addFacultySlot(fn, curDay, labNextSlot[slot], curBranch, subject, room, isLab, true);
-        }
-      });
-    }
-  }
 }
 
-// Collect from Timetable_Final (tutorial splits)
-if (wsFinal) {
-  const finalRows = XLSX.utils.sheet_to_json(wsFinal, { header: 1, defval: '' });
-  const fHeader = finalRows[0] || [];
-  const fSlotCols = {};
-  fHeader.forEach((h, c) => {
-    const hs = String(h || '').trim();
-    timeSlots.forEach(ts => {
-      if (hs.includes(ts)) fSlotCols[ts] = c;
-    });
-  });
+// Pass 2: Reconcile official assignments that were truncated in grid cells
+facultyList.forEach(fac => {
+  const lines = fac.assignments.split('\n').map(l => l.trim()).filter(Boolean);
+  lines.forEach(line => {
+    const parts = line.split('→');
+    const branch = parts[0]?.trim() || '';
+    const rest = parts[1]?.trim() || '';
+    const codeMatch = rest.match(/\(([^)]+)\)/);
+    const code = codeMatch ? codeMatch[1].trim() : '';
+    const nameMatch = rest.match(/^(.*?)(?:–|\()/);
+    const name = nameMatch ? nameMatch[1].trim() : '';
+    const isLab = line.toLowerCase().includes('lab');
 
-  let curDay = '', curBranch = '';
-  for (let r = 1; r < finalRows.length; r++) {
-    const row = finalRows[r];
-    if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
-    if (row[1] && row[1].trim()) curBranch = row[1].trim();
-    if (!dayNames.includes(curDay) || !curBranch) continue;
+    const normCode = normSubj(code);
+    const normName = normSubj(name);
 
-    for (const [slot, col] of Object.entries(fSlotCols)) {
-      const val = String(row[col] || '').trim();
-      if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) continue;
-      const facs = matchFacultyInText(val);
-      if (facs.length === 0) continue;
-
-      const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA');
-      const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
-      const subject = lines[0] || val;
-      const room = lines.length > 2 ? lines[2] : '';
-
-      facs.forEach(fn => {
-        addFacultySlot(fn, curDay, slot, curBranch, subject, room, isLab, false);
-        if (isLab && labNextSlot[slot]) {
-          addFacultySlot(fn, curDay, labNextSlot[slot], curBranch, subject, room, isLab, true);
-        }
-      });
-    }
-  }
-}
-
-// Collect from Timetable_Labs_Rearrange
-const wsLabs = wb.Sheets['Timetable_Labs_Rearrange'];
-if (wsLabs) {
-  const labsRows = XLSX.utils.sheet_to_json(wsLabs, { header: 1, defval: '' });
-  const lHeader = labsRows[0] || [];
-  const lSlotCols = {};
-  lHeader.forEach((h, c) => {
-    const hs = String(h || '').trim();
-    timeSlots.forEach(ts => {
-      if (hs.includes(ts)) lSlotCols[ts] = c;
-    });
-  });
-
-  let curDay = '', curBranch = '';
-  for (let r = 1; r < labsRows.length; r++) {
-    const row = labsRows[r];
-    if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
-    if (row[1] && row[1].trim()) curBranch = row[1].trim();
-    if (!dayNames.includes(curDay) || !curBranch) continue;
-
-    for (const [slot, col] of Object.entries(lSlotCols)) {
-      const val = String(row[col] || '').trim();
-      if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) continue;
-      const facs = matchFacultyInText(val);
-      if (facs.length === 0) continue;
-
-      const isLab = true;
-      const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
-      const subject = lines[0] || val;
-      const room = lines.length > 2 ? lines[2] : (lines.length === 2 ? lines[1] : '');
-
-      facs.forEach(fn => {
-        addFacultySlot(fn, curDay, slot, curBranch, subject, room, isLab, false);
-        if (labNextSlot[slot]) {
-          addFacultySlot(fn, curDay, labNextSlot[slot], curBranch, subject, room, isLab, true);
-        }
-      });
-    }
-  }
-}
-
-// Collect from branch sheets
-knownBranches.forEach(branch => {
-  const bSched = timetableData[branch] || {};
-  Object.entries(bSched).forEach(([day, daySched]) => {
-    Object.entries(daySched).forEach(([slot, sessions]) => {
-      sessions.forEach(sess => {
-        if (!sess.faculty) return;
-        const facs = sess.faculty.split(', ').map(f => f.trim()).filter(Boolean);
-        facs.forEach(fn => {
-          const facObj = facultyList.find(f => f.fullName === fn);
-          if (facObj) {
-            addFacultySlot(facObj.fullName, day, slot, branch, sess.subject, sess.room, sess.isLab, sess.isContinued);
+    let hasCourse = false;
+    dayNames.forEach(d => {
+      Object.entries(masterFacultyTimetables[fac.fullName][d]).forEach(([s, items]) => {
+        items.forEach(it => {
+          if (it.branch === branch) {
+            const isItemLab = Boolean(it.isLab || it.subject?.toUpperCase().includes('LAB'));
+            if (isLab !== isItemLab) return;
+            const normItSubj = normSubj(it.subject);
+            if (normCode && (normItSubj === normCode || normItSubj.includes(normCode) || normCode.includes(normItSubj))) hasCourse = true;
+            else if (normName && (normItSubj === normName || normItSubj.includes(normName) || normName.includes(normItSubj))) hasCourse = true;
           }
         });
       });
     });
-  });
-});
 
-// Reconcile Branch Legends for lab teams
-knownBranches.forEach(branch => {
-  const legends = branchLegends[branch] || [];
-  legends.forEach(leg => {
-    if (!leg.isLab) return;
-    const legFacs = leg.facultyFullName.split('\n').map(f => f.trim()).filter(Boolean);
-    if (legFacs.length === 0) return;
-    const legSubjNorm = normSubj(leg.subjectShort || leg.subjectFullName);
+    if (!hasCourse) {
+      const branchDays = branchSessionsMap[branch] || {};
+      let assigned = false;
+      dayNames.forEach(d => {
+        if (assigned) return;
+        const daySlots = branchDays[d] || {};
+        Object.entries(daySlots).forEach(([s, sessions]) => {
+          if (assigned) return;
+          sessions.forEach(sess => {
+            if (assigned) return;
+            const isItemLab = Boolean(sess.isLab || sess.subject?.toUpperCase().includes('LAB'));
+            if (isLab !== isItemLab) return;
+            const normSess = normSubj(sess.subject);
+            let match = false;
+            if (normCode && (normSess === normCode || normSess.includes(normCode) || normCode.includes(normSess))) match = true;
+            else if (normName && (normSess === normName || normSess.includes(normName) || normName.includes(normSess))) match = true;
 
-    dayNames.forEach(day => {
-      timeSlots.forEach(slot => {
-        let labFound = null;
-        for (const [facName, sched] of Object.entries(masterFacultyTimetables)) {
-          const sessions = sched[day][slot] || [];
-          const s = sessions.find(x => x.branch === branch && normSubj(x.subject) === legSubjNorm);
-          if (s) {
-            labFound = s;
-            break;
-          }
-        }
-        if (labFound) {
-          legFacs.forEach(fFullName => {
-            const facObj = facultyList.find(f => f.fullName.toLowerCase() === fFullName.toLowerCase());
-            if (facObj) {
-              addFacultySlot(facObj.fullName, day, slot, branch, labFound.subject, labFound.room, true, false);
-              if (labNextSlot[slot]) {
-                addFacultySlot(facObj.fullName, day, labNextSlot[slot], branch, labFound.subject, labFound.room, true, true);
+            if (match) {
+              const currentSlotItems = masterFacultyTimetables[fac.fullName][d][s] || [];
+              if (currentSlotItems.length === 0) {
+                addFacultySlot(fac.fullName, d, s, branch, sess.subject, sess.room, sess.isLab, false);
+                if (sess.isLab && sess.nextSlot) {
+                  addFacultySlot(fac.fullName, d, sess.nextSlot, branch, sess.subject, sess.room, sess.isLab, true);
+                }
+                assigned = true;
               }
             }
           });
-        }
+        });
       });
-    });
+    }
   });
 });
 
-console.log(`Pre-computed masterFacultyTimetables for ${Object.keys(masterFacultyTimetables).length} faculty`);
+console.log(`Pre-computed masterFacultyTimetables for ${Object.keys(masterFacultyTimetables).length} faculty from Timetable_Final`);
 
-// 7. Parse Comprehensive Lab Data
+// 5. Parse Comprehensive Lab Data
 const dedicatedLabSheets = [
   'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
   'CHEM. LAB.', 'PHY LAB', 'A-406', 'A-301,302', 'A-303,304', 'C-208',
@@ -813,6 +556,7 @@ courseLabSheetNames.forEach(name => {
 });
 
 // Parse Master Laboratory Schedule from Timetable_Labs_Rearrange
+const wsLabs = wb.Sheets['Timetable_Labs_Rearrange'];
 const masterLabSchedule = {};
 if (wsLabs) {
   const labsRows = XLSX.utils.sheet_to_json(wsLabs, { header: 1, defval: '' });
@@ -826,13 +570,13 @@ if (wsLabs) {
     if (!masterLabSchedule[curBranch]) masterLabSchedule[curBranch] = {};
     if (!masterLabSchedule[curBranch][curDay]) masterLabSchedule[curBranch][curDay] = {};
 
-    const slotCols = [
+    const labCols = [
       { slot: '09:00-11:00', c: 2 },
       { slot: '11:15-01:15', c: 5 },
       { slot: '02:15-04:15', c: 8 }
     ];
 
-    slotCols.forEach(({ slot, c }) => {
+    labCols.forEach(({ slot, c }) => {
       const val = String(row[c] || '').trim();
       if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
       const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
