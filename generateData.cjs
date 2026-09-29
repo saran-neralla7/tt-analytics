@@ -825,8 +825,22 @@ if (!hasDedicatedLabSheets || Object.keys(roomLabs).length === 0) {
         raw: `${curB}/${roomStr}`
       });
 
+      // Helper to split multiple rooms while keeping combined rooms intact (e.g. A-301,302 and A-303,304)
+      function splitRooms(str) {
+        if (!str) return ['Unspecified'];
+        let s = str.replace(/\r/g, '').trim();
+        s = s.replace(/A-301\s*,\s*302/gi, '__A_301_302__');
+        s = s.replace(/A-303\s*,\s*304/gi, '__A_303_304__');
+        const placeholderMap = {
+          '__A_301_302__': 'A-301,302',
+          '__A_303_304__': 'A-303,304'
+        };
+        const parts = s.split(/[\n,]+/).map(p => p.trim()).filter(Boolean);
+        return parts.map(p => placeholderMap[p] || p);
+      }
+
       // 3. roomLabs (keyed by each individual room)
-      const rooms = roomStr ? roomStr.split(',').map(s => s.trim()).filter(Boolean) : ['Unspecified'];
+      const rooms = splitRooms(roomStr);
       rooms.forEach(rm => {
         if (!roomLabs[rm]) {
           roomLabs[rm] = { schedule: {}, labDetails: [] };

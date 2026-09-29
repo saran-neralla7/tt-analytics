@@ -5862,165 +5862,7 @@
     ]
   },
   "labSheetsData": {
-    "302": {
-      "schedule": {
-        "MON": {
-          "02:15-04:15": {
-            "raw": "ECE-3 / AITA LAB",
-            "branch": "ECE-3",
-            "subject": "AITA LAB"
-          }
-        },
-        "TUE": {},
-        "WED": {
-          "02:15-04:15": {
-            "raw": "EEE / PSUC LAB",
-            "branch": "EEE",
-            "subject": "PSUC LAB"
-          }
-        },
-        "THU": {
-          "02:15-04:15": {
-            "raw": "MECH / AITA LAB",
-            "branch": "MECH",
-            "subject": "AITA LAB"
-          }
-        },
-        "FRI": {
-          "02:15-04:15": {
-            "raw": "MECH-ROBOTICS / AITA LAB",
-            "branch": "MECH-ROBOTICS",
-            "subject": "AITA LAB"
-          }
-        }
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "AITA LAB",
-          "fullName": "AI Tools and Applications Lab"
-        },
-        {
-          "sno": 2,
-          "shortName": "PSUC LAB",
-          "fullName": "Problem solving using C lab"
-        }
-      ]
-    },
-    "304": {
-      "schedule": {
-        "MON": {
-          "02:15-04:15": {
-            "raw": "CSE-2 / AITA LAB",
-            "branch": "CSE-2",
-            "subject": "AITA LAB"
-          }
-        },
-        "TUE": {
-          "02:15-04:15": {
-            "raw": "CSE-2 / AITA LAB",
-            "branch": "CSE-2",
-            "subject": "AITA LAB"
-          }
-        },
-        "WED": {},
-        "THU": {
-          "02:15-04:15": {
-            "raw": "ECE-2 / AITA LAB",
-            "branch": "ECE-2",
-            "subject": "AITA LAB"
-          }
-        },
-        "FRI": {}
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "AITA LAB",
-          "fullName": "AI Tools and Applications Lab"
-        }
-      ]
-    },
     "roomLabs": {
-      "302": {
-        "schedule": {
-          "MON": {
-            "02:15-04:15": {
-              "raw": "ECE-3 / AITA LAB",
-              "branch": "ECE-3",
-              "subject": "AITA LAB"
-            }
-          },
-          "TUE": {},
-          "WED": {
-            "02:15-04:15": {
-              "raw": "EEE / PSUC LAB",
-              "branch": "EEE",
-              "subject": "PSUC LAB"
-            }
-          },
-          "THU": {
-            "02:15-04:15": {
-              "raw": "MECH / AITA LAB",
-              "branch": "MECH",
-              "subject": "AITA LAB"
-            }
-          },
-          "FRI": {
-            "02:15-04:15": {
-              "raw": "MECH-ROBOTICS / AITA LAB",
-              "branch": "MECH-ROBOTICS",
-              "subject": "AITA LAB"
-            }
-          }
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "AITA LAB",
-            "fullName": "AI Tools and Applications Lab"
-          },
-          {
-            "sno": 2,
-            "shortName": "PSUC LAB",
-            "fullName": "Problem solving using C lab"
-          }
-        ]
-      },
-      "304": {
-        "schedule": {
-          "MON": {
-            "02:15-04:15": {
-              "raw": "CSE-2 / AITA LAB",
-              "branch": "CSE-2",
-              "subject": "AITA LAB"
-            }
-          },
-          "TUE": {
-            "02:15-04:15": {
-              "raw": "CSE-2 / AITA LAB",
-              "branch": "CSE-2",
-              "subject": "AITA LAB"
-            }
-          },
-          "WED": {},
-          "THU": {
-            "02:15-04:15": {
-              "raw": "ECE-2 / AITA LAB",
-              "branch": "ECE-2",
-              "subject": "AITA LAB"
-            }
-          },
-          "FRI": {}
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "AITA LAB",
-            "fullName": "AI Tools and Applications Lab"
-          }
-        ]
-      },
       "GVPCE CHEM. LAB.": {
         "schedule": {
           "MON": {
@@ -6605,7 +6447,7 @@
           }
         ]
       },
-      "A-303": {
+      "A-303,304": {
         "schedule": {
           "MON": {
             "02:15-04:15": {
@@ -6885,7 +6727,7 @@
           }
         ]
       },
-      "A-301": {
+      "A-301,302": {
         "schedule": {
           "MON": {
             "02:15-04:15": {
@@ -9454,7 +9296,7 @@
         }
       ]
     },
-    "A-303": {
+    "A-303,304": {
       "schedule": {
         "MON": {
           "02:15-04:15": {
@@ -9734,7 +9576,7 @@
         }
       ]
     },
-    "A-301": {
+    "A-301,302": {
       "schedule": {
         "MON": {
           "02:15-04:15": {
