@@ -57,6 +57,12 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
   // Build weekly schedule matrix for the selected faculty
   const facultySchedule = useMemo(() => {
+    // 1. Authoritative pre-computed schedule directly from Master Timetable
+    if (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[selectedFaculty]) {
+      return initialData.masterFacultyTimetables[selectedFaculty];
+    }
+
+    // Fallback: Dynamic reconstruction from timetableData
     const result = {};
     days.forEach(d => result[d] = {});
 
@@ -80,7 +86,6 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             if (matchesFaculty(cell)) {
               if (!result[dayKey]) result[dayKey] = {};
               if (!result[dayKey][slotTime]) result[dayKey][slotTime] = [];
-              // Prevent exact duplicate branch & subject entries
               const alreadyExists = result[dayKey][slotTime].some(
                 existing => existing.branch === branchKey && existing.subject === cell.subject
               );
@@ -126,6 +131,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
             items.forEach(item => {
               if (item.branch === branch) {
+                const isItemLab = Boolean(item.isLab || item.subject?.toUpperCase().includes('LAB'));
+                if (isLab !== isItemLab) return;
+
                 const sSubj = (item.subject || '').toUpperCase();
                 const matchCode = code.toUpperCase();
                 const matchName = name.toUpperCase();

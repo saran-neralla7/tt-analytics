@@ -1,11 +1,39 @@
 import React, { useState, useMemo } from 'react';
 import { days, periodSlots } from '../data/mockData';
-import { FlaskConical, Clock, Layers, Users } from 'lucide-react';
+import { FlaskConical, Clock, Layers, Users, Building, Table, BookOpen, Filter } from 'lucide-react';
+import initialData from '../data/initialData.json';
 
 export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick }) {
-  // Available dedicated lab room sheets from Excel
-  const dedicatedRooms = useMemo(() => {
-    const keys = Object.keys(labSheetsData || {});
+  // 1. Available Lab Data from initialData / props
+  const consolidatedLabs = useMemo(() => {
+    return labSheetsData.consolidatedLabs || initialData.labSheetsData?.consolidatedLabs || {};
+  }, [labSheetsData]);
+
+  const roomLabs = useMemo(() => {
+    return labSheetsData.roomLabs || initialData.labSheetsData?.roomLabs || {};
+  }, [labSheetsData]);
+
+  const masterLabSchedule = useMemo(() => {
+    return labSheetsData.masterLabSchedule || initialData.labSheetsData?.masterLabSchedule || {};
+  }, [labSheetsData]);
+
+  // Course lab names
+  const courseLabKeys = useMemo(() => {
+    const keys = Object.keys(consolidatedLabs);
+    if (keys.length > 0) return keys;
+    return [
+      'Problem solving using C lab',
+      'Engineering Physics lab',
+      'AI Tools and Applications Lab',
+      'Foundations of Artificial Intel',
+      '3D Design and Animation',
+      'Fundamentals of Web Designing L'
+    ];
+  }, [consolidatedLabs]);
+
+  // Room lab names
+  const roomLabKeys = useMemo(() => {
+    const keys = Object.keys(roomLabs);
     if (keys.length > 0) return keys;
     return [
       'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
@@ -13,11 +41,25 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
       'E-319', 'G-302', 'G-303', 'G-304', 'G-305', 'G-405',
       'GVPCE CHEM. LAB.', 'GVPCE MECH. LAB', 'GVPCE SUR. LAB'
     ];
-  }, [labSheetsData]);
+  }, [roomLabs]);
 
-  const [selectedLab, setSelectedLab] = useState(dedicatedRooms[0] || 'COMP. LAB-1');
+  // Branches in master lab schedule
+  const masterBranches = useMemo(() => {
+    const keys = Object.keys(masterLabSchedule);
+    if (keys.length > 0) return keys;
+    return [
+      'CSE-1', 'CSE-2', 'CSE(AI&ML)-1', 'CSE(AI&ML)-2', 'CSE (CS & DS)',
+      'ECE-1', 'ECE-2', 'ECE-3', 'MECH', 'EEE', 'CIVIL', 'CHEMICAL', 'MECH-ROBOTICS'
+    ];
+  }, [masterLabSchedule]);
 
-  // Time slot columns used in the dedicated lab sheets
+  // View mode: 'course' | 'room' | 'master'
+  const [viewMode, setViewMode] = useState('course');
+  const [selectedCourse, setSelectedCourse] = useState(courseLabKeys[0] || 'Problem solving using C lab');
+  const [selectedRoom, setSelectedRoom] = useState(roomLabKeys[0] || 'COMP. LAB-1');
+  const [selectedBranch, setSelectedBranch] = useState('ALL');
+
+  // Time slot columns used in lab sheets (2-hour blocks)
   const labTimeSlots = [
     { id: 's1', time: '09:00-11:00' },
     { id: 'b1', time: '11:00-11:15', isBreak: true, label: 'BREAK' },
@@ -26,208 +68,542 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
     { id: 's3', time: '02:15-04:15' }
   ];
 
-  const currentLabData = labSheetsData[selectedLab] || { schedule: {}, labDetails: [] };
-  const currentSchedule = currentLabData.schedule || {};
-  const labDetailsList = currentLabData.labDetails || [];
+  // Stats calculation
+  let totalOccupiedSessions = 0;
+  const activeBranchesSet = new Set();
 
-  // Compute total occupied sessions
-  let occupiedSessions = 0;
-  const branchesHosted = new Set();
-
-  days.forEach(day => {
-    const dSched = currentSchedule[day] || {};
-    ['09:00-11:00', '11:15-01:15', '02:15-04:15'].forEach(slot => {
-      const item = dSched[slot];
-      if (item && item.raw) {
-        occupiedSessions += 1;
-        if (item.branch) branchesHosted.add(item.branch);
-      }
+  if (viewMode === 'course') {
+    const sched = consolidatedLabs[selectedCourse] || {};
+    days.forEach(d => {
+      const dSched = sched[d] || {};
+      ['09:00-11:00', '11:15-01:15', '02:15-04:15'].forEach(slot => {
+        const sessions = dSched[slot] || [];
+        totalOccupiedSessions += sessions.length;
+        sessions.forEach(s => {
+          if (s.branch) activeBranchesSet.add(s.branch);
+        });
+      });
     });
-  });
+  } else if (viewMode === 'room') {
+    const currentRoomData = roomLabs[selectedRoom] || labSheetsData[selectedRoom] || { schedule: {}, labDetails: [] };
+    const sched = currentRoomData.schedule || {};
+    days.forEach(d => {
+      const dSched = sched[d] || {};
+      ['09:00-11:00', '11:15-01:15', '02:15-04:15'].forEach(slot => {
+        const item = dSched[slot];
+        if (item && item.raw) {
+          totalOccupiedSessions += 1;
+          if (item.branch) activeBranchesSet.add(item.branch);
+        }
+      });
+    });
+  } else {
+    // Master mode
+    const branchesToCount = selectedBranch === 'ALL' ? masterBranches : [selectedBranch];
+    branchesToCount.forEach(b => {
+      const bSched = masterLabSchedule[b] || {};
+      days.forEach(d => {
+        const dSched = bSched[d] || {};
+        ['09:00-11:00', '11:15-01:15', '02:15-04:15'].forEach(slot => {
+          const sessions = dSched[slot] || [];
+          totalOccupiedSessions += sessions.length;
+          if (sessions.length > 0) activeBranchesSet.add(b);
+        });
+      });
+    });
+  }
+
+  // Room details legend for room view
+  const currentRoomData = roomLabs[selectedRoom] || labSheetsData[selectedRoom] || { schedule: {}, labDetails: [] };
+  const labDetailsList = currentRoomData.labDetails || [];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-      {/* Lab Selector Bar */}
-      <div className="no-print flex justify-center mb-6">
-        <div className="flex items-center gap-3 bg-white px-4 py-2.5 rounded-lg border border-gray-300 shadow-sm">
-          <label htmlFor="lab-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
-            <FlaskConical className="w-4 h-4 text-purple-600" /> Select Laboratory Room Sheet:
-          </label>
-          <select
-            id="lab-select"
-            value={selectedLab}
-            onChange={(e) => setSelectedLab(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm font-bold rounded-md focus:ring-purple-500 focus:border-purple-500 block px-3 py-1.5 cursor-pointer uppercase font-mono"
+      {/* View Mode Switcher Pills */}
+      <div className="no-print flex justify-center mb-5">
+        <div className="inline-flex p-1.5 bg-gray-200/80 rounded-xl border border-gray-300 shadow-sm gap-1.5">
+          <button
+            onClick={() => setViewMode('course')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all ${
+              viewMode === 'course'
+                ? 'bg-purple-700 text-white shadow-md'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-white/60'
+            }`}
           >
-            {dedicatedRooms.map((lab) => (
-              <option key={lab} value={lab}>
-                {lab}
-              </option>
-            ))}
-          </select>
+            <BookOpen className="w-4 h-4" /> By Lab Subject / Course ({courseLabKeys.length})
+          </button>
+
+          <button
+            onClick={() => setViewMode('room')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all ${
+              viewMode === 'room'
+                ? 'bg-purple-700 text-white shadow-md'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-white/60'
+            }`}
+          >
+            <Building className="w-4 h-4" /> By Lab Room ({roomLabKeys.length})
+          </button>
+
+          <button
+            onClick={() => setViewMode('master')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all ${
+              viewMode === 'master'
+                ? 'bg-purple-700 text-white shadow-md'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-white/60'
+            }`}
+          >
+            <Table className="w-4 h-4" /> Master Laboratory Timetable
+          </button>
         </div>
       </div>
 
-      {/* Lab Utilization Stats Header */}
+      {/* Selectors Bar based on active viewMode */}
+      <div className="no-print flex justify-center mb-6">
+        <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3 rounded-xl border border-gray-300 shadow-sm">
+          {viewMode === 'course' && (
+            <div className="flex items-center gap-2">
+              <label htmlFor="course-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
+                <FlaskConical className="w-4 h-4 text-purple-600" /> Lab Course:
+              </label>
+              <select
+                id="course-select"
+                value={selectedCourse}
+                onChange={(e) => setSelectedCourse(e.target.value)}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5 cursor-pointer max-w-xs sm:max-w-md"
+              >
+                {courseLabKeys.map((cName) => (
+                  <option key={cName} value={cName}>
+                    {cName}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          {viewMode === 'room' && (
+            <div className="flex items-center gap-2">
+              <label htmlFor="room-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
+                <Building className="w-4 h-4 text-purple-600" /> Laboratory Room:
+              </label>
+              <select
+                id="room-select"
+                value={selectedRoom}
+                onChange={(e) => setSelectedRoom(e.target.value)}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5 cursor-pointer font-mono uppercase"
+              >
+                {roomLabKeys.map((rName) => (
+                  <option key={rName} value={rName}>
+                    {rName}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          {viewMode === 'master' && (
+            <div className="flex items-center gap-2">
+              <label htmlFor="branch-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
+                <Filter className="w-4 h-4 text-purple-600" /> Filter by Branch:
+              </label>
+              <select
+                id="branch-select"
+                value={selectedBranch}
+                onChange={(e) => setSelectedBranch(e.target.value)}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5 cursor-pointer font-mono uppercase"
+              >
+                <option value="ALL">All Branches ({masterBranches.length})</option>
+                {masterBranches.map((b) => (
+                  <option key={b} value={b}>
+                    {b}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Lab Stats Header */}
       <div className="no-print grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
           <div className="p-3 bg-purple-50 text-purple-600 rounded-lg">
             <Clock className="w-5 h-5" />
           </div>
           <div>
             <div className="text-xs text-gray-500 font-medium">Occupied Lab Sessions</div>
-            <div className="text-lg font-bold text-gray-900">{occupiedSessions} Sessions (2 hrs each)</div>
+            <div className="text-lg font-bold text-gray-900">{totalOccupiedSessions} Sessions (2 hrs each)</div>
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
           <div className="p-3 bg-blue-50 text-blue-600 rounded-lg">
             <Layers className="w-5 h-5" />
           </div>
           <div>
-            <div className="text-xs text-gray-500 font-medium">Allocated Branches</div>
-            <div className="text-lg font-bold text-gray-900">{branchesHosted.size} Branches Hosted</div>
+            <div className="text-xs text-gray-500 font-medium">Participating Branches</div>
+            <div className="text-lg font-bold text-gray-900">{activeBranchesSet.size} Branches Active</div>
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
           <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
             <Users className="w-5 h-5" />
           </div>
           <div>
-            <div className="text-xs text-gray-500 font-medium">Room Status</div>
-            <div className="text-lg font-bold text-emerald-700">Dedicated Lab Sheet Active</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Lab Timetable Table matching Dedicated Excel Sheets */}
-      <div className="w-full bg-white rounded-lg shadow-sm border border-gray-300 overflow-hidden timetable-card">
-        <div className="print-only text-center py-3 px-6 border-b border-gray-300 bg-gray-50/70">
-          <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase">
-            {universityInfo.name}
-          </h2>
-          <h3 className="text-xs font-bold text-purple-900 mt-1 uppercase font-mono">
-            LABORATORY ALLOCATION TIMETABLE: <span className="underline decoration-purple-500 font-extrabold">{selectedLab}</span>
-          </h3>
-          <p className="text-xs text-gray-600 mt-0.5 font-mono">
-            Academic Year {universityInfo.academicYear} | Room Sheet: {selectedLab}
-          </p>
-        </div>
-
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs text-center border-collapse table-fixed min-w-[750px] border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100 text-gray-800 font-bold border-b border-gray-300 uppercase tracking-wider text-[11px]">
-                <th className="py-3 px-3 border-r border-gray-300 w-24">Day</th>
-                {labTimeSlots.map((slot) => (
-                  <th 
-                    key={slot.id} 
-                    className={`py-3 px-3 border-r border-gray-300 ${
-                      slot.isBreak ? 'bg-amber-50/90 text-amber-900 font-extrabold w-20' : ''
-                    }`}
-                  >
-                    {slot.time}
-                    {slot.label && <div className="text-[10px] tracking-normal text-amber-800 font-bold">{slot.label}</div>}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-300">
-              {days.map((day) => {
-                const daySched = currentSchedule[day] || {};
-
-                return (
-                  <tr key={day} className="hover:bg-gray-50/80 transition-colors">
-                    <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 uppercase tracking-wide align-middle">
-                      {day}
-                    </td>
-
-                    {labTimeSlots.map((slot) => {
-                      if (slot.isBreak) {
-                        return (
-                          <td key={slot.id} className="py-4 px-2 bg-amber-50/60 text-amber-900 font-extrabold text-[10px] border-r border-gray-300 tracking-wider uppercase align-middle">
-                            {slot.label}
-                          </td>
-                        );
-                      }
-
-                      const item = daySched[slot.time];
-
-                      return (
-                        <td 
-                          key={slot.id} 
-                          onClick={() => item && onSlotClick && onSlotClick([{
-                            subject: item.subject,
-                            branch: item.branch,
-                            room: selectedLab
-                          }], day, slot.time, selectedLab)}
-                          className={`py-3 px-3 border-r border-gray-300 align-middle ${
-                            item && item.raw ? 'bg-purple-50/90 font-semibold cursor-pointer hover:bg-purple-100 transition-colors' : ''
-                          }`}
-                          title={item ? "Click to view details" : ""}
-                        >
-                          {item && item.raw ? (
-                            <div className="flex flex-col justify-center items-center gap-1.5 min-h-[50px]">
-                              <div className="font-extrabold text-purple-950 text-xs">
-                                {item.subject}
-                              </div>
-                              <div className="inline-flex items-center gap-1">
-                                <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-100 text-purple-800 border border-purple-200">
-                                  {item.branch}
-                                </span>
-                              </div>
-                            </div>
-                          ) : (
-                            <div className="flex items-center justify-center min-h-[50px]">
-                              <span className="text-gray-300 font-mono text-[11px]">—</span>
-                            </div>
-                          )}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-
-        {/* LAB DETAILS Legend matching the Excel sheet */}
-        {labDetailsList.length > 0 && (
-          <div className="p-4 bg-gray-50/60 border-t border-gray-300">
-            <h4 className="text-xs font-bold text-gray-800 uppercase tracking-wider mb-2 font-mono flex items-center gap-1.5">
-              <FlaskConical className="w-3.5 h-3.5 text-purple-600" /> Lab Details ({selectedLab})
-            </h4>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs border border-gray-300 bg-white rounded">
-                <thead>
-                  <tr className="bg-gray-100 text-gray-700 font-bold border-b border-gray-300 text-[10.5px]">
-                    <th className="py-1.5 px-3 w-12 border-r border-gray-200 text-center">S.No</th>
-                    <th className="py-1.5 px-3 w-32 border-r border-gray-200">Lab Short Name</th>
-                    <th className="py-1.5 px-3">Full Lab Name</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 text-[11px]">
-                  {labDetailsList.map((detail, dIdx) => (
-                    <tr key={dIdx} className="hover:bg-gray-50">
-                      <td className="py-1.5 px-3 font-mono text-center text-gray-500 border-r border-gray-200">
-                        {detail.sno || dIdx + 1}
-                      </td>
-                      <td className="py-1.5 px-3 font-mono font-bold text-purple-900 border-r border-gray-200">
-                        {detail.shortName}
-                      </td>
-                      <td className="py-1.5 px-3 text-gray-800 font-medium">
-                        {detail.fullName}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="text-xs text-gray-500 font-medium">Active Schedule Mode</div>
+            <div className="text-lg font-bold text-emerald-700 capitalize">
+              {viewMode === 'course' ? 'Course Schedule' : viewMode === 'room' ? 'Room Allocation' : 'Master Lab Timetable'}
             </div>
           </div>
-        )}
+        </div>
       </div>
+
+      {/* 1. VIEW MODE: COURSE LAB SCHEDULE */}
+      {viewMode === 'course' && (
+        <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6">
+          <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
+            <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
+              {universityInfo.name}
+            </h2>
+            <h3 className="text-xs font-black text-purple-900 mt-1 uppercase font-mono">
+              CONSOLIDATED LABORATORY SCHEDULE: <span className="underline decoration-purple-600">{selectedCourse}</span>
+            </h3>
+            <p className="text-xs text-gray-500 mt-0.5 font-mono">
+              Academic Year {universityInfo.academicYear} | 2-Hour Practical Lab Sessions
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[800px] border-2 border-slate-700">
+              <thead>
+                <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11.5px]">
+                  <th className="py-3 px-3 border-r border-gray-300 w-24">Day</th>
+                  {labTimeSlots.map((slot) => (
+                    <th 
+                      key={slot.id} 
+                      className={`py-3 px-3 border-r border-gray-300 ${
+                        slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
+                      }`}
+                    >
+                      <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
+                      {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold mt-0.5">{slot.label}</div>}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y-2 divide-slate-600">
+                {days.map((day) => {
+                  const courseSched = consolidatedLabs[selectedCourse] || {};
+                  const dSched = courseSched[day] || {};
+
+                  return (
+                    <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
+                      <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 uppercase tracking-wide align-middle">
+                        {day}
+                      </td>
+
+                      {labTimeSlots.map((slot) => {
+                        if (slot.isBreak) {
+                          return (
+                            <td key={slot.id} className="py-4 px-2 bg-amber-100/70 text-amber-950 font-black text-[10.5px] border-r border-gray-300 tracking-wider uppercase align-middle text-center">
+                              {slot.label}
+                            </td>
+                          );
+                        }
+
+                        const sessions = dSched[slot.time] || [];
+
+                        return (
+                          <td 
+                            key={slot.id}
+                            className={`p-2 border-r border-gray-300 align-middle ${
+                              sessions.length > 0 ? 'bg-purple-50/70' : 'bg-slate-50/30'
+                            }`}
+                          >
+                            {sessions.length > 0 ? (
+                              <div className="flex flex-col gap-1.5 justify-center items-center">
+                                {sessions.map((sess, sIdx) => (
+                                  <div 
+                                    key={sIdx}
+                                    onClick={() => onSlotClick && onSlotClick([{
+                                      subject: selectedCourse,
+                                      branch: sess.branch,
+                                      room: sess.room
+                                    }], day, slot.time, sess.branch)}
+                                    className="w-full py-1.5 px-2 rounded-lg bg-white border border-purple-300 shadow-xs flex flex-col justify-center items-center cursor-pointer hover:bg-purple-100 transition-all"
+                                  >
+                                    <div className="font-black text-purple-950 text-xs">
+                                      Section: {sess.branch}
+                                    </div>
+                                    {sess.room && (
+                                      <div className="text-[10.5px] font-mono font-bold text-slate-700 mt-0.5">
+                                        Room: <span className="text-purple-700">{sess.room}</span>
+                                      </div>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="flex items-center justify-center min-h-[44px]">
+                                <span className="text-gray-300 font-mono text-[12px]">—</span>
+                              </div>
+                            )}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* 2. VIEW MODE: LAB ROOM OCCUPANCY */}
+      {viewMode === 'room' && (
+        <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6">
+          <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
+            <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
+              {universityInfo.name}
+            </h2>
+            <h3 className="text-xs font-black text-purple-900 mt-1 uppercase font-mono">
+              LABORATORY ROOM ALLOCATION: <span className="underline decoration-purple-600">{selectedRoom}</span>
+            </h3>
+            <p className="text-xs text-gray-500 mt-0.5 font-mono">
+              Academic Year {universityInfo.academicYear} | Room Sheet: {selectedRoom}
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[750px] border-2 border-slate-700">
+              <thead>
+                <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11.5px]">
+                  <th className="py-3 px-3 border-r border-gray-300 w-24">Day</th>
+                  {labTimeSlots.map((slot) => (
+                    <th 
+                      key={slot.id} 
+                      className={`py-3 px-3 border-r border-gray-300 ${
+                        slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
+                      }`}
+                    >
+                      <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
+                      {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold mt-0.5">{slot.label}</div>}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y-2 divide-slate-600">
+                {days.map((day) => {
+                  const currentSchedule = currentRoomData.schedule || {};
+                  const dSched = currentSchedule[day] || {};
+
+                  return (
+                    <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
+                      <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 uppercase tracking-wide align-middle">
+                        {day}
+                      </td>
+
+                      {labTimeSlots.map((slot) => {
+                        if (slot.isBreak) {
+                          return (
+                            <td key={slot.id} className="py-4 px-2 bg-amber-100/70 text-amber-950 font-black text-[10.5px] border-r border-gray-300 tracking-wider uppercase align-middle text-center">
+                              {slot.label}
+                            </td>
+                          );
+                        }
+
+                        const item = dSched[slot.time];
+
+                        return (
+                          <td 
+                            key={slot.id} 
+                            onClick={() => item && onSlotClick && onSlotClick([{
+                              subject: item.subject,
+                              branch: item.branch,
+                              room: selectedRoom
+                            }], day, slot.time, selectedRoom)}
+                            className={`py-3 px-3 border-r border-gray-300 align-middle ${
+                              item && item.raw ? 'bg-purple-50/90 font-semibold cursor-pointer hover:bg-purple-100 transition-colors' : 'bg-slate-50/30'
+                            }`}
+                            title={item ? "Click to view details" : ""}
+                          >
+                            {item && item.raw ? (
+                              <div className="flex flex-col justify-center items-center gap-1 min-h-[50px]">
+                                <div className="font-black text-purple-950 text-xs">
+                                  {item.subject}
+                                </div>
+                                <div className="inline-flex items-center gap-1">
+                                  <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-100 text-purple-800 border border-purple-300">
+                                    Section: {item.branch}
+                                  </span>
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="flex items-center justify-center min-h-[50px]">
+                                <span className="text-gray-300 font-mono text-[11px]">—</span>
+                              </div>
+                            )}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          {/* LAB DETAILS Legend matching the Excel sheet */}
+          {labDetailsList.length > 0 && (
+            <div className="p-4 bg-gray-50/80 border-t-2 border-slate-700">
+              <h4 className="text-xs font-bold text-gray-800 uppercase tracking-wider mb-2 font-mono flex items-center gap-1.5">
+                <FlaskConical className="w-3.5 h-3.5 text-purple-600" /> Lab Details ({selectedRoom})
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs border border-gray-300 bg-white rounded-lg">
+                  <thead>
+                    <tr className="bg-gray-100 text-gray-700 font-bold border-b border-gray-300 text-[10.5px]">
+                      <th className="py-1.5 px-3 w-12 border-r border-gray-200 text-center">S.No</th>
+                      <th className="py-1.5 px-3 w-32 border-r border-gray-200">Lab Short Name</th>
+                      <th className="py-1.5 px-3">Full Lab Name</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 text-[11px]">
+                    {labDetailsList.map((detail, dIdx) => (
+                      <tr key={dIdx} className="hover:bg-gray-50">
+                        <td className="py-1.5 px-3 font-mono text-center text-gray-500 border-r border-gray-200">
+                          {detail.sno || dIdx + 1}
+                        </td>
+                        <td className="py-1.5 px-3 font-mono font-bold text-purple-900 border-r border-gray-200">
+                          {detail.shortName}
+                        </td>
+                        <td className="py-1.5 px-3 text-gray-800 font-medium">
+                          {detail.fullName}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 3. VIEW MODE: MASTER LABORATORY TIMETABLE (Timetable_Labs_Rearrange) */}
+      {viewMode === 'master' && (
+        <div className="space-y-6 my-6">
+          {(selectedBranch === 'ALL' ? masterBranches : [selectedBranch]).map((branchKey) => {
+            const bSched = masterLabSchedule[branchKey] || {};
+
+            return (
+              <div key={branchKey} className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+                <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="px-2.5 py-0.5 rounded font-black text-xs bg-purple-500 text-white tracking-wider">
+                      {branchKey}
+                    </span>
+                    <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
+                      Master Laboratory Allocation Timetable
+                    </h3>
+                  </div>
+                  <span className="text-[11px] text-slate-300 font-mono">
+                    Timetable_Labs_Rearrange Schedule
+                  </span>
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs text-center border-collapse table-fixed min-w-[750px] border-2 border-slate-700">
+                    <thead>
+                      <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                        <th className="py-2.5 px-3 border-r border-gray-300 w-24">Day</th>
+                        {labTimeSlots.map((slot) => (
+                          <th 
+                            key={slot.id} 
+                            className={`py-2.5 px-3 border-r border-gray-300 ${
+                              slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
+                            }`}
+                          >
+                            <span className="block font-black text-xs">{slot.time}</span>
+                            {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold">{slot.label}</div>}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y-2 divide-slate-600">
+                      {days.map((day) => {
+                        const dSched = bSched[day] || {};
+
+                        return (
+                          <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
+                            <td className="py-3 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 uppercase tracking-wide align-middle">
+                              {day}
+                            </td>
+
+                            {labTimeSlots.map((slot) => {
+                              if (slot.isBreak) {
+                                return (
+                                  <td key={slot.id} className="py-3 px-2 bg-amber-100/70 text-amber-950 font-black text-[10px] border-r border-gray-300 tracking-wider uppercase align-middle text-center">
+                                    {slot.label}
+                                  </td>
+                                );
+                              }
+
+                              const sessions = dSched[slot.time] || [];
+
+                              return (
+                                <td 
+                                  key={slot.id}
+                                  className={`p-2 border-r border-gray-300 align-middle ${
+                                    sessions.length > 0 ? 'bg-purple-50/80 font-semibold cursor-pointer hover:bg-purple-100 transition-colors' : 'bg-slate-50/30'
+                                  }`}
+                                  onClick={() => sessions.length > 0 && onSlotClick && onSlotClick(sessions.map(s => ({
+                                    subject: s.subject,
+                                    branch: branchKey,
+                                    room: s.room,
+                                    faculty: s.faculty
+                                  })), day, slot.time, branchKey)}
+                                >
+                                  {sessions.length > 0 ? (
+                                    <div className="flex flex-col gap-1.5 justify-center items-center min-h-[46px]">
+                                      {sessions.map((sess, sIdx) => (
+                                        <div key={sIdx} className="w-full flex flex-col justify-center items-center">
+                                          <div className="font-black text-purple-950 text-xs">
+                                            {sess.subject}
+                                          </div>
+                                          {sess.faculty && (
+                                            <div className="text-[10px] font-semibold text-slate-700 mt-0.5 leading-tight">
+                                              {sess.faculty}
+                                            </div>
+                                          )}
+                                          {sess.room && (
+                                            <div className="mt-0.5 text-[10.5px] font-bold text-purple-700 font-mono">
+                                              {sess.room}
+                                            </div>
+                                          )}
+                                        </div>
+                                      ))}
+                                    </div>
+                                  ) : (
+                                    <div className="flex items-center justify-center min-h-[46px]">
+                                      <span className="text-gray-300 font-mono text-[11px]">—</span>
+                                    </div>
+                                  )}
+                                </td>
+                              );
+                            })}
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
