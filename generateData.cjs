@@ -485,7 +485,12 @@ knownBranches.forEach(b => {
     if (text.includes('Timetable Incharge') || text.includes('HOD-') || text.includes('Director')) break;
     const subjectFullName = String(r[colSub] || '').trim();
     const subjectShort = String(r[colShort] || '').trim();
-    const facultyShort = String(r[colFacShort] || '').trim();
+    const rawFacultyShort = String(r[colFacShort] || '').trim();
+    const facultyShort = rawFacultyShort
+      .split('\n')
+      .map(line => line.trim().replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim())
+      .filter(Boolean)
+      .join('\n');
     const facultyFullName = String(r[colFacName] || '').trim();
     if (subjectFullName && !subjectFullName.toLowerCase().includes('subject name')) {
       items.push({

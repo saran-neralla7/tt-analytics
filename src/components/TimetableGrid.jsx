@@ -463,7 +463,7 @@ export default function TimetableGrid({
                 {branchLegend.map((item, idx) => {
                   const style = getSubjectStyle(item.subjectShort, item.isLab);
                   const facultyList = item.facultyFullName ? item.facultyFullName.split('\n').filter(Boolean) : [];
-                  const shortList = item.facultyShort ? item.facultyShort.split('\n').filter(Boolean) : [];
+                  const shortList = item.facultyShort ? item.facultyShort.split('\n').filter(Boolean).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim()) : [];
 
                   return (
                     <tr key={idx} className="hover:bg-slate-50/80 transition-colors">

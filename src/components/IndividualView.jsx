@@ -169,11 +169,14 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               onChange={(e) => setSelectedFaculty(e.target.value)}
               className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 px-3 py-1.5 cursor-pointer max-w-xs sm:max-w-md"
             >
-              {filteredFacultyList.map((f) => (
-                <option key={f.fullName} value={f.fullName}>
-                  {f.fullName} {f.shortName ? `(${f.shortName})` : ''} {selectedDept === 'ALL' && f.dept ? `• [${f.dept}]` : ''}
-                </option>
-              ))}
+              {filteredFacultyList.map((f) => {
+                const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+                return (
+                  <option key={f.fullName} value={f.fullName}>
+                    {f.fullName} {cleanShort ? `(${cleanShort})` : ''} {selectedDept === 'ALL' && f.dept ? `• [${f.dept}]` : ''}
+                  </option>
+                );
+              })}
             </select>
           </div>
         </div>
@@ -220,7 +223,11 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           </h2>
           <h3 className="text-xs font-bold text-blue-800 mt-1 uppercase font-mono">
             INDIVIDUAL FACULTY TIMETABLE: <span className="underline decoration-blue-500">{selectedFaculty}</span>
-            {currentFacultyObj?.shortName && <span className="ml-1.5 text-blue-600">({currentFacultyObj.shortName})</span>}
+            {currentFacultyObj?.shortName && (
+              <span className="ml-1.5 text-blue-600">
+                ({currentFacultyObj.shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim()})
+              </span>
+            )}
             {currentFacultyObj?.dept && (
               <span className="ml-2 px-2 py-0.5 rounded bg-blue-100 text-blue-900 text-[10px] font-sans font-semibold">
                 Dept: {currentFacultyObj.dept}

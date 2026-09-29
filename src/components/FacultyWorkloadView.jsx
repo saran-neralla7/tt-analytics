@@ -165,11 +165,14 @@ export default function FacultyWorkloadView({ universityInfo, facultyList: propF
                 className="bg-transparent text-gray-900 text-xs font-semibold outline-none cursor-pointer max-w-[190px]"
               >
                 <option value="ALL">All Faculty in Dept ({deptFacultyList.length})</option>
-                {deptFacultyList.map(f => (
-                  <option key={f.fullName} value={f.fullName}>
-                    {f.fullName} {f.shortName ? `(${f.shortName})` : ''}
-                  </option>
-                ))}
+                {deptFacultyList.map(f => {
+                  const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+                  return (
+                    <option key={f.fullName} value={f.fullName}>
+                      {f.fullName} {cleanShort ? `(${cleanShort})` : ''}
+                    </option>
+                  );
+                })}
               </select>
             </div>
           </div>
@@ -267,7 +270,7 @@ export default function FacultyWorkloadView({ universityInfo, facultyList: propF
                   </td>
                   <td className="py-2.5 px-1.5 text-center border-r border-gray-300 border-b-2 border-slate-600 whitespace-nowrap">
                     <span className="font-black text-slate-900 text-xs sm:text-[12.5px] tracking-normal">
-                      {item.shortName || '—'}
+                      {(item.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim() || '—'}
                     </span>
                   </td>
                   <td className="py-2.5 px-2 font-bold text-slate-800 border-r border-gray-300 border-b-2 border-slate-600 text-xs whitespace-nowrap">
