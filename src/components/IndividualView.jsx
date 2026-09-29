@@ -39,6 +39,20 @@ function has2HourFacultyMerge(daySched, idx) {
 }
 
 /**
+ * Format branch name into concise abbreviations for compact table display
+ */
+function formatBranchName(branch) {
+  if (!branch) return '';
+  return branch
+    .replace(/CSE\s*\(\s*CS\s*&\s*DS\s*\)/i, 'CS&DS')
+    .replace(/CSE\s*\(\s*AI\s*&\s*ML\s*\)-1/i, 'AIML-1')
+    .replace(/CSE\s*\(\s*AI\s*&\s*ML\s*\)-2/i, 'AIML-2')
+    .replace(/MECH-ROBOTICS/i, 'M-ROB')
+    .replace(/CHEMICAL/i, 'CHEM')
+    .trim();
+}
+
+/**
  * Extracts branch-wise workload breakdown for theory, tutorial, and lab
  */
 function extractWorkloadBreakdowns(assignmentsStr) {
@@ -52,7 +66,7 @@ function extractWorkloadBreakdowns(assignmentsStr) {
   lines.forEach(line => {
     const arrowParts = line.split('→').map(p => p.trim());
     if (arrowParts.length < 2) return;
-    const branch = arrowParts[0];
+    const branch = formatBranchName(arrowParts[0]);
     const rest = arrowParts[1];
     const dashParts = rest.split('–').map(p => p.trim());
     const loadDetail = dashParts[1] || '';
@@ -875,51 +889,51 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px]">
+              <table className="w-full text-xs text-center border-collapse table-auto sm:table-fixed">
                 <thead>
-                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
-                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-36">Department</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-24">Faculty Count</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-20">Professor</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-28">Associate Professor</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-28">Assistant Professor</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-16">Other</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-blue-50/60 text-blue-950 font-black">Theory Workload</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-amber-50/60 text-amber-950 font-black">Tutorial Workload</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-purple-50/60 text-purple-950 font-black">Lab Workload</th>
-                    <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950 font-black">Total Workload</th>
+                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[10.5px] sm:text-[11px]">
+                    <th className="py-2 px-2 border-r border-gray-300 text-left w-28 sm:w-36">Department</th>
+                    <th className="py-2 px-1.5 border-r border-gray-300 w-16 sm:w-20">Faculty</th>
+                    <th className="py-2 px-1 border-r border-gray-300 w-14 sm:w-16">Prof</th>
+                    <th className="py-2 px-1 border-r border-gray-300 w-16 sm:w-20">Assoc</th>
+                    <th className="py-2 px-1 border-r border-gray-300 w-16 sm:w-20">Asst</th>
+                    <th className="py-2 px-1 border-r border-gray-300 w-12 sm:w-14">Other</th>
+                    <th className="py-2 px-2 border-r border-gray-300 w-20 sm:w-24 bg-blue-50/60 text-blue-950 font-black">Theory</th>
+                    <th className="py-2 px-2 border-r border-gray-300 w-20 sm:w-24 bg-amber-50/60 text-amber-950 font-black">Tutorial</th>
+                    <th className="py-2 px-2 border-r border-gray-300 w-20 sm:w-24 bg-purple-50/60 text-purple-950 font-black">Lab</th>
+                    <th className="py-2 px-2 w-20 sm:w-24 bg-emerald-50/60 text-emerald-950 font-black">Total</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b-2 border-slate-700 bg-white">
-                    <td className="py-4 px-3 text-left font-black text-sm sm:text-base text-slate-900 border-r border-gray-300 font-serif">
+                    <td className="py-3 px-2 text-left font-black text-xs sm:text-sm text-slate-900 border-r border-gray-300 font-serif">
                       {activeDeptStats.department}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-900 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-1.5 font-black text-lg sm:text-xl text-slate-900 border-r border-gray-300 font-mono">
                       {activeDeptStats.facultyCount}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-1 font-black text-lg sm:text-xl text-blue-900 border-r border-gray-300 font-mono">
                       {activeDeptStats.prof}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-1 font-black text-lg sm:text-xl text-blue-900 border-r border-gray-300 font-mono">
                       {activeDeptStats.assoc}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-1 font-black text-lg sm:text-xl text-blue-900 border-r border-gray-300 font-mono">
                       {activeDeptStats.asst}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-400 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-1 font-black text-lg sm:text-xl text-slate-400 border-r border-gray-300 font-mono">
                       {activeDeptStats.other}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-700 bg-blue-50/40 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-2 font-black text-lg sm:text-xl text-blue-700 bg-blue-50/40 border-r border-gray-300 font-mono">
                       {activeDeptStats.theoryWorkload}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-amber-700 bg-amber-50/40 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-2 font-black text-lg sm:text-xl text-amber-700 bg-amber-50/40 border-r border-gray-300 font-mono">
                       {activeDeptStats.tutorialWorkload}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-purple-700 bg-purple-50/40 border-r border-gray-300 font-mono">
+                    <td className="py-3 px-2 font-black text-lg sm:text-xl text-purple-700 bg-purple-50/40 border-r border-gray-300 font-mono">
                       {activeDeptStats.labWorkload}
                     </td>
-                    <td className="py-4 px-3 font-black text-xl sm:text-2xl text-emerald-700 bg-emerald-50/40 font-mono">
+                    <td className="py-3 px-2 font-black text-lg sm:text-xl text-emerald-700 bg-emerald-50/40 font-mono">
                       {activeDeptStats.totalWorkload}
                     </td>
                   </tr>
@@ -943,23 +957,23 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-xs border-collapse min-w-[1000px]">
+              <table className="w-full text-xs border-collapse">
                 <thead>
-                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px] whitespace-nowrap">
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-12 text-center">S.No</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-56">Name of the Faculty</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-44">Designation</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 bg-blue-50/60 text-blue-950 font-black text-left">
+                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[10.5px] sm:text-[11px]">
+                    <th className="py-2 px-2 border-r border-gray-300 w-10 text-center">S.No</th>
+                    <th className="py-2 px-2.5 border-r border-gray-300 text-left w-48 sm:w-52">Name of the Faculty</th>
+                    <th className="py-2 px-2 border-r border-gray-300 text-left w-32 sm:w-36">Designation</th>
+                    <th className="py-2 px-2.5 border-r border-gray-300 bg-blue-50/60 text-blue-950 font-black text-left">
                       Theory Workload
                     </th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 bg-amber-50/60 text-amber-950 font-black text-left">
+                    <th className="py-2 px-2.5 border-r border-gray-300 bg-amber-50/60 text-amber-950 font-black text-left">
                       Tutorial Workload
                     </th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 bg-purple-50/60 text-purple-950 font-black text-left">
+                    <th className="py-2 px-2.5 border-r border-gray-300 bg-purple-50/60 text-purple-950 font-black text-left">
                       Lab Workload
                     </th>
-                    <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950 font-black text-center">
-                      Total Workload
+                    <th className="py-2 px-2 w-16 sm:w-20 bg-emerald-50/60 text-emerald-950 font-black text-center">
+                      Total
                     </th>
                   </tr>
                 </thead>
@@ -973,34 +987,34 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                       <tr
                         key={f.fullName}
                         onClick={() => setSelectedFaculty(f.fullName)}
-                        className={`border-b border-gray-200 transition-colors cursor-pointer whitespace-nowrap ${
+                        className={`border-b border-gray-200 transition-colors cursor-pointer ${
                           isSelected ? 'bg-blue-100/90 font-bold' : idx % 2 === 0 ? 'bg-white hover:bg-slate-100/80' : 'bg-gray-50/60 hover:bg-slate-100/80'
                         }`}
                         title="Click to select this faculty member"
                       >
-                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono text-center text-slate-600 font-bold align-middle">
+                        <td className="py-2 px-2 border-r border-gray-200 font-mono text-center text-slate-600 font-bold align-middle text-[11px]">
                           {idx + 1}
                         </td>
-                        <td className="py-2.5 px-3 border-r border-gray-200 text-left font-bold text-slate-900 align-middle">
+                        <td className="py-2 px-2.5 border-r border-gray-200 text-left font-bold text-slate-900 align-middle text-[11px] leading-tight">
                           <span>{f.fullName}</span>
                           {cleanShort && (
-                            <span className="ml-1.5 text-blue-700 font-mono font-bold text-[11px]">
+                            <span className="ml-1 text-blue-700 font-mono font-bold text-[10.5px]">
                               ({cleanShort})
                             </span>
                           )}
                         </td>
-                        <td className="py-2.5 px-3 border-r border-gray-200 text-left text-slate-700 font-medium text-[11px] align-middle">
+                        <td className="py-2 px-2 border-r border-gray-200 text-left text-slate-700 font-medium text-[11px] align-middle leading-tight">
                           {f.designation || 'Assistant Professor'}
                         </td>
                         
                         {/* Theory Workload: single-line text */}
-                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                        <td className="py-2 px-2.5 border-r border-gray-200 text-left align-middle text-[11px]">
                           {f.theoryLoad > 0 ? (
-                            <div className="flex items-center gap-1.5 whitespace-nowrap">
-                              <span className="font-mono font-black text-blue-900 text-sm">
+                            <div className="flex items-baseline gap-1">
+                              <span className="font-mono font-black text-blue-900 text-xs">
                                 {f.theoryLoad}
                               </span>
-                              <span className="text-slate-700 text-xs font-medium">
+                              <span className="text-slate-600 text-[10.5px] font-medium">
                                 ({Object.entries(breakdowns.theoryByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
                               </span>
                             </div>
@@ -1010,13 +1024,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                         </td>
 
                         {/* Tutorial Workload: single-line text */}
-                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                        <td className="py-2 px-2.5 border-r border-gray-200 text-left align-middle text-[11px]">
                           {f.tutLoad > 0 ? (
-                            <div className="flex items-center gap-1.5 whitespace-nowrap">
-                              <span className="font-mono font-black text-amber-900 text-sm">
+                            <div className="flex items-baseline gap-1">
+                              <span className="font-mono font-black text-amber-900 text-xs">
                                 {f.tutLoad}
                               </span>
-                              <span className="text-slate-700 text-xs font-medium">
+                              <span className="text-slate-600 text-[10.5px] font-medium">
                                 ({Object.entries(breakdowns.tutByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
                               </span>
                             </div>
@@ -1026,13 +1040,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                         </td>
 
                         {/* Lab Workload: single-line text */}
-                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                        <td className="py-2 px-2.5 border-r border-gray-200 text-left align-middle text-[11px]">
                           {f.labLoad > 0 ? (
-                            <div className="flex items-center gap-1.5 whitespace-nowrap">
-                              <span className="font-mono font-black text-purple-900 text-sm">
+                            <div className="flex items-baseline gap-1">
+                              <span className="font-mono font-black text-purple-900 text-xs">
                                 {f.labLoad}
                               </span>
-                              <span className="text-slate-700 text-xs font-medium">
+                              <span className="text-slate-600 text-[10.5px] font-medium">
                                 ({Object.entries(breakdowns.labByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
                               </span>
                             </div>
@@ -1042,7 +1056,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                         </td>
 
                         {/* Total Workload */}
-                        <td className="py-2.5 px-3 font-mono font-black text-emerald-800 text-base text-center align-middle">
+                        <td className="py-2 px-2 font-mono font-black text-emerald-800 text-sm text-center align-middle">
                           {f.totalLoad || 0}
                         </td>
                       </tr>
@@ -1050,23 +1064,23 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                   })}
                 </tbody>
                 <tfoot>
-                  <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900 whitespace-nowrap">
-                    <td colSpan={3} className="py-3 px-3 text-right uppercase tracking-wider text-xs border-r border-gray-300">
+                  <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900">
+                    <td colSpan={3} className="py-2 px-2.5 text-right uppercase tracking-wider text-[11px] border-r border-gray-300">
                       Total ({filteredFacultyList.length} Faculty):
                     </td>
-                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-blue-900 text-left">
-                      <span className="font-black text-base">{activeDeptStats.theoryWorkload}</span>
-                      <span className="ml-1 text-[11px] font-sans text-blue-800 font-semibold">(Total Theory Hrs)</span>
+                    <td className="py-2 px-2.5 border-r border-gray-300 font-mono text-sm text-blue-900 text-left">
+                      <span className="font-black">{activeDeptStats.theoryWorkload}</span>
+                      <span className="ml-1 text-[10.5px] font-sans text-blue-800 font-semibold">(Theory Hrs)</span>
                     </td>
-                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-amber-900 text-left">
-                      <span className="font-black text-base">{activeDeptStats.tutorialWorkload}</span>
-                      <span className="ml-1 text-[11px] font-sans text-amber-800 font-semibold">(Total Tut Hrs)</span>
+                    <td className="py-2 px-2.5 border-r border-gray-300 font-mono text-sm text-amber-900 text-left">
+                      <span className="font-black">{activeDeptStats.tutorialWorkload}</span>
+                      <span className="ml-1 text-[10.5px] font-sans text-amber-800 font-semibold">(Tut Hrs)</span>
                     </td>
-                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-purple-900 text-left">
-                      <span className="font-black text-base">{activeDeptStats.labWorkload}</span>
-                      <span className="ml-1 text-[11px] font-sans text-purple-800 font-semibold">(Total Lab Hrs)</span>
+                    <td className="py-2 px-2.5 border-r border-gray-300 font-mono text-sm text-purple-900 text-left">
+                      <span className="font-black">{activeDeptStats.labWorkload}</span>
+                      <span className="ml-1 text-[10.5px] font-sans text-purple-800 font-semibold">(Lab Hrs)</span>
                     </td>
-                    <td className="py-3 px-3 font-mono text-lg text-emerald-900 text-center">
+                    <td className="py-2 px-2 font-mono text-base text-emerald-900 text-center">
                       {activeDeptStats.totalWorkload}
                     </td>
                   </tr>

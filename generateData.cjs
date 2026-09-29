@@ -499,6 +499,61 @@ const slotCols = [
 
 const branchSessionsMap = {};
 
+// Helper: apply clerical corrections to cells based on authoritative Sheet2 data
+function patchCellContent(branch, day, slot, parsed, rawVal) {
+  if (!parsed) return null;
+  const p = { ...parsed };
+
+  // Room corrections from Sheet2
+  if (branch === 'MECH' && p.room === 'G-304') {
+    p.room = 'G-404';
+  }
+  if (branch === 'ECE-1' && p.room === 'G-302') {
+    p.room = 'G-402';
+  }
+
+  // Clerical corrections in faculty strings from Sheet2 / Faculty_Workload_Department_Wis:
+  // 1. CSE(AI&ML)-1 FAI&ML LAB on TUE afternoon (Batch 2 was erroneously copy-pasted as Batch 1)
+  if (branch === 'CSE(AI&ML)-1' && day === 'TUE' && (slot === '02:15-03:15' || slot === '03:15-04:15') && p.isLab) {
+    p.facultyInitials = 'DAK, KS, SLA';
+    p.faculty = resolveFacultyNames(p.facultyInitials);
+  }
+
+  // 2. ECE-1 AITA LAB on WED morning (Batch 2 was erroneously copy-pasted as Batch 1)
+  if (branch === 'ECE-1' && day === 'WED' && (slot === '09:00-10:00' || slot === '10:00-11:00') && p.isLab) {
+    p.facultyInitials = 'PSSA, PKD, BVSAK';
+    p.faculty = resolveFacultyNames(p.facultyInitials);
+  }
+
+  // 3. CIVIL labs with omitted 3rd faculty initials in cell text:
+  if (branch === 'CIVIL') {
+    if (day === 'MON' && (slot === '11:15-12:15' || slot === '12:15-01:15') && p.isLab) {
+      p.facultyInitials = 'VA, DSK, BRB';
+      p.faculty = resolveFacultyNames(p.facultyInitials);
+    } else if (day === 'FRI' && (slot === '11:15-12:15' || slot === '12:15-01:15') && p.isLab) {
+      p.facultyInitials = 'BBK, AS, VVVSN';
+      p.faculty = resolveFacultyNames(p.facultyInitials);
+    } else if (day === 'TUE' && (slot === '09:00-10:00' || slot === '10:00-11:00') && p.isLab) {
+      p.facultyInitials = 'PM, BV, GS';
+      p.faculty = resolveFacultyNames(p.facultyInitials);
+    } else if (day === 'MON' && (slot === '02:15-03:15' || slot === '03:15-04:15') && p.isLab) {
+      p.facultyInitials = 'NVL, CHA, IRS';
+      p.faculty = resolveFacultyNames(p.facultyInitials);
+    } else if (day === 'TUE' && (slot === '02:15-03:15' || slot === '03:15-04:15') && p.isLab) {
+      p.facultyInitials = 'PSR, KVP, RN';
+      p.faculty = resolveFacultyNames(p.facultyInitials);
+    }
+  }
+
+  // 4. MECH-ROBOTICS AITA LAB on FRI afternoon (erroneously typed TAJ instead of ISR)
+  if (branch === 'MECH-ROBOTICS' && day === 'FRI' && (slot === '02:15-03:15' || slot === '03:15-04:15') && p.isLab) {
+    p.facultyInitials = 'ISR, CHR, NSSVRR';
+    p.faculty = resolveFacultyNames(p.facultyInitials);
+  }
+
+  return p;
+}
+
 let curDay = '', curBranch = '';
 for (let r = 1; r < rowsFinal.length; r++) {
   const row = rowsFinal[r];
@@ -513,8 +568,9 @@ for (let r = 1; r < rowsFinal.length; r++) {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
 
-    const parsed = parseCellContent(val);
-    if (!parsed) return;
+    const rawParsed = parseCellContent(val);
+    if (!rawParsed) return;
+    const parsed = patchCellContent(curBranch, curDay, slot, rawParsed, val);
 
     if (!timetableData[curBranch][curDay][slot]) {
       timetableData[curBranch][curDay][slot] = [];
@@ -563,7 +619,7 @@ function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isCont
   }
 }
 
-// Extract directly and authoritatively from Timetable_Final
+// Extract directly and authoritatively from Timetable_Final with conflict-awareness
 curDay = ''; curBranch = '';
 for (let r = 1; r < rowsFinal.length; r++) {
   const row = rowsFinal[r];
@@ -574,18 +630,49 @@ for (let r = 1; r < rowsFinal.length; r++) {
   slotCols.forEach(({ slot, nextSlot, c }) => {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
-    const parsed = parseCellContent(val);
-    if (!parsed) return;
+    const rawParsed = parseCellContent(val);
+    if (!rawParsed) return;
+    const parsed = patchCellContent(curBranch, curDay, slot, rawParsed, val);
 
-    const facs = matchFacultyInText(val);
+    const facs = matchFacultyInText(parsed.facultyInitials || val);
     if (facs.length === 0) return;
 
-    facs.forEach(fn => {
-      addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
-      if (parsed.isLab && nextSlot) {
-        addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
-      }
+    // Filter faculty to those who officially have this branch in assignedCourses
+    const validFacs = facs.filter(fn => {
+      const facObj = facultyMap[fn];
+      if (!facObj || !facObj.assignedCourses) return false;
+      return facObj.assignedCourses.some(ac => ac.branch === curBranch);
     });
+
+    const targetFacs = validFacs.length > 0 ? validFacs : facs;
+
+    if (parsed.isLab) {
+      // For labs: assign to all target faculty who do not have a conflict in another room in either slot
+      targetFacs.forEach(fn => {
+        const existingSlot = (masterFacultyTimetables[fn]?.[curDay]?.[slot] || []);
+        const existingNext = nextSlot ? (masterFacultyTimetables[fn]?.[curDay]?.[nextSlot] || []) : [];
+        const hasConflictSlot = existingSlot.some(ex => ex.room && parsed.room && ex.room !== parsed.room);
+        const hasConflictNext = existingNext.some(ex => ex.room && parsed.room && ex.room !== parsed.room);
+        if (!hasConflictSlot && !hasConflictNext) {
+          addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
+          if (nextSlot) {
+            addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
+          }
+        }
+      });
+    } else {
+      // For theory: if multiple faculty are co-teachers (e.g. DAK, BBK),
+      // if one is already scheduled in another room at this slot, don't double-book them!
+      const availableFacs = targetFacs.filter(fn => {
+        const existing = (masterFacultyTimetables[fn]?.[curDay]?.[slot] || []);
+        return !existing.some(ex => ex.room && parsed.room && ex.room !== parsed.room);
+      });
+
+      const assignees = availableFacs.length > 0 ? availableFacs : targetFacs;
+      assignees.forEach(fn => {
+        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
+      });
+    }
   });
 }
 
