@@ -899,7 +899,11 @@ s2Rows.forEach(r => {
 });
 
 const allottedByCourseAndBranch = {};
-const summaryLabCols = [2, 5, 8];
+const summaryLabCols = [
+  { slot: '09:00-11:00', c: 2 },
+  { slot: '11:15-01:15', c: 5 },
+  { slot: '02:15-04:15', c: 8 }
+];
 let sumCurD = '', sumCurB = '';
 
 for (let r = 1; r < rowsFinal.length; r++) {
@@ -908,7 +912,7 @@ for (let r = 1; r < rowsFinal.length; r++) {
   if (row[1] && row[1].trim()) sumCurB = row[1].trim();
   if (!dayNames.includes(sumCurD) || !sumCurB) continue;
 
-  summaryLabCols.forEach(c => {
+  summaryLabCols.forEach(({ slot, c }) => {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
     const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA') || val.toUpperCase().includes('PRACTICAL');
@@ -920,7 +924,13 @@ for (let r = 1; r < rowsFinal.length; r++) {
     if (!allottedByCourseAndBranch[subj]) {
       allottedByCourseAndBranch[subj] = {};
     }
-    allottedByCourseAndBranch[subj][sumCurB] = (allottedByCourseAndBranch[subj][sumCurB] || 0) + 1;
+    if (!allottedByCourseAndBranch[subj][sumCurB]) {
+      allottedByCourseAndBranch[subj][sumCurB] = [];
+    }
+    allottedByCourseAndBranch[subj][sumCurB].push({
+      day: sumCurD,
+      slot
+    });
   });
 }
 
@@ -938,23 +948,28 @@ if (wsLabSummary) {
 
 const labSummary = rawLabSummary.map(item => {
   const sheetRow = sheetSummaryMap[item.subShort] || {};
-  const allottedCounts = allottedByCourseAndBranch[item.subShort] || {};
-  const totalAllotted = Object.values(allottedCounts).reduce((a, b) => a + b, 0);
-  const pending = Math.max(0, item.required - totalAllotted);
-  const extra = Math.max(0, totalAllotted - item.required);
-
   const branchStatusList = item.branches.map(b => {
-    const allot = allottedCounts[b.branch] || 0;
+    const sessions = allottedByCourseAndBranch[item.subShort]?.[b.branch] || [];
+    const allot = sessions.length;
     const isDone = allot >= b.freq;
+    const slotStr = sessions.length > 0
+      ? sessions.map(s => `${s.day} ${s.slot}`).join(', ')
+      : 'Not Allotted';
+
     return {
       branch: b.branch,
       required: b.freq,
       allotted: allot,
+      slots: slotStr,
       status: isDone ? 'ALLOTTED' : 'PENDING'
     };
   });
 
-  const branchSummaryText = branchStatusList.map(b => `${b.branch} (${b.allotted}/${b.required})`).join(', ');
+  const totalAllotted = branchStatusList.reduce((acc, b) => acc + b.allotted, 0);
+  const pending = Math.max(0, item.required - totalAllotted);
+  const extra = Math.max(0, totalAllotted - item.required);
+
+  const branchSummaryText = branchStatusList.map(b => `${b.branch}: ${b.slots}`).join('\n');
   const roomDisplay = (sheetRow['Room_no'] && sheetRow['Room_no'].trim()) || Array.from(item.rooms).join(', ');
 
   return {

@@ -691,20 +691,20 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
           </div>
 
           <div className="w-full">
-            <table className="w-full text-xs text-left border-collapse table-fixed">
+            <table className="w-full text-xs text-left border-collapse table-fixed border border-slate-300">
               <thead>
-                <tr className="bg-gray-100 text-gray-900 font-extrabold border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
-                  <th className="py-2.5 px-1.5 text-center w-[3%] border-r border-gray-300">S.No</th>
-                  <th className="py-2.5 px-2.5 w-[20%] border-r border-gray-300">Lab Name</th>
-                  <th className="py-2.5 px-2 w-[9%] border-r border-gray-300">Code</th>
-                  <th className="py-2.5 px-2 w-[13%] border-r border-gray-300">Room_no</th>
-                  <th className="py-2.5 px-2.5 w-[26%] border-r border-gray-300">Branches</th>
-                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Required</th>
-                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Allotted</th>
-                  <th className="py-2.5 px-1.5 text-center w-[5%] border-r border-gray-300">Pending</th>
-                  <th className="py-2.5 px-1 text-center w-[4%] border-r border-gray-300">Extra</th>
-                  <th className="py-2.5 px-1 text-center w-[4%] border-r border-gray-300">Lab_Hours</th>
-                  <th className="py-2.5 px-2 text-center w-[10%]">Remarks</th>
+                <tr className="bg-slate-100 text-slate-900 font-extrabold border-b-2 border-slate-700 uppercase tracking-normal text-[11px]">
+                  <th className="py-2.5 px-1.5 text-center w-[3%] min-w-[36px] border-r border-slate-300">S.No</th>
+                  <th className="py-2.5 px-2.5 text-left w-[18%] min-w-[130px] border-r border-slate-300">Lab Name</th>
+                  <th className="py-2.5 px-2 text-left w-[8%] min-w-[65px] border-r border-slate-300">Code</th>
+                  <th className="py-2.5 px-2 text-left w-[12%] min-w-[85px] border-r border-slate-300">Room(s)</th>
+                  <th className="py-2.5 px-2.5 text-left w-[37%] min-w-[280px] border-r border-slate-300">Branches & Time Slots</th>
+                  <th className="py-2.5 px-1 text-center w-[4.5%] min-w-[42px] border-r border-slate-300">Req.</th>
+                  <th className="py-2.5 px-1 text-center w-[4.5%] min-w-[42px] border-r border-slate-300">Allot.</th>
+                  <th className="py-2.5 px-1 text-center w-[4.5%] min-w-[42px] border-r border-slate-300">Pend.</th>
+                  <th className="py-2.5 px-1 text-center w-[3.5%] min-w-[36px] border-r border-slate-300">Extra</th>
+                  <th className="py-2.5 px-1 text-center w-[3.5%] min-w-[36px] border-r border-slate-300">Hrs</th>
+                  <th className="py-2.5 px-2 text-center w-[7.5%] min-w-[65px]">Remarks</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -722,16 +722,29 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                     <td className="py-2.5 px-2 font-mono text-[11px] text-gray-700 border-r border-gray-200 align-top break-words whitespace-normal leading-tight">
                       {row.roomNo}
                     </td>
-                    <td className="py-2.5 px-2.5 text-[11px] text-gray-800 border-r border-gray-200 align-top break-words whitespace-normal leading-tight">
-                      {row.branches}
+                    <td className="py-2.5 px-2.5 text-[11px] text-gray-800 border-r border-gray-200 align-top">
+                      <div className="flex flex-col gap-1">
+                        {row.branchStatusList && row.branchStatusList.length > 0 ? (
+                          row.branchStatusList.map((bs, bIdx) => (
+                            <div key={bIdx} className="leading-snug flex items-baseline gap-1.5 flex-wrap">
+                              <span className="font-bold text-slate-900">{bs.branch}:</span>
+                              <span className={bs.slots === 'Not Allotted' ? 'text-amber-700 font-semibold' : 'text-purple-900 font-mono text-[10.5px]'}>
+                                {bs.slots}
+                              </span>
+                            </div>
+                          ))
+                        ) : (
+                          <div className="whitespace-pre-line leading-snug">{row.branches}</div>
+                        )}
+                      </div>
                     </td>
-                    <td className="py-2.5 px-1.5 text-center font-black text-gray-900 border-r border-gray-200 align-top">
+                    <td className="py-2.5 px-1 text-center font-black text-gray-900 border-r border-gray-200 align-top">
                       {row.required}
                     </td>
-                    <td className="py-2.5 px-1.5 text-center font-black text-emerald-700 border-r border-gray-200 align-top">
+                    <td className="py-2.5 px-1 text-center font-black text-emerald-700 border-r border-gray-200 align-top">
                       {row.allotted}
                     </td>
-                    <td className={`py-2.5 px-1.5 text-center font-black border-r border-gray-200 align-top ${row.pending > 0 ? 'text-amber-700' : 'text-emerald-700'}`}>
+                    <td className={`py-2.5 px-1 text-center font-black border-r border-gray-200 align-top ${row.pending > 0 ? 'text-amber-700' : 'text-emerald-700'}`}>
                       {row.pending}
                     </td>
                     <td className="py-2.5 px-1 text-center text-gray-500 border-r border-gray-200 align-top">
@@ -749,23 +762,23 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                 ))}
               </tbody>
               <tfoot>
-                <tr className="bg-gray-100 border-t-2 border-slate-700 font-black text-gray-900 text-[11.5px]">
-                  <td colSpan={5} className="py-3 px-4 text-right uppercase tracking-wider border-r border-gray-300">
+                <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900 text-[11.5px]">
+                  <td colSpan={5} className="py-3 px-4 text-right uppercase tracking-wider border-r border-slate-300">
                     Grand Total
                   </td>
-                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-gray-900">
+                  <td className="py-3 px-1 text-center border-r border-slate-300 font-black text-slate-900">
                     {labSummaryTotals.required}
                   </td>
-                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-emerald-700">
+                  <td className="py-3 px-1 text-center border-r border-slate-300 font-black text-emerald-700">
                     {labSummaryTotals.allotted}
                   </td>
-                  <td className="py-3 px-1.5 text-center border-r border-gray-300 font-black text-emerald-700">
+                  <td className="py-3 px-1 text-center border-r border-slate-300 font-black text-emerald-700">
                     {labSummaryTotals.pending}
                   </td>
-                  <td className="py-3 px-1 text-center border-r border-gray-300 text-gray-600">
+                  <td className="py-3 px-1 text-center border-r border-slate-300 text-slate-600">
                     {labSummaryTotals.extra}
                   </td>
-                  <td className="py-3 px-1 text-center border-r border-gray-300 text-gray-400">
+                  <td className="py-3 px-1 text-center border-r border-slate-300 text-slate-400">
                     —
                   </td>
                   <td className="py-3 px-2 text-center">

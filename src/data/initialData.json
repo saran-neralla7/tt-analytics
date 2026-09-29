@@ -8718,36 +8718,41 @@
         "labName": "3D Design and Animation",
         "subShort": "3DDA",
         "roomNo": "G-304, G-305, G-302, G-303, G-405",
-        "branches": "CSE-1 (1/1), CSE-2 (1/1), CSE(AI&ML)-1 (1/1), CSE(AI&ML)-2 (1/1), CSE (CS & DS) (1/1)",
+        "branches": "CSE-1: WED 02:15-04:15\nCSE-2: FRI 02:15-04:15\nCSE(AI&ML)-1: MON 02:15-04:15\nCSE(AI&ML)-2: TUE 02:15-04:15\nCSE (CS & DS): THU 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CSE-1",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE-2",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-1",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-2",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE (CS & DS)",
             "required": 1,
             "allotted": 1,
+            "slots": "THU 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -8763,36 +8768,41 @@
         "labName": "Engineering Physics lab",
         "subShort": "ENGG. PHY. LAB",
         "roomNo": "PHY LAB",
-        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2)",
+        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15",
         "branchStatusList": [
           {
             "branch": "CSE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, TUE 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 11:15-01:15, THU 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-1",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-2",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 02:15-04:15, THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE (CS & DS)",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 09:00-11:00, FRI 11:15-01:15",
             "status": "ALLOTTED"
           }
         ],
@@ -8808,84 +8818,97 @@
         "labName": "Problem solving using C lab",
         "subShort": "PSUC LAB",
         "roomNo": "COMP. LAB-1, COMP. LAB-2, C-208, COMP. LAB-3, A-301,302",
-        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2), ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15\nECE-1: TUE 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, WED 02:15-04:15\nECE-3: THU 11:15-01:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: WED 02:15-04:15\nCIVIL: FRI 11:15-01:15\nCHEMICAL: FRI 09:00-11:00\nMECH-ROBOTICS: FRI 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CSE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, TUE 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 11:15-01:15, THU 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-1",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-2",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 02:15-04:15, THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE (CS & DS)",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 09:00-11:00, FRI 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "TUE 11:15-01:15, THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, WED 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-3",
             "required": 1,
             "allotted": 1,
+            "slots": "THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, TUE 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "EEE",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CHEMICAL",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH-ROBOTICS",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -8901,84 +8924,97 @@
         "labName": "AI Tools and Applications Lab",
         "subShort": "AITA LAB",
         "roomNo": "COMP. LAB-2, A-303,304, COMP. LAB-3, A-301,302, COMP. LAB-1",
-        "branches": "CSE-1 (2/2), CSE-2 (2/2), CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2), CSE (CS & DS) (2/2), ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15\nCSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00\nCSE (CS & DS): WED 02:15-04:15, THU 09:00-11:00\nECE-1: MON 02:15-04:15, WED 09:00-11:00\nECE-2: THU 02:15-04:15, FRI 02:15-04:15\nECE-3: MON 02:15-04:15\nMECH: THU 02:15-04:15, FRI 09:00-11:00\nEEE: TUE 11:15-01:15\nCIVIL: MON 11:15-01:15\nCHEMICAL: WED 11:15-01:15\nMECH-ROBOTICS: FRI 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CSE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, TUE 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 11:15-01:15, TUE 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-2",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, TUE 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE (CS & DS)",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 02:15-04:15, THU 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, WED 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-3",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "EEE",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CHEMICAL",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH-ROBOTICS",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -8994,18 +9030,20 @@
         "labName": "Fundamentals of Web Designing Lab",
         "subShort": "FWD LAB",
         "roomNo": "COMP. LAB-3",
-        "branches": "CSE-1 (2/2), CSE-2 (2/2)",
+        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CSE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 02:15-04:15, TUE 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -9021,18 +9059,20 @@
         "labName": "Foundations of Artificial Intelligence & Machine Learning Lab",
         "subShort": "FAI & ML LAB",
         "roomNo": "COMP. LAB-1, COMP. LAB-3",
-        "branches": "CSE(AI&ML)-1 (2/2), CSE(AI&ML)-2 (2/2)",
+        "branches": "CSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CSE(AI&ML)-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 11:15-01:15, TUE 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CSE(AI&ML)-2",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, TUE 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9048,12 +9088,13 @@
         "labName": "Foundations of Data Science Lab",
         "subShort": "FDS LAB",
         "roomNo": "COMP. LAB-3",
-        "branches": "CSE (CS & DS) (1/1)",
+        "branches": "CSE (CS & DS): WED 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CSE (CS & DS)",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -9069,12 +9110,13 @@
         "labName": "Cyber Security Principles Lab",
         "subShort": "CSP LAB",
         "roomNo": "COMP. LAB-3",
-        "branches": "CSE (CS & DS) (1/1)",
+        "branches": "CSE (CS & DS): THU 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CSE (CS & DS)",
             "required": 1,
             "allotted": 1,
+            "slots": "THU 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9090,30 +9132,34 @@
         "labName": "Engineering Chemistry Lab",
         "subShort": "ENGG. CHEM LAB",
         "roomNo": "CHEM. LAB.",
-        "branches": "ECE-1 (4/4), ECE-2 (4/4), ECE-3 (2/2), EEE (2/2)",
+        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-3: THU 02:15-04:15, FRI 02:15-04:15\nEEE: MON 09:00-11:00, WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "ECE-1",
             "required": 4,
             "allotted": 4,
+            "slots": "MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-2",
             "required": 4,
             "allotted": 4,
+            "slots": "MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-3",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "EEE",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, WED 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9129,24 +9175,27 @@
         "labName": "Digital Logic Design Lab",
         "subShort": "DLD LAB",
         "roomNo": "A-406",
-        "branches": "ECE-1 (4/4), ECE-2 (4/4), ECE-3 (2/2)",
+        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-3: THU 02:15-04:15, FRI 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "ECE-1",
             "required": 4,
             "allotted": 4,
+            "slots": "MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-2",
             "required": 4,
             "allotted": 4,
+            "slots": "MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-3",
             "required": 2,
             "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -9162,54 +9211,62 @@
         "labName": "Essential English Lab",
         "subShort": "ESS. ENG. LAB",
         "roomNo": "COMP. LAB-4",
-        "branches": "ECE-1 (2/2), ECE-2 (2/2), ECE-3 (1/1), MECH (2/2), EEE (1/1), CIVIL (1/1), CHEMICAL (1/1), MECH-ROBOTICS (1/1)",
+        "branches": "ECE-1: MON 11:15-01:15, WED 11:15-01:15\nECE-2: TUE 02:15-04:15, FRI 11:15-01:15\nECE-3: WED 02:15-04:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: FRI 02:15-04:15\nCIVIL: MON 02:15-04:15\nCHEMICAL: TUE 11:15-01:15\nMECH-ROBOTICS: WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "ECE-1",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 11:15-01:15, WED 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-2",
             "required": 2,
             "allotted": 2,
+            "slots": "TUE 02:15-04:15, FRI 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "ECE-3",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, TUE 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "EEE",
             "required": 1,
             "allotted": 1,
+            "slots": "FRI 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "CHEMICAL",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH-ROBOTICS",
             "required": 1,
             "allotted": 1,
+            "slots": "WED 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9225,24 +9282,27 @@
         "labName": "Chemistry Lab",
         "subShort": "CHEM LAB",
         "roomNo": "GVPCE CHEM. LAB.",
-        "branches": "MECH (2/2), CIVIL (1/1), MECH-ROBOTICS (1/1)",
+        "branches": "MECH: WED 02:15-04:15, WED 09:00-11:00\nCIVIL: TUE 02:15-04:15\nMECH-ROBOTICS: TUE 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "MECH",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 02:15-04:15, WED 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH-ROBOTICS",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9258,18 +9318,20 @@
         "labName": "Elements of Mechanical Engineering Lab",
         "subShort": "EME LAB",
         "roomNo": "GVPCE MECH. LAB",
-        "branches": "MECH (2/2), MECH-ROBOTICS (1/1)",
+        "branches": "MECH: WED 09:00-11:00, WED 02:15-04:15\nMECH-ROBOTICS: TUE 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "MECH",
             "required": 2,
             "allotted": 2,
+            "slots": "WED 09:00-11:00, WED 02:15-04:15",
             "status": "ALLOTTED"
           },
           {
             "branch": "MECH-ROBOTICS",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
@@ -9285,12 +9347,13 @@
         "labName": "Fundamentals of Electrical and Electronics Engineering Lab",
         "subShort": "FEEE LAB",
         "roomNo": "E-319",
-        "branches": "EEE (2/2)",
+        "branches": "EEE: MON 09:00-11:00, WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "EEE",
             "required": 2,
             "allotted": 2,
+            "slots": "MON 09:00-11:00, WED 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9306,12 +9369,13 @@
         "labName": "Surveying and Geomatics Lab",
         "subShort": "S&G LAB",
         "roomNo": "GVPCE SUR. LAB",
-        "branches": "CIVIL (1/1)",
+        "branches": "CIVIL: TUE 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
+            "slots": "TUE 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9327,12 +9391,13 @@
         "labName": "Physical and Analytical Chemistry Lab",
         "subShort": "PAC LAB",
         "roomNo": "GVPCE CHEM. LAB.",
-        "branches": "CHEMICAL (1/1)",
+        "branches": "CHEMICAL: MON 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CHEMICAL",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 09:00-11:00",
             "status": "ALLOTTED"
           }
         ],
@@ -9348,12 +9413,13 @@
         "labName": "Principles of Chemical Engineering Lab",
         "subShort": "PCE LAB",
         "roomNo": "GVPCE CHEM. LAB.",
-        "branches": "CHEMICAL (1/1)",
+        "branches": "CHEMICAL: MON 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CHEMICAL",
             "required": 1,
             "allotted": 1,
+            "slots": "MON 02:15-04:15",
             "status": "ALLOTTED"
           }
         ],
