@@ -77,7 +77,8 @@ th, td {
     display: block !important;
   }
 
-  .branch-print-page {
+  .branch-print-page,
+  .faculty-print-page {
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
@@ -87,7 +88,8 @@ th, td {
     margin: 0 !important;
   }
 
-  .branch-print-page:last-child {
+  .branch-print-page:last-child,
+  .faculty-print-page:last-child {
     page-break-after: auto !important;
     break-after: auto !important;
   }

@@ -1,74 +1,60 @@
 import React, { useState, useMemo } from 'react';
 import { days, periodSlots } from '../data/mockData';
-import { UserCheck, Clock, BookOpen, MapPin, Filter } from 'lucide-react';
+import { UserCheck, Clock, BookOpen, MapPin, Filter, Users, ChevronDown, ChevronUp, Layers } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 
-export default function IndividualView({ timetableData, universityInfo, facultyList: propFacultyList, onSlotClick }) {
-  // Master faculty list with full metadata (only faculty with assigned workload)
-  const facultyMembers = useMemo(() => {
-    const list = (propFacultyList && propFacultyList.length > 0)
-      ? propFacultyList
-      : initialData.facultyList || [];
-    return list.filter(f => (f.totalLoad || 0) > 0 || (f.assignedCourses && f.assignedCourses.length > 0));
-  }, [propFacultyList]);
+/**
+ * Helper to check if current slot and next slot should be merged horizontally (colSpan=2) for faculty
+ */
+function has2HourFacultyMerge(daySched, idx) {
+  const currentSlot = periodSlots[idx]?.time;
+  const nextSlot = periodSlots[idx + 1]?.time;
+  if (!nextSlot || periodSlots[idx + 1]?.type === 'break') return false;
 
-  // Extract unique departments
-  const departments = useMemo(() => {
-    const set = new Set();
-    facultyMembers.forEach(f => {
-      const dept = f.dept?.trim() || 'General';
-      if (dept) set.add(dept);
-    });
-    return ['ALL', ...Array.from(set).sort()];
-  }, [facultyMembers]);
+  const currentItems = daySched[currentSlot] || [];
+  const nextItems = daySched[nextSlot] || [];
 
-  // Department filter state
-  const [selectedDept, setSelectedDept] = useState('ALL');
+  if (currentItems.length === 0 || nextItems.length === 0) return false;
 
-  // Filtered faculty list based on department selection
-  const filteredFacultyList = useMemo(() => {
-    if (selectedDept === 'ALL') {
-      return facultyMembers;
-    }
-    return facultyMembers.filter(f => (f.dept?.trim() || 'General') === selectedDept);
-  }, [facultyMembers, selectedDept]);
+  // 1. Standard full merge (all items match across both hours)
+  if (
+    currentItems.length === nextItems.length &&
+    currentItems.every((item, i) => nextItems[i] && nextItems[i].subject === item.subject && nextItems[i].branch === item.branch)
+  ) {
+    return true;
+  }
 
-  // Faculty selection state
-  const [selectedFaculty, setSelectedFaculty] = useState(
-    facultyMembers[0]?.fullName || 'Dr. S Padma'
+  // 2. Partial continuing lab merge
+  const hasContinuingLab = currentItems.some(item =>
+    (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) &&
+    nextItems.some(nItem =>
+      (nItem.isLab || nItem.isContinued || nItem.subject?.includes('LAB') || nItem.subject?.includes('3DDA')) &&
+      nItem.subject === item.subject &&
+      nItem.branch === item.branch
+    )
   );
 
-  // When department changes, update selected faculty if current selection is not in new department
-  const handleDeptChange = (newDept) => {
-    setSelectedDept(newDept);
-    const newFiltered = newDept === 'ALL'
-      ? facultyMembers
-      : facultyMembers.filter(f => (f.dept?.trim() || 'General') === newDept);
-    
-    if (newFiltered.length > 0 && !newFiltered.some(f => f.fullName === selectedFaculty)) {
-      setSelectedFaculty(newFiltered[0].fullName);
-    }
-  };
+  return hasContinuingLab;
+}
 
-  const currentFacultyObj = useMemo(() => {
-    return facultyMembers.find(f => f.fullName === selectedFaculty);
-  }, [facultyMembers, selectedFaculty]);
+/**
+ * Single Faculty Timetable Card (Reusable for both single view and all-faculty stacked view)
+ */
+function FacultyTimetableCard({ facultyObj, timetableData, universityInfo, onSlotClick, isMultiView = false, index = 1, totalCount = 1 }) {
+  const facFull = facultyObj.fullName;
+  const facShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+  const facShortWithTitle = facultyObj.shortName?.trim();
 
-  // Build weekly schedule matrix for the selected faculty
+  // Build weekly schedule matrix for this faculty
   const facultySchedule = useMemo(() => {
-    // 1. Authoritative pre-computed schedule directly from Master Timetable
-    if (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[selectedFaculty]) {
-      return initialData.masterFacultyTimetables[selectedFaculty];
+    if (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[facFull]) {
+      return initialData.masterFacultyTimetables[facFull];
     }
 
-    // Fallback: Dynamic reconstruction from timetableData
+    // Dynamic fallback reconstruction from timetableData
     const result = {};
     days.forEach(d => result[d] = {});
-
-    const facFull = currentFacultyObj?.fullName || selectedFaculty;
-    const facShort = (currentFacultyObj?.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
-    const facShortWithTitle = currentFacultyObj?.shortName?.trim();
 
     const matchesFaculty = (cell) => {
       if (!cell || !cell.faculty) return false;
@@ -78,7 +64,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
       return false;
     };
 
-    Object.entries(timetableData).forEach(([branchKey, branchSched]) => {
+    Object.entries(timetableData || {}).forEach(([branchKey, branchSched]) => {
       Object.entries(branchSched).forEach(([dayKey, daySched]) => {
         Object.entries(daySched).forEach(([slotTime, rawCell]) => {
           const items = Array.isArray(rawCell) ? rawCell : rawCell ? [rawCell] : [];
@@ -102,15 +88,12 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     });
 
     return result;
-  }, [timetableData, selectedFaculty, currentFacultyObj]);
+  }, [facFull, facShort, facShortWithTitle, timetableData]);
 
-  // Parse all official course assignments for this faculty from Sheet2 / Master Workload
+  // Parse course assignments with scheduled slots
   const parsedAssignments = useMemo(() => {
-    if (!currentFacultyObj) return [];
-
-    // 1. Direct structured assigned courses from Sheet2
-    if (currentFacultyObj.assignedCourses && currentFacultyObj.assignedCourses.length > 0) {
-      return currentFacultyObj.assignedCourses.map(course => {
+    if (facultyObj.assignedCourses && facultyObj.assignedCourses.length > 0) {
+      return facultyObj.assignedCourses.map(course => {
         const branch = course.branch;
         const name = course.subject;
         const code = course.code;
@@ -120,7 +103,6 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         const loadDetail = course.loadDetail || `${course.hours} ${course.type} = ${course.hours} periods`;
         const periods = course.hours || 0;
 
-        // Find scheduled slots in facultySchedule for this branch and course
         const scheduledSlots = [];
         days.forEach(day => {
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
@@ -162,9 +144,8 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
       });
     }
 
-    // Fallback: Parse from assignments string
-    if (!currentFacultyObj.assignments) return [];
-    return currentFacultyObj.assignments
+    if (!facultyObj.assignments) return [];
+    return facultyObj.assignments
       .split('\n')
       .map(line => line.trim())
       .filter(Boolean)
@@ -182,7 +163,6 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         const isLab = line.toLowerCase().includes('lab');
         const isTutorial = line.toLowerCase().includes('tutorial') || line.toLowerCase().includes('tut');
 
-        // Find scheduled slots in facultySchedule for this branch and course
         const scheduledSlots = [];
         days.forEach(day => {
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
@@ -222,7 +202,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           scheduledSlots
         };
       });
-  }, [currentFacultyObj, facultySchedule]);
+  }, [facultyObj, facultySchedule]);
 
   // Compute workload metrics
   let totalHours = 0;
@@ -239,43 +219,550 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     });
   });
 
-  // Helper to check if current slot and next slot should be merged horizontally (colSpan=2) for faculty
-  const has2HourFacultyMerge = (daySched, idx) => {
-    const currentSlot = periodSlots[idx]?.time;
-    const nextSlot = periodSlots[idx + 1]?.time;
-    if (!nextSlot || periodSlots[idx + 1]?.type === 'break') return false;
+  return (
+    <div 
+      id={`faculty-${facShort || facultyObj.sno}`}
+      className={`w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 faculty-print-page transition-all`}
+    >
+      {/* Faculty Card Header Banner */}
+      <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
+        <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
+          {universityInfo.name}
+        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-1">
+          <h3 className="text-xs sm:text-sm font-black text-blue-900 uppercase font-mono">
+            INDIVIDUAL FACULTY TIMETABLE: <span className="underline decoration-blue-600 font-extrabold">{facFull}</span>
+            {facShort && (
+              <span className="ml-1.5 text-blue-700">({facShort})</span>
+            )}
+          </h3>
+          {facultyObj.dept && (
+            <span className="px-2 py-0.5 rounded text-[10.5px] font-bold bg-blue-100 text-blue-950 border border-blue-300">
+              Dept: {facultyObj.dept}
+            </span>
+          )}
+          {facultyObj.designation && (
+            <span className="px-2 py-0.5 rounded text-[10.5px] font-semibold bg-gray-200 text-gray-800 border border-gray-300">
+              {facultyObj.designation}
+            </span>
+          )}
+          {isMultiView && (
+            <span className="no-print px-2 py-0.5 rounded text-[10.5px] font-black bg-purple-100 text-purple-900 border border-purple-300">
+              #{index} of {totalCount}
+            </span>
+          )}
+        </div>
+        <p className="text-xs text-gray-600 mt-0.5 font-mono">
+          Academic Year {universityInfo.academicYear} | Official Workload: <span className="font-bold text-slate-900">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Theory: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
+        </p>
+      </div>
 
-    const currentItems = daySched[currentSlot] || [];
-    const nextItems = daySched[nextSlot] || [];
+      {/* Timetable Schedule Table */}
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700">
+          <thead>
+            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11.5px]">
+              <th className="py-3 px-2 border-r border-gray-300 w-20 text-xs font-black text-slate-900">Day</th>
+              {periodSlots.map((slot) => (
+                <th 
+                  key={slot.id} 
+                  className={`py-3 px-2 border-r border-gray-300 ${
+                    slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-20' : 'text-slate-950'
+                  }`}
+                >
+                  <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                    {slot.time}
+                  </span>
+                  {slot.label && (
+                    <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5">
+                      {slot.label}
+                    </div>
+                  )}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y-2 divide-slate-600">
+            {days.map((day) => {
+              const daySched = facultySchedule[day] || {};
+              const skipSlots = new Set();
 
-    if (currentItems.length === 0 || nextItems.length === 0) return false;
+              return (
+                <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
+                  {/* Day Column */}
+                  <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 uppercase tracking-wide align-middle">
+                    {day}
+                  </td>
 
-    // 1. Standard full merge (all items match across both hours)
-    if (
-      currentItems.length === nextItems.length &&
-      currentItems.every((item, i) => nextItems[i] && nextItems[i].subject === item.subject && nextItems[i].branch === item.branch)
-    ) {
-      return true;
+                  {periodSlots.map((slot, sIdx) => {
+                    if (skipSlots.has(slot.time)) {
+                      return null;
+                    }
+
+                    if (slot.type === 'break') {
+                      return (
+                        <td 
+                          key={slot.id} 
+                          className="py-4 px-2 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 tracking-wider uppercase align-middle select-none text-center"
+                        >
+                          {slot.label}
+                        </td>
+                      );
+                    }
+
+                    const currentItems = daySched[slot.time] || [];
+
+                    let colSpan = 1;
+                    let isSplitMerge = false;
+                    let nextSlotItems = [];
+                    if (has2HourFacultyMerge(daySched, sIdx)) {
+                      colSpan = 2;
+                      const nextSlotTime = periodSlots[sIdx + 1]?.time;
+                      skipSlots.add(nextSlotTime);
+                      nextSlotItems = daySched[nextSlotTime] || [];
+
+                      if (
+                        currentItems.length !== nextSlotItems.length ||
+                        !currentItems.every((it, i) => nextSlotItems[i]?.subject === it.subject && nextSlotItems[i]?.branch === it.branch)
+                      ) {
+                        isSplitMerge = true;
+                      }
+                    }
+
+                    // 1. Empty Cell
+                    if (currentItems.length === 0) {
+                      return (
+                        <td 
+                          key={slot.id} 
+                          colSpan={colSpan}
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-middle bg-slate-50/30 text-center select-none h-full"
+                          style={{ height: '1px' }}
+                        >
+                          <div className="flex items-center justify-center h-full min-h-[60px]">
+                            <span className="text-gray-300 font-mono text-[13px]">—</span>
+                          </div>
+                        </td>
+                      );
+                    }
+
+                    // 2. Split 2-Hour Merge
+                    if (isSplitMerge) {
+                      const sharedLabs = currentItems.filter(it => 
+                        (it.isLab || it.subject?.includes('LAB')) &&
+                        nextSlotItems.some(n => 
+                          (n.isLab || n.isContinued || n.subject?.includes('LAB')) && 
+                          n.subject === it.subject && 
+                          n.branch === it.branch
+                        )
+                      );
+
+                      const h1Others = currentItems.filter(it => 
+                        !sharedLabs.some(sl => sl.subject === it.subject && sl.branch === it.branch)
+                      );
+
+                      const h2Others = nextSlotItems.filter(it => 
+                        !sharedLabs.some(sl => sl.subject === it.subject && sl.branch === it.branch)
+                      );
+
+                      return (
+                        <td 
+                          key={slot.id} 
+                          colSpan={colSpan}
+                          onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, facFull)}
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                          style={{ height: '1px' }}
+                          title="Click to view course details"
+                        >
+                          <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
+                            <div className="flex-1 w-full flex divide-x divide-gray-300/90">
+                              <div className="w-1/2 flex flex-col justify-center items-center">
+                                {h1Others.length > 0 ? (
+                                  h1Others.map((cellItem, iIdx) => {
+                                    const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                                    return (
+                                      <div 
+                                        key={iIdx}
+                                        className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
+                                        style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                                      >
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
+                                          {cellItem.subject}
+                                        </div>
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
+                                          Section: {cellItem.branch}
+                                        </div>
+                                        {cellItem.room && (
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
+                                            {cellItem.room}
+                                          </div>
+                                        )}
+                                      </div>
+                                    );
+                                  })
+                                ) : (
+                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
+                                    <span className="text-gray-300 font-mono text-[12px]">—</span>
+                                  </div>
+                                )}
+                              </div>
+
+                              <div className="w-1/2 flex flex-col justify-center items-center">
+                                {h2Others.length > 0 ? (
+                                  h2Others.map((cellItem, iIdx) => {
+                                    const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                                    return (
+                                      <div 
+                                        key={iIdx}
+                                        className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
+                                        style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                                      >
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
+                                          {cellItem.subject}
+                                        </div>
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
+                                          Section: {cellItem.branch}
+                                        </div>
+                                        {cellItem.room && (
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
+                                            {cellItem.room}
+                                          </div>
+                                        )}
+                                      </div>
+                                    );
+                                  })
+                                ) : (
+                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
+                                    <span className="text-gray-300 font-mono text-[12px]">—</span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+
+                            <div className="flex-1 w-full flex flex-col divide-y divide-gray-300/90">
+                              {sharedLabs.map((labItem, lIdx) => {
+                                const labStyle = getSubjectStyle(labItem.subject, labItem.isLab);
+                                return (
+                                  <div 
+                                    key={lIdx}
+                                    className={`flex-1 w-full py-2 px-2 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} hover:brightness-95`}
+                                    style={labStyle.inlineBg ? { backgroundColor: labStyle.inlineBg } : undefined}
+                                  >
+                                    <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${labStyle.text}`}>
+                                      {labItem.subject}
+                                    </div>
+                                    <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
+                                      Section: {labItem.branch}
+                                    </div>
+                                    {labItem.room && (
+                                      <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
+                                        {labItem.room}
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        </td>
+                      );
+                    }
+
+                    // 3. Single Session Cell
+                    if (currentItems.length === 1) {
+                      const cellItem = currentItems[0];
+                      const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+
+                      return (
+                        <td 
+                          key={slot.id} 
+                          colSpan={colSpan}
+                          onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
+                          className={`p-2 sm:p-2.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95`}
+                          style={{
+                            height: '1px',
+                            ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                          }}
+                          title="Click to view course details"
+                        >
+                          <div className="flex flex-col justify-center items-center text-center h-full min-h-[58px]">
+                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${style.text}`}>
+                              {cellItem.subject}
+                            </div>
+                            <div className="text-slate-800 font-semibold text-[10.5px] sm:text-[11px] mt-1 leading-tight">
+                              Section: {cellItem.branch}
+                            </div>
+                            {cellItem.room && (
+                              <div className="mt-1 text-xs sm:text-[12px] font-black text-slate-800 tracking-normal font-sans">
+                                {cellItem.room}
+                              </div>
+                            )}
+                          </div>
+                        </td>
+                      );
+                    }
+
+                    // 4. Multi-Session Cell
+                    return (
+                      <td 
+                        key={slot.id} 
+                        colSpan={colSpan}
+                        onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
+                        className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                        style={{ height: '1px' }}
+                        title="Click to view course details"
+                      >
+                        <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
+                          {currentItems.map((cellItem, bIdx) => {
+                            const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                            return (
+                              <div 
+                                key={bIdx}
+                                className={`flex-1 w-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
+                                style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
+                              >
+                                <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug ${itemStyle.text}`}>
+                                  {cellItem.subject}
+                                </div>
+                                <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
+                                  Section: {cellItem.branch}
+                                </div>
+                                {cellItem.room && (
+                                  <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
+                                    {cellItem.room}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Assigned Subjects & Master Workload Breakdown */}
+      <div className="bg-slate-50 border-t-2 border-slate-700">
+        <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <BookOpen className="w-4 h-4 text-blue-400" />
+            <h4 className="text-xs font-bold tracking-wide uppercase font-serif">
+              Assigned Subjects & Workload Breakdown ({facFull})
+            </h4>
+          </div>
+          <div className="flex items-center gap-2 text-xs font-semibold">
+            <span className="bg-blue-600/90 text-white px-2 py-0.5 rounded text-[11px]">
+              Theory: {facultyObj.theoryLoad || 0} Hrs
+            </span>
+            <span className="bg-purple-600/90 text-white px-2 py-0.5 rounded text-[11px]">
+              Lab: {facultyObj.labLoad || 0} Hrs
+            </span>
+            <span className="bg-amber-600/90 text-white px-2 py-0.5 rounded text-[11px]">
+              Tut: {facultyObj.tutLoad || 0} Hrs
+            </span>
+            <span className="bg-emerald-600 text-white px-2.5 py-0.5 rounded text-[11px] font-bold">
+              Total: {facultyObj.totalLoad || totalHours} Hrs/Wk
+            </span>
+          </div>
+        </div>
+
+        <div className="p-4 sm:p-5">
+          {parsedAssignments.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              {parsedAssignments.map((asgn, idx) => (
+                <div
+                  key={idx}
+                  className="p-3.5 rounded-lg border border-slate-300 bg-white hover:border-blue-400 transition-all shadow-xs flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-1.5">
+                      <span className="px-2 py-0.5 rounded font-black text-[11px] bg-slate-800 text-white tracking-wider">
+                        {asgn.branch}
+                      </span>
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                        asgn.isLab 
+                          ? 'bg-purple-100 text-purple-800 border border-purple-300' 
+                          : asgn.isTutorial 
+                          ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                          : 'bg-blue-100 text-blue-800 border border-blue-300'
+                      }`}>
+                        {asgn.isLab ? 'Laboratory' : asgn.isTutorial ? 'Tutorial' : 'Theory'}
+                      </span>
+                    </div>
+
+                    <div className="font-bold text-slate-900 text-xs sm:text-sm leading-snug">
+                      {asgn.name || asgn.code}
+                    </div>
+
+                    {asgn.code && asgn.code !== asgn.name && (
+                      <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
+                        Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
+                      </div>
+                    )}
+
+                    {asgn.room && (
+                      <div className="text-[11px] font-semibold text-slate-600 mt-0.5">
+                        Assigned Room: <span className="font-mono text-slate-800 font-bold">{asgn.room}</span>
+                      </div>
+                    )}
+
+                    <div className="text-[11px] font-medium text-slate-600 mt-1">
+                      Load: <span className="font-bold text-slate-800">{asgn.loadDetail || `${asgn.periods} periods`}</span>
+                    </div>
+                  </div>
+
+                  <div className="mt-3 pt-2.5 border-t border-slate-200">
+                    <div className="text-[10px] uppercase font-bold text-slate-500 mb-1 flex items-center justify-between">
+                      <span>Timetable Slots:</span>
+                      <span className="text-emerald-700 font-bold">
+                        {asgn.scheduledSlots.length} Active {asgn.scheduledSlots.length === 1 ? 'Slot' : 'Slots'}
+                      </span>
+                    </div>
+                    {asgn.scheduledSlots.length > 0 ? (
+                      <div className="flex flex-wrap gap-1.5">
+                        {asgn.scheduledSlots.map((s, sIdx) => (
+                          <span
+                            key={sIdx}
+                            className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 font-mono"
+                          >
+                            {s.day} {s.slot} {s.room ? `• ${s.room}` : ''}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <span className="text-[10.5px] italic text-slate-400">
+                        Pre-assigned in master workload
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-4 text-slate-500 text-xs italic">
+              No specific course assignments recorded in the Master Workload Summary for this faculty.
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Main IndividualView Component
+ */
+export default function IndividualView({ timetableData, universityInfo, facultyList: propFacultyList, onSlotClick }) {
+  // Master faculty list with full metadata (only faculty with assigned workload)
+  const facultyMembers = useMemo(() => {
+    const list = (propFacultyList && propFacultyList.length > 0)
+      ? propFacultyList
+      : initialData.facultyList || [];
+    return list.filter(f => (f.totalLoad || 0) > 0 || (f.assignedCourses && f.assignedCourses.length > 0));
+  }, [propFacultyList]);
+
+  // Extract unique departments
+  const departments = useMemo(() => {
+    const set = new Set();
+    facultyMembers.forEach(f => {
+      const dept = f.dept?.trim() || 'General';
+      if (dept) set.add(dept);
+    });
+    return ['ALL', ...Array.from(set).sort()];
+  }, [facultyMembers]);
+
+  // Department filter state
+  const [selectedDept, setSelectedDept] = useState('ALL');
+
+  // Filtered faculty list based on department selection
+  const filteredFacultyList = useMemo(() => {
+    if (selectedDept === 'ALL') {
+      return facultyMembers;
     }
+    return facultyMembers.filter(f => (f.dept?.trim() || 'General') === selectedDept);
+  }, [facultyMembers, selectedDept]);
 
-    // 2. Partial continuing lab merge
-    const hasContinuingLab = currentItems.some(item =>
-      (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) &&
-      nextItems.some(nItem =>
-        (nItem.isLab || nItem.isContinued || nItem.subject?.includes('LAB') || nItem.subject?.includes('3DDA')) &&
-        nItem.subject === item.subject &&
-        nItem.branch === item.branch
-      )
-    );
+  // Faculty selection state ('ALL' or faculty fullName)
+  const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
-    return hasContinuingLab;
+  // State to toggle full multi-department table if user wants to see all rows
+  const [showAllDeptsTable, setShowAllDeptsTable] = useState(false);
+
+  // When department changes, update selected faculty
+  const handleDeptChange = (newDept) => {
+    setSelectedDept(newDept);
+    // If 'ALL' was selected, keep 'ALL'
+    // If a specific faculty was selected, check if they exist in newDept, otherwise default to 'ALL'
+    if (selectedFaculty !== 'ALL') {
+      const newFiltered = newDept === 'ALL'
+        ? facultyMembers
+        : facultyMembers.filter(f => (f.dept?.trim() || 'General') === newDept);
+      if (!newFiltered.some(f => f.fullName === selectedFaculty)) {
+        setSelectedFaculty('ALL');
+      }
+    }
   };
+
+  // Compute department statistics for any department
+  const computeDeptStats = (deptName) => {
+    const list = deptName === 'ALL' 
+      ? facultyMembers 
+      : facultyMembers.filter(f => (f.dept?.trim() || 'General') === deptName);
+    
+    let prof = 0, assoc = 0, asst = 0, other = 0;
+    let th = 0, lab = 0, tut = 0, tot = 0;
+    list.forEach(f => {
+      const d = (f.designation || '').toLowerCase();
+      if (d.includes('associate')) assoc++;
+      else if (d.includes('assistant')) asst++;
+      else if (d.includes('prof')) prof++;
+      else other++;
+
+      th += f.theoryLoad || 0;
+      lab += f.labLoad || 0;
+      tut += f.tutLoad || 0;
+      tot += f.totalLoad || 0;
+    });
+
+    return {
+      department: deptName === 'ALL' ? 'All Departments' : deptName,
+      facultyCount: list.length,
+      prof,
+      assoc,
+      asst,
+      other,
+      theoryWorkload: th,
+      labWorkload: lab,
+      tutorialWorkload: tut,
+      totalWorkload: tot
+    };
+  };
+
+  // Active department stats row (or All Departments)
+  const activeDeptStats = useMemo(() => {
+    return computeDeptStats(selectedDept);
+  }, [facultyMembers, selectedDept]);
+
+  // All individual department stats for the full table view
+  const allDeptStatsList = useMemo(() => {
+    return departments.filter(d => d !== 'ALL').map(d => computeDeptStats(d));
+  }, [departments, facultyMembers]);
+
+  // Currently selected faculty object if single view
+  const currentFacultyObj = useMemo(() => {
+    if (selectedFaculty === 'ALL') return null;
+    return facultyMembers.find(f => f.fullName === selectedFaculty) || filteredFacultyList[0];
+  }, [facultyMembers, filteredFacultyList, selectedFaculty]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-      {/* Department Filter & Faculty Selector Bar */}
+      {/* Department Filter & Faculty Selector Controls Bar */}
       <div className="no-print flex justify-center mb-6">
-        <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3 rounded-xl border border-gray-300 shadow-sm">
+        <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3.5 rounded-xl border-2 border-slate-700 shadow-sm">
           {/* Department Filter Dropdown */}
           <div className="flex items-center gap-2">
             <label htmlFor="dept-select" className="text-xs font-bold text-gray-700 uppercase tracking-wider flex items-center gap-1">
@@ -301,7 +788,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
           <span className="text-gray-300 hidden sm:inline">|</span>
 
-          {/* Dynamic Faculty Dropdown */}
+          {/* Dynamic Faculty Dropdown (with ALL option) */}
           <div className="flex items-center gap-2">
             <label htmlFor="faculty-select" className="text-xs font-bold text-gray-700 uppercase tracking-wider flex items-center gap-1">
               <UserCheck className="w-3.5 h-3.5 text-blue-600" /> Faculty Member:
@@ -312,6 +799,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               onChange={(e) => setSelectedFaculty(e.target.value)}
               className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 px-3 py-1.5 cursor-pointer max-w-xs sm:max-w-md"
             >
+              <option value="ALL">
+                All Faculty in {selectedDept === 'ALL' ? 'College' : selectedDept} ({filteredFacultyList.length})
+              </option>
               {filteredFacultyList.map((f) => {
                 const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
                 return (
@@ -325,466 +815,181 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         </div>
       </div>
 
-      {/* Workload Stats Header */}
-      <div className="no-print grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
-          <div className="p-3 bg-blue-50 text-blue-600 rounded-lg">
-            <Clock className="w-5 h-5" />
+      {/* DEPARTMENT WORKLOAD STATISTICS ROW (Matching Google Sheets Department_Workload_Summary) */}
+      <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card mb-6">
+        <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
+          <div className="flex items-center gap-2">
+            <span className="px-2.5 py-0.5 rounded font-black text-xs bg-blue-600 text-white tracking-wider">
+              DEPARTMENT STATISTICS
+            </span>
+            <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
+              Workload Summary • <span className="text-blue-300 underline decoration-blue-400">{activeDeptStats.department}</span>
+            </h3>
           </div>
-          <div>
-            <div className="text-xs text-gray-500 font-medium">Weekly Teaching Load</div>
-            <div className="text-lg font-bold text-gray-900">{totalHours} Hours / Week</div>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowAllDeptsTable(!showAllDeptsTable)}
+              className="no-print text-xs font-bold text-slate-200 hover:text-white bg-slate-700 hover:bg-slate-600 px-2.5 py-1 rounded transition-colors flex items-center gap-1"
+            >
+              {showAllDeptsTable ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+              {showAllDeptsTable ? 'Hide All Departments' : 'View All Departments'}
+            </button>
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
-          <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
-            <BookOpen className="w-5 h-5" />
-          </div>
-          <div>
-            <div className="text-xs text-gray-500 font-medium">Assigned Courses</div>
-            <div className="text-lg font-bold text-gray-900">{taughtSubjects.size} Courses</div>
-          </div>
-        </div>
-
-        <div className="bg-white p-4 rounded-xl border border-gray-300 shadow-sm flex items-center gap-3">
-          <div className="p-3 bg-purple-50 text-purple-600 rounded-lg">
-            <MapPin className="w-5 h-5" />
-          </div>
-          <div>
-            <div className="text-xs text-gray-500 font-medium">Practical / Lab Load</div>
-            <div className="text-lg font-bold text-gray-900">{totalLabs} Lab Sessions</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Faculty Individual Schedule Table */}
-      <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6">
-        <div className="print-only text-center py-3 px-6 border-b border-gray-300 bg-gray-50/70">
-          <h2 className="text-sm font-bold text-gray-800 tracking-wide uppercase">
-            {universityInfo.name}
-          </h2>
-          <h3 className="text-xs font-bold text-blue-800 mt-1 uppercase font-mono">
-            INDIVIDUAL FACULTY TIMETABLE: <span className="underline decoration-blue-500">{selectedFaculty}</span>
-            {currentFacultyObj?.shortName && (
-              <span className="ml-1.5 text-blue-600">
-                ({currentFacultyObj.shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim()})
-              </span>
-            )}
-            {currentFacultyObj?.dept && (
-              <span className="ml-2 px-2 py-0.5 rounded bg-blue-100 text-blue-900 text-[10px] font-sans font-semibold">
-                Dept: {currentFacultyObj.dept}
-              </span>
-            )}
-          </h3>
-          <p className="text-xs text-gray-500 mt-0.5 font-mono">
-            Academic Year {universityInfo.academicYear} | Total Load: {totalHours} Hrs/Wk
-          </p>
-        </div>
-
+        {/* The Exact Row Displayed with Basic Numbers, Bold and Big Font Size */}
         <div className="overflow-x-auto">
-          <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700">
+          <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px]">
             <thead>
-              <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 uppercase tracking-wider">
-                <th className="py-3 px-2 border-r border-gray-300 w-20 text-xs font-black text-slate-900">Day</th>
-                {periodSlots.map((slot) => (
-                  <th 
-                    key={slot.id} 
-                    className={`py-3 px-2 border-r border-gray-300 ${
-                      slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-20' : 'text-slate-950'
-                    }`}
-                  >
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
-                      {slot.time}
-                    </span>
-                    {slot.label && (
-                      <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5">
-                        {slot.label}
-                      </div>
-                    )}
-                  </th>
-                ))}
+              <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                <th className="py-2.5 px-3 border-r border-gray-300 text-left w-36">Department</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-24">Faculty Count</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-20">Professor</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-28">Associate Professor</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-28">Assistant Professor</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-16">Other</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-blue-50/60 text-blue-950">Theory Workload</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-purple-50/60 text-purple-950">Lab Workload</th>
+                <th className="py-2.5 px-3 border-r border-gray-300 w-28 bg-amber-50/60 text-amber-950">Tutorial Workload</th>
+                <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950">Total Workload</th>
               </tr>
             </thead>
-            <tbody className="divide-y-2 divide-slate-600">
-              {days.map((day) => {
-                const daySched = facultySchedule[day] || {};
-                const skipSlots = new Set();
+            <tbody>
+              {/* Highlighted Row for Selected Department */}
+              <tr className="border-b-2 border-slate-700 bg-white hover:bg-slate-50 transition-colors">
+                <td className="py-4 px-3 text-left font-black text-sm sm:text-base text-slate-900 border-r border-gray-300 font-serif">
+                  {activeDeptStats.department}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-900 border-r border-gray-300 font-mono">
+                  {activeDeptStats.facultyCount}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                  {activeDeptStats.prof}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                  {activeDeptStats.assoc}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-900 border-r border-gray-300 font-mono">
+                  {activeDeptStats.asst}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-slate-400 border-r border-gray-300 font-mono">
+                  {activeDeptStats.other}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-blue-700 bg-blue-50/40 border-r border-gray-300 font-mono">
+                  {activeDeptStats.theoryWorkload}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-purple-700 bg-purple-50/40 border-r border-gray-300 font-mono">
+                  {activeDeptStats.labWorkload}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-amber-700 bg-amber-50/40 border-r border-gray-300 font-mono">
+                  {activeDeptStats.tutorialWorkload}
+                </td>
+                <td className="py-4 px-3 font-black text-xl sm:text-2xl text-emerald-700 bg-emerald-50/40 font-mono">
+                  {activeDeptStats.totalWorkload}
+                </td>
+              </tr>
 
-                return (
-                  <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
-                    {/* Day Column */}
-                    <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 uppercase tracking-wide align-middle">
-                      {day}
-                    </td>
-
-                    {periodSlots.map((slot, sIdx) => {
-                      if (skipSlots.has(slot.time)) {
-                        return null; // Skip second hour of horizontally merged slot
-                      }
-
-                      if (slot.type === 'break') {
-                        return (
-                          <td 
-                            key={slot.id} 
-                            className="py-4 px-2 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 tracking-wider uppercase align-middle select-none text-center"
-                          >
-                            {slot.label}
-                          </td>
-                        );
-                      }
-
-                      const currentItems = daySched[slot.time] || [];
-
-                      // Check horizontal colSpan merge
-                      let colSpan = 1;
-                      let isSplitMerge = false;
-                      let nextSlotItems = [];
-                      if (has2HourFacultyMerge(daySched, sIdx)) {
-                        colSpan = 2;
-                        const nextSlotTime = periodSlots[sIdx + 1]?.time;
-                        skipSlots.add(nextSlotTime);
-                        nextSlotItems = daySched[nextSlotTime] || [];
-
-                        // Check if split merge (e.g. 2-hr lab merged below, 1-hr theory subject on top)
-                        if (
-                          currentItems.length !== nextSlotItems.length ||
-                          !currentItems.every((it, i) => nextSlotItems[i]?.subject === it.subject && nextSlotItems[i]?.branch === it.branch)
-                        ) {
-                          isSplitMerge = true;
-                        }
-                      }
-
-                      // 1. Empty Cell
-                      if (currentItems.length === 0) {
-                        return (
-                          <td 
-                            key={slot.id} 
-                            colSpan={colSpan}
-                            className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-middle bg-slate-50/30 text-center select-none h-full"
-                            style={{ height: '1px' }}
-                          >
-                            <div className="flex items-center justify-center h-full min-h-[64px]">
-                              <span className="text-gray-300 font-mono text-[13px]">—</span>
-                            </div>
-                          </td>
-                        );
-                      }
-
-                      // 2. Split 2-Hour Merge: Theory on TOP in assigned hour, 2-Hour Lab MERGED BELOW spanning full width
-                      if (isSplitMerge) {
-                        const sharedLabs = currentItems.filter(it => 
-                          (it.isLab || it.subject?.includes('LAB')) &&
-                          nextSlotItems.some(n => 
-                            (n.isLab || n.isContinued || n.subject?.includes('LAB')) && 
-                            n.subject === it.subject && 
-                            n.branch === it.branch
-                          )
-                        );
-
-                        const h1Others = currentItems.filter(it => 
-                          !sharedLabs.some(sl => sl.subject === it.subject && sl.branch === it.branch)
-                        );
-
-                        const h2Others = nextSlotItems.filter(it => 
-                          !sharedLabs.some(sl => sl.subject === it.subject && sl.branch === it.branch)
-                        );
-
-                        return (
-                          <td 
-                            key={slot.id} 
-                            colSpan={colSpan}
-                            onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, selectedFaculty)}
-                            className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
-                            style={{ height: '1px' }}
-                            title="Click to view full course & schedule details"
-                          >
-                            <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
-                              {/* Top Row: Theory Subjects in assigned hour (Hour 1 on left, Hour 2 on right) */}
-                              <div className="flex-1 w-full flex divide-x divide-gray-300/90">
-                                {/* Hour 1 Slot (Left) */}
-                                <div className="w-1/2 flex flex-col justify-center items-center">
-                                  {h1Others.length > 0 ? (
-                                    h1Others.map((cellItem, iIdx) => {
-                                      const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
-                                      return (
-                                        <div 
-                                          key={iIdx}
-                                          className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
-                                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
-                                        >
-                                          <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
-                                            {cellItem.subject}
-                                          </div>
-                                          <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
-                                            Section: {cellItem.branch}
-                                          </div>
-                                          {cellItem.room && (
-                                            <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
-                                              {cellItem.room}
-                                            </div>
-                                          )}
-                                        </div>
-                                      );
-                                    })
-                                  ) : (
-                                    <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
-                                      <span className="text-gray-300 font-mono text-[12px]">—</span>
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* Hour 2 Slot (Right) */}
-                                <div className="w-1/2 flex flex-col justify-center items-center">
-                                  {h2Others.length > 0 ? (
-                                    h2Others.map((cellItem, iIdx) => {
-                                      const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
-                                      return (
-                                        <div 
-                                          key={iIdx}
-                                          className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
-                                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
-                                        >
-                                          <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
-                                            {cellItem.subject}
-                                          </div>
-                                          <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
-                                            Section: {cellItem.branch}
-                                          </div>
-                                          {cellItem.room && (
-                                            <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
-                                              {cellItem.room}
-                                            </div>
-                                          )}
-                                        </div>
-                                      );
-                                    })
-                                  ) : (
-                                    <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
-                                      <span className="text-gray-300 font-mono text-[12px]">—</span>
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-
-                              {/* Bottom Row: 2-Hour Merged Lab Session(s) spanning full 2-hour width */}
-                              <div className="flex-1 w-full flex flex-col divide-y divide-gray-300/90">
-                                {sharedLabs.map((labItem, lIdx) => {
-                                  const labStyle = getSubjectStyle(labItem.subject, labItem.isLab);
-                                  return (
-                                    <div 
-                                      key={lIdx}
-                                      className={`flex-1 w-full py-2 px-2 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} hover:brightness-95`}
-                                      style={labStyle.inlineBg ? { backgroundColor: labStyle.inlineBg } : undefined}
-                                    >
-                                      <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${labStyle.text}`}>
-                                        {labItem.subject}
-                                      </div>
-                                      <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
-                                        Section: {labItem.branch}
-                                      </div>
-                                      {labItem.room && (
-                                        <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
-                                          {labItem.room}
-                                        </div>
-                                      )}
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                            </div>
-                          </td>
-                        );
-                      }
-
-                      // 3. Single Session Cell (Full-cell color edge-to-edge)
-                      if (currentItems.length === 1) {
-                        const cellItem = currentItems[0];
-                        const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
-
-                        return (
-                          <td 
-                            key={slot.id} 
-                            colSpan={colSpan}
-                            onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, selectedFaculty)}
-                            className={`p-2 sm:p-2.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95`}
-                            style={{
-                              height: '1px',
-                              ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
-                            }}
-                            title="Click to view full course & schedule details"
-                          >
-                            <div className="flex flex-col justify-center items-center text-center h-full min-h-[58px]">
-                              <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${style.text}`}>
-                                {cellItem.subject}
-                              </div>
-
-                              <div className="text-slate-800 font-semibold text-[10.5px] sm:text-[11px] mt-1 leading-tight">
-                                Section: {cellItem.branch}
-                              </div>
-
-                              {cellItem.room && (
-                                <div className="mt-1 text-xs sm:text-[12px] font-black text-slate-800 tracking-normal font-sans">
-                                  {cellItem.room}
-                                </div>
-                              )}
-                            </div>
-                          </td>
-                        );
-                      }
-
-                      // 4. Multi-Session Cell (Divided into distinct colors edge-to-edge)
-                      return (
-                        <td 
-                          key={slot.id} 
-                          colSpan={colSpan}
-                          onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, selectedFaculty)}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
-                          style={{ height: '1px' }}
-                          title="Click to view full course & schedule details"
-                        >
-                          <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
-                            {currentItems.map((cellItem, bIdx) => {
-                              const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
-
-                              return (
-                                <div 
-                                  key={bIdx}
-                                  className={`flex-1 w-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
-                                  style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
-                                >
-                                  <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug ${itemStyle.text}`}>
-                                    {cellItem.subject}
-                                  </div>
-
-                                  <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
-                                    Section: {cellItem.branch}
-                                  </div>
-
-                                  {cellItem.room && (
-                                    <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
-                                      {cellItem.room}
-                                    </div>
-                                  )}
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
+              {/* Optional Expanded View of All Departments */}
+              {showAllDeptsTable && allDeptStatsList.map((dStat, idx) => (
+                <tr 
+                  key={dStat.department} 
+                  className={`border-b border-gray-200 transition-colors ${
+                    dStat.department === selectedDept ? 'bg-amber-50/60 font-bold' : idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'
+                  }`}
+                >
+                  <td className="py-2.5 px-3 text-left font-bold text-xs text-slate-800 border-r border-gray-200">
+                    {dStat.department}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-slate-800 border-r border-gray-200 font-mono">
+                    {dStat.facultyCount}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
+                    {dStat.prof}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
+                    {dStat.assoc}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-slate-700 border-r border-gray-200 font-mono">
+                    {dStat.asst}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-slate-400 border-r border-gray-200 font-mono">
+                    {dStat.other}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-blue-800 border-r border-gray-200 font-mono">
+                    {dStat.theoryWorkload}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-purple-800 border-r border-gray-200 font-mono">
+                    {dStat.labWorkload}
+                  </td>
+                  <td className="py-2.5 px-3 font-bold text-sm text-amber-800 border-r border-gray-200 font-mono">
+                    {dStat.tutorialWorkload}
+                  </td>
+                  <td className="py-2.5 px-3 font-black text-sm text-emerald-800 font-mono">
+                    {dStat.totalWorkload}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       </div>
 
-      {/* Assigned Subjects & Master Workload Breakdown */}
-      <div className="bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden my-6">
-        <div className="bg-slate-800 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <BookOpen className="w-5 h-5 text-blue-400" />
-            <h3 className="text-sm font-bold tracking-wide uppercase font-serif">
-              Assigned Subjects & Master Workload ({currentFacultyObj?.fullName || selectedFaculty})
-            </h3>
+      {/* QUICK JUMP NAVIGATION BAR FOR ALL FACULTY VIEW */}
+      {selectedFaculty === 'ALL' && filteredFacultyList.length > 1 && (
+        <div className="no-print bg-white p-3.5 rounded-xl border border-gray-300 shadow-sm mb-6">
+          <div className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <Users className="w-3.5 h-3.5 text-blue-600" />
+            Showing All {filteredFacultyList.length} Faculty Members ({selectedDept === 'ALL' ? 'All Departments' : selectedDept}) • Quick Jump:
           </div>
-          <div className="flex items-center gap-2 text-xs font-semibold">
-            <span className="bg-blue-600/90 text-white px-2.5 py-1 rounded">
-              Theory: {currentFacultyObj?.theoryLoad || 0} Hrs
-            </span>
-            <span className="bg-emerald-600/90 text-white px-2.5 py-1 rounded">
-              Lab: {currentFacultyObj?.labLoad || 0} Hrs
-            </span>
-            <span className="bg-purple-600/90 text-white px-2.5 py-1 rounded font-bold">
-              Total Load: {currentFacultyObj?.totalLoad || 0} Hrs/Wk
-            </span>
+          <div className="flex flex-wrap gap-1.5">
+            {filteredFacultyList.map((f, fIdx) => {
+              const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+              return (
+                <button
+                  key={f.fullName}
+                  onClick={() => {
+                    const el = document.getElementById(`faculty-${cleanShort || f.sno}`);
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="px-2.5 py-1 rounded text-xs font-bold bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-800 border border-slate-300 transition-all cursor-pointer"
+                >
+                  {f.fullName} {cleanShort ? `(${cleanShort})` : ''}
+                </button>
+              );
+            })}
           </div>
         </div>
+      )}
 
-        <div className="p-4 sm:p-5">
-          {parsedAssignments.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-              {parsedAssignments.map((asgn, idx) => {
-                return (
-                  <div
-                    key={idx}
-                    className="p-3.5 rounded-lg border border-slate-300 bg-slate-50/60 hover:bg-white hover:border-blue-400 transition-all shadow-sm flex flex-col justify-between"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <span className="px-2 py-0.5 rounded font-black text-[11px] bg-slate-800 text-white tracking-wider">
-                          {asgn.branch}
-                        </span>
-                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                          asgn.isLab 
-                            ? 'bg-purple-100 text-purple-800 border border-purple-300' 
-                            : asgn.isTutorial 
-                            ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                            : 'bg-blue-100 text-blue-800 border border-blue-300'
-                        }`}>
-                          {asgn.isLab ? 'Laboratory' : asgn.isTutorial ? 'Tutorial' : 'Theory'}
-                        </span>
-                      </div>
-
-                      <div className="font-bold text-slate-900 text-xs sm:text-sm leading-snug">
-                        {asgn.name || asgn.code}
-                      </div>
-
-                      {asgn.code && asgn.code !== asgn.name && (
-                        <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
-                          Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
-                        </div>
-                      )}
-
-                      {asgn.room && (
-                        <div className="text-[11px] font-semibold text-slate-600 mt-0.5">
-                          Assigned Room: <span className="font-mono text-slate-800 font-bold">{asgn.room}</span>
-                        </div>
-                      )}
-
-                      <div className="text-[11px] font-medium text-slate-600 mt-1">
-                        Assigned Load: <span className="font-bold text-slate-800">{asgn.loadDetail || `${asgn.periods} periods`}</span>
-                      </div>
-                    </div>
-
-                    {/* Scheduled Slots in Grid */}
-                    <div className="mt-3 pt-2.5 border-t border-slate-200">
-                      <div className="text-[10px] uppercase font-bold text-slate-500 mb-1 flex items-center justify-between">
-                        <span>Timetable Slots:</span>
-                        <span className="text-emerald-700 font-bold">
-                          {asgn.scheduledSlots.length} Active {asgn.scheduledSlots.length === 1 ? 'Slot' : 'Slots'}
-                        </span>
-                      </div>
-                      {asgn.scheduledSlots.length > 0 ? (
-                        <div className="flex flex-wrap gap-1.5">
-                          {asgn.scheduledSlots.map((s, sIdx) => (
-                            <span
-                              key={sIdx}
-                              className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 font-mono"
-                            >
-                              {s.day} {s.slot} {s.room ? `• ${s.room}` : ''}
-                            </span>
-                          ))}
-                        </div>
-                      ) : (
-                        <span className="text-[10.5px] italic text-slate-400">
-                          Pre-assigned in master roster
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <div className="text-center py-6 text-slate-500 text-xs italic">
-              No specific course assignments recorded in the Master Workload Summary for this faculty.
-            </div>
-          )}
+      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One) */}
+      {selectedFaculty === 'ALL' ? (
+        <div className="space-y-8">
+          {filteredFacultyList.map((facObj, idx) => (
+            <FacultyTimetableCard
+              key={facObj.fullName}
+              facultyObj={facObj}
+              timetableData={timetableData}
+              universityInfo={universityInfo}
+              onSlotClick={onSlotClick}
+              isMultiView={true}
+              index={idx + 1}
+              totalCount={filteredFacultyList.length}
+            />
+          ))}
         </div>
-      </div>
+      ) : currentFacultyObj ? (
+        <FacultyTimetableCard
+          facultyObj={currentFacultyObj}
+          timetableData={timetableData}
+          universityInfo={universityInfo}
+          onSlotClick={onSlotClick}
+          isMultiView={false}
+        />
+      ) : (
+        <div className="text-center py-12 text-slate-500 text-sm">
+          No faculty found matching the selection.
+        </div>
+      )}
     </div>
   );
 }
