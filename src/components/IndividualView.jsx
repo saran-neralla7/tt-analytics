@@ -104,9 +104,66 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     return result;
   }, [timetableData, selectedFaculty, currentFacultyObj]);
 
-  // Parse all official course assignments for this faculty from Master Workload
+  // Parse all official course assignments for this faculty from Sheet2 / Master Workload
   const parsedAssignments = useMemo(() => {
-    if (!currentFacultyObj || !currentFacultyObj.assignments) return [];
+    if (!currentFacultyObj) return [];
+
+    // 1. Direct structured assigned courses from Sheet2
+    if (currentFacultyObj.assignedCourses && currentFacultyObj.assignedCourses.length > 0) {
+      return currentFacultyObj.assignedCourses.map(course => {
+        const branch = course.branch;
+        const name = course.subject;
+        const code = course.code;
+        const room = course.room;
+        const isLab = course.type === 'lab';
+        const isTutorial = course.type === 'tutorial';
+        const loadDetail = course.loadDetail || `${course.hours} ${course.type} = ${course.hours} periods`;
+        const periods = course.hours || 0;
+
+        // Find scheduled slots in facultySchedule for this branch and course
+        const scheduledSlots = [];
+        days.forEach(day => {
+          Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
+            items.forEach(item => {
+              if (item.branch === branch) {
+                const isItemLab = Boolean(item.isLab || item.subject?.toUpperCase().includes('LAB') || item.subject?.toUpperCase().includes('3DDA'));
+                if (isLab !== isItemLab) return;
+
+                const sSubj = (item.subject || '').toUpperCase();
+                const isItemTutorial = sSubj.includes('TUT');
+                if (isTutorial !== isItemTutorial) return;
+
+                const matchCode = (code || '').toUpperCase();
+                const matchName = (name || '').toUpperCase();
+                if (
+                  (matchCode && (sSubj.includes(matchCode) || matchCode.includes(sSubj))) ||
+                  (matchName && (sSubj.includes(matchName) || matchName.includes(sSubj)))
+                ) {
+                  if (!scheduledSlots.some(s => s.day === day && s.slot === slot)) {
+                    scheduledSlots.push({ day, slot, room: item.room || room });
+                  }
+                }
+              }
+            });
+          });
+        });
+
+        return {
+          branch,
+          name,
+          code,
+          room,
+          loadDetail,
+          periods,
+          isLab,
+          isTutorial,
+          scheduledSlots
+        };
+      });
+    }
+
+    // Fallback: Parse from assignments string
+    if (!currentFacultyObj.assignments) return [];
     return currentFacultyObj.assignments
       .split('\n')
       .map(line => line.trim())
@@ -131,16 +188,18 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
             items.forEach(item => {
               if (item.branch === branch) {
-                const isItemLab = Boolean(item.isLab || item.subject?.toUpperCase().includes('LAB'));
+                const isItemLab = Boolean(item.isLab || item.subject?.toUpperCase().includes('LAB') || item.subject?.toUpperCase().includes('3DDA'));
                 if (isLab !== isItemLab) return;
 
                 const sSubj = (item.subject || '').toUpperCase();
+                const isItemTutorial = sSubj.includes('TUT');
+                if (isTutorial !== isItemTutorial) return;
+
                 const matchCode = code.toUpperCase();
                 const matchName = name.toUpperCase();
                 if (
                   (matchCode && (sSubj.includes(matchCode) || matchCode.includes(sSubj))) ||
-                  (matchName && (sSubj.includes(matchName) || matchName.includes(sSubj))) ||
-                  (isTutorial && sSubj.includes('TUT'))
+                  (matchName && (sSubj.includes(matchName) || matchName.includes(sSubj)))
                 ) {
                   if (!scheduledSlots.some(s => s.day === day && s.slot === slot)) {
                     scheduledSlots.push({ day, slot, room: item.room });
@@ -155,6 +214,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           branch,
           name,
           code,
+          room: '',
           loadDetail: loadDetail || (isLab ? 'Lab' : isTutorial ? 'Tutorial' : 'Theory'),
           periods,
           isLab,
@@ -675,6 +735,12 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                       {asgn.code && asgn.code !== asgn.name && (
                         <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
                           Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
+                        </div>
+                      )}
+
+                      {asgn.room && (
+                        <div className="text-[11px] font-semibold text-slate-600 mt-0.5">
+                          Assigned Room: <span className="font-mono text-slate-800 font-bold">{asgn.room}</span>
                         </div>
                       )}
 

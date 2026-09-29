@@ -30,63 +30,74 @@ const labNextSlot = {
   '02:15-03:15': '03:15-04:15'
 };
 
-// 1. Parse Faculty_Workload_Summary
+// 1. Parse Faculty Roster from Sheet3 & Subject Assignments from Sheet2
 const facultyMap = {};
 const facultyByClean = {};
 const facultyList = [];
-let fwSheet = wb.Sheets['Faculty_Workload_Summary'];
-if (!fwSheet && fs.existsSync('./1st Sem TIME TABLE 2026-2027_1.1.xlsx')) {
-  console.log('Faculty_Workload_Summary missing in current file; loading from root Excel');
-  const backupWb = XLSX.readFile('./1st Sem TIME TABLE 2026-2027_1.1.xlsx');
-  fwSheet = backupWb.Sheets['Faculty_Workload_Summary'];
-}
 
-if (fwSheet) {
-  const fwRows = XLSX.utils.sheet_to_json(fwSheet, { header: 1, defval: '' });
-  for (let r = 1; r < fwRows.length; r++) {
-    const row = fwRows[r];
-    const sno = row[0] ? String(row[0]).trim() : '';
-    const fullName = row[1] ? String(row[1]).trim() : '';
-    const shortName = row[2] ? String(row[2]).trim() : '';
-    const dept = row[3] ? String(row[3]).trim() : '';
-    const designation = row[4] ? String(row[4]).trim() : '';
-    let theoryLoad = row[5] ? Number(row[5]) || 0 : 0;
-    const labLoad = row[6] ? Number(row[6]) || 0 : 0;
-    let totalLoad = row[8] ? Number(row[8]) || 0 : 0;
-    const assignments = row[10] ? String(row[10]).trim() : '';
+// Load master roster from Sheet3 (82 official faculty)
+const s3Sheet = wb.Sheets['Sheet3'];
+if (s3Sheet) {
+  const s3Rows = XLSX.utils.sheet_to_json(s3Sheet);
+  s3Rows.forEach(r => {
+    const sno = r['S.No'];
+    const fullName = (r.Faculty_Name || '').trim();
+    const rawShort = (r.Name_short || '').trim();
+    const clean = rawShort.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+    const dept = (r.Department || '').trim();
+    const designation = (r.Designation || '').trim();
 
-    if (shortName === 'Dr. MN') {
-      theoryLoad += 1;
-      totalLoad += 1;
-    }
+    if (clean && fullName) {
+      const facObj = {
+        sno,
+        fullName,
+        shortName: rawShort,
+        cleanShort: clean,
+        dept,
+        designation,
+        theoryLoad: 0,
+        labLoad: 0,
+        tutLoad: 0,
+        totalLoad: 0,
+        assignedCourses: [],
+        assignments: ''
+      };
 
-    if (shortName && fullName) {
-      const clean = shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
-      const facObj = { fullName, cleanShort: clean, rawShort: shortName, dept, designation, theoryLoad, labLoad, totalLoad, assignments };
-      
-      facultyMap[shortName] = facObj;
+      facultyMap[rawShort] = facObj;
       facultyMap[clean] = facObj;
       facultyMap[`Dr. ${clean}`] = facObj;
       facultyMap[`Dr.${clean}`] = facObj;
       facultyMap[`Mr. ${clean}`] = facObj;
       facultyMap[`Mrs. ${clean}`] = facObj;
       facultyMap[`Ms. ${clean}`] = facObj;
+      facultyMap[fullName] = facObj;
       facultyByClean[clean] = facObj;
-
-      facultyList.push({
-        sno: sno,
-        fullName,
-        shortName,
-        cleanShort: clean,
-        dept,
-        designation,
-        theoryLoad,
-        labLoad,
-        totalLoad,
-        assignments: assignments
-      });
+      facultyByClean[clean.toUpperCase()] = facObj;
+      facultyList.push(facObj);
     }
-  }
+  });
+}
+
+// Ensure FAC-2 / Faculty-2 exists
+if (!facultyByClean['FAC-2']) {
+  const fac2 = {
+    sno: facultyList.length + 1,
+    fullName: 'Faculty-2',
+    shortName: 'FAC-2',
+    cleanShort: 'FAC-2',
+    dept: 'General',
+    designation: 'Assistant Professor',
+    theoryLoad: 0,
+    labLoad: 0,
+    tutLoad: 0,
+    totalLoad: 0,
+    assignedCourses: [],
+    assignments: ''
+  };
+  facultyList.push(fac2);
+  facultyByClean['FAC-2'] = fac2;
+  facultyMap['FAC-2'] = fac2;
+  facultyMap['Faculty-2'] = fac2;
 }
 
 // Known aliases
@@ -97,7 +108,96 @@ facultyByClean['Faculty-2'] = facultyByClean['FAC-2'];
 facultyByClean['Dr. Dr. VVLUR'] = facultyByClean['VVLUR'];
 facultyByClean['Dr. VVLUR'] = facultyByClean['VVLUR'];
 
-console.log(`Faculty loaded: ${facultyList.length}`);
+// Load official subject-faculty allocations and workload from Sheet2
+const s2Sheet = wb.Sheets['Sheet2'];
+if (s2Sheet) {
+  const s2Rows = XLSX.utils.sheet_to_json(s2Sheet);
+  s2Rows.forEach(row => {
+    const branch = row.Branch;
+    const room = row.Room_no || '';
+    const subName = row.Subject_Name || '';
+    const subShort = row.sub_short || '';
+    const th = Number(row.Theory_Hours) || 0;
+    const lab = Number(row.Lab_Hours) || 0;
+    const tut = Number(row.Tutorial_Hours) || 0;
+
+    const thShorts = (row.Name_short || '')
+      .split('\n')
+      .map(s => s.trim().replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').toUpperCase())
+      .filter(Boolean);
+    const tutShorts = (row.Tutorial_Short || '')
+      .split('\n')
+      .map(s => s.trim().replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').toUpperCase())
+      .filter(Boolean);
+
+    // Theory
+    if (th > 0) {
+      thShorts.forEach(sh => {
+        const fac = facultyByClean[sh];
+        if (fac) {
+          fac.theoryLoad += th;
+          fac.assignedCourses.push({
+            branch,
+            subject: subName,
+            code: subShort,
+            room,
+            hours: th,
+            type: 'theory',
+            loadDetail: `${th} theory = ${th} periods`
+          });
+        }
+      });
+    }
+
+    // Lab
+    if (lab > 0) {
+      thShorts.forEach(sh => {
+        const fac = facultyByClean[sh];
+        if (fac) {
+          fac.labLoad += lab;
+          fac.assignedCourses.push({
+            branch,
+            subject: subName,
+            code: subShort,
+            room,
+            hours: lab,
+            type: 'lab',
+            loadDetail: `${lab} lab = ${lab} periods`
+          });
+        }
+      });
+    }
+
+    // Tutorial
+    if (tut > 0) {
+      tutShorts.forEach(sh => {
+        const fac = facultyByClean[sh];
+        if (fac) {
+          fac.tutLoad += tut;
+          fac.assignedCourses.push({
+            branch,
+            subject: subName,
+            code: subShort,
+            room,
+            hours: tut,
+            type: 'tutorial',
+            loadDetail: `${tut} tutorial = ${tut} periods`
+          });
+        }
+      });
+    }
+  });
+
+  // Calculate totalLoad and formatted assignments string
+  facultyList.forEach(fac => {
+    fac.totalLoad = fac.theoryLoad + fac.labLoad + fac.tutLoad;
+    fac.assignments = fac.assignedCourses
+      .map(c => `${c.branch} → ${c.subject} (${c.code}) – ${c.loadDetail}`)
+      .join('\n');
+  });
+}
+
+console.log(`Faculty loaded: ${facultyList.length} (with Sheet2 assignments)`);
 
 // Known non-faculty words to ignore during token matching
 const nonFacultyWords = new Set([
@@ -216,9 +316,31 @@ function normSubj(s) {
     .replace(/TUTORIAL/g, 'TUT');
 }
 
-// 2. Parse Branch Legends
+// 2. Parse Branch Legends from Sheet2 (Authoritative for all 13 branches)
 const branchLegends = {};
+if (s2Sheet) {
+  const s2Rows = XLSX.utils.sheet_to_json(s2Sheet);
+  s2Rows.forEach(r => {
+    const b = r.Branch;
+    if (!b) return;
+    if (!branchLegends[b]) branchLegends[b] = [];
+    branchLegends[b].push({
+      sno: branchLegends[b].length + 1,
+      subjectFullName: r.Subject_Name || '',
+      subjectShort: r.sub_short || '',
+      facultyShort: r.Name_short || '',
+      facultyFullName: r.Faculty_Name || '',
+      tutorialShort: r.Tutorial_Short || '',
+      tutorialFullName: r.Tutorial_Name || '',
+      room: r.Room_no || '',
+      isLab: Boolean(r.Lab_Hours || (r.sub_short && r.sub_short.toUpperCase().includes('LAB')) || (r.Subject_Name && r.Subject_Name.toLowerCase().includes('lab')))
+    });
+  });
+}
+
+// Fallback for any branches not in Sheet2
 knownBranches.forEach(b => {
+  if (branchLegends[b] && branchLegends[b].length > 0) return;
   const ws = wb.Sheets[b];
   if (!ws) return;
   const data = XLSX.utils.sheet_to_json(ws, { header: 1 });
@@ -351,7 +473,7 @@ function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isCont
   }
 }
 
-// Pass 1: Extract directly from Timetable_Final
+// Extract directly and authoritatively from Timetable_Final
 curDay = ''; curBranch = '';
 for (let r = 1; r < rowsFinal.length; r++) {
   const row = rowsFinal[r];
@@ -362,90 +484,20 @@ for (let r = 1; r < rowsFinal.length; r++) {
   slotCols.forEach(({ slot, nextSlot, c }) => {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
+    const parsed = parseCellContent(val);
+    if (!parsed) return;
+
     const facs = matchFacultyInText(val);
     if (facs.length === 0) return;
 
-    const isLab = val.toUpperCase().includes('LAB') || val.toUpperCase().includes('3DDA');
-    const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
-    let subject = lines[0] || val;
-    if (subject.includes('/') && !subject.includes('(')) {
-      subject = subject.split('/')[0].trim();
-    }
-    const room = lines.length > 2 ? lines[2] : (lines.length === 2 && (lines[1].includes('LAB') || lines[1].startsWith('G-') || lines[1].startsWith('E-') || lines[1].startsWith('C-') || lines[1].startsWith('A-')) ? lines[1] : '');
-
     facs.forEach(fn => {
-      addFacultySlot(fn, curDay, slot, curBranch, subject, room, isLab, false);
-      if (isLab && nextSlot) {
-        addFacultySlot(fn, curDay, nextSlot, curBranch, subject, room, isLab, true);
+      addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
+      if (parsed.isLab && nextSlot) {
+        addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
       }
     });
   });
 }
-
-// Pass 2: Reconcile official assignments that were truncated in grid cells
-facultyList.forEach(fac => {
-  const lines = fac.assignments.split('\n').map(l => l.trim()).filter(Boolean);
-  lines.forEach(line => {
-    const parts = line.split('→');
-    const branch = parts[0]?.trim() || '';
-    const rest = parts[1]?.trim() || '';
-    const codeMatch = rest.match(/\(([^)]+)\)/);
-    const code = codeMatch ? codeMatch[1].trim() : '';
-    const nameMatch = rest.match(/^(.*?)(?:–|\()/);
-    const name = nameMatch ? nameMatch[1].trim() : '';
-    const isLab = line.toLowerCase().includes('lab');
-
-    const normCode = normSubj(code);
-    const normName = normSubj(name);
-
-    let hasCourse = false;
-    dayNames.forEach(d => {
-      Object.entries(masterFacultyTimetables[fac.fullName][d]).forEach(([s, items]) => {
-        items.forEach(it => {
-          if (it.branch === branch) {
-            const isItemLab = Boolean(it.isLab || it.subject?.toUpperCase().includes('LAB'));
-            if (isLab !== isItemLab) return;
-            const normItSubj = normSubj(it.subject);
-            if (normCode && (normItSubj === normCode || normItSubj.includes(normCode) || normCode.includes(normItSubj))) hasCourse = true;
-            else if (normName && (normItSubj === normName || normItSubj.includes(normName) || normName.includes(normItSubj))) hasCourse = true;
-          }
-        });
-      });
-    });
-
-    if (!hasCourse) {
-      const branchDays = branchSessionsMap[branch] || {};
-      let assigned = false;
-      dayNames.forEach(d => {
-        if (assigned) return;
-        const daySlots = branchDays[d] || {};
-        Object.entries(daySlots).forEach(([s, sessions]) => {
-          if (assigned) return;
-          sessions.forEach(sess => {
-            if (assigned) return;
-            const isItemLab = Boolean(sess.isLab || sess.subject?.toUpperCase().includes('LAB'));
-            if (isLab !== isItemLab) return;
-            const normSess = normSubj(sess.subject);
-            let match = false;
-            if (normCode && (normSess === normCode || normSess.includes(normCode) || normCode.includes(normSess))) match = true;
-            else if (normName && (normSess === normName || normSess.includes(normName) || normName.includes(normSess))) match = true;
-
-            if (match) {
-              const currentSlotItems = masterFacultyTimetables[fac.fullName][d][s] || [];
-              if (currentSlotItems.length === 0) {
-                addFacultySlot(fac.fullName, d, s, branch, sess.subject, sess.room, sess.isLab, false);
-                if (sess.isLab && sess.nextSlot) {
-                  addFacultySlot(fac.fullName, d, sess.nextSlot, branch, sess.subject, sess.room, sess.isLab, true);
-                }
-                assigned = true;
-              }
-            }
-          });
-        });
-      });
-    }
-  });
-});
 
 console.log(`Pre-computed masterFacultyTimetables for ${Object.keys(masterFacultyTimetables).length} faculty from Timetable_Final`);
 
