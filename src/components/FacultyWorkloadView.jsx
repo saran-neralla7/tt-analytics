@@ -7,7 +7,10 @@ export default function FacultyWorkloadView({ universityInfo, facultyList: propF
   const [selectedDept, setSelectedDept] = useState('ALL');
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
-  const facultyList = propFacultyList || initialData.facultyList || [];
+  const facultyList = useMemo(() => {
+    const list = propFacultyList || initialData.facultyList || [];
+    return list.filter(f => (f.totalLoad || 0) > 0 || (f.assignedCourses && f.assignedCourses.length > 0));
+  }, [propFacultyList]);
 
   // Refs for synchronized dual horizontal scrollbars (top & bottom)
   const topScrollRef = useRef(null);

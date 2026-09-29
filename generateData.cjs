@@ -197,7 +197,13 @@ if (s2Sheet) {
   });
 }
 
-console.log(`Faculty loaded: ${facultyList.length} (with Sheet2 assignments)`);
+// Filter to ONLY count and include faculty who are assigned workload (totalLoad > 0)
+const activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);
+activeFacultyList.forEach((fac, idx) => {
+  fac.sno = idx + 1;
+});
+
+console.log(`Faculty with assigned workload: ${activeFacultyList.length} (out of ${facultyList.length} in master roster)`);
 
 // Known non-faculty words to ignore during token matching
 const nonFacultyWords = new Set([
@@ -654,13 +660,14 @@ const labSheetsData = {
 
 console.log(`Dedicated lab rooms: ${Object.keys(roomLabs).length}, Consolidated course labs: ${Object.keys(consolidatedLabs).length}`);
 
-// Write output
+// Write output (only counting faculty with assigned workload in facultyList)
 const output = {
   timetableData,
   branchLegends,
   labSheetsData,
   masterFacultyTimetables,
-  facultyList,
+  facultyList: activeFacultyList,
+  allFacultyList: facultyList,
   facultyMap,
   knownBranches
 };

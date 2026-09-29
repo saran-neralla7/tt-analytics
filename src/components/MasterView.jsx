@@ -69,8 +69,8 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
             <GraduationCap className="w-5 h-5" />
           </div>
           <div>
-            <div className="text-xs text-gray-500 font-medium">Faculty Members</div>
-            <div className="text-lg font-bold text-gray-900">{facultyList && facultyList.length > 0 ? facultyList.length : (uniqueFaculty.size || 77)}</div>
+            <div className="text-xs text-gray-500 font-medium">Faculty (With Workload)</div>
+            <div className="text-lg font-bold text-gray-900">{facultyList && facultyList.length > 0 ? facultyList.filter(f => (f.totalLoad || 0) > 0 || (f.assignedCourses && f.assignedCourses.length > 0)).length || facultyList.length : (uniqueFaculty.size || 77)}</div>
           </div>
         </div>
 

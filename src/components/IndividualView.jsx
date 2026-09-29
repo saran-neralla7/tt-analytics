@@ -5,12 +5,12 @@ import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 
 export default function IndividualView({ timetableData, universityInfo, facultyList: propFacultyList, onSlotClick }) {
-  // Master faculty list with full metadata
+  // Master faculty list with full metadata (only faculty with assigned workload)
   const facultyMembers = useMemo(() => {
-    if (propFacultyList && propFacultyList.length > 0) {
-      return propFacultyList;
-    }
-    return initialData.facultyList || [];
+    const list = (propFacultyList && propFacultyList.length > 0)
+      ? propFacultyList
+      : initialData.facultyList || [];
+    return list.filter(f => (f.totalLoad || 0) > 0 || (f.assignedCourses && f.assignedCourses.length > 0));
   }, [propFacultyList]);
 
   // Extract unique departments
