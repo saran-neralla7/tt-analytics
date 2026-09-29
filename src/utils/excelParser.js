@@ -49,7 +49,15 @@ export async function parseExcelFile(file) {
             const assignments = row[10] ? String(row[10]).trim() : '';
 
             if (shortName && fullName) {
-              facultyMap[shortName] = { fullName, dept, designation, theoryLoad, labLoad, totalLoad, assignments };
+              const clean = shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+              const facObj = { fullName, dept, designation, theoryLoad, labLoad, totalLoad, assignments };
+              facultyMap[shortName] = facObj;
+              facultyMap[clean] = facObj;
+              facultyMap[`Dr. ${clean}`] = facObj;
+              facultyMap[`Dr.${clean}`] = facObj;
+              facultyMap[`Mr. ${clean}`] = facObj;
+              facultyMap[`Mrs. ${clean}`] = facObj;
+              facultyMap[`Ms. ${clean}`] = facObj;
               facultyList.push({
                 sno,
                 fullName,
@@ -75,7 +83,15 @@ export async function parseExcelFile(file) {
             const designation = row[4] ? String(row[4]).trim() : '';
 
             if (shortName && fullName && !facultyMap[shortName]) {
-              facultyMap[shortName] = { fullName, dept, designation, theoryLoad: 0, labLoad: 0, totalLoad: 0, assignments: '' };
+              const clean = shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+              const facObj = { fullName, dept, designation, theoryLoad: 0, labLoad: 0, totalLoad: 0, assignments: '' };
+              facultyMap[shortName] = facObj;
+              facultyMap[clean] = facObj;
+              facultyMap[`Dr. ${clean}`] = facObj;
+              facultyMap[`Dr.${clean}`] = facObj;
+              facultyMap[`Mr. ${clean}`] = facObj;
+              facultyMap[`Mrs. ${clean}`] = facObj;
+              facultyMap[`Ms. ${clean}`] = facObj;
               facultyList.push({
                 sno,
                 fullName,
@@ -359,7 +375,10 @@ const facultyAliases = {
   'DDAK': 'Mr. D Arun Kumar',
   'VVBR': 'Mr. V Bhaskar Rao',
   'VVLUR': 'Dr. VVL Usha Ramani',
-  'Dr. Dr.': 'Dr. VVL Usha Ramani'
+  'Dr. Dr.': 'Dr. VVL Usha Ramani',
+  'FAC-2': 'Faculty-2',
+  'Faculty-2': 'Faculty-2',
+  'CSP': 'Mr. A Dhanunjaya Prasad'
 };
 
 /**
@@ -377,6 +396,7 @@ function resolveFacultyNames(initialsStr, facultyMap) {
     let token = tokens[i];
 
     if (token === 'CSP') {
+      resolved.push('Mr. A Dhanunjaya Prasad');
       i++;
       continue;
     }
@@ -392,7 +412,13 @@ function resolveFacultyNames(initialsStr, facultyMap) {
       const info = facultyMap[token];
       resolved.push(typeof info === 'object' ? info.fullName : info);
     } else {
-      resolved.push(token);
+      const cleanT = token.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+      if (facultyMap[cleanT]) {
+        const info = facultyMap[cleanT];
+        resolved.push(typeof info === 'object' ? info.fullName : info);
+      } else {
+        resolved.push(token);
+      }
     }
     i++;
   }

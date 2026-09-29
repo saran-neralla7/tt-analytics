@@ -10,7 +10,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
     return [
       'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
       'CHEM. LAB.', 'PHY LAB', 'A-406', 'A-301,302', 'A-303,304', 'C-208',
-      'E-319', 'G-202', 'G-203', 'G-204', 'G-205', 'G-305',
+      'E-319', 'G-302', 'G-303', 'G-304', 'G-305', 'G-405',
       'GVPCE CHEM. LAB.', 'GVPCE MECH. LAB', 'GVPCE SUR. LAB'
     ];
   }, [labSheetsData]);

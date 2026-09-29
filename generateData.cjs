@@ -52,7 +52,16 @@ if (fwSheet) {
     }
 
     if (shortName && fullName) {
-      facultyMap[shortName] = { fullName, dept, designation, totalLoad, assignments };
+      const clean = shortName.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+      const facObj = { fullName, dept, designation, totalLoad, assignments };
+      facultyMap[shortName] = facObj;
+      facultyMap[clean] = facObj;
+      facultyMap[`Dr. ${clean}`] = facObj;
+      facultyMap[`Dr.${clean}`] = facObj;
+      facultyMap[`Mr. ${clean}`] = facObj;
+      facultyMap[`Mrs. ${clean}`] = facObj;
+      facultyMap[`Ms. ${clean}`] = facObj;
+
       facultyList.push({
         sno: sno,
         fullName,
@@ -68,14 +77,17 @@ if (fwSheet) {
   }
 }
 
-console.log(`Faculty loaded: ${Object.keys(facultyMap).length}`);
+console.log(`Faculty loaded: ${facultyList.length}`);
 
 // Known typos / shortcode aliases found in branch timetables
 const facultyAliases = {
   'DDAK': 'Mr. D Arun Kumar',
   'VVBR': 'Mr. V Bhaskar Rao',
   'VVLUR': 'Dr. VVL Usha Ramani',
-  'Dr. Dr.': 'Dr. VVL Usha Ramani'
+  'Dr. Dr.': 'Dr. VVL Usha Ramani',
+  'FAC-2': 'Faculty-2',
+  'Faculty-2': 'Faculty-2',
+  'CSP': 'Mr. A Dhanunjaya Prasad'
 };
 
 // Helper: resolve faculty initials to full names
@@ -92,7 +104,7 @@ function resolveFacultyNames(initialsStr) {
     let token = tokens[i];
 
     // Ignore subject code or room tokens mistakenly placed in faculty row
-    if (token === 'CSP' || token === 'COMP.' || token.startsWith('LAB-')) {
+    if (token === 'CSP' || token === 'COMP.' || token.startsWith('LAB-') || token === 'PHY' || token === 'CHEM.' || token === 'A-406' || token === 'C-208' || token === 'E-319' || token.startsWith('GVPCE')) {
       i++;
       continue;
     }
@@ -107,7 +119,12 @@ function resolveFacultyNames(initialsStr) {
     } else if (facultyMap[token]) {
       resolved.push(facultyMap[token].fullName);
     } else {
-      resolved.push(token);
+      const cleanT = token.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+      if (facultyMap[cleanT]) {
+        resolved.push(facultyMap[cleanT].fullName);
+      } else {
+        resolved.push(token);
+      }
     }
     i++;
   }
@@ -302,9 +319,10 @@ for (const branch of knownBranches) {
   console.log(`✅ ${branch}: parsed ${Object.keys(timetableData[branch]).length} days`);
 }
 
-// Cross-reference Master Sheet (Timetable_Final) to auto-fill any omitted periods in branch sheets
-if (wb.Sheets['Timetable_Final']) {
-  const tfWs = wb.Sheets['Timetable_Final'];
+// Cross-reference Master Sheet (Timetable_Master or Timetable_Final_2) to auto-fill any omitted periods in branch sheets
+const masterSheetName = wb.Sheets['Timetable_Master'] ? 'Timetable_Master' : (wb.Sheets['Timetable_Final_2'] ? 'Timetable_Final_2' : (wb.Sheets['Timetable_Final'] ? 'Timetable_Final' : null));
+if (masterSheetName) {
+  const tfWs = wb.Sheets[masterSheetName];
   const tfRows = XLSX.utils.sheet_to_json(tfWs, { header: 1, defval: '' });
   
   let tfHeaderRow = -1;
@@ -334,21 +352,22 @@ if (wb.Sheets['Timetable_Final']) {
         tfCurrentDay = dayCell;
       }
       const branchCell = String(row[1] || '').trim().toUpperCase();
-      if (!tfCurrentDay || !branchCell || !knownBranches.includes(branchCell)) continue;
+      const matchedBranch = knownBranches.find(b => b.toUpperCase() === branchCell);
+      if (!tfCurrentDay || !matchedBranch) continue;
 
       for (const [slot, col] of Object.entries(tfSlotCols)) {
         const tfVal = String(row[col] || '').trim();
         if (!tfVal || tfVal.toUpperCase() === 'BREAK' || tfVal.toUpperCase() === 'LUNCH') continue;
 
-        if (!timetableData[branchCell]) timetableData[branchCell] = {};
-        if (!timetableData[branchCell][tfCurrentDay]) timetableData[branchCell][tfCurrentDay] = {};
+        if (!timetableData[matchedBranch]) timetableData[matchedBranch] = {};
+        if (!timetableData[matchedBranch][tfCurrentDay]) timetableData[matchedBranch][tfCurrentDay] = {};
 
         // If the branch sheet had nothing for this slot, fill from master!
-        if (!timetableData[branchCell][tfCurrentDay][slot] || timetableData[branchCell][tfCurrentDay][slot].length === 0) {
+        if (!timetableData[matchedBranch][tfCurrentDay][slot] || timetableData[matchedBranch][tfCurrentDay][slot].length === 0) {
           const parsed = parseCellContent(tfVal);
           if (parsed) {
-            console.log(`[Master Auto-fill] Filled gap in ${branchCell} ${tfCurrentDay} ${slot} from Timetable_Final: ${parsed.subject}`);
-            timetableData[branchCell][tfCurrentDay][slot] = [parsed];
+            console.log(`[Master Auto-fill] Filled gap in ${matchedBranch} ${tfCurrentDay} ${slot} from ${masterSheetName}: ${parsed.subject} (${parsed.faculty || 'No faculty'})`);
+            timetableData[matchedBranch][tfCurrentDay][slot] = [parsed];
           }
         }
       }
@@ -360,13 +379,27 @@ if (wb.Sheets['Timetable_Final']) {
 const dedicatedLabSheets = [
   'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
   'CHEM. LAB.', 'PHY LAB', 'A-406', 'A-301,302', 'A-303,304', 'C-208',
-  'E-319', 'G-202', 'G-203', 'G-204', 'G-205', 'G-305',
+  'E-319', 'G-302', 'G-303', 'G-304', 'G-305', 'G-405',
+  'G-202', 'G-203', 'G-204', 'G-205',
   'GVPCE CHEM. LAB.', 'GVPCE MECH. LAB', 'GVPCE SUR. LAB'
 ];
 
+// Dynamically discover all dedicated lab sheets that contain 'LAB DETAILS' and 'DAY'
+const allLabSheets = new Set(dedicatedLabSheets);
+wb.SheetNames.forEach(sName => {
+  const ws = wb.Sheets[sName];
+  if (!ws) return;
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+  const hasLabDetails = rows.some(r => r.some(c => String(c).toUpperCase().includes('LAB DETAILS')));
+  const hasDay = rows.slice(0, 5).some(r => r.some(c => String(c).trim().toUpperCase() === 'DAY'));
+  if (hasLabDetails && hasDay) {
+    allLabSheets.add(sName);
+  }
+});
+
 const labSheetsData = {};
 
-for (const sheetName of dedicatedLabSheets) {
+for (const sheetName of allLabSheets) {
   if (!wb.Sheets[sheetName]) continue;
   const ws = wb.Sheets[sheetName];
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
