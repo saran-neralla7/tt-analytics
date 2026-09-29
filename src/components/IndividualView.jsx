@@ -943,20 +943,20 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-xs border-collapse min-w-[1100px]">
+              <table className="w-full text-xs border-collapse min-w-[1000px]">
                 <thead>
-                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
-                    <th className="py-2.5 px-3 border-r border-gray-300 w-14 text-center">S.No</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-52">Name of the Faculty</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-40">Designation</th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 min-w-[220px] bg-blue-50/60 text-blue-950 font-black text-left">
-                      Theory Workload (by Branch)
+                  <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px] whitespace-nowrap">
+                    <th className="py-2.5 px-3 border-r border-gray-300 w-12 text-center">S.No</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-56">Name of the Faculty</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 text-left w-44">Designation</th>
+                    <th className="py-2.5 px-3 border-r border-gray-300 bg-blue-50/60 text-blue-950 font-black text-left">
+                      Theory Workload
                     </th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 min-w-[260px] bg-amber-50/60 text-amber-950 font-black text-left">
-                      Tutorial Workload (by Branch)
+                    <th className="py-2.5 px-3 border-r border-gray-300 bg-amber-50/60 text-amber-950 font-black text-left">
+                      Tutorial Workload
                     </th>
-                    <th className="py-2.5 px-3 border-r border-gray-300 min-w-[200px] bg-purple-50/60 text-purple-950 font-black text-left">
-                      Lab Workload (by Branch)
+                    <th className="py-2.5 px-3 border-r border-gray-300 bg-purple-50/60 text-purple-950 font-black text-left">
+                      Lab Workload
                     </th>
                     <th className="py-2.5 px-3 w-28 bg-emerald-50/60 text-emerald-950 font-black text-center">
                       Total Workload
@@ -973,93 +973,76 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                       <tr
                         key={f.fullName}
                         onClick={() => setSelectedFaculty(f.fullName)}
-                        className={`border-b border-gray-200 transition-colors cursor-pointer ${
+                        className={`border-b border-gray-200 transition-colors cursor-pointer whitespace-nowrap ${
                           isSelected ? 'bg-blue-100/90 font-bold' : idx % 2 === 0 ? 'bg-white hover:bg-slate-100/80' : 'bg-gray-50/60 hover:bg-slate-100/80'
                         }`}
                         title="Click to select this faculty member"
                       >
-                        <td className="py-3 px-3 border-r border-gray-200 font-mono text-center text-slate-600 font-bold align-middle">
+                        <td className="py-2.5 px-3 border-r border-gray-200 font-mono text-center text-slate-600 font-bold align-middle">
                           {idx + 1}
                         </td>
-                        <td className="py-3 px-3 border-r border-gray-200 text-left font-bold text-slate-900 align-middle">
-                          <div className="font-bold text-slate-900 text-xs sm:text-[13px]">
-                            {f.fullName}
-                          </div>
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left font-bold text-slate-900 align-middle">
+                          <span>{f.fullName}</span>
                           {cleanShort && (
-                            <span className="inline-block mt-0.5 px-1.5 py-0.2 rounded text-[10.5px] font-mono font-bold bg-blue-100 text-blue-900 border border-blue-200">
-                              {cleanShort}
+                            <span className="ml-1.5 text-blue-700 font-mono font-bold text-[11px]">
+                              ({cleanShort})
                             </span>
                           )}
                         </td>
-                        <td className="py-3 px-3 border-r border-gray-200 text-left text-slate-700 font-medium text-[11px] align-middle">
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left text-slate-700 font-medium text-[11px] align-middle">
                           {f.designation || 'Assistant Professor'}
                         </td>
                         
-                        {/* Theory Workload + Branch Breakdown */}
-                        <td className="py-3 px-3 border-r border-gray-200 text-left align-middle">
-                          <div className="flex items-center gap-2">
-                            <span className="font-mono font-black text-blue-900 text-sm sm:text-base shrink-0 min-w-[20px]">
-                              {f.theoryLoad || 0}
-                            </span>
-                            {f.theoryLoad > 0 && (
-                              <div className="flex flex-wrap items-center gap-1">
-                                {Object.entries(breakdowns.theoryByBranch).map(([b, hrs]) => (
-                                  <span
-                                    key={b}
-                                    className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-900 border border-blue-200 font-mono whitespace-nowrap"
-                                  >
-                                    {b}: <span className="ml-1 font-black text-blue-950">{hrs}</span>
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                          </div>
+                        {/* Theory Workload: single-line text */}
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                          {f.theoryLoad > 0 ? (
+                            <div className="flex items-center gap-1.5 whitespace-nowrap">
+                              <span className="font-mono font-black text-blue-900 text-sm">
+                                {f.theoryLoad}
+                              </span>
+                              <span className="text-slate-700 text-xs font-medium">
+                                ({Object.entries(breakdowns.theoryByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="font-mono font-bold text-slate-400 text-xs">0</span>
+                          )}
                         </td>
 
-                        {/* Tutorial Workload + Branch Breakdown */}
-                        <td className="py-3 px-3 border-r border-gray-200 text-left align-middle">
-                          <div className="flex items-center gap-2">
-                            <span className="font-mono font-black text-amber-900 text-sm sm:text-base shrink-0 min-w-[20px]">
-                              {f.tutLoad || 0}
-                            </span>
-                            {f.tutLoad > 0 && (
-                              <div className="flex flex-wrap items-center gap-1">
-                                {Object.entries(breakdowns.tutByBranch).map(([b, hrs]) => (
-                                  <span
-                                    key={b}
-                                    className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-950 border border-amber-200 font-mono whitespace-nowrap"
-                                  >
-                                    {b}: <span className="ml-1 font-black text-amber-950">{hrs}</span>
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                          </div>
+                        {/* Tutorial Workload: single-line text */}
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                          {f.tutLoad > 0 ? (
+                            <div className="flex items-center gap-1.5 whitespace-nowrap">
+                              <span className="font-mono font-black text-amber-900 text-sm">
+                                {f.tutLoad}
+                              </span>
+                              <span className="text-slate-700 text-xs font-medium">
+                                ({Object.entries(breakdowns.tutByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="font-mono font-bold text-slate-400 text-xs">0</span>
+                          )}
                         </td>
 
-                        {/* Lab Workload + Branch Breakdown */}
-                        <td className="py-3 px-3 border-r border-gray-200 text-left align-middle">
-                          <div className="flex items-center gap-2">
-                            <span className="font-mono font-black text-purple-900 text-sm sm:text-base shrink-0 min-w-[20px]">
-                              {f.labLoad || 0}
-                            </span>
-                            {f.labLoad > 0 && (
-                              <div className="flex flex-wrap items-center gap-1">
-                                {Object.entries(breakdowns.labByBranch).map(([b, hrs]) => (
-                                  <span
-                                    key={b}
-                                    className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-50 text-purple-900 border border-purple-200 font-mono whitespace-nowrap"
-                                  >
-                                    {b}: <span className="ml-1 font-black text-purple-950">{hrs}</span>
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                          </div>
+                        {/* Lab Workload: single-line text */}
+                        <td className="py-2.5 px-3 border-r border-gray-200 text-left align-middle">
+                          {f.labLoad > 0 ? (
+                            <div className="flex items-center gap-1.5 whitespace-nowrap">
+                              <span className="font-mono font-black text-purple-900 text-sm">
+                                {f.labLoad}
+                              </span>
+                              <span className="text-slate-700 text-xs font-medium">
+                                ({Object.entries(breakdowns.labByBranch).map(([b, hrs]) => `${b}: ${hrs}`).join(', ')})
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="font-mono font-bold text-slate-400 text-xs">0</span>
+                          )}
                         </td>
 
                         {/* Total Workload */}
-                        <td className="py-3 px-3 font-mono font-black text-emerald-800 text-base text-center align-middle">
+                        <td className="py-2.5 px-3 font-mono font-black text-emerald-800 text-base text-center align-middle">
                           {f.totalLoad || 0}
                         </td>
                       </tr>
@@ -1067,29 +1050,23 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                   })}
                 </tbody>
                 <tfoot>
-                  <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900">
-                    <td colSpan={3} className="py-3.5 px-3 text-right uppercase tracking-wider text-xs border-r border-gray-300">
+                  <tr className="bg-slate-100 border-t-2 border-slate-700 font-black text-slate-900 whitespace-nowrap">
+                    <td colSpan={3} className="py-3 px-3 text-right uppercase tracking-wider text-xs border-r border-gray-300">
                       Total ({filteredFacultyList.length} Faculty):
                     </td>
-                    <td className="py-3.5 px-3 border-r border-gray-300 font-mono text-base text-blue-900 text-left">
-                      <div className="flex items-center gap-2">
-                        <span className="font-black text-base">{activeDeptStats.theoryWorkload}</span>
-                        <span className="text-[10.5px] font-sans text-blue-800 font-semibold">(Total Theory Hrs)</span>
-                      </div>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-blue-900 text-left">
+                      <span className="font-black text-base">{activeDeptStats.theoryWorkload}</span>
+                      <span className="ml-1 text-[11px] font-sans text-blue-800 font-semibold">(Total Theory Hrs)</span>
                     </td>
-                    <td className="py-3.5 px-3 border-r border-gray-300 font-mono text-base text-amber-900 text-left">
-                      <div className="flex items-center gap-2">
-                        <span className="font-black text-base">{activeDeptStats.tutorialWorkload}</span>
-                        <span className="text-[10.5px] font-sans text-amber-800 font-semibold">(Total Tut Hrs)</span>
-                      </div>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-amber-900 text-left">
+                      <span className="font-black text-base">{activeDeptStats.tutorialWorkload}</span>
+                      <span className="ml-1 text-[11px] font-sans text-amber-800 font-semibold">(Total Tut Hrs)</span>
                     </td>
-                    <td className="py-3.5 px-3 border-r border-gray-300 font-mono text-base text-purple-900 text-left">
-                      <div className="flex items-center gap-2">
-                        <span className="font-black text-base">{activeDeptStats.labWorkload}</span>
-                        <span className="text-[10.5px] font-sans text-purple-800 font-semibold">(Total Lab Hrs)</span>
-                      </div>
+                    <td className="py-3 px-3 border-r border-gray-300 font-mono text-base text-purple-900 text-left">
+                      <span className="font-black text-base">{activeDeptStats.labWorkload}</span>
+                      <span className="ml-1 text-[11px] font-sans text-purple-800 font-semibold">(Total Lab Hrs)</span>
                     </td>
-                    <td className="py-3.5 px-3 font-mono text-lg text-emerald-900 text-center">
+                    <td className="py-3 px-3 font-mono text-lg text-emerald-900 text-center">
                       {activeDeptStats.totalWorkload}
                     </td>
                   </tr>
