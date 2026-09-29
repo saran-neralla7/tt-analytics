@@ -60,18 +60,36 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     const result = {};
     days.forEach(d => result[d] = {});
 
+    const facFull = currentFacultyObj?.fullName || selectedFaculty;
+    const facShort = (currentFacultyObj?.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+    const facShortWithTitle = currentFacultyObj?.shortName?.trim();
+
+    const matchesFaculty = (cell) => {
+      if (!cell || !cell.faculty) return false;
+      if (cell.faculty.includes(facFull)) return true;
+      if (facShort && new RegExp(`\\b${facShort}\\b`, 'i').test(cell.faculty)) return true;
+      if (facShortWithTitle && cell.faculty.includes(facShortWithTitle)) return true;
+      return false;
+    };
+
     Object.entries(timetableData).forEach(([branchKey, branchSched]) => {
       Object.entries(branchSched).forEach(([dayKey, daySched]) => {
         Object.entries(daySched).forEach(([slotTime, rawCell]) => {
           const items = Array.isArray(rawCell) ? rawCell : rawCell ? [rawCell] : [];
           items.forEach(cell => {
-            if (cell && cell.faculty && cell.faculty.includes(selectedFaculty)) {
+            if (matchesFaculty(cell)) {
               if (!result[dayKey]) result[dayKey] = {};
               if (!result[dayKey][slotTime]) result[dayKey][slotTime] = [];
-              result[dayKey][slotTime].push({
-                ...cell,
-                branch: branchKey
-              });
+              // Prevent exact duplicate branch & subject entries
+              const alreadyExists = result[dayKey][slotTime].some(
+                existing => existing.branch === branchKey && existing.subject === cell.subject
+              );
+              if (!alreadyExists) {
+                result[dayKey][slotTime].push({
+                  ...cell,
+                  branch: branchKey
+                });
+              }
             }
           });
         });
@@ -79,7 +97,64 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     });
 
     return result;
-  }, [timetableData, selectedFaculty]);
+  }, [timetableData, selectedFaculty, currentFacultyObj]);
+
+  // Parse all official course assignments for this faculty from Master Workload
+  const parsedAssignments = useMemo(() => {
+    if (!currentFacultyObj || !currentFacultyObj.assignments) return [];
+    return currentFacultyObj.assignments
+      .split('\n')
+      .map(line => line.trim())
+      .filter(Boolean)
+      .map(line => {
+        const parts = line.split('→');
+        const branch = parts[0]?.trim() || '';
+        const rest = parts[1]?.trim() || '';
+        const codeMatch = rest.match(/\(([^)]+)\)/);
+        const code = codeMatch ? codeMatch[1].trim() : '';
+        const nameMatch = rest.match(/^(.*?)(?:–|\()/);
+        const name = nameMatch ? nameMatch[1].trim() : '';
+        const loadMatch = rest.match(/–\s*(.*?)\s*=\s*(\d+)\s*periods/i);
+        const loadDetail = loadMatch ? loadMatch[1].trim() : '';
+        const periods = loadMatch ? Number(loadMatch[2]) || 0 : 0;
+        const isLab = line.toLowerCase().includes('lab');
+        const isTutorial = line.toLowerCase().includes('tutorial') || line.toLowerCase().includes('tut');
+
+        // Find scheduled slots in facultySchedule for this branch and course
+        const scheduledSlots = [];
+        days.forEach(day => {
+          Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
+            items.forEach(item => {
+              if (item.branch === branch) {
+                const sSubj = (item.subject || '').toUpperCase();
+                const matchCode = code.toUpperCase();
+                const matchName = name.toUpperCase();
+                if (
+                  (matchCode && (sSubj.includes(matchCode) || matchCode.includes(sSubj))) ||
+                  (matchName && (sSubj.includes(matchName) || matchName.includes(sSubj))) ||
+                  (isTutorial && sSubj.includes('TUT'))
+                ) {
+                  if (!scheduledSlots.some(s => s.day === day && s.slot === slot)) {
+                    scheduledSlots.push({ day, slot, room: item.room });
+                  }
+                }
+              }
+            });
+          });
+        });
+
+        return {
+          branch,
+          name,
+          code,
+          loadDetail: loadDetail || (isLab ? 'Lab' : isTutorial ? 'Tutorial' : 'Theory'),
+          periods,
+          isLab,
+          isTutorial,
+          scheduledSlots
+        };
+      });
+  }, [currentFacultyObj, facultySchedule]);
 
   // Compute workload metrics
   let totalHours = 0;
@@ -535,6 +610,105 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               })}
             </tbody>
           </table>
+        </div>
+      </div>
+
+      {/* Assigned Subjects & Master Workload Breakdown */}
+      <div className="bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden my-6">
+        <div className="bg-slate-800 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <BookOpen className="w-5 h-5 text-blue-400" />
+            <h3 className="text-sm font-bold tracking-wide uppercase font-serif">
+              Assigned Subjects & Master Workload ({currentFacultyObj?.fullName || selectedFaculty})
+            </h3>
+          </div>
+          <div className="flex items-center gap-2 text-xs font-semibold">
+            <span className="bg-blue-600/90 text-white px-2.5 py-1 rounded">
+              Theory: {currentFacultyObj?.theoryLoad || 0} Hrs
+            </span>
+            <span className="bg-emerald-600/90 text-white px-2.5 py-1 rounded">
+              Lab: {currentFacultyObj?.labLoad || 0} Hrs
+            </span>
+            <span className="bg-purple-600/90 text-white px-2.5 py-1 rounded font-bold">
+              Total Load: {currentFacultyObj?.totalLoad || 0} Hrs/Wk
+            </span>
+          </div>
+        </div>
+
+        <div className="p-4 sm:p-5">
+          {parsedAssignments.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              {parsedAssignments.map((asgn, idx) => {
+                return (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-lg border border-slate-300 bg-slate-50/60 hover:bg-white hover:border-blue-400 transition-all shadow-sm flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="px-2 py-0.5 rounded font-black text-[11px] bg-slate-800 text-white tracking-wider">
+                          {asgn.branch}
+                        </span>
+                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                          asgn.isLab 
+                            ? 'bg-purple-100 text-purple-800 border border-purple-300' 
+                            : asgn.isTutorial 
+                            ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                            : 'bg-blue-100 text-blue-800 border border-blue-300'
+                        }`}>
+                          {asgn.isLab ? 'Laboratory' : asgn.isTutorial ? 'Tutorial' : 'Theory'}
+                        </span>
+                      </div>
+
+                      <div className="font-bold text-slate-900 text-xs sm:text-sm leading-snug">
+                        {asgn.name || asgn.code}
+                      </div>
+
+                      {asgn.code && asgn.code !== asgn.name && (
+                        <div className="text-[11px] font-semibold text-slate-500 mt-0.5">
+                          Code: <span className="font-mono text-slate-700 font-bold">{asgn.code}</span>
+                        </div>
+                      )}
+
+                      <div className="text-[11px] font-medium text-slate-600 mt-1">
+                        Assigned Load: <span className="font-bold text-slate-800">{asgn.loadDetail || `${asgn.periods} periods`}</span>
+                      </div>
+                    </div>
+
+                    {/* Scheduled Slots in Grid */}
+                    <div className="mt-3 pt-2.5 border-t border-slate-200">
+                      <div className="text-[10px] uppercase font-bold text-slate-500 mb-1 flex items-center justify-between">
+                        <span>Timetable Slots:</span>
+                        <span className="text-emerald-700 font-bold">
+                          {asgn.scheduledSlots.length} Active {asgn.scheduledSlots.length === 1 ? 'Slot' : 'Slots'}
+                        </span>
+                      </div>
+                      {asgn.scheduledSlots.length > 0 ? (
+                        <div className="flex flex-wrap gap-1.5">
+                          {asgn.scheduledSlots.map((s, sIdx) => (
+                            <span
+                              key={sIdx}
+                              className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 font-mono"
+                            >
+                              {s.day} {s.slot} {s.room ? `• ${s.room}` : ''}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <span className="text-[10.5px] italic text-slate-400">
+                          Pre-assigned in master roster
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="text-center py-6 text-slate-500 text-xs italic">
+              No specific course assignments recorded in the Master Workload Summary for this faculty.
+            </div>
+          )}
         </div>
       </div>
     </div>

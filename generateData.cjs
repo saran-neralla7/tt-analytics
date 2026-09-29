@@ -103,8 +103,14 @@ function resolveFacultyNames(initialsStr) {
   while (i < tokens.length) {
     let token = tokens[i];
 
-    // Ignore subject code or room tokens mistakenly placed in faculty row
-    if (token === 'CSP' || token === 'COMP.' || token.startsWith('LAB-') || token === 'PHY' || token === 'CHEM.' || token === 'A-406' || token === 'C-208' || token === 'E-319' || token.startsWith('GVPCE')) {
+    // Ignore subject code, symbols, or room tokens mistakenly placed in faculty row
+    if (
+      token === 'CSP' || token === 'COMP.' || token.startsWith('LAB') || token === 'PHY' || token === 'CHEM.' ||
+      token === 'A-406' || token === 'C-208' || token === 'E-319' || token.startsWith('GVPCE') ||
+      token === 'ESS.' || token === 'ENG.' || token === 'TUT' || token === 'TUT.' || token === '/' || token === '&' ||
+      token.startsWith('E-') || token.startsWith('G-') || token.startsWith('C-') || token.startsWith('A-') ||
+      token === 'CAL' || token === 'LA' || token === 'Tut' || token === 'Tut.' || token === 'TUT' || token === 'TUT.'
+    ) {
       i++;
       continue;
     }
@@ -122,8 +128,6 @@ function resolveFacultyNames(initialsStr) {
       const cleanT = token.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
       if (facultyMap[cleanT]) {
         resolved.push(facultyMap[cleanT].fullName);
-      } else {
-        resolved.push(token);
       }
     }
     i++;
@@ -319,7 +323,66 @@ for (const branch of knownBranches) {
   console.log(`✅ ${branch}: parsed ${Object.keys(timetableData[branch]).length} days`);
 }
 
-// Cross-reference Master Sheet (Timetable_Master or Timetable_Final_2) to auto-fill any omitted periods in branch sheets
+// 2b. Parse Branch Legends (Course & Faculty Mapping for each branch)
+const branchLegends = {};
+knownBranches.forEach(b => {
+  const ws = wb.Sheets[b];
+  if (!ws) return;
+  const data = XLSX.utils.sheet_to_json(ws, { header: 1 });
+  let headerIdx = -1;
+  let colSub = -1, colShort = -1, colFacShort = -1, colFacName = -1;
+  data.forEach((r, i) => {
+    if (!r) return;
+    r.forEach((c, j) => {
+      const str = String(c || '').toLowerCase().trim();
+      if (str.includes('subject name')) { headerIdx = i; colSub = j; }
+      if (str.includes('short form')) colShort = j;
+      if (str.includes('faculty short')) colFacShort = j;
+      if (str.includes('faculty name')) colFacName = j;
+    });
+  });
+
+  if (headerIdx === -1) return;
+  const items = [];
+  for (let i = headerIdx + 1; i < data.length; i++) {
+    const r = data[i];
+    if (!r || !r.some(c => c)) continue;
+    const text = r.join(' ');
+    if (text.includes('Timetable Incharge') || text.includes('HOD-') || text.includes('Director')) break;
+    const subjectFullName = String(r[colSub] || '').trim();
+    const subjectShort = String(r[colShort] || '').trim();
+    const rawFacultyShort = String(r[colFacShort] || '').trim();
+    const facultyShort = rawFacultyShort
+      .split('\n')
+      .map(line => line.trim().replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim())
+      .filter(Boolean)
+      .join('\n');
+    const facultyFullName = String(r[colFacName] || '').trim();
+    if (subjectFullName && !subjectFullName.toLowerCase().includes('subject name')) {
+      items.push({
+        sno: items.length + 1,
+        subjectFullName,
+        subjectShort,
+        facultyShort,
+        facultyFullName,
+        isLab: subjectShort.toUpperCase().includes('LAB') || subjectFullName.toLowerCase().includes('lab')
+      });
+    }
+  }
+  branchLegends[b] = items;
+});
+console.log(`Branch legends parsed for: ${Object.keys(branchLegends).length} branches`);
+
+function normSubj(s) {
+  return (s || '')
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, '')
+    .replace(/LABORATORY/g, 'LAB')
+    .replace(/PRACTICAL/g, 'LAB')
+    .replace(/TUTORIAL/g, 'TUT');
+}
+
+// 2c. Cross-reference Master Sheet (Timetable_Master or Timetable_Final_2) to auto-fill any omitted periods in branch sheets
 const masterSheetName = wb.Sheets['Timetable_Master'] ? 'Timetable_Master' : (wb.Sheets['Timetable_Final_2'] ? 'Timetable_Final_2' : (wb.Sheets['Timetable_Final'] ? 'Timetable_Final' : null));
 if (masterSheetName) {
   const tfWs = wb.Sheets[masterSheetName];
@@ -374,6 +437,182 @@ if (masterSheetName) {
     }
   }
 }
+
+// 2d. Reconcile updated tutorial splits and multi-faculty rosters from Timetable_Final and Timetable_Master
+['Timetable_Final', 'Timetable_Master', 'Timetable_Final_2'].forEach(sName => {
+  const ws = wb.Sheets[sName];
+  if (!ws) return;
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+  let headerRow = -1;
+  for (let r = 0; r < 10; r++) {
+    if (rows[r] && rows[r].some(c => String(c).toUpperCase().includes('DAY'))) {
+      headerRow = r;
+      break;
+    }
+  }
+  if (headerRow === -1) return;
+  const header = rows[headerRow];
+  const slotCols = {};
+  for (let c = 0; c < header.length; c++) {
+    const h = String(header[c] || '').trim();
+    timeSlots.forEach(ts => {
+      if (h.includes(ts)) slotCols[ts] = c;
+    });
+  }
+
+  let curDay = '';
+  let curBranch = '';
+  for (let r = headerRow + 1; r < rows.length; r++) {
+    const row = rows[r];
+    if (!row) continue;
+    const c0 = String(row[0] || '').trim().toUpperCase();
+    const c1 = String(row[1] || '').trim().toUpperCase();
+    if (dayNames.includes(c0)) curDay = c0;
+    const matchedB = knownBranches.find(b => b.toUpperCase() === c1);
+    if (matchedB) curBranch = matchedB;
+    if (!curDay || !curBranch || !timetableData[curBranch] || !timetableData[curBranch][curDay]) continue;
+
+    for (const [slot, col] of Object.entries(slotCols)) {
+      const val = String(row[col] || '').trim();
+      if (!val || val.toUpperCase() === 'BREAK' || val.toUpperCase() === 'LUNCH') continue;
+
+      const lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+      let cellSubj = lines[0] || '';
+      if (cellSubj.includes('/')) {
+        cellSubj = cellSubj.split('/')[0].trim();
+      }
+      const normCellSubj = normSubj(cellSubj);
+      if (!normCellSubj) continue;
+
+      const isCellLab = val.toUpperCase().includes('LAB') || cellSubj.toUpperCase().includes('LAB');
+      const isCellTut = val.toUpperCase().includes('TUT') || cellSubj.toUpperCase().includes('TUT');
+
+      const resolvedFacStr = resolveFacultyNames(val);
+      const facs = resolvedFacStr ? resolvedFacStr.split(', ').map(f => f.trim()).filter(Boolean) : [];
+      if (facs.length === 0) continue;
+
+      const sessions = timetableData[curBranch][curDay][slot] || [];
+      const matchingSessions = sessions.filter(sess => {
+        const normS = normSubj(sess.subject);
+        const isSessLab = sess.isLab || sess.subject.toUpperCase().includes('LAB');
+        const isSessTut = sess.subject.toUpperCase().includes('TUT');
+
+        if (isCellLab !== isSessLab) return false;
+        if (isCellTut !== isSessTut) return false;
+
+        if (isCellTut) {
+          const isCellCal = normCellSubj.includes('CAL');
+          const isCellEng = normCellSubj.includes('ENG');
+          const isSessCal = normS.includes('CAL');
+          const isSessEng = normS.includes('ENG');
+          if (isCellCal && !isSessCal) return false;
+          if (isCellEng && !isSessEng) return false;
+        }
+
+        return normS === normCellSubj || normS.includes(normCellSubj) || normCellSubj.includes(normS);
+      });
+
+      if (matchingSessions.length > 0) {
+        matchingSessions.forEach(sess => {
+          const curFacs = sess.faculty ? sess.faculty.split(', ').map(x => x.trim()) : [];
+          facs.forEach(f => {
+            if (!curFacs.includes(f)) curFacs.push(f);
+          });
+          sess.faculty = curFacs.join(', ');
+        });
+      }
+    }
+  }
+});
+
+// 2e. Reconcile assigned faculty from Branch Legend tables
+Object.entries(branchLegends).forEach(([branch, items]) => {
+  if (!timetableData[branch]) return;
+  items.forEach(item => {
+    if (!item.facultyFullName) return;
+    const legendFacs = item.facultyFullName.split('\n').map(f => f.trim()).filter(Boolean);
+    const legendSubj = normSubj(item.subjectShort || item.subjectFullName);
+    if (!legendSubj) return;
+
+    Object.values(timetableData[branch]).forEach(daySched => {
+      Object.values(daySched).forEach(sessions => {
+        sessions.forEach(sess => {
+          const sSubj = normSubj(sess.subject);
+          const isSessLab = sess.isLab || sess.subject.toUpperCase().includes('LAB');
+          if (item.isLab !== isSessLab) return;
+
+          if (sSubj === legendSubj || sSubj.includes(legendSubj) || legendSubj.includes(sSubj)) {
+            const curFacs = sess.faculty ? sess.faculty.split(', ').map(x => x.trim()) : [];
+            legendFacs.forEach(lf => {
+              if (!curFacs.includes(lf)) curFacs.push(lf);
+            });
+            sess.faculty = curFacs.join(', ');
+          }
+        });
+      });
+    });
+  });
+});
+
+// 2f. Reconcile official Faculty Workload Summary assignments
+facultyList.forEach(fac => {
+  const lines = (fac.assignments || '').split('\n').filter(Boolean);
+  lines.forEach(line => {
+    const parts = line.split('→');
+    if (parts.length < 2) return;
+    const branch = parts[0].trim();
+    const rest = parts[1].trim();
+    const codeMatch = rest.match(/\(([^)]+)\)/);
+    const code = codeMatch ? codeMatch[1].trim() : '';
+    const nameMatch = rest.match(/^(.*?)(?:–|\()/);
+    const name = nameMatch ? nameMatch[1].trim() : '';
+
+    const isTutorial = line.toLowerCase().includes('tutorial') || line.toLowerCase().includes('tut');
+    const isLab = line.toLowerCase().includes('lab');
+
+    const branchSched = timetableData[branch] || {};
+    Object.entries(branchSched).forEach(([day, daySched]) => {
+      Object.entries(daySched).forEach(([slot, items]) => {
+        items.forEach(c => {
+          const cCode = normSubj(c.subject);
+          const matchCode = code ? normSubj(code) : '';
+          const matchName = name ? normSubj(name) : '';
+
+          let matches = false;
+          if (isTutorial) {
+            const isCal = matchCode.includes('CAL') || matchName.includes('CALCULUS');
+            const isEng = matchCode.includes('ENG') || matchName.includes('ENGLISH');
+            if (isCal && (cCode.includes('CAL') || c.subject.toUpperCase().includes('CAL'))) {
+              matches = true;
+            } else if (isEng && (cCode.includes('ENG') || c.subject.toUpperCase().includes('ENG'))) {
+              matches = true;
+            }
+          } else if (isLab) {
+            if (c.isLab || cCode.includes('LAB') || cCode.includes('3DDA')) {
+              if (matchCode && (cCode.includes(matchCode) || matchCode.includes(cCode))) matches = true;
+              else if (matchName && (cCode.includes(matchName) || matchName.includes(cCode))) matches = true;
+            }
+          } else {
+            // Theory
+            if (!c.isLab && !cCode.includes('TUT')) {
+              if (matchCode && (cCode === matchCode || cCode.includes(matchCode) || matchCode.includes(cCode))) matches = true;
+              else if (matchName && (cCode.includes(matchName) || matchName.includes(cCode))) matches = true;
+            }
+          }
+
+          if (matches) {
+            const facList = c.faculty ? c.faculty.split(', ').map(x => x.trim()) : [];
+            if (!facList.includes(fac.fullName) && !facList.includes(fac.shortName)) {
+              facList.push(fac.fullName);
+              c.faculty = facList.join(', ');
+            }
+          }
+        });
+      });
+    });
+  });
+});
+
 
 // 3. Parse Dedicated Laboratory Sheets
 const dedicatedLabSheets = [
@@ -456,56 +695,6 @@ for (const sheetName of allLabSheets) {
 }
 
 console.log(`Dedicated lab sheets parsed: ${Object.keys(labSheetsData).length}`);
-
-// 3. Parse Branch Legends (Course & Faculty Mapping for each branch)
-const branchLegends = {};
-knownBranches.forEach(b => {
-  const ws = wb.Sheets[b];
-  if (!ws) return;
-  const data = XLSX.utils.sheet_to_json(ws, { header: 1 });
-  let headerIdx = -1;
-  let colSub = -1, colShort = -1, colFacShort = -1, colFacName = -1;
-  data.forEach((r, i) => {
-    if (!r) return;
-    r.forEach((c, j) => {
-      const str = String(c || '').toLowerCase().trim();
-      if (str.includes('subject name')) { headerIdx = i; colSub = j; }
-      if (str.includes('short form')) colShort = j;
-      if (str.includes('faculty short')) colFacShort = j;
-      if (str.includes('faculty name')) colFacName = j;
-    });
-  });
-
-  if (headerIdx === -1) return;
-  const items = [];
-  for (let i = headerIdx + 1; i < data.length; i++) {
-    const r = data[i];
-    if (!r || !r.some(c => c)) continue;
-    const text = r.join(' ');
-    if (text.includes('Timetable Incharge') || text.includes('HOD-') || text.includes('Director')) break;
-    const subjectFullName = String(r[colSub] || '').trim();
-    const subjectShort = String(r[colShort] || '').trim();
-    const rawFacultyShort = String(r[colFacShort] || '').trim();
-    const facultyShort = rawFacultyShort
-      .split('\n')
-      .map(line => line.trim().replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim())
-      .filter(Boolean)
-      .join('\n');
-    const facultyFullName = String(r[colFacName] || '').trim();
-    if (subjectFullName && !subjectFullName.toLowerCase().includes('subject name')) {
-      items.push({
-        sno: items.length + 1,
-        subjectFullName,
-        subjectShort,
-        facultyShort,
-        facultyFullName,
-        isLab: subjectShort.toUpperCase().includes('LAB') || subjectFullName.toLowerCase().includes('lab')
-      });
-    }
-  }
-  branchLegends[b] = items;
-});
-console.log(`Branch legends parsed for: ${Object.keys(branchLegends).length} branches`);
 
 // Write output
 const output = {
