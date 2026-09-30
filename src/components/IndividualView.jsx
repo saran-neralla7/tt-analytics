@@ -415,7 +415,6 @@ function FacultyTimetableCard({
                           key={slot.id} 
                           colSpan={colSpan}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/30 print:bg-white text-center select-none h-full"
-                          style={{ height: '1px' }}
                         >
                           <div className="flex items-center justify-center h-full min-h-[40px] print:min-h-0">
                             <span className="text-gray-300 font-mono text-[13px] print:text-[5pt]">—</span>
@@ -427,7 +426,7 @@ function FacultyTimetableCard({
                     // 2. Split 2-Hour Merge
                     if (isSplitMerge) {
                       const sharedLabs = currentItems.filter(it => 
-                        (it.isLab || it.subject?.includes('LAB')) &&
+                        (it.isLab || it.subject?.includes('LAB')) && 
                         nextSlotItems.some(n => 
                           (n.isLab || n.isContinued || n.subject?.includes('LAB')) && 
                           n.subject === it.subject && 
@@ -449,10 +448,9 @@ function FacultyTimetableCard({
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, facFull)}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
-                          style={{ height: '1px' }}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col h-full w-full divide-y divide-gray-300/90 print:divide-black">
+                          <div className="flex flex-col h-full w-full min-h-[76px] divide-y divide-gray-300/90 print:divide-black">
                             <div className="flex-1 w-full flex divide-x divide-gray-300/90 print:divide-black">
                               <div className="w-1/2 flex flex-col justify-center items-center print:min-h-0">
                                 {h1Others.length > 0 ? (
@@ -587,16 +585,15 @@ function FacultyTimetableCard({
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
                         className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
-                        style={{ height: '1px' }}
                         title="Click to view course details"
                       >
-                        <div className="flex flex-col h-full w-full divide-y divide-gray-300/90 print:divide-black">
+                        <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90 print:divide-black">
                           {currentItems.map((cellItem, bIdx) => {
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                             return (
                               <div 
                                 key={bIdx}
-                                className={`flex-1 w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
+                                className={`flex-1 min-h-[36px] w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
                                 <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[5pt] print:leading-tight ${itemStyle.text}`}>

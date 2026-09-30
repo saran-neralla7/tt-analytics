@@ -410,13 +410,10 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                               colSpan={colSpan}
                               onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                               className={`p-1.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 cell-course`}
-                              style={{
-                                height: '1px',
-                                ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
-                              }}
+                              style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                               title="Click to view course details"
                             >
-                              <div className="flex flex-col justify-center items-center text-center h-full">
+                              <div className="flex flex-col justify-center items-center text-center h-full min-h-[52px]">
                                 <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug cell-subject ${style.text}`}>
                                   {cellItem.subject}
                                 </div>
@@ -442,16 +439,15 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             colSpan={colSpan}
                             onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                             className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer cell-course"
-                            style={{ height: '1px' }}
                             title="Click to view course details"
                           >
-                            <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
+                            <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90">
                               {items.map((cellItem, bIdx) => {
                                 const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                                 return (
                                   <div 
                                     key={bIdx}
-                                    className={`flex-1 w-full py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
+                                    className={`flex-1 min-h-[36px] w-full py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
                                     style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                                   >
                                     <div className={`font-black tracking-tight text-[10.5px] leading-snug cell-subject ${itemStyle.text}`}>
