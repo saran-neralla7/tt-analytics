@@ -115,7 +115,7 @@ th, td {
     border-radius: 0 !important;
     background-color: #fff !important;
     color: #000 !important;
-    margin: 1.5mm 0 !important;
+    margin: 1mm 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     page-break-after: auto !important;
@@ -138,9 +138,9 @@ th, td {
   /* Ultra-compact single line faculty header in print */
   .individual-print-mode .faculty-print-page .print-only {
     display: flex !important;
-    padding: 1px 3px !important;
-    font-size: 6.8pt !important;
-    line-height: 1.1 !important;
+    padding: 0.5px 2px !important;
+    font-size: 6.2pt !important;
+    line-height: 1.05 !important;
     background: #f0f0f0 !important;
     border-bottom: 1px solid #000 !important;
   }
@@ -156,23 +156,23 @@ th, td {
     border: 1px solid #000 !important;
     background: #f0f0f0 !important;
     color: #000 !important;
-    font-size: 5.5pt !important;
+    font-size: 5pt !important;
     font-weight: bold !important;
-    padding: 1px 0.5px !important;
+    padding: 0.5px 0.5px !important;
     height: auto !important;
-    line-height: 1.05 !important;
+    line-height: 1.0 !important;
   }
 
   .individual-print-mode .faculty-print-page td {
     border: 1px solid #000 !important;
     background: #fff !important;
     color: #000 !important;
-    font-size: 5.2pt !important;
+    font-size: 4.8pt !important;
     padding: 0.5px 0.5px !important;
     vertical-align: middle !important;
     height: auto !important;
     min-height: 0 !important;
-    line-height: 1.0 !important;
+    line-height: 0.95 !important;
   }
 
   .individual-print-mode .faculty-print-page td * {
@@ -182,9 +182,14 @@ th, td {
     box-shadow: none !important;
     min-height: 0 !important;
     height: auto !important;
-    padding-top: 0.5px !important;
-    padding-bottom: 0.5px !important;
+    padding: 0 !important;
     margin: 0 !important;
+  }
+
+  .individual-print-mode .faculty-print-page .subject-title {
+    font-size: 4.8pt !important;
+    font-weight: bold !important;
+    line-height: 1.0 !important;
   }
 
   /* Stats and Workload tables in Individual View during print */
@@ -195,7 +200,7 @@ th, td {
     border: 1px solid #000 !important;
     border-radius: 0 !important;
     background: #fff !important;
-    margin-bottom: 2mm !important;
+    margin-bottom: 1.5mm !important;
     box-shadow: none !important;
   }
 
@@ -204,8 +209,8 @@ th, td {
     background: #f0f0f0 !important;
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
-    padding: 1.5px 3px !important;
-    font-size: 6.5pt !important;
+    padding: 1px 2px !important;
+    font-size: 6pt !important;
   }
 
   .individual-print-mode .dept-stats-card table,
@@ -220,46 +225,103 @@ th, td {
   .individual-print-mode .dept-workload-card th,
   .individual-print-mode .dept-workload-card td {
     border: 1px solid #000 !important;
-    padding: 1px 2px !important;
-    font-size: 5.6pt !important;
-    line-height: 1.05 !important;
+    padding: 0.5px 1.5px !important;
+    font-size: 5.2pt !important;
+    line-height: 1.0 !important;
     background: #fff !important;
     color: #000 !important;
   }
 
   .individual-print-mode .dept-stats-card td {
-    font-size: 6.8pt !important;
+    font-size: 6.2pt !important;
     font-weight: bold !important;
   }
 
-  /* Master Unified Single Day Table in print */
-  .master-single-day-card {
+  /* DAY-WISE UNIFIED MASTER SCHEDULE: 1-PAGE PORTRAIT BLACK AND WHITE PRINT FORMAT */
+  .daywise-print-mode {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .daywise-single-page-print {
     box-shadow: none !important;
     border: 1.5px solid #000 !important;
     border-radius: 0 !important;
     margin: 0 !important;
-    page-break-inside: auto !important;
+    padding: 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: avoid !important;
   }
 
-  .master-single-day-card table {
+  .daywise-single-page-print * {
+    color: #000 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .daywise-single-page-print table {
     border: 1.5px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
     table-layout: fixed !important;
   }
 
-  .master-single-day-card th,
-  .master-single-day-card td {
+  .daywise-single-page-print th {
     border: 1px solid #000 !important;
+    background: #f2f2f2 !important;
+    color: #000 !important;
     padding: 1px 0.5px !important;
-    font-size: 5.8pt !important;
-    line-height: 1.05 !important;
+    font-size: 5pt !important;
+    font-weight: bold !important;
+    line-height: 1.0 !important;
+    text-align: center !important;
   }
 
-  .master-single-day-card td * {
-    min-height: 0 !important;
+  .daywise-single-page-print td {
+    border: 1px solid #000 !important;
+    padding: 0.5px 0.5px !important;
+    font-size: 4.6pt !important;
+    line-height: 0.95 !important;
+    vertical-align: middle !important;
+    text-align: center !important;
     height: auto !important;
-    box-shadow: none !important;
+  }
+
+  .daywise-single-page-print td .cell-subject {
+    font-size: 4.8pt !important;
+    font-weight: bold !important;
+    line-height: 1.0 !important;
+  }
+
+  .daywise-single-page-print td .cell-faculty {
+    font-size: 4.2pt !important;
+    line-height: 0.95 !important;
+  }
+
+  .daywise-single-page-print td .cell-room {
+    font-size: 4.4pt !important;
+    font-weight: bold !important;
+    line-height: 0.95 !important;
+  }
+
+  .daywise-single-page-print .col-branch {
+    width: 12% !important;
+    font-size: 5pt !important;
+    font-weight: bold !important;
+  }
+
+  .daywise-single-page-print .col-room {
+    width: 7% !important;
+    font-size: 5pt !important;
+    font-weight: bold !important;
+  }
+
+  .daywise-single-page-print .cell-break {
+    width: 6% !important;
+    font-size: 5pt !important;
+    font-weight: bold !important;
   }
 
   /* SINGLE PAGE PRINT FOR BRANCH VIEW & LAB VIEW */

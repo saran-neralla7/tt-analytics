@@ -82,7 +82,8 @@ export default function TimetableGrid({
     if (currentItems.length === 0 || nextItems.length === 0) return false;
 
     // 1. Standard full merge (all items match across both hours)
-    if (currentItems.length === nextItems.length && 
+    if (nextItems.length > 0 && 
+        currentItems.length === nextItems.length && 
         currentItems.every((item, i) => nextItems[i] && nextItems[i].subject === item.subject)) {
       return true;
     }
@@ -92,8 +93,21 @@ export default function TimetableGrid({
       (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) && 
       nextItems.some(nItem => (nItem.isContinued || nItem.subject === item.subject) && nItem.subject === item.subject)
     );
+    if (hasContinuedLab) return true;
 
-    return hasContinuedLab;
+    // 3. Trailing slot in Excel is empty: 2-hour lab or sports/counselling/library session automatically spans colSpan=2
+    const isNextEmpty = nextItems.length === 0 || nextItems.every(it => !it.subject || it.subject === '-' || it.subject === '');
+    if (isNextEmpty) {
+      const is2HourBlock = currentItems.some(item => {
+        const s = (item.subject || '').toUpperCase();
+        return item.isLab || s.includes('LAB') || s.includes('3DDA') || s.includes('SPORTS') || s.includes('YOGA') || s.includes('LIBRARY') || s.includes('COUNSELLING');
+      });
+      if (is2HourBlock) {
+        return true;
+      }
+    }
+
+    return false;
   };
 
   return (

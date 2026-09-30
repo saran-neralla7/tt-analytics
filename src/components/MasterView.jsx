@@ -4,11 +4,57 @@ import { branches, days, periodSlots, getActiveDays } from '../data/mockData';
 import { getSubjectStyle } from '../utils/subjectColors';
 import { Layers, GraduationCap, Clock, Award, Calendar, Printer } from 'lucide-react';
 
+// Official classroom assignments per branch from institute records
+export const branchClassrooms = {
+  'CSE(AI&ML)-1': 'G-302',
+  'CSE(AI&ML)-2': 'G-303',
+  'CSE-1': 'G-304',
+  'CSE-2': 'G-305',
+  'ECE-1': 'G-402',
+  'ECE-2': 'G-403',
+  'MECH': 'G-404',
+  'CSE (CS & DS)': 'G-405',
+  'MECH-ROBOTICS': 'E-408',
+  'EEE': 'E-409',
+  'CIVIL': 'E-410',
+  'CHEMICAL': 'E-411',
+  'ECE-3': 'E-412'
+};
+
+// Preferred branch order matching the official university timetable document
+export const preferredBranchOrder = [
+  'CSE(AI&ML)-1',
+  'CSE(AI&ML)-2',
+  'CSE-1',
+  'CSE-2',
+  'ECE-1',
+  'ECE-2',
+  'MECH',
+  'CSE (CS & DS)',
+  'MECH-ROBOTICS',
+  'EEE',
+  'CIVIL',
+  'CHEMICAL',
+  'ECE-3'
+];
+
 export default function MasterView({ timetableData, branchLegends = {}, universityInfo, facultyList = [], onSlotClick }) {
-  const availableBranchKeys = Object.keys(timetableData);
+  const rawBranchKeys = Object.keys(timetableData);
   const [selectedDay, setSelectedDay] = useState('ALL');
 
-  // Detect active days dynamically: only include Saturday if Saturday has actual classes in the Excel sheet
+  // Sort branches matching official order
+  const availableBranchKeys = useMemo(() => {
+    return [...rawBranchKeys].sort((a, b) => {
+      const idxA = preferredBranchOrder.indexOf(a);
+      const idxB = preferredBranchOrder.indexOf(b);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return a.localeCompare(b);
+    });
+  }, [rawBranchKeys]);
+
+  // Dynamic active days: exclude Saturday unless Saturday has classes in timetableData
   const activeDaysList = useMemo(() => getActiveDays(timetableData), [timetableData]);
 
   const dayOptions = useMemo(() => {
@@ -27,7 +73,6 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
     return opts;
   }, [activeDaysList]);
 
-  // Fallback if selectedDay is not available
   const currentDay = selectedDay !== 'ALL' && !activeDaysList.includes(selectedDay) ? 'ALL' : selectedDay;
 
   // Calculate master stats dynamically based on selectedDay
@@ -65,7 +110,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
     return { totalClasses: classes, totalLabs: labs, uniqueFaculty: facSet };
   }, [availableBranchKeys, currentDay, activeDaysList, timetableData]);
 
-  // Helper to check 2-hour merge in the single big day table
+  // Robust horizontal merge helper (prevents gaps when second slot is blank in Excel)
   const has2HourMerge = (daySched, idx) => {
     const currentSlot = periodSlots[idx]?.time;
     const nextSlot = periodSlots[idx + 1]?.time;
@@ -74,19 +119,43 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
     const currentItems = daySched[currentSlot] || [];
     const nextItems = daySched[nextSlot] || [];
 
-    if (currentItems.length === 0 || nextItems.length === 0) return false;
+    if (currentItems.length === 0 || currentItems.every(it => !it.subject || it.subject === '-' || it.subject === '')) {
+      return false;
+    }
 
-    if (currentItems.length === nextItems.length && 
+    // 1. Next slot has identical subjects
+    if (nextItems.length > 0 && 
+        currentItems.length === nextItems.length && 
         currentItems.every((item, i) => nextItems[i] && nextItems[i].subject === item.subject)) {
       return true;
     }
+
+    // 2. Both slots have matching lab sessions (even if continued)
+    const hasContinuedLab = currentItems.some(item => 
+      (item.isLab || item.subject?.includes('LAB') || item.subject?.includes('3DDA')) && 
+      nextItems.some(nItem => (nItem.isContinued || nItem.subject === item.subject) && nItem.subject === item.subject)
+    );
+    if (hasContinuedLab) return true;
+
+    // 3. Trailing slot in Excel is empty: 2-hour lab or sports/counselling/library session automatically spans colSpan=2
+    const isNextEmpty = nextItems.length === 0 || nextItems.every(it => !it.subject || it.subject === '-' || it.subject === '');
+    if (isNextEmpty) {
+      const is2HourBlock = currentItems.some(item => {
+        const s = (item.subject || '').toUpperCase();
+        return item.isLab || s.includes('LAB') || s.includes('3DDA') || s.includes('SPORTS') || s.includes('YOGA') || s.includes('LIBRARY') || s.includes('COUNSELLING');
+      });
+      if (is2HourBlock) {
+        return true;
+      }
+    }
+
     return false;
   };
 
   const selectedDayLabel = dayOptions.find(d => d.id === currentDay)?.label || currentDay;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <div className={`max-w-7xl mx-auto px-4 sm:px-6 py-4 ${currentDay !== 'ALL' ? 'daywise-print-mode' : ''}`}>
       {/* Day-Wise Filter Pills */}
       <div className="no-print flex flex-col items-center justify-center mb-6 gap-2">
         <div className="inline-flex p-1.5 bg-slate-200/90 rounded-xl gap-1.5 shadow-inner border border-slate-300 flex-wrap justify-center">
@@ -170,11 +239,11 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
       </div>
 
       {/* CONDITIONAL RENDERING BASED ON DAY SELECTION:
-          - If selectedDay !== 'ALL': SINGLE BIG TABLE FOR ALL BRANCHES
+          - If selectedDay !== 'ALL': SINGLE BIG TABLE FOR ALL BRANCHES (PORTRAIT 1-PAGE PRINT FORMAT)
           - If selectedDay === 'ALL': SEPARATE TABLES FOR EACH BRANCH
       */}
       {currentDay !== 'ALL' ? (
-        <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-4 master-single-day-card">
+        <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-4 master-single-day-card daywise-single-page-print">
           {/* Header for Screen */}
           <div className="no-print bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
             <div className="flex items-center gap-2">
@@ -187,54 +256,84 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
             </div>
             <div className="flex items-center gap-3">
               <span className="text-xs text-slate-300 font-mono hidden sm:inline">
-                Unified view across all branches for {selectedDayLabel}
+                Unified single-page portrait schedule
               </span>
               <button
                 onClick={() => window.print()}
                 className="flex items-center gap-1.5 px-3 py-1 bg-white text-slate-900 rounded-lg text-xs font-bold hover:bg-slate-100 transition-all shadow-xs cursor-pointer"
               >
                 <Printer className="w-3.5 h-3.5 text-blue-700" />
-                Print {selectedDayLabel} Table
+                Print {selectedDayLabel} Schedule (1 Page Portrait)
               </button>
             </div>
           </div>
 
-          {/* Header for Print View */}
-          <div className="print-only text-center py-3 px-6 border-b border-gray-300 bg-gray-50/70">
-            <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
-              {universityInfo.name}
-            </h2>
-            <p className="text-xs text-gray-700 font-semibold mt-0.5 font-mono">
-              {universityInfo.statusText}
-            </p>
-            <h3 className="text-xs font-bold text-gray-800 mt-1 font-mono">
-              MASTER TIME TABLE • {selectedDayLabel.toUpperCase()} ({currentDay}) • ALL {availableBranchKeys.length} DEPARTMENTS • ACADEMIC YEAR {universityInfo.academicYear}
-            </h3>
+          {/* OFFICIAL HEADER FOR PRINT VIEW - EXACT MATCH TO SECOND SCREENSHOT */}
+          <div className="print-only w-full py-2 px-3 border-b border-black bg-white">
+            <div className="flex items-center justify-between gap-2">
+              {/* Official Crest Logo */}
+              <div className="w-16 flex-shrink-0 flex items-center justify-center">
+                <img 
+                  src={universityInfo.logo || '/gvpihlr.png'} 
+                  alt="GVPIHLR Logo" 
+                  className="h-14 w-14 object-contain"
+                />
+              </div>
+
+              {/* Institution Title & Details */}
+              <div className="text-center flex-1 px-2">
+                <h1 className="text-[11pt] font-extrabold uppercase font-serif tracking-tight text-black leading-tight">
+                  {universityInfo.name}
+                </h1>
+                <p className="text-[6.8pt] text-black font-semibold leading-tight mt-0.5">
+                  {universityInfo.statusText}
+                </p>
+                <p className="text-[6.5pt] text-black leading-tight">
+                  {universityInfo.address}
+                </p>
+                <h2 className="text-[7.8pt] font-bold text-black uppercase mt-1 tracking-wide font-sans leading-tight">
+                  TENTATIVE TIME TABLE FOR THE ACADEMIC YEAR {universityInfo.academicYear}
+                </h2>
+                <h3 className="text-[7.5pt] font-black text-black font-sans leading-tight">
+                  {universityInfo.semester || 'B.Tech. 1st Sem'}
+                </h3>
+              </div>
+
+              {/* Date & Day Block (Top Right) */}
+              <div className="w-24 flex-shrink-0 text-right flex flex-col justify-center">
+                <div className="text-[8.5pt] font-bold text-black font-mono leading-tight">
+                  {new Date().toLocaleDateString('en-GB').replace(/\//g, '.')}
+                </div>
+                <div className="text-[9.5pt] font-black text-black uppercase tracking-wider font-sans leading-tight mt-0.5">
+                  {selectedDayLabel.toUpperCase()}
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* SINGLE BIG TABLE */}
+          {/* SINGLE BIG TABLE - INCLUDES ROOM NO COLUMN MATCHING OFFICIAL DOCUMENT */}
           <div className="overflow-x-auto">
-            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1100px] border-2 border-slate-700">
+            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1050px] border-2 border-slate-700 master-day-table">
               <thead>
                 <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 uppercase tracking-wider">
-                  <th className="py-3 px-1 border-r border-gray-300 w-12 text-xs font-black text-slate-900">
-                    S.No
-                  </th>
-                  <th className="py-3 px-1 border-r-2 border-slate-500 w-24 sm:w-28 text-xs sm:text-sm font-black text-slate-900">
+                  <th className="py-2 px-1 border-r border-gray-300 w-24 sm:w-28 text-xs font-black text-slate-900 col-branch">
                     Branch
+                  </th>
+                  <th className="py-2 px-1 border-r-2 border-slate-500 w-16 sm:w-20 text-xs font-black text-slate-900 col-room">
+                    Room No
                   </th>
                   {periodSlots.map((slot) => (
                     <th 
                       key={slot.id} 
-                      className={`py-3 px-2 border-r border-gray-300 ${
-                        slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-20' : 'text-slate-950'
+                      className={`py-2 px-1 border-r border-gray-300 ${
+                        slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16' : 'text-slate-950'
                       }`}
                     >
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                      <span className="font-black text-slate-950 text-xs sm:text-[12px] tracking-tight block">
                         {slot.time}
                       </span>
                       {slot.label && (
-                        <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5">
+                        <div className="text-[9.5pt] sm:text-[10pt] tracking-normal text-amber-900 font-black mt-0.5">
                           {slot.label}
                         </div>
                       )}
@@ -243,21 +342,22 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                 </tr>
               </thead>
               <tbody className="divide-y-2 divide-slate-600">
-                {availableBranchKeys.map((branchKey, bIdx) => {
+                {availableBranchKeys.map((branchKey) => {
                   const branchSched = timetableData[branchKey] || {};
                   const daySchedule = branchSched[currentDay] || {};
                   const skipSlots = new Set();
+                  const assignedClassroom = branchClassrooms[branchKey] || '';
 
                   return (
                     <tr key={branchKey} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
-                      {/* S.No */}
-                      <td className="py-2.5 px-1 font-bold text-gray-700 bg-gray-50/90 border-r border-gray-300 border-b-2 border-slate-600 font-mono text-center text-xs align-middle">
-                        {bIdx + 1}
+                      {/* Branch Name Column */}
+                      <td className="py-2 px-1 font-black text-slate-900 bg-slate-100/90 border-r border-gray-300 border-b-2 border-slate-600 font-sans text-xs uppercase align-middle text-center col-branch">
+                        {renderBranchName(branchKey)}
                       </td>
 
-                      {/* Branch Name */}
-                      <td className="py-2 px-1 font-black text-slate-900 bg-slate-100/90 border-r-2 border-slate-500 border-b-2 border-slate-600 font-sans text-xs uppercase align-middle text-center shadow-xs">
-                        {renderBranchName(branchKey)}
+                      {/* Designated Room No Column */}
+                      <td className="py-2 px-1 font-black text-blue-900 bg-blue-50/60 border-r-2 border-slate-500 border-b-2 border-slate-600 font-mono text-xs sm:text-[12.5px] uppercase align-middle text-center col-room">
+                        {assignedClassroom || '—'}
                       </td>
 
                       {/* Period Slots */}
@@ -270,7 +370,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                           return (
                             <td 
                               key={slot.id} 
-                              className="py-3 px-2 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 tracking-wider uppercase align-middle select-none text-center"
+                              className="py-2 px-0.5 bg-amber-100/70 text-amber-950 font-black text-[10pt] border-r border-gray-300 border-b-2 border-slate-600 tracking-wider uppercase align-middle select-none text-center cell-break"
                             >
                               {slot.label}
                             </td>
@@ -292,7 +392,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             <td 
                               key={slot.id} 
                               colSpan={colSpan}
-                              className="p-2 border-r border-gray-300 border-b-2 border-slate-600 align-middle text-center bg-white"
+                              className="p-1 border-r border-gray-300 border-b-2 border-slate-600 align-middle text-center bg-white"
                             >
                               <span className="text-gray-300 font-mono text-sm">—</span>
                             </td>
@@ -309,21 +409,24 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                               key={slot.id}
                               colSpan={colSpan}
                               onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
-                              className={`p-2 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95`}
-                              style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                              className={`p-1.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 cell-course`}
+                              style={{
+                                height: '1px',
+                                ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                              }}
                               title="Click to view course details"
                             >
-                              <div className="flex flex-col justify-center items-center text-center">
-                                <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug ${style.text}`}>
+                              <div className="flex flex-col justify-center items-center text-center h-full">
+                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug cell-subject ${style.text}`}>
                                   {cellItem.subject}
                                 </div>
                                 {cellItem.faculty && (
-                                  <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight truncate max-w-[130px]">
+                                  <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight truncate max-w-[140px] cell-faculty">
                                     {cellItem.faculty}
                                   </div>
                                 )}
                                 {cellItem.room && (
-                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
+                                  <div className="mt-0.5 text-[10px] sm:text-[10.5px] font-black text-slate-800 tracking-normal font-sans cell-room">
                                     {cellItem.room}
                                   </div>
                                 )}
@@ -338,7 +441,8 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             key={slot.id}
                             colSpan={colSpan}
                             onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
-                            className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer"
+                            className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer cell-course"
+                            style={{ height: '1px' }}
                             title="Click to view course details"
                           >
                             <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
@@ -347,19 +451,19 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                                 return (
                                   <div 
                                     key={bIdx}
-                                    className={`flex-1 w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
+                                    className={`flex-1 w-full py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
                                     style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                                   >
-                                    <div className={`font-black tracking-tight text-[11px] leading-snug ${itemStyle.text}`}>
+                                    <div className={`font-black tracking-tight text-[10.5px] leading-snug cell-subject ${itemStyle.text}`}>
                                       {cellItem.subject}
                                     </div>
                                     {cellItem.faculty && (
-                                      <div className="text-slate-800 font-semibold text-[9.5px] mt-0.5 leading-tight truncate max-w-[130px]">
+                                      <div className="text-slate-800 font-semibold text-[9pt] mt-0.5 leading-tight truncate max-w-[140px] cell-faculty">
                                         {cellItem.faculty}
                                       </div>
                                     )}
                                     {cellItem.room && (
-                                      <div className="mt-0.5 text-[10px] font-black text-slate-800 tracking-normal font-sans">
+                                      <div className="mt-0.5 text-[9.5pt] font-black text-slate-800 tracking-normal font-sans cell-room">
                                         {cellItem.room}
                                       </div>
                                     )}
