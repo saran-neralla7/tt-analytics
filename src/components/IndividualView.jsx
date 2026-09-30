@@ -414,10 +414,11 @@ function FacultyTimetableCard({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/30 print:bg-white text-center select-none h-full"
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/50 print:bg-white text-center select-none h-full"
+                          style={{ height: '1px' }}
                         >
                           <div className="flex items-center justify-center h-full min-h-[40px] print:min-h-0">
-                            <span className="text-gray-300 font-mono text-[13px] print:text-[5pt]">—</span>
+                            <span className="text-slate-400 font-mono text-[13px] font-bold print:text-[5pt]">—</span>
                           </div>
                         </td>
                       );
@@ -448,6 +449,7 @@ function FacultyTimetableCard({
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, facFull)}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
+                          style={{ height: '1px' }}
                           title="Click to view course details"
                         >
                           <div className="flex flex-col h-full w-full min-h-[76px] divide-y divide-gray-300/90 print:divide-black">
@@ -585,6 +587,7 @@ function FacultyTimetableCard({
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
                         className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
+                        style={{ height: '1px' }}
                         title="Click to view course details"
                       >
                         <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90 print:divide-black">

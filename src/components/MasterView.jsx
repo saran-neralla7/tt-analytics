@@ -392,9 +392,10 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             <td 
                               key={slot.id} 
                               colSpan={colSpan}
-                              className="p-1 border-r border-gray-300 border-b-2 border-slate-600 align-middle text-center bg-white"
+                              className="p-1 border-r border-gray-300 border-b-2 border-slate-600 align-middle text-center bg-slate-50/50"
+                              style={{ height: '1px' }}
                             >
-                              <span className="text-gray-300 font-mono text-sm">—</span>
+                              <span className="text-slate-400 font-mono text-sm font-bold">—</span>
                             </td>
                           );
                         }
@@ -410,7 +411,10 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                               colSpan={colSpan}
                               onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                               className={`p-1.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 cell-course`}
-                              style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                              style={{
+                                height: '1px',
+                                ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                              }}
                               title="Click to view course details"
                             >
                               <div className="flex flex-col justify-center items-center text-center h-full min-h-[52px]">
@@ -439,6 +443,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             colSpan={colSpan}
                             onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                             className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer cell-course"
+                            style={{ height: '1px' }}
                             title="Click to view course details"
                           >
                             <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90">

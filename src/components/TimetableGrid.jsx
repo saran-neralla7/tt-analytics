@@ -79,7 +79,7 @@ export default function TimetableGrid({
     const currentItems = daySched[currentSlot] || [];
     const nextItems = daySched[nextSlot] || [];
 
-    if (currentItems.length === 0 || nextItems.length === 0) return false;
+    if (currentItems.length === 0) return false;
 
     // 1. Standard full merge (all items match across both hours)
     if (nextItems.length > 0 && 
@@ -214,10 +214,11 @@ export default function TimetableGrid({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-middle bg-slate-50/30 text-center select-none h-full"
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-middle bg-slate-50/50 text-center select-none h-full"
+                          style={{ height: '1px' }}
                         >
-                          <div className="flex items-center justify-center h-full min-h-[64px]">
-                            <span className="text-gray-300 font-mono text-[13px]">—</span>
+                          <div className="flex items-center justify-center h-full min-h-[58px]">
+                            <span className="text-slate-400 font-mono text-[14px] font-bold">—</span>
                           </div>
                         </td>
                       );
@@ -243,6 +244,7 @@ export default function TimetableGrid({
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([sharedLab, h1Item, h2Item].filter(Boolean), day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, selectedBranch)}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                          style={{ height: '1px' }}
                           title="Click to view full course & faculty details (2-Hour Merged Lab Session)"
                         >
                           <div className="flex flex-col h-full w-full min-h-[76px] divide-y divide-gray-300/90">
@@ -341,7 +343,10 @@ export default function TimetableGrid({
                           className={`p-2 sm:p-2.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95 ${
                             isHighlighted ? 'ring-2 ring-blue-600 ring-inset shadow-inner font-bold' : ''
                           }`}
-                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                          style={{
+                            height: '1px',
+                            ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                          }}
                           title="Click to view full course & faculty details"
                         >
                           <div className="flex flex-col justify-center items-center text-center h-full min-h-[58px]">
@@ -372,6 +377,7 @@ export default function TimetableGrid({
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(items, day, slot.time, selectedBranch)}
                         className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                        style={{ height: '1px' }}
                         title="Click to view full course & faculty details"
                       >
                         <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90">
