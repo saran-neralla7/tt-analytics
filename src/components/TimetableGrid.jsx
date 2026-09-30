@@ -62,10 +62,12 @@ export default function TimetableGrid({
   universityInfo,
   highlightFaculty = null,
   highlightLab = null,
-  onSlotClick
+  onSlotClick,
+  selectedDay = 'ALL'
 }) {
   const [isLegendOpen, setIsLegendOpen] = useState(defaultLegendOpen);
   const branchSchedule = timetableData[selectedBranch] || {};
+  const visibleDays = selectedDay && selectedDay !== 'ALL' ? [selectedDay] : days;
 
   // Helper to check if current slot and next slot should be merged horizontally (colSpan=2)
   const has2HourMerge = (daySched, idx) => {
@@ -107,7 +109,7 @@ export default function TimetableGrid({
           {universityInfo.address}
         </p>
         <h3 className="text-xs font-bold text-gray-800 mt-2 font-mono">
-          TENTATIVE TIME TABLE FOR THE ACADEMIC YEAR {universityInfo.academicYear}, B.Tech 1st Sem ({branchInfo?.fullName || selectedBranch})
+          {selectedDay && selectedDay !== 'ALL' ? `${selectedDay} TIME TABLE` : 'TENTATIVE TIME TABLE'} FOR THE ACADEMIC YEAR {universityInfo.academicYear}, B.Tech 1st Sem ({branchInfo?.fullName || selectedBranch})
         </h3>
       </div>
 
@@ -138,7 +140,7 @@ export default function TimetableGrid({
             </tr>
           </thead>
           <tbody className="divide-y-2 divide-slate-600">
-            {days.map((day) => {
+            {visibleDays.map((day) => {
               const daySchedule = branchSchedule[day] || {};
               const skipSlots = new Set();
 

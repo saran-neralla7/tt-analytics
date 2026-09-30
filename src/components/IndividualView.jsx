@@ -813,7 +813,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   }, [facultyMembers, filteredFacultyList, selectedFaculty]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 individual-print-mode">
       {/* Department Filter & Faculty Selector Controls Bar */}
       <div className="no-print flex justify-center mb-6">
         <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3.5 rounded-xl border-2 border-slate-700 shadow-sm">
@@ -873,7 +873,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
       {selectedDept !== 'ALL' && (
         <div className="space-y-6 mb-6">
           {/* 1. Department Summary Row with Big Bold Numbers */}
-          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card dept-stats-card">
             <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
               <div className="flex items-center gap-2">
                 <span className="px-2.5 py-0.5 rounded font-black text-xs bg-blue-600 text-white tracking-wider">
@@ -943,7 +943,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           </div>
 
           {/* 2. Department Faculty Table: S.No, Name of the Faculty, Designation, Theory, Tutorial, Lab, Total Workload */}
-          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card dept-workload-card">
             <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-blue-400" />

@@ -5,6 +5,7 @@ import BranchView from './components/BranchView';
 import MasterView from './components/MasterView';
 import IndividualView from './components/IndividualView';
 import LabView from './components/LabView';
+import RoomsView from './components/RoomsView';
 import FacultyWorkloadView from './components/FacultyWorkloadView';
 import SlotDetailModal from './components/SlotDetailModal';
 import { universityInfo } from './data/mockData';
@@ -86,6 +87,14 @@ export default function App() {
           <LabView
             timetableData={timetableData}
             labSheetsData={labSheetsData}
+            universityInfo={universityInfo}
+            onSlotClick={handleSlotClick}
+          />
+        )}
+
+        {activeTab === 'rooms' && (
+          <RoomsView
+            timetableData={timetableData}
             universityInfo={universityInfo}
             onSlotClick={handleSlotClick}
           />
