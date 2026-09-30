@@ -263,7 +263,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                 className="flex items-center gap-1.5 px-3 py-1 bg-white text-slate-900 rounded-lg text-xs font-bold hover:bg-slate-100 transition-all shadow-xs cursor-pointer"
               >
                 <Printer className="w-3.5 h-3.5 text-blue-700" />
-                Print {selectedDayLabel} Schedule (1 Page Portrait)
+                Print {selectedDayLabel} Schedule (1 Page Landscape)
               </button>
             </div>
           </div>
@@ -312,8 +312,8 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
           </div>
 
           {/* SINGLE BIG TABLE - INCLUDES ROOM NO COLUMN MATCHING OFFICIAL DOCUMENT */}
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1050px] border-2 border-slate-700 master-day-table">
+          <div className="overflow-x-auto print:overflow-visible">
+            <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1050px] print:min-w-0 border-2 border-slate-700 master-day-table">
               <thead>
                 <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 uppercase tracking-wider">
                   <th className="py-2 px-1 border-r border-gray-300 w-24 sm:w-28 text-xs font-black text-slate-900 col-branch">

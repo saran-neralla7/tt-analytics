@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
-import { UserCheck, Filter, Users, Table } from 'lucide-react';
+import { UserCheck, Filter, Users, Table, Printer } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 
@@ -287,7 +287,7 @@ function FacultyTimetableCard({
   return (
     <div 
       id={`faculty-${facShort || facultyObj.sno}`}
-      className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 faculty-print-page transition-all"
+      className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 print:border print:border-black print:rounded-none print:shadow-none overflow-hidden timetable-card my-4 print:my-0.5 faculty-print-page transition-all"
     >
       {/* Faculty Card Header Banner - Screen Only */}
       <div className="no-print text-center py-3 px-6 border-b-2 border-slate-700 bg-gray-50/90 faculty-card-header">
@@ -338,22 +338,22 @@ function FacultyTimetableCard({
 
       {/* Timetable Schedule Table */}
       <div className="overflow-x-auto">
-        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700">
+        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[900px] print:min-w-0 border-2 border-slate-700 print:border-black">
           <thead>
-            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11.5px]">
-              <th className="py-3 px-2 border-r border-gray-300 w-20 text-xs font-black text-slate-900">Day</th>
+            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 print:border-black uppercase tracking-wider text-[11.5px] print:text-[5pt]">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 sm:w-20 print:w-10 text-xs font-black text-slate-900 print:py-0.5 print:px-0.5 print:text-[5pt] print:bg-gray-100">Day</th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-3 px-2 border-r border-gray-300 ${
-                    slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-20' : 'text-slate-950'
+                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-0.5 print:px-0.5 ${
+                    slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-10 print:bg-gray-100' : 'text-slate-950'
                   }`}
                 >
-                  <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                  <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[5pt] print:leading-none">
                     {slot.time}
                   </span>
                   {slot.label && (
-                    <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5">
+                    <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5 print:text-[4.5pt] print:leading-none print:mt-0">
                       {slot.label}
                     </div>
                   )}
@@ -361,15 +361,15 @@ function FacultyTimetableCard({
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y-2 divide-slate-600">
+          <tbody className="divide-y-2 divide-slate-600 print:divide-black">
             {activeDays.map((day) => {
               const daySched = facultySchedule[day] || {};
               const skipSlots = new Set();
 
               return (
-                <tr key={day} className="border-b-2 border-slate-600 hover:bg-gray-50/80 transition-colors">
+                <tr key={day} className="border-b-2 border-slate-600 print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Column */}
-                  <td className="py-4 px-3 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 uppercase tracking-wide align-middle">
+                  <td className="py-2.5 px-2 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-0.5 print:px-0.5 print:text-[5pt] print:bg-white">
                     {day}
                   </td>
 
@@ -382,7 +382,7 @@ function FacultyTimetableCard({
                       return (
                         <td 
                           key={slot.id} 
-                          className="py-4 px-2 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 tracking-wider uppercase align-middle select-none text-center"
+                          className="py-2.5 px-1 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-0.5 print:px-0.5 print:text-[5pt] print:bg-white"
                         >
                           {slot.label}
                         </td>
@@ -414,11 +414,11 @@ function FacultyTimetableCard({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-middle bg-slate-50/30 text-center select-none h-full"
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/30 print:bg-white text-center select-none h-full"
                           style={{ height: '1px' }}
                         >
-                          <div className="flex items-center justify-center h-full min-h-[60px]">
-                            <span className="text-gray-300 font-mono text-[13px]">—</span>
+                          <div className="flex items-center justify-center h-full min-h-[40px] print:min-h-0">
+                            <span className="text-gray-300 font-mono text-[13px] print:text-[5pt]">—</span>
                           </div>
                         </td>
                       );
@@ -448,30 +448,30 @@ function FacultyTimetableCard({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, facFull)}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
                           style={{ height: '1px' }}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
-                            <div className="flex-1 w-full flex divide-x divide-gray-300/90">
-                              <div className="w-1/2 flex flex-col justify-center items-center">
+                          <div className="flex flex-col h-full w-full divide-y divide-gray-300/90 print:divide-black">
+                            <div className="flex-1 w-full flex divide-x divide-gray-300/90 print:divide-black">
+                              <div className="w-1/2 flex flex-col justify-center items-center print:min-h-0">
                                 {h1Others.length > 0 ? (
                                   h1Others.map((cellItem, iIdx) => {
                                     const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
                                     return (
                                       <div 
                                         key={iIdx}
-                                        className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
+                                        className={`w-full h-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                         style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                                       >
-                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[5pt] print:leading-tight ${style.text}`}>
                                           {cellItem.subject}
                                         </div>
-                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[4.2pt] print:leading-none print:mt-0">
                                           Section: {cellItem.branch}
                                         </div>
                                         {cellItem.room && (
-                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[4.5pt] print:leading-none print:mt-0">
                                             {cellItem.room}
                                           </div>
                                         )}
@@ -479,30 +479,30 @@ function FacultyTimetableCard({
                                     );
                                   })
                                 ) : (
-                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
-                                    <span className="text-gray-300 font-mono text-[12px]">—</span>
+                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] print:min-h-0 bg-slate-50/40 print:bg-white">
+                                    <span className="text-gray-300 font-mono text-[12px] print:text-[4.5pt]">—</span>
                                   </div>
                                 )}
                               </div>
 
-                              <div className="w-1/2 flex flex-col justify-center items-center">
+                              <div className="w-1/2 flex flex-col justify-center items-center print:min-h-0">
                                 {h2Others.length > 0 ? (
                                   h2Others.map((cellItem, iIdx) => {
                                     const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
                                     return (
                                       <div 
                                         key={iIdx}
-                                        className={`w-full h-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95`}
+                                        className={`w-full h-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                         style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                                       >
-                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug ${style.text}`}>
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[5pt] print:leading-tight ${style.text}`}>
                                           {cellItem.subject}
                                         </div>
-                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[4.2pt] print:leading-none print:mt-0">
                                           Section: {cellItem.branch}
                                         </div>
                                         {cellItem.room && (
-                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans">
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[4.5pt] print:leading-none print:mt-0">
                                             {cellItem.room}
                                           </div>
                                         )}
@@ -510,30 +510,30 @@ function FacultyTimetableCard({
                                     );
                                   })
                                 ) : (
-                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] bg-slate-50/40">
-                                    <span className="text-gray-300 font-mono text-[12px]">—</span>
+                                  <div className="flex items-center justify-center w-full h-full min-h-[44px] print:min-h-0 bg-slate-50/40 print:bg-white">
+                                    <span className="text-gray-300 font-mono text-[12px] print:text-[4.5pt]">—</span>
                                   </div>
                                 )}
                               </div>
                             </div>
 
-                            <div className="flex-1 w-full flex flex-col divide-y divide-gray-300/90">
+                            <div className="flex-1 w-full flex flex-col divide-y divide-gray-300/90 print:divide-black">
                               {sharedLabs.map((labItem, lIdx) => {
                                 const labStyle = getSubjectStyle(labItem.subject, labItem.isLab);
                                 return (
                                   <div 
                                     key={lIdx}
-                                    className={`flex-1 w-full py-2 px-2 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} hover:brightness-95`}
+                                    className={`flex-1 w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                     style={labStyle.inlineBg ? { backgroundColor: labStyle.inlineBg } : undefined}
                                   >
-                                    <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${labStyle.text}`}>
+                                    <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[5pt] print:leading-tight ${labStyle.text}`}>
                                       {labItem.subject}
                                     </div>
-                                    <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
+                                    <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[4.2pt] print:leading-none print:mt-0">
                                       Section: {labItem.branch}
                                     </div>
                                     {labItem.room && (
-                                      <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
+                                      <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[4.5pt] print:leading-none print:mt-0">
                                         {labItem.room}
                                       </div>
                                     )}
@@ -556,22 +556,22 @@ function FacultyTimetableCard({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
-                          className={`p-2 sm:p-2.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95`}
+                          className={`p-1.5 sm:p-2 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95 print:p-0.5 print:bg-white`}
                           style={{
                             height: '1px',
                             ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
                           }}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center h-full min-h-[58px]">
-                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug ${style.text}`}>
+                          <div className="flex flex-col justify-center items-center text-center h-full min-h-[38px] print:min-h-0">
+                            <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[5pt] print:leading-tight ${style.text}`}>
                               {cellItem.subject}
                             </div>
-                            <div className="text-slate-800 font-semibold text-[10.5px] sm:text-[11px] mt-1 leading-tight">
+                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[4.5pt] print:leading-none print:mt-0">
                               Section: {cellItem.branch}
                             </div>
                             {cellItem.room && (
-                              <div className="mt-1 text-xs sm:text-[12px] font-black text-slate-800 tracking-normal font-sans">
+                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[4.8pt] print:leading-none print:mt-0">
                                 {cellItem.room}
                               </div>
                             )}
@@ -586,27 +586,27 @@ function FacultyTimetableCard({
                         key={slot.id} 
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
-                        className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer h-full"
+                        className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
                         style={{ height: '1px' }}
                         title="Click to view course details"
                       >
-                        <div className="flex flex-col h-full w-full divide-y divide-gray-300/90">
+                        <div className="flex flex-col h-full w-full divide-y divide-gray-300/90 print:divide-black">
                           {currentItems.map((cellItem, bIdx) => {
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                             return (
                               <div 
                                 key={bIdx}
-                                className={`flex-1 w-full py-2 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
+                                className={`flex-1 w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
-                                <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug ${itemStyle.text}`}>
+                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[5pt] print:leading-tight ${itemStyle.text}`}>
                                   {cellItem.subject}
                                 </div>
-                                <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight">
+                                <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[4.5pt] print:leading-none print:mt-0">
                                   Section: {cellItem.branch}
                                 </div>
                                 {cellItem.room && (
-                                  <div className="mt-1 text-[11px] sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans">
+                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[4.8pt] print:leading-none print:mt-0">
                                     {cellItem.room}
                                   </div>
                                 )}
@@ -770,6 +770,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   // Faculty selection state ('ALL' or faculty fullName)
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
+  // Print controls: whether to include department stats & workload table in print
+  const [includeStatsInPrint, setIncludeStatsInPrint] = useState(false);
+
   // When department changes, update selected faculty
   const handleDeptChange = (newDept) => {
     setSelectedDept(newDept);
@@ -883,12 +886,37 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               })}
             </select>
           </div>
+
+          <span className="text-gray-300 hidden sm:inline">|</span>
+
+          {/* Dedicated Print Button */}
+          <button
+            onClick={() => window.print()}
+            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
+            title="Print Faculty Timetables (4 per page)"
+          >
+            <Printer className="w-3.5 h-3.5" />
+            <span>Print Timetables (4 / Page)</span>
+          </button>
+
+          {/* Optional Toggle for Dept Stats */}
+          {selectedDept !== 'ALL' && (
+            <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 cursor-pointer ml-1 select-none">
+              <input
+                type="checkbox"
+                checked={includeStatsInPrint}
+                onChange={(e) => setIncludeStatsInPrint(e.target.checked)}
+                className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-3.5 h-3.5 cursor-pointer"
+              />
+              <span className="text-[11px] text-slate-600">Include Stats in Print</span>
+            </label>
+          )}
         </div>
       </div>
 
       {/* DEPARTMENT WORKLOAD STATISTICS & FACULTY TABLE - ONLY SHOWN WHEN A SPECIFIC DEPARTMENT IS SELECTED */}
       {selectedDept !== 'ALL' && (
-        <div className="space-y-6 mb-6">
+        <div className={`space-y-6 mb-6 ${includeStatsInPrint ? '' : 'print:hidden'}`}>
           {/* 1. Department Summary Row with Big Bold Numbers */}
           <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card dept-stats-card">
             <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
@@ -1110,7 +1138,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
       {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One) */}
       {selectedFaculty === 'ALL' ? (
-        <div className="space-y-8">
+        <div className="space-y-8 print:space-y-0.5 faculty-grid-container">
           {filteredFacultyList.map((facObj, idx) => (
             <FacultyTimetableCard
               key={facObj.fullName}

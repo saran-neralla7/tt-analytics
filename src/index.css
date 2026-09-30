@@ -92,7 +92,7 @@ th, td {
     break-after: auto !important;
   }
 
-  /* INDIVIDUAL FACULTY PRINT STYLING: NO COLORS, B&W SOLID BLACK BORDERS, COMPACT 2-3 PER PAGE */
+  /* INDIVIDUAL FACULTY PRINT STYLING: NO COLORS, B&W SOLID BLACK BORDERS, COMPACT 4 PER PAGE */
   .faculty-print-page {
     page-break-after: auto !important;
     break-after: auto !important;
@@ -100,14 +100,20 @@ th, td {
     break-inside: avoid !important;
     box-sizing: border-box !important;
     padding: 0 !important;
-    margin: 4px 0 10px 0 !important;
+    margin: 1mm 0 !important;
     box-shadow: none !important;
-    border: 1.5px solid #000 !important;
+    border: 1px solid #000 !important;
     border-radius: 0 !important;
     background: #fff !important;
   }
 
   /* Black and white text-only rules for individual timetables during print */
+  .individual-print-mode .faculty-grid-container {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .individual-print-mode .faculty-print-page,
   .individual-print-mode .timetable-card {
     box-shadow: none !important;
@@ -115,10 +121,25 @@ th, td {
     border-radius: 0 !important;
     background-color: #fff !important;
     color: #000 !important;
-    margin: 1mm 0 !important;
+    margin: 1.5mm 0 !important;
+    padding: 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     page-break-after: auto !important;
+    break-after: auto !important;
+    box-sizing: border-box !important;
+    max-height: 24.2% !important;
+  }
+
+  /* Force clean page break after every 4th faculty timetable card */
+  .individual-print-mode .faculty-grid-container > .faculty-print-page:nth-child(4n) {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .individual-print-mode .faculty-grid-container > .faculty-print-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
   }
 
   .individual-print-mode .faculty-print-page *,
@@ -149,6 +170,7 @@ th, td {
     border: 1px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
+    min-width: 0 !important;
     table-layout: fixed !important;
   }
 
@@ -265,6 +287,7 @@ th, td {
     border: 1.5px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
+    min-width: 0 !important;
     table-layout: fixed !important;
   }
 
