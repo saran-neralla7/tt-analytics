@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { days, periodSlots } from '../data/mockData';
+import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { UserCheck, Filter, Users, Table } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
@@ -111,6 +111,9 @@ function FacultyTimetableCard({
   const facShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
   const facShortWithTitle = facultyObj.shortName?.trim();
 
+  // Dynamic active days: exclude Saturday unless Saturday has classes
+  const activeDays = useMemo(() => getActiveDays(timetableData), [timetableData]);
+
   // Build weekly schedule matrix for this faculty
   const facultySchedule = useMemo(() => {
     if (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[facFull]) {
@@ -119,7 +122,7 @@ function FacultyTimetableCard({
 
     // Dynamic fallback reconstruction from timetableData
     const result = {};
-    days.forEach(d => result[d] = {});
+    activeDays.forEach(d => result[d] = {});
 
     const matchesFaculty = (cell) => {
       if (!cell || !cell.faculty) return false;
@@ -171,7 +174,7 @@ function FacultyTimetableCard({
         const periods = course.hours || 0;
 
         const scheduledSlots = [];
-        days.forEach(day => {
+        activeDays.forEach(day => {
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
             items.forEach(item => {
               if (item.branch === branch) {
@@ -231,7 +234,7 @@ function FacultyTimetableCard({
         const isTutorial = line.toLowerCase().includes('tutorial') || line.toLowerCase().includes('tut');
 
         const scheduledSlots = [];
-        days.forEach(day => {
+        activeDays.forEach(day => {
           Object.entries(facultySchedule[day] || {}).forEach(([slot, items]) => {
             items.forEach(item => {
               if (item.branch === branch) {
@@ -273,7 +276,7 @@ function FacultyTimetableCard({
 
   // Compute workload metrics
   let totalHours = 0;
-  days.forEach(day => {
+  activeDays.forEach(day => {
     Object.values(facultySchedule[day] || {}).forEach(items => {
       items.forEach(() => {
         totalHours += 1;
@@ -286,8 +289,8 @@ function FacultyTimetableCard({
       id={`faculty-${facShort || facultyObj.sno}`}
       className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 faculty-print-page transition-all"
     >
-      {/* Faculty Card Header Banner */}
-      <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-gray-50/90">
+      {/* Faculty Card Header Banner - Screen Only */}
+      <div className="no-print text-center py-3 px-6 border-b-2 border-slate-700 bg-gray-50/90 faculty-card-header">
         <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
           {universityInfo.name}
         </h2>
@@ -319,6 +322,20 @@ function FacultyTimetableCard({
         </p>
       </div>
 
+      {/* Print-Only Ultra-Compact Header Strip - Removes large institutional header from each timetable to save pages */}
+      <div className="print-only px-2 py-0.5 bg-gray-100 border-b border-black font-sans text-[7pt] font-bold text-black flex justify-between items-center leading-tight">
+        <div>
+          <span className="font-black uppercase tracking-tight">{facFull}</span>
+          {facShort && <span className="ml-1 text-slate-800">({facShort})</span>}
+          <span className="mx-1 text-slate-400">|</span>
+          <span className="font-semibold text-slate-700">Dept: {facultyObj.dept || 'General'}</span>
+          {facultyObj.designation && <span className="ml-1 font-normal text-slate-600">({facultyObj.designation})</span>}
+        </div>
+        <div className="font-mono text-[6.5pt]">
+          Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
+        </div>
+      </div>
+
       {/* Timetable Schedule Table */}
       <div className="overflow-x-auto">
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700">
@@ -345,7 +362,7 @@ function FacultyTimetableCard({
             </tr>
           </thead>
           <tbody className="divide-y-2 divide-slate-600">
-            {days.map((day) => {
+            {activeDays.map((day) => {
               const daySched = facultySchedule[day] || {};
               const skipSlots = new Set();
 

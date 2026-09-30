@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { days, periodSlots } from '../data/mockData';
+import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { getSubjectStyle } from '../utils/subjectColors';
 import { BookOpen, ChevronDown } from 'lucide-react';
 
 // Helper to wrap long branch names into two clean stacked lines
-function renderBranchName(branch = '') {
+export function renderBranchName(branch = '') {
   const b = (branch || '').trim();
 
   if (b.includes('MECH-ROBOTICS') || b.includes('MECH ROBOTICS')) {
@@ -67,7 +67,8 @@ export default function TimetableGrid({
 }) {
   const [isLegendOpen, setIsLegendOpen] = useState(defaultLegendOpen);
   const branchSchedule = timetableData[selectedBranch] || {};
-  const visibleDays = selectedDay && selectedDay !== 'ALL' ? [selectedDay] : days;
+  const activeDaysList = getActiveDays(timetableData);
+  const visibleDays = selectedDay && selectedDay !== 'ALL' ? [selectedDay] : activeDaysList;
 
   // Helper to check if current slot and next slot should be merged horizontally (colSpan=2)
   const has2HourMerge = (daySched, idx) => {

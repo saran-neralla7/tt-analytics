@@ -111,13 +111,14 @@ th, td {
   .individual-print-mode .faculty-print-page,
   .individual-print-mode .timetable-card {
     box-shadow: none !important;
-    border: 1.5px solid #000 !important;
+    border: 1px solid #000 !important;
     border-radius: 0 !important;
     background-color: #fff !important;
     color: #000 !important;
-    margin: 4px 0 10px 0 !important;
+    margin: 1.5mm 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+    page-break-after: auto !important;
   }
 
   .individual-print-mode .faculty-print-page *,
@@ -128,44 +129,24 @@ th, td {
     box-shadow: none !important;
   }
 
-  .individual-print-mode .faculty-print-page > div:first-child {
-    padding: 2px 4px !important;
-    background: #fff !important;
-    border-bottom: 1.5px solid #000 !important;
-  }
-
+  /* Hide the large university banner & academic year line on each timetable card in print */
+  .individual-print-mode .faculty-print-page .faculty-card-header,
   .individual-print-mode .faculty-print-page h2 {
-    font-size: 8pt !important;
-    line-height: 1.1 !important;
-    font-weight: bold !important;
-    color: #000 !important;
-    margin: 0 !important;
+    display: none !important;
   }
 
-  .individual-print-mode .faculty-print-page h3 {
-    font-size: 7pt !important;
+  /* Ultra-compact single line faculty header in print */
+  .individual-print-mode .faculty-print-page .print-only {
+    display: flex !important;
+    padding: 1px 3px !important;
+    font-size: 6.8pt !important;
     line-height: 1.1 !important;
-    font-weight: bold !important;
-    color: #000 !important;
-    margin-top: 1px !important;
-  }
-
-  .individual-print-mode .faculty-print-page p {
-    font-size: 6.5pt !important;
-    line-height: 1.1 !important;
-    color: #000 !important;
-    margin-top: 1px !important;
-  }
-
-  .individual-print-mode .faculty-print-page span {
-    background: transparent !important;
-    border: none !important;
-    color: #000 !important;
-    padding: 0 !important;
+    background: #f0f0f0 !important;
+    border-bottom: 1px solid #000 !important;
   }
 
   .individual-print-mode .faculty-print-page table {
-    border: 1.5px solid #000 !important;
+    border: 1px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
     table-layout: fixed !important;
@@ -175,30 +156,35 @@ th, td {
     border: 1px solid #000 !important;
     background: #f0f0f0 !important;
     color: #000 !important;
-    font-size: 6.5pt !important;
+    font-size: 5.5pt !important;
     font-weight: bold !important;
-    padding: 2px 1px !important;
+    padding: 1px 0.5px !important;
     height: auto !important;
+    line-height: 1.05 !important;
   }
 
   .individual-print-mode .faculty-print-page td {
     border: 1px solid #000 !important;
     background: #fff !important;
     color: #000 !important;
-    font-size: 6pt !important;
-    padding: 1.5px 1px !important;
+    font-size: 5.2pt !important;
+    padding: 0.5px 0.5px !important;
     vertical-align: middle !important;
     height: auto !important;
     min-height: 0 !important;
+    line-height: 1.0 !important;
   }
 
-  .individual-print-mode .faculty-print-page td div {
+  .individual-print-mode .faculty-print-page td * {
     background: transparent !important;
-    border: none !important;
+    border-color: #000 !important;
     color: #000 !important;
     box-shadow: none !important;
-    padding: 0 !important;
     min-height: 0 !important;
+    height: auto !important;
+    padding-top: 0.5px !important;
+    padding-bottom: 0.5px !important;
+    margin: 0 !important;
   }
 
   /* Stats and Workload tables in Individual View during print */
@@ -206,24 +192,25 @@ th, td {
   .individual-print-mode .dept-workload-card {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    border: 1.5px solid #000 !important;
+    border: 1px solid #000 !important;
     border-radius: 0 !important;
     background: #fff !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 2mm !important;
     box-shadow: none !important;
   }
 
   .individual-print-mode .dept-stats-card > div:first-child,
   .individual-print-mode .dept-workload-card > div:first-child {
-    background: #fff !important;
+    background: #f0f0f0 !important;
     color: #000 !important;
-    border-bottom: 1.5px solid #000 !important;
-    padding: 2px 4px !important;
+    border-bottom: 1px solid #000 !important;
+    padding: 1.5px 3px !important;
+    font-size: 6.5pt !important;
   }
 
   .individual-print-mode .dept-stats-card table,
   .individual-print-mode .dept-workload-card table {
-    border: 1.5px solid #000 !important;
+    border: 1px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
   }
@@ -233,15 +220,46 @@ th, td {
   .individual-print-mode .dept-workload-card th,
   .individual-print-mode .dept-workload-card td {
     border: 1px solid #000 !important;
-    padding: 2px 4px !important;
-    font-size: 6.8pt !important;
+    padding: 1px 2px !important;
+    font-size: 5.6pt !important;
+    line-height: 1.05 !important;
     background: #fff !important;
     color: #000 !important;
   }
 
   .individual-print-mode .dept-stats-card td {
-    font-size: 8pt !important;
+    font-size: 6.8pt !important;
     font-weight: bold !important;
+  }
+
+  /* Master Unified Single Day Table in print */
+  .master-single-day-card {
+    box-shadow: none !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    page-break-inside: auto !important;
+  }
+
+  .master-single-day-card table {
+    border: 1.5px solid #000 !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+
+  .master-single-day-card th,
+  .master-single-day-card td {
+    border: 1px solid #000 !important;
+    padding: 1px 0.5px !important;
+    font-size: 5.8pt !important;
+    line-height: 1.05 !important;
+  }
+
+  .master-single-day-card td * {
+    min-height: 0 !important;
+    height: auto !important;
+    box-shadow: none !important;
   }
 
   /* SINGLE PAGE PRINT FOR BRANCH VIEW & LAB VIEW */

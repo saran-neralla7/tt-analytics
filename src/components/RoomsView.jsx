@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { days, periodSlots } from '../data/mockData';
+import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { 
   Building, 
   Search, 
@@ -73,6 +73,9 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
     };
   }, [timetableData]);
 
+  // Active days list: only includes Saturday if Saturday has classes in timetableData
+  const activeDaysList = useMemo(() => getActiveDays(timetableData), [timetableData]);
+
   // View Mode: 'locator' (Room Finder / Vacancy Matrix) | 'timetable' (By Room Timetable)
   const [viewMode, setViewMode] = useState('locator');
 
@@ -95,7 +98,7 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
     const dayIndex = now.getDay(); // 0 is Sun, 1 is Mon... 6 is Sat
     const dayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
     const currentDay = dayNames[dayIndex] || 'MON';
-    const activeCollegeDay = (currentDay === 'SUN') ? 'MON' : currentDay;
+    const activeCollegeDay = !activeDaysList.includes(currentDay) ? (activeDaysList[0] || 'MON') : currentDay;
     setSelectedDay(activeCollegeDay);
 
     const hours = now.getHours();
@@ -233,7 +236,7 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                   onChange={(e) => setSelectedDay(e.target.value)}
                   className="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs font-bold rounded-lg px-2.5 py-1.5 focus:ring-blue-500 focus:border-blue-500 cursor-pointer"
                 >
-                  {days.map((d) => (
+                  {activeDaysList.map((d) => (
                     <option key={d} value={d}>
                       {d === 'MON' ? 'Monday' : d === 'TUE' ? 'Tuesday' : d === 'WED' ? 'Wednesday' : d === 'THU' ? 'Thursday' : d === 'FRI' ? 'Friday' : 'Saturday'} ({d})
                     </option>
@@ -615,7 +618,7 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                   </tr>
                 </thead>
                 <tbody className="divide-y-2 divide-slate-600">
-                  {days.map((day) => {
+                  {activeDaysList.map((day) => {
                     const daySched = currentRoomSchedule[day] || {};
 
                     return (

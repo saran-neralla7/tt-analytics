@@ -23,6 +23,27 @@ export const periodSlots = [
 
 export const days = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
 
+export const getActiveDays = (timetableData) => {
+  const defaultDays = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
+  if (!timetableData || typeof timetableData !== 'object') return defaultDays;
+  for (const branchSched of Object.values(timetableData)) {
+    if (branchSched && branchSched['SAT']) {
+      const sat = branchSched['SAT'];
+      if (Array.isArray(sat)) {
+        if (sat.some(s => s && s.subject && s.subject !== '-' && s.subject !== '')) {
+          return [...defaultDays, 'SAT'];
+        }
+      } else if (typeof sat === 'object') {
+        const slots = Object.values(sat).flat();
+        if (slots.some(s => s && s.subject && s.subject !== '-' && s.subject !== '')) {
+          return [...defaultDays, 'SAT'];
+        }
+      }
+    }
+  }
+  return defaultDays;
+};
+
 export const branches = [
   { id: 'CHEMICAL', name: 'CHEMICAL', fullName: 'Chemical Engineering' },
   { id: 'CSE-1', name: 'CSE-1', fullName: 'Computer Science & Engineering - 1' },
