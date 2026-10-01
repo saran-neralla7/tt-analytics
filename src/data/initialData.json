@@ -813,8 +813,8 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "AITA",
-            "faculty": "Dr. S Padma",
+            "subject": "PSUC",
+            "faculty": "Ms. C Aparna",
             "room": "E-409",
             "isLab": false
           }
@@ -829,8 +829,8 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "PSUC",
-            "faculty": "Ms. C Aparna",
+            "subject": "AITA",
+            "faculty": "Dr. S Padma",
             "room": "E-409",
             "isLab": false
           }
@@ -1901,7 +1901,7 @@
           },
           {
             "subject": "PSUC LAB",
-            "faculty": "Mr. D Arun Kumar, Dr. Anand Solanki, Mr. Y Prasad Reddy",
+            "faculty": "Ms. K Swathi, Dr. Anand Solanki, Mr. Y Prasad Reddy",
             "room": "C-208",
             "isLab": true
           }
@@ -1923,7 +1923,7 @@
           },
           {
             "subject": "PSUC LAB",
-            "faculty": "Mr. D Arun Kumar, Dr. Anand Solanki, Mr. Y Prasad Reddy",
+            "faculty": "Ms. K Swathi, Dr. Anand Solanki, Mr. Y Prasad Reddy",
             "room": "C-208",
             "isLab": true,
             "isContinued": true
@@ -2047,7 +2047,7 @@
           },
           {
             "subject": "PSUC LAB",
-            "faculty": "Ms. K Swathi, Dr. M Neelima, Ms. K Jhansi Rani",
+            "faculty": "Mr. D Arun Kumar, Dr. M Neelima, Ms. K Jhansi Rani",
             "room": "C-208",
             "isLab": true
           }
@@ -2069,7 +2069,7 @@
           },
           {
             "subject": "PSUC LAB",
-            "faculty": "Ms. K Swathi, Dr. M Neelima, Ms. K Jhansi Rani",
+            "faculty": "Mr. D Arun Kumar, Dr. M Neelima, Ms. K Jhansi Rani",
             "room": "C-208",
             "isLab": true,
             "isContinued": true
@@ -3084,6 +3084,14 @@
             "isLab": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "subject": "PSUC",
+            "faculty": "Dr. K Rohini, Ms. C Aparna",
+            "room": "G-305",
+            "isLab": false
+          }
+        ],
         "02:15-03:15": [
           {
             "subject": "YOGA / SPORTS",
@@ -3169,8 +3177,8 @@
       "MON": {
         "09:00-10:00": [
           {
-            "subject": "PSUC",
-            "faculty": "Dr. D Chandravathi, Mr. M Anil",
+            "subject": "FAI & ML",
+            "faculty": "Mr. A Dhanunjaya Prasad, Mr. D Arun Kumar",
             "room": "G-302",
             "isLab": false
           }
@@ -3234,8 +3242,8 @@
       "TUE": {
         "09:00-10:00": [
           {
-            "subject": "FAI & ML",
-            "faculty": "Mr. A Dhanunjaya Prasad, Mr. D Arun Kumar",
+            "subject": "PSUC",
+            "faculty": "Dr. D Chandravathi, Mr. M Anil",
             "room": "G-302",
             "isLab": false
           }
@@ -3849,9 +3857,17 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "FDS / PCS",
+            "subject": "FDS",
             "faculty": "Dr. K Rohini",
+            "rawFaculty": "KR",
             "room": "G-405",
+            "isLab": false
+          },
+          {
+            "subject": "PCS",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVD",
+            "room": "G-406",
             "isLab": false
           }
         ],
@@ -3891,9 +3907,17 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "FDS / PCS",
+            "subject": "FDS",
             "faculty": "Dr. K Rohini",
+            "rawFaculty": "KR",
             "room": "G-405",
+            "isLab": false
+          },
+          {
+            "subject": "PCS",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVD",
+            "room": "G-406",
             "isLab": false
           }
         ],
@@ -3953,8 +3977,16 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "FDS / PCS",
+            "subject": "FDS",
             "faculty": "Dr. K Rohini",
+            "rawFaculty": "KR",
+            "room": "G-405",
+            "isLab": false
+          },
+          {
+            "subject": "PCS",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVD",
             "room": "G-405",
             "isLab": false
           }
@@ -3963,7 +3995,7 @@
           {
             "subject": "CAL & LA",
             "faculty": "Dr. S Ashok Kumar, Dr. T Poornakantha",
-            "room": "G-405",
+            "room": "G-405, G-406",
             "isLab": false
           }
         ],
@@ -8185,9 +8217,9 @@
             },
             {
               "subject": "PSUC LAB",
-              "faculty": "Mr. D Arun Kumar, Dr. Anand Solanki, Mr. Y Prasad Reddy",
+              "faculty": "Ms. K Swathi, Dr. Anand Solanki, Mr. Y Prasad Reddy",
               "room": "C-208",
-              "raw": "PSUC LAB\nDAK, AS, YPR\nC-208"
+              "raw": "PSUC LAB\nKS, AS, YPR\nC-208"
             }
           ]
         },
@@ -8229,9 +8261,9 @@
             },
             {
               "subject": "PSUC LAB",
-              "faculty": "Ms. K Swathi, Dr. M Neelima, Ms. K Jhansi Rani",
+              "faculty": "Mr. D Arun Kumar, Dr. M Neelima, Ms. K Jhansi Rani",
               "room": "C-208",
-              "raw": "PSUC LAB\nKS, MN, KJR\nC-208"
+              "raw": "PSUC LAB\nDAK, MN, KJR\nC-208"
             }
           ]
         },
@@ -10616,20 +10648,13 @@
             "isContinued": false
           }
         ],
-        "10:00-11:00": [
+        "02:15-03:15": [
           {
             "branch": "EEE",
             "subject": "AITA",
             "room": "E-409",
             "isLab": false,
             "isContinued": false
-          },
-          {
-            "branch": "MECH",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true
           }
         ],
         "09:00-10:00": [
@@ -10639,6 +10664,15 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "MECH",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": true
           }
         ]
       }
@@ -12527,7 +12561,9 @@
             "isLab": true,
             "isContinued": true
           }
-        ],
+        ]
+      },
+      "TUE": {
         "09:00-10:00": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -12536,9 +12572,7 @@
             "isLab": false,
             "isContinued": false
           }
-        ]
-      },
-      "TUE": {
+        ],
         "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-2",
@@ -12750,6 +12784,15 @@
             "isLab": false,
             "isContinued": false
           }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "PSUC",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
       },
       "FRI": {
@@ -12802,6 +12845,22 @@
             "isContinued": true
           }
         ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -12820,15 +12879,6 @@
             "isContinued": true
           }
         ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
         "10:00-11:00": [
           {
             "branch": "CSE(AI&ML)-2",
@@ -12840,15 +12890,6 @@
         ]
       },
       "TUE": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML",
-            "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -13057,13 +13098,6 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false
-          },
-          {
-            "branch": "ECE-2",
-            "subject": "PSUC LAB",
-            "room": "C-208",
-            "isLab": true,
-            "isContinued": false
           }
         ],
         "03:15-04:15": [
@@ -13073,13 +13107,15 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true
-          },
+          }
+        ],
+        "09:00-10:00": [
           {
-            "branch": "ECE-2",
-            "subject": "PSUC LAB",
-            "room": "C-208",
-            "isLab": true,
-            "isContinued": true
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
           }
         ]
       },
@@ -13089,13 +13125,6 @@
             "branch": "CSE-1",
             "subject": "PSUC",
             "room": "G-304",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML",
-            "room": "G-302",
             "isLab": false,
             "isContinued": false
           },
@@ -13149,6 +13178,24 @@
             "isLab": false,
             "isContinued": false
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "PSUC LAB",
+            "room": "C-208",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "PSUC LAB",
+            "room": "C-208",
+            "isLab": true,
+            "isContinued": true
+          }
         ]
       },
       "THU": {
@@ -13191,15 +13238,6 @@
             "isLab": false,
             "isContinued": false
           }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-1",
-            "subject": "PSUC",
-            "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          }
         ]
       },
       "TUE": {
@@ -13219,6 +13257,15 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "PSUC",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
           }
         ],
         "11:15-12:15": [
@@ -13543,6 +13590,15 @@
         ]
       },
       "THU": {
+        "12:15-01:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "PSUC",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "CSE-2",
@@ -13579,13 +13635,6 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false
-          },
-          {
-            "branch": "EEE",
-            "subject": "PSUC",
-            "room": "E-409",
-            "isLab": false,
-            "isContinued": false
           }
         ],
         "03:15-04:15": [
@@ -13595,6 +13644,15 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "EEE",
+            "subject": "PSUC",
+            "room": "E-409",
+            "isLab": false,
+            "isContinued": false
           }
         ]
       }
@@ -13608,6 +13666,24 @@
             "room": "G-304",
             "isLab": false,
             "isContinued": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "PSUC LAB",
+            "room": "C-208",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "PSUC LAB",
+            "room": "C-208",
+            "isLab": true,
+            "isContinued": true
           }
         ]
       },
@@ -13655,24 +13731,6 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "PSUC LAB",
-            "room": "C-208",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "PSUC LAB",
-            "room": "C-208",
-            "isLab": true,
-            "isContinued": true
           }
         ]
       },
@@ -16297,6 +16355,15 @@
     },
     "Mr. CH VVD Prasad": {
       "MON": {
+        "02:15-03:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "subject": "PCS",
+            "room": "G-406",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "12:15-01:15": [
           {
             "branch": "CSE(AI&ML)-2",
@@ -16337,6 +16404,13 @@
       "TUE": {
         "12:15-01:15": [
           {
+            "branch": "CSE (CS & DS)",
+            "subject": "PCS",
+            "room": "G-406",
+            "isLab": false,
+            "isContinued": false
+          },
+          {
             "branch": "ECE-3",
             "subject": "PSUC",
             "room": "E-412",
@@ -16354,7 +16428,17 @@
           }
         ]
       },
-      "WED": {},
+      "WED": {
+        "11:15-12:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "subject": "PCS",
+            "room": "G-405",
+            "isLab": false,
+            "isContinued": false
+          }
+        ]
+      },
       "THU": {
         "09:00-10:00": [
           {
@@ -17610,7 +17694,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "CAL & LA",
-            "room": "G-405",
+            "room": "G-405, G-406",
             "isLab": false,
             "isContinued": false
           }
@@ -17766,7 +17850,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "CAL & LA",
-            "room": "G-405",
+            "room": "G-405, G-406",
             "isLab": false,
             "isContinued": false
           },
@@ -21407,10 +21491,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -21830,10 +21914,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -23483,10 +23567,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -26920,10 +27004,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -27343,10 +27427,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -28996,10 +29080,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -39525,10 +39609,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39594,10 +39678,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39663,10 +39747,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39732,10 +39816,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39801,10 +39885,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39870,10 +39954,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -39939,10 +40023,10 @@
       "cleanShort": "KR",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 8,
+      "theoryLoad": 9,
       "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42486,10 +42570,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42555,10 +42639,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42624,10 +42708,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42693,10 +42777,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42762,10 +42846,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42831,10 +42915,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42900,10 +42984,10 @@
       "cleanShort": "CA",
       "dept": "CSE",
       "designation": "Assistant Professor",
-      "theoryLoad": 5,
+      "theoryLoad": 6,
       "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -54057,10 +54141,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54108,10 +54192,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54159,10 +54243,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54210,10 +54294,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54261,10 +54345,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54312,10 +54396,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -54363,10 +54447,10 @@
       "cleanShort": "CHVVDP",
       "dept": "IT",
       "designation": "Assistant Professor",
-      "theoryLoad": 7,
+      "theoryLoad": 10,
       "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 11,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -69820,6 +69904,57 @@
         }
       ],
       "assignments": "CIVIL → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nECE-1 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
+    },
+    "CHVVD": {
+      "sno": 46,
+      "fullName": "Mr. CH VVD Prasad",
+      "shortName": "CHVVDP",
+      "cleanShort": "CHVVDP",
+      "dept": "IT",
+      "designation": "Assistant Professor",
+      "theoryLoad": 10,
+      "labLoad": 4,
+      "tutLoad": 0,
+      "totalLoad": 14,
+      "assignedCourses": [
+        {
+          "branch": "ECE-3",
+          "subject": "Problem solving using C",
+          "code": "PSUC",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Problem solving using C lab",
+          "code": "PSUC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Problem solving using C",
+          "code": "PSUC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Problem solving using C lab",
+          "code": "PSUC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        }
+      ],
+      "assignments": "ECE-3 → Problem solving using C (PSUC) – 3 theory = 3 periods\nECE-3 → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods\nMECH → Problem solving using C (PSUC) – 3 theory = 3 periods\nMECH → Problem solving using C lab (PSUC LAB) – 2 lab = 2 periods"
     }
   },
   "knownBranches": [

@@ -281,6 +281,10 @@ facultyByClean['CSP'] = facultyByClean['ADP'];
 facultyByClean['Faculty-2'] = facultyByClean['FAC-2'];
 facultyByClean['Dr. Dr. VVLUR'] = facultyByClean['VVLUR'];
 facultyByClean['Dr. VVLUR'] = facultyByClean['VVLUR'];
+if (facultyByClean['CHVVDP']) {
+  facultyByClean['CHVVD'] = facultyByClean['CHVVDP'];
+  facultyMap['CHVVD'] = facultyByClean['CHVVDP'];
+}
 
 // Filter to ONLY count and include faculty who are assigned workload (totalLoad > 0)
 const activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);
@@ -293,7 +297,7 @@ console.log(`Faculty with assigned workload: ${activeFacultyList.length} (out of
 // Known non-faculty words to ignore during token matching
 const nonFacultyWords = new Set([
   'CAL', 'LA', 'PSUC', 'ENGG', 'PHY', 'CHEM', 'AITA', 'FWD', 'ENV', 'STD',
-  'DLD', '3DDA', 'S&G', 'ESAM', 'SUS', 'EME', 'FEEE', 'FDS', 'PAC', 'PCE',
+  'DLD', '3DDA', 'S&G', 'ESAM', 'SUS', 'EME', 'FEEE', 'FDS', 'PCS', 'PAC', 'PCE',
   'COM', 'CSP', 'FAI', 'ML', 'TUT', 'TUTORIAL', 'LAB', 'LABORATORY', 'PRACTICAL',
   'LUNCH', 'BREAK', 'LIBRARY', 'COUNSELLING', 'SPORTS', 'YOGA', 'SECTION',
   'COMP', 'GVPCE', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'DAY', 'BRANCH',
@@ -303,10 +307,17 @@ const nonFacultyWords = new Set([
 // Helper: exact token faculty matching
 function matchFacultyInText(text) {
   if (!text) return [];
+  const matched = new Set();
+  facultyList.forEach(f => {
+    if (text.includes(f.fullName)) {
+      matched.add(f.fullName);
+    }
+  });
+  if (matched.size > 0) return Array.from(matched);
+
   const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
   if (lines.length === 0) return [];
 
-  const matched = new Set();
   lines.forEach((line) => {
     const cleanLine = line.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/gi, ' ').replace(/[\(\),\/]/g, ' ');
     const tokens = cleanLine.split(/\s+/).filter(Boolean);
@@ -364,11 +375,36 @@ function parseCellContent(val) {
   if (!val || upper === 'BREAK' || upper === 'LUNCH') return null;
 
   if (upper === 'YOGA' || upper === 'SPORTS' || upper.includes('YOGA /') || upper.includes('YOGA/') || upper.includes('YOGA\n') || upper.includes('LIBRARY') || upper.includes('COUNSELLING')) {
-    return { subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false };
+    return [{ subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false }];
   }
   
   const isLab = upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+
+  // Multi-subject parallel session (e.g. FDS / PCS \n KR / CHVVD \n G-405, G-406)
+  if (lines.length >= 2 && lines[0].includes('/') && !lines[0].includes('(')) {
+    const subParts = lines[0].split('/').map(s => s.trim()).filter(Boolean);
+    const facTokens = lines[1].includes('/') ? lines[1].split('/') : lines[1].split(',');
+    const facParts = facTokens.map(s => s.trim()).filter(Boolean);
+    const roomTokens = (lines[2] || '').includes(',') ? lines[2].split(',') : (lines[2] || '').split('/');
+    const roomParts = roomTokens.map(s => s.trim()).filter(Boolean);
+
+    if (subParts.length >= 2 && facParts.length >= 2) {
+      return subParts.map((sub, i) => {
+        const isItemLab = sub.toUpperCase().includes('LAB') || sub.toUpperCase().includes('PRACTICAL') || sub.toUpperCase().includes('3DDA');
+        const facRaw = facParts[i] || '';
+        const facResolved = resolveFacultyNames(facRaw);
+        const room = roomParts[i] || roomParts[0] || '';
+        return {
+          subject: sub,
+          faculty: facResolved,
+          rawFaculty: facRaw,
+          room: room,
+          isLab: isItemLab
+        };
+      });
+    }
+  }
 
   if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
     const slashParts = val.split('/').map(l => l.trim()).filter(Boolean);
@@ -378,24 +414,24 @@ function parseCellContent(val) {
   }
 
   if (lines.length >= 3) {
-    return { subject: lines[0], faculty: resolveFacultyNames(lines[1]), room: lines[2], isLab };
+    return [{ subject: lines[0], faculty: resolveFacultyNames(lines[1]), room: lines[2], isLab }];
   } else if (lines.length === 2) {
     const second = lines[1];
     const { facultyStr, roomStr } = extractRoomFromEnd(second);
     if (roomStr) {
-      return {
+      return [{
         subject: lines[0],
         faculty: resolveFacultyNames(facultyStr),
         room: roomStr,
         isLab
-      };
+      }];
     } else if (second.startsWith('G-') || second.startsWith('E-') || second.startsWith('C-') || second.startsWith('A-') || second.includes('LAB') || second.includes('GVPCE')) {
-      return { subject: lines[0], faculty: '', room: second, isLab };
+      return [{ subject: lines[0], faculty: '', room: second, isLab }];
     } else {
-      return { subject: lines[0], faculty: resolveFacultyNames(second), room: '', isLab };
+      return [{ subject: lines[0], faculty: resolveFacultyNames(second), room: '', isLab }];
     }
   }
-  return { subject: val, faculty: '', room: '', isLab };
+  return [{ subject: val, faculty: '', room: '', isLab }];
 }
 
 function normSubj(s) {
@@ -513,26 +549,28 @@ for (let r = 1; r < rowsFinal.length; r++) {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
 
-    const parsed = parseCellContent(val);
-    if (!parsed) return;
+    const parsedList = parseCellContent(val);
+    if (!parsedList || parsedList.length === 0) return;
 
     if (!timetableData[curBranch][curDay][slot]) {
       timetableData[curBranch][curDay][slot] = [];
     }
-    timetableData[curBranch][curDay][slot].push(parsed);
-
     if (!branchSessionsMap[curBranch][curDay][slot]) {
       branchSessionsMap[curBranch][curDay][slot] = [];
     }
-    branchSessionsMap[curBranch][curDay][slot].push({ ...parsed, nextSlot, raw: val });
 
-    // Handle horizontal 2-hour lab span
-    if (parsed.isLab && nextSlot) {
-      if (!timetableData[curBranch][curDay][nextSlot]) {
-        timetableData[curBranch][curDay][nextSlot] = [];
+    parsedList.forEach(parsed => {
+      timetableData[curBranch][curDay][slot].push(parsed);
+      branchSessionsMap[curBranch][curDay][slot].push({ ...parsed, nextSlot, raw: val });
+
+      // Handle horizontal 2-hour lab span
+      if (parsed.isLab && nextSlot) {
+        if (!timetableData[curBranch][curDay][nextSlot]) {
+          timetableData[curBranch][curDay][nextSlot] = [];
+        }
+        timetableData[curBranch][curDay][nextSlot].push({ ...parsed, isContinued: true });
       }
-      timetableData[curBranch][curDay][nextSlot].push({ ...parsed, isContinued: true });
-    }
+    });
   });
 }
 
@@ -548,9 +586,6 @@ function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isCont
   if (!masterFacultyTimetables[facName] || !masterFacultyTimetables[facName][day]) return;
   const list = masterFacultyTimetables[facName][day][slot] || [];
   let cleanSubj = (subject || '').split('\n')[0].trim();
-  if (cleanSubj.includes('/') && !cleanSubj.includes('(')) {
-    cleanSubj = cleanSubj.split('/')[0].trim();
-  }
   const normS = normSubj(cleanSubj);
   const exists = list.some(x => {
     if (x.branch !== branch) return false;
@@ -574,17 +609,25 @@ for (let r = 1; r < rowsFinal.length; r++) {
   slotCols.forEach(({ slot, nextSlot, c }) => {
     const val = String(row[c] || '').trim();
     if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
-    const parsed = parseCellContent(val);
-    if (!parsed) return;
+    const parsedList = parseCellContent(val);
+    if (!parsedList || parsedList.length === 0) return;
 
-    const facs = matchFacultyInText(val);
-    if (facs.length === 0) return;
-
-    facs.forEach(fn => {
-      addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
-      if (parsed.isLab && nextSlot) {
-        addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
+    parsedList.forEach(parsed => {
+      let facs = parsed.faculty ? matchFacultyInText(parsed.faculty) : [];
+      if (facs.length === 0 && parsed.rawFaculty) {
+        facs = matchFacultyInText(parsed.rawFaculty);
       }
+      if (facs.length === 0 && parsedList.length === 1) {
+        facs = matchFacultyInText(val);
+      }
+      if (facs.length === 0) return;
+
+      facs.forEach(fn => {
+        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
+        if (parsed.isLab && nextSlot) {
+          addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
+        }
+      });
     });
   });
 }

@@ -184,10 +184,11 @@ export async function parseExcelFile(file) {
 
                 if (timeSlot && cellVal && cellVal.toUpperCase() !== 'BREAK' && cellVal.toUpperCase() !== 'LUNCH') {
                   const parsed = parseCellContent(cellVal, facultyMap);
+                  const parsedList = Array.isArray(parsed) ? parsed : [parsed];
                   if (!timetableData[branch][day][timeSlot]) {
                     timetableData[branch][day][timeSlot] = [];
                   }
-                  timetableData[branch][day][timeSlot].push(parsed);
+                  parsedList.forEach(p => timetableData[branch][day][timeSlot].push(p));
                 }
               }
             }
@@ -227,10 +228,11 @@ export async function parseExcelFile(file) {
 
                 if (timeSlot && cellVal && cellVal.toUpperCase() !== 'BREAK' && cellVal.toUpperCase() !== 'LUNCH') {
                   const parsed = parseCellContent(cellVal, facultyMap);
+                  const parsedList = Array.isArray(parsed) ? parsed : [parsed];
                   if (!targetStore[storeKey][day][timeSlot]) {
                     targetStore[storeKey][day][timeSlot] = [];
                   }
-                  targetStore[storeKey][day][timeSlot].push(parsed);
+                  parsedList.forEach(p => targetStore[storeKey][day][timeSlot].push(p));
                 }
               }
             }
@@ -325,6 +327,31 @@ function parseCellContent(val, facultyMap = {}) {
   const isLab = upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
 
+  // Multi-subject parallel session (e.g. FDS / PCS \n KR / CHVVD \n G-405, G-406)
+  if (lines.length >= 2 && lines[0].includes('/') && !lines[0].includes('(')) {
+    const subParts = lines[0].split('/').map(s => s.trim()).filter(Boolean);
+    const facTokens = lines[1].includes('/') ? lines[1].split('/') : lines[1].split(',');
+    const facParts = facTokens.map(s => s.trim()).filter(Boolean);
+    const roomTokens = (lines[2] || '').includes(',') ? lines[2].split(',') : (lines[2] || '').split('/');
+    const roomParts = roomTokens.map(s => s.trim()).filter(Boolean);
+
+    if (subParts.length >= 2 && facParts.length >= 2) {
+      return subParts.map((sub, i) => {
+        const isItemLab = sub.toUpperCase().includes('LAB') || sub.toUpperCase().includes('PRACTICAL') || sub.toUpperCase().includes('3DDA');
+        const facRaw = facParts[i] || '';
+        const facResolved = resolveFacultyNames(facRaw, facultyMap);
+        const room = roomParts[i] || roomParts[0] || '';
+        return {
+          subject: sub,
+          faculty: facResolved || facRaw,
+          rawFaculty: facRaw,
+          room: room,
+          isLab: isItemLab
+        };
+      });
+    }
+  }
+
   if (lines.length === 1 && val.includes('/') && !val.includes('(')) {
     const slashParts = val.split('/').map(l => l.trim()).filter(Boolean);
     if (slashParts.length >= 2) {
@@ -378,7 +405,8 @@ const facultyAliases = {
   'Dr. Dr.': 'Dr. VVL Usha Ramani',
   'FAC-2': 'Faculty-2',
   'Faculty-2': 'Faculty-2',
-  'CSP': 'Mr. A Dhanunjaya Prasad'
+  'CSP': 'Mr. A Dhanunjaya Prasad',
+  'CHVVD': 'Mr. CH VVD Prasad'
 };
 
 /**
