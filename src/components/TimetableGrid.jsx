@@ -193,8 +193,9 @@ export default function TimetableGrid({
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Header Column */}
-                  <td className="py-3 px-2 print:py-1.5 print:px-1 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[8.5pt]">
-                    {day}
+                  <td className="py-3 px-2 print:py-2 print:px-1 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[9.5pt] print:font-bold">
+                    <span className="no-print">{day}</span>
+                    <span className="print-only tracking-wider font-serif">{day === 'MON' ? 'MONDAY' : day === 'TUE' ? 'TUESDAY' : day === 'WED' ? 'WEDNESDAY' : day === 'THU' ? 'THURSDAY' : day === 'FRI' ? 'FRIDAY' : day}</span>
                   </td>
                   
                   {/* Branch Column - Hidden in print as Department is in Header */}
@@ -487,9 +488,9 @@ export default function TimetableGrid({
         </table>
       </div>
 
-      {/* Course & Faculty Allocation Legend for this Branch (Matching Excel sheet bottom table) */}
+      {/* Course & Faculty Allocation Legend for this Branch (Matching Excel sheet bottom table) - Hidden on Print per Screenshot 2 */}
       {branchLegend && branchLegend.length > 0 && (
-        <div className="p-4 sm:p-5 print:p-1.5 bg-slate-50/80 border-t-2 border-slate-300 print:border-black print:bg-white">
+        <div className="no-print p-4 sm:p-5 bg-slate-50/80 border-t-2 border-slate-300">
           <div 
             onClick={isCollapsibleLegend ? () => setIsLegendOpen(!isLegendOpen) : undefined}
             className={`flex flex-wrap items-center justify-between gap-2 ${

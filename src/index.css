@@ -102,7 +102,7 @@ th, td {
     max-height: 100vh !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
     overflow: hidden !important;
   }
 
@@ -112,25 +112,51 @@ th, td {
   }
 
   .branch-print-page .timetable-card {
-    border: 1.5px solid #000 !important;
+    border: 2px solid #000 !important;
     box-shadow: none !important;
     border-radius: 0 !important;
     margin: 0 !important;
-    height: 100% !important;
+    padding: 0 !important;
+    flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: space-between !important;
+    height: 100% !important;
+  }
+
+  .branch-print-page .overflow-x-auto {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    overflow: visible !important;
   }
 
   .branch-print-page table {
-    border: 1.5px solid #000 !important;
+    border: 2px solid #000 !important;
     width: 100% !important;
+    height: 100% !important;
+    flex: 1 !important;
     table-layout: fixed !important;
+    border-collapse: collapse !important;
+  }
+
+  .branch-print-page thead tr {
+    height: 40px !important;
+  }
+
+  .branch-print-page tbody {
+    height: calc(100% - 40px) !important;
+  }
+
+  .branch-print-page tbody tr {
+    height: 20% !important;
   }
 
   .branch-print-page th,
   .branch-print-page td {
+    border: 1.5px solid #000 !important;
     border-color: #000 !important;
+    color: #000 !important;
   }
 
   /* INDIVIDUAL FACULTY PRINT STYLING: NO COLORS, B&W SOLID BLACK BORDERS, COMPACT 4 PER PAGE */
