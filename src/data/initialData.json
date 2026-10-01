@@ -277,16 +277,16 @@
       "MON": {
         "09:00-10:00": [
           {
-            "subject": "S&G",
-            "faculty": "Mr. P Manikanta",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. G Santosh Kumar",
             "room": "E-410",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. G Santosh Kumar",
+            "subject": "S&G",
+            "faculty": "Mr. P Manikanta",
             "room": "E-410",
             "isLab": false
           }
@@ -428,7 +428,7 @@
           },
           {
             "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar, Dr. J RajaRatnam",
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
             "room": "E-410",
             "isLab": false
           }
@@ -494,7 +494,7 @@
         "10:00-11:00": [
           {
             "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. N Vijaya Lakshmi",
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. J RajaRatnam",
             "room": "E-410",
             "isLab": false
           },
@@ -740,18 +740,19 @@
       "THU": {
         "09:00-10:00": [
           {
-            "subject": "FEEE",
-            "faculty": "Dr. A Ravi Shankar",
-            "room": "E-409",
-            "isLab": false
+            "subject": "ESS. ENG. LAB",
+            "faculty": "Dr. BM Florence, Dr. N Vijaya Lakshmi, Dr. Ch Alekya",
+            "room": "COMP. LAB-4",
+            "isLab": true
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "AITA",
-            "faculty": "Dr. S Padma",
-            "room": "E-409",
-            "isLab": false
+            "subject": "ESS. ENG. LAB",
+            "faculty": "Dr. BM Florence, Dr. N Vijaya Lakshmi, Dr. Ch Alekya",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": true
           }
         ],
         "11:15-12:15": [
@@ -796,19 +797,18 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. BM Florence, Dr. N Vijaya Lakshmi, Dr. Ch Alekya",
-            "room": "COMP. LAB-4",
-            "isLab": true
+            "subject": "FEEE",
+            "faculty": "Dr. A Ravi Shankar",
+            "room": "E-409",
+            "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. BM Florence, Dr. N Vijaya Lakshmi, Dr. Ch Alekya",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": true
+            "subject": "AITA",
+            "faculty": "Dr. S Padma",
+            "room": "E-409",
+            "isLab": false
           }
         ],
         "11:15-12:15": [
@@ -879,8 +879,8 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. D Manasa, Dr. G Santosh Kumar",
+            "subject": "PSUC",
+            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
             "room": "G-404",
             "isLab": false
           }
@@ -895,8 +895,8 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "PSUC",
-            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. D Manasa, Dr. G Santosh Kumar",
             "room": "G-404",
             "isLab": false
           }
@@ -1978,7 +1978,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Dr. J RajaRatnam",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -2000,7 +2000,7 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Mr. PBS Krishnamuraju",
+            "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Dr. J RajaRatnam",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -2380,7 +2380,7 @@
         "02:15-03:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. J RajaRatnam",
+            "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. BM Florence",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -2388,7 +2388,7 @@
         "03:15-04:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. J RajaRatnam",
+            "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. BM Florence",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -5066,8 +5066,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "IRS\nCHA\nPBSKR\nBMF\nNVL\nVVLUR",
-        "facultyFullName": "Dr. I Rajasekhar\nDr. Ch Alekya\nMr. PBS Krishnamuraju\nDr. BM Florence\nDr. N Vijaya Lakshmi\nDr. VVL Usha Ramani",
+        "facultyShort": "IRS\nCHA\nJRR\nBMF\nNVL\nVVLUR",
+        "facultyFullName": "Dr. I Rajasekhar\nDr. Ch Alekya\nDr. J RajaRatnam\nDr. BM Florence\nDr. N Vijaya Lakshmi\nDr. VVL Usha Ramani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -5200,8 +5200,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "VVLUR\nNVL\nJRR",
-        "facultyFullName": "Dr. VVL Usha Ramani\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam",
+        "facultyShort": "VVLUR\nNVL\nBMF",
+        "facultyFullName": "Dr. VVL Usha Ramani\nDr. N Vijaya Lakshmi\nDr. BM Florence",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -5993,16 +5993,17 @@
               "subject": "ESS. ENG. LAB"
             }
           },
-          "THU": {},
+          "THU": {
+            "09:00-11:00": {
+              "raw": "EEE / ESS. ENG. LAB",
+              "branch": "EEE",
+              "subject": "ESS. ENG. LAB"
+            }
+          },
           "FRI": {
             "11:15-01:15": {
               "raw": "ECE-2 / ESS. ENG. LAB",
               "branch": "ECE-2",
-              "subject": "ESS. ENG. LAB"
-            },
-            "09:00-11:00": {
-              "raw": "EEE / ESS. ENG. LAB",
-              "branch": "EEE",
               "subject": "ESS. ENG. LAB"
             }
           }
@@ -6953,20 +6954,21 @@
             }
           ]
         },
-        "THU": {},
+        "THU": {
+          "09:00-11:00": [
+            {
+              "branch": "EEE",
+              "room": "COMP. LAB-4",
+              "raw": "EEE/COMP. LAB-4"
+            }
+          ]
+        },
         "FRI": {
           "11:15-01:15": [
             {
               "branch": "ECE-2",
               "room": "COMP. LAB-4",
               "raw": "ECE-2/COMP. LAB-4"
-            }
-          ],
-          "09:00-11:00": [
-            {
-              "branch": "EEE",
-              "room": "COMP. LAB-4",
-              "raw": "EEE/COMP. LAB-4"
             }
           ]
         }
@@ -7929,8 +7931,7 @@
             }
           ]
         },
-        "THU": {},
-        "FRI": {
+        "THU": {
           "09:00-11:00": [
             {
               "subject": "ESS. ENG. LAB",
@@ -7939,7 +7940,8 @@
               "raw": "ESS. ENG. LAB\nBMF, NVL, CHA\nCOMP. LAB-4"
             }
           ]
-        }
+        },
+        "FRI": {}
       },
       "MECH": {
         "MON": {
@@ -8221,9 +8223,9 @@
             },
             {
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Mr. PBS Krishnamuraju",
+              "faculty": "Dr. I Rajasekhar, Dr. Ch Alekya, Dr. J RajaRatnam",
               "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nIRS, CHA, PBSKR\nCOMP. LAB-4"
+              "raw": "ESS. ENG. LAB\nIRS, CHA, JRR\nCOMP. LAB-4"
             }
           ]
         },
@@ -8306,9 +8308,9 @@
           "02:15-04:15": [
             {
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. J RajaRatnam",
+              "faculty": "Dr. VVL Usha Ramani, Dr. N Vijaya Lakshmi, Dr. BM Florence",
               "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nVVLUR, NVL, JRR\nCOMP. LAB-4"
+              "raw": "ESS. ENG. LAB\nVVLUR, NVL, BMF\nCOMP. LAB-4"
             }
           ]
         },
@@ -9229,7 +9231,7 @@
         "labName": "Essential English Lab",
         "subShort": "ESS. ENG. LAB",
         "roomNo": "COMP. LAB-4",
-        "branches": "ECE-1: MON 11:15-01:15, WED 11:15-01:15\nECE-2: TUE 02:15-04:15, FRI 11:15-01:15\nECE-3: WED 02:15-04:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: FRI 09:00-11:00\nCIVIL: MON 02:15-04:15\nCHEMICAL: TUE 11:15-01:15\nMECH-ROBOTICS: WED 09:00-11:00",
+        "branches": "ECE-1: MON 11:15-01:15, WED 11:15-01:15\nECE-2: TUE 02:15-04:15, FRI 11:15-01:15\nECE-3: WED 02:15-04:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: THU 09:00-11:00\nCIVIL: MON 02:15-04:15\nCHEMICAL: TUE 11:15-01:15\nMECH-ROBOTICS: WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "ECE-1",
@@ -9263,7 +9265,7 @@
             "branch": "EEE",
             "required": 1,
             "allotted": 1,
-            "slots": "FRI 09:00-11:00",
+            "slots": "THU 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
@@ -9567,16 +9569,17 @@
             "subject": "ESS. ENG. LAB"
           }
         },
-        "THU": {},
+        "THU": {
+          "09:00-11:00": {
+            "raw": "EEE / ESS. ENG. LAB",
+            "branch": "EEE",
+            "subject": "ESS. ENG. LAB"
+          }
+        },
         "FRI": {
           "11:15-01:15": {
             "raw": "ECE-2 / ESS. ENG. LAB",
             "branch": "ECE-2",
-            "subject": "ESS. ENG. LAB"
-          },
-          "09:00-11:00": {
-            "raw": "EEE / ESS. ENG. LAB",
-            "branch": "EEE",
             "subject": "ESS. ENG. LAB"
           }
         }
@@ -10617,15 +10620,6 @@
             "isLab": true,
             "isContinued": true
           }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "EEE",
-            "subject": "AITA",
-            "room": "E-409",
-            "isLab": false,
-            "isContinued": false
-          }
         ]
       },
       "FRI": {
@@ -10638,6 +10632,22 @@
             "isContinued": false
           }
         ],
+        "10:00-11:00": [
+          {
+            "branch": "EEE",
+            "subject": "AITA",
+            "room": "E-409",
+            "isLab": false,
+            "isContinued": false
+          },
+          {
+            "branch": "MECH",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": true
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "MECH",
@@ -10645,15 +10655,6 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "MECH",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true
           }
         ]
       }
@@ -11783,7 +11784,9 @@
             "room": "E-409",
             "isLab": false,
             "isContinued": false
-          },
+          }
+        ],
+        "02:15-03:15": [
           {
             "branch": "MECH",
             "subject": "SUS. ENGG.",
@@ -11985,7 +11988,7 @@
     },
     "Dr. G Santosh Kumar": {
       "MON": {
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "CIVIL",
             "subject": "SUS. ENGG.",
@@ -11994,7 +11997,7 @@
             "isContinued": false
           }
         ],
-        "11:15-12:15": [
+        "02:15-03:15": [
           {
             "branch": "MECH",
             "subject": "SUS. ENGG.",
@@ -12083,7 +12086,7 @@
     },
     "Mr. P Manikanta": {
       "MON": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "CIVIL",
             "subject": "S&G",
@@ -15067,7 +15070,9 @@
             "isLab": true,
             "isContinued": true
           }
-        ],
+        ]
+      },
+      "FRI": {
         "09:00-10:00": [
           {
             "branch": "EEE",
@@ -15076,9 +15081,7 @@
             "isLab": false,
             "isContinued": false
           }
-        ]
-      },
-      "FRI": {
+        ],
         "12:15-01:15": [
           {
             "branch": "EEE",
@@ -15275,6 +15278,24 @@
             "isLab": true,
             "isContinued": true
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": true
+          }
         ]
       },
       "THU": {
@@ -15285,6 +15306,24 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "EEE",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "EEE",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": true
           }
         ]
       },
@@ -15310,24 +15349,6 @@
         "12:15-01:15": [
           {
             "branch": "ECE-2",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": true
-          }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "EEE",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "EEE",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
@@ -15443,17 +15464,6 @@
         ]
       },
       "THU": {
-        "02:15-03:15": [
-          {
-            "branch": "MECH-ROBOTICS",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-408",
-            "isLab": false,
-            "isContinued": false
-          }
-        ]
-      },
-      "FRI": {
         "09:00-10:00": [
           {
             "branch": "EEE",
@@ -15471,8 +15481,18 @@
             "isLab": true,
             "isContinued": true
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-408",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
-      }
+      },
+      "FRI": {}
     },
     "Dr. I Rajasekhar": {
       "MON": {
@@ -15667,24 +15687,27 @@
           }
         ]
       },
-      "TUE": {},
-      "WED": {
+      "TUE": {
+        "02:15-03:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
         "03:15-04:15": [
           {
-            "branch": "CIVIL",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "ECE-3",
+            "branch": "ECE-2",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
           }
-        ],
+        ]
+      },
+      "WED": {
         "09:00-10:00": [
           {
             "branch": "ECE-1",
@@ -15702,15 +15725,6 @@
             "isLab": false,
             "isContinued": false
           }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": false
-          }
         ]
       },
       "THU": {
@@ -15726,6 +15740,13 @@
       },
       "FRI": {
         "10:00-11:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false
+          },
           {
             "branch": "MECH",
             "subject": "ESS. ENG. Tut.",
@@ -15829,7 +15850,26 @@
           }
         ]
       },
-      "THU": {},
+      "THU": {
+        "09:00-10:00": [
+          {
+            "branch": "EEE",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "EEE",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": true
+          }
+        ]
+      },
       "FRI": {
         "10:00-11:00": [
           {
@@ -15838,13 +15878,6 @@
             "room": "E-410",
             "isLab": false,
             "isContinued": false
-          },
-          {
-            "branch": "EEE",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": true
           }
         ],
         "11:15-12:15": [
@@ -15863,15 +15896,6 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
-          }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "EEE",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": false
           }
         ]
       }
@@ -16069,22 +16093,6 @@
             "subject": "ESS. ENG. Tut.",
             "room": "E-411",
             "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "ECE-2",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": true
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
             "isContinued": false
           }
         ]
@@ -16313,7 +16321,7 @@
             "isContinued": false
           }
         ],
-        "02:15-03:15": [
+        "11:15-12:15": [
           {
             "branch": "MECH",
             "subject": "PSUC",
@@ -16389,6 +16397,13 @@
             "room": "G-305",
             "isLab": false,
             "isContinued": false
+          },
+          {
+            "branch": "MECH",
+            "subject": "PSUC",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
           }
         ],
         "02:15-03:15": [
@@ -16397,13 +16412,6 @@
             "subject": "FWD LAB",
             "room": "COMP. LAB-3",
             "isLab": true,
-            "isContinued": false
-          },
-          {
-            "branch": "MECH",
-            "subject": "PSUC",
-            "room": "G-404",
-            "isLab": false,
             "isContinued": false
           }
         ],
