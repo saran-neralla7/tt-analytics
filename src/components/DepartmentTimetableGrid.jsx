@@ -221,31 +221,30 @@ export default function DepartmentTimetableGrid({
     }, 0);
   }, [activeDaysList, dayScheduleData]);
 
-  const renderSessionEntry = (grp, gIdx) => (
-    <div key={gIdx} className="leading-tight text-[10px] sm:text-[10.5px] print:text-[6.8pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
-      {grp.branch && (
-        <span className="font-black text-black uppercase">{grp.branch}: </span>
-      )}
-      <span className="font-bold text-black">{grp.subject}</span>
-      {grp.facultyDetails && grp.facultyDetails.length > 0 && (
-        <span className="text-black font-normal">
-          {' — '}
-          {grp.facultyDetails.map((f, fIdx) => (
-            <span key={fIdx}>
-              {fIdx > 0 ? ', ' : ''}
-              <span className="font-bold">{f.fullName}</span>
-              {f.shortName && f.shortName !== f.fullName && (
-                <span className="font-semibold text-slate-800 print:text-black"> ({f.shortName})</span>
-              )}
-            </span>
-          ))}
-        </span>
-      )}
-      {grp.room && (
-        <span className="text-[9px] print:text-[6.2pt] font-mono text-slate-700 print:text-black font-semibold"> [{grp.room}]</span>
-      )}
-    </div>
-  );
+  const renderSessionEntry = (grp, gIdx) => {
+    const facultyShorts = (grp.facultyDetails || [])
+      .map(f => f.shortName || getFacultyShortName(f.fullName) || f.fullName)
+      .filter(Boolean);
+
+    return (
+      <div 
+        key={gIdx} 
+        className="leading-tight text-[10px] sm:text-[10.5px] print:text-[7pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none"
+        title={grp.facultyDetails?.map(f => `${f.fullName} (${f.shortName})`).join(', ')}
+      >
+        {grp.branch && (
+          <span className="font-black text-black uppercase">{grp.branch}: </span>
+        )}
+        <span className="font-bold text-black">{grp.subject}</span>
+        {facultyShorts.length > 0 && (
+          <span className="font-black text-black"> [{facultyShorts.join(', ')}]</span>
+        )}
+        {grp.room && (
+          <span className="text-[9px] print:text-[6.5pt] font-mono text-slate-700 print:text-black font-semibold"> ({grp.room})</span>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card print:border-black print:rounded-none">
@@ -281,7 +280,11 @@ export default function DepartmentTimetableGrid({
               DEPARTMENT OF {deptName.toUpperCase()} — WEEKLY FACULTY SCHEDULE
             </div>
             <div className="text-[7.5pt] font-extrabold text-slate-700 mt-0.5 print:text-[7pt]">
-              Faculty ({facultyList.length}): {facultyList.map(f => f.shortName || getFacultyShortName(f.fullName)).join(', ')}
+              Faculty ({facultyList.length}):{' '}
+              {facultyList.length <= 10
+                ? facultyList.map(f => `${f.shortName || getFacultyShortName(f.fullName)}: ${f.fullName}`).join(' • ')
+                : facultyList.map(f => f.shortName || getFacultyShortName(f.fullName)).join(', ')
+              }
             </div>
           </div>
 
