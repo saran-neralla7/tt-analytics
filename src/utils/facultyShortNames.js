@@ -94,4 +94,6 @@ export function getFacultyShortNames(facultyStr) {
   return shortParts.join(', ');
 }
 
+export const getFacultyShortName = getFacultyShortNames;
+
 export default getFacultyShortNames;

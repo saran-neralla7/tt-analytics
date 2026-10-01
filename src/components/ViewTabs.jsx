@@ -4,6 +4,7 @@ export default function ViewTabs({ activeTab, onTabChange }) {
   const tabs = [
     { id: 'master', label: 'Master' },
     { id: 'branch', label: 'Branch' },
+    { id: 'department', label: 'Department' },
     { id: 'individual', label: 'Individual' },
     { id: 'lab', label: 'Lab' },
     { id: 'rooms', label: 'Rooms & Vacancy' },

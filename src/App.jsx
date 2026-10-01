@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import ViewTabs from './components/ViewTabs';
 import BranchView from './components/BranchView';
+import DepartmentView from './components/DepartmentView';
 import MasterView from './components/MasterView';
 import IndividualView from './components/IndividualView';
 import LabView from './components/LabView';
@@ -70,6 +71,15 @@ export default function App() {
             selectedBranch={selectedBranch}
             onBranchChange={setSelectedBranch}
             universityInfo={universityInfo}
+            onSlotClick={handleSlotClick}
+          />
+        )}
+
+        {activeTab === 'department' && (
+          <DepartmentView
+            timetableData={timetableData}
+            universityInfo={universityInfo}
+            facultyList={facultyList}
             onSlotClick={handleSlotClick}
           />
         )}

@@ -3,6 +3,7 @@ import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { UserCheck, Filter, Users, Table, Printer } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
+import DepartmentTimetableGrid from './DepartmentTimetableGrid';
 
 /**
  * Helper to check if current slot and next slot should be merged horizontally (colSpan=2) for faculty
@@ -770,6 +771,9 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   // Faculty selection state ('ALL' or faculty fullName)
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
+  // Department Schedule Mode: 'consolidated' (1-Page Weekly Department Timetable) vs 'cards' (Individual Faculty Cards)
+  const [deptScheduleMode, setDeptScheduleMode] = useState('consolidated');
+
   // Print controls: whether to include department stats & workload table in print
   const [includeStatsInPrint, setIncludeStatsInPrint] = useState(false);
 
@@ -889,14 +893,48 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
           <span className="text-gray-300 hidden sm:inline">|</span>
 
+          {/* Department Schedule Mode Toggle (when a department is selected and ALL faculty is viewed) */}
+          {selectedDept !== 'ALL' && selectedFaculty === 'ALL' && (
+            <div className="inline-flex rounded-lg border border-slate-300 p-0.5 bg-slate-100 shadow-2xs">
+              <button
+                onClick={() => setDeptScheduleMode('consolidated')}
+                className={`px-3 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${
+                  deptScheduleMode === 'consolidated'
+                    ? 'bg-blue-700 text-white shadow-xs'
+                    : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
+                }`}
+              >
+                Weekly Schedule (1 Page)
+              </button>
+              <button
+                onClick={() => setDeptScheduleMode('cards')}
+                className={`px-3 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${
+                  deptScheduleMode === 'cards'
+                    ? 'bg-blue-700 text-white shadow-xs'
+                    : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
+                }`}
+              >
+                Individual Cards
+              </button>
+            </div>
+          )}
+
           {/* Dedicated Print Button */}
           <button
             onClick={() => window.print()}
             className="flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
-            title="Print Faculty Timetables (4 per page)"
+            title={
+              selectedDept !== 'ALL' && selectedFaculty === 'ALL' && deptScheduleMode === 'consolidated'
+                ? `Print ${selectedDept} Department Timetable (Strictly 1 Page Landscape)`
+                : 'Print Faculty Timetables (4 per page)'
+            }
           >
             <Printer className="w-3.5 h-3.5" />
-            <span>Print Timetables (4 / Page)</span>
+            <span>
+              {selectedDept !== 'ALL' && selectedFaculty === 'ALL' && deptScheduleMode === 'consolidated'
+                ? `Print ${selectedDept} (1 Page Landscape)`
+                : 'Print Timetables'}
+            </span>
           </button>
 
           {/* Optional Toggle for Dept Stats */}
@@ -1136,8 +1174,33 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         </div>
       )}
 
-      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One) */}
-      {selectedFaculty === 'ALL' ? (
+      {/* RENDER TIMETABLES (Consolidated Department Weekly Grid OR Individual Faculty Cards) */}
+      {selectedFaculty !== 'ALL' ? (
+        currentFacultyObj ? (
+          <FacultyTimetableCard
+            facultyObj={currentFacultyObj}
+            timetableData={timetableData}
+            universityInfo={universityInfo}
+            onSlotClick={onSlotClick}
+            showBreakdown={true}
+            isMultiView={false}
+          />
+        ) : (
+          <div className="text-center py-12 text-slate-500 text-sm">
+            No faculty found matching the selection.
+          </div>
+        )
+      ) : selectedDept !== 'ALL' && deptScheduleMode === 'consolidated' ? (
+        <div className="dept-print-page">
+          <DepartmentTimetableGrid
+            deptName={selectedDept}
+            facultyList={filteredFacultyList}
+            timetableData={timetableData}
+            universityInfo={universityInfo}
+            onSlotClick={onSlotClick}
+          />
+        </div>
+      ) : (
         <div className="space-y-8 print:space-y-0.5 faculty-grid-container">
           {filteredFacultyList.map((facObj, idx) => (
             <FacultyTimetableCard
@@ -1152,19 +1215,6 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               totalCount={filteredFacultyList.length}
             />
           ))}
-        </div>
-      ) : currentFacultyObj ? (
-        <FacultyTimetableCard
-          facultyObj={currentFacultyObj}
-          timetableData={timetableData}
-          universityInfo={universityInfo}
-          onSlotClick={onSlotClick}
-          showBreakdown={true}
-          isMultiView={false}
-        />
-      ) : (
-        <div className="text-center py-12 text-slate-500 text-sm">
-          No faculty found matching the selection.
         </div>
       )}
     </div>

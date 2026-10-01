@@ -90,7 +90,8 @@ th, td {
     display: block !important;
   }
 
-  .branch-print-page {
+  .branch-print-page,
+  .dept-print-page {
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
@@ -106,12 +107,14 @@ th, td {
     overflow: hidden !important;
   }
 
-  .branch-print-page:last-child {
+  .branch-print-page:last-child,
+  .dept-print-page:last-child {
     page-break-after: auto !important;
     break-after: auto !important;
   }
 
-  .branch-print-page .timetable-card {
+  .branch-print-page .timetable-card,
+  .dept-print-page .timetable-card {
     border: 2px solid #000 !important;
     box-shadow: none !important;
     border-radius: 0 !important;
@@ -123,7 +126,8 @@ th, td {
     height: 100% !important;
   }
 
-  .branch-print-page .overflow-x-auto {
+  .branch-print-page .overflow-x-auto,
+  .dept-print-page .overflow-x-auto {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -131,7 +135,8 @@ th, td {
     overflow: visible !important;
   }
 
-  .branch-print-page table {
+  .branch-print-page table,
+  .dept-print-page table {
     border: 2px solid #000 !important;
     width: 100% !important;
     height: 100% !important;
@@ -140,20 +145,25 @@ th, td {
     border-collapse: collapse !important;
   }
 
-  .branch-print-page thead tr {
+  .branch-print-page thead tr,
+  .dept-print-page thead tr {
     height: 40px !important;
   }
 
-  .branch-print-page tbody {
+  .branch-print-page tbody,
+  .dept-print-page tbody {
     height: calc(100% - 40px) !important;
   }
 
-  .branch-print-page tbody tr {
+  .branch-print-page tbody tr,
+  .dept-print-page tbody tr {
     height: 20% !important;
   }
 
   .branch-print-page th,
-  .branch-print-page td {
+  .branch-print-page td,
+  .dept-print-page th,
+  .dept-print-page td {
     border: 1.5px solid #000 !important;
     border-color: #000 !important;
     color: #000 !important;
