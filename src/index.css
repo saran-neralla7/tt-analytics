@@ -56,7 +56,7 @@ th, td {
 /* HIGH-QUALITY PDF & PRINT STYLES */
 @media print {
   @page {
-    size: landscape;
+    size: A3 landscape;
     margin: 4mm 5mm;
   }
 
@@ -159,7 +159,7 @@ th, td {
     color: #000 !important;
   }
 
-  /* DEPARTMENT FACULTY TIMETABLE PRINT STYLES: SUPPORTS A4 & A3 LANDSCAPE WITH FULL EXPANSION */
+  /* DEPARTMENT FACULTY TIMETABLE PRINT STYLES: STRICTLY 1-PAGE A3 LANDSCAPE */
   .dept-print-page {
     page-break-after: always !important;
     break-after: page !important;
@@ -169,8 +169,12 @@ th, td {
     padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
-    display: block !important;
-    overflow: visible !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
   }
 
   .dept-print-page:last-child {
@@ -185,32 +189,41 @@ th, td {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    display: block !important;
-    overflow: visible !important;
+    height: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
   }
 
   .dept-print-page .overflow-x-auto {
     overflow: visible !important;
     width: 100% !important;
-    display: block !important;
+    height: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .dept-print-page table {
     border: 2px solid #000 !important;
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
+    flex: 1 !important;
     table-layout: fixed !important;
     border-collapse: collapse !important;
   }
 
   .dept-print-page thead tr {
-    height: 36px !important;
+    height: 38px !important;
+  }
+
+  .dept-print-page tbody {
+    height: calc(100% - 38px) !important;
   }
 
   .dept-print-page tbody tr {
-    height: auto !important;
+    height: 20% !important;
   }
 
   .dept-print-page th,
@@ -218,6 +231,7 @@ th, td {
     border: 1.5px solid #000 !important;
     border-color: #000 !important;
     color: #000 !important;
+    background: #fff !important;
   }
 
   /* Consolidated Department Schedule printed from Individual Tab */

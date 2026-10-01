@@ -152,7 +152,7 @@ export default function DepartmentTimetableGrid({
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black">
           <thead>
             <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-slate-900">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-black">
                 Day
               </th>
               {periodSlots.map((slot) => (
@@ -160,15 +160,15 @@ export default function DepartmentTimetableGrid({
                   key={slot.id} 
                   className={`py-2.5 px-1 border-r border-gray-300 print:border-black ${
                     slot.type === 'break' 
-                      ? 'bg-amber-100/80 text-amber-950 font-black w-16 print:w-12 text-center' 
-                      : 'text-slate-950'
+                      ? 'bg-gray-100 print:bg-white text-black font-black w-16 print:w-12 text-center' 
+                      : 'text-black'
                   }`}
                 >
-                  <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                  <span className="font-black text-black text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
                     {slot.time}
                   </span>
                   {slot.label && (
-                    <div className="text-[10px] sm:text-[10.5px] print:text-[7.5pt] tracking-normal text-amber-900 font-black mt-0.5 print:hidden">
+                    <div className="text-[10px] sm:text-[10.5px] print:text-[7.5pt] tracking-normal text-slate-800 print:text-black font-black mt-0.5 print:hidden">
                       {slot.label}
                     </div>
                   )}
@@ -183,7 +183,7 @@ export default function DepartmentTimetableGrid({
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Header Column */}
-                  <td className="py-3 px-2 print:py-2 print:px-1 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans">
+                  <td className="py-3 px-2 print:py-2 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans">
                     {day}
                   </td>
 
@@ -195,11 +195,11 @@ export default function DepartmentTimetableGrid({
                           <td 
                             key={slot.id} 
                             rowSpan={activeDaysList.length}
-                            className="py-2 px-1 bg-amber-50/80 text-amber-950 font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
+                            className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
                           >
                             <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
                               {(slot.label || '').split('').map((char, cIdx) => (
-                                <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[15pt] font-black">
+                                <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[14pt] font-black text-black">
                                   {char}
                                 </span>
                               ))}
@@ -228,37 +228,22 @@ export default function DepartmentTimetableGrid({
                       <td
                         key={slot.id}
                         onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, slot.time, deptName)}
-                        className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle transition-all cursor-pointer hover:bg-blue-50/40"
+                        className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
                         title="Click to view details"
                       >
-                        <div className="flex flex-col h-full w-full justify-center gap-1">
-                          {groups.map((grp, gIdx) => {
-                            const itemStyle = getSubjectStyle(grp.subject, grp.isLab);
-                            return (
-                              <div
-                                key={gIdx}
-                                className={`rounded px-1.5 py-0.5 border border-slate-400 print:border-slate-800 shadow-2xs text-left ${itemStyle.bg || 'bg-white'}`}
-                                style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
-                              >
-                                <div className="flex items-center justify-between gap-1 leading-tight">
-                                  <span className="font-black text-[9px] sm:text-[9.5px] print:text-[7pt] text-slate-900 bg-white/90 print:bg-white px-1 rounded border border-slate-300 print:border-slate-700 uppercase">
-                                    {grp.branch}
-                                  </span>
-                                  {grp.room && (
-                                    <span className="text-[8.5px] sm:text-[9px] print:text-[6.5pt] font-black text-slate-800 print:text-black font-mono truncate">
-                                      {grp.room}
-                                    </span>
-                                  )}
-                                </div>
-                                <div className="font-black text-[9.5px] sm:text-[10px] print:text-[7.5pt] leading-tight mt-0.5 truncate text-slate-950 print:text-black">
-                                  {grp.subject}
-                                </div>
-                                <div className="text-[9px] sm:text-[9.5px] print:text-[7pt] font-black text-blue-900 print:text-black leading-tight mt-0.5">
-                                  {grp.faculty.join(', ')}
-                                </div>
-                              </div>
-                            );
-                          })}
+                        <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                          {groups.map((grp, gIdx) => (
+                            <div key={gIdx} className="leading-tight text-[10.5px] sm:text-[11px] print:text-[7pt] text-black font-sans">
+                              <span className="font-black text-black">{grp.branch}:</span>{' '}
+                              <span className="font-semibold text-black">{grp.subject}</span>
+                              {grp.faculty && grp.faculty.length > 0 && (
+                                <span className="font-black text-black"> [{grp.faculty.join(', ')}]</span>
+                              )}
+                              {grp.room && (
+                                <span className="text-[9.5px] print:text-[6.5pt] font-mono text-slate-700 print:text-black"> ({grp.room})</span>
+                              )}
+                            </div>
+                          ))}
                         </div>
                       </td>
                     );
