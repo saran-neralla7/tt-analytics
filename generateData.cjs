@@ -591,6 +591,36 @@ for (let r = 1; r < rowsFinal.length; r++) {
 
 console.log(`Pre-computed masterFacultyTimetables for ${Object.keys(masterFacultyTimetables).length} faculty from Timetable_Final`);
 
+// Calculate authoritative workload directly from Timetable_Final (ground-truth schedule)
+facultyList.forEach(fac => {
+  const sched = masterFacultyTimetables[fac.fullName] || {};
+  let schedTheory = 0;
+  let schedLab = 0;
+  let schedTut = 0;
+
+  for (const [day, daySlots] of Object.entries(sched)) {
+    for (const [slot, items] of Object.entries(daySlots)) {
+      items.forEach(it => {
+        const isLab = Boolean(it.isLab || (it.subject && it.subject.toLowerCase().includes('lab')));
+        const isTut = Boolean(it.subject && (it.subject.toLowerCase().includes('tut') || it.subject.toLowerCase().includes('tutorial')));
+        if (isLab) {
+          schedLab += 1;
+        } else if (isTut) {
+          schedTut += 1;
+        } else {
+          schedTheory += 1;
+        }
+      });
+    }
+  }
+
+  fac.theoryLoad = schedTheory;
+  fac.labLoad = schedLab;
+  fac.tutLoad = schedTut;
+  fac.totalLoad = schedTheory + schedLab + schedTut;
+});
+console.log('Synchronized workload for all faculty directly from Timetable_Final');
+
 // 5. Parse or Dynamically Generate Comprehensive Lab Data
 const dedicatedLabSheets = [
   'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
