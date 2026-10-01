@@ -215,15 +215,15 @@ th, td {
   }
 
   .dept-print-page thead tr {
-    height: 38px !important;
+    height: 32px !important;
   }
 
   .dept-print-page tbody {
-    height: calc(100% - 38px) !important;
+    height: calc(100% - 32px) !important;
   }
 
   .dept-print-page tbody tr {
-    height: 20% !important;
+    height: auto !important;
   }
 
   .dept-print-page th,

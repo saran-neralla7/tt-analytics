@@ -60,54 +60,192 @@ export default function DepartmentTimetableGrid({
     });
   }, [facultyList, timetableData, activeDaysList]);
 
-  // Aggregate schedule matrix by [day][slot] -> array of groups
-  const aggregatedSchedule = React.useMemo(() => {
-    const grid = {};
+  // Aggregate schedule matrix: single-hour sessions vs 2-hour merged blocks
+  const dayScheduleData = React.useMemo(() => {
+    const blocksConfig = [
+      { id: 'b1', s1: '09:00-10:00', s2: '10:00-11:00', timeRange: '09:00-11:00' },
+      { id: 'b2', s1: '11:15-12:15', s2: '12:15-01:15', timeRange: '11:15-01:15' },
+      { id: 'b3', s1: '02:15-03:15', s2: '03:15-04:15', timeRange: '02:15-04:15' }
+    ];
+
+    const result = {};
+
     activeDaysList.forEach(day => {
-      grid[day] = {};
-      periodSlots.forEach(slot => {
-        if (slot.type === 'break') return;
+      const singleRaw = {
+        '09:00-10:00': [],
+        '10:00-11:00': [],
+        '11:15-12:15': [],
+        '12:15-01:15': [],
+        '02:15-03:15': [],
+        '03:15-04:15': []
+      };
 
-        const rawItems = [];
-        const groupMap = new Map();
+      const doubleRaw = {
+        b1: [],
+        b2: [],
+        b3: []
+      };
 
-        deptFacultyMap.forEach(fac => {
-          const daySlots = fac.schedule[day] || {};
-          const items = daySlots[slot.time] || [];
+      deptFacultyMap.forEach(fac => {
+        const daySlots = fac.schedule[day] || {};
 
-          items.forEach(item => {
-            rawItems.push({ ...item, faculty: fac.fullName, facultyShort: fac.shortName });
+        blocksConfig.forEach(block => {
+          const items1 = [...(daySlots[block.s1] || [])];
+          const items2 = [...(daySlots[block.s2] || [])];
 
-            const groupKey = `${item.branch || ''}||${item.subject || ''}||${item.room || ''}`;
-            if (!groupMap.has(groupKey)) {
-              groupMap.set(groupKey, {
-                branch: item.branch,
-                subject: item.subject,
-                room: item.room,
-                isLab: item.isLab,
-                faculty: [],
-                facultyDetails: []
+          const matched1 = new Set();
+          const matched2 = new Set();
+
+          items1.forEach((it1, idx1) => {
+            const idx2 = items2.findIndex((it2, i2) => 
+              !matched2.has(i2) &&
+              it2.branch === it1.branch &&
+              it2.subject === it1.subject
+            );
+
+            if (idx2 !== -1) {
+              matched1.add(idx1);
+              matched2.add(idx2);
+              doubleRaw[block.id].push({
+                ...it1,
+                timeRange: block.timeRange,
+                faculty: fac.fullName,
+                facultyShort: fac.shortName
               });
             }
-            const grp = groupMap.get(groupKey);
-            if (!grp.facultyDetails.some(f => f.fullName === fac.fullName)) {
-              grp.faculty.push(fac.shortName || fac.fullName);
-              grp.facultyDetails.push({
-                fullName: fac.fullName,
-                shortName: fac.shortName
+          });
+
+          // Unmatched in s1 are single sessions
+          items1.forEach((it1, idx1) => {
+            if (!matched1.has(idx1)) {
+              singleRaw[block.s1].push({
+                ...it1,
+                timeRange: block.s1,
+                faculty: fac.fullName,
+                facultyShort: fac.shortName
+              });
+            }
+          });
+
+          // Unmatched in s2 are single sessions
+          items2.forEach((it2, idx2) => {
+            if (!matched2.has(idx2)) {
+              singleRaw[block.s2].push({
+                ...it2,
+                timeRange: block.s2,
+                faculty: fac.fullName,
+                facultyShort: fac.shortName
               });
             }
           });
         });
+      });
 
-        grid[day][slot.time] = {
+      // Group single sessions by branch/subject/room
+      const singleSlots = {};
+      Object.entries(singleRaw).forEach(([time, rawItems]) => {
+        const groupMap = new Map();
+        rawItems.forEach(item => {
+          const groupKey = `${item.branch || ''}||${item.subject || ''}||${item.room || ''}`;
+          if (!groupMap.has(groupKey)) {
+            groupMap.set(groupKey, {
+              branch: item.branch,
+              subject: item.subject,
+              room: item.room,
+              isLab: item.isLab,
+              facultyDetails: []
+            });
+          }
+          const grp = groupMap.get(groupKey);
+          if (!grp.facultyDetails.some(f => f.fullName === item.faculty)) {
+            grp.facultyDetails.push({
+              fullName: item.faculty,
+              shortName: item.facultyShort
+            });
+          }
+        });
+        singleSlots[time] = {
           rawItems,
           groups: Array.from(groupMap.values())
         };
       });
+
+      // Group double sessions by branch/subject/room
+      const doubleBlocks = {};
+      blocksConfig.forEach(block => {
+        const rawItems = doubleRaw[block.id];
+        const groupMap = new Map();
+        rawItems.forEach(item => {
+          const groupKey = `${item.branch || ''}||${item.subject || ''}||${item.room || ''}`;
+          if (!groupMap.has(groupKey)) {
+            groupMap.set(groupKey, {
+              branch: item.branch,
+              subject: item.subject,
+              room: item.room,
+              isLab: item.isLab,
+              facultyDetails: []
+            });
+          }
+          const grp = groupMap.get(groupKey);
+          if (!grp.facultyDetails.some(f => f.fullName === item.faculty)) {
+            grp.facultyDetails.push({
+              fullName: item.faculty,
+              shortName: item.facultyShort
+            });
+          }
+        });
+        doubleBlocks[block.id] = {
+          rawItems,
+          groups: Array.from(groupMap.values()),
+          timeRange: block.timeRange
+        };
+      });
+
+      const hasDouble = blocksConfig.some(b => doubleBlocks[b.id].groups.length > 0);
+
+      result[day] = {
+        singleSlots,
+        doubleBlocks,
+        hasDouble,
+        numRows: hasDouble ? 2 : 1
+      };
     });
-    return grid;
+
+    return result;
   }, [activeDaysList, deptFacultyMap]);
+
+  const totalTableRows = React.useMemo(() => {
+    return activeDaysList.reduce((acc, day) => {
+      const dayInfo = dayScheduleData[day];
+      return acc + (dayInfo ? dayInfo.numRows : 1);
+    }, 0);
+  }, [activeDaysList, dayScheduleData]);
+
+  const renderSessionEntry = (grp, gIdx) => (
+    <div key={gIdx} className="leading-tight text-[10px] sm:text-[10.5px] print:text-[6.8pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+      {grp.branch && (
+        <span className="font-black text-black uppercase">{grp.branch}: </span>
+      )}
+      <span className="font-bold text-black">{grp.subject}</span>
+      {grp.facultyDetails && grp.facultyDetails.length > 0 && (
+        <span className="text-black font-normal">
+          {' — '}
+          {grp.facultyDetails.map((f, fIdx) => (
+            <span key={fIdx}>
+              {fIdx > 0 ? ', ' : ''}
+              <span className="font-bold">{f.fullName}</span>
+              {f.shortName && f.shortName !== f.fullName && (
+                <span className="font-semibold text-slate-800 print:text-black"> ({f.shortName})</span>
+              )}
+            </span>
+          ))}
+        </span>
+      )}
+      {grp.room && (
+        <span className="text-[9px] print:text-[6.2pt] font-mono text-slate-700 print:text-black font-semibold"> [{grp.room}]</span>
+      )}
+    </div>
+  );
 
   return (
     <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card print:border-black print:rounded-none">
@@ -157,13 +295,13 @@ export default function DepartmentTimetableGrid({
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black">
           <thead>
             <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-black">
+              <th className="py-2 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-black">
                 Day
               </th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black ${
+                  className={`py-2 px-1 border-r border-gray-300 print:border-black ${
                     slot.type === 'break' 
                       ? 'bg-gray-100 print:bg-white text-black font-black w-16 print:w-12 text-center' 
                       : 'text-black'
@@ -183,90 +321,274 @@ export default function DepartmentTimetableGrid({
           </thead>
           <tbody className="divide-y-2 divide-slate-600 print:divide-black">
             {activeDaysList.map((day, dayIdx) => {
-              const dayGrid = aggregatedSchedule[day] || {};
+              const dayInfo = dayScheduleData[day] || {
+                singleSlots: {},
+                doubleBlocks: {},
+                hasDouble: false,
+                numRows: 1
+              };
+              const { singleSlots, doubleBlocks, hasDouble, numRows } = dayInfo;
 
               return (
-                <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
-                  {/* Day Header Column */}
-                  <td className="py-3 px-2 print:py-2 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans">
-                    {day}
-                  </td>
+                <React.Fragment key={day}>
+                  {/* Row 1: Single-Hour Faculty Sessions (Theory / 1-Hour) */}
+                  <tr className={`${hasDouble ? 'border-b border-slate-300 print:border-black' : 'border-b-2 border-slate-600 print:border-black'} hover:bg-gray-50/80 transition-colors`}>
+                    {/* Day Column spanning numRows */}
+                    <td 
+                      rowSpan={numRows}
+                      className="py-2 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans"
+                    >
+                      {day}
+                    </td>
 
-                  {/* Period Slots */}
-                  {periodSlots.map((slot) => {
-                    if (slot.type === 'break') {
-                      if (dayIdx === 0) {
+                    {/* 09:00 - 10:00 */}
+                    {(() => {
+                      const slotData = singleSlots['09:00-10:00'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td 
-                            key={slot.id} 
-                            rowSpan={activeDaysList.length}
-                            className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
-                          >
-                            <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
-                              {(slot.label || '').split('').map((char, cIdx) => (
-                                <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[14pt] font-black text-black">
-                                  {char}
-                                </span>
-                              ))}
-                            </div>
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
                           </td>
                         );
                       }
-                      return null; // Handled by rowSpan on first row
-                    }
-
-                    const slotData = dayGrid[slot.time] || { groups: [], rawItems: [] };
-                    const groups = slotData.groups;
-
-                    if (groups.length === 0) {
                       return (
-                        <td 
-                          key={slot.id} 
-                          className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b text-gray-400 font-mono text-center align-middle"
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '09:00-10:00', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
                         >
-                          <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
                         </td>
                       );
-                    }
+                    })()}
 
-                    return (
-                      <td
-                        key={slot.id}
-                        onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, slot.time, deptName)}
-                        className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                        title="Click to view details"
+                    {/* 10:00 - 11:00 */}
+                    {(() => {
+                      const slotData = singleSlots['10:00-11:00'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
+                        return (
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          </td>
+                        );
+                      }
+                      return (
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '10:00-11:00', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
+                        >
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
+                        </td>
+                      );
+                    })()}
+
+                    {/* BREAK: rendered only once spanning all table rows */}
+                    {dayIdx === 0 && (
+                      <td 
+                        rowSpan={totalTableRows}
+                        className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
                       >
-                        <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                          {groups.map((grp, gIdx) => (
-                            <div key={gIdx} className="leading-tight text-[10px] sm:text-[10.5px] print:text-[6.8pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
-                              {grp.branch && (
-                                <span className="font-black text-black uppercase">{grp.branch}: </span>
-                              )}
-                              <span className="font-bold text-black">{grp.subject}</span>
-                              {grp.facultyDetails && grp.facultyDetails.length > 0 && (
-                                <span className="text-black font-normal">
-                                  {' — '}
-                                  {grp.facultyDetails.map((f, fIdx) => (
-                                    <span key={fIdx}>
-                                      {fIdx > 0 ? ', ' : ''}
-                                      <span className="font-bold">{f.fullName}</span>
-                                      {f.shortName && f.shortName !== f.fullName && (
-                                        <span className="font-semibold text-slate-800 print:text-black"> ({f.shortName})</span>
-                                      )}
-                                    </span>
-                                  ))}
-                                </span>
-                              )}
-                              {grp.room && (
-                                <span className="text-[9px] print:text-[6.2pt] font-mono text-slate-700 print:text-black font-semibold"> [{grp.room}]</span>
-                              )}
-                            </div>
+                        <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
+                          {'BREAK'.split('').map((char, cIdx) => (
+                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[13pt] font-black text-black">
+                              {char}
+                            </span>
                           ))}
                         </div>
                       </td>
-                    );
-                  })}
-                </tr>
+                    )}
+
+                    {/* 11:15 - 12:15 */}
+                    {(() => {
+                      const slotData = singleSlots['11:15-12:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
+                        return (
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          </td>
+                        );
+                      }
+                      return (
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '11:15-12:15', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
+                        >
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
+                        </td>
+                      );
+                    })()}
+
+                    {/* 12:15 - 01:15 */}
+                    {(() => {
+                      const slotData = singleSlots['12:15-01:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
+                        return (
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          </td>
+                        );
+                      }
+                      return (
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '12:15-01:15', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
+                        >
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
+                        </td>
+                      );
+                    })()}
+
+                    {/* LUNCH: rendered only once spanning all table rows */}
+                    {dayIdx === 0 && (
+                      <td 
+                        rowSpan={totalTableRows}
+                        className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
+                      >
+                        <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
+                          {'LUNCH'.split('').map((char, cIdx) => (
+                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[13pt] font-black text-black">
+                              {char}
+                            </span>
+                          ))}
+                        </div>
+                      </td>
+                    )}
+
+                    {/* 02:15 - 03:15 */}
+                    {(() => {
+                      const slotData = singleSlots['02:15-03:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
+                        return (
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          </td>
+                        );
+                      }
+                      return (
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '02:15-03:15', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
+                        >
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
+                        </td>
+                      );
+                    })()}
+
+                    {/* 03:15 - 04:15 */}
+                    {(() => {
+                      const slotData = singleSlots['03:15-04:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
+                        return (
+                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <span className="text-gray-300 font-light select-none text-xs">-</span>
+                          </td>
+                        );
+                      }
+                      return (
+                        <td
+                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '03:15-04:15', deptName)}
+                          className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          title="Click to view details"
+                        >
+                          <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                            {slotData.groups.map(renderSessionEntry)}
+                          </div>
+                        </td>
+                      );
+                    })()}
+                  </tr>
+
+                  {/* Row 2: Merged 2-Hour Faculty Sessions (Labs / 2-Hour Practicals) */}
+                  {hasDouble && (
+                    <tr className="border-b-2 border-slate-600 print:border-b-2 print:border-black hover:bg-gray-50/80 transition-colors">
+                      {/* Block 1: 09:00 - 11:00 (colSpan=2) */}
+                      {(() => {
+                        const blockData = doubleBlocks['b1'] || { groups: [], rawItems: [] };
+                        if (blockData.groups.length === 0) {
+                          return (
+                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                              <span className="text-gray-300 font-light select-none text-xs">-</span>
+                            </td>
+                          );
+                        }
+                        return (
+                          <td
+                            colSpan={2}
+                            onClick={() => onSlotClick && onSlotClick(blockData.rawItems, day, '09:00-11:00', deptName)}
+                            className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            title="Click to view details"
+                          >
+                            <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                              {blockData.groups.map(renderSessionEntry)}
+                            </div>
+                          </td>
+                        );
+                      })()}
+
+                      {/* Block 2: 11:15 - 01:15 (colSpan=2) */}
+                      {(() => {
+                        const blockData = doubleBlocks['b2'] || { groups: [], rawItems: [] };
+                        if (blockData.groups.length === 0) {
+                          return (
+                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                              <span className="text-gray-300 font-light select-none text-xs">-</span>
+                            </td>
+                          );
+                        }
+                        return (
+                          <td
+                            colSpan={2}
+                            onClick={() => onSlotClick && onSlotClick(blockData.rawItems, day, '11:15-01:15', deptName)}
+                            className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            title="Click to view details"
+                          >
+                            <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                              {blockData.groups.map(renderSessionEntry)}
+                            </div>
+                          </td>
+                        );
+                      })()}
+
+                      {/* Block 3: 02:15 - 04:15 (colSpan=2) */}
+                      {(() => {
+                        const blockData = doubleBlocks['b3'] || { groups: [], rawItems: [] };
+                        if (blockData.groups.length === 0) {
+                          return (
+                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                              <span className="text-gray-300 font-light select-none text-xs">-</span>
+                            </td>
+                          );
+                        }
+                        return (
+                          <td
+                            colSpan={2}
+                            onClick={() => onSlotClick && onSlotClick(blockData.rawItems, day, '02:15-04:15', deptName)}
+                            className="py-1 px-1.5 border-r border-gray-300 print:border-black align-top text-left transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            title="Click to view details"
+                          >
+                            <div className="flex flex-col h-full w-full justify-start space-y-0.5">
+                              {blockData.groups.map(renderSessionEntry)}
+                            </div>
+                          </td>
+                        );
+                      })()}
+                    </tr>
+                  )}
+                </React.Fragment>
               );
             })}
           </tbody>
