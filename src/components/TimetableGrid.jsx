@@ -165,7 +165,7 @@ export default function TimetableGrid({
                   key={slot.id} 
                   className={`py-2.5 px-1 border-r border-gray-300 print:border-black ${
                     slot.type === 'break' 
-                      ? 'bg-amber-100/80 text-amber-950 font-black w-14 print:w-10 text-center' 
+                      ? 'bg-amber-100/80 text-amber-950 font-black w-16 print:w-12 text-center' 
                       : 'text-slate-950'
                   }`}
                 >
@@ -210,11 +210,11 @@ export default function TimetableGrid({
                           <td 
                             key={slot.id} 
                             rowSpan={visibleDays.length}
-                            className="py-2 px-1 bg-amber-50/80 text-amber-950 font-black text-[10px] print:text-[8pt] border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
+                            className="py-2 px-1 bg-amber-50/80 text-amber-950 font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
                           >
-                            <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase">
+                            <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
                               {(slot.label || '').split('').map((char, cIdx) => (
-                                <span key={cIdx}>{char}</span>
+                                <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[15pt] font-black">{char}</span>
                               ))}
                             </div>
                           </td>
