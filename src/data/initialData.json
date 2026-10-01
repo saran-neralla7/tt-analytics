@@ -626,8 +626,8 @@
       "TUE": {
         "09:00-10:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. D Manasa",
+            "subject": "ESAM",
+            "faculty": "Mr. S Ashok",
             "room": "E-409",
             "isLab": false
           }
@@ -812,8 +812,8 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "ESAM",
-            "faculty": "Mr. S Ashok",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. D Manasa",
             "room": "E-409",
             "isLab": false
           }
@@ -1151,14 +1151,6 @@
             "isLab": false
           }
         ],
-        "11:15-12:15": [
-          {
-            "subject": "COM",
-            "faculty": "Dr. KV Padmavathi, Dr. Rani Nanda",
-            "room": "G-404",
-            "isLab": false
-          }
-        ],
         "12:15-01:15": [
           {
             "subject": "CAL & LA",
@@ -1178,6 +1170,14 @@
             "subject": "COUNSELLING / LIBRARY",
             "faculty": "",
             "room": "",
+            "isLab": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "subject": "COM",
+            "faculty": "Dr. KV Padmavathi, Dr. Rani Nanda",
+            "room": "G-404",
             "isLab": false
           }
         ]
@@ -2329,8 +2329,8 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya",
+            "subject": "ESAM",
+            "faculty": "Dr. B Santosh Kumar",
             "room": "E-412",
             "isLab": false
           }
@@ -2390,8 +2390,8 @@
       "THU": {
         "09:00-10:00": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. B Santosh Kumar",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya",
             "room": "E-412",
             "isLab": false
           }
@@ -3501,7 +3501,7 @@
           },
           {
             "subject": "AITA LAB",
-            "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Dr. B Santosh Kumar",
+            "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Mr. PSS Appalacharyulu",
             "room": "COMP. LAB-2",
             "isLab": true
           }
@@ -3516,7 +3516,7 @@
           },
           {
             "subject": "AITA LAB",
-            "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Dr. B Santosh Kumar",
+            "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Mr. PSS Appalacharyulu",
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
@@ -3565,7 +3565,7 @@
         "09:00-10:00": [
           {
             "subject": "AITA LAB",
-            "faculty": "Mr. K AyyaRaju, Dr. KV Padmavathi, Dr. B Rajesh Babu",
+            "faculty": "Mr. K AyyaRaju, Dr. NSSV Raja Rao, Dr. B Rajesh Babu",
             "room": "COMP. LAB-2",
             "isLab": true
           },
@@ -3579,7 +3579,7 @@
         "10:00-11:00": [
           {
             "subject": "AITA LAB",
-            "faculty": "Mr. K AyyaRaju, Dr. KV Padmavathi, Dr. B Rajesh Babu",
+            "faculty": "Mr. K AyyaRaju, Dr. NSSV Raja Rao, Dr. B Rajesh Babu",
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
@@ -4623,8 +4623,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "VBR\nVA\nBSK\nKAR\nKVP\nBRB",
-        "facultyFullName": "Mr. V Bhaskar Rao\nDr. V Adinarayana\nDr. B Santosh Kumar\nMr. K AyyaRaju\nDr. KV Padmavathi\nDr. B Rajesh Babu",
+        "facultyShort": "VBR\nVA\nPSSA\nKAR\nNSSVRR\nBRB",
+        "facultyFullName": "Mr. V Bhaskar Rao\nDr. V Adinarayana\nMr. PSS Appalacharyulu\nMr. K AyyaRaju\nDr. NSSV Raja Rao\nDr. B Rajesh Babu",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -8583,9 +8583,9 @@
             },
             {
               "subject": "AITA LAB",
-              "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Dr. B Santosh Kumar",
+              "faculty": "Mr. V Bhaskar Rao, Dr. V Adinarayana, Mr. PSS Appalacharyulu",
               "room": "COMP. LAB-2",
-              "raw": "AITA LAB\nVBR, VA, BSK\nCOMP. LAB-2"
+              "raw": "AITA LAB\nVBR, VA, PSSA\nCOMP. LAB-2"
             }
           ]
         },
@@ -8593,9 +8593,9 @@
           "09:00-11:00": [
             {
               "subject": "AITA LAB",
-              "faculty": "Mr. K AyyaRaju, Dr. KV Padmavathi, Dr. B Rajesh Babu",
+              "faculty": "Mr. K AyyaRaju, Dr. NSSV Raja Rao, Dr. B Rajesh Babu",
               "room": "COMP. LAB-2",
-              "raw": "AITA LAB\nKAR, KVP, BRB\nCOMP. LAB-2"
+              "raw": "AITA LAB\nKAR, NSSVRR, BRB\nCOMP. LAB-2"
             },
             {
               "subject": "FAI & ML LAB",
@@ -10836,27 +10836,11 @@
       "MON": {
         "09:00-10:00": [
           {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": false
-          },
-          {
             "branch": "ECE-1",
             "subject": "ESAM",
             "room": "G-302",
             "isLab": false,
             "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true
           }
         ],
         "02:15-03:15": [
@@ -10898,6 +10882,15 @@
           }
         ],
         "09:00-10:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "ESAM",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
+        "03:15-04:15": [
           {
             "branch": "ECE-3",
             "subject": "ESAM",
@@ -10951,13 +10944,6 @@
             "branch": "ECE-1",
             "subject": "ESAM",
             "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "ECE-3",
-            "subject": "ESAM",
-            "room": "E-412",
             "isLab": false,
             "isContinued": false
           }
@@ -11339,7 +11325,7 @@
             "isContinued": false
           }
         ],
-        "11:15-12:15": [
+        "03:15-04:15": [
           {
             "branch": "MECH",
             "subject": "COM",
@@ -11411,6 +11397,15 @@
             "branch": "ECE-2",
             "subject": "ESAM",
             "room": "G-403",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "EEE",
+            "subject": "ESAM",
+            "room": "E-409",
             "isLab": false,
             "isContinued": false
           }
@@ -11499,13 +11494,6 @@
             "subject": "ENGG. CHEM LAB",
             "room": "CHEM. LAB.",
             "isLab": true,
-            "isContinued": false
-          },
-          {
-            "branch": "EEE",
-            "subject": "ESAM",
-            "room": "E-409",
-            "isLab": false,
             "isContinued": false
           }
         ],
@@ -11708,13 +11696,6 @@
         ],
         "09:00-10:00": [
           {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": false
-          },
-          {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
             "room": "GVPCE CHEM. LAB.",
@@ -11723,13 +11704,6 @@
           }
         ],
         "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true
-          },
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
@@ -11787,13 +11761,6 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false
-          },
-          {
-            "branch": "MECH",
-            "subject": "COM",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false
           }
         ],
         "12:15-01:15": [
@@ -11803,6 +11770,15 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "MECH",
+            "subject": "COM",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
           }
         ]
       }
@@ -15658,7 +15634,26 @@
           }
         ]
       },
-      "TUE": {},
+      "TUE": {
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": true
+          }
+        ]
+      },
       "WED": {
         "12:15-01:15": [
           {
@@ -16015,6 +16010,24 @@
             "branch": "CSE-1",
             "subject": "ENGG. PHY. LAB",
             "room": "PHY LAB",
+            "isLab": true,
+            "isContinued": true
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
           }
@@ -18645,15 +18658,6 @@
             "isContinued": false
           }
         ],
-        "09:00-10:00": [
-          {
-            "branch": "EEE",
-            "subject": "SUS. ENGG.",
-            "room": "E-409",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "MECH",
@@ -18695,7 +18699,17 @@
           }
         ]
       },
-      "FRI": {}
+      "FRI": {
+        "11:15-12:15": [
+          {
+            "branch": "EEE",
+            "subject": "SUS. ENGG.",
+            "room": "E-409",
+            "isLab": false,
+            "isContinued": false
+          }
+        ]
+      }
     },
     "Dr. B Vidya": {
       "MON": {
@@ -18744,15 +18758,6 @@
             "isContinued": false
           }
         ],
-        "03:15-04:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "SUS. ENGG.",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "MECH-ROBOTICS",
@@ -18780,6 +18785,15 @@
             "branch": "ECE-1",
             "subject": "SUS. ENGG.",
             "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "SUS. ENGG.",
+            "room": "E-412",
             "isLab": false,
             "isContinued": false
           }
