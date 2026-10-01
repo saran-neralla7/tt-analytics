@@ -13,18 +13,52 @@ export default function DepartmentTimetableGrid({
 }) {
   const activeDaysList = getActiveDays(timetableData);
 
-  // Map each faculty's schedule from masterFacultyTimetables or dynamic fallback
+  // Map each faculty's schedule from masterFacultyTimetables with dynamic fallback reconstruction
   const deptFacultyMap = React.useMemo(() => {
     return facultyList.map(f => {
-      const short = f.shortName || getFacultyShortName(f.fullName);
-      const schedule = (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[f.fullName]) || {};
+      const facFull = f.fullName;
+      const short = f.shortName || getFacultyShortName(facFull);
+      let schedule = (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[facFull]) || {};
+
+      // Fallback: If faculty schedule is empty in masterFacultyTimetables, scan timetableData directly
+      const hasEntries = Object.values(schedule).some(d => Object.keys(d || {}).length > 0);
+      if (!hasEntries && timetableData) {
+        schedule = {};
+        activeDaysList.forEach(d => schedule[d] = {});
+
+        const matchesFaculty = (cell) => {
+          if (!cell || !cell.faculty) return false;
+          if (cell.faculty.includes(facFull)) return true;
+          if (short && new RegExp(`\\b${short}\\b`, 'i').test(cell.faculty)) return true;
+          return false;
+        };
+
+        Object.entries(timetableData).forEach(([branchKey, branchSched]) => {
+          Object.entries(branchSched || {}).forEach(([dayKey, daySched]) => {
+            Object.entries(daySched || {}).forEach(([slotTime, rawCell]) => {
+              const items = Array.isArray(rawCell) ? rawCell : rawCell ? [rawCell] : [];
+              items.forEach(cell => {
+                if (matchesFaculty(cell)) {
+                  if (!schedule[dayKey]) schedule[dayKey] = {};
+                  if (!schedule[dayKey][slotTime]) schedule[dayKey][slotTime] = [];
+                  schedule[dayKey][slotTime].push({
+                    ...cell,
+                    branch: branchKey
+                  });
+                }
+              });
+            });
+          });
+        });
+      }
+
       return {
-        fullName: f.fullName,
+        fullName: facFull,
         shortName: short,
         schedule
       };
     });
-  }, [facultyList]);
+  }, [facultyList, timetableData, activeDaysList]);
 
   // Aggregate schedule matrix by [day][slot] -> array of groups
   const aggregatedSchedule = React.useMemo(() => {
@@ -203,23 +237,23 @@ export default function DepartmentTimetableGrid({
                             return (
                               <div
                                 key={gIdx}
-                                className={`rounded px-1.5 py-0.5 border border-slate-300 print:border-slate-500 shadow-2xs text-left ${itemStyle.bg || 'bg-white'}`}
+                                className={`rounded px-1.5 py-0.5 border border-slate-400 print:border-slate-800 shadow-2xs text-left ${itemStyle.bg || 'bg-white'}`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
                                 <div className="flex items-center justify-between gap-1 leading-tight">
-                                  <span className="font-extrabold text-[9px] sm:text-[9.5px] print:text-[7pt] text-slate-900 bg-white/80 px-1 rounded border border-slate-200 uppercase">
+                                  <span className="font-black text-[9px] sm:text-[9.5px] print:text-[7pt] text-slate-900 bg-white/90 print:bg-white px-1 rounded border border-slate-300 print:border-slate-700 uppercase">
                                     {grp.branch}
                                   </span>
                                   {grp.room && (
-                                    <span className="text-[8.5px] sm:text-[9px] print:text-[6.5pt] font-bold text-slate-700 font-mono truncate">
+                                    <span className="text-[8.5px] sm:text-[9px] print:text-[6.5pt] font-black text-slate-800 print:text-black font-mono truncate">
                                       {grp.room}
                                     </span>
                                   )}
                                 </div>
-                                <div className={`font-black text-[9.5px] sm:text-[10px] print:text-[7.5pt] leading-tight mt-0.5 truncate ${itemStyle.text || 'text-slate-900'}`}>
+                                <div className="font-black text-[9.5px] sm:text-[10px] print:text-[7.5pt] leading-tight mt-0.5 truncate text-slate-950 print:text-black">
                                   {grp.subject}
                                 </div>
-                                <div className="text-[9px] sm:text-[9.5px] print:text-[7pt] font-black text-blue-900 leading-tight mt-0.5">
+                                <div className="text-[9px] sm:text-[9.5px] print:text-[7pt] font-black text-blue-900 print:text-black leading-tight mt-0.5">
                                   {grp.faculty.join(', ')}
                                 </div>
                               </div>

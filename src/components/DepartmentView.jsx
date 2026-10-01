@@ -141,6 +141,11 @@ export default function DepartmentView({
         </div>
       </div>
 
+      {/* Print Instructions Helper Banner */}
+      <div className="no-print mb-4 px-4 py-2 bg-blue-50 border border-blue-200 rounded-lg flex items-center justify-between text-xs text-blue-900 font-medium">
+        <span>💡 <strong>Print Tip:</strong> Ensure <strong>Landscape</strong> orientation is selected in your browser print dialog. Both <strong>A4</strong> and <strong>A3</strong> paper sizes fit all sessions cleanly without clipping.</span>
+      </div>
+
       {/* RENDER TIMETABLES */}
       {viewAll ? (
         /* ALL DEPARTMENTS PRINT CONTAINER */
