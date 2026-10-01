@@ -2866,6 +2866,14 @@
             "isLab": false
           }
         ],
+        "11:15-12:15": [
+          {
+            "subject": "FWD",
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "room": "G-305",
+            "isLab": false
+          }
+        ],
         "12:15-01:15": [
           {
             "subject": "ENV. STD.",
@@ -2970,14 +2978,6 @@
         ]
       },
       "WED": {
-        "09:00-10:00": [
-          {
-            "subject": "FWD",
-            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
-            "room": "G-305",
-            "isLab": false
-          }
-        ],
         "10:00-11:00": [
           {
             "subject": "CAL & LA",
@@ -3737,14 +3737,6 @@
             "isContinued": true
           }
         ],
-        "02:15-03:15": [
-          {
-            "subject": "PSUC",
-            "faculty": "Mr. M Anil, Dr. D Chandravathi",
-            "room": "G-303",
-            "isLab": false
-          }
-        ],
         "03:15-04:15": [
           {
             "subject": "YOGA / SPORTS",
@@ -3765,6 +3757,14 @@
           {
             "subject": "FAI & ML",
             "faculty": "Ms. S Laxmi Aparna, Ms. K Swathi",
+            "room": "G-303",
+            "isLab": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "subject": "PSUC",
+            "faculty": "Mr. M Anil, Dr. D Chandravathi",
             "room": "G-303",
             "isLab": false
           }
@@ -12584,13 +12584,6 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false
-          },
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PSUC",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false
           }
         ],
         "03:15-04:15": [
@@ -12645,6 +12638,15 @@
             "branch": "CSE(AI&ML)-1",
             "subject": "PSUC",
             "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PSUC",
+            "room": "G-303",
             "isLab": false,
             "isContinued": false
           }
@@ -13195,6 +13197,15 @@
     },
     "Mr. M Anil": {
       "MON": {
+        "11:15-12:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "FWD",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -13235,15 +13246,6 @@
         ]
       },
       "WED": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE-2",
-            "subject": "FWD",
-            "room": "G-305",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "03:15-04:15": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -13288,15 +13290,6 @@
             "isLab": false,
             "isContinued": false
           }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PSUC",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false
-          }
         ]
       },
       "FRI": {
@@ -13305,6 +13298,13 @@
             "branch": "CSE-2",
             "subject": "FWD",
             "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PSUC",
+            "room": "G-303",
             "isLab": false,
             "isContinued": false
           }
@@ -16406,6 +16406,22 @@
     },
     "Mr. S Vinod Manikantha": {
       "MON": {
+        "11:15-12:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "FWD",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          },
+          {
+            "branch": "MECH",
+            "subject": "PSUC",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "CSE-2",
@@ -16422,15 +16438,6 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "MECH",
-            "subject": "PSUC",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false
           }
         ]
       },
@@ -16480,15 +16487,6 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
-          }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE-2",
-            "subject": "FWD",
-            "room": "G-305",
-            "isLab": false,
-            "isContinued": false
           }
         ]
       },
