@@ -115,20 +115,20 @@ export default function TimetableGrid({
   return (
     <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 print:my-0 print:border-black print:rounded-none">
       {/* Official University Header - ONLY FOR PRINT! Exact Match to Photo */}
-      <div className="print-only w-full py-1.5 px-3 border-b-2 border-black bg-white mb-1.5">
-        <div className="flex items-center justify-between gap-3">
-          {/* Official Crest Logo */}
-          <div className="w-16 flex-shrink-0 flex items-center justify-start">
+      <div className="print-only w-full py-1.5 px-4 border-b-2 border-black bg-white mb-2">
+        <div className="flex items-center justify-between gap-4">
+          {/* Official Crest Logo - Larger as requested */}
+          <div className="w-20 flex-shrink-0 flex items-center justify-start">
             <img 
               src={universityInfo.logo || '/gvpihlr.png'} 
               alt="GVPIHLR Logo" 
-              className="h-14 w-14 object-contain"
+              className="h-20 w-20 object-contain drop-shadow-xs"
             />
           </div>
 
           {/* Institution Title & Details */}
           <div className="text-center flex-1">
-            <h1 className="text-[12pt] font-black uppercase font-serif tracking-tight text-black leading-tight">
+            <h1 className="text-[12.5pt] font-black uppercase font-serif tracking-tight text-black leading-tight">
               {universityInfo.name}
             </h1>
             <p className="text-[7.5pt] text-black font-semibold leading-tight mt-0.5">
@@ -142,18 +142,14 @@ export default function TimetableGrid({
                 TENTATIVE TIME TABLE FOR THE ACADEMIC YEAR {universityInfo.academicYear}
               </span>
             </div>
-            <div className="text-[9pt] font-black text-blue-950 font-sans tracking-tight">
+            <div className="text-[9.5pt] font-black text-blue-950 font-sans tracking-tight">
               {universityInfo.semester || 'B.Tech 1st Sem'} — {branchInfo?.fullName || selectedBranch} 
               {branchLegend?.[0]?.room ? ` (Classroom: ${branchLegend[0].room})` : ''}
             </div>
           </div>
 
-          {/* Department badge for symmetry and quick reference */}
-          <div className="w-16 flex-shrink-0 flex items-center justify-end">
-            <span className="text-[8.5pt] font-black font-mono border-2 border-black px-2 py-0.5 rounded">
-              {selectedBranch}
-            </span>
-          </div>
+          {/* Empty spacer for perfect center symmetry (right box with branch name removed) */}
+          <div className="w-20 flex-shrink-0"></div>
         </div>
       </div>
 
@@ -162,7 +158,7 @@ export default function TimetableGrid({
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black">
           <thead>
             <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9pt] font-black text-slate-900">Day</th>
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-slate-900">Day</th>
               <th className="py-2.5 px-1 border-r-2 border-slate-500 print:border-black w-24 sm:w-28 text-xs sm:text-sm font-black text-slate-900 print:hidden">Branch</th>
               {periodSlots.map((slot) => (
                 <th 
@@ -192,10 +188,9 @@ export default function TimetableGrid({
 
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
-                  {/* Day Header Column */}
-                  <td className="py-3 px-2 print:py-2 print:px-1 font-extrabold text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[9.5pt] print:font-bold">
-                    <span className="no-print">{day}</span>
-                    <span className="print-only tracking-wider font-serif">{day === 'MON' ? 'MONDAY' : day === 'TUE' ? 'TUESDAY' : day === 'WED' ? 'WEDNESDAY' : day === 'THU' ? 'THURSDAY' : day === 'FRI' ? 'FRIDAY' : day}</span>
+                  {/* Day Header Column - Short name MON, TUE, WED, THU, FRI */}
+                  <td className="py-3 px-2 print:py-2 print:px-1 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans">
+                    {day}
                   </td>
                   
                   {/* Branch Column - Hidden in print as Department is in Header */}
