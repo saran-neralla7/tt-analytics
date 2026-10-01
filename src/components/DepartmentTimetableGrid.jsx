@@ -229,7 +229,7 @@ export default function DepartmentTimetableGrid({
     return (
       <div 
         key={gIdx} 
-        className="leading-tight text-[10px] sm:text-[10.5px] print:text-[7pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none"
+        className="leading-tight text-[10.5px] sm:text-[11px] print:text-[8.2pt] print:leading-[1.2] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none"
         title={grp.facultyDetails?.map(f => `${f.fullName} (${f.shortName})`).join(', ')}
       >
         {grp.branch && (
@@ -240,7 +240,7 @@ export default function DepartmentTimetableGrid({
           <span className="font-black text-black"> [{facultyShorts.join(', ')}]</span>
         )}
         {grp.room && (
-          <span className="text-[9px] print:text-[6.5pt] font-mono text-slate-700 print:text-black font-semibold"> ({grp.room})</span>
+          <span className="text-[9.5px] print:text-[7.6pt] font-mono text-slate-700 print:text-black font-bold"> ({grp.room})</span>
         )}
       </div>
     );
@@ -276,10 +276,10 @@ export default function DepartmentTimetableGrid({
                 TENTATIVE TIME TABLE FOR THE ACADEMIC YEAR {universityInfo.academicYear || '2026-2027'}
               </span>
             </div>
-            <div className="text-[9.5pt] font-black text-blue-950 font-sans tracking-tight">
+            <div className="text-[10pt] font-black text-blue-950 font-sans tracking-tight">
               DEPARTMENT OF {deptName.toUpperCase()} — WEEKLY FACULTY SCHEDULE
             </div>
-            <div className="text-[7.5pt] font-extrabold text-slate-700 mt-0.5 print:text-[7pt]">
+            <div className="text-[7.5pt] font-extrabold text-slate-700 mt-0.5 print:text-[8pt] print:text-black">
               Faculty ({facultyList.length}):{' '}
               {facultyList.length <= 10
                 ? facultyList.map(f => `${f.shortName || getFacultyShortName(f.fullName)}: ${f.fullName}`).join(' • ')
@@ -298,23 +298,23 @@ export default function DepartmentTimetableGrid({
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black">
           <thead>
             <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
-              <th className="py-2 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-black">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[10pt] font-black text-black">
                 Day
               </th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2 px-1 border-r border-gray-300 print:border-black ${
+                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black ${
                     slot.type === 'break' 
                       ? 'bg-gray-100 print:bg-white text-black font-black w-16 print:w-12 text-center' 
                       : 'text-black'
                   }`}
                 >
-                  <span className="font-black text-black text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                  <span className="font-black text-black text-xs sm:text-[13px] print:text-[9.5pt] tracking-tight block">
                     {slot.time}
                   </span>
                   {slot.label && (
-                    <div className="text-[10px] sm:text-[10.5px] print:text-[7.5pt] tracking-normal text-slate-800 print:text-black font-black mt-0.5 print:hidden">
+                    <div className="text-[10px] sm:text-[10.5px] print:text-[8pt] tracking-normal text-slate-800 print:text-black font-black mt-0.5 print:hidden">
                       {slot.label}
                     </div>
                   )}
@@ -339,7 +339,7 @@ export default function DepartmentTimetableGrid({
                     {/* Day Column spanning numRows */}
                     <td 
                       rowSpan={numRows}
-                      className="py-2 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans"
+                      className="py-2 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[11pt] font-sans"
                     >
                       {day}
                     </td>
@@ -398,7 +398,7 @@ export default function DepartmentTimetableGrid({
                       >
                         <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
                           {'BREAK'.split('').map((char, cIdx) => (
-                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[13pt] font-black text-black">
+                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[14pt] font-black text-black">
                               {char}
                             </span>
                           ))}
@@ -460,7 +460,7 @@ export default function DepartmentTimetableGrid({
                       >
                         <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
                           {'LUNCH'.split('').map((char, cIdx) => (
-                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[13pt] font-black text-black">
+                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[14pt] font-black text-black">
                               {char}
                             </span>
                           ))}
