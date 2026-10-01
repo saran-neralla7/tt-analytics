@@ -85,12 +85,17 @@ export default function DepartmentTimetableGrid({
                 subject: item.subject,
                 room: item.room,
                 isLab: item.isLab,
-                faculty: []
+                faculty: [],
+                facultyDetails: []
               });
             }
             const grp = groupMap.get(groupKey);
-            if (!grp.faculty.includes(fac.shortName)) {
-              grp.faculty.push(fac.shortName);
+            if (!grp.facultyDetails.some(f => f.fullName === fac.fullName)) {
+              grp.faculty.push(fac.shortName || fac.fullName);
+              grp.facultyDetails.push({
+                fullName: fac.fullName,
+                shortName: fac.shortName
+              });
             }
           });
         });
@@ -233,14 +238,27 @@ export default function DepartmentTimetableGrid({
                       >
                         <div className="flex flex-col h-full w-full justify-start space-y-0.5">
                           {groups.map((grp, gIdx) => (
-                            <div key={gIdx} className="leading-tight text-[10.5px] sm:text-[11px] print:text-[7pt] text-black font-sans">
-                              <span className="font-black text-black">{grp.branch}:</span>{' '}
-                              <span className="font-semibold text-black">{grp.subject}</span>
-                              {grp.faculty && grp.faculty.length > 0 && (
-                                <span className="font-black text-black"> [{grp.faculty.join(', ')}]</span>
+                            <div key={gIdx} className="leading-tight text-[10px] sm:text-[10.5px] print:text-[6.8pt] print:leading-[1.15] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                              {grp.branch && (
+                                <span className="font-black text-black uppercase">{grp.branch}: </span>
+                              )}
+                              <span className="font-bold text-black">{grp.subject}</span>
+                              {grp.facultyDetails && grp.facultyDetails.length > 0 && (
+                                <span className="text-black font-normal">
+                                  {' — '}
+                                  {grp.facultyDetails.map((f, fIdx) => (
+                                    <span key={fIdx}>
+                                      {fIdx > 0 ? ', ' : ''}
+                                      <span className="font-bold">{f.fullName}</span>
+                                      {f.shortName && f.shortName !== f.fullName && (
+                                        <span className="font-semibold text-slate-800 print:text-black"> ({f.shortName})</span>
+                                      )}
+                                    </span>
+                                  ))}
+                                </span>
                               )}
                               {grp.room && (
-                                <span className="text-[9.5px] print:text-[6.5pt] font-mono text-slate-700 print:text-black"> ({grp.room})</span>
+                                <span className="text-[9px] print:text-[6.2pt] font-mono text-slate-700 print:text-black font-semibold"> [{grp.room}]</span>
                               )}
                             </div>
                           ))}
