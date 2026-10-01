@@ -41,6 +41,7 @@ export const preferredBranchOrder = [
 export default function MasterView({ timetableData, branchLegends = {}, universityInfo, facultyList = [], onSlotClick }) {
   const rawBranchKeys = Object.keys(timetableData);
   const [selectedDay, setSelectedDay] = useState('ALL');
+  const [useShortNames, setUseShortNames] = useState(false);
 
   // Sort branches matching official order
   const availableBranchKeys = useMemo(() => {
@@ -174,7 +175,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
             </button>
           ))}
         </div>
-        {currentDay !== 'ALL' && (
+        {currentDay !== 'ALL' ? (
           <div className="text-xs font-bold text-blue-900 bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200 flex items-center gap-2">
             <span>Unified Master Schedule for <strong>{selectedDayLabel}</strong> ({availableBranchKeys.length} Departments)</span>
             <button 
@@ -183,6 +184,27 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
             >
               Reset to All Days
             </button>
+          </div>
+        ) : (
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-1.5">
+            <button
+              onClick={() => window.print()}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
+              title="Print all departments, each strictly formatted to 1 single landscape page"
+            >
+              <Printer className="w-4 h-4 text-blue-200" />
+              Print All Departments (1 Page Each)
+            </button>
+
+            <label className="inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 cursor-pointer shadow-2xs hover:bg-slate-50 transition-colors select-none">
+              <input 
+                type="checkbox" 
+                checked={useShortNames} 
+                onChange={(e) => setUseShortNames(e.target.checked)}
+                className="rounded text-blue-600 focus:ring-blue-500 w-3.5 h-3.5 cursor-pointer"
+              />
+              <span>Use Faculty Short Names (Initials)</span>
+            </label>
           </div>
         )}
       </div>
@@ -499,6 +521,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                   universityInfo={universityInfo}
                   onSlotClick={onSlotClick}
                   selectedDay="ALL"
+                  useShortNames={useShortNames}
                 />
               </div>
             );

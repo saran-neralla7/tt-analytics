@@ -57,7 +57,7 @@ th, td {
 @media print {
   @page {
     size: A4 landscape;
-    margin: 6mm 8mm;
+    margin: 4mm 6mm;
   }
 
   html, body {
@@ -85,7 +85,7 @@ th, td {
     margin: 0 !important;
   }
 
-  /* MASTER TIMETABLE: Force each branch onto its own single printed page */
+  /* MASTER TIMETABLE: Force each branch strictly onto its own single printed page */
   .master-print-container {
     display: block !important;
   }
@@ -98,11 +98,39 @@ th, td {
     box-sizing: border-box !important;
     padding: 0 !important;
     margin: 0 !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    overflow: hidden !important;
   }
 
   .branch-print-page:last-child {
     page-break-after: auto !important;
     break-after: auto !important;
+  }
+
+  .branch-print-page .timetable-card {
+    border: 1.5px solid #000 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+
+  .branch-print-page table {
+    border: 1.5px solid #000 !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+
+  .branch-print-page th,
+  .branch-print-page td {
+    border-color: #000 !important;
   }
 
   /* INDIVIDUAL FACULTY PRINT STYLING: NO COLORS, B&W SOLID BLACK BORDERS, COMPACT 4 PER PAGE */
