@@ -216,11 +216,11 @@ th, td {
   }
 
   .dept-print-page thead tr {
-    height: 38px !important;
+    height: 42px !important;
   }
 
   .dept-print-page tbody {
-    height: calc(100% - 38px) !important;
+    height: calc(100% - 42px) !important;
   }
 
   .dept-print-page tbody tr {

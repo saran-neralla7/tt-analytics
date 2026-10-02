@@ -377,67 +377,71 @@ export default function DepartmentTimetableGrid({
           <thead>
             <tr className="bg-gray-100 print:bg-white text-gray-800 font-bold border-b-2 border-slate-900 print:border-black uppercase tracking-wider">
               {/* DAY Header */}
-              <th className="py-3 px-2 border-r border-gray-300 print:border-black w-20 sm:w-24 print:w-18 text-xs sm:text-sm print:text-[11.5pt] font-black text-black">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-20 sm:w-24 print:w-18 text-xs sm:text-sm print:text-[11.5pt] font-black text-black align-middle text-center">
                 DAY
               </th>
 
               {/* 09:00 - 10:00 */}
-              <th className="py-3 px-1 border-r border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   09:00–10:00
                 </span>
               </th>
 
               {/* 10:00 - 11:00 */}
-              <th className="py-3 px-1 border-r border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   10:00–11:00
                 </span>
               </th>
 
-              {/* BREAK Column (11:00 - 11:15) */}
-              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black bg-gray-100 print:bg-white text-black font-black w-14 sm:w-16 print:w-12 text-center">
-                <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
-                  11:00–11:15
-                </span>
-                <div className="text-[10px] sm:text-xs print:text-[9.5pt] tracking-normal text-slate-800 print:text-black font-black mt-0.5">
-                  BREAK
+              {/* 11:00 - 11:15 */}
+              <th className="py-2 px-1 border-r border-gray-300 print:border-black bg-gray-100 print:bg-white text-black font-black w-14 sm:w-16 print:w-14 text-center align-middle">
+                <div className="flex flex-col items-center justify-center leading-tight">
+                  <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
+                    11:00–
+                  </span>
+                  <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
+                    11:15
+                  </span>
                 </div>
               </th>
 
               {/* 11:15 - 12:15 */}
-              <th className="py-3 px-1 border-r border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   11:15–12:15
                 </span>
               </th>
 
               {/* 12:15 - 01:15 */}
-              <th className="py-3 px-1 border-r border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   12:15–01:15
                 </span>
               </th>
 
-              {/* LUNCH Column (01:15 - 02:15) */}
-              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black bg-gray-100 print:bg-white text-black font-black w-14 sm:w-16 print:w-12 text-center">
-                <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
-                  01:15–02:15
-                </span>
-                <div className="text-[10px] sm:text-xs print:text-[9.5pt] tracking-normal text-slate-800 print:text-black font-black mt-0.5">
-                  LUNCH
+              {/* 01:15 - 02:15 */}
+              <th className="py-2 px-1 border-r border-gray-300 print:border-black bg-gray-100 print:bg-white text-black font-black w-14 sm:w-16 print:w-14 text-center align-middle">
+                <div className="flex flex-col items-center justify-center leading-tight">
+                  <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
+                    01:15–
+                  </span>
+                  <span className="font-black text-black text-[11px] sm:text-xs print:text-[10pt] tracking-tight block">
+                    02:15
+                  </span>
                 </div>
               </th>
 
               {/* 02:15 - 03:15 */}
-              <th className="py-3 px-1 border-r border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-r border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   02:15–03:15
                 </span>
               </th>
 
               {/* 03:15 - 04:15 */}
-              <th className="py-3 px-1 border-gray-300 print:border-black text-black">
+              <th className="py-2.5 px-1 border-gray-300 print:border-black text-black align-middle text-center">
                 <span className="font-black text-black text-xs sm:text-sm print:text-[11pt] tracking-tight block">
                   03:15–04:15
                 </span>
