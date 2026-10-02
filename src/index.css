@@ -232,6 +232,8 @@ th, td {
     border-color: #000 !important;
     color: #000 !important;
     background: #fff !important;
+    padding: 2px 4px !important;
+    line-height: 1.15 !important;
   }
 
   /* Consolidated Department Schedule printed from Individual Tab */
