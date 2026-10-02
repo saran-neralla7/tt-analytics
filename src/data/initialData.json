@@ -3977,6 +3977,14 @@
         ],
         "11:15-12:15": [
           {
+            "subject": "CAL & LA",
+            "faculty": "Dr. S Ashok Kumar, Dr. T Poornakantha",
+            "room": "G-405, G-406",
+            "isLab": false
+          }
+        ],
+        "12:15-01:15": [
+          {
             "subject": "FDS",
             "faculty": "Dr. K Rohini",
             "rawFaculty": "KR",
@@ -3988,14 +3996,6 @@
             "faculty": "Mr. CH VVD Prasad",
             "rawFaculty": "CHVVD",
             "room": "G-405",
-            "isLab": false
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "subject": "CAL & LA",
-            "faculty": "Dr. S Ashok Kumar, Dr. T Poornakantha",
-            "room": "G-405, G-406",
             "isLab": false
           }
         ],
@@ -12745,7 +12745,7 @@
         ]
       },
       "WED": {
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "FDS",
@@ -12758,7 +12758,7 @@
             "subject": "PPSTC LAB",
             "room": "COMP. LAB-1",
             "isLab": true,
-            "isContinued": false
+            "isContinued": true
           }
         ],
         "02:15-03:15": [
@@ -12779,13 +12779,13 @@
             "isContinued": true
           }
         ],
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE-2",
             "subject": "PPSTC LAB",
             "room": "COMP. LAB-1",
             "isLab": true,
-            "isContinued": true
+            "isContinued": false
           }
         ]
       },
@@ -16459,7 +16459,7 @@
         ]
       },
       "WED": {
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS",
@@ -17722,7 +17722,7 @@
         ]
       },
       "WED": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "CAL & LA",
@@ -17887,18 +17887,11 @@
         ]
       },
       "WED": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "CAL & LA",
             "room": "G-405, G-406",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "CAL & LA",
-            "room": "G-303",
             "isLab": false,
             "isContinued": false
           }
@@ -17908,6 +17901,15 @@
             "branch": "CSE-2",
             "subject": "CAL & LA Tut.",
             "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "CAL & LA",
+            "room": "G-303",
             "isLab": false,
             "isContinued": false
           }
