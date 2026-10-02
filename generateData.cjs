@@ -296,7 +296,7 @@ console.log(`Faculty with assigned workload: ${activeFacultyList.length} (out of
 
 // Known non-faculty words to ignore during token matching
 const nonFacultyWords = new Set([
-  'CAL', 'LA', 'PSUC', 'ENGG', 'PHY', 'CHEM', 'AITA', 'FWD', 'ENV', 'STD',
+  'CAL', 'LA', 'PSUC', 'PPSTC', 'ENGG', 'PHY', 'CHEM', 'AITA', 'FWD', 'ENV', 'STD',
   'DLD', '3DDA', 'S&G', 'ESAM', 'SUS', 'EME', 'FEEE', 'FDS', 'PCS', 'PAC', 'PCE',
   'COM', 'CSP', 'FAI', 'ML', 'TUT', 'TUTORIAL', 'LAB', 'LABORATORY', 'PRACTICAL',
   'LUNCH', 'BREAK', 'LIBRARY', 'COUNSELLING', 'SPORTS', 'YOGA', 'SECTION',
@@ -634,12 +634,13 @@ for (let r = 1; r < rowsFinal.length; r++) {
 
 console.log(`Pre-computed masterFacultyTimetables for ${Object.keys(masterFacultyTimetables).length} faculty from Timetable_Final`);
 
-// Calculate authoritative workload directly from Timetable_Final (ground-truth schedule)
+// Calculate authoritative workload and assignedCourses directly from Timetable_Final (ground-truth schedule)
 facultyList.forEach(fac => {
   const sched = masterFacultyTimetables[fac.fullName] || {};
   let schedTheory = 0;
   let schedLab = 0;
   let schedTut = 0;
+  const courseMap = new Map();
 
   for (const [day, daySlots] of Object.entries(sched)) {
     for (const [slot, items] of Object.entries(daySlots)) {
@@ -653,6 +654,23 @@ facultyList.forEach(fac => {
         } else {
           schedTheory += 1;
         }
+
+        const type = isLab ? 'lab' : (isTut ? 'tutorial' : 'theory');
+        const key = `${it.branch}__${it.subject}__${type}`;
+        if (!courseMap.has(key)) {
+          courseMap.set(key, {
+            branch: it.branch,
+            subject: it.subject,
+            code: it.subject,
+            room: it.room || '',
+            hours: 0,
+            type,
+            loadDetail: ''
+          });
+        }
+        const c = courseMap.get(key);
+        c.hours += 1;
+        if (!c.room && it.room) c.room = it.room;
       });
     }
   }
@@ -661,6 +679,21 @@ facultyList.forEach(fac => {
   fac.labLoad = schedLab;
   fac.tutLoad = schedTut;
   fac.totalLoad = schedTheory + schedLab + schedTut;
+
+  if (courseMap.size > 0) {
+    fac.assignedCourses = Array.from(courseMap.values()).map(c => {
+      const matchRow = s2Rows.find(r => (r.sub_short || '').trim().toUpperCase() === c.code.toUpperCase());
+      const fullName = (matchRow?.Subject_Name || '').trim();
+      return {
+        ...c,
+        subject: fullName || c.subject,
+        loadDetail: `${c.hours} ${c.type} = ${c.hours} periods`
+      };
+    });
+    fac.assignments = fac.assignedCourses
+      .map(c => `${c.branch} → ${c.subject} (${c.code}) – ${c.loadDetail}`)
+      .join('\n');
+  }
 });
 
 activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);

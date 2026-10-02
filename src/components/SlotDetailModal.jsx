@@ -36,6 +36,8 @@ const staticSubjectMap = {
   'ENGG. CHEM LAB': 'Engineering Chemistry Lab',
   'PSUC': 'Problem Solving using C',
   'PSUC LAB': 'Problem Solving using C Lab',
+  'PPSTC': 'Programming for Problem solving through C',
+  'PPSTC LAB': 'Programming for Problem solving through C Lab',
   'AITA': 'AI Tools and Applications',
   'AITA LAB': 'AI Tools and Applications Lab',
   'FWD': 'Fundamentals of Web Designing and User Interface',

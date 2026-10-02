@@ -36,8 +36,8 @@ function getLabGroupKey(item) {
   if (sub.includes('AITA LAB') || sub.includes('AI LAB')) {
     return 'AI LAB';
   }
-  if (sub.includes('PSUC LAB') || sub === 'PSUC') {
-    return 'PSUC LAB';
+  if (sub.includes('PSUC LAB') || sub === 'PSUC' || sub.includes('PPSTC LAB') || sub === 'PPSTC') {
+    return 'PPSTC LAB';
   }
   let b = item.branch || '';
   if (b === 'CSE(AI&ML)-1') b = 'CSM-1';
@@ -49,7 +49,7 @@ function getLabGroupKey(item) {
 // Helper to format the display title for a lab group
 function formatLabGroupTitle(key, firstItem) {
   if (key === 'AI LAB') return 'AI Lab';
-  if (key === 'PSUC LAB') return 'PSUC Lab';
+  if (key === 'PSUC LAB' || key === 'PPSTC LAB') return 'PPSTC Lab';
   const parts = key.split('__');
   const b = parts[0] || '';
   const sub = parts[1] || '';
