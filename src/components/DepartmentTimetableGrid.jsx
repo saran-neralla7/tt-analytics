@@ -170,10 +170,10 @@ export default function DepartmentTimetableGrid({
     activeDaysList.forEach(day => {
       const dayShortName = DAY_SHORT_NAMES[day] || day;
 
-      // 1. Process Theory Slots (6 periods) - Grouped by Subject so Subject Name is shown
+      // 1. Process Theory Slots (6 periods) - Grouped by Branch + Subject + Room
       const theorySlots = {};
       THEORY_SLOTS.forEach(slotTime => {
-        const subMap = new Map();
+        const sessionMap = new Map();
         const rawItems = [];
 
         deptFacultyMap.forEach(fac => {
@@ -187,21 +187,27 @@ export default function DepartmentTimetableGrid({
                 facultyShort: fac.shortName
               });
 
-              const sub = it.subject || 'Theory';
-              if (!subMap.has(sub)) {
-                subMap.set(sub, {
+              const branch = (it.branch || '').trim();
+              const sub = (it.subject || 'Theory').trim();
+              const room = (it.room || '').trim();
+              const groupKey = `${branch}__${sub}__${room}`;
+
+              if (!sessionMap.has(groupKey)) {
+                sessionMap.set(groupKey, {
+                  branch,
                   subject: sub,
+                  room,
                   facultyList: []
                 });
               }
 
-              const grp = subMap.get(sub);
+              const grp = sessionMap.get(groupKey);
               if (!grp.facultyList.some(f => f.fullName === fac.fullName)) {
                 grp.facultyList.push({
                   fullName: fac.fullName,
                   shortName: fac.shortName,
-                  room: it.room,
-                  branch: it.branch,
+                  room,
+                  branch,
                   clash: checkFacultyClash(fac.fullName, day, slotTime)
                 });
               }
@@ -210,7 +216,7 @@ export default function DepartmentTimetableGrid({
         });
 
         theorySlots[slotTime] = {
-          groups: Array.from(subMap.values()),
+          groups: Array.from(sessionMap.values()),
           rawItems
         };
       });
@@ -311,7 +317,7 @@ export default function DepartmentTimetableGrid({
     return (
       <div 
         key={grp.groupKey} 
-        className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none"
+        className="text-[12px] sm:text-xs print:text-[9.5pt] text-black font-sans leading-tight py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none"
       >
         <span className="font-black text-black">{title}</span>
         {' ('}
@@ -334,11 +340,76 @@ export default function DepartmentTimetableGrid({
         ))}
         {')'}
         {grp.room && (
-          <span className="text-[10px] print:text-[8pt] text-slate-700 print:text-black font-semibold ml-0.5 print:hidden">
+          <span className="text-[10px] print:text-[8pt] text-slate-700 print:text-black font-semibold ml-1 whitespace-nowrap">
             [{grp.room}]
           </span>
         )}
       </div>
+    );
+  };
+
+  // Helper to render a theory slot cell with branch name, subject, faculty initials, and room number
+  const renderTheorySlotCell = (slotData, day, slotTime, dayShortName, isLastCol = false) => {
+    const borderClass = isLastCol
+      ? "border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black"
+      : "border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black";
+
+    if (!slotData || slotData.groups.length === 0) {
+      return (
+        <td className={`p-1 ${borderClass} text-gray-400 font-mono text-center align-middle`}>
+          <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
+        </td>
+      );
+    }
+
+    return (
+      <td
+        onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, slotTime, deptName)}
+        className={`py-1 px-1.5 ${borderClass} align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white`}
+        title="Click to view details"
+      >
+        <div className="flex flex-col items-center justify-center space-y-0.5">
+          {slotData.groups.map((grp, gIdx) => {
+            const branchPrefix = grp.branch && !grp.subject.toUpperCase().startsWith(grp.branch.toUpperCase()) 
+              ? `${grp.branch} ` 
+              : '';
+            const displayTitle = `${branchPrefix}${grp.subject}`;
+
+            return (
+              <div 
+                key={gIdx} 
+                className="text-[12px] sm:text-xs print:text-[9.5pt] text-black font-sans leading-tight py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none"
+              >
+                <span className="font-black text-black">{displayTitle}</span>
+                {' ('}
+                {grp.facultyList.map((f, fIdx) => (
+                  <React.Fragment key={fIdx}>
+                    {fIdx > 0 && ', '}
+                    {f.clash ? (
+                      <span 
+                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} ${slotTime}:\n${f.clash.details}`}
+                      >
+                        {f.shortName}*
+                      </span>
+                    ) : (
+                      <span className="font-extrabold text-black" title={f.fullName}>
+                        {f.shortName}
+                      </span>
+                    )}
+                  </React.Fragment>
+                ))}
+                {')'}
+                {grp.room && (
+                  <span className="text-[10px] print:text-[8pt] text-slate-700 print:text-black font-semibold ml-1 whitespace-nowrap">
+                    [{grp.room}]
+                  </span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </td>
     );
   };
 
@@ -474,96 +545,10 @@ export default function DepartmentTimetableGrid({
                     </td>
 
                     {/* Period 1: 09:00 - 10:00 */}
-                    {(() => {
-                      const slotData = theorySlots['09:00-10:00'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '09:00-10:00', deptName)}
-                          className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 09:00-10:00:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['09:00-10:00'], day, '09:00-10:00', dayShortName)}
 
                     {/* Period 2: 10:00 - 11:00 */}
-                    {(() => {
-                      const slotData = theorySlots['10:00-11:00'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '10:00-11:00', deptName)}
-                          className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 10:00-11:00:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['10:00-11:00'], day, '10:00-11:00', dayShortName)}
 
                     {/* BREAK Column: rowSpan=2 with large prominent character */}
                     <td 
@@ -578,96 +563,10 @@ export default function DepartmentTimetableGrid({
                     </td>
 
                     {/* Period 3: 11:15 - 12:15 */}
-                    {(() => {
-                      const slotData = theorySlots['11:15-12:15'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '11:15-12:15', deptName)}
-                          className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 11:15-12:15:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['11:15-12:15'], day, '11:15-12:15', dayShortName)}
 
                     {/* Period 4: 12:15 - 01:15 */}
-                    {(() => {
-                      const slotData = theorySlots['12:15-01:15'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '12:15-01:15', deptName)}
-                          className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 12:15-01:15:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['12:15-01:15'], day, '12:15-01:15', dayShortName)}
 
                     {/* LUNCH Column: rowSpan=2 with large prominent character */}
                     <td 
@@ -682,96 +581,10 @@ export default function DepartmentTimetableGrid({
                     </td>
 
                     {/* Period 5: 02:15 - 03:15 */}
-                    {(() => {
-                      const slotData = theorySlots['02:15-03:15'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '02:15-03:15', deptName)}
-                          className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 02:15-03:15:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['02:15-03:15'], day, '02:15-03:15', dayShortName)}
 
                     {/* Period 6: 03:15 - 04:15 */}
-                    {(() => {
-                      const slotData = theorySlots['03:15-04:15'] || { groups: [], rawItems: [] };
-                      if (slotData.groups.length === 0) {
-                        return (
-                          <td className="p-1 border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
-                            <span className="text-gray-400 print:text-black font-bold select-none text-base sm:text-lg print:text-[14pt]">—</span>
-                          </td>
-                        );
-                      }
-                      return (
-                        <td
-                          onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '03:15-04:15', deptName)}
-                          className="py-1 px-1.5 border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
-                          title="Click to view details"
-                        >
-                          <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.groups.map((grp, gIdx) => (
-                              <div key={gIdx} className="text-[12.5px] sm:text-sm print:text-[10.5pt] text-black font-sans leading-snug py-0.5 border-b border-gray-200 print:border-gray-300 last:border-none">
-                                <span className="font-black text-black">{grp.subject}</span>
-                                {' ('}
-                                {grp.facultyList.map((f, fIdx) => (
-                                  <React.Fragment key={fIdx}>
-                                    {fIdx > 0 && ', '}
-                                    {f.clash ? (
-                                      <span 
-                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-1 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayShortName} 03:15-04:15:\n${f.clash.details}`}
-                                      >
-                                        {f.shortName}*
-                                      </span>
-                                    ) : (
-                                      <span className="font-extrabold text-black" title={f.fullName}>
-                                        {f.shortName}
-                                      </span>
-                                    )}
-                                  </React.Fragment>
-                                ))}
-                                {')'}
-                              </div>
-                            ))}
-                          </div>
-                        </td>
-                      );
-                    })()}
+                    {renderTheorySlotCell(theorySlots['03:15-04:15'], day, '03:15-04:15', dayShortName, true)}
                   </tr>
 
                   {/* ROW 2: LABS ROW (e.g. "Mon Labs") - Ends with thick full dark line */}
