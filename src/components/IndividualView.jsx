@@ -350,13 +350,19 @@ function FacultyTimetableCard({
                     slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-10 print:bg-gray-100' : 'text-slate-950'
                   }`}
                 >
-                  <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[5pt] print:leading-none">
-                    {slot.time}
-                  </span>
-                  {slot.label && (
-                    <div className="text-[10px] sm:text-[10.5px] tracking-normal text-amber-900 font-black mt-0.5 print:text-[4.5pt] print:leading-none print:mt-0">
-                      {slot.label}
+                  {slot.type === 'break' && slot.time.includes('-') ? (
+                    <div className="flex flex-col items-center justify-center leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[5pt] print:leading-none">
+                        {slot.time.split('-')[0]}–
+                      </span>
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[5pt] print:leading-none">
+                        {slot.time.split('-')[1]}
+                      </span>
                     </div>
+                  ) : (
+                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[5pt] print:leading-none">
+                      {slot.time}
+                    </span>
                   )}
                 </th>
               ))}

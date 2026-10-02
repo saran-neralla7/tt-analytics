@@ -169,13 +169,19 @@ export default function TimetableGrid({
                       : 'text-slate-950'
                   }`}
                 >
-                  <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
-                    {slot.time}
-                  </span>
-                  {slot.label && (
-                    <div className="text-[10px] sm:text-[10.5px] print:text-[7.5pt] tracking-normal text-amber-900 font-black mt-0.5 print:hidden">
-                      {slot.label}
+                  {slot.type === 'break' && slot.time.includes('-') ? (
+                    <div className="flex flex-col items-center justify-center leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                        {slot.time.split('-')[0]}–
+                      </span>
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                        {slot.time.split('-')[1]}
+                      </span>
                     </div>
+                  ) : (
+                    <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                      {slot.time}
+                    </span>
                   )}
                 </th>
               ))}

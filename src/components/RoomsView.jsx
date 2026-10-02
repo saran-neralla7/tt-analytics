@@ -605,13 +605,19 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                           slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-20' : 'text-slate-950'
                         }`}
                       >
-                        <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
-                          {slot.time}
-                        </span>
-                        {slot.label && (
-                          <div className="text-[10px] tracking-normal text-amber-900 font-bold mt-0.5">
-                            {slot.label}
+                        {slot.type === 'break' && slot.time.includes('-') ? (
+                          <div className="flex flex-col items-center justify-center leading-tight">
+                            <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                              {slot.time.split('-')[0]}–
+                            </span>
+                            <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                              {slot.time.split('-')[1]}
+                            </span>
                           </div>
+                        ) : (
+                          <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                            {slot.time}
+                          </span>
                         )}
                       </th>
                     ))}

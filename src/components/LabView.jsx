@@ -355,8 +355,14 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                         slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
                       }`}
                     >
-                      <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
-                      {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold mt-0.5">{slot.label}</div>}
+                      {slot.isBreak && slot.time.includes('-') ? (
+                        <div className="flex flex-col items-center justify-center leading-tight">
+                          <span className="block font-black text-xs sm:text-[13px]">{slot.time.split('-')[0]}–</span>
+                          <span className="block font-black text-xs sm:text-[13px]">{slot.time.split('-')[1]}</span>
+                        </div>
+                      ) : (
+                        <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
+                      )}
                     </th>
                   ))}
                 </tr>
@@ -457,8 +463,14 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                         slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
                       }`}
                     >
-                      <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
-                      {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold mt-0.5">{slot.label}</div>}
+                      {slot.isBreak && slot.time.includes('-') ? (
+                        <div className="flex flex-col items-center justify-center leading-tight">
+                          <span className="block font-black text-xs sm:text-[13px]">{slot.time.split('-')[0]}–</span>
+                          <span className="block font-black text-xs sm:text-[13px]">{slot.time.split('-')[1]}</span>
+                        </div>
+                      ) : (
+                        <span className="block font-black text-xs sm:text-[13px]">{slot.time}</span>
+                      )}
                     </th>
                   ))}
                 </tr>
@@ -595,8 +607,14 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                               slot.isBreak ? 'bg-amber-100/80 text-amber-950 font-black w-24' : 'text-slate-950'
                             }`}
                           >
-                            <span className="block font-black text-xs">{slot.time}</span>
-                            {slot.label && <div className="text-[10px] tracking-normal text-amber-900 font-bold">{slot.label}</div>}
+                            {slot.isBreak && slot.time.includes('-') ? (
+                              <div className="flex flex-col items-center justify-center leading-tight">
+                                <span className="block font-black text-xs">{slot.time.split('-')[0]}–</span>
+                                <span className="block font-black text-xs">{slot.time.split('-')[1]}</span>
+                              </div>
+                            ) : (
+                              <span className="block font-black text-xs">{slot.time}</span>
+                            )}
                           </th>
                         ))}
                       </tr>

@@ -351,13 +351,19 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                         slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16' : 'text-slate-950'
                       }`}
                     >
-                      <span className="font-black text-slate-950 text-xs sm:text-[12px] tracking-tight block">
-                        {slot.time}
-                      </span>
-                      {slot.label && (
-                        <div className="text-[9.5pt] sm:text-[10pt] tracking-normal text-amber-900 font-black mt-0.5">
-                          {slot.label}
+                      {slot.type === 'break' && slot.time.includes('-') ? (
+                        <div className="flex flex-col items-center justify-center leading-tight">
+                          <span className="font-black text-slate-950 text-xs sm:text-[12px] tracking-tight block">
+                            {slot.time.split('-')[0]}–
+                          </span>
+                          <span className="font-black text-slate-950 text-xs sm:text-[12px] tracking-tight block">
+                            {slot.time.split('-')[1]}
+                          </span>
                         </div>
+                      ) : (
+                        <span className="font-black text-slate-950 text-xs sm:text-[12px] tracking-tight block">
+                          {slot.time}
+                        </span>
                       )}
                     </th>
                   ))}
