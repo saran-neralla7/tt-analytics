@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import DepartmentTimetableGrid from './DepartmentTimetableGrid';
 import { getFacultyShortName } from '../utils/facultyShortNames';
 import initialData from '../data/initialData.json';
-import { Printer, Building2, Users, Layers, Award } from 'lucide-react';
+import { Printer, Building2, Users, Layers, Award, AlertTriangle } from 'lucide-react';
 
 const DEPARTMENT_ORDER = [
   'Chemistry',
@@ -70,6 +70,36 @@ export default function DepartmentView({
     return departmentGroups[selectedDept] || [];
   }, [departmentGroups, selectedDept]);
 
+  // Calculate schedule clashes per department
+  const deptClashCounts = useMemo(() => {
+    const counts = {};
+    const slots = ['09:00-10:00', '10:00-11:00', '11:15-12:15', '12:15-01:15', '02:15-03:15', '03:15-04:15'];
+    const master = initialData.masterFacultyTimetables || {};
+
+    Object.entries(departmentGroups).forEach(([dept, facs]) => {
+      let count = 0;
+      facs.forEach(f => {
+        const sched = master[f.fullName] || {};
+        ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].forEach(day => {
+          const daySched = sched[day] || {};
+          slots.forEach(slot => {
+            if ((daySched[slot] || []).length > 1) {
+              count += 1;
+            }
+          });
+        });
+      });
+      counts[dept] = count;
+    });
+    return counts;
+  }, [departmentGroups]);
+
+  const totalAllClashes = useMemo(() => {
+    return Object.values(deptClashCounts).reduce((acc, c) => acc + c, 0);
+  }, [deptClashCounts]);
+
+  const currentDeptClashes = deptClashCounts[selectedDept] || 0;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
       {/* Top Controls Bar (Hidden during Print) */}
@@ -96,13 +126,14 @@ export default function DepartmentView({
             >
               {departmentNames.map((dept) => {
                 const count = departmentGroups[dept]?.length || 0;
+                const clashes = deptClashCounts[dept] || 0;
                 return (
                   <option key={dept} value={dept}>
-                    {dept} ({count} Faculty)
+                    {dept} ({count} Faculty{clashes > 0 ? ` • ⚠️ ${clashes} Clashes` : ''})
                   </option>
                 );
               })}
-              <option value="ALL">All Departments ({departmentNames.length} Departments)</option>
+              <option value="ALL">All Departments ({departmentNames.length} Departments{totalAllClashes > 0 ? ` • ⚠️ ${totalAllClashes} Clashes` : ''})</option>
             </select>
           </div>
 
@@ -110,6 +141,20 @@ export default function DepartmentView({
             <Users className="w-3.5 h-3.5 text-blue-600" />
             <span>{viewAll ? 'All Departments' : `${activeDeptFaculty.length} Faculty Members`}</span>
           </div>
+
+          {/* Conflict Badge in Toolbar */}
+          {!viewAll && (
+            currentDeptClashes > 0 ? (
+              <div className="flex items-center gap-1.5 bg-red-100 text-red-800 px-2.5 py-1 rounded-md text-xs font-bold border border-red-300" title={`${currentDeptClashes} period conflicts detected in ${selectedDept}`}>
+                <AlertTriangle className="w-3.5 h-3.5 text-red-600" />
+                <span>{currentDeptClashes} Clashing Periods</span>
+              </div>
+            ) : (
+              <div className="flex items-center gap-1 bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md text-xs font-bold border border-emerald-300">
+                <span>✓ 0 Clashes</span>
+              </div>
+            )
+          )}
         </div>
 
         {/* Print Buttons */}

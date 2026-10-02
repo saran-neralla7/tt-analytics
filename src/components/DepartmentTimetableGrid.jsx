@@ -221,23 +221,124 @@ export default function DepartmentTimetableGrid({
     }, 0);
   }, [activeDaysList, dayScheduleData]);
 
-  const renderSessionEntry = (grp, gIdx) => {
-    const facultyShorts = (grp.facultyDetails || [])
-      .map(f => f.shortName || getFacultyShortName(f.fullName) || f.fullName)
-      .filter(Boolean);
+  // Helper to check if a specific faculty member has a timetable clash (more than 1 class assigned)
+  const checkFacultyClash = React.useCallback((facFullName, day, timeSlot, isDouble = false) => {
+    const facObj = deptFacultyMap.find(f => f.fullName === facFullName);
+    const sched = facObj?.schedule || (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[facFullName]) || {};
+    const daySched = sched[day] || {};
 
+    if (!isDouble) {
+      const items = daySched[timeSlot] || [];
+      if (items.length <= 1) return null;
+      return {
+        count: items.length,
+        branches: items.map(it => `${it.branch} (${it.subject})`),
+        details: items.map(it => `• ${it.branch}: ${it.subject}${it.room ? ` in ${it.room}` : ''}`).join('\n')
+      };
+    } else {
+      // For double 2-hour blocks: check s1 and s2
+      const [s1, s2] = timeSlot === '09:00-11:00' 
+        ? ['09:00-10:00', '10:00-11:00'] 
+        : timeSlot === '11:15-01:15'
+          ? ['11:15-12:15', '12:15-01:15']
+          : ['02:15-03:15', '03:15-04:15'];
+
+      const items1 = daySched[s1] || [];
+      const items2 = daySched[s2] || [];
+      const hasClash1 = items1.length > 1;
+      const hasClash2 = items2.length > 1;
+
+      if (!hasClash1 && !hasClash2) return null;
+
+      const detailsList = [];
+      const branchList = [];
+      if (hasClash1) {
+        branchList.push(`${s1}: ${items1.map(it => `${it.branch} (${it.subject})`).join(' & ')}`);
+        detailsList.push(`At ${s1}:\n` + items1.map(it => `  • ${it.branch}: ${it.subject}${it.room ? ` in ${it.room}` : ''}`).join('\n'));
+      }
+      if (hasClash2) {
+        branchList.push(`${s2}: ${items2.map(it => `${it.branch} (${it.subject})`).join(' & ')}`);
+        detailsList.push(`At ${s2}:\n` + items2.map(it => `  • ${it.branch}: ${it.subject}${it.room ? ` in ${it.room}` : ''}`).join('\n'));
+      }
+
+      return {
+        count: (hasClash1 ? items1.length : 0) + (hasClash2 ? items2.length : 0),
+        branches: branchList,
+        details: detailsList.join('\n\n')
+      };
+    }
+  }, [deptFacultyMap]);
+
+  // Aggregate all schedule clashes for this department
+  const departmentClashes = React.useMemo(() => {
+    const clashes = [];
+    const slots = ['09:00-10:00', '10:00-11:00', '11:15-12:15', '12:15-01:15', '02:15-03:15', '03:15-04:15'];
+
+    deptFacultyMap.forEach(fac => {
+      const sched = fac.schedule || (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[fac.fullName]) || {};
+      activeDaysList.forEach(day => {
+        const daySched = sched[day] || {};
+        slots.forEach(slot => {
+          const items = daySched[slot] || [];
+          if (items.length > 1) {
+            clashes.push({
+              faculty: fac.fullName,
+              shortName: fac.shortName,
+              day,
+              slot,
+              count: items.length,
+              branches: items.map(it => `${it.branch} (${it.subject})`),
+              details: items.map(it => `${it.branch}: ${it.subject}`).join(' & ')
+            });
+          }
+        });
+      });
+    });
+
+    return clashes;
+  }, [deptFacultyMap, activeDaysList]);
+
+  const renderSessionEntry = (grp, gIdx, day, timeSlot, isDouble = false) => {
     return (
       <div 
         key={gIdx} 
         className="leading-tight text-[10.5px] sm:text-[11px] print:text-[8.2pt] print:leading-[1.2] text-black font-sans pb-0.5 border-b border-gray-100 print:border-gray-200 last:border-none"
-        title={grp.facultyDetails?.map(f => `${f.fullName} (${f.shortName})`).join(', ')}
       >
         {grp.branch && (
           <span className="font-black text-black uppercase">{grp.branch}: </span>
         )}
         <span className="font-bold text-black">{grp.subject}</span>
-        {facultyShorts.length > 0 && (
-          <span className="font-black text-black"> [{facultyShorts.join(', ')}]</span>
+        {grp.facultyDetails && grp.facultyDetails.length > 0 && (
+          <span className="font-black text-black">
+            {' ['}
+            {grp.facultyDetails.map((f, fIdx) => {
+              const short = f.shortName || getFacultyShortName(f.fullName) || f.fullName;
+              const clash = checkFacultyClash(f.fullName, day, timeSlot, isDouble);
+
+              if (!clash) {
+                return (
+                  <React.Fragment key={fIdx}>
+                    {fIdx > 0 && ', '}
+                    <span className="font-black text-black" title={f.fullName}>{short}</span>
+                  </React.Fragment>
+                );
+              }
+
+              return (
+                <React.Fragment key={fIdx}>
+                  {fIdx > 0 && ', '}
+                  <span 
+                    className="inline-flex items-center gap-0.5 px-0.5 py-0 text-[10px] print:text-[8pt] font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs print:rounded-none print:border-black print:border-2 print:bg-gray-200 print:text-black cursor-help"
+                    title={`⚠️ CLASH DETECTED:\n${f.fullName} (${short}) is simultaneously assigned to multiple classes at ${day} ${timeSlot}:\n${clash.details}`}
+                  >
+                    <span className="print:hidden text-[9px]">⚠️</span>
+                    <span className="underline decoration-red-500 print:no-underline font-black">{short}*</span>
+                  </span>
+                </React.Fragment>
+              );
+            })}
+            {']'}
+          </span>
         )}
         {grp.room && (
           <span className="text-[9.5px] print:text-[7.6pt] font-mono text-slate-700 print:text-black font-bold"> ({grp.room})</span>
@@ -286,6 +387,31 @@ export default function DepartmentTimetableGrid({
                 : facultyList.map(f => f.shortName || getFacultyShortName(f.fullName)).join(', ')
               }
             </div>
+
+            {/* Department Clash Indicator Banner */}
+            {departmentClashes.length > 0 ? (
+              <div className="mt-1 px-2.5 py-1 bg-red-50 print:bg-gray-100 border border-red-300 print:border-black rounded-md print:rounded-none text-left flex flex-wrap items-center justify-between gap-1 text-[8pt] print:text-[7.5pt] leading-tight">
+                <div>
+                  <span className="font-black text-red-700 print:text-black uppercase tracking-wide">
+                    ⚠️ Schedule Conflicts ({departmentClashes.length} Periods with Overlaps):{' '}
+                  </span>
+                  <span className="text-red-900 print:text-black font-semibold">
+                    {departmentClashes.map((c, i) => (
+                      <span key={i} className="inline-block mr-2">
+                        <strong className="font-black">{c.shortName}</strong> ({c.day} {c.slot}: {c.branches.join(' & ')}){i < departmentClashes.length - 1 ? ' •' : ''}
+                      </span>
+                    ))}
+                  </span>
+                </div>
+                <span className="font-extrabold text-red-700 print:text-black text-[7pt] print:text-[6.5pt] uppercase whitespace-nowrap">
+                  [* Marked in grid]
+                </span>
+              </div>
+            ) : (
+              <div className="mt-0.5 text-[7pt] print:text-[7pt] font-bold text-emerald-700 print:text-black">
+                ✓ No schedule conflicts or overlapping periods detected for this department.
+              </div>
+            )}
           </div>
 
           {/* Empty spacer for perfect center symmetry */}
@@ -361,7 +487,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '09:00-10:00', false))}
                           </div>
                         </td>
                       );
@@ -384,7 +510,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '10:00-11:00', false))}
                           </div>
                         </td>
                       );
@@ -423,7 +549,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '11:15-12:15', false))}
                           </div>
                         </td>
                       );
@@ -446,7 +572,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '12:15-01:15', false))}
                           </div>
                         </td>
                       );
@@ -485,7 +611,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '02:15-03:15', false))}
                           </div>
                         </td>
                       );
@@ -508,7 +634,7 @@ export default function DepartmentTimetableGrid({
                           title="Click to view details"
                         >
                           <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                            {slotData.groups.map(renderSessionEntry)}
+                            {slotData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '03:15-04:15', false))}
                           </div>
                         </td>
                       );
@@ -536,7 +662,7 @@ export default function DepartmentTimetableGrid({
                             title="Click to view details"
                           >
                             <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                              {blockData.groups.map(renderSessionEntry)}
+                              {blockData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '09:00-11:00', true))}
                             </div>
                           </td>
                         );
@@ -560,7 +686,7 @@ export default function DepartmentTimetableGrid({
                             title="Click to view details"
                           >
                             <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                              {blockData.groups.map(renderSessionEntry)}
+                              {blockData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '11:15-01:15', true))}
                             </div>
                           </td>
                         );
@@ -584,7 +710,7 @@ export default function DepartmentTimetableGrid({
                             title="Click to view details"
                           >
                             <div className="flex flex-col h-full w-full justify-start space-y-0.5">
-                              {blockData.groups.map(renderSessionEntry)}
+                              {blockData.groups.map((grp, gIdx) => renderSessionEntry(grp, gIdx, day, '02:15-04:15', true))}
                             </div>
                           </td>
                         );
@@ -596,6 +722,17 @@ export default function DepartmentTimetableGrid({
             })}
           </tbody>
         </table>
+      </div>
+
+      {/* Footer Conflict Legend */}
+      <div className="px-3 py-1 bg-gray-50 print:bg-white border-t border-slate-300 print:border-black flex flex-wrap items-center justify-between text-[7.5pt] print:text-[7pt] text-slate-700 print:text-black font-medium">
+        <div>
+          <span className="font-black text-black">* Conflict Marker [*]: </span>
+          <span>Faculty short names marked with an asterisk inside a box (e.g. <strong>[ DAK* ]</strong>) are simultaneously scheduled in more than one class during that period.</span>
+        </div>
+        <div className="font-bold text-slate-500 print:hidden text-[7pt]">
+          Hover over marked faculty to inspect conflicting classes
+        </div>
       </div>
     </div>
   );

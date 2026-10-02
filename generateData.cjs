@@ -287,7 +287,7 @@ if (facultyByClean['CHVVDP']) {
 }
 
 // Filter to ONLY count and include faculty who are assigned workload (totalLoad > 0)
-const activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);
+let activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);
 activeFacultyList.forEach((fac, idx) => {
   fac.sno = idx + 1;
 });
@@ -662,7 +662,12 @@ facultyList.forEach(fac => {
   fac.tutLoad = schedTut;
   fac.totalLoad = schedTheory + schedLab + schedTut;
 });
-console.log('Synchronized workload for all faculty directly from Timetable_Final');
+
+activeFacultyList = facultyList.filter(fac => fac.totalLoad > 0);
+activeFacultyList.forEach((fac, idx) => {
+  fac.sno = idx + 1;
+});
+console.log(`Synchronized workload for all ${activeFacultyList.length} faculty directly from Timetable_Final`);
 
 // 5. Parse or Dynamically Generate Comprehensive Lab Data
 const dedicatedLabSheets = [
