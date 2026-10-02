@@ -276,11 +276,23 @@ export default function DepartmentTimetableGrid({
         const isMerged = (s1Data.groups.length === 0 && s2Data.groups.length === 0) || (s1Keys === s2Keys);
 
         if (isMerged) {
+          const rawGroups = s1Data.groups.length > 0 ? s1Data.groups : s2Data.groups;
+          // Ensure clash status highlights in both places if a clash occurs in either hour of the block
+          const mergedGroups = rawGroups.map(grp => ({
+            ...grp,
+            facultyList: grp.facultyList.map(f => ({
+              ...f,
+              clash: checkFacultyClash(f.fullName, day, block.range) ||
+                     checkFacultyClash(f.fullName, day, block.s1) ||
+                     checkFacultyClash(f.fullName, day, block.s2)
+            }))
+          }));
+
           return {
             id: block.id,
             isMerged: true,
             range: block.range,
-            groups: s1Data.groups.length > 0 ? s1Data.groups : s2Data.groups,
+            groups: mergedGroups,
             rawItems: [...s1Data.rawItems, ...s2Data.rawItems]
           };
         } else {
@@ -289,12 +301,24 @@ export default function DepartmentTimetableGrid({
             isMerged: false,
             s1: {
               slotTime: block.s1,
-              groups: s1Data.groups,
+              groups: s1Data.groups.map(grp => ({
+                ...grp,
+                facultyList: grp.facultyList.map(f => ({
+                  ...f,
+                  clash: checkFacultyClash(f.fullName, day, block.s1)
+                }))
+              })),
               rawItems: s1Data.rawItems
             },
             s2: {
               slotTime: block.s2,
-              groups: s2Data.groups,
+              groups: s2Data.groups.map(grp => ({
+                ...grp,
+                facultyList: grp.facultyList.map(f => ({
+                  ...f,
+                  clash: checkFacultyClash(f.fullName, day, block.s2)
+                }))
+              })),
               rawItems: s2Data.rawItems
             }
           };
@@ -540,7 +564,7 @@ export default function DepartmentTimetableGrid({
                     <td className="py-2 px-2 print:py-2 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center font-sans">
                       <div className="leading-tight">
                         <span className="block font-black text-sm sm:text-base print:text-[12pt] uppercase tracking-wide">{dayShortName}</span>
-                        <span className="block text-xs sm:text-[13px] print:text-[10pt] font-extrabold text-slate-700 print:text-black">theory</span>
+                        <span className="block text-xs sm:text-[13px] print:text-[10pt] font-extrabold text-slate-700 print:text-black">Theory</span>
                       </div>
                     </td>
 
