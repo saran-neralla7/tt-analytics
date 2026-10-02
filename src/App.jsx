@@ -114,6 +114,8 @@ export default function App() {
           <FacultyWorkloadView
             universityInfo={universityInfo}
             facultyList={facultyList}
+            timetableData={timetableData}
+            onSlotClick={handleSlotClick}
           />
         )}
       </main>

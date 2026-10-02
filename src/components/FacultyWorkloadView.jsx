@@ -1,8 +1,15 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { UserCheck, Search, Filter, BookOpen, Clock, Award, Briefcase } from 'lucide-react';
 import initialData from '../data/initialData.json';
+import FacultyAvailabilitySubtab from './FacultyAvailabilitySubtab';
 
-export default function FacultyWorkloadView({ universityInfo, facultyList: propFacultyList }) {
+export default function FacultyWorkloadView({ 
+  universityInfo, 
+  facultyList: propFacultyList,
+  timetableData = {},
+  onSlotClick
+}) {
+  const [activeSubtab, setActiveSubtab] = useState('directory'); // 'directory' | 'availability'
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDept, setSelectedDept] = useState('ALL');
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
@@ -113,14 +120,52 @@ export default function FacultyWorkloadView({ universityInfo, facultyList: propF
 
   return (
     <div className="w-full max-w-full px-2 sm:px-4 py-4">
-      {/* Header & Controls Bar */}
-      <div className="no-print bg-white p-5 rounded-xl border border-gray-200 shadow-sm mb-6">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-100 pb-4 mb-4">
-          <div>
-            <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
-              <UserCheck className="w-5 h-5 text-blue-600" />
-              Faculty Directory & Workload Summary
-            </h2>
+      {/* Subtab Navigation */}
+      <div className="no-print flex items-center justify-between gap-4 mb-6 border-b border-gray-200 pb-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            onClick={() => setActiveSubtab('directory')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              activeSubtab === 'directory'
+                ? 'bg-blue-700 text-white shadow-xs ring-2 ring-blue-600/30'
+                : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50'
+            }`}
+          >
+            <Briefcase className="w-4 h-4" />
+            <span>Workload Directory & Analysis</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubtab('availability')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              activeSubtab === 'availability'
+                ? 'bg-blue-700 text-white shadow-xs ring-2 ring-blue-600/30'
+                : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50'
+            }`}
+          >
+            <Clock className="w-4 h-4" />
+            <span>Faculty Availability (Free / Occupied)</span>
+          </button>
+        </div>
+      </div>
+
+      {activeSubtab === 'availability' ? (
+        <FacultyAvailabilitySubtab
+          facultyList={facultyList}
+          timetableData={timetableData}
+          universityInfo={universityInfo}
+          onSlotClick={onSlotClick}
+        />
+      ) : (
+        <>
+          {/* Header & Controls Bar */}
+          <div className="no-print bg-white p-5 rounded-xl border border-gray-200 shadow-sm mb-6">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-gray-100 pb-4 mb-4">
+              <div>
+                <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                  <UserCheck className="w-5 h-5 text-blue-600" />
+                  Faculty Directory & Workload Summary
+                </h2>
             <p className="text-xs text-gray-500 mt-0.5">
               Complete teaching load analysis and department allocations for Gayatri Vidya Parishad.
             </p>
@@ -314,6 +359,8 @@ export default function FacultyWorkloadView({ universityInfo, facultyList: propF
           </table>
         </div>
       </div>
-    </div>
-  );
+    </>
+  )}
+</div>
+);
 }
