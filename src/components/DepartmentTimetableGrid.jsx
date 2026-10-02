@@ -12,6 +12,9 @@ const DAY_DISPLAY_NAMES = {
   SAT: 'Saturday'
 };
 
+const BREAK_CHARS = ['B', 'R', 'E', 'A', 'K'];
+const LUNCH_CHARS = ['L', 'U', 'N', 'C', 'H'];
+
 const THEORY_SLOTS = [
   '09:00-10:00',
   '10:00-11:00',
@@ -187,17 +190,17 @@ export default function DepartmentTimetableGrid({
     return clashes;
   }, [deptFacultyMap, activeDaysList]);
 
-  // Pre-calculate Day Data: Separated into Theory and Labs
+  // Pre-calculate Day Data: Separated into Theory (with subject names) and Labs
   const formattedScheduleByDay = React.useMemo(() => {
     const result = {};
 
     activeDaysList.forEach(day => {
       const dayDisplayName = DAY_DISPLAY_NAMES[day] || day;
 
-      // 1. Process Theory Slots (6 periods)
+      // 1. Process Theory Slots (6 periods) - Grouped by Subject so Subject Name is shown
       const theorySlots = {};
       THEORY_SLOTS.forEach(slotTime => {
-        const facultyEntries = [];
+        const subMap = new Map();
         const rawItems = [];
 
         deptFacultyMap.forEach(fac => {
@@ -210,19 +213,31 @@ export default function DepartmentTimetableGrid({
                 faculty: fac.fullName,
                 facultyShort: fac.shortName
               });
-            });
 
-            facultyEntries.push({
-              fullName: fac.fullName,
-              shortName: fac.shortName,
-              items: theoryItems,
-              clash: checkFacultyClash(fac.fullName, day, slotTime)
+              const sub = it.subject || 'Theory';
+              if (!subMap.has(sub)) {
+                subMap.set(sub, {
+                  subject: sub,
+                  facultyList: []
+                });
+              }
+
+              const grp = subMap.get(sub);
+              if (!grp.facultyList.some(f => f.fullName === fac.fullName)) {
+                grp.facultyList.push({
+                  fullName: fac.fullName,
+                  shortName: fac.shortName,
+                  room: it.room,
+                  branch: it.branch,
+                  clash: checkFacultyClash(fac.fullName, day, slotTime)
+                });
+              }
             });
           }
         });
 
         theorySlots[slotTime] = {
-          facultyEntries,
+          groups: Array.from(subMap.values()),
           rawItems
         };
       });
@@ -317,8 +332,6 @@ export default function DepartmentTimetableGrid({
     return result;
   }, [activeDaysList, deptFacultyMap, checkFacultyClash]);
 
-  const totalTableRows = activeDaysList.length * 2;
-
   // Helper to render a lab block group entry
   const renderLabGroupItem = (grp, day, slotRange) => {
     const title = formatLabGroupTitle(grp.groupKey, grp.firstItem);
@@ -357,9 +370,9 @@ export default function DepartmentTimetableGrid({
   };
 
   return (
-    <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card print:border-black print:rounded-none print:shadow-none">
+    <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-900 overflow-hidden timetable-card print:border-black print:rounded-none print:shadow-none">
       {/* University Official Header */}
-      <div className="border-b-2 border-slate-700 print:border-black bg-white px-4 py-2 print:px-2 print:py-1">
+      <div className="border-b-2 border-slate-900 print:border-black bg-white px-4 py-2 print:px-2 print:py-1">
         <div className="flex items-center justify-between gap-2">
           {/* University Crest */}
           <div className="w-16 sm:w-20 flex-shrink-0 flex items-center justify-start">
@@ -430,9 +443,9 @@ export default function DepartmentTimetableGrid({
 
       {/* Main Timetable Matrix: Exactly 2 Rows per Day (Theory & Labs Separated) */}
       <div className="overflow-x-auto">
-        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px] border-2 border-slate-700 print:min-w-0 print:border-black print:table-fixed">
+        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[950px] border-2 border-slate-900 print:min-w-0 print:border-black print:table-fixed">
           <thead>
-            <tr className="bg-gray-100 print:bg-white text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
+            <tr className="bg-gray-100 print:bg-white text-gray-800 font-bold border-b-2 border-slate-900 print:border-black uppercase tracking-wider">
               {/* DAY Header */}
               <th className="py-2 px-2 border-r border-gray-300 print:border-black w-24 sm:w-28 print:w-20 text-xs print:text-[8.5pt] font-black text-black">
                 DAY
@@ -502,7 +515,7 @@ export default function DepartmentTimetableGrid({
             </tr>
           </thead>
 
-          <tbody className="divide-y-2 divide-slate-600 print:divide-black">
+          <tbody>
             {activeDaysList.map((day, dayIdx) => {
               const dayData = formattedScheduleByDay[day] || {
                 dayDisplayName: DAY_DISPLAY_NAMES[day] || day,
@@ -511,12 +524,15 @@ export default function DepartmentTimetableGrid({
               };
               const { dayDisplayName, theorySlots, labBlocks } = dayData;
 
+              const breakChar = BREAK_CHARS[dayIdx] || '—';
+              const lunchChar = LUNCH_CHARS[dayIdx] || '—';
+
               return (
                 <React.Fragment key={day}>
                   {/* ROW 1: THEORY ROW (e.g. "Monday theory") */}
-                  <tr className="border-b border-slate-300 print:border-black hover:bg-gray-50/80 transition-colors">
+                  <tr className="hover:bg-gray-50/80 transition-colors">
                     {/* Day Column: e.g. "Monday theory" */}
-                    <td className="py-1.5 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black align-middle text-center print:text-[8pt] font-sans">
+                    <td className="py-1.5 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center print:text-[8pt] font-sans">
                       <div className="leading-tight">
                         <span className="block font-bold">{dayDisplayName}</span>
                         <span className="block text-[10px] print:text-[7pt] font-semibold text-slate-600 print:text-black">theory</span>
@@ -525,10 +541,10 @@ export default function DepartmentTimetableGrid({
 
                     {/* Period 1: 09:00 - 10:00 */}
                     {(() => {
-                      const slotData = theorySlots['09:00-10:00'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['09:00-10:00'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -536,27 +552,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '09:00-10:00', deptName)}
-                          className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 09:00-10:00:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 09:00-10:00:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -566,10 +587,10 @@ export default function DepartmentTimetableGrid({
 
                     {/* Period 2: 10:00 - 11:00 */}
                     {(() => {
-                      const slotData = theorySlots['10:00-11:00'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['10:00-11:00'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -577,27 +598,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '10:00-11:00', deptName)}
-                          className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 10:00-11:00:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 10:00-11:00:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -605,28 +631,24 @@ export default function DepartmentTimetableGrid({
                       );
                     })()}
 
-                    {/* BREAK Column (Rendered only on row 0, spans all 10 rows) */}
-                    {dayIdx === 0 && (
-                      <td 
-                        rowSpan={totalTableRows}
-                        className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
-                      >
-                        <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
-                          {'BREAK'.split('').map((char, cIdx) => (
-                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[11pt] font-black text-black">
-                              {char}
-                            </span>
-                          ))}
-                        </div>
-                      </td>
-                    )}
+                    {/* BREAK Column: rowSpan=2 so each character in one day's block is middle-aligned */}
+                    <td 
+                      rowSpan={2}
+                      className="py-1 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle select-none text-center"
+                    >
+                      <div className="flex items-center justify-center h-full w-full">
+                        <span className="text-base sm:text-lg print:text-[12pt] font-black font-serif text-black tracking-widest">
+                          {breakChar}
+                        </span>
+                      </div>
+                    </td>
 
                     {/* Period 3: 11:15 - 12:15 */}
                     {(() => {
-                      const slotData = theorySlots['11:15-12:15'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['11:15-12:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -634,27 +656,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '11:15-12:15', deptName)}
-                          className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 11:15-12:15:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 11:15-12:15:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -664,10 +691,10 @@ export default function DepartmentTimetableGrid({
 
                     {/* Period 4: 12:15 - 01:15 */}
                     {(() => {
-                      const slotData = theorySlots['12:15-01:15'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['12:15-01:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -675,27 +702,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '12:15-01:15', deptName)}
-                          className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 12:15-01:15:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 12:15-01:15:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -703,28 +735,24 @@ export default function DepartmentTimetableGrid({
                       );
                     })()}
 
-                    {/* LUNCH Column (Rendered only on row 0, spans all 10 rows) */}
-                    {dayIdx === 0 && (
-                      <td 
-                        rowSpan={totalTableRows}
-                        className="py-2 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
-                      >
-                        <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
-                          {'LUNCH'.split('').map((char, cIdx) => (
-                            <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[11pt] font-black text-black">
-                              {char}
-                            </span>
-                          ))}
-                        </div>
-                      </td>
-                    )}
+                    {/* LUNCH Column: rowSpan=2 so each character in one day's block is middle-aligned */}
+                    <td 
+                      rowSpan={2}
+                      className="py-1 px-1 bg-gray-50 print:bg-white text-black font-black border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle select-none text-center"
+                    >
+                      <div className="flex items-center justify-center h-full w-full">
+                        <span className="text-base sm:text-lg print:text-[12pt] font-black font-serif text-black tracking-widest">
+                          {lunchChar}
+                        </span>
+                      </div>
+                    </td>
 
                     {/* Period 5: 02:15 - 03:15 */}
                     {(() => {
-                      const slotData = theorySlots['02:15-03:15'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['02:15-03:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -732,27 +760,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '02:15-03:15', deptName)}
-                          className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-r border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 02:15-03:15:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 02:15-03:15:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -762,10 +795,10 @@ export default function DepartmentTimetableGrid({
 
                     {/* Period 6: 03:15 - 04:15 */}
                     {(() => {
-                      const slotData = theorySlots['03:15-04:15'] || { facultyEntries: [], rawItems: [] };
-                      if (slotData.facultyEntries.length === 0) {
+                      const slotData = theorySlots['03:15-04:15'] || { groups: [], rawItems: [] };
+                      if (slotData.groups.length === 0) {
                         return (
-                          <td className="p-1 border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                          <td className="p-1 border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                             <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                           </td>
                         );
@@ -773,27 +806,32 @@ export default function DepartmentTimetableGrid({
                       return (
                         <td
                           onClick={() => onSlotClick && onSlotClick(slotData.rawItems, day, '03:15-04:15', deptName)}
-                          className="py-1 px-1 border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                          className="py-1 px-1 border-gray-300 print:border-black border-b-2 border-slate-700 print:border-b-[1.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                           title="Click to view details"
                         >
                           <div className="flex flex-col items-center justify-center space-y-0.5">
-                            {slotData.facultyEntries.map((fe, feIdx) => (
-                              <div key={feIdx} className="leading-tight">
-                                {fe.clash ? (
-                                  <span 
-                                    className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 text-[10.5px] print:text-[8pt] print:border-black print:border print:bg-transparent print:text-black cursor-help"
-                                    title={`⚠️ CLASH: ${fe.fullName} (${fe.shortName}) has multiple classes at ${dayDisplayName} 03:15-04:15:\n${fe.clash.details}`}
-                                  >
-                                    {fe.shortName}*
-                                  </span>
-                                ) : (
-                                  <span 
-                                    className="font-bold text-black text-[11px] print:text-[8.2pt]"
-                                    title={`${fe.fullName}: ${fe.items.map(it => `${it.branch} (${it.subject})${it.room ? ` in ${it.room}` : ''}`).join(', ')}`}
-                                  >
-                                    {fe.shortName}
-                                  </span>
-                                )}
+                            {slotData.groups.map((grp, gIdx) => (
+                              <div key={gIdx} className="text-[10px] sm:text-[10.5px] print:text-[8pt] text-black font-sans leading-tight py-0.5 border-b border-gray-100 print:border-gray-200 last:border-none">
+                                <span className="font-bold text-black">{grp.subject}</span>
+                                {' ('}
+                                {grp.facultyList.map((f, fIdx) => (
+                                  <React.Fragment key={fIdx}>
+                                    {fIdx > 0 && ', '}
+                                    {f.clash ? (
+                                      <span 
+                                        className="font-black text-red-700 bg-red-100/90 border border-red-500 rounded-xs px-0.5 py-0 print:border-black print:border print:bg-transparent print:text-black cursor-help"
+                                        title={`⚠️ CLASH DETECTED:\n${f.fullName} (${f.shortName}) has multiple classes at ${dayDisplayName} 03:15-04:15:\n${f.clash.details}`}
+                                      >
+                                        {f.shortName}*
+                                      </span>
+                                    ) : (
+                                      <span className="font-bold text-black" title={f.fullName}>
+                                        {f.shortName}
+                                      </span>
+                                    )}
+                                  </React.Fragment>
+                                ))}
+                                {')'}
                               </div>
                             ))}
                           </div>
@@ -802,10 +840,10 @@ export default function DepartmentTimetableGrid({
                     })()}
                   </tr>
 
-                  {/* ROW 2: LABS ROW (e.g. "Monday Labs") */}
-                  <tr className="border-b-2 border-slate-600 print:border-b-2 print:border-black hover:bg-gray-50/80 transition-colors">
+                  {/* ROW 2: LABS ROW (e.g. "Monday Labs") - Ends with thick full dark line */}
+                  <tr className="hover:bg-gray-50/80 transition-colors">
                     {/* Day Column: e.g. "Monday Labs" */}
-                    <td className="py-1.5 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black align-middle text-center print:text-[8pt] font-sans">
+                    <td className="py-1.5 px-2 print:py-1 print:px-1 font-black text-black bg-gray-100 print:bg-white border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center print:text-[8pt] font-sans">
                       <div className="leading-tight">
                         <span className="block font-bold">{dayDisplayName}</span>
                         <span className="block text-[10px] print:text-[7pt] font-semibold text-slate-600 print:text-black">Labs</span>
@@ -819,7 +857,7 @@ export default function DepartmentTimetableGrid({
                       if (block.isMerged) {
                         if (block.groups.length === 0) {
                           return (
-                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                               <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                             </td>
                           );
@@ -828,7 +866,7 @@ export default function DepartmentTimetableGrid({
                           <td
                             colSpan={2}
                             onClick={() => onSlotClick && onSlotClick(block.rawItems, day, block.range, deptName)}
-                            className="py-1 px-1.5 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                             title="Click to view details"
                           >
                             <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -842,7 +880,7 @@ export default function DepartmentTimetableGrid({
                           <React.Fragment>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s1.rawItems, day, block.s1.slotTime, deptName)}
-                              className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -855,7 +893,7 @@ export default function DepartmentTimetableGrid({
                             </td>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s2.rawItems, day, block.s2.slotTime, deptName)}
-                              className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -871,7 +909,7 @@ export default function DepartmentTimetableGrid({
                       }
                     })()}
 
-                    {/* (BREAK Column is spanning vertically from row 0) */}
+                    {/* (BREAK Column is spanning vertically rowSpan=2 from ROW 1) */}
 
                     {/* Block 2: 11:15 - 01:15 */}
                     {(() => {
@@ -880,7 +918,7 @@ export default function DepartmentTimetableGrid({
                       if (block.isMerged) {
                         if (block.groups.length === 0) {
                           return (
-                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <td colSpan={2} className="p-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                               <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                             </td>
                           );
@@ -889,7 +927,7 @@ export default function DepartmentTimetableGrid({
                           <td
                             colSpan={2}
                             onClick={() => onSlotClick && onSlotClick(block.rawItems, day, block.range, deptName)}
-                            className="py-1 px-1.5 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            className="py-1 px-1.5 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                             title="Click to view details"
                           >
                             <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -903,7 +941,7 @@ export default function DepartmentTimetableGrid({
                           <React.Fragment>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s1.rawItems, day, block.s1.slotTime, deptName)}
-                              className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -916,7 +954,7 @@ export default function DepartmentTimetableGrid({
                             </td>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s2.rawItems, day, block.s2.slotTime, deptName)}
-                              className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -932,7 +970,7 @@ export default function DepartmentTimetableGrid({
                       }
                     })()}
 
-                    {/* (LUNCH Column is spanning vertically from row 0) */}
+                    {/* (LUNCH Column is spanning vertically rowSpan=2 from ROW 1) */}
 
                     {/* Block 3: 02:15 - 04:15 */}
                     {(() => {
@@ -941,7 +979,7 @@ export default function DepartmentTimetableGrid({
                       if (block.isMerged) {
                         if (block.groups.length === 0) {
                           return (
-                            <td colSpan={2} className="p-1 border-gray-300 print:border-black text-gray-400 font-mono text-center align-middle">
+                            <td colSpan={2} className="p-1 border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black text-gray-400 font-mono text-center align-middle">
                               <span className="text-gray-400 print:text-black font-light select-none text-xs print:text-[8pt]">—</span>
                             </td>
                           );
@@ -950,7 +988,7 @@ export default function DepartmentTimetableGrid({
                           <td
                             colSpan={2}
                             onClick={() => onSlotClick && onSlotClick(block.rawItems, day, block.range, deptName)}
-                            className="py-1 px-1.5 border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                            className="py-1 px-1.5 border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                             title="Click to view details"
                           >
                             <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -964,7 +1002,7 @@ export default function DepartmentTimetableGrid({
                           <React.Fragment>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s1.rawItems, day, block.s1.slotTime, deptName)}
-                              className="py-1 px-1 border-r border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-r border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
@@ -977,7 +1015,7 @@ export default function DepartmentTimetableGrid({
                             </td>
                             <td
                               onClick={() => onSlotClick && onSlotClick(block.s2.rawItems, day, block.s2.slotTime, deptName)}
-                              className="py-1 px-1 border-gray-300 print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
+                              className="py-1 px-1 border-gray-300 print:border-black border-b-4 border-slate-900 print:border-b-[2.5pt] print:border-black align-middle text-center transition-all cursor-pointer hover:bg-slate-50 bg-white"
                               title="Click to view details"
                             >
                               <div className="flex flex-col items-center justify-center space-y-0.5">
