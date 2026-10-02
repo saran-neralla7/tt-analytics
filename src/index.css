@@ -212,28 +212,35 @@ th, td {
     flex: 1 !important;
     table-layout: fixed !important;
     border-collapse: collapse !important;
+    font-size: 10pt !important;
   }
 
   .dept-print-page thead tr {
-    height: 32px !important;
+    height: 36px !important;
   }
 
   .dept-print-page tbody {
-    height: calc(100% - 32px) !important;
+    height: calc(100% - 36px) !important;
   }
 
   .dept-print-page tbody tr {
     height: auto !important;
   }
 
-  .dept-print-page th,
+  .dept-print-page th {
+    font-size: 10.5pt !important;
+    font-weight: 900 !important;
+    padding: 4px 4px !important;
+  }
+
   .dept-print-page td {
     border: 1.5px solid #000 !important;
     border-color: #000 !important;
     color: #000 !important;
     background: #fff !important;
-    padding: 2px 4px !important;
-    line-height: 1.15 !important;
+    padding: 4px 5px !important;
+    font-size: 10pt !important;
+    line-height: 1.25 !important;
   }
 
   /* Consolidated Department Schedule printed from Individual Tab */
