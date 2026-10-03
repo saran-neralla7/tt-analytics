@@ -55,10 +55,10 @@ export default function BranchView({
         <button
           onClick={() => window.print()}
           className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
-          title={`Print ${activeBranchKey} timetable (Strictly 1 Page Landscape)`}
+          title={`Print ${activeBranchKey} timetable (A3 Full Page Landscape)`}
         >
           <Printer className="w-4 h-4 text-blue-200" />
-          Print {activeBranchKey} (1 Page Landscape)
+          Print {activeBranchKey} (A3 Full Page)
         </button>
 
         <label className="inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 cursor-pointer shadow-2xs hover:bg-slate-50 transition-colors select-none">

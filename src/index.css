@@ -87,6 +87,7 @@ th, td {
     display: block !important;
   }
 
+  /* BRANCH TIMETABLE PRINT STYLES: STRICTLY 1-PAGE A3 LANDSCAPE WITH FACULTY DETAILS BELOW */
   .branch-print-page {
     page-break-after: always !important;
     break-after: page !important;
@@ -95,12 +96,14 @@ th, td {
     box-sizing: border-box !important;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
     height: 100vh !important;
     max-height: 100vh !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
     overflow: hidden !important;
+    background: #fff !important;
   }
 
   .branch-print-page:last-child {
@@ -113,47 +116,129 @@ th, td {
     box-shadow: none !important;
     border-radius: 0 !important;
     margin: 0 !important;
-    padding: 0 !important;
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-  }
-
-  .branch-print-page .overflow-x-auto {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    overflow: visible !important;
-  }
-
-  .branch-print-page table {
-    border: 2px solid #000 !important;
+    padding: 2mm 3mm !important;
     width: 100% !important;
     height: 100% !important;
     flex: 1 !important;
-    table-layout: fixed !important;
-    border-collapse: collapse !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
+    background: #fff !important;
   }
 
-  .branch-print-page thead tr {
-    height: 40px !important;
-  }
-
-  .branch-print-page tbody {
-    height: calc(100% - 40px) !important;
-  }
-
-  .branch-print-page tbody tr {
-    height: 20% !important;
-  }
-
+  /* Reset all background colors and text colors in branch print to pure B&W (No colors, crisp borders) */
   .branch-print-page th,
   .branch-print-page td {
     border: 1.5px solid #000 !important;
     border-color: #000 !important;
     color: #000 !important;
+    background-color: #fff !important;
+    background: #fff !important;
+  }
+
+  .branch-print-page div,
+  .branch-print-page span,
+  .branch-print-page p,
+  .branch-print-page h1,
+  .branch-print-page h4 {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #000 !important;
+  }
+
+  /* Day column with prominent thick dark vertical line */
+  .branch-print-page .col-day,
+  .branch-print-page th.col-day,
+  .branch-print-page td.col-day {
+    border-right: 2.5pt solid #000 !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Main Timetable table layout */
+  .branch-print-page .overflow-x-auto {
+    height: auto !important;
+    max-height: none !important;
+    flex: none !important;
+    overflow: visible !important;
+  }
+
+  .branch-print-page .branch-main-timetable {
+    border: 2px solid #000 !important;
+    width: 100% !important;
+    height: auto !important;
+    flex: none !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin-bottom: 2px !important;
+  }
+
+  .branch-print-page .branch-main-timetable thead tr {
+    height: 28px !important;
+  }
+
+  .branch-print-page .branch-main-timetable tbody tr {
+    height: 38px !important;
+  }
+
+  .branch-print-page .branch-main-timetable th {
+    font-size: 8.5pt !important;
+    font-weight: 900 !important;
+    padding: 3px 2px !important;
+    border: 1.5px solid #000 !important;
+  }
+
+  .branch-print-page .branch-main-timetable td {
+    font-size: 8pt !important;
+    line-height: 1.2 !important;
+    padding: 2px 2px !important;
+    border: 1.5px solid #000 !important;
+  }
+
+  /* Faculty & Course Allocation Details Table below */
+  .branch-print-page .branch-legend-card {
+    border-top: 2px solid #000 !important;
+    background: #fff !important;
+    padding: 2px 0 0 0 !important;
+    margin-top: 2px !important;
+    width: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .branch-print-page .branch-legend-table {
+    border: 1.5px solid #000 !important;
+    width: 100% !important;
+    height: auto !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+  }
+
+  .branch-print-page .branch-legend-table th {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 7.5pt !important;
+    font-weight: 900 !important;
+    padding: 2px 3px !important;
+    border: 1px solid #000 !important;
+    text-transform: uppercase !important;
+  }
+
+  .branch-print-page .branch-legend-table td {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 7pt !important;
+    padding: 1.5px 3px !important;
+    border: 1px solid #000 !important;
+    line-height: 1.15 !important;
   }
 
   /* DEPARTMENT FACULTY TIMETABLE PRINT STYLES: STRICTLY 1-PAGE A3 LANDSCAPE */

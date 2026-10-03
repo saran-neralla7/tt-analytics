@@ -155,10 +155,10 @@ export default function TimetableGrid({
 
       {/* Main Table with Darker Borders & Vertically Centered Cells */}
       <div className="overflow-x-auto">
-        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black">
+        <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black branch-main-timetable">
           <thead>
-            <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-black uppercase tracking-wider">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 print:w-14 text-xs print:text-[9.5pt] font-black text-slate-900">Day</th>
+            <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-b-2 print:border-black uppercase tracking-wider">
+              <th className="col-day py-2.5 px-2 border-r-2 border-slate-700 print:border-r-[2.5pt] print:border-black w-16 print:w-14 text-xs print:text-[10pt] font-black text-slate-900 print:text-black">Day</th>
               <th className="py-2.5 px-1 border-r-2 border-slate-500 print:border-black w-24 sm:w-28 text-xs sm:text-sm font-black text-slate-900 print:hidden">Branch</th>
               {periodSlots.map((slot) => (
                 <th 
@@ -194,8 +194,8 @@ export default function TimetableGrid({
 
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
-                  {/* Day Header Column - Short name MON, TUE, WED, THU, FRI */}
-                  <td className="py-3 px-2 print:py-2 print:px-1 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b uppercase tracking-wide align-middle print:text-[10pt] font-sans">
+                  {/* Day Header Column - Short name MON, TUE, WED, THU, FRI with Full Dark Line After */}
+                  <td className="col-day py-3 px-2 print:py-2 print:px-1 font-black text-gray-900 print:text-black bg-gray-100/60 print:bg-white border-r-2 border-slate-700 print:border-r-[2.5pt] print:border-black border-b-2 border-slate-600 print:border-b print:border-black uppercase tracking-wide align-middle print:text-[10pt] font-sans">
                     {day}
                   </td>
                   
@@ -211,22 +211,21 @@ export default function TimetableGrid({
                     }
 
                     if (slot.type === 'break') {
-                      if (dayIdx === 0) {
-                        return (
-                          <td 
-                            key={slot.id} 
-                            rowSpan={visibleDays.length}
-                            className="py-2 px-1 bg-amber-50/80 text-amber-950 font-black border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle select-none text-center"
-                          >
-                            <div className="flex flex-col items-center justify-center font-black tracking-widest leading-loose py-2 select-none uppercase font-serif">
-                              {(slot.label || '').split('').map((char, cIdx) => (
-                                <span key={cIdx} className="my-0.5 sm:my-1 text-[13px] sm:text-base print:text-[15pt] font-black">{char}</span>
-                              ))}
-                            </div>
-                          </td>
-                        );
-                      }
-                      return null;
+                      const letters = (slot.label || '').toUpperCase().split('');
+                      const char = letters[dayIdx] || (slot.label || '');
+
+                      return (
+                        <td 
+                          key={slot.id} 
+                          className="p-1 font-black border-r border-gray-300 print:border-r print:border-black border-b-2 border-slate-600 print:border-b print:border-black align-middle select-none text-center bg-amber-50/70 text-amber-950 print:bg-white print:text-black"
+                        >
+                          <div className="flex items-center justify-center min-h-[52px] print:min-h-[36px]">
+                            <span className="text-base sm:text-lg print:text-[12pt] font-black uppercase tracking-wider font-serif">
+                              {char}
+                            </span>
+                          </div>
+                        </td>
+                      );
                     }
 
                     const rawCell = daySchedule[slot.time];
@@ -489,9 +488,9 @@ export default function TimetableGrid({
         </table>
       </div>
 
-      {/* Course & Faculty Allocation Legend for this Branch (Matching Excel sheet bottom table) - Hidden on Print per Screenshot 2 */}
+      {/* Course & Faculty Allocation Details for this Branch (Matching Excel sheet bottom table) */}
       {branchLegend && branchLegend.length > 0 && (
-        <div className="no-print p-4 sm:p-5 bg-slate-50/80 border-t-2 border-slate-300">
+        <div className="branch-legend-card p-3 sm:p-5 bg-slate-50/80 border-t-2 border-slate-700 print:bg-white print:border-t-2 print:border-black print:p-0 print:mt-1">
           <div 
             onClick={isCollapsibleLegend ? () => setIsLegendOpen(!isLegendOpen) : undefined}
             className={`flex flex-wrap items-center justify-between gap-2 ${
@@ -500,7 +499,7 @@ export default function TimetableGrid({
           >
             <div className="flex flex-wrap items-center gap-2">
               <BookOpen className="w-4 h-4 text-blue-600 print:hidden" />
-              <h4 className="text-xs sm:text-sm print:text-[8pt] font-bold text-slate-900 uppercase tracking-wider font-sans">
+              <h4 className="text-xs sm:text-sm print:text-[8pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
                 Course & Faculty Allocation Details ({branchInfo?.fullName || selectedBranch})
               </h4>
               {isCollapsibleLegend && (
@@ -528,101 +527,86 @@ export default function TimetableGrid({
             </div>
           </div>
 
-          <div className={`overflow-x-auto mt-3 print:mt-1 transition-all ${
+          <div className={`overflow-x-auto mt-2.5 print:mt-0.5 transition-all ${
             isCollapsibleLegend && !isLegendOpen ? 'hidden print:block' : 'block'
           }`}>
-            <table className="w-full text-left text-xs print:text-[7pt] border border-slate-300 print:border-black bg-white rounded-lg print:rounded-none shadow-2xs print:shadow-none">
+            <table className="w-full text-left text-xs print:text-[7pt] border border-slate-300 print:border-black bg-white rounded-lg print:rounded-none shadow-2xs print:shadow-none branch-legend-table">
               <thead>
-                <tr className="bg-slate-100 print:bg-slate-200 text-slate-800 font-bold border-b border-slate-300 print:border-black text-[11px] print:text-[7pt] uppercase tracking-wider">
-                  <th className="py-2 px-3 print:py-0.5 print:px-1 w-12 print:w-8 border-r border-slate-300 print:border-black text-center">S.No</th>
-                  <th className="py-2 px-3 print:py-0.5 print:px-1 w-32 print:w-20 border-r border-slate-300 print:border-black">Course Code</th>
-                  <th className="py-2 px-3 print:py-0.5 print:px-1 min-w-[200px] border-r border-slate-300 print:border-black">Full Course / Lab Name</th>
-                  <th className="py-2 px-3 print:py-0.5 print:px-1 w-28 print:w-16 border-r border-slate-300 print:border-black text-center">Type</th>
-                  <th className="py-2 px-3 print:py-0.5 print:px-1 min-w-[300px]">Assigned Faculty Name(s)</th>
+                <tr className="bg-slate-100 print:bg-white text-slate-900 print:text-black font-black border-b border-slate-300 print:border-black text-[11px] print:text-[7.5pt] uppercase tracking-wider">
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 w-12 print:w-7 border-r border-slate-300 print:border-black text-center">S.No</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 w-28 print:w-20 border-r border-slate-300 print:border-black text-center">Subject Short Name</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 min-w-[180px] print:w-64 border-r border-slate-300 print:border-black">Subject Name</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 w-28 print:w-24 border-r border-slate-300 print:border-black text-center">Faculty Short Name</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 min-w-[220px] print:w-64 border-r border-slate-300 print:border-black">Faculty Name</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 w-20 print:w-14 border-r border-slate-300 print:border-black text-center">Room No</th>
+                  <th className="py-2 px-2.5 print:py-0.5 print:px-1 w-20 print:w-14 text-center">Type</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 print:divide-black text-[11.5px] print:text-[7pt]">
+              <tbody className="divide-y divide-slate-200 print:divide-black text-[11px] print:text-[7pt]">
                 {branchLegend.map((item, idx) => {
                   const style = getSubjectStyle(item.subjectShort, item.isLab);
-                  const facultyList = item.facultyFullName ? item.facultyFullName.split('\n').filter(Boolean) : [];
-                  const shortList = item.facultyShort ? item.facultyShort.split('\n').filter(Boolean).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim()) : [];
+                  const facultyList = item.facultyFullName ? item.facultyFullName.split('\n').map(s => s.trim()).filter(Boolean) : [];
+                  const shortList = item.facultyShort ? item.facultyShort.split('\n').map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean) : [];
+                  
+                  const displayShorts = shortList.length > 0 
+                    ? shortList.join(', ') 
+                    : facultyList.map(f => getFacultyShortNames(f)).filter(Boolean).join(', ');
+                  
+                  const displayFulls = facultyList.length > 0
+                    ? facultyList.join(', ')
+                    : (item.facultyFullName || '—');
+
+                  const tutFacultyList = item.tutorialFullName ? item.tutorialFullName.split('\n').map(s => s.trim()).filter(Boolean) : [];
+                  const tutShortList = item.tutorialShort ? item.tutorialShort.split('\n').map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean) : [];
+                  const tutDisplayShorts = tutShortList.length > 0
+                    ? tutShortList.join(', ')
+                    : tutFacultyList.map(f => getFacultyShortNames(f)).filter(Boolean).join(', ');
+                  const tutDisplayFulls = tutFacultyList.length > 0 ? tutFacultyList.join(', ') : '';
 
                   return (
-                    <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
-                      <td className="py-2 px-3 print:py-0.5 print:px-1 font-mono text-center text-slate-500 border-r border-slate-200 print:border-black font-semibold">
+                    <tr key={idx} className="hover:bg-slate-50/80 print:hover:bg-white transition-colors">
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 font-mono text-center text-slate-700 print:text-black border-r border-slate-200 print:border-black font-bold">
                         {item.sno || idx + 1}
                       </td>
-                      <td className="py-2 px-3 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black font-bold">
-                        <span className={`inline-block px-2.5 py-1 print:px-1 print:py-0 rounded-md font-mono font-black text-[11px] print:text-[7pt] border ${style.bg} ${style.border} ${style.text} shadow-2xs print:shadow-none print:border-0`}>
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black font-bold text-center">
+                        <span className={`inline-block px-2 py-0.5 rounded font-mono font-black text-[11px] print:text-[7pt] print:p-0 print:border-0 print:bg-white print:text-black border ${style.bg} ${style.border} ${style.text}`}>
                           {item.subjectShort}
                         </span>
                       </td>
-                      <td className="py-2 px-3 print:py-0.5 print:px-1 font-bold text-slate-900 border-r border-slate-200 print:border-black">
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 font-bold text-slate-900 print:text-black border-r border-slate-200 print:border-black">
                         {item.subjectFullName}
                       </td>
-                      <td className="py-2 px-3 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black text-center">
-                        <span className={`px-2 py-0.5 print:px-1 print:py-0 rounded text-[10px] print:text-[6.5pt] font-bold ${
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black text-center">
+                        <span className="font-mono font-bold text-slate-900 print:text-black text-[11px] print:text-[7pt]">
+                          {displayShorts || '—'}
+                        </span>
+                        {tutDisplayShorts && (
+                          <div className="text-[10px] print:text-[6.5pt] text-slate-600 print:text-black font-semibold mt-0.5">
+                            <span className="font-bold">Tut:</span> {tutDisplayShorts}
+                          </div>
+                        )}
+                      </td>
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black">
+                        <span className="font-semibold text-slate-900 print:text-black">
+                          {displayFulls}
+                        </span>
+                        {tutDisplayFulls && (
+                          <div className="text-[10px] print:text-[6.5pt] text-slate-600 print:text-black mt-0.5">
+                            <span className="font-bold">Tut:</span> {tutDisplayFulls}
+                          </div>
+                        )}
+                      </td>
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black font-mono font-bold text-slate-800 print:text-black text-center">
+                        {item.room || '—'}
+                      </td>
+                      <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 text-center">
+                        <span className={`px-2 py-0.5 rounded text-[10px] print:text-[6.5pt] print:p-0 print:border-0 print:bg-white print:text-black font-bold ${
                           item.isLab 
-                            ? 'bg-purple-100 text-purple-900 border border-purple-200 print:border-0' 
-                            : 'bg-blue-100 text-blue-900 border border-blue-200 print:border-0'
+                            ? 'bg-purple-100 text-purple-900 border border-purple-200' 
+                            : 'bg-blue-100 text-blue-900 border border-blue-200'
                         }`}>
                           {item.isLab ? 'Lab' : 'Theory'}
                         </span>
-                      </td>
-                      <td className="py-2.5 px-3 print:py-0.5 print:px-1">
-                        {/* Print View: Compact comma-separated faculty text with initials */}
-                        <div className="print-only text-slate-900 font-medium">
-                          {facultyList.length > 0 ? (
-                            facultyList.map((fac, fIdx) => {
-                              const s = shortList[fIdx] ? shortList[fIdx].trim() : getFacultyShortNames(fac);
-                              return `${fac.trim()}${s ? ` (${s})` : ''}`;
-                            }).join(', ')
-                          ) : '—'}
-                        </div>
-
-                        {/* Screen View: Badges */}
-                        <div className="no-print">
-                          {facultyList.length > 0 ? (
-                            facultyList.length > 3 ? (
-                              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
-                                {facultyList.map((fac, fIdx) => (
-                                  <span 
-                                    key={fIdx} 
-                                    className="inline-flex items-center justify-between gap-1.5 px-2.5 py-1 rounded bg-slate-100/90 text-slate-800 border border-slate-200 font-medium text-[11px] shadow-2xs"
-                                    title={`${fac.trim()}${shortList[fIdx] ? ` (${shortList[fIdx].trim()})` : ''}`}
-                                  >
-                                    <span className="font-semibold text-slate-900 truncate">
-                                      {fac.trim()}
-                                    </span>
-                                    {shortList[fIdx] && (
-                                      <span className="text-slate-800 font-black text-[11.5px] sm:text-xs shrink-0 font-sans">
-                                        ({shortList[fIdx].trim()})
-                                      </span>
-                                    )}
-                                  </span>
-                                ))}
-                              </div>
-                            ) : (
-                              <div className="flex flex-wrap gap-2">
-                                {facultyList.map((fac, fIdx) => (
-                                  <span 
-                                    key={fIdx} 
-                                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-100/90 text-slate-800 border border-slate-200 font-medium text-[11px] shadow-2xs"
-                                  >
-                                    <span className="font-semibold text-slate-900">{fac.trim()}</span>
-                                    {shortList[fIdx] && (
-                                      <span className="text-slate-800 font-black text-[11.5px] sm:text-xs font-sans">
-                                        ({shortList[fIdx].trim()})
-                                      </span>
-                                    )}
-                                  </span>
-                                ))}
-                              </div>
-                            )
-                          ) : (
-                            <span className="text-slate-400 italic text-[11px]">—</span>
-                          )}
-                        </div>
                       </td>
                     </tr>
                   );
