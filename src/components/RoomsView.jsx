@@ -164,7 +164,7 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
   const currentRoomSchedule = roomSchedules[selectedRoom] || {};
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <div className="w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4">
       {/* Top View Mode Switcher Pills */}
       <div className="no-print flex justify-center mb-6">
         <div className="inline-flex p-1.5 bg-slate-200/90 rounded-xl gap-2 shadow-inner border border-slate-300 flex-wrap justify-center">

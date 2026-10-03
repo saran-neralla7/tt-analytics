@@ -101,7 +101,7 @@ export default function DepartmentView({
   const currentDeptClashes = deptClashCounts[selectedDept] || 0;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <div className="w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4">
       {/* Top Controls Bar (Hidden during Print) */}
       <div className="no-print bg-white p-4 rounded-xl border border-gray-300 shadow-sm mb-6 flex flex-wrap items-center justify-between gap-4">
         <div className="flex flex-wrap items-center gap-3">

@@ -17,18 +17,11 @@ th, td {
   border-color: #cbd5e1 !important; /* Darker slate-300 borders */
 }
 
-/* Ensure all timetable table cells stretch their child divs to 100% of row height with zero gaps */
+/* Table Grid Layout - Dark borders & natural height expansion preventing overlap */
 .timetable-card table {
-  height: 100%;
+  width: 100%;
 }
 
-.timetable-card table tr {
-  height: 100%;
-}
-
-.timetable-card table td {
-  height: 1px; /* Triggers CSS table layout to stretch h-full child divs to full row height */
-}
 
 /* Thick outer border for timetable cards */
 .timetable-card {

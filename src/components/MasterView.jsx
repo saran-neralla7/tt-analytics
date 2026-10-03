@@ -156,7 +156,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
   const selectedDayLabel = dayOptions.find(d => d.id === currentDay)?.label || currentDay;
 
   return (
-    <div className={`max-w-7xl mx-auto px-4 sm:px-6 py-4 ${currentDay !== 'ALL' ? 'daywise-print-mode' : ''}`}>
+    <div className={`w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4 ${currentDay !== 'ALL' ? 'daywise-print-mode' : ''}`}>
       {/* Day-Wise Filter Pills */}
       <div className="no-print flex flex-col items-center justify-center mb-6 gap-2">
         <div className="inline-flex p-1.5 bg-slate-200/90 rounded-xl gap-1.5 shadow-inner border border-slate-300 flex-wrap justify-center">
@@ -421,7 +421,6 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                               key={slot.id} 
                               colSpan={colSpan}
                               className="p-1 border-r border-gray-300 border-b-2 border-slate-600 align-middle text-center bg-slate-50/50"
-                              style={{ height: '1px' }}
                             >
                               <span className="text-slate-400 font-mono text-sm font-bold">—</span>
                             </td>
@@ -439,18 +438,15 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                               colSpan={colSpan}
                               onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                               className={`p-1.5 border-r border-gray-300 border-b-2 border-slate-600 align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 cell-course`}
-                              style={{
-                                height: '1px',
-                                ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
-                              }}
+                              style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                               title="Click to view course details"
                             >
-                              <div className="flex flex-col justify-center items-center text-center h-full min-h-[52px]">
+                              <div className="flex flex-col justify-center items-center text-center min-h-[52px]">
                                 <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug cell-subject ${style.text}`}>
                                   {cellItem.subject}
                                 </div>
                                 {cellItem.faculty && (
-                                  <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight truncate max-w-[140px] cell-faculty">
+                                  <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight cell-faculty">
                                     {cellItem.faculty}
                                   </div>
                                 )}
@@ -471,23 +467,22 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                             colSpan={colSpan}
                             onClick={() => onSlotClick && onSlotClick(items, currentDay, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, branchKey)}
                             className="p-0 border-r border-gray-300 border-b-2 border-slate-600 align-top transition-all cursor-pointer cell-course"
-                            style={{ height: '1px' }}
                             title="Click to view course details"
                           >
-                            <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90">
+                            <div className="flex flex-col h-full min-h-full w-full divide-y divide-gray-300/90">
                               {items.map((cellItem, bIdx) => {
                                 const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                                 return (
                                   <div 
                                     key={bIdx}
-                                    className={`flex-1 min-h-[36px] w-full py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
+                                    className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95`}
                                     style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                                   >
                                     <div className={`font-black tracking-tight text-[10.5px] leading-snug cell-subject ${itemStyle.text}`}>
                                       {cellItem.subject}
                                     </div>
                                     {cellItem.faculty && (
-                                      <div className="text-slate-800 font-semibold text-[9pt] mt-0.5 leading-tight truncate max-w-[140px] cell-faculty">
+                                      <div className="text-slate-800 font-semibold text-[9pt] mt-0.5 leading-tight cell-faculty">
                                         {cellItem.faculty}
                                       </div>
                                     )}

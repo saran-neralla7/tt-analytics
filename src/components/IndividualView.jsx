@@ -421,10 +421,9 @@ function FacultyTimetableCard({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/50 print:bg-white text-center select-none h-full"
-                          style={{ height: '1px' }}
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/50 print:bg-white text-center select-none"
                         >
-                          <div className="flex items-center justify-center h-full min-h-[40px] print:min-h-0">
+                          <div className="flex items-center justify-center min-h-[40px] print:min-h-0">
                             <span className="text-slate-400 font-mono text-[13px] font-bold print:text-[12pt] print:text-black">—</span>
                           </div>
                         </td>
@@ -455,8 +454,7 @@ function FacultyTimetableCard({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([...currentItems, ...nextSlotItems], day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, facFull)}
-                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
-                          style={{ height: '1px' }}
+                          className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer print:bg-white"
                           title="Click to view course details"
                         >
                           <div className="flex flex-col h-full w-full min-h-[76px] divide-y divide-gray-300/90 print:divide-black">
@@ -563,14 +561,11 @@ function FacultyTimetableCard({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
-                          className={`p-1.5 sm:p-2 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95 print:p-0.5 print:bg-white`}
-                          style={{
-                            height: '1px',
-                            ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
-                          }}
+                          className={`p-1.5 sm:p-2 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 print:p-0.5 print:bg-white`}
+                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center h-full min-h-[38px] print:min-h-0">
+                          <div className="flex flex-col justify-center items-center text-center min-h-[38px] print:min-h-0">
                             <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[9.5pt] print:leading-tight print:font-black ${style.text}`}>
                               {cellItem.subject}
                             </div>
@@ -593,17 +588,16 @@ function FacultyTimetableCard({
                         key={slot.id} 
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
-                        className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer h-full print:bg-white"
-                        style={{ height: '1px' }}
+                        className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-top transition-all cursor-pointer print:bg-white"
                         title="Click to view course details"
                       >
-                        <div className="flex flex-col h-full w-full min-h-[64px] divide-y divide-gray-300/90 print:divide-black">
+                        <div className="flex flex-col h-full min-h-full w-full min-h-[64px] divide-y divide-gray-300/90 print:divide-black">
                           {currentItems.map((cellItem, bIdx) => {
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                             return (
                               <div 
                                 key={bIdx}
-                                className={`flex-1 min-h-[36px] w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
+                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
                                 <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${itemStyle.text}`}>
@@ -845,7 +839,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   const isDeptPrint = printTarget === 'department';
 
   return (
-    <div className={`max-w-7xl mx-auto px-4 sm:px-6 py-4 ${isDeptPrint ? 'dept-consolidated-print-mode' : 'individual-print-mode'}`}>
+    <div className={`w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4 ${isDeptPrint ? 'dept-consolidated-print-mode' : 'individual-print-mode'}`}>
       {/* Department Filter & Faculty Selector Controls Bar */}
       <div className="no-print flex justify-center mb-6">
         <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3.5 rounded-xl border-2 border-slate-700 shadow-sm">

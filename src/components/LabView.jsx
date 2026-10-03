@@ -145,7 +145,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
   const labDetailsList = currentRoomData.labDetails || [];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <div className="w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4">
       {/* View Mode Switcher Pills */}
       <div className="no-print flex justify-center mb-5">
         <div className="inline-flex p-1.5 bg-gray-200/80 rounded-xl border border-gray-300 shadow-sm gap-1.5 flex-wrap justify-center">

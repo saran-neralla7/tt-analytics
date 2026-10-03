@@ -254,10 +254,9 @@ export default function TimetableGrid({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
-                          className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle bg-slate-50/50 text-center select-none h-full"
-                          style={{ height: '1px' }}
+                          className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle bg-slate-50/50 text-center select-none"
                         >
-                          <div className="flex items-center justify-center h-full min-h-[50px] print:min-h-[40px]">
+                          <div className="flex items-center justify-center min-h-[52px] print:min-h-[40px]">
                             <span className="text-slate-400 font-mono text-[14px] font-bold">—</span>
                           </div>
                         </td>
@@ -283,15 +282,14 @@ export default function TimetableGrid({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([sharedLab, h1Item, h2Item].filter(Boolean), day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, selectedBranch)}
-                          className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer h-full"
-                          style={{ height: '1px' }}
+                          className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer"
                           title="Click to view full course & faculty details (2-Hour Merged Lab Session)"
                         >
-                          <div className="flex flex-col h-full w-full min-h-[70px] print:min-h-[54px] divide-y divide-gray-300/90 print:divide-black">
+                          <div className="flex flex-col h-full min-h-full w-full min-h-[70px] print:min-h-[54px] divide-y divide-gray-300/90 print:divide-black">
                             {/* Top: 2-Hour Merged Lab Session spanning entire 2-hour width */}
                             {sharedLab && (
                               <div 
-                                className={`flex-1 min-h-[35px] print:min-h-[27px] w-full py-1 px-1.5 flex flex-col justify-center items-center text-center transition-all ${sharedStyle.bg} hover:brightness-95 ${
+                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${sharedStyle.bg} hover:brightness-95 ${
                                   isSharedHighlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                 }`}
                                 style={sharedStyle.inlineBg ? { backgroundColor: sharedStyle.inlineBg } : undefined}
@@ -320,10 +318,10 @@ export default function TimetableGrid({
                             )}
 
                             {/* Bottom: Split Tutorial Sessions side-by-side (Hour 1 on left, Hour 2 on right) */}
-                            <div className="flex-1 min-h-[35px] print:min-h-[27px] w-full flex divide-x divide-gray-300/90 print:divide-black">
+                            <div className="flex-1 shrink-0 min-h-fit w-full flex divide-x divide-gray-300/90 print:divide-black">
                               {h1Item && (
                                 <div 
-                                  className={`flex-1 min-h-[35px] print:min-h-[27px] py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${h1Style.bg} hover:brightness-95 ${
+                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${h1Style.bg} hover:brightness-95 ${
                                     isH1Highlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                   }`}
                                   style={h1Style.inlineBg ? { backgroundColor: h1Style.inlineBg } : undefined}
@@ -351,7 +349,7 @@ export default function TimetableGrid({
 
                               {h2Item && (
                                 <div 
-                                  className={`flex-1 min-h-[35px] print:min-h-[27px] py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${h2Style.bg} hover:brightness-95 ${
+                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${h2Style.bg} hover:brightness-95 ${
                                     isH2Highlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                   }`}
                                   style={h2Style.inlineBg ? { backgroundColor: h2Style.inlineBg } : undefined}
@@ -395,16 +393,13 @@ export default function TimetableGrid({
                           key={slot.id} 
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick(items, day, slot.time, selectedBranch)}
-                          className={`p-1.5 sm:p-2 print:p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle transition-all cursor-pointer h-full ${style.bg} hover:brightness-95 ${
+                          className={`p-1.5 sm:p-2 print:p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 ${
                             isHighlighted ? 'ring-2 ring-blue-600 ring-inset shadow-inner font-bold' : ''
                           }`}
-                          style={{
-                            height: '1px',
-                            ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
-                          }}
+                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                           title="Click to view full course & faculty details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center h-full min-h-[50px] print:min-h-[40px]">
+                          <div className="flex flex-col justify-center items-center text-center min-h-[52px] print:min-h-[40px] py-0.5">
                             <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] print:text-[9.5pt] leading-snug cell-subject ${style.text}`}>
                               {cellItem.subject}
                             </div>
@@ -436,11 +431,10 @@ export default function TimetableGrid({
                         key={slot.id} 
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(items, day, slot.time, selectedBranch)}
-                        className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer h-full"
-                        style={{ height: '1px' }}
+                        className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer"
                         title="Click to view full course & faculty details"
                       >
-                        <div className="flex flex-col h-full w-full min-h-[56px] print:min-h-[44px] divide-y divide-gray-300/90 print:divide-black">
+                        <div className="flex flex-col h-full min-h-full w-full divide-y divide-gray-300/90 print:divide-black">
                           {items.map((cellItem, bIdx) => {
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                             const isFacultyMatch = highlightFaculty && cellItem.faculty?.includes(highlightFaculty);
@@ -450,7 +444,7 @@ export default function TimetableGrid({
                             return (
                               <div 
                                 key={bIdx}
-                                className={`flex-1 min-h-[28px] print:min-h-[22px] w-full py-1 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 ${
+                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 ${
                                   isHighlighted ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                 }`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}

@@ -35,7 +35,7 @@ export default function Header({
           showStickyBar ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-2.5 flex items-center justify-between gap-3">
+        <div className="w-full max-w-[1750px] mx-auto px-4 sm:px-6 2xl:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2.5 min-w-0">
             <img 
               src={universityInfo.logo} 
@@ -67,7 +67,7 @@ export default function Header({
       </div>
 
       <header className="bg-white border-b-2 border-slate-200/90 pt-6 pb-6 px-4 sm:px-8 shadow-sm">
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full max-w-[1750px] mx-auto">
           {/* Top Control Bar (Hidden when printing) */}
         <div className="no-print flex flex-wrap justify-between items-center gap-3 mb-6 pb-4 border-b border-slate-100 text-sm">
           <div className="flex items-center gap-2">

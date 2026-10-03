@@ -28,7 +28,7 @@ export default function BranchView({
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <div className="w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8">
       {/* Dynamic Branch Selector Dropdown & Print Controls */}
       <div className="no-print flex flex-wrap justify-center items-center gap-3 my-4">
         <div className="flex items-center gap-3 bg-white px-4 py-2 rounded-lg border border-gray-300 shadow-sm">
