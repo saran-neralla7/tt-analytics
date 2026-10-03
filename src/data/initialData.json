@@ -2874,6 +2874,14 @@
             "isLab": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "subject": "ENV. STD.",
+            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
+            "room": "G-305",
+            "isLab": false
+          }
+        ],
         "02:15-03:15": [
           {
             "subject": "AITA LAB",
@@ -2970,14 +2978,6 @@
         ]
       },
       "WED": {
-        "09:00-10:00": [
-          {
-            "subject": "ENV. STD.",
-            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
-            "room": "G-305",
-            "isLab": false
-          }
-        ],
         "10:00-11:00": [
           {
             "subject": "CAL & LA",
@@ -12092,6 +12092,15 @@
             "isLab": false,
             "isContinued": false
           }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "ENV. STD.",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
       },
       "TUE": {
@@ -12139,13 +12148,6 @@
             "subject": "PPSTC LAB",
             "room": "COMP. LAB-1",
             "isLab": true,
-            "isContinued": false
-          },
-          {
-            "branch": "CSE-2",
-            "subject": "ENV. STD.",
-            "room": "G-305",
-            "isLab": false,
             "isContinued": false
           }
         ],
@@ -12330,7 +12332,17 @@
       }
     },
     "Mrs. G Sravani": {
-      "MON": {},
+      "MON": {
+        "12:15-01:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "ENV. STD.",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false
+          }
+        ]
+      },
       "TUE": {
         "10:00-11:00": [
           {
@@ -12352,15 +12364,6 @@
         ]
       },
       "WED": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE-2",
-            "subject": "ENV. STD.",
-            "room": "G-305",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "CSE-2",
@@ -21200,6 +21203,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -21225,18 +21237,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 14,
@@ -21329,6 +21332,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -21342,15 +21354,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -21374,7 +21377,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 16,
@@ -26812,6 +26815,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -26837,18 +26849,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 14,
@@ -26941,6 +26944,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -26954,15 +26966,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -26986,7 +26989,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 16,
@@ -37392,6 +37395,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37417,18 +37429,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr. PM": {
       "sno": 13,
@@ -37452,6 +37455,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37477,18 +37489,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr.PM": {
       "sno": 13,
@@ -37512,6 +37515,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37537,18 +37549,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. PM": {
       "sno": 13,
@@ -37572,6 +37575,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37597,18 +37609,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mrs. PM": {
       "sno": 13,
@@ -37632,6 +37635,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37657,18 +37669,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. PM": {
       "sno": 13,
@@ -37692,6 +37695,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37717,18 +37729,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. P Manikanta": {
       "sno": 13,
@@ -37752,6 +37755,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
@@ -37777,18 +37789,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "VBR": {
       "sno": 14,
@@ -38349,6 +38352,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38362,15 +38374,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38394,7 +38397,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr. GS": {
       "sno": 15,
@@ -38409,6 +38412,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38422,15 +38434,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38454,7 +38457,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr.GS": {
       "sno": 15,
@@ -38469,6 +38472,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38482,15 +38494,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38514,7 +38517,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. GS": {
       "sno": 15,
@@ -38529,6 +38532,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38542,15 +38554,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38574,7 +38577,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. GS": {
       "sno": 15,
@@ -38589,6 +38592,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38602,15 +38614,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38634,7 +38637,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Ms. GS": {
       "sno": 15,
@@ -38649,6 +38652,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38662,15 +38674,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38694,7 +38697,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. G Sravani": {
       "sno": 15,
@@ -38709,6 +38712,15 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
+          "branch": "CSE-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-305",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -38722,15 +38734,6 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-305",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -38754,7 +38757,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "BHP": {
       "sno": 16,
