@@ -567,7 +567,7 @@ export default function TimetableGrid({
                       const tutDisplayShorts = tutShortList.length > 0
                         ? tutShortList.join(', ')
                         : tutFacultyList.map(f => getFacultyShortNames(f)).filter(Boolean).join(', ');
-                      const tutDisplayFulls = tutFacultyList.length > 0 ? tutDisplayFulls : '';
+                      const tutDisplayFulls = tutFacultyList.length > 0 ? tutFacultyList.join(', ') : '';
 
                       return (
                         <tr key={idx} className="hover:bg-slate-50/80 print:hover:bg-white transition-colors">
