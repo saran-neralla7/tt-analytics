@@ -10,7 +10,8 @@
 const XLSX = require('./node_modules/xlsx');
 const fs = require('fs');
 
-const excelPath = './timetables/1st Sem TIME TABLE 2026-2027_1.1.xlsx';
+const excelFiles = fs.readdirSync('./timetables').filter(f => f.endsWith('.xlsx') && !f.startsWith('~$') && !f.startsWith('scratch'));
+const excelPath = excelFiles.length > 0 ? `./timetables/${excelFiles.find(f => f.includes('1st Sem TIME TABLE')) || excelFiles[0]}` : './timetables/1st Sem TIME TABLE 2026-2027_1.1.xlsx';
 const outputPath = './src/data/initialData.json';
 
 const wb = XLSX.readFile(excelPath);
