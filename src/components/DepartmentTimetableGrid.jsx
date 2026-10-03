@@ -32,31 +32,28 @@ const LAB_BLOCKS = [
 
 // Helper to determine the group key for a lab session
 function getLabGroupKey(item) {
-  const sub = (item.subject || '').toUpperCase().trim();
-  if (sub.includes('AITA LAB') || sub.includes('AI LAB')) {
-    return 'AI LAB';
-  }
-  if (sub.includes('PSUC LAB') || sub === 'PSUC' || sub.includes('PPSTC LAB') || sub === 'PPSTC') {
-    return 'PPSTC LAB';
-  }
-  let b = item.branch || '';
-  if (b === 'CSE(AI&ML)-1') b = 'CSM-1';
-  else if (b === 'CSE(AI&ML)-2') b = 'CSM-2';
-  else if (b === 'CSE (CS & DS)') b = 'CSE(CS&DS)';
-  return `${b}__${sub}`;
+  const branch = (item.branch || '').trim();
+  const sub = (item.subject || 'Lab').split('\n')[0].trim();
+  const room = (item.room || '').trim();
+  return `${branch}__${sub}__${room}`;
 }
 
 // Helper to format the display title for a lab group
 function formatLabGroupTitle(key, firstItem) {
-  if (key === 'AI LAB') return 'AI Lab';
-  if (key === 'PSUC LAB' || key === 'PPSTC LAB') return 'PPSTC Lab';
-  const parts = key.split('__');
-  const b = parts[0] || '';
-  const sub = parts[1] || '';
-  if (sub.includes('PHY. LAB') || sub.includes('CHEM LAB') || sub.includes('CHEM. LAB')) {
-    return b ? `${b} Lab` : sub;
+  let branch = '';
+  let sub = '';
+  if (firstItem) {
+    branch = (firstItem.branch || '').trim();
+    sub = (firstItem.subject || 'Lab').split('\n')[0].trim();
+  } else if (key) {
+    const parts = key.split('__');
+    branch = parts[0] || '';
+    sub = parts[1] || 'Lab';
   }
-  return b ? `${b} ${firstItem?.subject || sub}` : (firstItem?.subject || sub);
+  const branchPrefix = branch && !sub.toUpperCase().startsWith(branch.toUpperCase())
+    ? `${branch} `
+    : '';
+  return `${branchPrefix}${sub}`;
 }
 
 export default function DepartmentTimetableGrid({
@@ -337,7 +334,12 @@ export default function DepartmentTimetableGrid({
 
   // Helper to render a lab block group entry with increased legible font
   const renderLabGroupItem = (grp, day, slotRange) => {
-    const title = formatLabGroupTitle(grp.groupKey, grp.firstItem);
+    const sub = (grp.subject || grp.firstItem?.subject || 'Lab').split('\n')[0].trim();
+    const branch = (grp.branch || grp.firstItem?.branch || '').trim();
+    const branchPrefix = branch && !sub.toUpperCase().startsWith(branch.toUpperCase()) 
+      ? `${branch} ` 
+      : '';
+    const title = `${branchPrefix}${sub}`;
     return (
       <div 
         key={grp.groupKey} 

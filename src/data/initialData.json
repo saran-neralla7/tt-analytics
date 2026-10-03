@@ -947,6 +947,14 @@
             "isContinued": true
           }
         ],
+        "11:15-12:15": [
+          {
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
+            "room": "G-404",
+            "isLab": false
+          }
+        ],
         "12:15-01:15": [
           {
             "subject": "EME",
@@ -955,18 +963,10 @@
             "isLab": false
           }
         ],
-        "02:15-03:15": [
+        "03:15-04:15": [
           {
             "subject": "SUS. ENGG.",
             "faculty": "Dr. D Manasa, Dr. G Santosh Kumar",
-            "room": "G-404",
-            "isLab": false
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "subject": "PPSTC",
-            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
             "room": "G-404",
             "isLab": false
           }
@@ -2313,6 +2313,14 @@
             "isLab": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya",
+            "room": "E-412",
+            "isLab": false
+          }
+        ],
         "02:15-03:15": [
           {
             "subject": "YOGA / SPORTS",
@@ -2453,14 +2461,6 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
-          {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya",
-            "room": "E-412",
-            "isLab": false
-          }
-        ],
         "10:00-11:00": [
           {
             "subject": "PPSTC",
@@ -3948,7 +3948,7 @@
         "09:00-10:00": [
           {
             "subject": "PPSTC LAB",
-            "faculty": "Mrs. DMV Priya, Dr. G Santosh Kumar, Ms. PR Sri Satya",
+            "faculty": "Mrs. DMV Priya, Mr. P Manikanta, Ms. PR Sri Satya",
             "room": "COMP. LAB-1",
             "isLab": true
           },
@@ -3962,7 +3962,7 @@
         "10:00-11:00": [
           {
             "subject": "PPSTC LAB",
-            "faculty": "Mrs. DMV Priya, Dr. G Santosh Kumar, Ms. PR Sri Satya",
+            "faculty": "Mrs. DMV Priya, Mr. P Manikanta, Ms. PR Sri Satya",
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true
@@ -4770,8 +4770,8 @@
         "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "BHP\nKMK\nNVSK\nDMVP\nGSK\nPRSS",
-        "facultyFullName": "Dr. Bh Padma\nMs. K Manikyakanthi\nMr. NV Siva Krishna\nMrs. DMV Priya\nDr. G Santosh Kumar\nMs. PR Sri Satya",
+        "facultyShort": "BHP\nKMK\nNVSK\nDMVP\nPM\nPRSS",
+        "facultyFullName": "Dr. Bh Padma\nMs. K Manikyakanthi\nMr. NV Siva Krishna\nMrs. DMV Priya\nMr. P Manikanta\nMs. PR Sri Satya",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -8695,9 +8695,9 @@
           "09:00-11:00": [
             {
               "subject": "PPSTC LAB",
-              "faculty": "Mrs. DMV Priya, Dr. G Santosh Kumar, Ms. PR Sri Satya",
+              "faculty": "Mrs. DMV Priya, Mr. P Manikanta, Ms. PR Sri Satya",
               "room": "COMP. LAB-1",
-              "raw": "PPSTC LAB\nDMVP, GSK, PRSS\nCOMP. LAB-1"
+              "raw": "PPSTC LAB\nDMVP, PM, PRSS\nCOMP. LAB-1"
             },
             {
               "subject": "ENGG. PHY. LAB",
@@ -11835,7 +11835,7 @@
             "isContinued": true
           }
         ],
-        "02:15-03:15": [
+        "03:15-04:15": [
           {
             "branch": "MECH",
             "subject": "SUS. ENGG.",
@@ -11945,6 +11945,15 @@
             "isLab": false,
             "isContinued": false
           }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "SUS. ENGG.",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
       },
       "WED": {
@@ -11983,13 +11992,6 @@
             "branch": "ECE-2",
             "subject": "SUS. ENGG.",
             "room": "G-403",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "ECE-3",
-            "subject": "SUS. ENGG.",
-            "room": "E-412",
             "isLab": false,
             "isContinued": false
           }
@@ -12034,7 +12036,9 @@
             "room": "G-302",
             "isLab": false,
             "isContinued": false
-          },
+          }
+        ],
+        "03:15-04:15": [
           {
             "branch": "MECH",
             "subject": "SUS. ENGG.",
@@ -12052,24 +12056,6 @@
             "room": "E-410",
             "isLab": false,
             "isContinued": false
-          }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE (CS & DS)",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE (CS & DS)",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true
           }
         ]
       },
@@ -12149,11 +12135,27 @@
         ],
         "09:00-10:00": [
           {
+            "branch": "CSE (CS & DS)",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": false
+          },
+          {
             "branch": "CSE-2",
             "subject": "ENV. STD.",
             "room": "G-305",
             "isLab": false,
             "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE (CS & DS)",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": true
           }
         ]
       },
@@ -16448,7 +16450,7 @@
             "isContinued": false
           }
         ],
-        "03:15-04:15": [
+        "11:15-12:15": [
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -16559,7 +16561,7 @@
         ]
       },
       "TUE": {
-        "03:15-04:15": [
+        "11:15-12:15": [
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -21133,9 +21135,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -21172,18 +21174,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
       "sno": 13,
@@ -21193,9 +21186,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -21225,6 +21218,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -21234,7 +21236,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -26745,9 +26747,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -26784,18 +26786,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
       "sno": 13,
@@ -26805,9 +26798,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -26837,6 +26830,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -26846,7 +26848,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -37019,9 +37021,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37058,18 +37060,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr. GSK": {
       "sno": 12,
@@ -37079,9 +37072,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37118,18 +37111,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr.GSK": {
       "sno": 12,
@@ -37139,9 +37123,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37178,18 +37162,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Mr. GSK": {
       "sno": 12,
@@ -37199,9 +37174,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37238,18 +37213,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Mrs. GSK": {
       "sno": 12,
@@ -37259,9 +37225,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37298,18 +37264,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Ms. GSK": {
       "sno": 12,
@@ -37319,9 +37276,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37358,18 +37315,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr. G Santosh Kumar": {
       "sno": 12,
@@ -37379,9 +37327,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 8,
-      "labLoad": 2,
+      "labLoad": 0,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 8,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37418,18 +37366,9 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
-        },
-        {
-          "branch": "CSE (CS & DS)",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCHEMICAL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "PM": {
       "sno": 13,
@@ -37439,9 +37378,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37471,6 +37410,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37480,7 +37428,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr. PM": {
       "sno": 13,
@@ -37490,9 +37438,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37522,6 +37470,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37531,7 +37488,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr.PM": {
       "sno": 13,
@@ -37541,9 +37498,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37573,6 +37530,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37582,7 +37548,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. PM": {
       "sno": 13,
@@ -37592,9 +37558,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37624,6 +37590,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37633,7 +37608,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. PM": {
       "sno": 13,
@@ -37643,9 +37618,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37675,6 +37650,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37684,7 +37668,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Ms. PM": {
       "sno": 13,
@@ -37694,9 +37678,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37726,6 +37710,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37735,7 +37728,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. P Manikanta": {
       "sno": 13,
@@ -37745,9 +37738,9 @@
       "dept": "CIVIL",
       "designation": "Assistant Professor",
       "theoryLoad": 7,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 9,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -37777,6 +37770,15 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
+          "branch": "CSE (CS & DS)",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
@@ -37786,7 +37788,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CIVIL → Surveying and Geomatics (S&G) – 3 theory = 3 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "VBR": {
       "sno": 14,
