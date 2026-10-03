@@ -281,24 +281,23 @@ th, td {
   .individual-print-mode .faculty-print-page,
   .individual-print-mode .timetable-card {
     box-shadow: none !important;
-    border: 1px solid #000 !important;
+    border: 1.5px solid #000 !important;
     border-radius: 0 !important;
     background-color: #fff !important;
     color: #000 !important;
-    margin: 1.5mm 0 !important;
+    margin: 3mm 0 !important;
     padding: 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     page-break-after: auto !important;
     break-after: auto !important;
     box-sizing: border-box !important;
-    max-height: 24.2% !important;
+    max-height: none !important;
   }
 
-  /* Force clean page break after every 4th faculty timetable card */
-  .individual-print-mode .faculty-grid-container > .faculty-print-page:nth-child(4n) {
-    page-break-after: always !important;
-    break-after: page !important;
+  .individual-print-mode .faculty-grid-container > .faculty-print-page {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .individual-print-mode .faculty-grid-container > .faculty-print-page:last-child {
@@ -323,15 +322,15 @@ th, td {
   /* Ultra-compact single line faculty header in print */
   .individual-print-mode .faculty-print-page .print-only {
     display: flex !important;
-    padding: 0.5px 2px !important;
-    font-size: 6.2pt !important;
-    line-height: 1.05 !important;
+    padding: 3px 6px !important;
+    font-size: 10pt !important;
+    line-height: 1.2 !important;
     background: #f0f0f0 !important;
-    border-bottom: 1px solid #000 !important;
+    border-bottom: 1.5px solid #000 !important;
   }
 
   .individual-print-mode .faculty-print-page table {
-    border: 1px solid #000 !important;
+    border: 1.5px solid #000 !important;
     border-collapse: collapse !important;
     width: 100% !important;
     min-width: 0 !important;
@@ -342,23 +341,23 @@ th, td {
     border: 1px solid #000 !important;
     background: #f0f0f0 !important;
     color: #000 !important;
-    font-size: 5pt !important;
-    font-weight: bold !important;
-    padding: 0.5px 0.5px !important;
+    font-size: 9pt !important;
+    font-weight: 900 !important;
+    padding: 3px 2px !important;
     height: auto !important;
-    line-height: 1.0 !important;
+    line-height: 1.15 !important;
   }
 
   .individual-print-mode .faculty-print-page td {
     border: 1px solid #000 !important;
     background: #fff !important;
     color: #000 !important;
-    font-size: 4.8pt !important;
-    padding: 0.5px 0.5px !important;
+    font-size: 8.5pt !important;
+    padding: 2px 2px !important;
     vertical-align: middle !important;
     height: auto !important;
     min-height: 0 !important;
-    line-height: 0.95 !important;
+    line-height: 1.15 !important;
   }
 
   .individual-print-mode .faculty-print-page td * {
@@ -368,14 +367,12 @@ th, td {
     box-shadow: none !important;
     min-height: 0 !important;
     height: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
   }
 
   .individual-print-mode .faculty-print-page .subject-title {
-    font-size: 4.8pt !important;
-    font-weight: bold !important;
-    line-height: 1.0 !important;
+    font-size: 9pt !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
   }
 
   /* Stats and Workload tables in Individual View during print */
