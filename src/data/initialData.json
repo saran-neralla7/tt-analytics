@@ -877,14 +877,6 @@
             "isContinued": true
           }
         ],
-        "11:15-12:15": [
-          {
-            "subject": "AITA",
-            "faculty": "Ms. P KiranMayi, Mr. K AyyaRaju",
-            "room": "G-404",
-            "isLab": false
-          }
-        ],
         "12:15-01:15": [
           {
             "subject": "CAL & LA",
@@ -949,8 +941,8 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
+            "subject": "AITA",
+            "faculty": "Ms. P KiranMayi, Mr. K AyyaRaju",
             "room": "G-404",
             "isLab": false
           }
@@ -959,6 +951,14 @@
           {
             "subject": "EME",
             "faculty": "Dr. M Bhaskar Kumar, Dr. Anand Solanki",
+            "room": "G-404",
+            "isLab": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
             "room": "G-404",
             "isLab": false
           }
@@ -1245,7 +1245,7 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           }
         ],
@@ -1253,7 +1253,7 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -1270,7 +1270,7 @@
           {
             "subject": "EME LAB",
             "faculty": "Ms. K Manikyakanthi, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true
           }
         ],
@@ -1278,7 +1278,7 @@
           {
             "subject": "EME LAB",
             "faculty": "Ms. K Manikyakanthi, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -3503,7 +3503,7 @@
         "09:00-10:00": [
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
+            "faculty": "Mr. K AyyaRaju, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
             "room": "COMP. LAB-3",
             "isLab": true
           },
@@ -3517,7 +3517,7 @@
         "10:00-11:00": [
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
+            "faculty": "Mr. K AyyaRaju, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
@@ -4040,7 +4040,7 @@
           },
           {
             "subject": "AITA LAB",
-            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Mr. K AyyaRaju",
+            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj",
             "room": "COMP. LAB-2",
             "isLab": true
           }
@@ -4055,7 +4055,7 @@
           },
           {
             "subject": "AITA LAB",
-            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Mr. K AyyaRaju",
+            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj",
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
@@ -4781,8 +4781,8 @@
         "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "MVPL\nTAJ\nKAR\nPKD\nPKM\nBN",
-        "facultyFullName": "Dr. MV Pankaj Lahari\nMs. Taj\nMr. K AyyaRaju\nMr. PK DAS\nMs. P KiranMayi\nDr. B Nagarjun",
+        "facultyShort": "MVPL\nTAJ\nVBR\nPKD\nPKM\nBN",
+        "facultyFullName": "Dr. MV Pankaj Lahari\nMs. Taj\nMr. V Bhaskar Rao\nMr. PK DAS\nMs. P KiranMayi\nDr. B Nagarjun",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -5916,6 +5916,11 @@
               "raw": "CIVIL / CHEM LAB",
               "branch": "CIVIL",
               "subject": "CHEM LAB"
+            },
+            "09:00-11:00": {
+              "raw": "MECH-ROBOTICS / CHEM LAB",
+              "branch": "MECH-ROBOTICS",
+              "subject": "CHEM LAB"
             }
           },
           "WED": {
@@ -6838,7 +6843,13 @@
       "GVPCE MECH. LAB (B12-103)": {
         "schedule": {
           "MON": {},
-          "TUE": {},
+          "TUE": {
+            "02:15-04:15": {
+              "raw": "MECH-ROBOTICS / EME LAB",
+              "branch": "MECH-ROBOTICS",
+              "subject": "EME LAB"
+            }
+          },
           "WED": {
             "09:00-11:00": {
               "raw": "MECH / EME LAB",
@@ -6851,50 +6862,6 @@
               "subject": "EME LAB"
             }
           },
-          "THU": {},
-          "FRI": {}
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "EME LAB",
-            "fullName": "Elements of Mechanical Engineering Lab"
-          }
-        ]
-      },
-      "GVPCE CHEM. LAB.": {
-        "schedule": {
-          "MON": {},
-          "TUE": {
-            "09:00-11:00": {
-              "raw": "MECH-ROBOTICS / CHEM LAB",
-              "branch": "MECH-ROBOTICS",
-              "subject": "CHEM LAB"
-            }
-          },
-          "WED": {},
-          "THU": {},
-          "FRI": {}
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "CHEM LAB",
-            "fullName": "Chemistry Lab"
-          }
-        ]
-      },
-      "GVPCE MECH. LAB": {
-        "schedule": {
-          "MON": {},
-          "TUE": {
-            "02:15-04:15": {
-              "raw": "MECH-ROBOTICS / EME LAB",
-              "branch": "MECH-ROBOTICS",
-              "subject": "EME LAB"
-            }
-          },
-          "WED": {},
           "THU": {},
           "FRI": {}
         },
@@ -7336,8 +7303,8 @@
           "09:00-11:00": [
             {
               "branch": "MECH-ROBOTICS",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "MECH-ROBOTICS/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "MECH-ROBOTICS/GVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -7802,8 +7769,8 @@
           "02:15-04:15": [
             {
               "branch": "MECH-ROBOTICS",
-              "room": "GVPCE MECH. LAB",
-              "raw": "MECH-ROBOTICS/GVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "MECH-ROBOTICS/GVPCE MECH. LAB (B12-103)"
             }
           ]
         },
@@ -8098,16 +8065,16 @@
             {
               "subject": "CHEM LAB",
               "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEM LAB\nPSR, KVP, MRR\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEM LAB\nPSR, KVP, MRR\nGVPCE CHEM. LAB. (B6-102)"
             }
           ],
           "02:15-04:15": [
             {
               "subject": "EME LAB",
               "faculty": "Ms. K Manikyakanthi, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-              "room": "GVPCE MECH. LAB",
-              "raw": "EME LAB\nKMK, YPR, BVSAK\nGVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "EME LAB\nKMK, YPR, BVSAK\nGVPCE MECH. LAB (B12-103)"
             }
           ]
         },
@@ -8651,9 +8618,9 @@
           "09:00-11:00": [
             {
               "subject": "FAI & ML LAB",
-              "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
+              "faculty": "Mr. K AyyaRaju, Mr. A Dhanunjaya Prasad, Mrs. DMV Priya",
               "room": "COMP. LAB-3",
-              "raw": "FAI & ML LAB\nSLA, ADP, DMVP\nCOMP. LAB-3"
+              "raw": "FAI & ML LAB\nKAR, ADP, DMVP\nCOMP. LAB-3"
             },
             {
               "subject": "AITA LAB",
@@ -8764,9 +8731,9 @@
             },
             {
               "subject": "AITA LAB",
-              "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Mr. K AyyaRaju",
+              "faculty": "Dr. MV Pankaj Lahari, Ms. Taj",
               "room": "COMP. LAB-2",
-              "raw": "AITA LAB\nMVPL, TAJ, KAR\nCOMP. LAB-2"
+              "raw": "AITA LAB\nMVPL, TAJ, \nCOMP. LAB-2"
             }
           ],
           "02:15-04:15": [
@@ -9539,6 +9506,11 @@
           "02:15-04:15": {
             "raw": "CIVIL / CHEM LAB",
             "branch": "CIVIL",
+            "subject": "CHEM LAB"
+          },
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / CHEM LAB",
+            "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB"
           }
         },
@@ -10462,7 +10434,13 @@
     "GVPCE MECH. LAB (B12-103)": {
       "schedule": {
         "MON": {},
-        "TUE": {},
+        "TUE": {
+          "02:15-04:15": {
+            "raw": "MECH-ROBOTICS / EME LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "EME LAB"
+          }
+        },
         "WED": {
           "09:00-11:00": {
             "raw": "MECH / EME LAB",
@@ -10475,50 +10453,6 @@
             "subject": "EME LAB"
           }
         },
-        "THU": {},
-        "FRI": {}
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "EME LAB",
-          "fullName": "Elements of Mechanical Engineering Lab"
-        }
-      ]
-    },
-    "GVPCE CHEM. LAB.": {
-      "schedule": {
-        "MON": {},
-        "TUE": {
-          "09:00-11:00": {
-            "raw": "MECH-ROBOTICS / CHEM LAB",
-            "branch": "MECH-ROBOTICS",
-            "subject": "CHEM LAB"
-          }
-        },
-        "WED": {},
-        "THU": {},
-        "FRI": {}
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "CHEM LAB",
-          "fullName": "Chemistry Lab"
-        }
-      ]
-    },
-    "GVPCE MECH. LAB": {
-      "schedule": {
-        "MON": {},
-        "TUE": {
-          "02:15-04:15": {
-            "raw": "MECH-ROBOTICS / EME LAB",
-            "branch": "MECH-ROBOTICS",
-            "subject": "EME LAB"
-          }
-        },
-        "WED": {},
         "THU": {},
         "FRI": {}
       },
@@ -11126,7 +11060,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11135,7 +11069,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11318,7 +11252,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11327,7 +11261,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11465,7 +11399,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11474,7 +11408,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -13916,23 +13850,7 @@
     },
     "Ms. S Laxmi Aparna": {
       "MON": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
         "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true
-          },
           {
             "branch": "MECH-ROBOTICS",
             "subject": "PPSTC",
@@ -16532,7 +16450,7 @@
             "isContinued": false
           }
         ],
-        "11:15-12:15": [
+        "02:15-03:15": [
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -16641,7 +16559,7 @@
         ]
       },
       "TUE": {
-        "11:15-12:15": [
+        "02:15-03:15": [
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -18055,7 +17973,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18064,7 +17982,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18424,7 +18342,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18433,7 +18351,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18544,7 +18462,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18553,7 +18471,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18675,15 +18593,6 @@
             "isLab": true,
             "isContinued": true
           }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "MECH",
-            "subject": "AITA",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false
-          }
         ]
       },
       "TUE": {
@@ -18712,6 +18621,15 @@
             "room": "A-303,304",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "MECH",
+            "subject": "AITA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
           }
         ]
       },
@@ -19894,20 +19812,29 @@
     },
     "Mr. K AyyaRaju": {
       "MON": {
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true
+          }
+        ],
         "12:15-01:15": [
           {
             "branch": "CSE(AI&ML)-2",
             "subject": "AITA",
             "room": "G-303",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "MECH",
-            "subject": "AITA",
-            "room": "G-404",
             "isLab": false,
             "isContinued": false
           }
@@ -19939,6 +19866,15 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "MECH",
+            "subject": "AITA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
           }
         ]
       },
@@ -19980,26 +19916,7 @@
           }
         ]
       },
-      "THU": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE (CS & DS)",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE (CS & DS)",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true
-          }
-        ]
-      },
+      "THU": {},
       "FRI": {
         "09:00-10:00": [
           {
@@ -20710,7 +20627,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20806,7 +20723,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20866,7 +20783,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -22079,19 +21996,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -22138,7 +22046,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 27,
@@ -24619,7 +24527,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24808,7 +24716,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24877,7 +24785,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24952,15 +24860,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -24977,6 +24876,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -25006,7 +24914,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -25622,18 +25530,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -25657,6 +25565,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -25675,15 +25592,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -25693,7 +25601,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 75,
@@ -26214,7 +26122,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26310,7 +26218,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26370,7 +26278,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -27583,19 +27491,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -27642,7 +27541,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 27,
@@ -30123,7 +30022,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30312,7 +30211,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30381,7 +30280,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30456,15 +30355,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -30481,6 +30371,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -30510,7 +30409,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -31126,18 +31025,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -31161,6 +31060,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -31179,15 +31087,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -31197,7 +31096,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 75,
@@ -33374,7 +33273,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33452,7 +33351,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33530,7 +33429,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33608,7 +33507,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33686,7 +33585,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33764,7 +33663,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33842,7 +33741,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33938,7 +33837,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33998,7 +33897,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34058,7 +33957,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34118,7 +34017,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34178,7 +34077,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34238,7 +34137,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34298,7 +34197,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34358,7 +34257,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34436,7 +34335,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34514,7 +34413,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34592,7 +34491,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34670,7 +34569,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34748,7 +34647,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34826,7 +34725,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43113,19 +43012,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43172,7 +43062,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Dr. SLA": {
       "sno": 26,
@@ -43182,19 +43072,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43241,7 +43122,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Dr.SLA": {
       "sno": 26,
@@ -43251,19 +43132,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43310,7 +43182,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Mr. SLA": {
       "sno": 26,
@@ -43320,19 +43192,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43379,7 +43242,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Mrs. SLA": {
       "sno": 26,
@@ -43389,19 +43252,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43448,7 +43302,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Ms. SLA": {
       "sno": 26,
@@ -43458,19 +43312,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43517,7 +43362,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "Ms. S Laxmi Aparna": {
       "sno": 26,
@@ -43527,19 +43372,10 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 6,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
         {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
@@ -43586,7 +43422,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
+      "assignments": "MECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods"
     },
     "DBVJ": {
       "sno": 27,
@@ -60791,7 +60627,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -60851,7 +60687,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -60911,7 +60747,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -60971,7 +60807,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61031,7 +60867,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61091,7 +60927,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61151,7 +60987,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62060,7 +61896,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62138,7 +61974,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62216,7 +62052,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62294,7 +62130,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62372,7 +62208,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62450,7 +62286,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62528,7 +62364,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62597,7 +62433,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62666,7 +62502,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62735,7 +62571,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62804,7 +62640,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62873,7 +62709,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62942,7 +62778,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63011,7 +62847,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63086,15 +62922,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63111,6 +62938,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63140,7 +62976,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. PKM": {
       "sno": 63,
@@ -63173,15 +63009,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63198,6 +63025,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63227,7 +63063,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.PKM": {
       "sno": 63,
@@ -63260,15 +63096,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63285,6 +63112,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63314,7 +63150,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. PKM": {
       "sno": 63,
@@ -63347,15 +63183,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63372,6 +63199,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63401,7 +63237,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. PKM": {
       "sno": 63,
@@ -63434,15 +63270,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63459,6 +63286,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63488,7 +63324,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. PKM": {
       "sno": 63,
@@ -63521,15 +63357,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63546,6 +63373,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63575,7 +63411,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. P KiranMayi": {
       "sno": 63,
@@ -63608,15 +63444,6 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63633,6 +63460,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -63662,7 +63498,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "TAJ": {
       "sno": 64,
@@ -67878,18 +67714,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -67913,6 +67749,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -67931,15 +67776,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -67949,7 +67785,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. KAR": {
       "sno": 74,
@@ -67965,18 +67801,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68000,6 +67836,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68018,15 +67863,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68036,7 +67872,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.KAR": {
       "sno": 74,
@@ -68052,18 +67888,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68087,6 +67923,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68105,15 +67950,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68123,7 +67959,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. KAR": {
       "sno": 74,
@@ -68139,18 +67975,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68174,6 +68010,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68192,15 +68037,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68210,7 +68046,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. KAR": {
       "sno": 74,
@@ -68226,18 +68062,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68261,6 +68097,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68279,15 +68124,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68297,7 +68133,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. KAR": {
       "sno": 74,
@@ -68313,18 +68149,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68348,6 +68184,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68366,15 +68211,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68384,7 +68220,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. K AyyaRaju": {
       "sno": 74,
@@ -68400,18 +68236,18 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
           "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
           "hours": 1,
           "type": "theory",
           "loadDetail": "1 theory = 1 periods"
@@ -68435,6 +68271,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68453,15 +68298,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE (CS & DS)",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-2",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68471,7 +68307,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "NVSK": {
       "sno": 75,
