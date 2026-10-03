@@ -6,7 +6,7 @@
           {
             "subject": "PAC LAB",
             "faculty": "Dr. KV NagaLakshmi, Dr. KV Padmavathi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           }
         ],
@@ -14,7 +14,7 @@
           {
             "subject": "PAC LAB",
             "faculty": "Dr. KV NagaLakshmi, Dr. KV Padmavathi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -39,7 +39,7 @@
           {
             "subject": "PCE LAB",
             "faculty": "Dr. S Padma, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           }
         ],
@@ -47,7 +47,7 @@
           {
             "subject": "PCE LAB",
             "faculty": "Dr. S Padma, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -331,7 +331,7 @@
           {
             "subject": "S&G LAB",
             "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true
           }
         ],
@@ -339,7 +339,7 @@
           {
             "subject": "S&G LAB",
             "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true
           }
@@ -364,7 +364,7 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           }
         ],
@@ -372,7 +372,7 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -893,6 +893,14 @@
             "isLab": false
           }
         ],
+        "02:15-03:15": [
+          {
+            "subject": "AITA",
+            "faculty": "Ms. P KiranMayi, Mr. K AyyaRaju",
+            "room": "G-404",
+            "isLab": false
+          }
+        ],
         "03:15-04:15": [
           {
             "subject": "COUNSELLING / LIBRARY",
@@ -977,13 +985,13 @@
           {
             "subject": "EME LAB",
             "faculty": "Dr. M Bhaskar Kumar, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true
           },
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           }
         ],
@@ -991,14 +999,14 @@
           {
             "subject": "EME LAB",
             "faculty": "Dr. M Bhaskar Kumar, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           },
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -1023,13 +1031,13 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true
           },
           {
             "subject": "EME LAB",
             "faculty": "Dr. Anand Solanki, Ms. K Manikyakanthi, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true
           }
         ],
@@ -1037,14 +1045,14 @@
           {
             "subject": "CHEM LAB",
             "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           },
           {
             "subject": "EME LAB",
             "faculty": "Dr. Anand Solanki, Ms. K Manikyakanthi, Dr. BVS Arun Kumar",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -1055,14 +1063,6 @@
           {
             "subject": "COM",
             "faculty": "Dr. KV Padmavathi, Dr. Rani Nanda",
-            "room": "G-404",
-            "isLab": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "subject": "AITA",
-            "faculty": "Ms. P KiranMayi, Mr. K AyyaRaju",
             "room": "G-404",
             "isLab": false
           }
@@ -5897,7 +5897,7 @@
   },
   "labSheetsData": {
     "roomLabs": {
-      "GVPCE CHEM. LAB.": {
+      "GVPCE CHEM. LAB. (B6-102)": {
         "schedule": {
           "MON": {
             "09:00-11:00": {
@@ -5915,11 +5915,6 @@
             "02:15-04:15": {
               "raw": "CIVIL / CHEM LAB",
               "branch": "CIVIL",
-              "subject": "CHEM LAB"
-            },
-            "09:00-11:00": {
-              "raw": "MECH-ROBOTICS / CHEM LAB",
-              "branch": "MECH-ROBOTICS",
               "subject": "CHEM LAB"
             }
           },
@@ -6350,7 +6345,7 @@
           }
         ]
       },
-      "GVPCE SUR. LAB": {
+      "GVPCE SUR. LAB (B11-101)": {
         "schedule": {
           "MON": {},
           "TUE": {
@@ -6840,16 +6835,10 @@
           }
         ]
       },
-      "GVPCE MECH. LAB": {
+      "GVPCE MECH. LAB (B12-103)": {
         "schedule": {
           "MON": {},
-          "TUE": {
-            "02:15-04:15": {
-              "raw": "MECH-ROBOTICS / EME LAB",
-              "branch": "MECH-ROBOTICS",
-              "subject": "EME LAB"
-            }
-          },
+          "TUE": {},
           "WED": {
             "09:00-11:00": {
               "raw": "MECH / EME LAB",
@@ -6872,6 +6861,50 @@
             "fullName": "Elements of Mechanical Engineering Lab"
           }
         ]
+      },
+      "GVPCE CHEM. LAB.": {
+        "schedule": {
+          "MON": {},
+          "TUE": {
+            "09:00-11:00": {
+              "raw": "MECH-ROBOTICS / CHEM LAB",
+              "branch": "MECH-ROBOTICS",
+              "subject": "CHEM LAB"
+            }
+          },
+          "WED": {},
+          "THU": {},
+          "FRI": {}
+        },
+        "labDetails": [
+          {
+            "sno": 1,
+            "shortName": "CHEM LAB",
+            "fullName": "Chemistry Lab"
+          }
+        ]
+      },
+      "GVPCE MECH. LAB": {
+        "schedule": {
+          "MON": {},
+          "TUE": {
+            "02:15-04:15": {
+              "raw": "MECH-ROBOTICS / EME LAB",
+              "branch": "MECH-ROBOTICS",
+              "subject": "EME LAB"
+            }
+          },
+          "WED": {},
+          "THU": {},
+          "FRI": {}
+        },
+        "labDetails": [
+          {
+            "sno": 1,
+            "shortName": "EME LAB",
+            "fullName": "Elements of Mechanical Engineering Lab"
+          }
+        ]
       }
     },
     "consolidatedLabs": {
@@ -6880,8 +6913,8 @@
           "09:00-11:00": [
             {
               "branch": "CHEMICAL",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEMICAL/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEMICAL/GVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -6895,8 +6928,8 @@
           "02:15-04:15": [
             {
               "branch": "CHEMICAL",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEMICAL/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEMICAL/GVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -7281,8 +7314,8 @@
           "09:00-11:00": [
             {
               "branch": "CIVIL",
-              "room": "GVPCE SUR. LAB",
-              "raw": "CIVIL/GVPCE SUR. LAB"
+              "room": "GVPCE SUR. LAB (B11-101)",
+              "raw": "CIVIL/GVPCE SUR. LAB (B11-101)"
             }
           ]
         },
@@ -7296,8 +7329,8 @@
           "02:15-04:15": [
             {
               "branch": "CIVIL",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CIVIL/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CIVIL/GVPCE CHEM. LAB. (B6-102)"
             }
           ],
           "09:00-11:00": [
@@ -7312,15 +7345,15 @@
           "02:15-04:15": [
             {
               "branch": "MECH",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "MECH/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "MECH/GVPCE CHEM. LAB. (B6-102)"
             }
           ],
           "09:00-11:00": [
             {
               "branch": "MECH",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "MECH/GVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "MECH/GVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -7778,15 +7811,15 @@
           "09:00-11:00": [
             {
               "branch": "MECH",
-              "room": "GVPCE MECH. LAB",
-              "raw": "MECH/GVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "MECH/GVPCE MECH. LAB (B12-103)"
             }
           ],
           "02:15-04:15": [
             {
               "branch": "MECH",
-              "room": "GVPCE MECH. LAB",
-              "raw": "MECH/GVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "MECH/GVPCE MECH. LAB (B12-103)"
             }
           ]
         },
@@ -7816,16 +7849,16 @@
             {
               "subject": "PAC LAB",
               "faculty": "Dr. KV NagaLakshmi, Dr. KV Padmavathi, Dr. B Santosh Kumar",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "PAC LAB\nKVNL, KVP, BSK\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "PAC LAB\nKVNL, KVP, BSK\nGVPCE CHEM. LAB. (B6-102)"
             }
           ],
           "02:15-04:15": [
             {
               "subject": "PCE LAB",
               "faculty": "Dr. S Padma, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "PCE LAB\nSP, KVNL, BSK\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "PCE LAB\nSP, KVNL, BSK\nGVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -7885,16 +7918,16 @@
             {
               "subject": "S&G LAB",
               "faculty": "Dr. B Vidya, Mr. P Manikanta",
-              "room": "GVPCE SUR. LAB",
-              "raw": "S&G LAB\nBV, PM\nGVPCE SUR. LAB"
+              "room": "GVPCE SUR. LAB (B11-101)",
+              "raw": "S&G LAB\nBV, PM\nGVPCE SUR. LAB (B11-101)"
             }
           ],
           "02:15-04:15": [
             {
               "subject": "CHEM LAB",
               "faculty": "Dr. P Srinivas Rao, Dr. KV Padmavathi, Dr. M Rama Rajeswari",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEM LAB\nPSR, KVP, MRR\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEM LAB\nPSR, KVP, MRR\nGVPCE CHEM. LAB. (B6-102)"
             }
           ]
         },
@@ -8012,28 +8045,28 @@
             {
               "subject": "EME LAB",
               "faculty": "Dr. M Bhaskar Kumar, Mr. Y Prasad Reddy, Dr. BVS Arun Kumar",
-              "room": "GVPCE MECH. LAB",
-              "raw": "EME LAB\nMBK, YPR, BVSAK\nGVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "EME LAB\nMBK, YPR, BVSAK\nGVPCE MECH. LAB (B12-103)"
             },
             {
               "subject": "CHEM LAB",
               "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEM LAB\nKVP, KVNL, BSK\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEM LAB\nKVP, KVNL, BSK\nGVPCE CHEM. LAB. (B6-102)"
             }
           ],
           "02:15-04:15": [
             {
               "subject": "CHEM LAB",
               "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi, Dr. B Santosh Kumar",
-              "room": "GVPCE CHEM. LAB.",
-              "raw": "CHEM LAB\nKVP, KVNL, BSK\nGVPCE CHEM. LAB."
+              "room": "GVPCE CHEM. LAB. (B6-102)",
+              "raw": "CHEM LAB\nKVP, KVNL, BSK\nGVPCE CHEM. LAB. (B6-102)"
             },
             {
               "subject": "EME LAB",
               "faculty": "Dr. Anand Solanki, Ms. K Manikyakanthi, Dr. BVS Arun Kumar",
-              "room": "GVPCE MECH. LAB",
-              "raw": "EME LAB\nAS, KMK, BVSAK\nGVPCE MECH. LAB"
+              "room": "GVPCE MECH. LAB (B12-103)",
+              "raw": "EME LAB\nAS, KMK, BVSAK\nGVPCE MECH. LAB (B12-103)"
             }
           ]
         },
@@ -9488,7 +9521,7 @@
       "pending": 2,
       "extra": 0
     },
-    "GVPCE CHEM. LAB.": {
+    "GVPCE CHEM. LAB. (B6-102)": {
       "schedule": {
         "MON": {
           "09:00-11:00": {
@@ -9506,11 +9539,6 @@
           "02:15-04:15": {
             "raw": "CIVIL / CHEM LAB",
             "branch": "CIVIL",
-            "subject": "CHEM LAB"
-          },
-          "09:00-11:00": {
-            "raw": "MECH-ROBOTICS / CHEM LAB",
-            "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB"
           }
         },
@@ -9941,7 +9969,7 @@
         }
       ]
     },
-    "GVPCE SUR. LAB": {
+    "GVPCE SUR. LAB (B11-101)": {
       "schedule": {
         "MON": {},
         "TUE": {
@@ -10431,16 +10459,10 @@
         }
       ]
     },
-    "GVPCE MECH. LAB": {
+    "GVPCE MECH. LAB (B12-103)": {
       "schedule": {
         "MON": {},
-        "TUE": {
-          "02:15-04:15": {
-            "raw": "MECH-ROBOTICS / EME LAB",
-            "branch": "MECH-ROBOTICS",
-            "subject": "EME LAB"
-          }
-        },
+        "TUE": {},
         "WED": {
           "09:00-11:00": {
             "raw": "MECH / EME LAB",
@@ -10453,6 +10475,50 @@
             "subject": "EME LAB"
           }
         },
+        "THU": {},
+        "FRI": {}
+      },
+      "labDetails": [
+        {
+          "sno": 1,
+          "shortName": "EME LAB",
+          "fullName": "Elements of Mechanical Engineering Lab"
+        }
+      ]
+    },
+    "GVPCE CHEM. LAB.": {
+      "schedule": {
+        "MON": {},
+        "TUE": {
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / CHEM LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "CHEM LAB"
+          }
+        },
+        "WED": {},
+        "THU": {},
+        "FRI": {}
+      },
+      "labDetails": [
+        {
+          "sno": 1,
+          "shortName": "CHEM LAB",
+          "fullName": "Chemistry Lab"
+        }
+      ]
+    },
+    "GVPCE MECH. LAB": {
+      "schedule": {
+        "MON": {},
+        "TUE": {
+          "02:15-04:15": {
+            "raw": "MECH-ROBOTICS / EME LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "EME LAB"
+          }
+        },
+        "WED": {},
         "THU": {},
         "FRI": {}
       },
@@ -10583,7 +10649,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10592,7 +10658,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10703,7 +10769,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           },
@@ -10719,7 +10785,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10728,7 +10794,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10737,7 +10803,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10768,7 +10834,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10777,7 +10843,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10786,7 +10852,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10795,7 +10861,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10875,7 +10941,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10884,7 +10950,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10902,7 +10968,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10911,7 +10977,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PCE LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10960,7 +11026,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10969,7 +11035,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -10978,7 +11044,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -10987,7 +11053,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11022,7 +11088,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11031,7 +11097,7 @@
           {
             "branch": "CHEMICAL",
             "subject": "PAC LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11042,7 +11108,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11051,7 +11117,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11089,7 +11155,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11098,7 +11164,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11107,7 +11173,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11116,7 +11182,7 @@
           {
             "branch": "MECH",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11234,7 +11300,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11243,7 +11309,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11381,7 +11447,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": false
           }
@@ -11390,7 +11456,7 @@
           {
             "branch": "CIVIL",
             "subject": "CHEM LAB",
-            "room": "GVPCE CHEM. LAB.",
+            "room": "GVPCE CHEM. LAB. (B6-102)",
             "isLab": true,
             "isContinued": true
           }
@@ -11942,7 +12008,7 @@
           {
             "branch": "CIVIL",
             "subject": "S&G LAB",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": false
           }
@@ -11951,7 +12017,7 @@
           {
             "branch": "CIVIL",
             "subject": "S&G LAB",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true
           }
@@ -12109,7 +12175,7 @@
           {
             "branch": "CIVIL",
             "subject": "S&G LAB",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": false
           }
@@ -12118,7 +12184,7 @@
           {
             "branch": "CIVIL",
             "subject": "S&G LAB",
-            "room": "GVPCE SUR. LAB",
+            "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true
           }
@@ -17997,7 +18063,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18006,7 +18072,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18015,7 +18081,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18024,7 +18090,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18126,7 +18192,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18135,7 +18201,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18264,7 +18330,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18273,7 +18339,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18383,7 +18449,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18392,7 +18458,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18485,7 +18551,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": false
           }
@@ -18494,7 +18560,7 @@
           {
             "branch": "MECH",
             "subject": "EME LAB",
-            "room": "GVPCE MECH. LAB",
+            "room": "GVPCE MECH. LAB (B12-103)",
             "isLab": true,
             "isContinued": true
           }
@@ -18577,6 +18643,13 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false
+          },
+          {
+            "branch": "MECH",
+            "subject": "AITA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
           }
         ],
         "03:15-04:15": [
@@ -18639,15 +18712,6 @@
         ]
       },
       "THU": {
-        "10:00-11:00": [
-          {
-            "branch": "MECH",
-            "subject": "AITA",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "MECH",
@@ -19819,6 +19883,15 @@
             "isLab": false,
             "isContinued": false
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "MECH",
+            "subject": "AITA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
       },
       "TUE": {
@@ -19905,13 +19978,6 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
-          },
-          {
-            "branch": "MECH",
-            "subject": "AITA",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false
           }
         ]
       },
@@ -20407,7 +20473,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20476,7 +20542,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20494,7 +20560,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20512,7 +20578,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -20545,7 +20611,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20563,7 +20629,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20590,7 +20656,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -20614,7 +20680,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20623,7 +20689,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20650,7 +20716,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -20719,7 +20785,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -20779,7 +20845,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -21037,7 +21103,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -21139,7 +21205,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24550,7 +24616,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -24619,7 +24685,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24679,7 +24745,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24748,7 +24814,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24808,7 +24874,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24865,6 +24931,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -24893,15 +24968,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -24919,7 +24985,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -25552,6 +25618,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -25598,15 +25673,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -25615,7 +25681,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 75,
@@ -25920,7 +25986,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -25989,7 +26055,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26007,7 +26073,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26025,7 +26091,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -26058,7 +26124,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26076,7 +26142,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26103,7 +26169,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -26127,7 +26193,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26136,7 +26202,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26163,7 +26229,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -26232,7 +26298,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26292,7 +26358,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26550,7 +26616,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26652,7 +26718,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30063,7 +30129,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -30132,7 +30198,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30192,7 +30258,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30261,7 +30327,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30321,7 +30387,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30378,6 +30444,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -30406,15 +30481,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -30432,7 +30498,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -31065,6 +31131,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -31111,15 +31186,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -31128,7 +31194,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 75,
@@ -31793,7 +31859,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -31871,7 +31937,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -31949,7 +32015,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32027,7 +32093,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32105,7 +32171,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32183,7 +32249,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32261,7 +32327,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32330,7 +32396,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32348,7 +32414,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32366,7 +32432,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32399,7 +32465,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32417,7 +32483,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32435,7 +32501,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32468,7 +32534,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32486,7 +32552,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32504,7 +32570,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32537,7 +32603,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32555,7 +32621,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32573,7 +32639,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32606,7 +32672,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32624,7 +32690,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32642,7 +32708,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32675,7 +32741,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32693,7 +32759,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32711,7 +32777,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32744,7 +32810,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32762,7 +32828,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32780,7 +32846,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32813,7 +32879,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32831,7 +32897,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32858,7 +32924,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32882,7 +32948,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32900,7 +32966,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32927,7 +32993,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -32951,7 +33017,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32969,7 +33035,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -32996,7 +33062,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33020,7 +33086,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33038,7 +33104,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33065,7 +33131,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33089,7 +33155,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33107,7 +33173,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33134,7 +33200,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33158,7 +33224,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33176,7 +33242,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33203,7 +33269,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33227,7 +33293,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33245,7 +33311,7 @@
           "branch": "CHEMICAL",
           "subject": "Principles of Chemical Engineering Lab",
           "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33272,7 +33338,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33296,7 +33362,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33305,7 +33371,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33332,7 +33398,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33374,7 +33440,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33383,7 +33449,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33410,7 +33476,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33452,7 +33518,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33461,7 +33527,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33488,7 +33554,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33530,7 +33596,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33539,7 +33605,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33566,7 +33632,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33608,7 +33674,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33617,7 +33683,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33644,7 +33710,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33686,7 +33752,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33695,7 +33761,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33722,7 +33788,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33764,7 +33830,7 @@
           "branch": "CHEMICAL",
           "subject": "Physical and Analytical Chemistry Lab",
           "code": "PAC LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33773,7 +33839,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33800,7 +33866,7 @@
           "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -33869,7 +33935,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33929,7 +33995,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33989,7 +34055,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34049,7 +34115,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34109,7 +34175,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34169,7 +34235,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34229,7 +34295,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34289,7 +34355,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34367,7 +34433,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34445,7 +34511,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34523,7 +34589,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34601,7 +34667,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34679,7 +34745,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -34757,7 +34823,7 @@
           "branch": "CIVIL",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
-          "room": "GVPCE CHEM. LAB.",
+          "room": "GVPCE CHEM. LAB. (B6-102)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36149,7 +36215,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36209,7 +36275,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36269,7 +36335,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36329,7 +36395,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36389,7 +36455,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36449,7 +36515,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36509,7 +36575,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36863,7 +36929,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36923,7 +36989,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -36983,7 +37049,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37043,7 +37109,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37103,7 +37169,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37163,7 +37229,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37223,7 +37289,7 @@
           "branch": "CIVIL",
           "subject": "Surveying and Geomatics Lab",
           "code": "S&G LAB",
-          "room": "GVPCE SUR. LAB",
+          "room": "GVPCE SUR. LAB (B11-101)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -60740,7 +60806,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -60800,7 +60866,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -60860,7 +60926,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -60920,7 +60986,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -60980,7 +61046,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -61040,7 +61106,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -61100,7 +61166,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
@@ -61169,7 +61235,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61229,7 +61295,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61289,7 +61355,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61349,7 +61415,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61409,7 +61475,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61469,7 +61535,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61529,7 +61595,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61589,7 +61655,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61649,7 +61715,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61709,7 +61775,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61769,7 +61835,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61829,7 +61895,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61889,7 +61955,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -61949,7 +62015,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62018,7 +62084,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62096,7 +62162,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62174,7 +62240,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62252,7 +62318,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62330,7 +62396,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62408,7 +62474,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62486,7 +62552,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62546,7 +62612,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62615,7 +62681,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62684,7 +62750,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62753,7 +62819,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62822,7 +62888,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62891,7 +62957,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -62960,7 +63026,7 @@
           "branch": "MECH",
           "subject": "Elements of Mechanical Engineering Lab",
           "code": "EME LAB",
-          "room": "GVPCE MECH. LAB",
+          "room": "GVPCE MECH. LAB (B12-103)",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63017,6 +63083,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63045,15 +63120,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63071,7 +63137,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. PKM": {
       "sno": 63,
@@ -63095,6 +63161,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63123,15 +63198,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63149,7 +63215,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.PKM": {
       "sno": 63,
@@ -63173,6 +63239,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63201,15 +63276,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63227,7 +63293,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. PKM": {
       "sno": 63,
@@ -63251,6 +63317,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63279,15 +63354,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63305,7 +63371,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. PKM": {
       "sno": 63,
@@ -63329,6 +63395,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63357,15 +63432,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63383,7 +63449,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. PKM": {
       "sno": 63,
@@ -63407,6 +63473,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63435,15 +63510,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63461,7 +63527,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. P KiranMayi": {
       "sno": 63,
@@ -63485,6 +63551,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -63513,15 +63588,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "A-301,302",
@@ -63539,7 +63605,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "TAJ": {
       "sno": 64,
@@ -67826,6 +67892,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -67872,15 +67947,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -67889,7 +67955,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. KAR": {
       "sno": 74,
@@ -67913,6 +67979,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -67959,15 +68034,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -67976,7 +68042,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.KAR": {
       "sno": 74,
@@ -68000,6 +68066,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -68046,15 +68121,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -68063,7 +68129,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. KAR": {
       "sno": 74,
@@ -68087,6 +68153,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -68133,15 +68208,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -68150,7 +68216,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. KAR": {
       "sno": 74,
@@ -68174,6 +68240,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -68220,15 +68295,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -68237,7 +68303,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. KAR": {
       "sno": 74,
@@ -68261,6 +68327,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -68307,15 +68382,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -68324,7 +68390,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. K AyyaRaju": {
       "sno": 74,
@@ -68348,6 +68414,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-404",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CHEMICAL",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -68394,15 +68469,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-404",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -68411,7 +68477,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCHEMICAL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "NVSK": {
       "sno": 75,
