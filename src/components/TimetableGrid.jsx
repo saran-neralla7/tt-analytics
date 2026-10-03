@@ -254,6 +254,7 @@ export default function TimetableGrid({
                         <td 
                           key={slot.id} 
                           colSpan={colSpan}
+                          style={{ height: '1px' }}
                           className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle bg-slate-50/50 text-center select-none"
                         >
                           <div className="flex items-center justify-center min-h-[52px] print:min-h-[40px]">
@@ -283,6 +284,7 @@ export default function TimetableGrid({
                           colSpan={colSpan}
                           onClick={() => onSlotClick && onSlotClick([sharedLab, h1Item, h2Item].filter(Boolean), day, `${slot.time} - ${periodSlots[sIdx + 1]?.time}`, selectedBranch)}
                           className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer"
+                          style={{ height: '1px' }}
                           title="Click to view full course & faculty details (2-Hour Merged Lab Session)"
                         >
                           <div className="flex flex-col h-full min-h-full w-full min-h-[70px] print:min-h-[54px] divide-y divide-gray-300/90 print:divide-black">
@@ -396,7 +398,10 @@ export default function TimetableGrid({
                           className={`p-1.5 sm:p-2 print:p-1 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 ${
                             isHighlighted ? 'ring-2 ring-blue-600 ring-inset shadow-inner font-bold' : ''
                           }`}
-                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                          style={{
+                            height: '1px',
+                            ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                          }}
                           title="Click to view full course & faculty details"
                         >
                           <div className="flex flex-col justify-center items-center text-center min-h-[52px] print:min-h-[40px] py-0.5">
@@ -432,6 +437,7 @@ export default function TimetableGrid({
                         colSpan={colSpan}
                         onClick={() => onSlotClick && onSlotClick(items, day, slot.time, selectedBranch)}
                         className="p-0 border-r border-gray-300 print:border-black border-b-2 border-slate-600 print:border-b align-top transition-all cursor-pointer"
+                        style={{ height: '1px' }}
                         title="Click to view full course & faculty details"
                       >
                         <div className="flex flex-col h-full min-h-full w-full divide-y divide-gray-300/90 print:divide-black">

@@ -17,9 +17,13 @@ th, td {
   border-color: #cbd5e1 !important; /* Darker slate-300 borders */
 }
 
-/* Table Grid Layout - Dark borders & natural height expansion preventing overlap */
+/* Table Grid Layout - Ensure cells stretch their contents to 100% of row height with zero white gaps */
 .timetable-card table {
   width: 100%;
+}
+
+.timetable-card table td {
+  height: 1px; /* Establishes cell height basis so child flex containers with h-full stretch to full row height */
 }
 
 
