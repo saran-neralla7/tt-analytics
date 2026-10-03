@@ -1460,8 +1460,8 @@
       "MON": {
         "09:00-10:00": [
           {
-            "subject": "DLD",
-            "faculty": "Dr. I Srinivas Rao, Mrs. V Sridevi",
+            "subject": "ESAM",
+            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
             "room": "G-302",
             "isLab": false
           }
@@ -1550,8 +1550,8 @@
       "TUE": {
         "09:00-10:00": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+            "subject": "DLD",
+            "faculty": "Dr. I Srinivas Rao, Mrs. V Sridevi",
             "room": "G-302",
             "isLab": false
           }
@@ -2262,6 +2262,14 @@
             "isLab": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "subject": "ESAM",
+            "faculty": "Dr. B Santosh Kumar",
+            "room": "E-412",
+            "isLab": false
+          }
+        ],
         "02:15-03:15": [
           {
             "subject": "AITA LAB",
@@ -2457,14 +2465,6 @@
           {
             "subject": "PPSTC",
             "faculty": "Mr. CH VVD Prasad",
-            "room": "E-412",
-            "isLab": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "subject": "ESAM",
-            "faculty": "Dr. B Santosh Kumar",
             "room": "E-412",
             "isLab": false
           }
@@ -10706,6 +10706,13 @@
             "room": "GVPCE CHEM. LAB.",
             "isLab": true,
             "isContinued": false
+          },
+          {
+            "branch": "ECE-1",
+            "subject": "ESAM",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
           }
         ],
         "10:00-11:00": [
@@ -10734,18 +10741,18 @@
             "isLab": true,
             "isContinued": true
           }
-        ]
-      },
-      "TUE": {
-        "09:00-10:00": [
+        ],
+        "12:15-01:15": [
           {
-            "branch": "ECE-1",
+            "branch": "ECE-3",
             "subject": "ESAM",
-            "room": "G-302",
+            "room": "E-412",
             "isLab": false,
             "isContinued": false
           }
-        ],
+        ]
+      },
+      "TUE": {
         "03:15-04:15": [
           {
             "branch": "ECE-3",
@@ -10829,15 +10836,6 @@
             "branch": "ECE-1",
             "subject": "ESAM",
             "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "ECE-3",
-            "subject": "ESAM",
-            "room": "E-412",
             "isLab": false,
             "isContinued": false
           }
@@ -11185,6 +11183,15 @@
     },
     "Dr. M Rama Rajeswari": {
       "MON": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "ESAM",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -11242,13 +11249,6 @@
           }
         ],
         "09:00-10:00": [
-          {
-            "branch": "ECE-1",
-            "subject": "ESAM",
-            "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          },
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CHEM LAB",
@@ -14014,22 +14014,6 @@
     },
     "Dr. I Srinivas Rao": {
       "MON": {
-        "09:00-10:00": [
-          {
-            "branch": "ECE-1",
-            "subject": "DLD",
-            "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "subject": "AITA",
-            "room": "G-408",
-            "isLab": false,
-            "isContinued": false
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -14047,9 +14031,27 @@
             "isLab": true,
             "isContinued": true
           }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "subject": "AITA",
+            "room": "G-408",
+            "isLab": false,
+            "isContinued": false
+          }
         ]
       },
       "TUE": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "DLD",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -14410,13 +14412,6 @@
       "MON": {
         "09:00-10:00": [
           {
-            "branch": "ECE-1",
-            "subject": "DLD",
-            "room": "G-302",
-            "isLab": false,
-            "isContinued": false
-          },
-          {
             "branch": "MECH",
             "subject": "PPSTC LAB",
             "room": "COMP. LAB-1",
@@ -14435,6 +14430,15 @@
         ]
       },
       "TUE": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "DLD",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -20478,15 +20482,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -20494,6 +20489,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -20523,7 +20527,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 4,
@@ -20686,6 +20690,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -20712,15 +20725,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -20730,7 +20734,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 7,
@@ -22096,12 +22100,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -22114,12 +22118,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -22140,7 +22144,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -22302,15 +22306,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -22318,6 +22313,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -22347,7 +22351,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 32,
@@ -25991,15 +25995,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -26007,6 +26002,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -26036,7 +26040,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 4,
@@ -26199,6 +26203,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -26225,15 +26238,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -26243,7 +26247,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 7,
@@ -27609,12 +27613,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -27627,12 +27631,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -27653,7 +27657,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -27815,15 +27819,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -27831,6 +27826,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -27860,7 +27864,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 32,
@@ -32332,15 +32336,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32348,6 +32343,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32377,7 +32381,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. BSK": {
       "sno": 3,
@@ -32401,15 +32405,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32417,6 +32412,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32446,7 +32450,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr.BSK": {
       "sno": 3,
@@ -32470,15 +32474,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32486,6 +32481,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32515,7 +32519,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mr. BSK": {
       "sno": 3,
@@ -32539,15 +32543,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32555,6 +32550,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32584,7 +32588,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mrs. BSK": {
       "sno": 3,
@@ -32608,15 +32612,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32624,6 +32619,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32653,7 +32657,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Ms. BSK": {
       "sno": 3,
@@ -32677,15 +32681,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32693,6 +32688,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32722,7 +32726,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. B Santosh Kumar": {
       "sno": 3,
@@ -32746,15 +32750,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CHEMICAL",
-          "subject": "Principles of Chemical Engineering Lab",
-          "code": "PCE LAB",
-          "room": "GVPCE CHEM. LAB.",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
@@ -32762,6 +32757,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CHEMICAL",
+          "subject": "Principles of Chemical Engineering Lab",
+          "code": "PCE LAB",
+          "room": "GVPCE CHEM. LAB.",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -32791,7 +32795,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nCHEMICAL → Principles of Chemical Engineering Lab (PCE LAB) – 2 lab = 2 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "KVNL": {
       "sno": 4,
@@ -33836,6 +33840,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -33862,15 +33875,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -33880,7 +33884,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr. MRR": {
       "sno": 6,
@@ -33896,6 +33900,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -33922,15 +33935,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -33940,7 +33944,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr.MRR": {
       "sno": 6,
@@ -33956,6 +33960,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -33982,15 +33995,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -34000,7 +34004,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Mr. MRR": {
       "sno": 6,
@@ -34016,6 +34020,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -34042,15 +34055,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -34060,7 +34064,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Mrs. MRR": {
       "sno": 6,
@@ -34076,6 +34080,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -34102,15 +34115,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -34120,7 +34124,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Ms. MRR": {
       "sno": 6,
@@ -34136,6 +34140,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -34162,15 +34175,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -34180,7 +34184,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr. M Rama Rajeswari": {
       "sno": 6,
@@ -34196,6 +34200,15 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -34222,15 +34235,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
@@ -34240,7 +34244,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods"
     },
     "PSR": {
       "sno": 7,
@@ -43706,12 +43710,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -43724,12 +43728,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -43750,7 +43754,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. ISR": {
       "sno": 28,
@@ -43766,12 +43770,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -43784,12 +43788,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -43810,7 +43814,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.ISR": {
       "sno": 28,
@@ -43826,12 +43830,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -43844,12 +43848,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -43870,7 +43874,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. ISR": {
       "sno": 28,
@@ -43886,12 +43890,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -43904,12 +43908,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -43930,7 +43934,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. ISR": {
       "sno": 28,
@@ -43946,12 +43950,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -43964,12 +43968,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -43990,7 +43994,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. ISR": {
       "sno": 28,
@@ -44006,12 +44010,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -44024,12 +44028,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -44050,7 +44054,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. I Srinivas Rao": {
       "sno": 28,
@@ -44066,12 +44070,12 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Digital Logic Design Lab",
+          "code": "DLD LAB",
+          "room": "A-406",
+          "hours": 4,
+          "type": "lab",
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -44084,12 +44088,12 @@
         },
         {
           "branch": "ECE-1",
-          "subject": "Digital Logic Design Lab",
-          "code": "DLD LAB",
-          "room": "A-406",
-          "hours": 4,
-          "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -44110,7 +44114,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH-ROBOTICS → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "VA": {
       "sno": 29,
@@ -45154,15 +45158,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45170,6 +45165,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45199,7 +45203,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Dr. VS": {
       "sno": 31,
@@ -45214,15 +45218,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45230,6 +45225,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45259,7 +45263,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Dr.VS": {
       "sno": 31,
@@ -45274,15 +45278,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45290,6 +45285,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45319,7 +45323,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Mr. VS": {
       "sno": 31,
@@ -45334,15 +45338,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45350,6 +45345,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45379,7 +45383,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Mrs. VS": {
       "sno": 31,
@@ -45394,15 +45398,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45410,6 +45405,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45439,7 +45443,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Ms. VS": {
       "sno": 31,
@@ -45454,15 +45458,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45470,6 +45465,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45499,7 +45503,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "Mrs. V Sridevi": {
       "sno": 31,
@@ -45514,15 +45518,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-302",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "MECH",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45530,6 +45525,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-302",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -45559,7 +45563,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "MECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
     },
     "BDS": {
       "sno": 32,
