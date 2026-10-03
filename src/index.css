@@ -180,24 +180,24 @@ th, td {
   }
 
   .branch-print-page .branch-main-timetable thead tr {
-    height: 28px !important;
+    height: 32px !important;
   }
 
   .branch-print-page .branch-main-timetable tbody tr {
-    height: 38px !important;
+    height: 48px !important;
   }
 
   .branch-print-page .branch-main-timetable th {
-    font-size: 8.5pt !important;
+    font-size: 9pt !important;
     font-weight: 900 !important;
     padding: 3px 2px !important;
     border: 1.5px solid #000 !important;
   }
 
   .branch-print-page .branch-main-timetable td {
-    font-size: 8pt !important;
-    line-height: 1.2 !important;
-    padding: 2px 2px !important;
+    font-size: 8.5pt !important;
+    line-height: 1.25 !important;
+    padding: 2.5px 2px !important;
     border: 1.5px solid #000 !important;
   }
 
@@ -205,12 +205,10 @@ th, td {
   .branch-print-page .branch-legend-card {
     border-top: 2px solid #000 !important;
     background: #fff !important;
-    padding: 2px 0 0 0 !important;
-    margin-top: 2px !important;
+    padding: 3px 0 0 0 !important;
+    margin-top: 3px !important;
     width: 100% !important;
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
+    display: block !important;
     overflow: hidden !important;
   }
 
@@ -222,12 +220,13 @@ th, td {
     border-collapse: collapse !important;
   }
 
+  /* Base styles for Legend Table */
   .branch-print-page .branch-legend-table th {
     background: #fff !important;
     color: #000 !important;
-    font-size: 7.5pt !important;
+    font-size: 8.5pt !important;
     font-weight: 900 !important;
-    padding: 2px 3px !important;
+    padding: 2.5px 3px !important;
     border: 1px solid #000 !important;
     text-transform: uppercase !important;
   }
@@ -235,10 +234,62 @@ th, td {
   .branch-print-page .branch-legend-table td {
     background: #fff !important;
     color: #000 !important;
-    font-size: 7pt !important;
-    padding: 1.5px 3px !important;
+    font-size: 8pt !important;
+    padding: 2px 3px !important;
     border: 1px solid #000 !important;
-    line-height: 1.15 !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Adaptive sizing based on row count: Increase font and padding when space permits (strictly 1 page) */
+  .branch-print-page .branch-legend-table.legend-rows-11 th {
+    font-size: 9.5pt !important;
+    padding: 4px 5px !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-11 td {
+    font-size: 9pt !important;
+    padding: 3.5px 5px !important;
+    line-height: 1.3 !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-11 td span,
+  .branch-print-page .branch-legend-table.legend-rows-11 td div {
+    font-size: 9pt !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-11 td .tut-text {
+    font-size: 8pt !important;
+  }
+
+  .branch-print-page .branch-legend-table.legend-rows-12 th {
+    font-size: 9pt !important;
+    padding: 3.5px 4px !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-12 td {
+    font-size: 8.5pt !important;
+    padding: 3px 4px !important;
+    line-height: 1.25 !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-12 td span,
+  .branch-print-page .branch-legend-table.legend-rows-12 td div {
+    font-size: 8.5pt !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-12 td .tut-text {
+    font-size: 7.5pt !important;
+  }
+
+  .branch-print-page .branch-legend-table.legend-rows-13 th {
+    font-size: 8.5pt !important;
+    padding: 2.5px 4px !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-13 td {
+    font-size: 8pt !important;
+    padding: 2px 4px !important;
+    line-height: 1.2 !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-13 td span,
+  .branch-print-page .branch-legend-table.legend-rows-13 td div {
+    font-size: 8pt !important;
+  }
+  .branch-print-page .branch-legend-table.legend-rows-13 td .tut-text {
+    font-size: 7.2pt !important;
   }
 
   /* DEPARTMENT FACULTY TIMETABLE PRINT STYLES: STRICTLY 1-PAGE A3 LANDSCAPE */
