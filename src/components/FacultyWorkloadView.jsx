@@ -28,15 +28,20 @@ export default function FacultyWorkloadView({
     facultyList.forEach(f => {
       const sched = master[f.fullName] || {};
       let theoryLoad = 0;
+      let tutLoad = 0;
       let labLoad = 0;
 
       Object.values(sched).forEach(daySlots => {
         Object.values(daySlots || {}).forEach(items => {
           const itemList = Array.isArray(items) ? items : items ? [items] : [];
           itemList.forEach(it => {
-            const isLab = it.isLab || (it.subject && it.subject.toLowerCase().includes('lab'));
+            const subj = (it.subject || '').trim();
+            const isLab = it.isLab || /lab/i.test(subj);
+            const isTut = it.isTutorial || /tut/i.test(subj);
             if (isLab) {
               labLoad += 1;
+            } else if (isTut) {
+              tutLoad += 1;
             } else {
               theoryLoad += 1;
             }
@@ -46,9 +51,9 @@ export default function FacultyWorkloadView({
 
       map[f.fullName] = {
         theoryLoad,
+        tutLoad,
         labLoad,
-        tutLoad: 0,
-        totalLoad: theoryLoad + labLoad
+        totalLoad: theoryLoad + tutLoad + labLoad
       };
     });
 
@@ -181,11 +186,15 @@ export default function FacultyWorkloadView({
     return filteredFaculty.reduce((acc, f) => acc + (facultyWorkloadMap[f.fullName]?.theoryLoad || 0), 0);
   }, [filteredFaculty, facultyWorkloadMap]);
 
+  const totalTutHours = useMemo(() => {
+    return filteredFaculty.reduce((acc, f) => acc + (facultyWorkloadMap[f.fullName]?.tutLoad || 0), 0);
+  }, [filteredFaculty, facultyWorkloadMap]);
+
   const totalLabHours = useMemo(() => {
     return filteredFaculty.reduce((acc, f) => acc + (facultyWorkloadMap[f.fullName]?.labLoad || 0), 0);
   }, [filteredFaculty, facultyWorkloadMap]);
 
-  const totalHoursTaught = totalTheoryHours + totalLabHours;
+  const totalHoursTaught = totalTheoryHours + totalTutHours + totalLabHours;
   const avgWorkload = totalFacultyCount > 0 ? (totalHoursTaught / totalFacultyCount).toFixed(1) : 0;
 
   return (
@@ -455,7 +464,13 @@ export default function FacultyWorkloadView({
 
                         {/* Tutorial Workload (ONLY NUMBER) */}
                         <td className="py-3 px-4 border-r border-gray-200 text-center align-middle bg-amber-50/30">
-                          <span className="font-mono font-bold text-slate-400 text-sm sm:text-base">0</span>
+                          {loadInfo.tutLoad > 0 ? (
+                            <span className="font-mono font-black text-amber-950 text-sm sm:text-base">
+                              {loadInfo.tutLoad}
+                            </span>
+                          ) : (
+                            <span className="font-mono font-bold text-slate-400 text-sm sm:text-base">0</span>
+                          )}
                         </td>
 
                         {/* Lab Workload (ONLY NUMBER) */}
@@ -490,7 +505,7 @@ export default function FacultyWorkloadView({
                       {totalTheoryHours}
                     </td>
                     <td className="py-3 px-4 border-r border-gray-300 text-center font-mono font-black text-amber-950 bg-amber-100/60 text-sm sm:text-base">
-                      0
+                      {totalTutHours}
                     </td>
                     <td className="py-3 px-4 border-r border-gray-300 text-center font-mono font-black text-purple-950 bg-purple-100/60 text-sm sm:text-base">
                       {totalLabHours}
@@ -642,6 +657,7 @@ export default function FacultyWorkloadView({
                     <th className="py-3 px-2 border-r border-gray-300 w-24 whitespace-nowrap">Department</th>
                     <th className="py-3 px-2 border-r border-gray-300 w-28 whitespace-nowrap">Designation</th>
                     <th className="py-3 px-1 border-r border-gray-300 text-center w-14 whitespace-nowrap">Theory</th>
+                    <th className="py-3 px-1 border-r border-gray-300 text-center w-14 whitespace-nowrap">Tut.</th>
                     <th className="py-3 px-1 border-r border-gray-300 text-center w-14 whitespace-nowrap">Lab</th>
                     <th className="py-3 px-1.5 border-r-2 border-slate-500 text-center w-16 bg-blue-100/60 text-blue-950 font-black whitespace-nowrap">Total</th>
                     <th className="py-3 px-3">Assigned Courses & Classes</th>
@@ -651,6 +667,7 @@ export default function FacultyWorkloadView({
                   {filteredFaculty.map((item, index) => {
                     const loadInfo = facultyWorkloadMap[item.fullName] || {
                       theoryLoad: item.theoryLoad || 0,
+                      tutLoad: item.tutLoad || 0,
                       labLoad: item.labLoad || 0,
                       totalLoad: item.totalLoad || 0
                     };
@@ -676,6 +693,9 @@ export default function FacultyWorkloadView({
                         </td>
                         <td className="py-2.5 px-1 text-center font-bold text-slate-800 border-r border-gray-300 border-b-2 border-slate-600 text-xs whitespace-nowrap">
                           {loadInfo.theoryLoad} hrs
+                        </td>
+                        <td className="py-2.5 px-1 text-center font-bold text-amber-800 border-r border-gray-300 border-b-2 border-slate-600 text-xs whitespace-nowrap">
+                          {loadInfo.tutLoad || 0} hrs
                         </td>
                         <td className="py-2.5 px-1 text-center font-bold text-purple-800 border-r border-gray-300 border-b-2 border-slate-600 text-xs whitespace-nowrap">
                           {loadInfo.labLoad} hrs
