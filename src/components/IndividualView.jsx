@@ -869,6 +869,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   }, [facultyMembers, filteredFacultyList, selectedFaculty]);
 
   const isDeptPrint = printTarget === 'department';
+  const isDeptConsolidatedMode = isDeptPrint;
 
   return (
     <div className={`w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4 ${isDeptPrint ? 'dept-consolidated-print-mode' : 'individual-print-mode'}`}>
@@ -986,7 +987,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
       {/* DEPARTMENT WORKLOAD STATISTICS & FACULTY TABLE - ONLY SHOWN WHEN A SPECIFIC DEPARTMENT IS SELECTED */}
       {selectedDept !== 'ALL' && (
-        <div className={`space-y-6 mb-6 ${includeStatsInPrint && !isDeptConsolidatedMode ? '' : 'print:hidden'}`}>
+        <div className={`space-y-6 mb-6 ${includeStatsInPrint && !isDeptPrint ? '' : 'print:hidden'}`}>
           {/* 1. Department Summary Row with Big Bold Numbers */}
           <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card dept-stats-card">
             <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
