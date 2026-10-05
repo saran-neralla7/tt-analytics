@@ -415,7 +415,7 @@ function parseCellContent(val) {
   }
 
   if (lines.length >= 3) {
-    return [{ subject: lines[0], faculty: resolveFacultyNames(lines[1]), room: lines[2], isLab }];
+    return [{ subject: lines[0], faculty: resolveFacultyNames(lines[1]), rawFaculty: lines[1], room: lines[2], isLab }];
   } else if (lines.length === 2) {
     const second = lines[1];
     const { facultyStr, roomStr } = extractRoomFromEnd(second);
@@ -423,16 +423,17 @@ function parseCellContent(val) {
       return [{
         subject: lines[0],
         faculty: resolveFacultyNames(facultyStr),
+        rawFaculty: facultyStr,
         room: roomStr,
         isLab
       }];
     } else if (second.startsWith('G-') || second.startsWith('E-') || second.startsWith('C-') || second.startsWith('A-') || second.includes('LAB') || second.includes('GVPCE')) {
-      return [{ subject: lines[0], faculty: '', room: second, isLab }];
+      return [{ subject: lines[0], faculty: '', rawFaculty: '', room: second, isLab }];
     } else {
-      return [{ subject: lines[0], faculty: resolveFacultyNames(second), room: '', isLab }];
+      return [{ subject: lines[0], faculty: resolveFacultyNames(second), rawFaculty: second, room: '', isLab }];
     }
   }
-  return [{ subject: val, faculty: '', room: '', isLab }];
+  return [{ subject: val, faculty: '', rawFaculty: '', room: '', isLab }];
 }
 
 function normSubj(s) {
@@ -515,6 +516,28 @@ knownBranches.forEach(b => {
 });
 console.log(`Branch legends parsed for: ${Object.keys(branchLegends).length} branches`);
 
+// 2.5 Parse Class_Teachers sheet
+const ctSheet = wb.Sheets['Class_Teachers'];
+const classTeachers = {};
+if (ctSheet) {
+  const ctRows = XLSX.utils.sheet_to_json(ctSheet);
+  ctRows.forEach(r => {
+    const rawBranch = (r['Branch Name'] || '').trim();
+    const teacher = (r['Class Teacher Name'] || '').trim();
+    if (!rawBranch || !teacher) return;
+    
+    classTeachers[rawBranch] = teacher;
+    const normB = rawBranch
+      .replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)')
+      .replace(/\s+/g, ' ')
+      .trim();
+    classTeachers[normB] = teacher;
+    if (normB === 'CSE(AI&ML)-1') classTeachers['CSE (AI & ML)-1'] = teacher;
+    if (normB === 'CSE(AI&ML)-2') classTeachers['CSE (AI & ML)-2'] = teacher;
+  });
+}
+console.log(`Class teachers parsed for: ${Object.keys(classTeachers).length} branches`);
+
 // 3. Parse Timetable_Final into timetableData (authoritative sheet for branch schedules)
 const wsFinal = wb.Sheets['Timetable_Final'] || wb.Sheets['Timetable_Master'];
 const rowsFinal = XLSX.utils.sheet_to_json(wsFinal, { header: 1, defval: '' });
@@ -583,7 +606,7 @@ facultyList.forEach(f => {
   masterFacultyTimetables[f.fullName] = { MON: {}, TUE: {}, WED: {}, THU: {}, FRI: {} };
 });
 
-function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isContinued = false) {
+function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isContinued = false, rawFaculty = '') {
   if (!masterFacultyTimetables[facName] || !masterFacultyTimetables[facName][day]) return;
   const list = masterFacultyTimetables[facName][day][slot] || [];
   let cleanSubj = (subject || '').split('\n')[0].trim();
@@ -594,7 +617,7 @@ function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isCont
     return xNorm === normS || xNorm.includes(normS) || normS.includes(xNorm);
   });
   if (!exists) {
-    list.push({ branch, subject: cleanSubj, room, isLab, isContinued });
+    list.push({ branch, subject: cleanSubj, room, isLab, isContinued, rawFaculty });
     masterFacultyTimetables[facName][day][slot] = list;
   }
 }
@@ -624,9 +647,9 @@ for (let r = 1; r < rowsFinal.length; r++) {
       if (facs.length === 0) return;
 
       facs.forEach(fn => {
-        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false);
+        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false, parsed.rawFaculty || '');
         if (parsed.isLab && nextSlot) {
-          addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true);
+          addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true, parsed.rawFaculty || '');
         }
       });
     });
@@ -934,6 +957,8 @@ if (!hasDedicatedLabSheets || Object.keys(roomLabs).length === 0) {
       consolidatedLabs[fullCourseName][curD][block].push({
         branch: curB,
         room: roomStr,
+        faculty: resolvedFac,
+        facultyShort: faculty,
         raw: `${curB}/${roomStr}`
       });
 
@@ -961,7 +986,9 @@ if (!hasDedicatedLabSheets || Object.keys(roomLabs).length === 0) {
         roomLabs[rm].schedule[curD][block] = {
           raw: `${curB} / ${subject}`,
           branch: curB,
-          subject
+          subject,
+          faculty: resolvedFac,
+          facultyShort: faculty
         };
         if (!roomLabs[rm].labDetails.some(d => d.shortName === subject)) {
           roomLabs[rm].labDetails.push({
@@ -1123,6 +1150,7 @@ console.log(`Dedicated lab rooms: ${Object.keys(roomLabs).length}, Consolidated 
 const output = {
   timetableData,
   branchLegends,
+  classTeachers,
   labSheetsData,
   masterFacultyTimetables,
   facultyList: activeFacultyList,

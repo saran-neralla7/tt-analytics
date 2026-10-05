@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { UserCheck, Search, Filter, Clock, Award, Briefcase, Users, BookOpen } from 'lucide-react';
+import { UserCheck, Search, Filter, Clock, Award, Briefcase, Users, BookOpen, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import FacultyAvailabilitySubtab from './FacultyAvailabilitySubtab';
 
@@ -126,6 +126,30 @@ export default function FacultyWorkloadView({
       return matchesSearch && matchesDept && matchesFaculty;
     });
   }, [facultyList, searchTerm, selectedDept, selectedFaculty]);
+
+  // Total column sort state: 'none' | 'desc' | 'asc'
+  const [totalSortOrder, setTotalSortOrder] = useState('none');
+
+  const handleTotalSortToggle = () => {
+    setTotalSortOrder(prev => {
+      if (prev === 'none') return 'desc';
+      if (prev === 'desc') return 'asc';
+      return 'none';
+    });
+  };
+
+  const displaySummaryFaculty = useMemo(() => {
+    if (totalSortOrder === 'none') return filteredFaculty;
+    return [...filteredFaculty].sort((a, b) => {
+      const aTotal = facultyWorkloadMap[a.fullName]?.totalLoad ?? 0;
+      const bTotal = facultyWorkloadMap[b.fullName]?.totalLoad ?? 0;
+      if (totalSortOrder === 'desc') {
+        return bTotal - aTotal;
+      } else {
+        return aTotal - bTotal;
+      }
+    });
+  }, [filteredFaculty, totalSortOrder, facultyWorkloadMap]);
 
   // Measure and synchronize dimensions for detailed view
   useEffect(() => {
@@ -356,13 +380,26 @@ export default function FacultyWorkloadView({
                     <th className="py-3 px-4 border-r border-gray-300 bg-purple-50/70 text-purple-950 font-black text-center w-36 sm:w-40">
                       Lab Workload
                     </th>
-                    <th className="py-3 px-4 w-28 bg-emerald-50/70 text-emerald-950 font-black text-center">
-                      Total
+                    <th 
+                      onClick={handleTotalSortToggle}
+                      className="py-3 px-4 w-32 bg-emerald-50/70 hover:bg-emerald-100/90 text-emerald-950 font-black text-center cursor-pointer select-none transition-colors border-l border-emerald-200"
+                      title="Click to sort by Total Workload (Descending / Ascending / Default)"
+                    >
+                      <div className="flex items-center justify-center gap-1.5">
+                        <span>Total</span>
+                        {totalSortOrder === 'desc' ? (
+                          <ArrowDown className="w-4 h-4 text-emerald-800" />
+                        ) : totalSortOrder === 'asc' ? (
+                          <ArrowUp className="w-4 h-4 text-emerald-800" />
+                        ) : (
+                          <ArrowUpDown className="w-3.5 h-3.5 text-emerald-600/70" />
+                        )}
+                      </div>
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {filteredFaculty.map((item, index) => {
+                  {displaySummaryFaculty.map((item, index) => {
                     const cleanShort = (item.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
                     const loadInfo = facultyWorkloadMap[item.fullName] || {
                       theoryLoad: 0,

@@ -72,6 +72,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
   const [selectedRoom, setSelectedRoom] = useState(roomLabKeys[0] || 'COMP. LAB-1');
   const [selectedBranch, setSelectedBranch] = useState('ALL');
   const [summarySearch, setSummarySearch] = useState('');
+  const [showFacultyNames, setShowFacultyNames] = useState(true);
 
   // Filtered lab summary
   const filteredLabSummary = useMemo(() => {
@@ -199,22 +200,34 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
       <div className="no-print flex justify-center mb-6">
         <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3 rounded-xl border border-gray-300 shadow-sm w-full max-w-2xl">
           {viewMode === 'course' && (
-            <div className="flex items-center gap-2">
-              <label htmlFor="course-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
-                <FlaskConical className="w-4 h-4 text-purple-600" /> Lab Course:
+            <div className="flex flex-wrap items-center justify-between gap-3 w-full">
+              <div className="flex items-center gap-2">
+                <label htmlFor="course-select" className="text-xs font-bold text-gray-800 uppercase tracking-wider flex items-center gap-1.5">
+                  <FlaskConical className="w-4 h-4 text-purple-600" /> Lab Course:
+                </label>
+                <select
+                  id="course-select"
+                  value={selectedCourse}
+                  onChange={(e) => setSelectedCourse(e.target.value)}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5 cursor-pointer max-w-xs sm:max-w-md"
+                >
+                  {courseLabKeys.map((cName) => (
+                    <option key={cName} value={cName}>
+                      {cName}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <label className="flex items-center gap-2 cursor-pointer bg-purple-50 hover:bg-purple-100 border border-purple-200 px-3 py-1.5 rounded-lg text-xs font-bold text-purple-900 transition-colors select-none">
+                <input
+                  type="checkbox"
+                  checked={showFacultyNames}
+                  onChange={(e) => setShowFacultyNames(e.target.checked)}
+                  className="w-4 h-4 text-purple-600 rounded border-gray-300 focus:ring-purple-500 cursor-pointer"
+                />
+                <span>Include Faculty Names</span>
               </label>
-              <select
-                id="course-select"
-                value={selectedCourse}
-                onChange={(e) => setSelectedCourse(e.target.value)}
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm font-bold rounded-lg focus:ring-purple-500 focus:border-purple-500 px-3 py-1.5 cursor-pointer max-w-xs sm:max-w-md"
-              >
-                {courseLabKeys.map((cName) => (
-                  <option key={cName} value={cName}>
-                    {cName}
-                  </option>
-                ))}
-              </select>
             </div>
           )}
 
@@ -416,6 +429,12 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                                         Room: <span className="text-purple-700">{sess.room}</span>
                                       </div>
                                     )}
+                                    {showFacultyNames && (sess.faculty || sess.facultyShort) && (
+                                      <div className="text-[10px] sm:text-[10.5px] font-sans font-semibold text-purple-950 mt-1 pt-1 border-t border-purple-200/90 text-center w-full leading-tight">
+                                        <span className="font-bold text-slate-800">Faculty: </span>
+                                        <span className="font-bold text-purple-900">{sess.faculty || sess.facultyShort}</span>
+                                      </div>
+                                    )}
                                   </div>
                                 ))}
                               </div>
@@ -520,6 +539,11 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
                                     Section: {item.branch}
                                   </span>
                                 </div>
+                                {(item.faculty || item.facultyShort) && (
+                                  <div className="text-[10px] font-sans text-purple-900 font-semibold text-center leading-tight">
+                                    {item.facultyShort || item.faculty}
+                                  </div>
+                                )}
                               </div>
                             ) : (
                               <div className="flex items-center justify-center min-h-[50px]">

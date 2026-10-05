@@ -56,6 +56,33 @@ function formatLabGroupTitle(key, firstItem) {
   return `${branchPrefix}${sub}`;
 }
 
+// Helper to sort facultyList in the exact order specified in the timetable slot / uploaded Excel sheet
+function sortFacultyByOriginalOrder(facultyList, orderStr) {
+  if (!orderStr || !Array.isArray(facultyList) || facultyList.length <= 1) return facultyList;
+
+  function getFacultyOrderIndex(f) {
+    const sName = f.shortName || '';
+    const fName = f.fullName || '';
+
+    // 1. Try matching short initials as a token (e.g. "MRR" in "MRR, BSK")
+    if (sName) {
+      const sRegex = new RegExp(`(^|[^a-zA-Z0-9])${sName}([^a-zA-Z0-9]|$)`, 'i');
+      const match = orderStr.match(sRegex);
+      if (match && match.index !== undefined) {
+        return match.index;
+      }
+    }
+    // 2. Try matching full name
+    if (fName) {
+      const idx = orderStr.indexOf(fName);
+      if (idx !== -1) return idx;
+    }
+    return 999;
+  }
+
+  return [...facultyList].sort((a, b) => getFacultyOrderIndex(a) - getFacultyOrderIndex(b));
+}
+
 export default function DepartmentTimetableGrid({
   deptName,
   facultyList = [],
@@ -212,6 +239,22 @@ export default function DepartmentTimetableGrid({
           }
         });
 
+        // Ensure faculty list order matches the uploaded Excel sheet
+        sessionMap.forEach(grp => {
+          const branchSched = timetableData?.[grp.branch]?.[day]?.[slotTime];
+          const cellItems = Array.isArray(branchSched) ? branchSched : branchSched ? [branchSched] : [];
+          const matchCell = cellItems.find(c => {
+            if (!c) return false;
+            const sNorm = (c.subject || '').trim().toUpperCase();
+            const grpNorm = (grp.subject || '').trim().toUpperCase();
+            return sNorm === grpNorm || sNorm.includes(grpNorm) || grpNorm.includes(sNorm);
+          });
+          const orderStr = matchCell?.rawFaculty || matchCell?.faculty || '';
+          if (orderStr) {
+            grp.facultyList = sortFacultyByOriginalOrder(grp.facultyList, orderStr);
+          }
+        });
+
         theorySlots[slotTime] = {
           groups: Array.from(sessionMap.values()),
           rawItems
@@ -254,6 +297,22 @@ export default function DepartmentTimetableGrid({
               });
             }
           });
+        });
+
+        // Ensure faculty list order matches the uploaded Excel sheet
+        labMap.forEach(grp => {
+          const branchSched = timetableData?.[grp.branch]?.[day]?.[slotTime];
+          const cellItems = Array.isArray(branchSched) ? branchSched : branchSched ? [branchSched] : [];
+          const matchCell = cellItems.find(c => {
+            if (!c) return false;
+            const sNorm = (c.subject || '').trim().toUpperCase();
+            const grpNorm = (grp.subject || '').trim().toUpperCase();
+            return sNorm === grpNorm || sNorm.includes(grpNorm) || grpNorm.includes(sNorm);
+          });
+          const orderStr = matchCell?.rawFaculty || matchCell?.faculty || grp.firstItem?.rawFaculty || '';
+          if (orderStr) {
+            grp.facultyList = sortFacultyByOriginalOrder(grp.facultyList, orderStr);
+          }
         });
 
         return {

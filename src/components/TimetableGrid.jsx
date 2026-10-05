@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { getSubjectStyle } from '../utils/subjectColors';
 import { getFacultyShortNames } from '../utils/facultyShortNames';
-import { BookOpen, ChevronDown } from 'lucide-react';
+import { BookOpen, ChevronDown, GraduationCap } from 'lucide-react';
+import initialData from '../data/initialData.json';
 
 // Helper to wrap long branch names into two clean stacked lines
 export function renderBranchName(branch = '') {
@@ -495,8 +496,32 @@ export default function TimetableGrid({
           const legendCount = branchLegend.length;
           const legendSizeClass = legendCount <= 11 ? 'legend-rows-11' : legendCount <= 12 ? 'legend-rows-12' : 'legend-rows-13';
 
+          const branchKey = (selectedBranch || branchInfo?.name || branchInfo?.code || '').trim();
+          const normKey = branchKey.replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)').trim();
+          const classTeacherName = (initialData.classTeachers && (
+            initialData.classTeachers[branchKey] ||
+            initialData.classTeachers[normKey] ||
+            initialData.classTeachers[branchInfo?.fullName] ||
+            initialData.classTeachers[branchKey.replace(/\s+/g, '')]
+          )) || '';
+
           return (
             <div className={`branch-legend-card p-3 sm:p-5 bg-slate-50/80 border-t-2 border-slate-700 print:bg-white print:border-t-2 print:border-black print:p-0 print:mt-1 ${legendSizeClass}`}>
+              {/* Class Teacher Banner: Prominent with larger font on top of subjects & faculty list */}
+              {classTeacherName && (
+                <div className="mb-3 py-2 px-3.5 bg-blue-50/90 border border-blue-300 rounded-lg shadow-2xs print:border print:border-black print:bg-white print:py-1 print:px-2 print:mb-1.5 flex flex-wrap items-baseline gap-2">
+                  <div className="flex items-center gap-1.5">
+                    <GraduationCap className="w-4 h-4 text-blue-700 print:hidden" />
+                    <span className="text-xs sm:text-sm print:text-[11pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
+                      Class Teacher{classTeacherName.includes(',') || classTeacherName.includes('\n') ? 's' : ''}:
+                    </span>
+                  </div>
+                  <span className="text-sm sm:text-base print:text-[12pt] font-black text-blue-900 print:text-black font-sans whitespace-pre-line leading-snug">
+                    {classTeacherName}
+                  </span>
+                </div>
+              )}
+
               <div 
                 onClick={isCollapsibleLegend ? () => setIsLegendOpen(!isLegendOpen) : undefined}
                 className={`flex flex-wrap items-center justify-between gap-2 ${

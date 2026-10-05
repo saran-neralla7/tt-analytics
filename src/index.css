@@ -452,12 +452,12 @@ th, td {
     display: none !important;
   }
 
-  /* Ultra-compact single line faculty header in print */
+  /* Prominent single line faculty header in print */
   .individual-print-mode .faculty-print-page .print-only {
     display: flex !important;
-    padding: 3px 6px !important;
-    font-size: 10pt !important;
-    line-height: 1.2 !important;
+    padding: 4px 8px !important;
+    font-size: 11pt !important;
+    line-height: 1.25 !important;
     background: #f0f0f0 !important;
     border-bottom: 1.5px solid #000 !important;
   }
@@ -474,23 +474,23 @@ th, td {
     border: 1px solid #000 !important;
     background: #f0f0f0 !important;
     color: #000 !important;
-    font-size: 9pt !important;
+    font-size: 10.5pt !important;
     font-weight: 900 !important;
-    padding: 3px 2px !important;
+    padding: 4px 2px !important;
     height: auto !important;
-    line-height: 1.15 !important;
+    line-height: 1.2 !important;
   }
 
   .individual-print-mode .faculty-print-page td {
     border: 1px solid #000 !important;
     background: #fff !important;
     color: #000 !important;
-    font-size: 8.5pt !important;
-    padding: 2px 2px !important;
+    font-size: 10.5pt !important;
+    padding: 3px 2px !important;
     vertical-align: middle !important;
     height: auto !important;
     min-height: 0 !important;
-    line-height: 1.15 !important;
+    line-height: 1.25 !important;
   }
 
   .individual-print-mode .faculty-print-page td * {
@@ -503,9 +503,9 @@ th, td {
   }
 
   .individual-print-mode .faculty-print-page .subject-title {
-    font-size: 9pt !important;
+    font-size: 11pt !important;
     font-weight: 900 !important;
-    line-height: 1.15 !important;
+    line-height: 1.2 !important;
   }
 
   /* Stats and Workload tables in Individual View during print */

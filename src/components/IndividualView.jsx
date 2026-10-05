@@ -324,15 +324,15 @@ function FacultyTimetableCard({
       </div>
 
       {/* Print-Only Header Strip */}
-      <div className="print-only px-2 py-1 bg-gray-100 border-b-2 border-black font-sans text-xs print:text-[10pt] font-bold text-black flex justify-between items-center leading-tight">
+      <div className="print-only px-3 py-1.5 bg-gray-100 border-b-2 border-black font-sans text-xs print:text-[11pt] font-bold text-black flex justify-between items-center leading-tight">
         <div>
-          <span className="font-black uppercase tracking-tight text-sm print:text-[10.5pt]">{facFull}</span>
-          {facShort && <span className="ml-1 text-slate-800 print:text-black print:text-[9.5pt]">({facShort})</span>}
+          <span className="font-black uppercase tracking-tight text-sm print:text-[12pt]">{facFull}</span>
+          {facShort && <span className="ml-1 text-slate-800 print:text-black print:text-[11pt]">({facShort})</span>}
           <span className="mx-1.5 text-slate-400 print:text-black">|</span>
-          <span className="font-bold text-slate-700 print:text-black print:text-[9.5pt]">Dept: {facultyObj.dept || 'General'}</span>
-          {facultyObj.designation && <span className="ml-1 font-semibold text-slate-600 print:text-black print:text-[9pt]">({facultyObj.designation})</span>}
+          <span className="font-bold text-slate-700 print:text-black print:text-[10.5pt]">Dept: {facultyObj.dept || 'General'}</span>
+          {facultyObj.designation && <span className="ml-1 font-semibold text-slate-600 print:text-black print:text-[10pt]">({facultyObj.designation})</span>}
         </div>
-        <div className="font-mono text-xs print:text-[9pt]">
+        <div className="font-mono text-xs print:text-[10pt]">
           Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
         </div>
       </div>
@@ -341,26 +341,26 @@ function FacultyTimetableCard({
       <div className="overflow-x-auto">
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[900px] print:min-w-0 border-2 border-slate-700 print:border-black">
           <thead>
-            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 print:border-black uppercase tracking-wider text-[11.5px] print:text-[9pt]">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 sm:w-20 print:w-16 text-xs font-black text-slate-900 print:py-1 print:px-1 print:text-[9.5pt] print:bg-gray-100">Day</th>
+            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 print:border-black uppercase tracking-wider text-[11.5px] print:text-[10pt]">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 sm:w-20 print:w-16 text-xs font-black text-slate-900 print:py-1.5 print:px-1 print:text-[11pt] print:bg-gray-100">Day</th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-1 print:px-0.5 ${
+                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-1.5 print:px-0.5 ${
                     slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-12 print:bg-gray-100' : 'text-slate-950'
                   }`}
                 >
                   {slot.type === 'break' && slot.time.includes('-') ? (
                     <div className="flex flex-col items-center justify-center leading-tight">
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[8.5pt] print:leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
                         {slot.time.split('-')[0]}–
                       </span>
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[8.5pt] print:leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
                         {slot.time.split('-')[1]}
                       </span>
                     </div>
                   ) : (
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[8.5pt] print:leading-tight">
+                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
                       {slot.time}
                     </span>
                   )}
@@ -376,7 +376,7 @@ function FacultyTimetableCard({
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Column */}
-                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-1 print:px-1 print:text-[9.5pt] print:bg-white font-sans">
+                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-1.5 print:px-1 print:text-[11pt] print:bg-white font-sans">
                     {day}
                   </td>
 
@@ -389,7 +389,7 @@ function FacultyTimetableCard({
                       return (
                         <td 
                           key={slot.id} 
-                          className="py-2.5 px-1 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-1 print:px-0.5 print:text-[8.5pt] print:bg-white font-sans"
+                          className="py-2.5 px-1 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-1.5 print:px-0.5 print:text-[10pt] print:bg-white font-sans"
                         >
                           {slot.label}
                         </td>
@@ -470,14 +470,14 @@ function FacultyTimetableCard({
                                         className={`w-full h-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                         style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                                       >
-                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${style.text}`}>
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[10pt] print:leading-tight print:font-black ${style.text}`}>
                                           {cellItem.subject}
                                         </div>
-                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[7.5pt] print:leading-tight print:font-bold print:text-black">
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[8.5pt] print:leading-tight print:font-bold print:text-black">
                                           Section: {cellItem.branch}
                                         </div>
                                         {cellItem.room && (
-                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[8pt] print:leading-tight print:font-black print:text-black">
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[9pt] print:leading-tight print:font-black print:text-black">
                                             {cellItem.room}
                                           </div>
                                         )}
@@ -501,14 +501,14 @@ function FacultyTimetableCard({
                                         className={`w-full h-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${style.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                         style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
                                       >
-                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${style.text}`}>
+                                        <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[10pt] print:leading-tight print:font-black ${style.text}`}>
                                           {cellItem.subject}
                                         </div>
-                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[7.5pt] print:leading-tight print:font-bold print:text-black">
+                                        <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[8.5pt] print:leading-tight print:font-bold print:text-black">
                                           Section: {cellItem.branch}
                                         </div>
                                         {cellItem.room && (
-                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[8pt] print:leading-tight print:font-black print:text-black">
+                                          <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[9pt] print:leading-tight print:font-black print:text-black">
                                             {cellItem.room}
                                           </div>
                                         )}
@@ -532,14 +532,14 @@ function FacultyTimetableCard({
                                     className={`flex-1 w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} hover:brightness-95 print:bg-white print:min-h-0`}
                                     style={labStyle.inlineBg ? { backgroundColor: labStyle.inlineBg } : undefined}
                                   >
-                                    <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${labStyle.text}`}>
+                                    <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[10pt] print:leading-tight print:font-black ${labStyle.text}`}>
                                       {labItem.subject}
                                     </div>
-                                    <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[7.5pt] print:leading-tight print:font-bold print:text-black">
+                                    <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[8.5pt] print:leading-tight print:font-bold print:text-black">
                                       Section: {labItem.branch}
                                     </div>
                                     {labItem.room && (
-                                      <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[8pt] print:leading-tight print:font-black print:text-black">
+                                      <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[9pt] print:leading-tight print:font-black print:text-black">
                                         {labItem.room}
                                       </div>
                                     )}
@@ -570,14 +570,14 @@ function FacultyTimetableCard({
                           title="Click to view course details"
                         >
                           <div className="flex flex-col justify-center items-center text-center min-h-[38px] print:min-h-0">
-                            <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[9.5pt] print:leading-tight print:font-black ${style.text}`}>
+                            <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[11pt] print:leading-tight print:font-black ${style.text}`}>
                               {cellItem.subject}
                             </div>
-                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[8pt] print:leading-tight print:font-bold print:text-black">
+                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[9.5pt] print:leading-tight print:font-bold print:text-black">
                               Section: {cellItem.branch}
                             </div>
                             {cellItem.room && (
-                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[8.5pt] print:leading-tight print:font-black print:text-black">
+                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[10pt] print:leading-tight print:font-black print:text-black">
                                 {cellItem.room}
                               </div>
                             )}
@@ -605,14 +605,14 @@ function FacultyTimetableCard({
                                 className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
-                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${itemStyle.text}`}>
+                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[10pt] print:leading-tight print:font-black ${itemStyle.text}`}>
                                   {cellItem.subject}
                                 </div>
-                                <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[7.5pt] print:leading-tight print:font-bold print:text-black">
+                                <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[8.5pt] print:leading-tight print:font-bold print:text-black">
                                   Section: {cellItem.branch}
                                 </div>
                                 {cellItem.room && (
-                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[8pt] print:leading-tight print:font-black print:text-black">
+                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[9pt] print:leading-tight print:font-black print:text-black">
                                     {cellItem.room}
                                   </div>
                                 )}
