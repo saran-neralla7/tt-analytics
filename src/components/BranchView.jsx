@@ -53,7 +53,16 @@ export default function BranchView({
         </div>
 
         <button
-          onClick={() => window.print()}
+          onClick={() => {
+            let styleEl = document.getElementById('dynamic-page-orientation-style');
+            if (!styleEl) {
+              styleEl = document.createElement('style');
+              styleEl.id = 'dynamic-page-orientation-style';
+              document.head.appendChild(styleEl);
+            }
+            styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
+            setTimeout(() => window.print(), 50);
+          }}
           className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
           title={`Print ${activeBranchKey} timetable (A3 Full Page Landscape)`}
         >

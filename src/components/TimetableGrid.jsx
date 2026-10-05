@@ -54,6 +54,73 @@ export function renderBranchName(branch = '') {
   return <span className="font-black">{b}</span>;
 }
 
+// Helper to extract list from newline or comma separated values
+export function extractFacultyList(val) {
+  if (!val) return [];
+  if (Array.isArray(val)) return val.map(s => String(s).trim()).filter(Boolean);
+  const str = String(val).trim();
+  if (!str) return [];
+  if (str.includes('\n')) {
+    return str.split('\n').map(s => s.trim()).filter(Boolean);
+  }
+  if (str.includes(',')) {
+    return str.split(',').map(s => s.trim()).filter(Boolean);
+  }
+  return [str];
+}
+
+// Helper to split a list of faculty names or initials across lines
+// If 6 items: exactly 3 in line 1, 3 in line 2
+// If 8 items: exactly 4 in line 1, 4 in line 2
+// If 7 items: 4 in line 1, 3 in line 2
+// If 5 items: 3 in line 1, 2 in line 2
+// If 4 items: 2 in line 1, 2 in line 2
+// If <= 3 items: 1 line
+export function formatFacultyLines(items) {
+  if (!items || items.length === 0) return [];
+  const n = items.length;
+  if (n <= 3) {
+    return [items.join(', ')];
+  }
+  if (n === 6) {
+    return [
+      items.slice(0, 3).join(', '),
+      items.slice(3, 6).join(', ')
+    ];
+  }
+  if (n === 8) {
+    return [
+      items.slice(0, 4).join(', '),
+      items.slice(4, 8).join(', ')
+    ];
+  }
+  if (n === 7) {
+    return [
+      items.slice(0, 4).join(', '),
+      items.slice(4, 7).join(', ')
+    ];
+  }
+  if (n === 5) {
+    return [
+      items.slice(0, 3).join(', '),
+      items.slice(3, 5).join(', ')
+    ];
+  }
+  if (n === 4) {
+    return [
+      items.slice(0, 2).join(', '),
+      items.slice(2, 4).join(', ')
+    ];
+  }
+  // For other counts (e.g. 9, 10, 12, etc.)
+  const lines = [];
+  const chunkSize = n > 8 && n <= 10 ? 5 : 4;
+  for (let i = 0; i < n; i += chunkSize) {
+    lines.push(items.slice(i, i + chunkSize).join(', '));
+  }
+  return lines;
+}
+
 export default function TimetableGrid({ 
   timetableData, 
   branchLegend = null,
@@ -567,8 +634,8 @@ export default function TimetableGrid({
                       <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-12 print:w-8 border-r border-slate-300 print:border-black text-center">S.No</th>
                       <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-28 print:w-24 border-r border-slate-300 print:border-black text-center">Subject Short Name</th>
                       <th className="py-2 px-2.5 print:py-1.5 print:px-2 min-w-[180px] print:w-64 border-r border-slate-300 print:border-black">Subject Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-28 print:w-26 border-r border-slate-300 print:border-black text-center">Faculty Short Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 min-w-[220px] print:w-64 border-r border-slate-300 print:border-black">Faculty Name</th>
+                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-32 print:w-28 border-r border-slate-300 print:border-black text-center">Faculty Short Name</th>
+                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 min-w-[220px] print:w-72 border-r border-slate-300 print:border-black">Faculty Name</th>
                       <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-20 print:w-16 border-r border-slate-300 print:border-black text-center">Room No</th>
                       <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-20 print:w-16 text-center">Type</th>
                     </tr>
@@ -576,23 +643,25 @@ export default function TimetableGrid({
                   <tbody className="divide-y divide-slate-200 print:divide-black text-[11px]">
                     {branchLegend.map((item, idx) => {
                       const style = getSubjectStyle(item.subjectShort, item.isLab);
-                      const facultyList = item.facultyFullName ? item.facultyFullName.split('\n').map(s => s.trim()).filter(Boolean) : [];
-                      const shortList = item.facultyShort ? item.facultyShort.split('\n').map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean) : [];
+                      const rawFacultyList = extractFacultyList(item.facultyFullName);
+                      const rawShortList = extractFacultyList(item.facultyShort).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean);
                       
-                      const displayShorts = shortList.length > 0 
-                        ? shortList.join(', ') 
-                        : facultyList.map(f => getFacultyShortNames(f)).filter(Boolean).join(', ');
+                      const finalShortList = rawShortList.length > 0 
+                        ? rawShortList 
+                        : rawFacultyList.map(f => getFacultyShortNames(f)).filter(Boolean);
                       
-                      const displayFulls = facultyList.length > 0
-                        ? facultyList.join(', ')
-                        : (item.facultyFullName || '—');
+                      const shortLines = formatFacultyLines(finalShortList);
+                      const fullLines = formatFacultyLines(rawFacultyList);
 
-                      const tutFacultyList = item.tutorialFullName ? item.tutorialFullName.split('\n').map(s => s.trim()).filter(Boolean) : [];
-                      const tutShortList = item.tutorialShort ? item.tutorialShort.split('\n').map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean) : [];
-                      const tutDisplayShorts = tutShortList.length > 0
-                        ? tutShortList.join(', ')
-                        : tutFacultyList.map(f => getFacultyShortNames(f)).filter(Boolean).join(', ');
-                      const tutDisplayFulls = tutFacultyList.length > 0 ? tutFacultyList.join(', ') : '';
+                      const rawTutFacultyList = extractFacultyList(item.tutorialFullName);
+                      const rawTutShortList = extractFacultyList(item.tutorialShort).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean);
+                      
+                      const finalTutShortList = rawTutShortList.length > 0
+                        ? rawTutShortList
+                        : rawTutFacultyList.map(f => getFacultyShortNames(f)).filter(Boolean);
+                      
+                      const tutShortLines = formatFacultyLines(finalTutShortList);
+                      const tutFullLines = formatFacultyLines(rawTutFacultyList);
 
                       return (
                         <tr key={idx} className="hover:bg-slate-50/80 print:hover:bg-white transition-colors">
@@ -607,23 +676,43 @@ export default function TimetableGrid({
                           <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 font-bold text-slate-900 print:text-black border-r border-slate-200 print:border-black">
                             {item.subjectFullName}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black text-center">
-                            <span className="font-mono font-bold text-slate-900 print:text-black text-[11px]">
-                              {displayShorts || '—'}
-                            </span>
-                            {tutDisplayShorts && (
-                              <div className="tut-text text-[10px] text-slate-600 print:text-black font-semibold mt-0.5">
-                                <span className="font-bold">Tut:</span> {tutDisplayShorts}
+                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black text-center align-middle">
+                            <div className="font-mono font-bold text-slate-900 print:text-black text-[11px] flex flex-col items-center justify-center space-y-0.5">
+                              {shortLines.length > 0 ? (
+                                shortLines.map((line, lIdx) => (
+                                  <div key={lIdx} className="leading-tight whitespace-nowrap">{line}</div>
+                                ))
+                              ) : (
+                                '—'
+                              )}
+                            </div>
+                            {tutShortLines.length > 0 && (
+                              <div className="tut-text text-[10px] text-slate-600 print:text-black font-semibold mt-1 flex flex-col items-center justify-center space-y-0.5">
+                                {tutShortLines.map((line, lIdx) => (
+                                  <div key={lIdx} className="leading-tight whitespace-nowrap">
+                                    {lIdx === 0 ? <><span className="font-bold">Tut: </span>{line}</> : line}
+                                  </div>
+                                ))}
                               </div>
                             )}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black">
-                            <span className="font-semibold text-slate-900 print:text-black">
-                              {displayFulls}
-                            </span>
-                            {tutDisplayFulls && (
-                              <div className="tut-text text-[10px] text-slate-600 print:text-black mt-0.5">
-                                <span className="font-bold">Tut:</span> {tutDisplayFulls}
+                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black align-middle">
+                            <div className="font-semibold text-slate-900 print:text-black flex flex-col space-y-0.5">
+                              {fullLines.length > 0 ? (
+                                fullLines.map((line, lIdx) => (
+                                  <div key={lIdx} className="leading-tight">{line}</div>
+                                ))
+                              ) : (
+                                item.facultyFullName || '—'
+                              )}
+                            </div>
+                            {tutFullLines.length > 0 && (
+                              <div className="tut-text text-[10px] text-slate-600 print:text-black mt-1 flex flex-col space-y-0.5">
+                                {tutFullLines.map((line, lIdx) => (
+                                  <div key={lIdx} className="leading-tight">
+                                    {lIdx === 0 ? <><span className="font-bold">Tut: </span>{line}</> : line}
+                                  </div>
+                                ))}
                               </div>
                             )}
                           </td>

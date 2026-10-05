@@ -53,8 +53,30 @@ th, td {
 /* HIGH-QUALITY PDF & PRINT STYLES */
 @media print {
   @page {
+    size: A4 portrait;
+    margin: 5mm 5mm;
+  }
+
+  @page branchA3Landscape {
     size: A3 landscape;
     margin: 4mm 5mm;
+  }
+
+  @page individualA4Portrait {
+    size: A4 portrait;
+    margin: 5mm 5mm;
+  }
+
+  .branch-print-page {
+    page: branchA3Landscape;
+  }
+
+  .dept-print-page {
+    page: branchA3Landscape;
+  }
+
+  .individual-print-mode {
+    page: individualA4Portrait;
   }
 
   html, body {
@@ -418,7 +440,7 @@ th, td {
     border-radius: 0 !important;
     background-color: #fff !important;
     color: #000 !important;
-    margin: 0 0 6mm 0 !important;
+    margin: 0 0 5mm 0 !important;
     padding: 0 !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
@@ -460,9 +482,9 @@ th, td {
   /* Prominent single line faculty header in print */
   .individual-print-mode .faculty-print-page .print-only {
     display: flex !important;
-    padding: 5px 8px !important;
-    font-size: 12pt !important;
-    line-height: 1.3 !important;
+    padding: 4px 6px !important;
+    font-size: 10.5pt !important;
+    line-height: 1.25 !important;
     background: #f0f0f0 !important;
     border-bottom: 1.5px solid #000 !important;
   }
@@ -479,22 +501,22 @@ th, td {
     border: 1px solid #000 !important;
     background: #f0f0f0 !important;
     color: #000 !important;
-    font-size: 11pt !important;
+    font-size: 8pt !important;
     font-weight: 900 !important;
-    padding: 5px 3px !important;
+    padding: 3px 1px !important;
     height: auto !important;
-    line-height: 1.2 !important;
+    line-height: 1.15 !important;
   }
 
   .individual-print-mode .faculty-print-page td {
     border: 1px solid #000 !important;
     background: #fff !important;
     color: #000 !important;
-    font-size: 11.5pt !important;
-    padding: 4px 3px !important;
+    font-size: 8.5pt !important;
+    padding: 2px 1.5px !important;
     vertical-align: middle !important;
     height: auto !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
   }
 
   .individual-print-mode .faculty-print-page td * {
@@ -505,9 +527,9 @@ th, td {
   }
 
   .individual-print-mode .faculty-print-page .subject-title {
-    font-size: 12pt !important;
+    font-size: 9pt !important;
     font-weight: 900 !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
   }
 
   /* Stats and Workload tables in Individual View during print */

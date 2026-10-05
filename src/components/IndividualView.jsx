@@ -324,15 +324,15 @@ function FacultyTimetableCard({
       </div>
 
       {/* Print-Only Header Strip */}
-      <div className="print-only px-3 py-1.5 bg-gray-100 border-b-2 border-black font-sans text-xs print:text-[11pt] font-bold text-black flex justify-between items-center leading-tight">
+      <div className="print-only px-2 py-1 bg-gray-100 border-b-2 border-black font-sans text-xs print:text-[9.5pt] font-bold text-black flex justify-between items-center leading-tight">
         <div>
-          <span className="font-black uppercase tracking-tight text-sm print:text-[12pt]">{facFull}</span>
-          {facShort && <span className="ml-1 text-slate-800 print:text-black print:text-[11pt]">({facShort})</span>}
-          <span className="mx-1.5 text-slate-400 print:text-black">|</span>
-          <span className="font-bold text-slate-700 print:text-black print:text-[10.5pt]">Dept: {facultyObj.dept || 'General'}</span>
-          {facultyObj.designation && <span className="ml-1 font-semibold text-slate-600 print:text-black print:text-[10pt]">({facultyObj.designation})</span>}
+          <span className="font-black uppercase tracking-tight text-sm print:text-[10.5pt]">{facFull}</span>
+          {facShort && <span className="ml-1 text-slate-800 print:text-black print:text-[9.5pt]">({facShort})</span>}
+          <span className="mx-1 text-slate-400 print:text-black">|</span>
+          <span className="font-bold text-slate-700 print:text-black print:text-[9.5pt]">Dept: {facultyObj.dept || 'General'}</span>
+          {facultyObj.designation && <span className="ml-1 font-semibold text-slate-600 print:text-black print:text-[9pt]">({facultyObj.designation})</span>}
         </div>
-        <div className="font-mono text-xs print:text-[10pt]">
+        <div className="font-mono text-xs print:text-[9pt]">
           Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
         </div>
       </div>
@@ -341,26 +341,26 @@ function FacultyTimetableCard({
       <div className="overflow-x-auto">
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[900px] print:min-w-0 border-2 border-slate-700 print:border-black">
           <thead>
-            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 print:border-black uppercase tracking-wider text-[11.5px] print:text-[10pt]">
-              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 sm:w-20 print:w-16 text-xs font-black text-slate-900 print:py-1.5 print:px-1 print:text-[11pt] print:bg-gray-100">Day</th>
+            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 print:border-black uppercase tracking-wider text-[11.5px] print:text-[8pt]">
+              <th className="py-2.5 px-2 border-r border-gray-300 print:border-black w-16 sm:w-20 print:w-[9%] text-xs font-black text-slate-900 print:py-1 print:px-0.5 print:text-[9pt] print:bg-gray-100">Day</th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-1.5 print:px-0.5 ${
-                    slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-12 print:bg-gray-100' : 'text-slate-950'
+                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-1 print:px-0.5 ${
+                    slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-[5.25%] print:bg-gray-100' : 'text-slate-950 print:w-[13.5%]'
                   }`}
                 >
                   {slot.type === 'break' && slot.time.includes('-') ? (
                     <div className="flex flex-col items-center justify-center leading-tight">
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[7pt] print:leading-tight">
                         {slot.time.split('-')[0]}–
                       </span>
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[7pt] print:leading-tight">
                         {slot.time.split('-')[1]}
                       </span>
                     </div>
                   ) : (
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[9.5pt] print:leading-tight">
+                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[7.5pt] print:leading-tight">
                       {slot.time}
                     </span>
                   )}
@@ -376,7 +376,7 @@ function FacultyTimetableCard({
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Column */}
-                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-2 print:px-1.5 print:text-[12pt] print:bg-white font-sans">
+                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-1 print:px-0.5 print:text-[10pt] print:bg-white font-sans">
                     {day}
                   </td>
 
@@ -392,10 +392,10 @@ function FacultyTimetableCard({
                       return (
                         <td 
                           key={slot.id} 
-                          className="py-2 px-1 bg-amber-100/70 text-amber-950 font-black border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-1 print:px-0.5 print:bg-white font-sans"
+                          className="py-2 px-1 bg-amber-100/70 text-amber-950 font-black border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-0.5 print:px-0.5 print:bg-white font-sans"
                         >
-                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[50px]">
-                            <span className="text-base sm:text-lg print:text-[16pt] font-black uppercase font-serif">
+                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[48px]">
+                            <span className="text-base sm:text-lg print:text-[14pt] font-black uppercase font-serif">
                               {char}
                             </span>
                           </div>
@@ -430,8 +430,8 @@ function FacultyTimetableCard({
                           colSpan={colSpan}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/50 print:bg-white text-center select-none"
                         >
-                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[50px]">
-                            <span className="text-slate-400 font-mono text-[14px] font-bold print:text-[16pt] print:text-black">—</span>
+                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[48px]">
+                            <span className="text-slate-400 font-mono text-[14px] font-bold print:text-[14pt] print:text-black">—</span>
                           </div>
                         </td>
                       );
@@ -576,15 +576,15 @@ function FacultyTimetableCard({
                           }}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center min-h-[46px] print:min-h-[50px]">
-                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug print:text-[12pt] print:leading-tight print:font-black ${style.text}`}>
+                          <div className="flex flex-col justify-center items-center text-center min-h-[46px] print:min-h-[48px]">
+                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug print:text-[8.5pt] print:leading-tight print:font-black ${style.text}`}>
                               {cellItem.subject}
                             </div>
-                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[10pt] print:leading-tight print:font-bold print:text-black">
+                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[7.5pt] print:leading-tight print:font-bold print:text-black">
                               Section: {cellItem.branch}
                             </div>
                             {cellItem.room && (
-                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[10.5pt] print:leading-tight print:font-black print:text-black">
+                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[8pt] print:leading-tight print:font-black print:text-black">
                                 {cellItem.room}
                               </div>
                             )}
@@ -608,18 +608,18 @@ function FacultyTimetableCard({
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
                             return (
                               <div 
-                                key={bIdx}
+                                key={bIdx} 
                                 className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 print:bg-white`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
-                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[10pt] print:leading-tight print:font-black ${itemStyle.text}`}>
+                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] leading-snug print:text-[8pt] print:leading-tight print:font-black ${itemStyle.text}`}>
                                   {cellItem.subject}
                                 </div>
-                                <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[8.5pt] print:leading-tight print:font-bold print:text-black">
+                                <div className="text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight print:text-[7pt] print:leading-tight print:font-bold print:text-black">
                                   Section: {cellItem.branch}
                                 </div>
                                 {cellItem.room && (
-                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[9pt] print:leading-tight print:font-black print:text-black">
+                                  <div className="mt-0.5 text-[10.5px] sm:text-[11px] font-black text-slate-800 tracking-normal font-sans print:text-[7.5pt] print:leading-tight print:font-black print:text-black">
                                     {cellItem.room}
                                   </div>
                                 )}
@@ -783,11 +783,31 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   // Faculty selection state ('ALL' or faculty fullName)
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
 
-  // Print Target: 'individual' (4 per page) vs 'department' (1-Page landscape department timetable)
+  // Print Target: 'individual' (A4 portrait, 2 per page) vs 'department' (1-Page landscape department timetable)
   const [printTarget, setPrintTarget] = useState('individual');
 
   // Print controls: whether to include department stats & workload table in print
   const [includeStatsInPrint, setIncludeStatsInPrint] = useState(false);
+
+  // Dynamically set @page orientation in document head so browser print preview initializes accurately
+  useEffect(() => {
+    let styleEl = document.getElementById('dynamic-page-orientation-style');
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = 'dynamic-page-orientation-style';
+      document.head.appendChild(styleEl);
+    }
+    if (printTarget === 'department') {
+      styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
+    } else {
+      styleEl.innerHTML = `@page { size: A4 portrait !important; margin: 5mm 5mm !important; }`;
+    }
+
+    return () => {
+      const el = document.getElementById('dynamic-page-orientation-style');
+      if (el) el.remove();
+    };
+  }, [printTarget]);
 
   // When department changes, update selected faculty
   const handleDeptChange = (newDept) => {
@@ -907,17 +927,24 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
           <span className="text-gray-300 hidden sm:inline">|</span>
 
-          {/* Dedicated Print Button for Faculty Timetables (4 per page) */}
+          {/* Dedicated Print Button for Faculty Timetables (2 per page in A4 portrait) */}
           <button
             onClick={() => {
               setPrintTarget('individual');
+              let styleEl = document.getElementById('dynamic-page-orientation-style');
+              if (!styleEl) {
+                styleEl = document.createElement('style');
+                styleEl.id = 'dynamic-page-orientation-style';
+                document.head.appendChild(styleEl);
+              }
+              styleEl.innerHTML = `@page { size: A4 portrait !important; margin: 5mm 5mm !important; }`;
               setTimeout(() => window.print(), 80);
             }}
             className="flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
-            title="Print Faculty Timetables"
+            title="Print Faculty Timetables (A4 Portrait - 2 per page)"
           >
             <Printer className="w-3.5 h-3.5" />
-            <span>Print Faculty Timetables</span>
+            <span>Print Faculty Timetables (A4 Portrait)</span>
           </button>
 
           {/* Dedicated Print Button for 1-Page Weekly Department Timetable */}
@@ -925,6 +952,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             <button
               onClick={() => {
                 setPrintTarget('department');
+                let styleEl = document.getElementById('dynamic-page-orientation-style');
+                if (!styleEl) {
+                  styleEl = document.createElement('style');
+                  styleEl.id = 'dynamic-page-orientation-style';
+                  document.head.appendChild(styleEl);
+                }
+                styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
                 setTimeout(() => window.print(), 80);
               }}
               className="flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-800 hover:bg-slate-900 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"

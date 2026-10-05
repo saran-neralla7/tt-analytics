@@ -188,7 +188,16 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
         ) : (
           <div className="flex flex-wrap items-center justify-center gap-3 mt-1.5">
             <button
-              onClick={() => window.print()}
+              onClick={() => {
+                let styleEl = document.getElementById('dynamic-page-orientation-style');
+                if (!styleEl) {
+                  styleEl = document.createElement('style');
+                  styleEl.id = 'dynamic-page-orientation-style';
+                  document.head.appendChild(styleEl);
+                }
+                styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
+                setTimeout(() => window.print(), 50);
+              }}
               className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
               title="Print all departments, each strictly formatted to 1 single landscape page"
             >
@@ -281,7 +290,16 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                 Unified single-page portrait schedule
               </span>
               <button
-                onClick={() => window.print()}
+                onClick={() => {
+                  let styleEl = document.getElementById('dynamic-page-orientation-style');
+                  if (!styleEl) {
+                    styleEl = document.createElement('style');
+                    styleEl.id = 'dynamic-page-orientation-style';
+                    document.head.appendChild(styleEl);
+                  }
+                  styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
+                  setTimeout(() => window.print(), 50);
+                }}
                 className="flex items-center gap-1.5 px-3 py-1 bg-white text-slate-900 rounded-lg text-xs font-bold hover:bg-slate-100 transition-all shadow-xs cursor-pointer"
               >
                 <Printer className="w-3.5 h-3.5 text-blue-700" />
