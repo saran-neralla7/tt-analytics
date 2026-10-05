@@ -523,7 +523,7 @@ if (ctSheet) {
   const ctRows = XLSX.utils.sheet_to_json(ctSheet);
   ctRows.forEach(r => {
     const rawBranch = (r['Branch Name'] || '').trim();
-    const teacher = (r['Class Teacher Name'] || '').trim();
+    const teacher = (r['Class Teacher Name'] || '').replace(/\r\n/g, '\n').replace(/\r/g, '').trim();
     if (!rawBranch || !teacher) return;
     
     classTeachers[rawBranch] = teacher;
