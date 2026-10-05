@@ -369,14 +369,14 @@ function FacultyTimetableCard({
             </tr>
           </thead>
           <tbody className="divide-y-2 divide-slate-600 print:divide-black">
-            {activeDays.map((day) => {
+            {activeDays.map((day, dayIdx) => {
               const daySched = facultySchedule[day] || {};
               const skipSlots = new Set();
 
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Column */}
-                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-1.5 print:px-1 print:text-[11pt] print:bg-white font-sans">
+                  <td className="py-2.5 px-2 font-black text-gray-900 bg-gray-100/60 border-r border-gray-300 border-b-2 border-slate-600 print:border-black uppercase tracking-wide align-middle print:py-2 print:px-1.5 print:text-[12pt] print:bg-white font-sans">
                     {day}
                   </td>
 
@@ -386,12 +386,19 @@ function FacultyTimetableCard({
                     }
 
                     if (slot.type === 'break') {
+                      const letters = (slot.label || '').toUpperCase().split('');
+                      const char = letters[dayIdx] || (slot.label || '');
+
                       return (
                         <td 
                           key={slot.id} 
-                          className="py-2.5 px-1 bg-amber-100/70 text-amber-950 font-black text-[11px] border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-1.5 print:px-0.5 print:text-[10pt] print:bg-white font-sans"
+                          className="py-2 px-1 bg-amber-100/70 text-amber-950 font-black border-r border-gray-300 border-b-2 border-slate-600 print:border-black tracking-wider uppercase align-middle select-none text-center print:py-1 print:px-0.5 print:bg-white font-sans"
                         >
-                          {slot.label}
+                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[50px]">
+                            <span className="text-base sm:text-lg print:text-[16pt] font-black uppercase font-serif">
+                              {char}
+                            </span>
+                          </div>
                         </td>
                       );
                     }
@@ -423,8 +430,8 @@ function FacultyTimetableCard({
                           colSpan={colSpan}
                           className="p-0 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle bg-slate-50/50 print:bg-white text-center select-none"
                         >
-                          <div className="flex items-center justify-center min-h-[40px] print:min-h-0">
-                            <span className="text-slate-400 font-mono text-[13px] font-bold print:text-[12pt] print:text-black">—</span>
+                          <div className="flex items-center justify-center min-h-[46px] print:min-h-[50px]">
+                            <span className="text-slate-400 font-mono text-[14px] font-bold print:text-[16pt] print:text-black">—</span>
                           </div>
                         </td>
                       );
@@ -569,15 +576,15 @@ function FacultyTimetableCard({
                           }}
                           title="Click to view course details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center min-h-[38px] print:min-h-0">
-                            <div className={`font-black tracking-tight text-[11.5px] sm:text-[12px] leading-snug print:text-[11pt] print:leading-tight print:font-black ${style.text}`}>
+                          <div className="flex flex-col justify-center items-center text-center min-h-[46px] print:min-h-[50px]">
+                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] leading-snug print:text-[12pt] print:leading-tight print:font-black ${style.text}`}>
                               {cellItem.subject}
                             </div>
-                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[9.5pt] print:leading-tight print:font-bold print:text-black">
+                            <div className="text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight print:text-[10pt] print:leading-tight print:font-bold print:text-black">
                               Section: {cellItem.branch}
                             </div>
                             {cellItem.room && (
-                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[10pt] print:leading-tight print:font-black print:text-black">
+                              <div className="mt-0.5 text-xs sm:text-[11.5px] font-black text-slate-800 tracking-normal font-sans print:text-[10.5pt] print:leading-tight print:font-black print:text-black">
                                 {cellItem.room}
                               </div>
                             )}
