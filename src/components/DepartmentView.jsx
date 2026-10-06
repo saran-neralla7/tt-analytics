@@ -15,6 +15,7 @@ const DEPARTMENT_ORDER = [
   'English',
   'EEE',
   'IT',
+  'CSE and IT',
   'Chemical'
 ];
 
@@ -46,6 +47,13 @@ export default function DepartmentView({
       }
       map.get(d).push(fac);
     });
+
+    // Populate combined 'CSE and IT' department with faculty from both CSE and IT
+    const cseFac = map.get('CSE') || [];
+    const itFac = map.get('IT') || [];
+    if (cseFac.length > 0 || itFac.length > 0) {
+      map.set('CSE and IT', [...cseFac, ...itFac]);
+    }
 
     // Remove empty departments or 'Not Specified' unless it has faculty
     const result = {};
