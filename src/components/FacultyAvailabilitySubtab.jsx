@@ -387,9 +387,9 @@ export default function FacultyAvailabilitySubtab({
           <div className="text-xs text-gray-500 font-medium flex items-center gap-1">
             <Info className="w-3.5 h-3.5 text-blue-500" />
             {trackingMode === 'period' ? (
-              <span>Viewing individual 1-hour periods (P1 to P6).</span>
+              <span>Viewing individual 1-hour periods (P1 to P6) • Automatically accounts for Theory, Labs & Tutorials.</span>
             ) : (
-              <span>Session 1: P1 & P2 (Pre-Break) • Session 2: P3 & P4 (Pre-Lunch) • Session 3: P5 & P6 (Post-Lunch).</span>
+              <span>Session 1: P1 & P2 (Pre-Break) • Session 2: P3 & P4 (Pre-Lunch) • Session 3: P5 & P6 (Post-Lunch) • Automatically accounts for Theory, Labs & Tutorials.</span>
             )}
           </div>
         </div>
@@ -1067,8 +1067,12 @@ export default function FacultyAvailabilitySubtab({
                           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                           <span>Free this period</span>
                         </div>
-                        <span className="text-gray-500 text-[10.5px] font-medium font-mono">
-                          {fac.totalLoad || 0} hrs/wk
+                        <span 
+                          className="text-gray-500 text-[10.5px] font-medium font-mono cursor-help"
+                          title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
+                        >
+                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
                     </div>
@@ -1134,31 +1138,40 @@ export default function FacultyAvailabilitySubtab({
 
                         {/* Current Assigned Classes */}
                         <div className="pt-2 space-y-1.5">
-                          {fac.currentSessions.map((s, sIdx) => (
-                            <div
-                              key={sIdx}
-                              onClick={() => onSlotClick && onSlotClick([s], selectedDay, selectedSlot, s.branch)}
-                              className={`p-2 rounded-lg bg-gray-50 border border-gray-200 text-xs flex flex-col gap-0.5 ${
-                                onSlotClick ? 'cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-colors' : ''
-                              }`}
-                              title="Click to view slot details"
-                            >
-                              <div className="flex items-center justify-between gap-1 font-bold">
-                                <span className="text-black font-black uppercase">{s.branch}</span>
-                                {s.room && (
-                                  <span className="font-mono text-[10.5px] font-bold text-slate-700 bg-white px-1.5 py-0.2 border border-gray-300 rounded">
-                                    {s.room}
-                                  </span>
-                                )}
+                          {fac.currentSessions.map((s, sIdx) => {
+                            const isLab = s.isLab || /lab/i.test(s.subject);
+                            const isTut = s.isTutorial || /tut/i.test(s.subject);
+                            return (
+                              <div
+                                key={sIdx}
+                                onClick={() => onSlotClick && onSlotClick([s], selectedDay, selectedSlot, s.branch)}
+                                className={`p-2 rounded-lg bg-gray-50 border border-gray-200 text-xs flex flex-col gap-0.5 ${
+                                  onSlotClick ? 'cursor-pointer hover:bg-blue-50 hover:border-blue-300 transition-colors' : ''
+                                }`}
+                                title="Click to view slot details"
+                              >
+                                <div className="flex items-center justify-between gap-1 font-bold">
+                                  <span className="text-black font-black uppercase">{s.branch}</span>
+                                  {s.room && (
+                                    <span className="font-mono text-[10.5px] font-bold text-slate-700 bg-white px-1.5 py-0.2 border border-gray-300 rounded">
+                                      {s.room}
+                                    </span>
+                                  )}
+                                </div>
+                                <div className="text-gray-800 font-semibold text-[11.5px] flex items-center justify-between">
+                                  <span>{s.subject}</span>
+                                  <div className="flex items-center gap-1">
+                                    {isLab && (
+                                      <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-1 rounded">LAB</span>
+                                    )}
+                                    {isTut && (
+                                      <span className="text-[9px] font-bold text-amber-700 bg-amber-100 px-1 rounded">TUT</span>
+                                    )}
+                                  </div>
+                                </div>
                               </div>
-                              <div className="text-gray-800 font-semibold text-[11.5px] flex items-center justify-between">
-                                <span>{s.subject}</span>
-                                {s.isLab && (
-                                  <span className="text-[9px] font-bold text-purple-700 bg-purple-50 px-1 rounded">LAB</span>
-                                )}
-                              </div>
-                            </div>
-                          ))}
+                            );
+                          })}
 
                           {fac.hasClash && (
                             <div className="px-2 py-1 bg-red-100 border border-red-300 rounded text-[10.5px] font-black text-red-800 flex items-center gap-1">
@@ -1174,8 +1187,12 @@ export default function FacultyAvailabilitySubtab({
                           <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                           In Class
                         </span>
-                        <span className="font-mono text-[10.5px]">
-                          {fac.totalLoad || 0} hrs/wk
+                        <span 
+                          className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
+                          title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
+                        >
+                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
                     </div>
@@ -1258,8 +1275,12 @@ export default function FacultyAvailabilitySubtab({
                           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                           <span>Entire Session Free</span>
                         </div>
-                        <span className="text-gray-500 text-[10.5px] font-medium font-mono">
-                          {fac.totalLoad || 0} hrs/wk
+                        <span 
+                          className="text-gray-500 text-[10.5px] font-medium font-mono cursor-help"
+                          title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
+                        >
+                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
                     </div>
@@ -1340,18 +1361,26 @@ export default function FacultyAvailabilitySubtab({
                               {pA.isFree ? (
                                 <div className="text-[10.5px] text-emerald-700 font-semibold">Available for duty</div>
                               ) : (
-                                pA.sessions.map((s, sIdx) => (
-                                  <div
-                                    key={sIdx}
-                                    onClick={() => onSlotClick && onSlotClick([s], selectedDay, pA.slotTime, s.branch)}
-                                    className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
-                                      onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
-                                    }`}
-                                  >
-                                    <span>{s.branch}: {s.subject}</span>
-                                    {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
-                                  </div>
-                                ))
+                                pA.sessions.map((s, sIdx) => {
+                                  const isLab = s.isLab || /lab/i.test(s.subject);
+                                  const isTut = s.isTutorial || /tut/i.test(s.subject);
+                                  return (
+                                    <div
+                                      key={sIdx}
+                                      onClick={() => onSlotClick && onSlotClick([s], selectedDay, pA.slotTime, s.branch)}
+                                      className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
+                                        onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
+                                      }`}
+                                    >
+                                      <div className="flex items-center gap-1">
+                                        <span>{s.branch}: {s.subject}</span>
+                                        {isLab && <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-1 rounded">LAB</span>}
+                                        {isTut && <span className="text-[9px] font-bold text-amber-700 bg-amber-100 px-1 rounded">TUT</span>}
+                                      </div>
+                                      {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
+                                    </div>
+                                  );
+                                })
                               )}
                             </div>
 
@@ -1368,18 +1397,26 @@ export default function FacultyAvailabilitySubtab({
                               {pB.isFree ? (
                                 <div className="text-[10.5px] text-emerald-700 font-semibold">Available for duty</div>
                               ) : (
-                                pB.sessions.map((s, sIdx) => (
-                                  <div
-                                    key={sIdx}
-                                    onClick={() => onSlotClick && onSlotClick([s], selectedDay, pB.slotTime, s.branch)}
-                                    className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
-                                      onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
-                                    }`}
-                                  >
-                                    <span>{s.branch}: {s.subject}</span>
-                                    {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
-                                  </div>
-                                ))
+                                pB.sessions.map((s, sIdx) => {
+                                  const isLab = s.isLab || /lab/i.test(s.subject);
+                                  const isTut = s.isTutorial || /tut/i.test(s.subject);
+                                  return (
+                                    <div
+                                      key={sIdx}
+                                      onClick={() => onSlotClick && onSlotClick([s], selectedDay, pB.slotTime, s.branch)}
+                                      className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
+                                        onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
+                                      }`}
+                                    >
+                                      <div className="flex items-center gap-1">
+                                        <span>{s.branch}: {s.subject}</span>
+                                        {isLab && <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-1 rounded">LAB</span>}
+                                        {isTut && <span className="text-[9px] font-bold text-amber-700 bg-amber-100 px-1 rounded">TUT</span>}
+                                      </div>
+                                      {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
+                                    </div>
+                                  );
+                                })
                               )}
                             </div>
                           </div>
@@ -1390,8 +1427,12 @@ export default function FacultyAvailabilitySubtab({
                             <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                             Free {pA.isFree ? pA.slotTime : pB.slotTime}
                           </span>
-                          <span className="font-mono text-[10.5px]">
-                            {fac.totalLoad || 0} hrs/wk
+                          <span 
+                            className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
+                            title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
+                          >
+                            <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                            <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                           </span>
                         </div>
                       </div>
@@ -1467,18 +1508,26 @@ export default function FacultyAvailabilitySubtab({
                               <div className="text-[10px] font-bold text-gray-500 font-mono mb-0.5">
                                 {pA.slotTime}
                               </div>
-                              {pA.sessions.map((s, sIdx) => (
-                                <div
-                                  key={sIdx}
-                                  onClick={() => onSlotClick && onSlotClick([s], selectedDay, pA.slotTime, s.branch)}
-                                  className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
-                                    onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
-                                  }`}
-                                >
-                                  <span>{s.branch}: {s.subject}</span>
-                                  {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
-                                </div>
-                              ))}
+                              {pA.sessions.map((s, sIdx) => {
+                                const isLab = s.isLab || /lab/i.test(s.subject);
+                                const isTut = s.isTutorial || /tut/i.test(s.subject);
+                                return (
+                                  <div
+                                    key={sIdx}
+                                    onClick={() => onSlotClick && onSlotClick([s], selectedDay, pA.slotTime, s.branch)}
+                                    className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
+                                      onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
+                                    }`}
+                                  >
+                                    <div className="flex items-center gap-1">
+                                      <span>{s.branch}: {s.subject}</span>
+                                      {isLab && <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-1 rounded">LAB</span>}
+                                      {isTut && <span className="text-[9px] font-bold text-amber-700 bg-amber-100 px-1 rounded">TUT</span>}
+                                    </div>
+                                    {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
+                                  </div>
+                                );
+                              })}
                               {pA.hasClash && (
                                 <div className="text-[10px] font-black text-red-600 flex items-center gap-1 mt-0.5">
                                   <AlertTriangle className="w-3 h-3" /> Double-booked
@@ -1491,18 +1540,26 @@ export default function FacultyAvailabilitySubtab({
                               <div className="text-[10px] font-bold text-gray-500 font-mono mb-0.5">
                                 {pB.slotTime}
                               </div>
-                              {pB.sessions.map((s, sIdx) => (
-                                <div
-                                  key={sIdx}
-                                  onClick={() => onSlotClick && onSlotClick([s], selectedDay, pB.slotTime, s.branch)}
-                                  className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
-                                    onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
-                                  }`}
-                                >
-                                  <span>{s.branch}: {s.subject}</span>
-                                  {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
-                                </div>
-                              ))}
+                              {pB.sessions.map((s, sIdx) => {
+                                const isLab = s.isLab || /lab/i.test(s.subject);
+                                const isTut = s.isTutorial || /tut/i.test(s.subject);
+                                return (
+                                  <div
+                                    key={sIdx}
+                                    onClick={() => onSlotClick && onSlotClick([s], selectedDay, pB.slotTime, s.branch)}
+                                    className={`text-[11px] font-bold text-gray-900 flex items-center justify-between ${
+                                      onSlotClick ? 'cursor-pointer hover:text-blue-600' : ''
+                                    }`}
+                                  >
+                                    <div className="flex items-center gap-1">
+                                      <span>{s.branch}: {s.subject}</span>
+                                      {isLab && <span className="text-[9px] font-bold text-purple-700 bg-purple-100 px-1 rounded">LAB</span>}
+                                      {isTut && <span className="text-[9px] font-bold text-amber-700 bg-amber-100 px-1 rounded">TUT</span>}
+                                    </div>
+                                    {s.room && <span className="font-mono text-gray-500 text-[10px]">({s.room})</span>}
+                                  </div>
+                                );
+                              })}
                               {pB.hasClash && (
                                 <div className="text-[10px] font-black text-red-600 flex items-center gap-1 mt-0.5">
                                   <AlertTriangle className="w-3 h-3" /> Double-booked
@@ -1517,8 +1574,12 @@ export default function FacultyAvailabilitySubtab({
                             <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                             In Class Both Periods
                           </span>
-                          <span className="font-mono text-[10.5px]">
-                            {fac.totalLoad || 0} hrs/wk
+                          <span 
+                            className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
+                            title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
+                          >
+                            <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                            <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                           </span>
                         </div>
                       </div>
