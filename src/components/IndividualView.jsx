@@ -4,6 +4,8 @@ import { UserCheck, Filter, Users, Table, Printer } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 import DepartmentTimetableGrid from './DepartmentTimetableGrid';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint, getPrintFormat, applyPrintFormat } from '../utils/printUtils';
 
 /**
  * Helper to check if current slot and next slot should be merged horizontally (colSpan=2) for faculty
@@ -785,29 +787,20 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
   // Print Target: 'individual' (A4 portrait, 2 per page) vs 'department' (1-Page landscape department timetable)
   const [printTarget, setPrintTarget] = useState('individual');
+  const [printFormat, setPrintFormat] = useState('a4-portrait');
 
   // Print controls: whether to include department stats & workload table in print
   const [includeStatsInPrint, setIncludeStatsInPrint] = useState(false);
 
   // Dynamically set @page orientation in document head so browser print preview initializes accurately
   useEffect(() => {
-    let styleEl = document.getElementById('dynamic-page-orientation-style');
-    if (!styleEl) {
-      styleEl = document.createElement('style');
-      styleEl.id = 'dynamic-page-orientation-style';
-      document.head.appendChild(styleEl);
-    }
-    if (printTarget === 'department') {
-      styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-    } else {
-      styleEl.innerHTML = `@page { size: A4 portrait !important; margin: 5mm 5mm !important; }`;
-    }
+    applyPrintFormat(printFormat);
 
     return () => {
       const el = document.getElementById('dynamic-page-orientation-style');
       if (el) el.remove();
     };
-  }, [printTarget]);
+  }, [printFormat]);
 
   // When department changes, update selected faculty
   const handleDeptChange = (newDept) => {
@@ -928,24 +921,24 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
           <span className="text-gray-300 hidden sm:inline">|</span>
 
-          {/* Dedicated Print Button for Faculty Timetables (2 per page in A4 portrait) */}
+          {/* In-App Page Format & Orientation Toggle */}
+          <PrintFormatToggle 
+            selectedFormat={printFormat}
+            onFormatChange={setPrintFormat}
+            formats={['a4-portrait', 'a4-landscape', 'a3-landscape']}
+          />
+
+          {/* Dedicated Print Button for Faculty Timetables */}
           <button
             onClick={() => {
               setPrintTarget('individual');
-              let styleEl = document.getElementById('dynamic-page-orientation-style');
-              if (!styleEl) {
-                styleEl = document.createElement('style');
-                styleEl.id = 'dynamic-page-orientation-style';
-                document.head.appendChild(styleEl);
-              }
-              styleEl.innerHTML = `@page { size: A4 portrait !important; margin: 5mm 5mm !important; }`;
-              setTimeout(() => window.print(), 80);
+              triggerPrint(printFormat, () => setPrintTarget('individual'), 80);
             }}
             className="flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
-            title="Print Faculty Timetables (A4 Portrait - 2 per page)"
+            title={`Print Faculty Timetables in ${getPrintFormat(printFormat).label}`}
           >
             <Printer className="w-3.5 h-3.5" />
-            <span>Print Faculty Timetables (A4 Portrait)</span>
+            <span>Print Faculty Timetables ({getPrintFormat(printFormat).shortLabel})</span>
           </button>
 
           {/* Dedicated Print Button for 1-Page Weekly Department Timetable */}
@@ -953,20 +946,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             <button
               onClick={() => {
                 setPrintTarget('department');
-                let styleEl = document.getElementById('dynamic-page-orientation-style');
-                if (!styleEl) {
-                  styleEl = document.createElement('style');
-                  styleEl.id = 'dynamic-page-orientation-style';
-                  document.head.appendChild(styleEl);
-                }
-                styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-                setTimeout(() => window.print(), 80);
+                triggerPrint(printFormat, () => setPrintTarget('department'), 80);
               }}
               className="flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-800 hover:bg-slate-900 text-white rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
-              title={`Print ${selectedDept} Department Timetable (Strictly 1 Page Landscape)`}
+              title={`Print ${selectedDept} Department Timetable in ${getPrintFormat(printFormat).label}`}
             >
               <Printer className="w-3.5 h-3.5 text-blue-300" />
-              <span>Print {selectedDept} (1 Page Landscape)</span>
+              <span>Print {selectedDept} ({getPrintFormat(printFormat).shortLabel})</span>
             </button>
           )}
 

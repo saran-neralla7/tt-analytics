@@ -23,6 +23,8 @@ import {
   ChevronRight,
   Info
 } from 'lucide-react';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint, getPrintFormat } from '../utils/printUtils';
 
 export const SESSION_DEFINITIONS = [
   {
@@ -87,6 +89,7 @@ export default function FacultyAvailabilitySubtab({
   // In period mode: 'ALL' | 'FREE' | 'OCCUPIED'
   // In session mode: 'ALL' | 'FULL_FREE' | 'PARTIAL_FREE' | 'OCCUPIED'
   const [statusFilter, setStatusFilter] = useState('ALL');
+  const [printFormat, setPrintFormat] = useState('a4-portrait');
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'table'
 
@@ -320,7 +323,7 @@ export default function FacultyAvailabilitySubtab({
             </div>
           </div>
 
-          {/* Quick Action: Available Right Now & Print */}
+          {/* Quick Action: Available Right Now, Format Toggle & Print */}
           <div className="flex flex-wrap items-center gap-2.5">
             <button
               onClick={handleSelectRightNow}
@@ -331,13 +334,20 @@ export default function FacultyAvailabilitySubtab({
               <span>Available Right Now</span>
             </button>
 
+            <PrintFormatToggle 
+              selectedFormat={printFormat}
+              onFormatChange={setPrintFormat}
+              formats={['a4-portrait', 'a4-landscape']}
+              compact={true}
+            />
+
             <button
-              onClick={() => window.print()}
+              onClick={() => triggerPrint(printFormat)}
               className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer active:scale-95"
-              title="Print Availability Roster"
+              title={`Print Availability Roster in ${getPrintFormat(printFormat).label}`}
             >
               <Printer className="w-3.5 h-3.5 text-slate-300" />
-              <span>Print Roster</span>
+              <span>Print Roster ({getPrintFormat(printFormat).shortLabel})</span>
             </button>
           </div>
         </div>

@@ -3,6 +3,8 @@ import DepartmentTimetableGrid from './DepartmentTimetableGrid';
 import { getFacultyShortName } from '../utils/facultyShortNames';
 import initialData from '../data/initialData.json';
 import { Printer, Building2, Users, Layers, Award, AlertTriangle } from 'lucide-react';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint, getPrintFormat } from '../utils/printUtils';
 
 const DEPARTMENT_ORDER = [
   'Chemistry',
@@ -72,6 +74,7 @@ export default function DepartmentView({
   });
 
   const [viewAll, setViewAll] = useState(false);
+  const [printFormat, setPrintFormat] = useState('a3-landscape');
 
   // Active faculty list for currently selected department
   const activeDeptFaculty = useMemo(() => {
@@ -165,54 +168,41 @@ export default function DepartmentView({
           )}
         </div>
 
-        {/* Print Buttons */}
-        <div className="flex items-center gap-2">
+        {/* Print Buttons & In-App Format Selector */}
+        <div className="flex flex-wrap items-center gap-2.5">
+          <PrintFormatToggle 
+            selectedFormat={printFormat}
+            onFormatChange={setPrintFormat}
+          />
+
           {!viewAll && (
             <button
-              onClick={() => {
-                let styleEl = document.getElementById('dynamic-page-orientation-style');
-                if (!styleEl) {
-                  styleEl = document.createElement('style');
-                  styleEl.id = 'dynamic-page-orientation-style';
-                  document.head.appendChild(styleEl);
-                }
-                styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-                setTimeout(() => window.print(), 50);
-              }}
+              onClick={() => triggerPrint(printFormat)}
               className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
-              title={`Print ${selectedDept} department timetable (Strictly 1 Page Landscape)`}
+              title={`Print ${selectedDept} department timetable in ${getPrintFormat(printFormat).label}`}
             >
               <Printer className="w-4 h-4 text-blue-200" />
-              Print {selectedDept} (1 Page Landscape)
+              Print {selectedDept} ({getPrintFormat(printFormat).shortLabel})
             </button>
           )}
 
           <button
             onClick={() => {
-              let styleEl = document.getElementById('dynamic-page-orientation-style');
-              if (!styleEl) {
-                styleEl = document.createElement('style');
-                styleEl.id = 'dynamic-page-orientation-style';
-                document.head.appendChild(styleEl);
-              }
-              styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
               setViewAll(true);
-              setTimeout(() => {
-                window.print();
-              }, 150);
+              triggerPrint(printFormat, null, 150);
             }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
-            title="Print all departments, each strictly on 1 landscape page"
+            title={`Print all departments in ${getPrintFormat(printFormat).label}`}
           >
             <Printer className="w-4 h-4 text-slate-300" />
-            Print All Departments (1 Page Each)
+            Print All Departments ({getPrintFormat(printFormat).shortLabel})
           </button>
         </div>
       </div>
 
       {/* Print Instructions Helper Banner */}
       <div className="no-print mb-4 px-4 py-2 bg-blue-50 border border-blue-200 rounded-lg flex items-center justify-between text-xs text-blue-900 font-medium">
-        <span>💡 <strong>Print Tip:</strong> Ensure <strong>Landscape</strong> orientation is selected in your browser print dialog. Both <strong>A4</strong> and <strong>A3</strong> paper sizes fit all sessions cleanly without clipping.</span>
+        <span>💡 <strong>Orientation & Page Size:</strong> Use the toggle above to choose <strong>A4 Portrait</strong>, <strong>A4 Landscape</strong>, or <strong>A3 Landscape</strong>. The print layout instantly configures to your selection.</span>
       </div>
 
       {/* RENDER TIMETABLES */}

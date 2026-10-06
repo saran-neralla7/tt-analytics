@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Printer, CheckCircle2, AlertCircle, FileCheck } from 'lucide-react';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint } from '../utils/printUtils';
 
 export default function Header({ 
   universityInfo, 
@@ -8,6 +10,7 @@ export default function Header({
   lastSyncTime
 }) {
   const [showStickyBar, setShowStickyBar] = useState(false);
+  const [printFormat, setPrintFormat] = useState('a4-portrait');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +27,7 @@ export default function Header({
   }, []);
 
   const handlePrint = () => {
-    window.print();
+    triggerPrint(printFormat);
   };
 
   return (
@@ -54,6 +57,11 @@ export default function Header({
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            <PrintFormatToggle 
+              selectedFormat={printFormat} 
+              onFormatChange={setPrintFormat} 
+              compact={true} 
+            />
             <button
               onClick={handlePrint}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg text-white bg-blue-700 hover:bg-blue-800 shadow-xs transition-all active:scale-95 cursor-pointer"
@@ -92,10 +100,14 @@ export default function Header({
             )}
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center flex-wrap gap-2">
+            <PrintFormatToggle 
+              selectedFormat={printFormat} 
+              onFormatChange={setPrintFormat} 
+            />
             <button
               onClick={handlePrint}
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-extrabold rounded-lg text-white bg-blue-700 hover:bg-blue-800 shadow-md transition-all hover:shadow-lg active:scale-95"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-extrabold rounded-lg text-white bg-blue-700 hover:bg-blue-800 shadow-md transition-all hover:shadow-lg active:scale-95 cursor-pointer"
               title="Print or Export as PDF"
             >
               <Printer className="w-4 h-4" /> Print / Export PDF

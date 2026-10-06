@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import TimetableGrid from './TimetableGrid';
 import { branches as mockBranches } from '../data/mockData';
 import { Printer } from 'lucide-react';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint, getPrintFormat } from '../utils/printUtils';
 
 export default function BranchView({ 
   timetableData, 
@@ -12,6 +14,7 @@ export default function BranchView({
   onSlotClick
 }) {
   const [useShortNames, setUseShortNames] = useState(false);
+  const [printFormat, setPrintFormat] = useState('a3-landscape');
 
   const availableBranchKeys = Object.keys(timetableData).length > 0 
     ? Object.keys(timetableData) 
@@ -52,22 +55,19 @@ export default function BranchView({
           </select>
         </div>
 
+        {/* In-App Page Format & Orientation Toggle */}
+        <PrintFormatToggle 
+          selectedFormat={printFormat}
+          onFormatChange={setPrintFormat}
+        />
+
         <button
-          onClick={() => {
-            let styleEl = document.getElementById('dynamic-page-orientation-style');
-            if (!styleEl) {
-              styleEl = document.createElement('style');
-              styleEl.id = 'dynamic-page-orientation-style';
-              document.head.appendChild(styleEl);
-            }
-            styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-            setTimeout(() => window.print(), 50);
-          }}
+          onClick={() => triggerPrint(printFormat)}
           className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
-          title={`Print ${activeBranchKey} timetable (A3 Full Page Landscape)`}
+          title={`Print ${activeBranchKey} timetable in ${getPrintFormat(printFormat).label}`}
         >
           <Printer className="w-4 h-4 text-blue-200" />
-          Print {activeBranchKey} (A3 Full Page)
+          Print {activeBranchKey} ({getPrintFormat(printFormat).shortLabel})
         </button>
 
         <label className="inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 cursor-pointer shadow-2xs hover:bg-slate-50 transition-colors select-none">

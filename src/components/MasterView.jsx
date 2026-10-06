@@ -3,6 +3,8 @@ import TimetableGrid, { renderBranchName } from './TimetableGrid';
 import { branches, days, periodSlots, getActiveDays } from '../data/mockData';
 import { getSubjectStyle } from '../utils/subjectColors';
 import { Layers, GraduationCap, Clock, Award, Calendar, Printer } from 'lucide-react';
+import PrintFormatToggle from './PrintFormatToggle';
+import { triggerPrint, getPrintFormat } from '../utils/printUtils';
 
 // Official classroom assignments per branch from institute records
 export const branchClassrooms = {
@@ -42,6 +44,7 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
   const rawBranchKeys = Object.keys(timetableData);
   const [selectedDay, setSelectedDay] = useState('ALL');
   const [useShortNames, setUseShortNames] = useState(false);
+  const [printFormat, setPrintFormat] = useState('a3-landscape');
 
   // Sort branches matching official order
   const availableBranchKeys = useMemo(() => {
@@ -187,22 +190,18 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
           </div>
         ) : (
           <div className="flex flex-wrap items-center justify-center gap-3 mt-1.5">
+            <PrintFormatToggle 
+              selectedFormat={printFormat}
+              onFormatChange={setPrintFormat}
+            />
+
             <button
-              onClick={() => {
-                let styleEl = document.getElementById('dynamic-page-orientation-style');
-                if (!styleEl) {
-                  styleEl = document.createElement('style');
-                  styleEl.id = 'dynamic-page-orientation-style';
-                  document.head.appendChild(styleEl);
-                }
-                styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-                setTimeout(() => window.print(), 50);
-              }}
+              onClick={() => triggerPrint(printFormat)}
               className="inline-flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs sm:text-sm font-extrabold shadow-sm hover:shadow transition-all cursor-pointer active:scale-95"
-              title="Print all departments, each strictly formatted to 1 single landscape page"
+              title={`Print all departments in ${getPrintFormat(printFormat).label}`}
             >
               <Printer className="w-4 h-4 text-blue-200" />
-              Print All Departments (1 Page Each)
+              Print All Departments ({getPrintFormat(printFormat).shortLabel})
             </button>
 
             <label className="inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 cursor-pointer shadow-2xs hover:bg-slate-50 transition-colors select-none">
@@ -285,25 +284,19 @@ export default function MasterView({ timetableData, branchLegends = {}, universi
                 {selectedDayLabel} • All {availableBranchKeys.length} Departments
               </h3>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-xs text-slate-300 font-mono hidden sm:inline">
-                Unified single-page portrait schedule
-              </span>
+            <div className="flex flex-wrap items-center gap-2.5">
+              <PrintFormatToggle 
+                selectedFormat={printFormat}
+                onFormatChange={setPrintFormat}
+                compact={true}
+              />
               <button
-                onClick={() => {
-                  let styleEl = document.getElementById('dynamic-page-orientation-style');
-                  if (!styleEl) {
-                    styleEl = document.createElement('style');
-                    styleEl.id = 'dynamic-page-orientation-style';
-                    document.head.appendChild(styleEl);
-                  }
-                  styleEl.innerHTML = `@page { size: A3 landscape !important; margin: 4mm 5mm !important; }`;
-                  setTimeout(() => window.print(), 50);
-                }}
-                className="flex items-center gap-1.5 px-3 py-1 bg-white text-slate-900 rounded-lg text-xs font-bold hover:bg-slate-100 transition-all shadow-xs cursor-pointer"
+                onClick={() => triggerPrint(printFormat)}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-white text-slate-900 rounded-lg text-xs font-bold hover:bg-slate-100 transition-all shadow-xs cursor-pointer"
+                title={`Print ${selectedDayLabel} Schedule in ${getPrintFormat(printFormat).label}`}
               >
                 <Printer className="w-3.5 h-3.5 text-blue-700" />
-                Print {selectedDayLabel} Schedule (1 Page Landscape)
+                Print {selectedDayLabel} ({getPrintFormat(printFormat).shortLabel})
               </button>
             </div>
           </div>
