@@ -32,6 +32,6 @@ pnpm-debug.log*
 *.sw?
 .idea/
 .vscode/
-.vercel
-.env*
-~$*
+# Local tools & brag outputs
+ffmpeg
+brag-output/
