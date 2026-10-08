@@ -433,16 +433,9 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "COM Tut.",
-            "faculty": "Dr. P Srinivas Rao",
-            "rawFaculty": "PSR",
-            "room": "E-410",
-            "isLab": false
-          },
-          {
-            "subject": "PPSTC Tut.",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
+            "subject": "S&G",
+            "faculty": "Mr. P Manikanta",
+            "rawFaculty": "PM",
             "room": "E-410",
             "isLab": false
           }
@@ -581,9 +574,16 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "S&G",
-            "faculty": "Mr. P Manikanta",
-            "rawFaculty": "PM",
+            "subject": "COM Tut.",
+            "faculty": "Dr. P Srinivas Rao",
+            "rawFaculty": "PSR",
+            "room": "E-410",
+            "isLab": false
+          },
+          {
+            "subject": "PPSTC Tut.",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
             "room": "E-410",
             "isLab": false
           }
@@ -988,8 +988,8 @@
           },
           {
             "subject": "PPSTC Tut.",
-            "faculty": "Mr. CH VVD Prasad, Mr. S Vinod Manikantha",
-            "rawFaculty": "CHVVDP, SVM",
+            "faculty": "Mr. CH VVD Prasad, Dr. Bh Padma",
+            "rawFaculty": "CHVVDP, BHP",
             "room": "G-404",
             "isLab": false
           }
@@ -12722,16 +12722,6 @@
         ]
       },
       "WED": {
-        "10:00-11:00": [
-          {
-            "branch": "CIVIL",
-            "subject": "COM Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "PSR"
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -12786,6 +12776,16 @@
         ]
       },
       "FRI": {
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "COM Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "PSR"
+          }
+        ],
         "03:15-04:15": [
           {
             "branch": "CIVIL",
@@ -13622,6 +13622,16 @@
         ]
       },
       "WED": {
+        "10:00-11:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "S&G",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "PM"
+          }
+        ],
         "12:15-01:15": [
           {
             "branch": "CSE (CS & DS)",
@@ -13676,24 +13686,6 @@
         ]
       },
       "FRI": {
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "S&G",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "PM"
-          },
-          {
-            "branch": "CSE (CS & DS)",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "BHP, PM, NVSK"
-          }
-        ],
         "03:15-04:15": [
           {
             "branch": "CSE (CS & DS)",
@@ -13711,6 +13703,16 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false,
+            "rawFaculty": "BHP, PM, NVSK"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": true,
             "rawFaculty": "BHP, PM, NVSK"
           }
         ]
@@ -14010,6 +14012,14 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "BHP, DMVP"
+          },
+          {
+            "branch": "MECH",
+            "subject": "PPSTC Tut.",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHVVDP, BHP"
           }
         ],
         "03:15-04:15": [
@@ -14816,16 +14826,6 @@
             "rawFaculty": "BBK"
           }
         ],
-        "10:00-11:00": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BBK"
-          }
-        ],
         "12:15-01:15": [
           {
             "branch": "CSE-1",
@@ -14914,6 +14914,16 @@
           {
             "branch": "CIVIL",
             "subject": "PPSTC",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BBK"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC Tut.",
             "room": "E-410",
             "isLab": false,
             "isContinued": false,
@@ -18768,7 +18778,7 @@
             "room": "G-404",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHVVDP, SVM"
+            "rawFaculty": "CHVVDP, BHP"
           }
         ]
       },
@@ -18959,14 +18969,6 @@
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "ADP, DMVP, SVM"
-          },
-          {
-            "branch": "MECH",
-            "subject": "PPSTC Tut.",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHVVDP, SVM"
           }
         ],
         "12:15-01:15": [
@@ -23679,15 +23681,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -23704,9 +23697,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 7,
@@ -24287,8 +24289,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -24298,6 +24300,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -24336,7 +24347,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 16,
@@ -24648,15 +24659,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -24682,9 +24684,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 20,
@@ -26696,8 +26707,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -26727,15 +26738,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -26754,7 +26756,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 47,
@@ -29507,15 +29509,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -29532,9 +29525,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 7,
@@ -30115,8 +30117,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -30126,6 +30128,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -30164,7 +30175,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 16,
@@ -30476,15 +30487,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -30510,9 +30512,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 20,
@@ -32524,8 +32535,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -32555,15 +32566,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -32582,7 +32584,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 47,
@@ -38035,15 +38037,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38060,9 +38053,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. PSR": {
       "sno": 6,
@@ -38131,15 +38133,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38156,9 +38149,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.PSR": {
       "sno": 6,
@@ -38227,15 +38229,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38252,9 +38245,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. PSR": {
       "sno": 6,
@@ -38323,15 +38325,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38348,9 +38341,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. PSR": {
       "sno": 6,
@@ -38419,15 +38421,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38444,9 +38437,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. PSR": {
       "sno": 6,
@@ -38515,15 +38517,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38540,9 +38533,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. P Srinivas Rao": {
       "sno": 6,
@@ -38611,15 +38613,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "COM Tut.",
-          "code": "COM Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -38636,9 +38629,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "COM Tut.",
+          "code": "COM Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nCIVIL → Chemistry of Materials (COM) – 3 theory = 3 periods\nCIVIL → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry Lab (CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Chemistry of Materials (COM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → COM Tut. (COM Tut.) – 1 tutorial = 1 periods\nCIVIL → COM Tut. (COM Tut.) – 1 tutorial = 1 periods"
     },
     "RN": {
       "sno": 7,
@@ -42639,8 +42641,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42650,6 +42652,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42688,7 +42699,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Dr. BHP": {
       "sno": 15,
@@ -42699,8 +42710,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42710,6 +42721,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42748,7 +42768,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Dr.BHP": {
       "sno": 15,
@@ -42759,8 +42779,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42770,6 +42790,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42808,7 +42837,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Mr. BHP": {
       "sno": 15,
@@ -42819,8 +42848,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42830,6 +42859,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42868,7 +42906,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Mrs. BHP": {
       "sno": 15,
@@ -42879,8 +42917,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42890,6 +42928,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42928,7 +42975,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Ms. BHP": {
       "sno": 15,
@@ -42939,8 +42986,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -42950,6 +42997,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -42988,7 +43044,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "Dr. Bh Padma": {
       "sno": 15,
@@ -42999,8 +43055,8 @@
       "designation": "Professor",
       "theoryLoad": 6,
       "labLoad": 6,
-      "tutLoad": 1,
-      "totalLoad": 13,
+      "tutLoad": 2,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -43010,6 +43066,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "MECH",
@@ -43048,7 +43113,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods"
     },
     "DC": {
       "sno": 16,
@@ -44872,15 +44937,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -44906,9 +44962,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. BBK": {
       "sno": 19,
@@ -44968,15 +45033,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45002,9 +45058,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.BBK": {
       "sno": 19,
@@ -45064,15 +45129,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45098,9 +45154,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. BBK": {
       "sno": 19,
@@ -45160,15 +45225,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45194,9 +45250,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. BBK": {
       "sno": 19,
@@ -45256,15 +45321,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45290,9 +45346,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. BBK": {
       "sno": 19,
@@ -45352,15 +45417,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45386,9 +45442,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. B Bala Krishna": {
       "sno": 19,
@@ -45448,15 +45513,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -45482,9 +45538,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "DAK": {
       "sno": 20,
@@ -59502,8 +59567,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59533,15 +59598,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59560,7 +59616,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Dr. SVM": {
       "sno": 46,
@@ -59571,8 +59627,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59602,15 +59658,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59629,7 +59676,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Dr.SVM": {
       "sno": 46,
@@ -59640,8 +59687,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59671,15 +59718,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59698,7 +59736,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Mr. SVM": {
       "sno": 46,
@@ -59709,8 +59747,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59740,15 +59778,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59767,7 +59796,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Mrs. SVM": {
       "sno": 46,
@@ -59778,8 +59807,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59809,15 +59838,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59836,7 +59856,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Ms. SVM": {
       "sno": 46,
@@ -59847,8 +59867,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59878,15 +59898,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59905,7 +59916,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "Mr. S Vinod Manikantha": {
       "sno": 46,
@@ -59916,8 +59927,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 10,
-      "tutLoad": 1,
-      "totalLoad": 17,
+      "tutLoad": 0,
+      "totalLoad": 16,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -59947,15 +59958,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Fundamentals of Web Designing",
           "code": "FWD",
@@ -59974,7 +59976,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
+      "assignments": "CSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods"
     },
     "KLSP": {
       "sno": 47,
