@@ -4204,20 +4204,6 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          }
-        ],
-        "11:15-12:15": [
-          {
             "subject": "PPSTC",
             "faculty": "Dr. Bh Padma, Mrs. DMV Priya",
             "rawFaculty": "BHP, DMVP",
@@ -4290,6 +4276,20 @@
             "faculty": "Dr. Bh Padma, Mrs. DMV Priya",
             "rawFaculty": "BHP, DMVP",
             "room": "G-405",
+            "isLab": false
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -13690,7 +13690,7 @@
     },
     "Dr. Bh Padma": {
       "MON": {
-        "11:15-12:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "PPSTC",
@@ -14858,7 +14858,7 @@
     },
     "Mrs. DMV Priya": {
       "MON": {
-        "11:15-12:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "PPSTC",
@@ -14866,7 +14866,9 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "BHP, DMVP"
-          },
+          }
+        ],
+        "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB",
