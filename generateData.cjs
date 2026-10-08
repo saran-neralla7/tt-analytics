@@ -983,13 +983,24 @@ if (!hasDedicatedLabSheets || Object.keys(roomLabs).length === 0) {
           roomLabs[rm] = { schedule: {}, labDetails: [] };
           dayNames.forEach(d => roomLabs[rm].schedule[d] = {});
         }
-        roomLabs[rm].schedule[curD][block] = {
-          raw: `${curB} / ${subject}`,
-          branch: curB,
-          subject,
-          faculty: resolvedFac,
-          facultyShort: faculty
-        };
+        const existing = roomLabs[rm].schedule[curD][block];
+        if (existing && existing.branch && !existing.branch.split(', ').includes(curB)) {
+          roomLabs[rm].schedule[curD][block] = {
+            raw: `${existing.raw} | ${curB} / ${subject}`,
+            branch: `${existing.branch}, ${curB}`,
+            subject: existing.subject === subject ? subject : `${existing.subject} / ${subject}`,
+            faculty: `${existing.faculty} / ${resolvedFac}`,
+            facultyShort: `${existing.facultyShort} / ${faculty}`
+          };
+        } else {
+          roomLabs[rm].schedule[curD][block] = {
+            raw: `${curB} / ${subject}`,
+            branch: curB,
+            subject,
+            faculty: resolvedFac,
+            facultyShort: faculty
+          };
+        }
         if (!roomLabs[rm].labDetails.some(d => d.shortName === subject)) {
           roomLabs[rm].labDetails.push({
             sno: roomLabs[rm].labDetails.length + 1,

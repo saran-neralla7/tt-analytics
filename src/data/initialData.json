@@ -326,25 +326,21 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
-            "room": "E-410",
-            "isLab": false
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
+            "rawFaculty": "BBK, YPR,  AS",
+            "room": "COMP. LAB-3",
+            "isLab": true
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
-            "isLab": false
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
+            "rawFaculty": "BBK, YPR,  AS",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true
           }
         ],
         "02:15-03:15": [
@@ -571,21 +567,25 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-            "rawFaculty": "BBK, YPR,  AS",
-            "room": "COMP. LAB-3",
-            "isLab": true
+            "subject": "PPSTC",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
+            "room": "E-410",
+            "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-            "rawFaculty": "BBK, YPR,  AS",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "COUNSELLING / LIBRARY",
+            "faculty": "",
+            "room": "",
+            "isLab": false
           }
         ],
         "02:15-03:15": [
@@ -6787,11 +6787,11 @@
               "facultyShort": "DMVP, VS, KMK"
             },
             "02:15-04:15": {
-              "raw": "ECE-2 / AITA LAB",
-              "branch": "ECE-2",
+              "raw": "CSE-1 / AITA LAB | ECE-2 / AITA LAB",
+              "branch": "CSE-1, ECE-2",
               "subject": "AITA LAB",
-              "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
-              "facultyShort": "NSSVRR, BN, DSK"
+              "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar / Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
+              "facultyShort": "MBK, PKM, BVSAK / NSSVRR, BN, DSK"
             },
             "09:00-11:00": {
               "raw": "MECH / AITA LAB",
@@ -6815,46 +6815,22 @@
           }
         ]
       },
-      "GVPCE SUR. LAB (B11-101)": {
-        "schedule": {
-          "MON": {},
-          "TUE": {
-            "09:00-11:00": {
-              "raw": "CIVIL / S&G LAB",
-              "branch": "CIVIL",
-              "subject": "S&G LAB",
-              "faculty": "Dr. B Vidya, Mr. P Manikanta",
-              "facultyShort": "BV, PM"
-            }
-          },
-          "WED": {},
-          "THU": {},
-          "FRI": {}
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "S&G LAB",
-            "fullName": "Surveying and Geomatics Lab"
-          }
-        ]
-      },
       "COMP. LAB-3": {
         "schedule": {
           "MON": {
+            "11:15-01:15": {
+              "raw": "CIVIL / PPSTC LAB | CSE(AI&ML)-1 / FAI & ML LAB",
+              "branch": "CIVIL, CSE(AI&ML)-1",
+              "subject": "PPSTC LAB / FAI & ML LAB",
+              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki / Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
+              "facultyShort": "BBK, YPR,  AS / ADP, DMVP, SVM"
+            },
             "02:15-04:15": {
               "raw": "CSE-2 / FWD LAB",
               "branch": "CSE-2",
               "subject": "FWD LAB",
               "faculty": "Mr. S Vinod Manikantha, Dr. D Chandravathi, Mr. A Dhanunjaya Prasad",
               "facultyShort": "SVM, DC, ADP"
-            },
-            "11:15-01:15": {
-              "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
-              "branch": "CSE(AI&ML)-1",
-              "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-              "facultyShort": "ADP, DMVP, SVM"
             },
             "09:00-11:00": {
               "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
@@ -6941,13 +6917,6 @@
               "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
               "facultyShort": "VA, DSK, TAJ"
             },
-            "11:15-01:15": {
-              "raw": "CIVIL / PPSTC LAB",
-              "branch": "CIVIL",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-              "facultyShort": "BBK, YPR,  AS"
-            },
             "02:15-04:15": {
               "raw": "CSE-1 / FWD LAB",
               "branch": "CSE-1",
@@ -6960,13 +6929,13 @@
         "labDetails": [
           {
             "sno": 1,
-            "shortName": "AITA LAB",
-            "fullName": "AI Tools and Applications Lab"
+            "shortName": "PPSTC LAB",
+            "fullName": "Programming for Problem solving through C lab"
           },
           {
             "sno": 2,
-            "shortName": "PPSTC LAB",
-            "fullName": "Programming for Problem solving through C lab"
+            "shortName": "AITA LAB",
+            "fullName": "AI Tools and Applications Lab"
           },
           {
             "sno": 3,
@@ -6987,6 +6956,30 @@
             "sno": 6,
             "shortName": "FAI & ML LAB",
             "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
+          }
+        ]
+      },
+      "GVPCE SUR. LAB (B11-101)": {
+        "schedule": {
+          "MON": {},
+          "TUE": {
+            "09:00-11:00": {
+              "raw": "CIVIL / S&G LAB",
+              "branch": "CIVIL",
+              "subject": "S&G LAB",
+              "faculty": "Dr. B Vidya, Mr. P Manikanta",
+              "facultyShort": "BV, PM"
+            }
+          },
+          "WED": {},
+          "THU": {},
+          "FRI": {}
+        },
+        "labDetails": [
+          {
+            "sno": 1,
+            "shortName": "S&G LAB",
+            "fullName": "Surveying and Geomatics Lab"
           }
         ]
       },
@@ -8043,6 +8036,15 @@
       },
       "Programming for Problem solving through C lab": {
         "MON": {
+          "11:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "room": "COMP. LAB-3",
+              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
+              "facultyShort": "BBK, YPR,  AS",
+              "raw": "CIVIL/COMP. LAB-3"
+            }
+          ],
           "02:15-04:15": [
             {
               "branch": "CSE-1",
@@ -8190,13 +8192,6 @@
               "faculty": "Mrs. DMV Priya, Mrs. V Sridevi, Ms. K Manikyakanthi",
               "facultyShort": "DMVP, VS, KMK",
               "raw": "CHEMICAL/COMP. LAB-2"
-            },
-            {
-              "branch": "CIVIL",
-              "room": "COMP. LAB-3",
-              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-              "facultyShort": "BBK, YPR,  AS",
-              "raw": "CIVIL/COMP. LAB-3"
             },
             {
               "branch": "CSE (CS & DS)",
@@ -8921,6 +8916,14 @@
       },
       "CIVIL": {
         "MON": {
+          "11:15-01:15": [
+            {
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
+              "room": "COMP. LAB-3",
+              "raw": "PPSTC LAB\nBBK, YPR,  AS\nCOMP. LAB-3"
+            }
+          ],
           "02:15-04:15": [
             {
               "subject": "ESS. ENG. LAB",
@@ -8957,14 +8960,6 @@
               "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
               "room": "COMP. LAB-3",
               "raw": "AITA LAB\nVA, DSK, TAJ\nCOMP. LAB-3"
-            }
-          ],
-          "11:15-01:15": [
-            {
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-              "room": "COMP. LAB-3",
-              "raw": "PPSTC LAB\nBBK, YPR,  AS\nCOMP. LAB-3"
             }
           ]
         }
@@ -9927,7 +9922,7 @@
         "labName": "Programming for Problem solving through C lab",
         "subShort": "PPSTC LAB",
         "roomNo": "COMP. LAB-1, COMP. LAB-2, C-208, COMP. LAB-3",
-        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15\nECE-1: TUE 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, WED 02:15-04:15\nECE-3: THU 11:15-01:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: WED 11:15-01:15\nCIVIL: FRI 11:15-01:15\nCHEMICAL: FRI 11:15-01:15\nMECH-ROBOTICS: Not Allotted",
+        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15\nECE-1: TUE 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, WED 02:15-04:15\nECE-3: THU 11:15-01:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: WED 11:15-01:15\nCIVIL: MON 11:15-01:15\nCHEMICAL: FRI 11:15-01:15\nMECH-ROBOTICS: Not Allotted",
         "branchStatusList": [
           {
             "branch": "CSE-1",
@@ -10003,7 +9998,7 @@
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
-            "slots": "FRI 11:15-01:15",
+            "slots": "MON 11:15-01:15",
             "status": "ALLOTTED"
           },
           {
@@ -10811,11 +10806,11 @@
             "facultyShort": "DMVP, VS, KMK"
           },
           "02:15-04:15": {
-            "raw": "ECE-2 / AITA LAB",
-            "branch": "ECE-2",
+            "raw": "CSE-1 / AITA LAB | ECE-2 / AITA LAB",
+            "branch": "CSE-1, ECE-2",
             "subject": "AITA LAB",
-            "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
-            "facultyShort": "NSSVRR, BN, DSK"
+            "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar / Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
+            "facultyShort": "MBK, PKM, BVSAK / NSSVRR, BN, DSK"
           },
           "09:00-11:00": {
             "raw": "MECH / AITA LAB",
@@ -10839,46 +10834,22 @@
         }
       ]
     },
-    "GVPCE SUR. LAB (B11-101)": {
-      "schedule": {
-        "MON": {},
-        "TUE": {
-          "09:00-11:00": {
-            "raw": "CIVIL / S&G LAB",
-            "branch": "CIVIL",
-            "subject": "S&G LAB",
-            "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "facultyShort": "BV, PM"
-          }
-        },
-        "WED": {},
-        "THU": {},
-        "FRI": {}
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "S&G LAB",
-          "fullName": "Surveying and Geomatics Lab"
-        }
-      ]
-    },
     "COMP. LAB-3": {
       "schedule": {
         "MON": {
+          "11:15-01:15": {
+            "raw": "CIVIL / PPSTC LAB | CSE(AI&ML)-1 / FAI & ML LAB",
+            "branch": "CIVIL, CSE(AI&ML)-1",
+            "subject": "PPSTC LAB / FAI & ML LAB",
+            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki / Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
+            "facultyShort": "BBK, YPR,  AS / ADP, DMVP, SVM"
+          },
           "02:15-04:15": {
             "raw": "CSE-2 / FWD LAB",
             "branch": "CSE-2",
             "subject": "FWD LAB",
             "faculty": "Mr. S Vinod Manikantha, Dr. D Chandravathi, Mr. A Dhanunjaya Prasad",
             "facultyShort": "SVM, DC, ADP"
-          },
-          "11:15-01:15": {
-            "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-            "facultyShort": "ADP, DMVP, SVM"
           },
           "09:00-11:00": {
             "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
@@ -10965,13 +10936,6 @@
             "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
             "facultyShort": "VA, DSK, TAJ"
           },
-          "11:15-01:15": {
-            "raw": "CIVIL / PPSTC LAB",
-            "branch": "CIVIL",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. B Bala Krishna, Mr. Y Prasad Reddy, Dr. Anand Solanki",
-            "facultyShort": "BBK, YPR,  AS"
-          },
           "02:15-04:15": {
             "raw": "CSE-1 / FWD LAB",
             "branch": "CSE-1",
@@ -10984,13 +10948,13 @@
       "labDetails": [
         {
           "sno": 1,
-          "shortName": "AITA LAB",
-          "fullName": "AI Tools and Applications Lab"
+          "shortName": "PPSTC LAB",
+          "fullName": "Programming for Problem solving through C lab"
         },
         {
           "sno": 2,
-          "shortName": "PPSTC LAB",
-          "fullName": "Programming for Problem solving through C lab"
+          "shortName": "AITA LAB",
+          "fullName": "AI Tools and Applications Lab"
         },
         {
           "sno": 3,
@@ -11011,6 +10975,30 @@
           "sno": 6,
           "shortName": "FAI & ML LAB",
           "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
+        }
+      ]
+    },
+    "GVPCE SUR. LAB (B11-101)": {
+      "schedule": {
+        "MON": {},
+        "TUE": {
+          "09:00-11:00": {
+            "raw": "CIVIL / S&G LAB",
+            "branch": "CIVIL",
+            "subject": "S&G LAB",
+            "faculty": "Dr. B Vidya, Mr. P Manikanta",
+            "facultyShort": "BV, PM"
+          }
+        },
+        "WED": {},
+        "THU": {},
+        "FRI": {}
+      },
+      "labDetails": [
+        {
+          "sno": 1,
+          "shortName": "S&G LAB",
+          "fullName": "Surveying and Geomatics Lab"
         }
       ]
     },
@@ -14729,11 +14717,21 @@
         "11:15-12:15": [
           {
             "branch": "CIVIL",
-            "subject": "PPSTC",
-            "room": "E-410",
-            "isLab": false,
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BBK"
+            "rawFaculty": "BBK, YPR,  AS"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "BBK, YPR,  AS"
           }
         ],
         "02:15-03:15": [
@@ -14895,21 +14893,11 @@
         "11:15-12:15": [
           {
             "branch": "CIVIL",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
+            "subject": "PPSTC",
+            "room": "E-410",
+            "isLab": false,
             "isContinued": false,
-            "rawFaculty": "BBK, YPR,  AS"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "BBK, YPR,  AS"
+            "rawFaculty": "BBK"
           }
         ],
         "10:00-11:00": [
@@ -20747,6 +20735,26 @@
     },
     "Dr. Anand Solanki": {
       "MON": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "BBK, YPR,  AS"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "BBK, YPR,  AS"
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -20844,7 +20852,10 @@
           }
         ]
       },
-      "FRI": {
+      "FRI": {}
+    },
+    "Mr. Y Prasad Reddy": {
+      "MON": {
         "11:15-12:15": [
           {
             "branch": "CIVIL",
@@ -20865,10 +20876,7 @@
             "rawFaculty": "BBK, YPR,  AS"
           }
         ]
-      }
-    },
-    "Mr. Y Prasad Reddy": {
-      "MON": {},
+      },
       "TUE": {
         "11:15-12:15": [
           {
@@ -20975,28 +20983,7 @@
           }
         ]
       },
-      "FRI": {
-        "11:15-12:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "BBK, YPR,  AS"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "BBK, YPR,  AS"
-          }
-        ]
-      }
+      "FRI": {}
     },
     "Ms. K Manikyakanthi": {
       "MON": {
@@ -24554,12 +24541,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -24599,6 +24586,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -24623,18 +24619,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 20,
@@ -27727,6 +27714,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -27761,18 +27757,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 60,
@@ -27786,6 +27773,15 @@
       "tutLoad": 0,
       "totalLoad": 12,
       "assignedCourses": [
+        {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
         {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
@@ -27830,18 +27826,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 61,
@@ -30400,12 +30387,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -30445,6 +30432,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -30469,18 +30465,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 20,
@@ -33573,6 +33560,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -33607,18 +33603,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 60,
@@ -33632,6 +33619,15 @@
       "tutLoad": 0,
       "totalLoad": 12,
       "assignedCourses": [
+        {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
         {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
@@ -33676,18 +33672,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 61,
@@ -44652,12 +44639,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -44697,6 +44684,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -44721,18 +44717,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Dr. BBK": {
       "sno": 19,
@@ -44748,12 +44735,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -44793,6 +44780,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -44817,18 +44813,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Dr.BBK": {
       "sno": 19,
@@ -44844,12 +44831,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -44889,6 +44876,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -44913,18 +44909,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Mr. BBK": {
       "sno": 19,
@@ -44940,12 +44927,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -44985,6 +44972,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -45009,18 +45005,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Mrs. BBK": {
       "sno": 19,
@@ -45036,12 +45023,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -45081,6 +45068,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -45105,18 +45101,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Ms. BBK": {
       "sno": 19,
@@ -45132,12 +45119,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -45177,6 +45164,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -45201,18 +45197,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "Mr. B Bala Krishna": {
       "sno": 19,
@@ -45228,12 +45215,12 @@
       "assignedCourses": [
         {
           "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE-1",
@@ -45273,6 +45260,15 @@
         },
         {
           "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CIVIL",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "E-410",
@@ -45297,18 +45293,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods"
     },
     "DAK": {
       "sno": 20,
@@ -66869,6 +66856,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -66903,18 +66899,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Dr. AS": {
       "sno": 59,
@@ -66929,6 +66916,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -66963,18 +66959,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Dr.AS": {
       "sno": 59,
@@ -66989,6 +66976,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67023,18 +67019,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Mr. AS": {
       "sno": 59,
@@ -67049,6 +67036,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67083,18 +67079,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Mrs. AS": {
       "sno": 59,
@@ -67109,6 +67096,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67143,18 +67139,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Ms. AS": {
       "sno": 59,
@@ -67169,6 +67156,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67203,18 +67199,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "Dr. Anand Solanki": {
       "sno": 59,
@@ -67229,6 +67216,15 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67263,18 +67259,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering (EME) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods"
     },
     "YPR": {
       "sno": 60,
@@ -67289,6 +67276,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67332,18 +67328,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr. YPR": {
       "sno": 60,
@@ -67358,6 +67345,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67401,18 +67397,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr.YPR": {
       "sno": 60,
@@ -67427,6 +67414,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67470,18 +67466,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. YPR": {
       "sno": 60,
@@ -67496,6 +67483,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67539,18 +67535,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mrs. YPR": {
       "sno": 60,
@@ -67565,6 +67552,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67608,18 +67604,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. YPR": {
       "sno": 60,
@@ -67634,6 +67621,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67677,18 +67673,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. Y Prasad Reddy": {
       "sno": 60,
@@ -67703,6 +67690,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -67746,18 +67742,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → Elements of Mechanical Engineering Lab (EME LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "KMK": {
       "sno": 61,
