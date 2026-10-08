@@ -326,21 +326,25 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "AITA LAB",
-            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-            "rawFaculty": "VA, DSK, TAJ",
-            "room": "COMP. LAB-1",
-            "isLab": true
+            "subject": "PPSTC",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
+            "room": "E-410",
+            "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "AITA LAB",
-            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-            "rawFaculty": "VA, DSK, TAJ",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "COUNSELLING / LIBRARY",
+            "faculty": "",
+            "room": "",
+            "isLab": false
           }
         ],
         "02:15-03:15": [
@@ -548,20 +552,21 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
-            "room": "E-410",
-            "isLab": false
+            "subject": "AITA LAB",
+            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+            "rawFaculty": "VA, DSK, TAJ",
+            "room": "COMP. LAB-3",
+            "isLab": true
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar, Mr. PBS Krishnamuraju",
-            "rawFaculty": "NVL, IRS, PBSKR",
-            "room": "E-410",
-            "isLab": false
+            "subject": "AITA LAB",
+            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+            "rawFaculty": "VA, DSK, TAJ",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true
           }
         ],
         "11:15-12:15": [
@@ -585,15 +590,10 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
+            "subject": "ESS. ENG. Tut.",
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar, Mr. PBS Krishnamuraju",
+            "rawFaculty": "NVL, IRS, PBSKR",
+            "room": "E-410",
             "isLab": false
           }
         ],
@@ -3180,10 +3180,15 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "ENGG.PHY",
-            "faculty": "Dr.V Siva Jahnavy, Dr. D Santhosh Kumar",
-            "rawFaculty": "VSJ, DSK",
-            "room": "G-304",
+            "subject": "LIBRARY",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -3198,15 +3203,10 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
+            "subject": "ENGG.PHY",
+            "faculty": "Dr.V Siva Jahnavy, Dr. D Santhosh Kumar",
+            "rawFaculty": "VSJ, DSK",
+            "room": "G-304",
             "isLab": false
           }
         ],
@@ -6208,7 +6208,7 @@
         "facultyFullName": "Dr. V Adinarayana\nDr. D Santhosh Kumar\nMs. Taj",
         "tutorialShort": "",
         "tutorialFullName": "",
-        "room": "COMP. LAB-1",
+        "room": "COMP. LAB-3",
         "isLab": true
       },
       {
@@ -6815,147 +6815,6 @@
           }
         ]
       },
-      "COMP. LAB-1": {
-        "schedule": {
-          "MON": {
-            "11:15-01:15": {
-              "raw": "CIVIL / AITA LAB",
-              "branch": "CIVIL",
-              "subject": "AITA LAB",
-              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-              "facultyShort": "VA, DSK, TAJ"
-            },
-            "02:15-04:15": {
-              "raw": "CSE-1 / PPSTC LAB",
-              "branch": "CSE-1",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna, Ms. B Divya Sati",
-              "facultyShort": "DAK, BBK, BDS"
-            },
-            "09:00-11:00": {
-              "raw": "MECH / PPSTC LAB",
-              "branch": "MECH",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. CH VVD Prasad, Mrs. V Sridevi, Ms. K Jhansi Rani",
-              "facultyShort": "CHVVDP, VS, KJR"
-            }
-          },
-          "TUE": {
-            "11:15-01:15": {
-              "raw": "CSE-1 / PPSTC LAB",
-              "branch": "CSE-1",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. D Arun Kumar, Dr. D Manasa, Mr. Y Prasad Reddy",
-              "facultyShort": "DAK, DM, YPR"
-            },
-            "02:15-04:15": {
-              "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
-              "branch": "CSE(AI&ML)-1",
-              "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-              "facultyShort": "ADP, MBS, CA"
-            },
-            "09:00-11:00": {
-              "raw": "MECH / PPSTC LAB",
-              "branch": "MECH",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. CH VVD Prasad, Ms. PR Sri Satya, Dr. Anand Solanki",
-              "facultyShort": "CHVVDP, PRSS, AS"
-            }
-          },
-          "WED": {
-            "09:00-11:00": {
-              "raw": "CSE (CS & DS) / PPSTC LAB",
-              "branch": "CSE (CS & DS)",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. Bh Padma, Mrs. DMV Priya, Mr. P Manikanta",
-              "facultyShort": "BHP, DMVP, PM"
-            },
-            "11:15-01:15": {
-              "raw": "CSE-2 / PPSTC LAB",
-              "branch": "CSE-2",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. K Rohini, Mr. NV Siva Krishna, Mrs. G Sravani",
-              "facultyShort": "KR, NVSK, GS"
-            },
-            "02:15-04:15": {
-              "raw": "CSE(AI&ML)-2 / PPSTC LAB",
-              "branch": "CSE(AI&ML)-2",
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. M Anil, Mr. Y Prasad Reddy, Mr. P Manikanta",
-              "facultyShort": "MA, YPR, PM"
-            }
-          },
-          "THU": {
-            "09:00-11:00": {
-              "raw": "CSE-2 / PPSTC LAB",
-              "branch": "CSE-2",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. K Rohini, Ms. C Aparna, Mrs. G Sravani",
-              "facultyShort": "KR, CA, GS"
-            },
-            "02:15-04:15": {
-              "raw": "CSE(AI&ML)-1 / PPSTC LAB",
-              "branch": "CSE(AI&ML)-1",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. K Manikyakanthi",
-              "facultyShort": "DC, ARS, KMK"
-            },
-            "11:15-01:15": {
-              "raw": "CSE(AI&ML)-2 / PPSTC LAB",
-              "branch": "CSE(AI&ML)-2",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. PR Sri Satya",
-              "facultyShort": "DC, ARS, PRSS"
-            }
-          },
-          "FRI": {
-            "11:15-01:15": {
-              "raw": "CSE (CS & DS) / PPSTC LAB",
-              "branch": "CSE (CS & DS)",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. Bh Padma, Ms. K Manikyakanthi, Mr. NV Siva Krishna",
-              "facultyShort": "BHP, KMK, NVSK"
-            },
-            "02:15-04:15": {
-              "raw": "CSE(AI&ML)-1 / PPSTC LAB",
-              "branch": "CSE(AI&ML)-1",
-              "subject": "PPSTC LAB",
-              "faculty": "Dr. D Chandravathi, Mr. M Anil, Ms. B Divya Sati",
-              "facultyShort": "DC, MA, BDS"
-            },
-            "09:00-11:00": {
-              "raw": "MECH-ROBOTICS / PPSTC  LAB",
-              "branch": "MECH-ROBOTICS",
-              "subject": "PPSTC  LAB",
-              "faculty": "Mrs. DMV Priya, Ms. B Divya Sati, Mr. VVV Satyanarayana",
-              "facultyShort": "DMVP, BDS, VVVSN"
-            }
-          }
-        },
-        "labDetails": [
-          {
-            "sno": 1,
-            "shortName": "AITA LAB",
-            "fullName": "AI Tools and Applications Lab"
-          },
-          {
-            "sno": 2,
-            "shortName": "PPSTC LAB",
-            "fullName": "Programming for Problem solving through C lab"
-          },
-          {
-            "sno": 3,
-            "shortName": "FAI & ML LAB",
-            "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
-          },
-          {
-            "sno": 4,
-            "shortName": "PPSTC  LAB",
-            "fullName": "PPSTC  LAB"
-          }
-        ]
-      },
       "GVPCE SUR. LAB (B11-101)": {
         "schedule": {
           "MON": {},
@@ -7075,6 +6934,13 @@
             }
           },
           "FRI": {
+            "09:00-11:00": {
+              "raw": "CIVIL / AITA LAB",
+              "branch": "CIVIL",
+              "subject": "AITA LAB",
+              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+              "facultyShort": "VA, DSK, TAJ"
+            },
             "11:15-01:15": {
               "raw": "CIVIL / PPSTC LAB",
               "branch": "CIVIL",
@@ -7094,33 +6960,162 @@
         "labDetails": [
           {
             "sno": 1,
+            "shortName": "AITA LAB",
+            "fullName": "AI Tools and Applications Lab"
+          },
+          {
+            "sno": 2,
+            "shortName": "PPSTC LAB",
+            "fullName": "Programming for Problem solving through C lab"
+          },
+          {
+            "sno": 3,
+            "shortName": "FDS LAB",
+            "fullName": "Foundations of Data Science Lab"
+          },
+          {
+            "sno": 4,
+            "shortName": "CSP LAB",
+            "fullName": "CSP LAB"
+          },
+          {
+            "sno": 5,
+            "shortName": "FWD LAB",
+            "fullName": "Fundamentals of Web Designing Lab"
+          },
+          {
+            "sno": 6,
+            "shortName": "FAI & ML LAB",
+            "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
+          }
+        ]
+      },
+      "COMP. LAB-1": {
+        "schedule": {
+          "MON": {
+            "02:15-04:15": {
+              "raw": "CSE-1 / PPSTC LAB",
+              "branch": "CSE-1",
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna, Ms. B Divya Sati",
+              "facultyShort": "DAK, BBK, BDS"
+            },
+            "09:00-11:00": {
+              "raw": "MECH / PPSTC LAB",
+              "branch": "MECH",
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. CH VVD Prasad, Mrs. V Sridevi, Ms. K Jhansi Rani",
+              "facultyShort": "CHVVDP, VS, KJR"
+            }
+          },
+          "TUE": {
+            "11:15-01:15": {
+              "raw": "CSE-1 / PPSTC LAB",
+              "branch": "CSE-1",
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. D Arun Kumar, Dr. D Manasa, Mr. Y Prasad Reddy",
+              "facultyShort": "DAK, DM, YPR"
+            },
+            "02:15-04:15": {
+              "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
+              "branch": "CSE(AI&ML)-1",
+              "subject": "FAI & ML LAB",
+              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
+              "facultyShort": "ADP, MBS, CA"
+            },
+            "09:00-11:00": {
+              "raw": "MECH / PPSTC LAB",
+              "branch": "MECH",
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. CH VVD Prasad, Ms. PR Sri Satya, Dr. Anand Solanki",
+              "facultyShort": "CHVVDP, PRSS, AS"
+            }
+          },
+          "WED": {
+            "09:00-11:00": {
+              "raw": "CSE (CS & DS) / PPSTC LAB",
+              "branch": "CSE (CS & DS)",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. Bh Padma, Mrs. DMV Priya, Mr. P Manikanta",
+              "facultyShort": "BHP, DMVP, PM"
+            },
+            "11:15-01:15": {
+              "raw": "CSE-2 / PPSTC LAB",
+              "branch": "CSE-2",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. K Rohini, Mr. NV Siva Krishna, Mrs. G Sravani",
+              "facultyShort": "KR, NVSK, GS"
+            },
+            "02:15-04:15": {
+              "raw": "CSE(AI&ML)-2 / PPSTC LAB",
+              "branch": "CSE(AI&ML)-2",
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. M Anil, Mr. Y Prasad Reddy, Mr. P Manikanta",
+              "facultyShort": "MA, YPR, PM"
+            }
+          },
+          "THU": {
+            "09:00-11:00": {
+              "raw": "CSE-2 / PPSTC LAB",
+              "branch": "CSE-2",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. K Rohini, Ms. C Aparna, Mrs. G Sravani",
+              "facultyShort": "KR, CA, GS"
+            },
+            "02:15-04:15": {
+              "raw": "CSE(AI&ML)-1 / PPSTC LAB",
+              "branch": "CSE(AI&ML)-1",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. K Manikyakanthi",
+              "facultyShort": "DC, ARS, KMK"
+            },
+            "11:15-01:15": {
+              "raw": "CSE(AI&ML)-2 / PPSTC LAB",
+              "branch": "CSE(AI&ML)-2",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. PR Sri Satya",
+              "facultyShort": "DC, ARS, PRSS"
+            }
+          },
+          "FRI": {
+            "11:15-01:15": {
+              "raw": "CSE (CS & DS) / PPSTC LAB",
+              "branch": "CSE (CS & DS)",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. Bh Padma, Ms. K Manikyakanthi, Mr. NV Siva Krishna",
+              "facultyShort": "BHP, KMK, NVSK"
+            },
+            "02:15-04:15": {
+              "raw": "CSE(AI&ML)-1 / PPSTC LAB",
+              "branch": "CSE(AI&ML)-1",
+              "subject": "PPSTC LAB",
+              "faculty": "Dr. D Chandravathi, Mr. M Anil, Ms. B Divya Sati",
+              "facultyShort": "DC, MA, BDS"
+            },
+            "09:00-11:00": {
+              "raw": "MECH-ROBOTICS / PPSTC  LAB",
+              "branch": "MECH-ROBOTICS",
+              "subject": "PPSTC  LAB",
+              "faculty": "Mrs. DMV Priya, Ms. B Divya Sati, Mr. VVV Satyanarayana",
+              "facultyShort": "DMVP, BDS, VVVSN"
+            }
+          }
+        },
+        "labDetails": [
+          {
+            "sno": 1,
             "shortName": "PPSTC LAB",
             "fullName": "Programming for Problem solving through C lab"
           },
           {
             "sno": 2,
-            "shortName": "FDS LAB",
-            "fullName": "Foundations of Data Science Lab"
-          },
-          {
-            "sno": 3,
-            "shortName": "CSP LAB",
-            "fullName": "CSP LAB"
-          },
-          {
-            "sno": 4,
-            "shortName": "FWD LAB",
-            "fullName": "Fundamentals of Web Designing Lab"
-          },
-          {
-            "sno": 5,
             "shortName": "FAI & ML LAB",
             "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
           },
           {
-            "sno": 6,
-            "shortName": "AITA LAB",
-            "fullName": "AI Tools and Applications Lab"
+            "sno": 3,
+            "shortName": "PPSTC  LAB",
+            "fullName": "PPSTC  LAB"
           }
         ]
       },
@@ -7863,22 +7858,6 @@
       },
       "AI Tools and Applications Lab": {
         "MON": {
-          "11:15-01:15": [
-            {
-              "branch": "CIVIL",
-              "room": "COMP. LAB-1",
-              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-              "facultyShort": "VA, DSK, TAJ",
-              "raw": "CIVIL/COMP. LAB-1"
-            },
-            {
-              "branch": "CSE(AI&ML)-1",
-              "room": "COMP. LAB-2",
-              "faculty": "Dr. V Adinarayana, Mr. V Bhaskar Rao, Dr. B Nagarjun",
-              "facultyShort": "VA, VBR, BN",
-              "raw": "CSE(AI&ML)-1/COMP. LAB-2"
-            }
-          ],
           "02:15-04:15": [
             {
               "branch": "CSE-2",
@@ -7900,6 +7879,15 @@
               "faculty": "Dr. MV Pankaj Lahari, Dr. M Bhaskar Kumar, Dr. B Rajesh Babu",
               "facultyShort": "MVPL, MBK, BRB",
               "raw": "ECE-3/A-301,302"
+            }
+          ],
+          "11:15-01:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "room": "COMP. LAB-2",
+              "faculty": "Dr. V Adinarayana, Mr. V Bhaskar Rao, Dr. B Nagarjun",
+              "facultyShort": "VA, VBR, BN",
+              "raw": "CSE(AI&ML)-1/COMP. LAB-2"
             }
           ],
           "09:00-11:00": [
@@ -8012,6 +8000,22 @@
           ]
         },
         "FRI": {
+          "09:00-11:00": [
+            {
+              "branch": "CIVIL",
+              "room": "COMP. LAB-3",
+              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+              "facultyShort": "VA, DSK, TAJ",
+              "raw": "CIVIL/COMP. LAB-3"
+            },
+            {
+              "branch": "MECH",
+              "room": "COMP. LAB-2",
+              "faculty": "Mr. K AyyaRaju, Dr. Ch Rajesh, Dr. S Padma",
+              "facultyShort": "KAR, CHR, SP",
+              "raw": "MECH/COMP. LAB-2"
+            }
+          ],
           "02:15-04:15": [
             {
               "branch": "CSE-1",
@@ -8033,15 +8037,6 @@
               "faculty": "Dr. I Srinivas Rao, Dr. Ch Rajesh, Dr. Ch S Lakshmi",
               "facultyShort": "ISR, CHR, CHSL",
               "raw": "MECH-ROBOTICS/A-301,302"
-            }
-          ],
-          "09:00-11:00": [
-            {
-              "branch": "MECH",
-              "room": "COMP. LAB-2",
-              "faculty": "Mr. K AyyaRaju, Dr. Ch Rajesh, Dr. S Padma",
-              "facultyShort": "KAR, CHR, SP",
-              "raw": "MECH/COMP. LAB-2"
             }
           ]
         }
@@ -8926,14 +8921,6 @@
       },
       "CIVIL": {
         "MON": {
-          "11:15-01:15": [
-            {
-              "subject": "AITA LAB",
-              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-              "room": "COMP. LAB-1",
-              "raw": "AITA LAB\nVA, DSK, TAJ\nCOMP. LAB-1"
-            }
-          ],
           "02:15-04:15": [
             {
               "subject": "ESS. ENG. LAB",
@@ -8964,6 +8951,14 @@
         "WED": {},
         "THU": {},
         "FRI": {
+          "09:00-11:00": [
+            {
+              "subject": "AITA LAB",
+              "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+              "room": "COMP. LAB-3",
+              "raw": "AITA LAB\nVA, DSK, TAJ\nCOMP. LAB-3"
+            }
+          ],
           "11:15-01:15": [
             {
               "subject": "PPSTC LAB",
@@ -10037,8 +10032,8 @@
         "sno": 4,
         "labName": "AI Tools and Applications Lab",
         "subShort": "AITA LAB",
-        "roomNo": "COMP. LAB-2, A-303, 304, COMP. LAB-3, A-301, 302, COMP. LAB-1",
-        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15\nCSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00\nCSE (CS & DS): WED 02:15-04:15, THU 09:00-11:00\nECE-1: MON 02:15-04:15, WED 09:00-11:00\nECE-2: THU 02:15-04:15, FRI 02:15-04:15\nECE-3: MON 02:15-04:15\nMECH: THU 02:15-04:15, FRI 09:00-11:00\nEEE: TUE 11:15-01:15\nCIVIL: MON 11:15-01:15\nCHEMICAL: WED 11:15-01:15\nMECH-ROBOTICS: FRI 02:15-04:15",
+        "roomNo": "COMP. LAB-2, A-303, 304, COMP. LAB-3, A-301, 302",
+        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15\nCSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00\nCSE (CS & DS): WED 02:15-04:15, THU 09:00-11:00\nECE-1: MON 02:15-04:15, WED 09:00-11:00\nECE-2: THU 02:15-04:15, FRI 02:15-04:15\nECE-3: MON 02:15-04:15\nMECH: THU 02:15-04:15, FRI 09:00-11:00\nEEE: TUE 11:15-01:15\nCIVIL: FRI 09:00-11:00\nCHEMICAL: WED 11:15-01:15\nMECH-ROBOTICS: FRI 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "CSE-1",
@@ -10114,7 +10109,7 @@
             "branch": "CIVIL",
             "required": 1,
             "allotted": 1,
-            "slots": "MON 11:15-01:15",
+            "slots": "FRI 09:00-11:00",
             "status": "ALLOTTED"
           },
           {
@@ -10844,147 +10839,6 @@
         }
       ]
     },
-    "COMP. LAB-1": {
-      "schedule": {
-        "MON": {
-          "11:15-01:15": {
-            "raw": "CIVIL / AITA LAB",
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
-            "facultyShort": "VA, DSK, TAJ"
-          },
-          "02:15-04:15": {
-            "raw": "CSE-1 / PPSTC LAB",
-            "branch": "CSE-1",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna, Ms. B Divya Sati",
-            "facultyShort": "DAK, BBK, BDS"
-          },
-          "09:00-11:00": {
-            "raw": "MECH / PPSTC LAB",
-            "branch": "MECH",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. CH VVD Prasad, Mrs. V Sridevi, Ms. K Jhansi Rani",
-            "facultyShort": "CHVVDP, VS, KJR"
-          }
-        },
-        "TUE": {
-          "11:15-01:15": {
-            "raw": "CSE-1 / PPSTC LAB",
-            "branch": "CSE-1",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. D Arun Kumar, Dr. D Manasa, Mr. Y Prasad Reddy",
-            "facultyShort": "DAK, DM, YPR"
-          },
-          "02:15-04:15": {
-            "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-            "facultyShort": "ADP, MBS, CA"
-          },
-          "09:00-11:00": {
-            "raw": "MECH / PPSTC LAB",
-            "branch": "MECH",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. CH VVD Prasad, Ms. PR Sri Satya, Dr. Anand Solanki",
-            "facultyShort": "CHVVDP, PRSS, AS"
-          }
-        },
-        "WED": {
-          "09:00-11:00": {
-            "raw": "CSE (CS & DS) / PPSTC LAB",
-            "branch": "CSE (CS & DS)",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. Bh Padma, Mrs. DMV Priya, Mr. P Manikanta",
-            "facultyShort": "BHP, DMVP, PM"
-          },
-          "11:15-01:15": {
-            "raw": "CSE-2 / PPSTC LAB",
-            "branch": "CSE-2",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. K Rohini, Mr. NV Siva Krishna, Mrs. G Sravani",
-            "facultyShort": "KR, NVSK, GS"
-          },
-          "02:15-04:15": {
-            "raw": "CSE(AI&ML)-2 / PPSTC LAB",
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PPSTC LAB",
-            "faculty": "Mr. M Anil, Mr. Y Prasad Reddy, Mr. P Manikanta",
-            "facultyShort": "MA, YPR, PM"
-          }
-        },
-        "THU": {
-          "09:00-11:00": {
-            "raw": "CSE-2 / PPSTC LAB",
-            "branch": "CSE-2",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. K Rohini, Ms. C Aparna, Mrs. G Sravani",
-            "facultyShort": "KR, CA, GS"
-          },
-          "02:15-04:15": {
-            "raw": "CSE(AI&ML)-1 / PPSTC LAB",
-            "branch": "CSE(AI&ML)-1",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. K Manikyakanthi",
-            "facultyShort": "DC, ARS, KMK"
-          },
-          "11:15-01:15": {
-            "raw": "CSE(AI&ML)-2 / PPSTC LAB",
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. PR Sri Satya",
-            "facultyShort": "DC, ARS, PRSS"
-          }
-        },
-        "FRI": {
-          "11:15-01:15": {
-            "raw": "CSE (CS & DS) / PPSTC LAB",
-            "branch": "CSE (CS & DS)",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. Bh Padma, Ms. K Manikyakanthi, Mr. NV Siva Krishna",
-            "facultyShort": "BHP, KMK, NVSK"
-          },
-          "02:15-04:15": {
-            "raw": "CSE(AI&ML)-1 / PPSTC LAB",
-            "branch": "CSE(AI&ML)-1",
-            "subject": "PPSTC LAB",
-            "faculty": "Dr. D Chandravathi, Mr. M Anil, Ms. B Divya Sati",
-            "facultyShort": "DC, MA, BDS"
-          },
-          "09:00-11:00": {
-            "raw": "MECH-ROBOTICS / PPSTC  LAB",
-            "branch": "MECH-ROBOTICS",
-            "subject": "PPSTC  LAB",
-            "faculty": "Mrs. DMV Priya, Ms. B Divya Sati, Mr. VVV Satyanarayana",
-            "facultyShort": "DMVP, BDS, VVVSN"
-          }
-        }
-      },
-      "labDetails": [
-        {
-          "sno": 1,
-          "shortName": "AITA LAB",
-          "fullName": "AI Tools and Applications Lab"
-        },
-        {
-          "sno": 2,
-          "shortName": "PPSTC LAB",
-          "fullName": "Programming for Problem solving through C lab"
-        },
-        {
-          "sno": 3,
-          "shortName": "FAI & ML LAB",
-          "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
-        },
-        {
-          "sno": 4,
-          "shortName": "PPSTC  LAB",
-          "fullName": "PPSTC  LAB"
-        }
-      ]
-    },
     "GVPCE SUR. LAB (B11-101)": {
       "schedule": {
         "MON": {},
@@ -11104,6 +10958,13 @@
           }
         },
         "FRI": {
+          "09:00-11:00": {
+            "raw": "CIVIL / AITA LAB",
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "faculty": "Dr. V Adinarayana, Dr. D Santhosh Kumar, Ms. Taj",
+            "facultyShort": "VA, DSK, TAJ"
+          },
           "11:15-01:15": {
             "raw": "CIVIL / PPSTC LAB",
             "branch": "CIVIL",
@@ -11123,33 +10984,162 @@
       "labDetails": [
         {
           "sno": 1,
+          "shortName": "AITA LAB",
+          "fullName": "AI Tools and Applications Lab"
+        },
+        {
+          "sno": 2,
+          "shortName": "PPSTC LAB",
+          "fullName": "Programming for Problem solving through C lab"
+        },
+        {
+          "sno": 3,
+          "shortName": "FDS LAB",
+          "fullName": "Foundations of Data Science Lab"
+        },
+        {
+          "sno": 4,
+          "shortName": "CSP LAB",
+          "fullName": "CSP LAB"
+        },
+        {
+          "sno": 5,
+          "shortName": "FWD LAB",
+          "fullName": "Fundamentals of Web Designing Lab"
+        },
+        {
+          "sno": 6,
+          "shortName": "FAI & ML LAB",
+          "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
+        }
+      ]
+    },
+    "COMP. LAB-1": {
+      "schedule": {
+        "MON": {
+          "02:15-04:15": {
+            "raw": "CSE-1 / PPSTC LAB",
+            "branch": "CSE-1",
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna, Ms. B Divya Sati",
+            "facultyShort": "DAK, BBK, BDS"
+          },
+          "09:00-11:00": {
+            "raw": "MECH / PPSTC LAB",
+            "branch": "MECH",
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. CH VVD Prasad, Mrs. V Sridevi, Ms. K Jhansi Rani",
+            "facultyShort": "CHVVDP, VS, KJR"
+          }
+        },
+        "TUE": {
+          "11:15-01:15": {
+            "raw": "CSE-1 / PPSTC LAB",
+            "branch": "CSE-1",
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. D Arun Kumar, Dr. D Manasa, Mr. Y Prasad Reddy",
+            "facultyShort": "DAK, DM, YPR"
+          },
+          "02:15-04:15": {
+            "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML LAB",
+            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
+            "facultyShort": "ADP, MBS, CA"
+          },
+          "09:00-11:00": {
+            "raw": "MECH / PPSTC LAB",
+            "branch": "MECH",
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. CH VVD Prasad, Ms. PR Sri Satya, Dr. Anand Solanki",
+            "facultyShort": "CHVVDP, PRSS, AS"
+          }
+        },
+        "WED": {
+          "09:00-11:00": {
+            "raw": "CSE (CS & DS) / PPSTC LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. Bh Padma, Mrs. DMV Priya, Mr. P Manikanta",
+            "facultyShort": "BHP, DMVP, PM"
+          },
+          "11:15-01:15": {
+            "raw": "CSE-2 / PPSTC LAB",
+            "branch": "CSE-2",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. K Rohini, Mr. NV Siva Krishna, Mrs. G Sravani",
+            "facultyShort": "KR, NVSK, GS"
+          },
+          "02:15-04:15": {
+            "raw": "CSE(AI&ML)-2 / PPSTC LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PPSTC LAB",
+            "faculty": "Mr. M Anil, Mr. Y Prasad Reddy, Mr. P Manikanta",
+            "facultyShort": "MA, YPR, PM"
+          }
+        },
+        "THU": {
+          "09:00-11:00": {
+            "raw": "CSE-2 / PPSTC LAB",
+            "branch": "CSE-2",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. K Rohini, Ms. C Aparna, Mrs. G Sravani",
+            "facultyShort": "KR, CA, GS"
+          },
+          "02:15-04:15": {
+            "raw": "CSE(AI&ML)-1 / PPSTC LAB",
+            "branch": "CSE(AI&ML)-1",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. K Manikyakanthi",
+            "facultyShort": "DC, ARS, KMK"
+          },
+          "11:15-01:15": {
+            "raw": "CSE(AI&ML)-2 / PPSTC LAB",
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. D Chandravathi, Dr. A Ravi Shankar, Ms. PR Sri Satya",
+            "facultyShort": "DC, ARS, PRSS"
+          }
+        },
+        "FRI": {
+          "11:15-01:15": {
+            "raw": "CSE (CS & DS) / PPSTC LAB",
+            "branch": "CSE (CS & DS)",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. Bh Padma, Ms. K Manikyakanthi, Mr. NV Siva Krishna",
+            "facultyShort": "BHP, KMK, NVSK"
+          },
+          "02:15-04:15": {
+            "raw": "CSE(AI&ML)-1 / PPSTC LAB",
+            "branch": "CSE(AI&ML)-1",
+            "subject": "PPSTC LAB",
+            "faculty": "Dr. D Chandravathi, Mr. M Anil, Ms. B Divya Sati",
+            "facultyShort": "DC, MA, BDS"
+          },
+          "09:00-11:00": {
+            "raw": "MECH-ROBOTICS / PPSTC  LAB",
+            "branch": "MECH-ROBOTICS",
+            "subject": "PPSTC  LAB",
+            "faculty": "Mrs. DMV Priya, Ms. B Divya Sati, Mr. VVV Satyanarayana",
+            "facultyShort": "DMVP, BDS, VVVSN"
+          }
+        }
+      },
+      "labDetails": [
+        {
+          "sno": 1,
           "shortName": "PPSTC LAB",
           "fullName": "Programming for Problem solving through C lab"
         },
         {
           "sno": 2,
-          "shortName": "FDS LAB",
-          "fullName": "Foundations of Data Science Lab"
-        },
-        {
-          "sno": 3,
-          "shortName": "CSP LAB",
-          "fullName": "CSP LAB"
-        },
-        {
-          "sno": 4,
-          "shortName": "FWD LAB",
-          "fullName": "Fundamentals of Web Designing Lab"
-        },
-        {
-          "sno": 5,
           "shortName": "FAI & ML LAB",
           "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
         },
         {
-          "sno": 6,
-          "shortName": "AITA LAB",
-          "fullName": "AI Tools and Applications Lab"
+          "sno": 3,
+          "shortName": "PPSTC  LAB",
+          "fullName": "PPSTC  LAB"
         }
       ]
     },
@@ -14736,6 +14726,16 @@
     },
     "Mr. B Bala Krishna": {
       "MON": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BBK"
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "CSE-1",
@@ -14892,16 +14892,6 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BBK"
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "CIVIL",
@@ -16264,14 +16254,6 @@
       "MON": {
         "11:15-12:15": [
           {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "VA, DSK, TAJ"
-          },
-          {
             "branch": "CSE(AI&ML)-1",
             "subject": "AITA LAB",
             "room": "COMP. LAB-2",
@@ -16281,14 +16263,6 @@
           }
         ],
         "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "VA, DSK, TAJ"
-          },
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "AITA LAB",
@@ -16405,7 +16379,28 @@
           }
         ]
       },
-      "FRI": {}
+      "FRI": {
+        "09:00-10:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ]
+      }
     },
     "Dr. M Neelima": {
       "MON": {
@@ -17918,7 +17913,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "subject": "ESS. ENG. Tut.",
@@ -17926,9 +17921,7 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "NVL, IRS, PBSKR"
-          }
-        ],
-        "02:15-03:15": [
+          },
           {
             "branch": "ECE-2",
             "subject": "ESS. ENG. Tut.",
@@ -18242,7 +18235,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "subject": "ESS. ENG. Tut.",
@@ -18546,7 +18539,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "subject": "ESS. ENG. Tut.",
@@ -21287,26 +21280,6 @@
     },
     "Ms. Taj": {
       "MON": {
-        "11:15-12:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "VA, DSK, TAJ"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "VA, DSK, TAJ"
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "CSE-2",
@@ -21424,7 +21397,28 @@
           }
         ]
       },
-      "FRI": {}
+      "FRI": {
+        "09:00-10:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ]
+      }
     },
     "Dr. R Praveena": {
       "MON": {
@@ -22105,26 +22099,6 @@
     },
     "Dr. D Santhosh Kumar": {
       "MON": {
-        "11:15-12:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "VA, DSK, TAJ"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "VA, DSK, TAJ"
-          }
-        ],
         "10:00-11:00": [
           {
             "branch": "CSE-1",
@@ -22214,6 +22188,26 @@
       },
       "FRI": {
         "09:00-10:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "VA, DSK, TAJ"
+          }
+        ],
+        "11:15-12:15": [
           {
             "branch": "CSE-1",
             "subject": "ENGG.PHY",
@@ -22596,7 +22590,7 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
+        "11:15-12:15": [
           {
             "branch": "CSE-1",
             "subject": "ENGG.PHY",
@@ -24559,6 +24553,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -24593,15 +24596,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -24640,7 +24634,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 20,
@@ -25270,15 +25264,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -25340,9 +25325,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -28009,15 +28003,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -28052,9 +28037,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -28414,15 +28408,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -28468,6 +28453,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -28477,7 +28471,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 70,
@@ -30405,6 +30399,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -30439,15 +30442,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -30486,7 +30480,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 20,
@@ -31116,15 +31110,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -31186,9 +31171,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -33855,15 +33849,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -33898,9 +33883,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 64,
@@ -34260,15 +34254,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -34314,6 +34299,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -34323,7 +34317,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 70,
@@ -44657,6 +44651,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -44691,15 +44694,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -44738,7 +44732,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr. BBK": {
       "sno": 19,
@@ -44753,6 +44747,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -44787,15 +44790,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -44834,7 +44828,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr.BBK": {
       "sno": 19,
@@ -44849,6 +44843,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -44883,15 +44886,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -44930,7 +44924,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. BBK": {
       "sno": 19,
@@ -44945,6 +44939,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -44979,15 +44982,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -45026,7 +45020,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mrs. BBK": {
       "sno": 19,
@@ -45041,6 +45035,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45075,15 +45078,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -45122,7 +45116,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. BBK": {
       "sno": 19,
@@ -45137,6 +45131,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45171,15 +45174,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -45218,7 +45212,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. B Bala Krishna": {
       "sno": 19,
@@ -45233,6 +45227,15 @@
       "totalLoad": 19,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "E-410",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "CSE-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -45267,15 +45270,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "CIVIL",
@@ -45314,7 +45308,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "DAK": {
       "sno": 20,
@@ -49634,15 +49628,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -49704,9 +49689,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. VA": {
       "sno": 28,
@@ -49721,15 +49715,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -49791,9 +49776,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.VA": {
       "sno": 28,
@@ -49808,15 +49802,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -49878,9 +49863,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. VA": {
       "sno": 28,
@@ -49895,15 +49889,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -49965,9 +49950,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. VA": {
       "sno": 28,
@@ -49982,15 +49976,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -50052,9 +50037,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. VA": {
       "sno": 28,
@@ -50069,15 +50063,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -50139,9 +50124,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. V Adinarayana": {
       "sno": 28,
@@ -50156,15 +50150,6 @@
       "totalLoad": 14,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -50226,9 +50211,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "MN": {
       "sno": 29,
@@ -68807,15 +68801,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68850,9 +68835,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. TAJ": {
       "sno": 63,
@@ -68867,15 +68861,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68910,9 +68895,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.TAJ": {
       "sno": 63,
@@ -68927,15 +68921,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -68970,9 +68955,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. TAJ": {
       "sno": 63,
@@ -68987,15 +68981,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -69030,9 +69015,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. TAJ": {
       "sno": 63,
@@ -69047,15 +69041,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -69090,9 +69075,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. TAJ": {
       "sno": 63,
@@ -69107,15 +69101,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -69150,9 +69135,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. Taj": {
       "sno": 63,
@@ -69167,15 +69161,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -69210,9 +69195,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "RP": {
       "sno": 64,
@@ -71642,15 +71636,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -71696,6 +71681,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -71705,7 +71699,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. DSK": {
       "sno": 69,
@@ -71720,15 +71714,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -71774,6 +71759,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -71783,7 +71777,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.DSK": {
       "sno": 69,
@@ -71798,15 +71792,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -71852,6 +71837,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -71861,7 +71855,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. DSK": {
       "sno": 69,
@@ -71876,15 +71870,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -71930,6 +71915,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -71939,7 +71933,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. DSK": {
       "sno": 69,
@@ -71954,15 +71948,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -72008,6 +71993,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -72017,7 +72011,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. DSK": {
       "sno": 69,
@@ -72032,15 +72026,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -72086,6 +72071,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -72095,7 +72089,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. D Santhosh Kumar": {
       "sno": 69,
@@ -72110,15 +72104,6 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications Lab",
-          "code": "AITA LAB",
-          "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE-1",
           "subject": "Engineering Physics",
           "code": "ENGG.PHY",
@@ -72164,6 +72149,15 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications Lab",
+          "code": "AITA LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -72173,7 +72167,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → ENGG.PHY Tut. (ENGG.PHY Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "NSSVRR": {
       "sno": 70,
