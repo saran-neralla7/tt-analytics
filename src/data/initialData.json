@@ -1005,15 +1005,6 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. CH VVD Prasad, Dr. Bh Padma",
-            "rawFaculty": "CHVVDP, BHP",
-            "room": "G-404",
-            "isLab": false
-          }
-        ],
-        "03:15-04:15": [
-          {
             "subject": "COUNSELLING / LIBRARY",
             "faculty": "",
             "room": "",
@@ -1023,6 +1014,15 @@
             "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
+            "isLab": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad, Dr. Bh Padma",
+            "rawFaculty": "CHVVDP, BHP",
+            "room": "G-404",
             "isLab": false
           }
         ]
@@ -2606,9 +2606,16 @@
       "TUE": {
         "09:00-10:00": [
           {
-            "subject": "PPSTC",
+            "subject": "PPSTC Tut.",
             "faculty": "Mr. CH VVD Prasad",
             "rawFaculty": "CHVVDP",
+            "room": "E-412",
+            "isLab": false
+          },
+          {
+            "subject": "ESAM",
+            "faculty": "Dr. B Santosh Kumar",
+            "rawFaculty": "BSK",
             "room": "E-412",
             "isLab": false
           }
@@ -2642,15 +2649,10 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVDP",
+            "room": "E-412",
             "isLab": false
           }
         ],
@@ -2676,9 +2678,9 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "DLD",
-            "faculty": "Dr. M Neelima",
-            "rawFaculty": "MN",
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVDP",
             "room": "E-412",
             "isLab": false
           }
@@ -2724,18 +2726,23 @@
       "THU": {
         "09:00-10:00": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. CH VVD Prasad",
-            "rawFaculty": "CHVVDP",
-            "room": "E-412",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "COUNSELLING / LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. KVS Sarma",
-            "rawFaculty": "KVSS",
+            "subject": "DLD",
+            "faculty": "Dr. M Neelima",
+            "rawFaculty": "MN",
             "room": "E-412",
             "isLab": false
           }
@@ -2806,16 +2813,9 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "PPSTC Tut.",
-            "faculty": "Mr. CH VVD Prasad",
-            "rawFaculty": "CHVVDP",
-            "room": "E-412",
-            "isLab": false
-          },
-          {
-            "subject": "ESAM",
-            "faculty": "Dr. B Santosh Kumar",
-            "rawFaculty": "BSK",
+            "subject": "CAL & LA",
+            "faculty": "Dr. KVS Sarma",
+            "rawFaculty": "KVSS",
             "room": "E-412",
             "isLab": false
           }
@@ -3268,9 +3268,9 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "PPSTC",
-            "faculty": "Dr. K Rohini, Ms. C Aparna",
-            "rawFaculty": "KR, CA",
+            "subject": "ENV. STD.",
+            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
+            "rawFaculty": "PM, GS",
             "room": "G-305",
             "isLab": false
           }
@@ -3286,9 +3286,9 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "ENV. STD.",
-            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
-            "rawFaculty": "PM, GS",
+            "subject": "PPSTC",
+            "faculty": "Dr. K Rohini, Ms. C Aparna",
+            "rawFaculty": "KR, CA",
             "room": "G-305",
             "isLab": false
           }
@@ -4396,10 +4396,15 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "ENV. STD.",
-            "faculty": "Mr. P Manikanta, Mr. V Bhaskar Rao",
-            "rawFaculty": "PM, VBR",
-            "room": "G-405",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -4439,15 +4444,10 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "room": "",
+            "subject": "ENV. STD.",
+            "faculty": "Mr. P Manikanta, Mr. V Bhaskar Rao",
+            "rawFaculty": "PM, VBR",
+            "room": "G-405",
             "isLab": false
           }
         ]
@@ -11943,6 +11943,16 @@
             "isContinued": false,
             "rawFaculty": "BSK"
           }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "ESAM",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BSK"
+          }
         ]
       },
       "WED": {
@@ -12049,16 +12059,6 @@
           }
         ],
         "11:15-12:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "ESAM",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BSK"
-          }
-        ],
-        "10:00-11:00": [
           {
             "branch": "ECE-3",
             "subject": "ESAM",
@@ -13575,7 +13575,7 @@
     },
     "Mr. P Manikanta": {
       "MON": {
-        "10:00-11:00": [
+        "03:15-04:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "ENV. STD.",
@@ -13585,7 +13585,7 @@
             "rawFaculty": "PM, VBR"
           }
         ],
-        "12:15-01:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE-2",
             "subject": "ENV. STD.",
@@ -13717,7 +13717,7 @@
     },
     "Mr. V Bhaskar Rao": {
       "MON": {
-        "10:00-11:00": [
+        "03:15-04:15": [
           {
             "branch": "CSE (CS & DS)",
             "subject": "ENV. STD.",
@@ -13725,6 +13725,14 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "PM, VBR"
+          },
+          {
+            "branch": "ECE-1",
+            "subject": "AITA LAB",
+            "room": "COMP. LAB-2",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "GSK, PKM, VBR"
           }
         ],
         "11:15-12:15": [
@@ -13754,16 +13762,6 @@
             "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "GSK, PKM, VBR"
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "ECE-1",
-            "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
-            "isLab": true,
-            "isContinued": true,
             "rawFaculty": "GSK, PKM, VBR"
           }
         ]
@@ -13869,7 +13867,7 @@
     },
     "Mrs. G Sravani": {
       "MON": {
-        "12:15-01:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE-2",
             "subject": "ENV. STD.",
@@ -14011,7 +14009,7 @@
             "rawFaculty": "BHP, DMVP"
           }
         ],
-        "02:15-03:15": [
+        "03:15-04:15": [
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -14351,7 +14349,7 @@
             "rawFaculty": "KR, AS, NVSK"
           }
         ],
-        "10:00-11:00": [
+        "12:15-01:15": [
           {
             "branch": "CSE-2",
             "subject": "PPSTC",
@@ -14359,7 +14357,9 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "KR, CA"
-          },
+          }
+        ],
+        "10:00-11:00": [
           {
             "branch": "ECE-2",
             "subject": "PPSTC",
@@ -15468,7 +15468,7 @@
     },
     "Ms. C Aparna": {
       "MON": {
-        "10:00-11:00": [
+        "12:15-01:15": [
           {
             "branch": "CSE-2",
             "subject": "PPSTC",
@@ -15476,14 +15476,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "KR, CA"
-          },
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "SLA, KS, CA"
           }
         ],
         "09:00-10:00": [
@@ -15501,6 +15493,16 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
+            "rawFaculty": "SLA, KS, CA"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
             "rawFaculty": "SLA, KS, CA"
           }
         ]
@@ -16455,16 +16457,6 @@
             "isContinued": true,
             "rawFaculty": "DAK, MN, KJR"
           }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "ECE-3",
-            "subject": "DLD",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "MN"
-          }
         ]
       },
       "THU": {
@@ -16486,6 +16478,16 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "MN, VA"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "DLD",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "MN"
           }
         ],
         "02:15-03:15": [
@@ -18698,14 +18700,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "CHVVD"
-          },
-          {
-            "branch": "MECH",
-            "subject": "PPSTC",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHVVDP, BHP"
           }
         ],
         "12:15-01:15": [
@@ -18738,6 +18732,16 @@
             "rawFaculty": "CHVVDP, VS, KJR"
           }
         ],
+        "03:15-04:15": [
+          {
+            "branch": "MECH",
+            "subject": "PPSTC",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHVVDP, BHP"
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "MECH",
@@ -18763,7 +18767,7 @@
         "09:00-10:00": [
           {
             "branch": "ECE-3",
-            "subject": "PPSTC",
+            "subject": "PPSTC Tut.",
             "room": "E-412",
             "isLab": false,
             "isContinued": false,
@@ -18779,6 +18783,14 @@
           }
         ],
         "02:15-03:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "PPSTC",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHVVDP"
+          },
           {
             "branch": "MECH",
             "subject": "PPSTC",
@@ -18809,6 +18821,16 @@
             "isContinued": false,
             "rawFaculty": "CHVVD"
           }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "PPSTC",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHVVDP"
+          }
         ]
       },
       "THU": {
@@ -18820,14 +18842,6 @@
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "CHVVD, MBS, BHP"
-          },
-          {
-            "branch": "ECE-3",
-            "subject": "PPSTC",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHVVDP"
           }
         ],
         "10:00-11:00": [
@@ -18866,16 +18880,6 @@
           {
             "branch": "ECE-3",
             "subject": "PPSTC",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHVVDP"
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "ECE-3",
-            "subject": "PPSTC Tut.",
             "room": "E-412",
             "isLab": false,
             "isContinued": false,
@@ -19259,16 +19263,6 @@
             "rawFaculty": "CHVS, SSAS, KVSS"
           }
         ],
-        "10:00-11:00": [
-          {
-            "branch": "ECE-3",
-            "subject": "CAL & LA",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KVSS"
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "MECH",
@@ -19281,6 +19275,24 @@
         ]
       },
       "FRI": {
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "CAL & LA",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KVSS"
+          },
+          {
+            "branch": "MECH",
+            "subject": "CAL & LA Tut.",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KVSS, CHVS, ASL"
+          }
+        ],
         "12:15-01:15": [
           {
             "branch": "MECH",
@@ -19289,16 +19301,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "SAK, KVSS"
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "MECH",
-            "subject": "CAL & LA Tut.",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KVSS, CHVS, ASL"
           }
         ]
       }
@@ -24126,7 +24128,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -24135,7 +24137,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -24180,7 +24182,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -24897,15 +24899,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -24913,6 +24906,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -24969,7 +24971,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 24,
@@ -26541,15 +26543,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -26569,9 +26562,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -26602,18 +26613,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 46,
@@ -29972,7 +29974,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -29981,7 +29983,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -30026,7 +30028,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -30743,15 +30745,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -30759,6 +30752,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -30815,7 +30817,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 24,
@@ -32387,15 +32389,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -32415,9 +32408,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -32448,18 +32459,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 46,
@@ -41686,7 +41688,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41695,7 +41697,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41740,7 +41742,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr. VBR": {
       "sno": 13,
@@ -41764,7 +41766,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41773,7 +41775,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41818,7 +41820,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr.VBR": {
       "sno": 13,
@@ -41842,7 +41844,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41851,7 +41853,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41896,7 +41898,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. VBR": {
       "sno": 13,
@@ -41920,7 +41922,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41929,7 +41931,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -41974,7 +41976,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. VBR": {
       "sno": 13,
@@ -41998,7 +42000,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42007,7 +42009,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42052,7 +42054,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Ms. VBR": {
       "sno": 13,
@@ -42076,7 +42078,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42085,7 +42087,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42130,7 +42132,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. V Bhaskar Rao": {
       "sno": 13,
@@ -42154,7 +42156,7 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
+          "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42163,7 +42165,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
           "room": "COMP. LAB-2",
@@ -42208,7 +42210,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "GS": {
       "sno": 14,
@@ -47083,15 +47085,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47099,6 +47092,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47155,7 +47157,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. CA": {
       "sno": 23,
@@ -47179,15 +47181,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47195,6 +47188,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47251,7 +47253,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.CA": {
       "sno": 23,
@@ -47275,15 +47277,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47291,6 +47284,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47347,7 +47349,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. CA": {
       "sno": 23,
@@ -47371,15 +47373,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47387,6 +47380,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47443,7 +47445,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. CA": {
       "sno": 23,
@@ -47467,15 +47469,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47483,6 +47476,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47539,7 +47541,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. CA": {
       "sno": 23,
@@ -47563,15 +47565,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47579,6 +47572,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47635,7 +47637,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. C Aparna": {
       "sno": 23,
@@ -47659,15 +47661,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning",
           "code": "FAI & ML",
@@ -47675,6 +47668,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -47731,7 +47733,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-2 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
     },
     "KS": {
       "sno": 24,
@@ -58591,15 +58593,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -58619,9 +58612,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -58652,18 +58663,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr. CHVVDP": {
       "sno": 45,
@@ -58687,15 +58689,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -58715,9 +58708,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -58748,18 +58759,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr.CHVVDP": {
       "sno": 45,
@@ -58783,15 +58785,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -58811,9 +58804,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -58844,18 +58855,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. CHVVDP": {
       "sno": 45,
@@ -58879,15 +58881,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -58907,9 +58900,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -58940,18 +58951,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mrs. CHVVDP": {
       "sno": 45,
@@ -58975,15 +58977,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -59003,9 +58996,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59036,18 +59047,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. CHVVDP": {
       "sno": 45,
@@ -59071,15 +59073,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -59099,9 +59092,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59132,18 +59143,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. CH VVD Prasad": {
       "sno": 45,
@@ -59167,15 +59169,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -59195,9 +59188,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59228,18 +59239,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "SVM": {
       "sno": 46,
@@ -75748,15 +75750,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "G-404",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CSE(AI&ML)-2",
           "subject": "AI Tools and Applications",
           "code": "AITA",
@@ -75776,9 +75769,27 @@
         },
         {
           "branch": "MECH",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "G-404",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "PPSTC Tut.",
           "code": "PPSTC Tut.",
           "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "PPSTC Tut.",
+          "code": "PPSTC Tut.",
+          "room": "E-412",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -75809,18 +75820,9 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "ECE-3",
-          "subject": "PPSTC Tut.",
-          "code": "PPSTC Tut.",
-          "room": "E-412",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE (CS & DS) → Principles of Cyber Security (PCS) – 3 theory = 3 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → PPSTC Tut. (PPSTC Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → CSP LAB (CSP LAB) – 2 lab = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     }
   },
   "knownBranches": [
