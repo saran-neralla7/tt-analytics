@@ -3376,15 +3376,10 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "room": "",
+            "subject": "ENV. STD.",
+            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
+            "rawFaculty": "PM, GS",
+            "room": "G-305",
             "isLab": false
           }
         ],
@@ -3399,10 +3394,15 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "ENV. STD.",
-            "faculty": "Mr. P Manikanta, Mrs. G Sravani",
-            "rawFaculty": "PM, GS",
-            "room": "G-305",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ]
@@ -3720,10 +3720,15 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "ENV. STD.",
-            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
-            "rawFaculty": "GS, VBR",
-            "room": "G-302",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -3774,15 +3779,10 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "room": "",
+            "subject": "ENV. STD.",
+            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
+            "rawFaculty": "GS, VBR",
+            "room": "G-302",
             "isLab": false
           }
         ],
@@ -3881,15 +3881,6 @@
             "subject": "AITA",
             "faculty": "Mr. K AyyaRaju, Mr. PK DAS",
             "rawFaculty": "KAR, PKD",
-            "room": "G-303",
-            "isLab": false
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "subject": "ENV. STD.",
-            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
-            "rawFaculty": "GS, VBR",
             "room": "G-303",
             "isLab": false
           }
@@ -4106,6 +4097,15 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "subject": "ENV. STD.",
+            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
+            "rawFaculty": "GS, VBR",
+            "room": "G-303",
+            "isLab": false
           }
         ],
         "03:15-04:15": [
@@ -13360,7 +13360,7 @@
             "rawFaculty": "PM"
           }
         ],
-        "03:15-04:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE-2",
             "subject": "ENV. STD.",
@@ -13428,14 +13428,6 @@
         ],
         "02:15-03:15": [
           {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "ENV. STD.",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "GS, VBR"
-          },
-          {
             "branch": "ECE-1",
             "subject": "AITA LAB",
             "room": "COMP. LAB-2",
@@ -13520,11 +13512,11 @@
         ]
       },
       "THU": {
-        "12:15-01:15": [
+        "02:15-03:15": [
           {
-            "branch": "CSE(AI&ML)-1",
+            "branch": "CSE(AI&ML)-2",
             "subject": "ENV. STD.",
-            "room": "G-302",
+            "room": "G-303",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "GS, VBR"
@@ -13551,6 +13543,16 @@
             "isContinued": false,
             "rawFaculty": "GS, VBR"
           }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "ENV. STD.",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "GS, VBR"
+          }
         ]
       }
     },
@@ -13564,16 +13566,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "PM, GS"
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "ENV. STD.",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "GS, VBR"
           }
         ]
       },
@@ -13632,7 +13624,7 @@
         ]
       },
       "THU": {
-        "03:15-04:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE-2",
             "subject": "ENV. STD.",
@@ -13662,11 +13654,11 @@
             "rawFaculty": "KR, CA, GS"
           }
         ],
-        "12:15-01:15": [
+        "02:15-03:15": [
           {
-            "branch": "CSE(AI&ML)-1",
+            "branch": "CSE(AI&ML)-2",
             "subject": "ENV. STD.",
-            "room": "G-302",
+            "room": "G-303",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "GS, VBR"
@@ -13679,6 +13671,16 @@
             "branch": "CSE-1",
             "subject": "ENV. STD.",
             "room": "G-304",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "GS, VBR"
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "ENV. STD.",
+            "room": "G-302",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "GS, VBR"
@@ -23475,15 +23477,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -23497,6 +23490,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -23520,7 +23522,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -23544,19 +23546,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -23580,7 +23582,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 15,
@@ -28925,15 +28927,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -28947,6 +28940,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -28970,7 +28972,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 14,
@@ -28994,19 +28996,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -29030,7 +29032,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     {
       "sno": 15,
@@ -39703,15 +39705,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -39725,6 +39718,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -39748,7 +39750,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr. VBR": {
       "sno": 13,
@@ -39772,15 +39774,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -39794,6 +39787,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -39817,7 +39819,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr.VBR": {
       "sno": 13,
@@ -39841,15 +39843,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -39863,6 +39856,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -39886,7 +39888,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. VBR": {
       "sno": 13,
@@ -39910,15 +39912,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -39932,6 +39925,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -39955,7 +39957,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. VBR": {
       "sno": 13,
@@ -39979,15 +39981,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -40001,6 +39994,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40024,7 +40026,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Ms. VBR": {
       "sno": 13,
@@ -40048,15 +40050,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -40070,6 +40063,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40093,7 +40095,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. V Bhaskar Rao": {
       "sno": 13,
@@ -40117,15 +40119,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Environmental Studies",
-          "code": "ENV. STD.",
-          "room": "G-303",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -40139,6 +40132,15 @@
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
           "room": "G-304",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Environmental Studies",
+          "code": "ENV. STD.",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40162,7 +40164,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 4 lab = 4 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE (CS & DS) → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "GS": {
       "sno": 14,
@@ -40186,19 +40188,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40222,7 +40224,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr. GS": {
       "sno": 14,
@@ -40246,19 +40248,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40282,7 +40284,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Dr.GS": {
       "sno": 14,
@@ -40306,19 +40308,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40342,7 +40344,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mr. GS": {
       "sno": 14,
@@ -40366,19 +40368,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40402,7 +40404,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. GS": {
       "sno": 14,
@@ -40426,19 +40428,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40462,7 +40464,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Ms. GS": {
       "sno": 14,
@@ -40486,19 +40488,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40522,7 +40524,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "Mrs. G Sravani": {
       "sno": 14,
@@ -40546,19 +40548,19 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
+          "branch": "CSE-1",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-303",
+          "room": "G-304",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "CSE-1",
+          "branch": "CSE(AI&ML)-2",
           "subject": "Environmental Studies",
           "code": "ENV. STD.",
-          "room": "G-304",
+          "room": "G-303",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -40582,7 +40584,7 @@
           "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
+      "assignments": "CSE-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE(AI&ML)-2 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Environmental Studies (ENV. STD.) – 2 theory = 2 periods"
     },
     "BHP": {
       "sno": 15,
