@@ -1481,7 +1481,7 @@
             "subject": "ESS. ENG. Tut.",
             "faculty": "Dr. Ch Alekya, Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
             "rawFaculty": "CHA, PBSKR, VVLUR",
-            "room": "E-412",
+            "room": "E-408",
             "isLab": false
           }
         ],
@@ -2403,7 +2403,7 @@
             "subject": "AITA LAB",
             "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
             "rawFaculty": "NSSVRR, BN, DSK",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true
           },
           {
@@ -2419,7 +2419,7 @@
             "subject": "AITA LAB",
             "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
             "rawFaculty": "NSSVRR, BN, DSK",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": true
           },
@@ -4581,8 +4581,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "ASL\nBB",
         "facultyFullName": "Dr. A Suseelatha\nDr. B Bharathi",
-        "tutorialShort": "ASL\nTPK\nSAK\nBB\nKLSP\nCHAN",
-        "tutorialFullName": "Dr. A Suseelatha\nDr. S Ashok Kumar\nDr. T Poornakantha\nDr. B Bharathi\nDr. K L Sai Prasad\nDr. Ch Appala Naidu",
+        "tutorialShort": "ASL\nBB\nCHVS\nASL\nBB\nCHAN",
+        "tutorialFullName": "Dr. A Suseelatha\nDr. B Bharathi\nDr. Ch V Sreedhar\nDr. A Suseelatha\nDr. B Bharathi\nDr. Ch Appala Naidu",
         "room": "G-304",
         "isLab": false
       },
@@ -4645,8 +4645,8 @@
         "sno": 7,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "FAC-2",
-        "facultyFullName": "Faculty-2",
+        "facultyShort": "KS\nSLA",
+        "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-304",
@@ -4704,8 +4704,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "BB\nSAK",
         "facultyFullName": "Dr. B Bharathi\nDr. S Ashok Kumar",
-        "tutorialShort": "SAK\nASL\nTPK\nBB\nKLSP\nCHAN",
-        "tutorialFullName": "Dr. S Ashok Kumar\nDr. A Suseelatha\nDr. T Poornakantha\nDr. B Bharathi\nDr. K L Sai Prasad\nDr. Ch Appala Naidu",
+        "tutorialShort": "BB\nSAK\nASL\nBB\nKLSP\nCHAN",
+        "tutorialFullName": "Dr. B Bharathi\nDr. S Ashok Kumar\nDr. A Suseelatha\nDr. B Bharathi\nDr. K L Sai Prasad\nDr. Ch Appala Naidu",
         "room": "G-305",
         "isLab": false
       },
@@ -4768,8 +4768,8 @@
         "sno": 7,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "FAC-2",
-        "facultyFullName": "Faculty-2",
+        "facultyShort": "SLA\nKS",
+        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-305",
@@ -4801,8 +4801,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "TAJ\nPKD\nBVSAK\nMVPL\nPKM\nTAJ",
-        "facultyFullName": "Ms. Taj\nMr. PK DAS\nDr. BVS Arun Kumar\nDr. MV Pankaj Lahari\nMs. P KiranMayi\nMs. Taj",
+        "facultyShort": "TAJ\nPKD\nBVSAK\nPKM\nTAJ\nMVPL",
+        "facultyFullName": "Ms. Taj\nMr. PK DAS\nDr. BVS Arun Kumar\nMs. P KiranMayi\nMs. Taj\nDr. MV Pankaj Lahari",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-303,304",
@@ -4913,8 +4913,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "DC\nARS\nKMK\nDC\nMA\nBDS",
-        "facultyFullName": "Dr. D Chandravathi\nDr. A Ravi Shankar\nMs. K Manikyakanthi\nDr. D Chandravathi\nMr. M Anil\nMs. B Divya Sati",
+        "facultyShort": "DC\nARS\nKMK\nDC\nMA\nKJR",
+        "facultyFullName": "Dr. D Chandravathi\nDr. A Ravi Shankar\nMs. K Manikyakanthi\nDr. D Chandravathi\nMr. M Anil\nMs. K Jhansi Rani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -4924,8 +4924,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "VA\nVBR\nBN\nDSK\nNSSVRR\nBN",
-        "facultyFullName": "Dr. V Adinarayana\nMr. V Bhaskar Rao\nDr. B Nagarjun\nDr. D Santhosh Kumar\nDr. NSSV Raja Rao\nDr. B Nagarjun",
+        "facultyShort": "VA\nPSSA\nBN\nDSK\nNSSVRR\nBRB",
+        "facultyFullName": "Dr. V Adinarayana\nMr. PSS Appalacharyulu\nDr. B Nagarjun\nDr. D Santhosh Kumar\nDr. NSSV Raja Rao\nDr. B Rajesh Babu",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -4950,8 +4950,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "TPK\nNGB",
         "facultyFullName": "Dr. T Poornakantha\nDr. N Giribabu",
-        "tutorialShort": "TPK\nBB\nASL\nNGB\nKLSP\nCHVS",
-        "tutorialFullName": "Dr. T Poornakantha\nDr. B Bharathi\nDr. A Suseelatha\nDr. N Giribabu\nDr. K L Sai Prasad\nDr. Ch V Sreedhar",
+        "tutorialShort": "TPK\nBB\nASL\nTPK\nNGB\nCHVS",
+        "tutorialFullName": "Dr. T Poornakantha\nDr. B Bharathi\nDr. A Suseelatha\nDr. T Poornakantha\nDr. N Giribabu\nDr. Ch V Sreedhar",
         "room": "G-303",
         "isLab": false
       },
@@ -4981,8 +4981,8 @@
         "sno": 4,
         "subjectFullName": "AI Tools and Applications",
         "subjectShort": "AITA",
-        "facultyShort": "CHVVDP\nKAR",
-        "facultyFullName": "Mr. CH VVD Prasad\nMr. K AyyaRaju",
+        "facultyShort": "KAR\nPKD",
+        "facultyFullName": "Mr. K AyyaRaju\nMr. PK DAS",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-303",
@@ -5014,8 +5014,8 @@
         "sno": 7,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "SLA\nKS",
-        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
+        "facultyShort": "KS\nSLA",
+        "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-303",
@@ -5047,8 +5047,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "KAR\nVA\nPSSA\nKAR\nNSSVRR\nBRB",
-        "facultyFullName": "Mr. K AyyaRaju\nDr. V Adinarayana\nMr. PSS Appalacharyulu\nMr. K AyyaRaju\nDr. NSSV Raja Rao\nDr. B Rajesh Babu",
+        "facultyShort": "KAR\nVA\nVBR\nKAR\nNSSVRR\nBN",
+        "facultyFullName": "Mr. K AyyaRaju\nDr. V Adinarayana\nMr. V Bhaskar Rao\nMr. K AyyaRaju\nDr. NSSV Raja Rao\nDr. B Nagarjun",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -5073,8 +5073,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "SAK\nTPK",
         "facultyFullName": "Dr. S Ashok Kumar\nDr. T Poornakantha",
-        "tutorialShort": "KVSS\nKLSP\nCHVS\nSAK\nTPK\nASL",
-        "tutorialFullName": "Dr. KVS Sarma\nDr. K L Sai Prasad\nDr. Ch V Sreedhar\nDr. S Ashok Kumar\nDr. T Poornakantha\nDr. A Suseelatha",
+        "tutorialShort": "SAK\nTPK\nKVSS\nSAK\nTPK\nKLSP",
+        "tutorialFullName": "Dr. S Ashok Kumar\nDr. T Poornakantha\nDr. KVS Sarma\nDr. S Ashok Kumar\nDr. T Poornakantha\nDr. K L Sai Prasad",
         "room": "G-405",
         "isLab": false
       },
@@ -5148,8 +5148,8 @@
         "sno": 8,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "FAC-2",
-        "facultyFullName": "Faculty-2",
+        "facultyShort": "SLA\nKS",
+        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-405",
@@ -5170,8 +5170,8 @@
         "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "BHP\nDMVP\nPM\nBHP\nKMK\nNVSK",
-        "facultyFullName": "Dr. Bh Padma\nMrs. DMV Priya\nMr. P Manikanta\nDr. Bh Padma\nMs. K Manikyakanthi\nMr. NV Siva Krishna",
+        "facultyShort": "BHP\nDMVP\nKMK\nBHP\nPM\nNVSK",
+        "facultyFullName": "Dr. Bh Padma\nMrs. DMV Priya\nMs. K Manikyakanthi\nDr. Bh Padma\nMr. P Manikanta\nMr. NV Siva Krishna",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -5181,8 +5181,8 @@
         "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "PKD\nTAJ\nVBR\nMVPL\nTAJ\nGSK",
-        "facultyFullName": "Mr. PK DAS\nMs. Taj\nMr. V Bhaskar Rao\nDr. MV Pankaj Lahari\nMs. Taj\nDr. G Santosh Kumar",
+        "facultyShort": "PKD\nTAJ\nPSSA\nMVPL\nTAJ\nGSK",
+        "facultyFullName": "Mr. PK DAS\nMs. Taj\nMr. PSS Appalacharyulu\nDr. MV Pankaj Lahari\nMs. Taj\nDr. G Santosh Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -5192,8 +5192,8 @@
         "sno": 12,
         "subjectFullName": "Foundations of Data Science Lab",
         "subjectShort": "FDS LAB",
-        "facultyShort": "KR\nADP",
-        "facultyFullName": "Dr. K Rohini\nMr. A Dhanunjaya Prasad",
+        "facultyShort": "KR\nBHP",
+        "facultyFullName": "Dr. K Rohini\nDr. Bh Padma",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5203,8 +5203,8 @@
         "sno": 13,
         "subjectFullName": "Principles of Cyber Security Lab",
         "subjectShort": "PCS LAB",
-        "facultyShort": "CHVVDP\nMBS\nBHP",
-        "facultyFullName": "Mr. CH VVD Prasad\nDr. M Bhanu Sridhar\nDr. Bh Padma",
+        "facultyShort": "CHVVDP\nMBS\nADP",
+        "facultyFullName": "Mr. CH VVD Prasad\nDr. M Bhanu Sridhar\nMr. A Dhanunjaya Prasad",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5218,8 +5218,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "CHVS\nSSAS",
         "facultyFullName": "Dr. Ch V Sreedhar\nDr. SS Ayyappa Sastri",
-        "tutorialShort": "CHVS\nKVSS\nTPK\nSSAS\nASL\nNGB",
-        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. SS Ayyappa Sastri\nDr. A Suseelatha\nDr. N Giribabu",
+        "tutorialShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
+        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
         "room": "G-302",
         "isLab": false
       },
@@ -5227,10 +5227,10 @@
         "sno": 2,
         "subjectFullName": "Calculus and Linear Algebra Tutorial",
         "subjectShort": "CAL & LA Tut",
-        "facultyShort": "CHVS\nKVSS\nTPK\nSSAS\nASL\nNGB",
-        "facultyFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. SS Ayyappa Sastri\nDr. A Suseelatha\nDr. N Giribabu",
-        "tutorialShort": "CHVS\nKVSS\nTPK\nSSAS\nASL\nNGB",
-        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. SS Ayyappa Sastri\nDr. A Suseelatha\nDr. N Giribabu",
+        "facultyShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
+        "facultyFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
+        "tutorialShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
+        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
         "room": "G-402",
         "isLab": false
       },
@@ -5249,8 +5249,8 @@
         "sno": 4,
         "subjectFullName": "Programming for Problem solving through C",
         "subjectShort": "PPSTC",
-        "facultyShort": "MBS\nSLA",
-        "facultyFullName": "Dr. M Bhanu Sridhar\nMs. S Laxmi Aparna",
+        "facultyShort": "MBS\nADP",
+        "facultyFullName": "Dr. M Bhanu Sridhar\nMr. A Dhanunjaya Prasad",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-402",
@@ -5293,10 +5293,10 @@
         "sno": 8,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "CHA\nJRR\nVVLUR\nIRS",
-        "facultyFullName": "Dr. Ch Alekya\nDr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. I Rajasekhar",
-        "tutorialShort": "CHA\nJRR\nVVLUR\nIRS",
-        "tutorialFullName": "Dr. Ch Alekya\nDr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. I Rajasekhar",
+        "facultyShort": "CHA\nJRR\nVVLUR\nVVLUR\nIRS\nJRR",
+        "facultyFullName": "Dr. Ch Alekya\nDr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. VVL Usha Ramani\nDr. I Rajasekhar\nDr. J RajaRatnam",
+        "tutorialShort": "CHA\nJRR\nVVLUR\nVVLUR\nIRS\nJRR",
+        "tutorialFullName": "Dr. Ch Alekya\nDr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. VVL Usha Ramani\nDr. I Rajasekhar\nDr. J RajaRatnam",
         "room": "G-402",
         "isLab": false
       },
@@ -5315,8 +5315,8 @@
         "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "MBS\nARS\nVVVSN\nSLA\nKJR\n",
-        "facultyFullName": "Dr. M Bhanu Sridhar\nDr. A Ravi Shankar\nMr. VVV Satyanarayana\nMs. S Laxmi Aparna\nMs. K Jhansi Rani\n",
+        "facultyShort": "MBS\nARS\nVVVSN\nMBS\nADP\nKJR",
+        "facultyFullName": "Dr. M Bhanu Sridhar\nDr. A Ravi Shankar\nMr. VVV Satyanarayana\nDr. M Bhanu Sridhar\nMr. A Dhanunjaya Prasad\nMs. K Jhansi Rani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -5326,8 +5326,8 @@
         "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "GSK\nPKM\nVBR\nPKM\nTAJ\nPSSA",
-        "facultyFullName": "Dr. G Santosh Kumar\nMs. P KiranMayi\nMr. V Bhaskar Rao\nMs. P KiranMayi\nMs. Taj\nMr. PSS Appalacharyulu",
+        "facultyShort": "GSK\nPKM\nVBR\nPKM\nTAJ\nVBR",
+        "facultyFullName": "Dr. G Santosh Kumar\nMs. P KiranMayi\nMr. V Bhaskar Rao\nMs. P KiranMayi\nMs. Taj\nMr. V Bhaskar Rao",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2, COMP. LAB-3",
@@ -5449,8 +5449,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "KR\nAS\nNVSK\nDAK\nMN\nKJR",
-        "facultyFullName": "Dr. K Rohini\nDr. Anand Solanki\nMr. NV Siva Krishna\nMr. D Arun Kumar\nDr. M Neelima\nMs. K Jhansi Rani",
+        "facultyShort": "KR\nAS\nNVSK\nDAK\nMN\nBDS",
+        "facultyFullName": "Dr. K Rohini\nDr. Anand Solanki\nMr. NV Siva Krishna\nMr. D Arun Kumar\nDr. M Neelima\nMs. B Divya Sati",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "C-208",
@@ -5471,8 +5471,8 @@
         "sno": 11,
         "subjectFullName": "Digital Logic Design Lab",
         "subjectShort": "DLD LAB",
-        "facultyShort": "KJR\nDBVJ\nKJR\nVA\nPRSS\nBDS\nPRSS\nVS",
-        "facultyFullName": "Ms. K Jhansi Rani\nDr. DBV Jagannadham\nMs. K Jhansi Rani\nDr. V Adinarayana\nMs. PR Sri Satya\nMs. B Divya Sati\nMs. PR Sri Satya\nMrs. V Sridevi",
+        "facultyShort": "KJR\nDBVJ\nKJR\nVA\nPRSS\nVS\nPRSS\nBDS",
+        "facultyFullName": "Ms. K Jhansi Rani\nDr. DBV Jagannadham\nMs. K Jhansi Rani\nDr. V Adinarayana\nMs. PR Sri Satya\nMrs. V Sridevi\nMs. PR Sri Satya\nMs. B Divya Sati",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-406",
@@ -5631,8 +5631,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "SAK\nKVSS",
         "facultyFullName": "Dr. S Ashok Kumar\nDr. KVS Sarma",
-        "tutorialShort": "SAK\nCHAN\nNGB\nKVSS\nCHVS\nASL",
-        "tutorialFullName": "Dr. S Ashok Kumar\nDr. Ch Appala Naidu\nDr. N Giribabu\nDr. KVS Sarma\nDr. Ch V Sreedhar\nDr. A Suseelatha",
+        "tutorialShort": "SAK\nCHAN\nNGB\nSAK\nCHVS\nASL",
+        "tutorialFullName": "Dr. S Ashok Kumar\nDr. Ch Appala Naidu\nDr. N Giribabu\nDr. S Ashok Kumar\nDr. Ch V Sreedhar\nDr. A Suseelatha",
         "room": "G-404",
         "isLab": false
       },
@@ -5651,8 +5651,8 @@
         "sno": 3,
         "subjectFullName": "Programming for Problem solving through C",
         "subjectShort": "PPSTC",
-        "facultyShort": "CHVVDP\nSVM",
-        "facultyFullName": "Mr. CH VVD Prasad\nMr. S Vinod Manikantha",
+        "facultyShort": "CHVVDP\nBHP",
+        "facultyFullName": "Mr. CH VVD Prasad\nDr. Bh Padma",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-404",
@@ -5695,8 +5695,8 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "JRR\nIRS\nBMF",
-        "facultyFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar\nDr. BM Florence",
+        "facultyShort": "JRR\nIRS\nBMF\nJRR\nIRS\nPBSKR",
+        "facultyFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar\nDr. BM Florence\nDr. J RajaRatnam\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
         "tutorialShort": "JRR\nIRS",
         "tutorialFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar",
         "room": "G-404",
@@ -5706,8 +5706,8 @@
         "sno": 8,
         "subjectFullName": "Chemistry Lab",
         "subjectShort": "CHEM LAB",
-        "facultyShort": "KVP\nKVNL\nBSK",
-        "facultyFullName": "Dr. KV Padmavathi\nDr. KV NagaLakshmi\nDr. B Santosh Kumar",
+        "facultyShort": "KVP\nKVNL\nBSK\nKVP\nKVNL\nBSK",
+        "facultyFullName": "Dr. KV Padmavathi\nDr. KV NagaLakshmi\nDr. B Santosh Kumar\nDr. KV Padmavathi\nDr. KV NagaLakshmi\nDr. B Santosh Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -5717,8 +5717,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "CHVVDP\nVS\nKJR\nSVM\nPRSS\nAS",
-        "facultyFullName": "Mr. CH VVD Prasad\nMrs. V Sridevi\nMs. K Jhansi Rani\nMr. S Vinod Manikantha\nMs. PR Sri Satya\nDr. Anand Solanki",
+        "facultyShort": "CHVVDP\nVS\nKJR\nCHVVDP\nPRSS\nAS",
+        "facultyFullName": "Mr. CH VVD Prasad\nMrs. V Sridevi\nMs. K Jhansi Rani\nMr. CH VVD Prasad\nMs. PR Sri Satya\nDr. Anand Solanki",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -5873,8 +5873,8 @@
         "sno": 11,
         "subjectFullName": "Fundamentals of Electrical and Electronics Engineering Lab",
         "subjectShort": "FEEE LAB",
-        "facultyShort": "ARS\nPKD\nMVPL",
-        "facultyFullName": "Dr. A Ravi Shankar\nMr. PK DAS\nDr. MV Pankaj Lahari",
+        "facultyShort": "ARS\nPKD\nARS\nMVPL",
+        "facultyFullName": "Dr. A Ravi Shankar\nMr. PK DAS\nDr. A Ravi Shankar\nDr. MV Pankaj Lahari",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "E-319",
@@ -5963,10 +5963,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "NVL\nPBSKR\nIRS",
-        "facultyFullName": "Dr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju\nDr. I Rajasekhar",
-        "tutorialShort": "NVL\nPBSKR\nIRS",
-        "tutorialFullName": "Dr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju\nDr. I Rajasekhar",
+        "facultyShort": "NVL\nIRS\nPBSKR",
+        "facultyFullName": "Dr. N Vijaya Lakshmi\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
+        "tutorialShort": "NVL\nIRS\nPBSKR",
+        "tutorialFullName": "Dr. N Vijaya Lakshmi\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
         "room": "E-410",
         "isLab": false
       },
@@ -6007,8 +6007,8 @@
         "sno": 11,
         "subjectFullName": "Surveying and Geomatics Lab",
         "subjectShort": "S&G LAB",
-        "facultyShort": "PM\nBV\nGS",
-        "facultyFullName": "Mr. P Manikanta\nDr. B Vidya\nMrs. G Sravani",
+        "facultyShort": "PM\nBV",
+        "facultyFullName": "Mr. P Manikanta\nDr. B Vidya",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE SUR. LAB (B11-101)",
@@ -6033,8 +6033,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "ASL",
         "facultyFullName": "Dr. A Suseelatha",
-        "tutorialShort": "ASL\nCHAN\nBB",
-        "tutorialFullName": "Dr. A Suseelatha\nDr. Ch Appala Naidu\nDr. B Bharathi",
+        "tutorialShort": "ASL\nCHAN\nKLSP",
+        "tutorialFullName": "Dr. A Suseelatha\nDr. Ch Appala Naidu\nDr. K L Sai Prasad",
         "room": "E-411",
         "isLab": false
       },
@@ -6097,10 +6097,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "PBSKR\nNVL\nJRR",
-        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam",
-        "tutorialShort": "PBSKR\nNVL\nJRR",
-        "tutorialFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam",
+        "facultyShort": "PBSKR\nJRR\nNVL",
+        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. J RajaRatnam\nDr. N Vijaya Lakshmi",
+        "tutorialShort": "PBSKR\nJRR\nNVL",
+        "tutorialFullName": "Mr. PBS Krishnamuraju\nDr. J RajaRatnam\nDr. N Vijaya Lakshmi",
         "room": "E-411",
         "isLab": false
       },
@@ -6108,8 +6108,8 @@
         "sno": 8,
         "subjectFullName": "Physical and Analytical Chemistry Lab",
         "subjectShort": "PAC LAB",
-        "facultyShort": "KVNL\nBSK\nKVP",
-        "facultyFullName": "Dr. KV NagaLakshmi\nDr. B Santosh Kumar\nDr. KV Padmavathi",
+        "facultyShort": "KVNL\nKVP\nBSK",
+        "facultyFullName": "Dr. KV NagaLakshmi\nDr. KV Padmavathi\nDr. B Santosh Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -6152,8 +6152,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "PBSKR\nVVLUR\nPBSKR\nNVL",
-        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. VVL Usha Ramani\nMr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi",
+        "facultyShort": "PBSKR\nNVL\nVVLUR",
+        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi\nDr. VVL Usha Ramani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -6187,8 +6187,8 @@
         "sno": 3,
         "subjectFullName": "Programming for Problem solving through C",
         "subjectShort": "PPSTC",
-        "facultyShort": "SLA",
-        "facultyFullName": "Ms. S Laxmi Aparna",
+        "facultyShort": "DMVP",
+        "facultyFullName": "Mrs. DMV Priya",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "G-408",
@@ -6253,8 +6253,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "SLA\nBDS\nVVVSN",
-        "facultyFullName": "Ms. S Laxmi Aparna\nMs. B Divya Sati\nMr. VVV Satyanarayana",
+        "facultyShort": "DMVP\nBDS\nVVVSN",
+        "facultyFullName": "Mrs. DMV Priya\nMs. B Divya Sati\nMr. VVV Satyanarayana",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -6579,11 +6579,11 @@
               "facultyShort": "DMVP, VS, KMK"
             },
             "02:15-04:15": {
-              "raw": "CSE-1 / AITA LAB | ECE-2 / AITA LAB",
-              "branch": "CSE-1, ECE-2",
+              "raw": "CSE-1 / AITA LAB",
+              "branch": "CSE-1",
               "subject": "AITA LAB",
-              "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar / Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
-              "facultyShort": "MBK, PKM, BVSAK / NSSVRR, BN, DSK"
+              "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar",
+              "facultyShort": "MBK, PKM, BVSAK"
             }
           }
         },
@@ -7080,7 +7080,15 @@
               "facultyShort": "SP, PKD, BVSAK"
             }
           },
-          "FRI": {}
+          "FRI": {
+            "02:15-04:15": {
+              "raw": "ECE-2 / AITA LAB",
+              "branch": "ECE-2",
+              "subject": "AITA LAB",
+              "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
+              "facultyShort": "NSSVRR, BN, DSK"
+            }
+          }
         },
         "labDetails": [
           {
@@ -7811,10 +7819,10 @@
             },
             {
               "branch": "ECE-2",
-              "room": "COMP. LAB-2",
+              "room": "A-303,304",
               "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
               "facultyShort": "NSSVRR, BN, DSK",
-              "raw": "ECE-2/COMP. LAB-2"
+              "raw": "ECE-2/A-303,304"
             },
             {
               "branch": "MECH-ROBOTICS",
@@ -9171,8 +9179,8 @@
             {
               "subject": "AITA LAB",
               "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
-              "room": "COMP. LAB-2",
-              "raw": "AITA LAB\nNSSVRR, BN, DSK\nCOMP. LAB-2"
+              "room": "A-303,304",
+              "raw": "AITA LAB\nNSSVRR, BN, DSK\nA-303,304"
             }
           ]
         }
@@ -10607,11 +10615,11 @@
             "facultyShort": "DMVP, VS, KMK"
           },
           "02:15-04:15": {
-            "raw": "CSE-1 / AITA LAB | ECE-2 / AITA LAB",
-            "branch": "CSE-1, ECE-2",
+            "raw": "CSE-1 / AITA LAB",
+            "branch": "CSE-1",
             "subject": "AITA LAB",
-            "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar / Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
-            "facultyShort": "MBK, PKM, BVSAK / NSSVRR, BN, DSK"
+            "faculty": "Dr. M Bhaskar Kumar, Ms. P KiranMayi, Dr. BVS Arun Kumar",
+            "facultyShort": "MBK, PKM, BVSAK"
           }
         }
       },
@@ -11108,7 +11116,15 @@
             "facultyShort": "SP, PKD, BVSAK"
           }
         },
-        "FRI": {}
+        "FRI": {
+          "02:15-04:15": {
+            "raw": "ECE-2 / AITA LAB",
+            "branch": "ECE-2",
+            "subject": "AITA LAB",
+            "faculty": "Dr. NSSV Raja Rao, Dr. B Nagarjun, Dr. D Santhosh Kumar",
+            "facultyShort": "NSSVRR, BN, DSK"
+          }
+        }
       },
       "labDetails": [
         {
@@ -17314,7 +17330,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "ESS. ENG. Tut.",
-            "room": "E-412",
+            "room": "E-408",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "CHA, PBSKR, VVLUR"
@@ -17932,7 +17948,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "ESS. ENG. Tut.",
-            "room": "E-412",
+            "room": "E-408",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "CHA, PBSKR, VVLUR"
@@ -18094,7 +18110,7 @@
           {
             "branch": "MECH-ROBOTICS",
             "subject": "ESS. ENG. Tut.",
-            "room": "E-412",
+            "room": "E-408",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "CHA, PBSKR, VVLUR"
@@ -21166,7 +21182,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -21176,7 +21192,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -21704,7 +21720,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -21714,7 +21730,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -21846,7 +21862,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -21856,7 +21872,7 @@
           {
             "branch": "ECE-2",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "A-303,304",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "NSSVRR, BN, DSK"
@@ -25240,7 +25256,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -25597,7 +25613,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -25684,7 +25700,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -27292,7 +27308,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -27559,7 +27575,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -27637,7 +27653,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30699,7 +30715,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -31056,7 +31072,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -31143,7 +31159,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -32751,7 +32767,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33018,7 +33034,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -33096,7 +33112,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -51674,7 +51690,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -51752,7 +51768,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -51830,7 +51846,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -51908,7 +51924,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -51986,7 +52002,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -52064,7 +52080,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -52142,7 +52158,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54119,7 +54135,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54215,7 +54231,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54311,7 +54327,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54407,7 +54423,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54503,7 +54519,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54599,7 +54615,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54695,7 +54711,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54782,7 +54798,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54878,7 +54894,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -54974,7 +54990,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -55070,7 +55086,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -55166,7 +55182,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -55262,7 +55278,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -55358,7 +55374,7 @@
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-412",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -66092,7 +66108,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66161,7 +66177,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66230,7 +66246,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66299,7 +66315,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66368,7 +66384,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66437,7 +66453,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -66506,7 +66522,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -67961,7 +67977,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68030,7 +68046,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68099,7 +68115,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68168,7 +68184,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68237,7 +68253,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68306,7 +68322,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68375,7 +68391,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68453,7 +68469,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68531,7 +68547,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68609,7 +68625,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68687,7 +68703,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68765,7 +68781,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68843,7 +68859,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -68921,7 +68937,7 @@
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "A-303,304",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
