@@ -612,20 +612,6 @@
             "isContinued": true
           }
         ],
-        "11:15-12:15": [
-          {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          }
-        ],
         "12:15-01:15": [
           {
             "subject": "CAL & LA Tut.",
@@ -694,10 +680,15 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "ESAM",
-            "faculty": "Mr. S Ashok",
-            "rawFaculty": "SA",
-            "room": "E-409",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "COUNSELLING / LIBRARY",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -861,6 +852,15 @@
             "subject": "FEEE",
             "faculty": "Dr. A Ravi Shankar",
             "rawFaculty": "ARS",
+            "room": "E-409",
+            "isLab": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "subject": "ESAM",
+            "faculty": "Mr. S Ashok",
+            "rawFaculty": "SA",
             "room": "E-409",
             "isLab": false
           }
@@ -12705,14 +12705,6 @@
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "SA, KVNL"
-          },
-          {
-            "branch": "EEE",
-            "subject": "ESAM",
-            "room": "E-409",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SA"
           }
         ],
         "03:15-04:15": [
@@ -12829,6 +12821,16 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "BSK, SA"
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "EEE",
+            "subject": "ESAM",
+            "room": "E-409",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SA"
           }
         ]
       }
