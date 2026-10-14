@@ -433,6 +433,20 @@
             "isLab": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "COUNSELLING / LIBRARY",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          }
+        ],
         "02:15-03:15": [
           {
             "subject": "AITA",
@@ -477,20 +491,6 @@
             "faculty": "Mr. B Bala Krishna",
             "rawFaculty": "BBK",
             "room": "E-410",
-            "isLab": false
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
             "isLab": false
           }
         ],
@@ -1082,8 +1082,8 @@
         "12:15-01:15": [
           {
             "subject": "COM",
-            "faculty": "Dr. KV Padmavathi, Dr. Rani Nanda",
-            "rawFaculty": "KVP, RN",
+            "faculty": "Dr. KV Padmavathi, Dr. KV NagaLakshmi",
+            "rawFaculty": "KVP, KVNL",
             "room": "GVPCE (B13-203)",
             "isLab": false
           }
@@ -2129,8 +2129,8 @@
         "02:15-03:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
-            "rawFaculty": "RN, KVNL",
+            "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
+            "rawFaculty": "SA, KVNL",
             "room": "CHEM. LAB.",
             "isLab": true
           },
@@ -2152,8 +2152,8 @@
         "03:15-04:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
-            "rawFaculty": "RN, KVNL",
+            "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
+            "rawFaculty": "SA, KVNL",
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true
@@ -2207,8 +2207,8 @@
         "02:15-03:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
-            "rawFaculty": "SA, PSR",
+            "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
+            "rawFaculty": "RN, PSR",
             "room": "CHEM. LAB.",
             "isLab": true
           },
@@ -2230,8 +2230,8 @@
         "03:15-04:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
-            "rawFaculty": "SA, PSR",
+            "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
+            "rawFaculty": "RN, PSR",
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true
@@ -7201,8 +7201,8 @@
               "raw": "ECE-2 / ENGG. CHEM LAB",
               "branch": "ECE-2",
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
-              "facultyShort": "RN, KVNL"
+              "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
+              "facultyShort": "SA, KVNL"
             }
           },
           "WED": {
@@ -7217,8 +7217,8 @@
               "raw": "ECE-2 / ENGG. CHEM LAB",
               "branch": "ECE-2",
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
-              "facultyShort": "SA, PSR"
+              "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
+              "facultyShort": "RN, PSR"
             },
             "09:00-11:00": {
               "raw": "EEE / ENGG. CHEM LAB",
@@ -8398,8 +8398,8 @@
             {
               "branch": "ECE-2",
               "room": "CHEM. LAB.",
-              "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
-              "facultyShort": "RN, KVNL",
+              "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
+              "facultyShort": "SA, KVNL",
               "raw": "ECE-2/CHEM. LAB."
             }
           ]
@@ -8418,8 +8418,8 @@
             {
               "branch": "ECE-2",
               "room": "CHEM. LAB.",
-              "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
-              "facultyShort": "SA, PSR",
+              "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
+              "facultyShort": "RN, PSR",
               "raw": "ECE-2/CHEM. LAB."
             }
           ],
@@ -9090,9 +9090,9 @@
           "02:15-04:15": [
             {
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
+              "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
               "room": "CHEM. LAB.",
-              "raw": "ENGG. CHEM LAB\nRN, KVNL\nCHEM. LAB."
+              "raw": "ENGG. CHEM LAB\nSA, KVNL\nCHEM. LAB."
             },
             {
               "subject": "DLD LAB",
@@ -9112,9 +9112,9 @@
           "02:15-04:15": [
             {
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
+              "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
               "room": "CHEM. LAB.",
-              "raw": "ENGG. CHEM LAB\nSA, PSR\nCHEM. LAB."
+              "raw": "ENGG. CHEM LAB\nRN, PSR\nCHEM. LAB."
             },
             {
               "subject": "DLD LAB",
@@ -11236,8 +11236,8 @@
             "raw": "ECE-2 / ENGG. CHEM LAB",
             "branch": "ECE-2",
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. Rani Nanda, Dr. KV NagaLakshmi",
-            "facultyShort": "RN, KVNL"
+            "faculty": "Mr. S Ashok, Dr. KV NagaLakshmi",
+            "facultyShort": "SA, KVNL"
           }
         },
         "WED": {
@@ -11252,8 +11252,8 @@
             "raw": "ECE-2 / ENGG. CHEM LAB",
             "branch": "ECE-2",
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Mr. S Ashok, Dr. P Srinivas Rao",
-            "facultyShort": "SA, PSR"
+            "faculty": "Dr. Rani Nanda, Dr. P Srinivas Rao",
+            "facultyShort": "RN, PSR"
           },
           "09:00-11:00": {
             "raw": "EEE / ENGG. CHEM LAB",
@@ -11914,7 +11914,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "RN, KVNL"
+            "rawFaculty": "SA, KVNL"
           }
         ],
         "03:15-04:15": [
@@ -11924,11 +11924,21 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "RN, KVNL"
+            "rawFaculty": "SA, KVNL"
           }
         ]
       },
       "WED": {
+        "12:15-01:15": [
+          {
+            "branch": "MECH",
+            "subject": "COM",
+            "room": "GVPCE (B13-203)",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KVP, KVNL"
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "MECH",
@@ -12048,7 +12058,7 @@
             "room": "GVPCE (B13-203)",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "KVP, RN"
+            "rawFaculty": "KVP, KVNL"
           }
         ],
         "02:15-03:15": [
@@ -12412,7 +12422,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "SA, PSR"
+            "rawFaculty": "RN, PSR"
           }
         ],
         "03:15-04:15": [
@@ -12422,7 +12432,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "SA, PSR"
+            "rawFaculty": "RN, PSR"
           }
         ]
       },
@@ -12534,7 +12544,9 @@
             "isContinued": false,
             "rawFaculty": "RN, SA"
           }
-        ],
+        ]
+      },
+      "WED": {
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -12542,7 +12554,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "RN, KVNL"
+            "rawFaculty": "RN, PSR"
           }
         ],
         "03:15-04:15": [
@@ -12552,11 +12564,9 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "RN, KVNL"
+            "rawFaculty": "RN, PSR"
           }
-        ]
-      },
-      "WED": {
+        ],
         "09:00-10:00": [
           {
             "branch": "EEE",
@@ -12575,16 +12585,6 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "SA, RN"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "MECH",
-            "subject": "COM",
-            "room": "GVPCE (B13-203)",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KVP, RN"
           }
         ]
       },
@@ -12699,12 +12699,30 @@
         ],
         "02:15-03:15": [
           {
+            "branch": "ECE-2",
+            "subject": "ENGG. CHEM LAB",
+            "room": "CHEM. LAB.",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "SA, KVNL"
+          },
+          {
             "branch": "EEE",
             "subject": "ESAM",
             "room": "E-409",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "SA"
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "ENGG. CHEM LAB",
+            "room": "CHEM. LAB.",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "SA, KVNL"
           }
         ]
       },
@@ -12727,26 +12745,6 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "MRR, SA"
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "ENGG. CHEM LAB",
-            "room": "CHEM. LAB.",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "SA, PSR"
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "ENGG. CHEM LAB",
-            "room": "CHEM. LAB.",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "SA, PSR"
           }
         ],
         "09:00-10:00": [
@@ -22236,10 +22234,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -22279,6 +22277,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -22287,7 +22294,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 4,
@@ -22494,10 +22501,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -22539,13 +22546,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     {
       "sno": 8,
@@ -22587,7 +22594,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -22596,7 +22603,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -22614,7 +22621,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 9,
@@ -27443,10 +27450,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -27486,6 +27493,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -27494,7 +27510,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 4,
@@ -27701,10 +27717,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -27746,13 +27762,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     {
       "sno": 8,
@@ -27794,7 +27810,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -27803,7 +27819,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -27821,7 +27837,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 9,
@@ -33838,10 +33854,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -33881,6 +33897,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -33889,7 +33914,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. KVNL": {
       "sno": 3,
@@ -33898,10 +33923,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -33941,6 +33966,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -33949,7 +33983,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr.KVNL": {
       "sno": 3,
@@ -33958,10 +33992,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -34001,6 +34035,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -34009,7 +34052,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Mr. KVNL": {
       "sno": 3,
@@ -34018,10 +34061,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -34061,6 +34104,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -34069,7 +34121,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Mrs. KVNL": {
       "sno": 3,
@@ -34078,10 +34130,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -34121,6 +34173,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -34129,7 +34190,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Ms. KVNL": {
       "sno": 3,
@@ -34138,10 +34199,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -34181,6 +34242,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -34189,7 +34259,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. KV NagaLakshmi": {
       "sno": 3,
@@ -34198,10 +34268,10 @@
       "cleanShort": "KVNL",
       "dept": "Chemistry",
       "designation": "Assistant Professor - SG",
-      "theoryLoad": 3,
+      "theoryLoad": 4,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CHEMICAL",
@@ -34241,6 +34311,15 @@
         },
         {
           "branch": "MECH",
+          "subject": "Chemistry of Materials",
+          "code": "COM",
+          "room": "GVPCE (B13-203)",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
+          "branch": "MECH",
           "subject": "Chemistry Lab",
           "code": "CHEM LAB",
           "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -34249,7 +34328,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "CHEMICAL → Physical and Analytical Chemistry Lab (PAC LAB) – 2 lab = 2 periods\nCHEMICAL → Physical and Analytical Chemistry (PAC) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods"
     },
     "KVP": {
       "sno": 4,
@@ -35644,10 +35723,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35689,13 +35768,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Dr. RN": {
       "sno": 7,
@@ -35704,10 +35783,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35749,13 +35828,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Dr.RN": {
       "sno": 7,
@@ -35764,10 +35843,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35809,13 +35888,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Mr. RN": {
       "sno": 7,
@@ -35824,10 +35903,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35869,13 +35948,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Mrs. RN": {
       "sno": 7,
@@ -35884,10 +35963,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35929,13 +36008,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Ms. RN": {
       "sno": 7,
@@ -35944,10 +36023,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -35989,13 +36068,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "Dr. Rani Nanda": {
       "sno": 7,
@@ -36004,10 +36083,10 @@
       "cleanShort": "RN",
       "dept": "Chemistry",
       "designation": "Assistant Professor",
-      "theoryLoad": 6,
+      "theoryLoad": 5,
       "labLoad": 10,
       "tutLoad": 0,
-      "totalLoad": 16,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "ECE-2",
@@ -36049,13 +36128,13 @@
           "branch": "MECH",
           "subject": "Chemistry of Materials",
           "code": "COM",
-          "room": "GVPCE (B13-203)",
-          "hours": 3,
+          "room": "G-404",
+          "hours": 2,
           "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 3 theory = 3 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nMECH → Chemistry of Materials (COM) – 2 theory = 2 periods"
     },
     "SA": {
       "sno": 8,
@@ -36097,7 +36176,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36106,7 +36185,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36124,7 +36203,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. SA": {
       "sno": 8,
@@ -36166,7 +36245,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36175,7 +36254,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36193,7 +36272,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr.SA": {
       "sno": 8,
@@ -36235,7 +36314,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36244,7 +36323,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36262,7 +36341,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mr. SA": {
       "sno": 8,
@@ -36304,7 +36383,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36313,7 +36392,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36331,7 +36410,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mrs. SA": {
       "sno": 8,
@@ -36373,7 +36452,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36382,7 +36461,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36400,7 +36479,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Ms. SA": {
       "sno": 8,
@@ -36442,7 +36521,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36451,7 +36530,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36469,7 +36548,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mr. S Ashok": {
       "sno": 8,
@@ -36511,7 +36590,7 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "ECE-2",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36520,7 +36599,7 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-2",
+          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -36538,7 +36617,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-2 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "DM": {
       "sno": 9,
