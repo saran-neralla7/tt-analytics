@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
-import { UserCheck, Filter, Users, Table, Printer } from 'lucide-react';
+import { UserCheck, Filter, Users, Table, Printer, Calendar, LayoutGrid } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 import DepartmentTimetableGrid from './DepartmentTimetableGrid';
@@ -108,14 +108,21 @@ function FacultyTimetableCard({
   showBreakdown = true,
   isMultiView = false, 
   index = 1, 
-  totalCount = 1 
+  totalCount = 1,
+  selectedDay = 'ALL'
 }) {
   const facFull = facultyObj.fullName;
   const facShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
   const facShortWithTitle = facultyObj.shortName?.trim();
 
-  // Dynamic active days: exclude Saturday unless Saturday has classes
-  const activeDays = useMemo(() => getActiveDays(timetableData), [timetableData]);
+  // Dynamic active days: exclude Saturday unless Saturday has classes, or filter to selectedDay
+  const activeDays = useMemo(() => {
+    const allActive = getActiveDays(timetableData);
+    if (selectedDay && selectedDay !== 'ALL') {
+      return allActive.filter(d => d === selectedDay);
+    }
+    return allActive;
+  }, [timetableData, selectedDay]);
 
   // Build weekly schedule matrix for this faculty
   const facultySchedule = useMemo(() => {
@@ -287,6 +294,23 @@ function FacultyTimetableCard({
     });
   });
 
+  // Calculate day-specific workload when a specific day is selected
+  const dayLoad = useMemo(() => {
+    if (selectedDay === 'ALL') return null;
+    const daySched = facultySchedule[selectedDay] || {};
+    let dayTh = 0, dayLab = 0, dayTut = 0;
+    Object.values(daySched).forEach(items => {
+      items.forEach(it => {
+        if (it.isLab) dayLab++;
+        else if (it.isTutorial || it.subject?.toUpperCase().includes('TUT')) dayTut++;
+        else dayTh++;
+      });
+    });
+    return { theory: dayTh, lab: dayLab, tut: dayTut, total: dayTh + dayLab + dayTut };
+  }, [facultySchedule, selectedDay]);
+
+  const dayLabel = selectedDay === 'MON' ? 'Monday' : selectedDay === 'TUE' ? 'Tuesday' : selectedDay === 'WED' ? 'Wednesday' : selectedDay === 'THU' ? 'Thursday' : selectedDay === 'FRI' ? 'Friday' : selectedDay;
+
   return (
     <div 
       id={`faculty-${facShort || facultyObj.sno}`}
@@ -304,6 +328,11 @@ function FacultyTimetableCard({
               <span className="ml-1.5 text-blue-700">({facShort})</span>
             )}
           </h3>
+          {selectedDay !== 'ALL' && (
+            <span className="px-2.5 py-0.5 rounded text-[11px] font-black bg-blue-700 text-white shadow-xs uppercase tracking-wider font-mono">
+              📅 {dayLabel.toUpperCase()}
+            </span>
+          )}
           {facultyObj.dept && (
             <span className="px-2 py-0.5 rounded text-[10.5px] font-bold bg-blue-100 text-blue-950 border border-blue-300">
               Dept: {facultyObj.dept}
@@ -320,22 +349,59 @@ function FacultyTimetableCard({
             </span>
           )}
         </div>
-        <p className="text-xs text-gray-600 mt-0.5 font-mono">
-          Academic Year {universityInfo.academicYear} | Official Workload: <span className="font-bold text-slate-900">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Theory: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
-        </p>
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-1 text-xs text-gray-600 font-mono">
+          <span>Academic Year {universityInfo.academicYear}</span>
+          <span>•</span>
+          {selectedDay !== 'ALL' && dayLoad ? (
+            <span>
+              <strong className="text-slate-900">{dayLabel} Load:</strong>{' '}
+              <span className="font-black text-blue-900">{dayLoad.total} Hrs</span>
+              {dayLoad.total > 0 && (
+                <span className="text-slate-500 text-[11px] ml-1">
+                  ({dayLoad.theory > 0 ? `${dayLoad.theory} Theory` : ''}
+                  {dayLoad.theory > 0 && dayLoad.lab > 0 ? ', ' : ''}
+                  {dayLoad.lab > 0 ? `${dayLoad.lab} Lab` : ''}
+                  {(dayLoad.theory > 0 || dayLoad.lab > 0) && dayLoad.tut > 0 ? ', ' : ''}
+                  {dayLoad.tut > 0 ? `${dayLoad.tut} Tut` : ''})
+                </span>
+              )}
+              <span className="mx-2 text-slate-300">|</span>
+              <span className="text-slate-500">Weekly Total: <strong className="text-slate-800">{facultyObj.totalLoad || totalHours} Hrs/Wk</strong></span>
+            </span>
+          ) : (
+            <span>
+              Official Workload: <span className="font-bold text-slate-900">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Theory: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
+            </span>
+          )}
+        </div>
       </div>
+
+      {/* Free Day Alert Badge if 0 hours scheduled on this day */}
+      {selectedDay !== 'ALL' && dayLoad?.total === 0 && (
+        <div className="no-print bg-emerald-50 border-b border-emerald-200 px-4 py-2 text-center text-xs font-bold text-emerald-800 flex items-center justify-center gap-1.5">
+          <UserCheck className="w-4 h-4 text-emerald-600" />
+          <span>
+            Free Day on {dayLabel} • No Teaching Lectures or Labs Scheduled
+          </span>
+        </div>
+      )}
 
       {/* Print-Only Header Strip */}
       <div className="print-only px-2 py-0.5 bg-gray-100 border-b-2 border-black font-sans text-xs print:text-[9pt] font-bold text-black flex justify-between items-center leading-tight">
         <div>
           <span className="font-black uppercase tracking-tight text-sm print:text-[10pt]">{facFull}</span>
           {facShort && <span className="ml-1 text-slate-800 print:text-black print:text-[9pt]">({facShort})</span>}
+          {selectedDay !== 'ALL' && <span className="ml-1 font-black text-black print:text-[9pt]">• {dayLabel.toUpperCase()}</span>}
           <span className="mx-1 text-slate-400 print:text-black">|</span>
           <span className="font-bold text-slate-700 print:text-black print:text-[9pt]">Dept: {facultyObj.dept || 'General'}</span>
           {facultyObj.designation && <span className="ml-1 font-semibold text-slate-600 print:text-black print:text-[8.5pt]">({facultyObj.designation})</span>}
         </div>
         <div className="font-mono text-xs print:text-[8.5pt]">
-          Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
+          {selectedDay !== 'ALL' && dayLoad ? (
+            <span>{dayLabel}: <span className="font-black text-black">{dayLoad.total} Hrs</span> (Weekly: {facultyObj.totalLoad || totalHours} Hrs)</span>
+          ) : (
+            <span>Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})</span>
+          )}
         </div>
       </div>
 
@@ -750,6 +816,189 @@ function FacultyTimetableCard({
 }
 
 /**
+ * Helper to get a faculty member's schedule for a specific day
+ */
+function getFacultyDaySchedule(facObj, day, timetableData) {
+  const facFull = facObj.fullName;
+  if (initialData.masterFacultyTimetables && initialData.masterFacultyTimetables[facFull]) {
+    return initialData.masterFacultyTimetables[facFull][day] || {};
+  }
+  const facShort = (facObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+  const facShortWithTitle = facObj.shortName?.trim();
+  const matchesFaculty = (cell) => {
+    if (!cell || !cell.faculty) return false;
+    if (cell.faculty.includes(facFull)) return true;
+    if (facShort && new RegExp(`\\b${facShort}\\b`, 'i').test(cell.faculty)) return true;
+    if (facShortWithTitle && cell.faculty.includes(facShortWithTitle)) return true;
+    return false;
+  };
+  const result = {};
+  Object.entries(timetableData || {}).forEach(([branchKey, branchSched]) => {
+    const daySched = branchSched[day] || {};
+    Object.entries(daySched).forEach(([slotTime, rawCell]) => {
+      const items = Array.isArray(rawCell) ? rawCell : rawCell ? [rawCell] : [];
+      items.forEach(cell => {
+        if (matchesFaculty(cell)) {
+          if (!result[slotTime]) result[slotTime] = [];
+          if (!result[slotTime].some(existing => existing.branch === branchKey && existing.subject === cell.subject)) {
+            result[slotTime].push({ ...cell, branch: branchKey });
+          }
+        }
+      });
+    });
+  });
+  return result;
+}
+
+/**
+ * Daily Faculty Matrix Component
+ * Displays a single, dense table view of all faculty schedules for a specific day (e.g. Monday).
+ */
+function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSelectFaculty }) {
+  const dayName = day === 'MON' ? 'Monday' : day === 'TUE' ? 'Tuesday' : day === 'WED' ? 'Wednesday' : day === 'THU' ? 'Thursday' : day === 'FRI' ? 'Friday' : day;
+
+  return (
+    <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-4">
+      <div className="bg-slate-800 text-white px-5 py-3 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700">
+        <div className="flex items-center gap-2">
+          <span className="px-2.5 py-0.5 rounded font-black text-xs bg-blue-600 text-white tracking-wider font-mono">
+            📅 {dayName.toUpperCase()} MASTER MATRIX
+          </span>
+          <h3 className="text-xs sm:text-sm font-bold tracking-wide uppercase font-serif">
+            Faculty Teaching Schedule Matrix
+          </h3>
+        </div>
+        <span className="text-xs text-slate-300 font-mono">
+          Total Faculty: <strong className="text-white">{facultyList.length}</strong>
+        </span>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs text-center border-collapse table-auto min-w-[1000px] border-b border-slate-700">
+          <thead>
+            <tr className="bg-gray-100 text-gray-800 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+              <th className="py-2.5 px-2 border-r border-gray-300 text-left w-10">#</th>
+              <th className="py-2.5 px-3 border-r border-gray-300 text-left w-52">Faculty Member</th>
+              <th className="py-2.5 px-2 border-r border-gray-300 w-24">Dept</th>
+              {periodSlots.map((slot) => (
+                <th
+                  key={slot.id}
+                  className={`py-2 px-1 border-r border-gray-300 text-[11px] ${
+                    slot.type === 'break' ? 'bg-amber-100/70 text-amber-950 font-black w-14' : 'text-slate-900'
+                  }`}
+                >
+                  <div className="leading-tight">
+                    <span className="block font-black">{slot.time}</span>
+                    <span className="text-[9.5px] text-slate-500 font-normal">{slot.label}</span>
+                  </div>
+                </th>
+              ))}
+              <th className="py-2.5 px-2 w-16 bg-blue-50 text-blue-950 font-black">Day Hrs</th>
+              <th className="py-2.5 px-2 w-16 bg-emerald-50 text-emerald-950 font-black">Wk Hrs</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-300">
+            {facultyList.map((fac, idx) => {
+              const sched = getFacultyDaySchedule(fac, day, timetableData);
+              let dayHours = 0;
+              Object.values(sched).forEach(items => { dayHours += items.length; });
+              const isFreeToday = dayHours === 0;
+
+              return (
+                <tr 
+                  key={fac.fullName} 
+                  className={`hover:bg-blue-50/40 transition-colors ${idx % 2 === 1 ? 'bg-gray-50/50' : 'bg-white'}`}
+                >
+                  <td className="py-2 px-1 text-slate-500 font-mono text-[11px] border-r border-gray-200">
+                    {idx + 1}
+                  </td>
+                  <td className="py-2 px-3 text-left border-r border-gray-200">
+                    <button
+                      onClick={() => onSelectFaculty && onSelectFaculty(fac.fullName)}
+                      className="text-left font-bold text-blue-900 hover:text-blue-700 hover:underline cursor-pointer block leading-tight text-xs"
+                      title="Click to view individual card"
+                    >
+                      {fac.fullName}
+                    </button>
+                    {fac.shortName && (
+                      <span className="text-[10px] text-slate-500 font-mono">({fac.shortName})</span>
+                    )}
+                  </td>
+                  <td className="py-2 px-1.5 border-r border-gray-200 text-[11px] font-semibold text-slate-700">
+                    {fac.dept || '—'}
+                  </td>
+
+                  {periodSlots.map((slot) => {
+                    if (slot.type === 'break') {
+                      return (
+                        <td key={slot.id} className="py-1 px-1 border-r border-gray-200 bg-amber-50/50 text-amber-900/60 font-black text-[10px]">
+                          {slot.time.includes('01:15') ? 'LUNCH' : 'TEA'}
+                        </td>
+                      );
+                    }
+
+                    const items = sched[slot.time] || [];
+                    if (items.length === 0) {
+                      return (
+                        <td key={slot.id} className="py-1 px-1 border-r border-gray-200 text-slate-300 font-mono text-xs">
+                          —
+                        </td>
+                      );
+                    }
+
+                    return (
+                      <td 
+                        key={slot.id} 
+                        className="py-1 px-1 border-r border-gray-200 align-middle"
+                      >
+                        {items.map((item, iIdx) => {
+                          const style = getSubjectStyle(item.subject);
+                          return (
+                            <div
+                              key={iIdx}
+                              onClick={() => onSlotClick && onSlotClick({ ...item, day, slot: slot.time })}
+                              className={`p-1 rounded text-[10.5px] font-bold leading-tight cursor-pointer shadow-2xs border ${style.bg} ${style.text} ${style.border} hover:scale-[1.02] transition-transform`}
+                              title={`${item.subject} • ${item.branch}${item.room ? ` • Room ${item.room}` : ''}`}
+                            >
+                              <div className="font-black truncate text-[11px]">
+                                {item.branch}
+                              </div>
+                              <div className="truncate text-[10px] opacity-90">
+                                {item.subject}
+                              </div>
+                              {item.room && (
+                                <div className="text-[9px] font-mono opacity-80">
+                                  Rm: {item.room}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </td>
+                    );
+                  })}
+
+                  <td className="py-2 px-1.5 border-r border-gray-200 font-mono font-black text-xs text-center bg-blue-50/30">
+                    {isFreeToday ? (
+                      <span className="text-emerald-700 font-bold text-[10.5px]">Free</span>
+                    ) : (
+                      <span className="text-blue-900">{dayHours}h</span>
+                    )}
+                  </td>
+                  <td className="py-2 px-1.5 font-mono font-bold text-xs text-center text-slate-800 bg-emerald-50/30">
+                    {fac.totalLoad || 0}h
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+/**
  * Main IndividualView Component
  */
 export default function IndividualView({ timetableData, universityInfo, facultyList: propFacultyList, onSlotClick }) {
@@ -784,6 +1033,29 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
   // Faculty selection state ('ALL' or faculty fullName)
   const [selectedFaculty, setSelectedFaculty] = useState('ALL');
+
+  // Day tab filter state: 'ALL' (Full Week) or 'MON', 'TUE', 'WED', 'THU', 'FRI', ('SAT')
+  const [selectedDay, setSelectedDay] = useState('ALL');
+  const [dayViewMode, setDayViewMode] = useState('cards'); // 'cards' | 'matrix'
+
+  // Dynamic available days list
+  const availableDays = useMemo(() => {
+    const active = getActiveDays(timetableData);
+    const base = [
+      { id: 'ALL', label: 'Full Week', short: 'All' },
+      { id: 'MON', label: 'Monday', short: 'Mon' },
+      { id: 'TUE', label: 'Tuesday', short: 'Tue' },
+      { id: 'WED', label: 'Wednesday', short: 'Wed' },
+      { id: 'THU', label: 'Thursday', short: 'Thu' },
+      { id: 'FRI', label: 'Friday', short: 'Fri' },
+    ];
+    if (active.includes('SAT')) {
+      base.push({ id: 'SAT', label: 'Saturday', short: 'Sat' });
+    }
+    return base;
+  }, [timetableData]);
+
+  const activeDayObj = availableDays.find(d => d.id === selectedDay) || availableDays[0];
 
   // Print Target: 'individual' (A4 portrait, 2 per page) vs 'department' (1-Page landscape department timetable)
   const [printTarget, setPrintTarget] = useState('individual');
@@ -866,6 +1138,29 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
   return (
     <div className={`w-full max-w-[1750px] mx-auto px-3 sm:px-6 2xl:px-8 py-4 ${isDeptPrint ? 'dept-consolidated-print-mode' : 'individual-print-mode'}`}>
+      {/* Day-by-Day Tab Selector Subtab Bar */}
+      <div className="no-print flex justify-center mb-4">
+        <div className="inline-flex flex-wrap items-center justify-center p-1.5 bg-slate-200/90 rounded-2xl border-2 border-slate-700 shadow-sm gap-1 sm:gap-1.5">
+          {availableDays.map((d) => {
+            const isActive = selectedDay === d.id;
+            return (
+              <button
+                key={d.id}
+                onClick={() => setSelectedDay(d.id)}
+                className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 tracking-wide ${
+                  isActive
+                    ? 'bg-blue-700 text-white shadow-md scale-100 ring-2 ring-blue-900/40'
+                    : 'text-slate-700 hover:text-slate-900 hover:bg-white/80'
+                }`}
+              >
+                <Calendar className={`w-3.5 h-3.5 ${isActive ? 'text-blue-200' : 'text-slate-500'}`} />
+                <span>{d.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Department Filter & Faculty Selector Controls Bar */}
       <div className="no-print flex justify-center mb-6">
         <div className="flex flex-wrap items-center justify-center gap-3 bg-white p-3.5 rounded-xl border-2 border-slate-700 shadow-sm">
@@ -919,6 +1214,36 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             </select>
           </div>
 
+          {selectedDay !== 'ALL' && selectedFaculty === 'ALL' && (
+            <>
+              <span className="text-gray-300 hidden sm:inline">|</span>
+              <div className="flex items-center bg-gray-100 p-0.5 rounded-lg border border-gray-300">
+                <button
+                  onClick={() => setDayViewMode('cards')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    dayViewMode === 'cards'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                  <span>Cards</span>
+                </button>
+                <button
+                  onClick={() => setDayViewMode('matrix')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    dayViewMode === 'matrix'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  <Table className="w-3.5 h-3.5" />
+                  <span>Matrix Grid</span>
+                </button>
+              </div>
+            </>
+          )}
+
           <span className="text-gray-300 hidden sm:inline">|</span>
 
           {/* In-App Page Format & Orientation Toggle */}
@@ -938,7 +1263,11 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             title={`Print Faculty Timetables in ${getPrintFormat(printFormat).label}`}
           >
             <Printer className="w-3.5 h-3.5" />
-            <span>Print Faculty Timetables ({getPrintFormat(printFormat).shortLabel})</span>
+            <span>
+              {selectedDay !== 'ALL'
+                ? `Print ${activeDayObj.label} (${getPrintFormat(printFormat).shortLabel})`
+                : `Print Faculty Timetables (${getPrintFormat(printFormat).shortLabel})`}
+            </span>
           </button>
 
           {/* Dedicated Print Button for 1-Page Weekly Department Timetable */}
@@ -1193,7 +1522,33 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         </div>
       )}
 
-      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One) */}
+      {/* Day Overview Banner when a specific day is selected */}
+      {selectedDay !== 'ALL' && (
+        <div className="no-print mb-4 p-3 bg-blue-50/80 rounded-xl border border-blue-200 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="font-extrabold text-blue-900 uppercase font-mono tracking-wide">
+              Showing {activeDayObj.label} Timetables
+            </span>
+            <span className="text-slate-400">•</span>
+            <span className="text-slate-700">
+              Department: <strong className="text-slate-900">{selectedDept === 'ALL' ? 'All Departments' : selectedDept}</strong>
+            </span>
+            {selectedFaculty !== 'ALL' && (
+              <>
+                <span className="text-slate-400">•</span>
+                <span className="text-slate-700">
+                  Faculty: <strong className="text-slate-900">{selectedFaculty}</strong>
+                </span>
+              </>
+            )}
+          </div>
+          <div className="text-slate-600 font-mono text-[11px]">
+            {selectedFaculty === 'ALL' ? `${filteredFacultyList.length} faculty in view` : '1 faculty in view'}
+          </div>
+        </div>
+      )}
+
+      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One or Daily Matrix) */}
       {selectedFaculty !== 'ALL' ? (
         currentFacultyObj ? (
           <div className={printTarget === 'department' ? 'print:hidden' : ''}>
@@ -1204,6 +1559,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               onSlotClick={onSlotClick}
               showBreakdown={true}
               isMultiView={false}
+              selectedDay={selectedDay}
             />
           </div>
         ) : (
@@ -1211,6 +1567,16 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             No faculty found matching the selection.
           </div>
         )
+      ) : dayViewMode === 'matrix' && selectedDay !== 'ALL' ? (
+        <div className={printTarget === 'department' ? 'print:hidden' : ''}>
+          <DailyFacultyMatrix
+            day={selectedDay}
+            facultyList={filteredFacultyList}
+            timetableData={timetableData}
+            onSlotClick={onSlotClick}
+            onSelectFaculty={(name) => setSelectedFaculty(name)}
+          />
+        </div>
       ) : (
         <div className={`space-y-8 print:space-y-0.5 faculty-grid-container ${printTarget === 'department' ? 'print:hidden' : ''}`}>
           {filteredFacultyList.map((facObj, idx) => (
@@ -1224,6 +1590,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               isMultiView={true}
               index={idx + 1}
               totalCount={filteredFacultyList.length}
+              selectedDay={selectedDay}
             />
           ))}
         </div>

@@ -2018,19 +2018,24 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "DLD",
-            "faculty": "Ms. K Jhansi Rani, Ms. PR Sri Satya",
-            "rawFaculty": "KJR, PRSS",
+            "subject": "ESAM",
+            "faculty": "Dr. Rani Nanda, Mr. S Ashok",
+            "rawFaculty": "RN, SA",
             "room": "G-403",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. Rani Nanda, Mr. S Ashok",
-            "rawFaculty": "RN, SA",
-            "room": "G-403",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "LIBRARY /  COUNSELLING",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ],
@@ -2105,24 +2110,19 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. Ch Appala Naidu, Dr. Ch V Sreedhar",
-            "rawFaculty": "CHAN, CHVS",
+            "subject": "DLD",
+            "faculty": "Ms. K Jhansi Rani, Ms. PR Sri Satya",
+            "rawFaculty": "KJR, PRSS",
             "room": "G-403",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "LIBRARY /  COUNSELLING",
-            "faculty": "",
-            "room": "",
+            "subject": "CAL & LA",
+            "faculty": "Dr. Ch Appala Naidu, Dr. Ch V Sreedhar",
+            "rawFaculty": "CHAN, CHVS",
+            "room": "G-403",
             "isLab": false
           }
         ],
@@ -2177,20 +2177,20 @@
         ]
       },
       "WED": {
+        "09:00-10:00": [
+          {
+            "subject": "DLD",
+            "faculty": "Ms. K Jhansi Rani, Ms. PR Sri Satya",
+            "rawFaculty": "KJR, PRSS",
+            "room": "G-403",
+            "isLab": false
+          }
+        ],
         "10:00-11:00": [
           {
             "subject": "SUS. ENGG.",
             "faculty": "Dr. D Manasa, Dr. B Vidya",
             "rawFaculty": "DM, BV",
-            "room": "G-403",
-            "isLab": false
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "subject": "DLD",
-            "faculty": "Ms. K Jhansi Rani, Ms. PR Sri Satya",
-            "rawFaculty": "KJR, PRSS",
             "room": "G-403",
             "isLab": false
           }
@@ -2603,18 +2603,18 @@
       "THU": {
         "09:00-10:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya",
-            "rawFaculty": "BV",
+            "subject": "DLD",
+            "faculty": "Dr. M Neelima",
+            "rawFaculty": "MN",
             "room": "E-412",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "DLD",
-            "faculty": "Dr. M Neelima",
-            "rawFaculty": "MN",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya",
+            "rawFaculty": "BV",
             "room": "E-412",
             "isLab": false
           }
@@ -12483,7 +12483,7 @@
     },
     "Dr. Rani Nanda": {
       "MON": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "ECE-2",
             "subject": "ESAM",
@@ -12645,7 +12645,7 @@
     },
     "Mr. S Ashok": {
       "MON": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "ECE-2",
             "subject": "ESAM",
@@ -13025,7 +13025,7 @@
         ]
       },
       "THU": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "ECE-3",
             "subject": "SUS. ENGG.",
@@ -15850,7 +15850,7 @@
             "rawFaculty": "MN, VA"
           }
         ],
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "ECE-3",
             "subject": "DLD",
@@ -16179,16 +16179,6 @@
     },
     "Ms. K Jhansi Rani": {
       "MON": {
-        "11:15-12:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "DLD",
-            "room": "G-403",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KJR, PRSS"
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -16231,6 +16221,16 @@
         ]
       },
       "TUE": {
+        "11:15-12:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "DLD",
+            "room": "G-403",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KJR, PRSS"
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -16253,7 +16253,7 @@
         ]
       },
       "WED": {
-        "11:15-12:15": [
+        "09:00-10:00": [
           {
             "branch": "ECE-2",
             "subject": "DLD",
@@ -16320,7 +16320,8 @@
       }
     },
     "Ms. PR Sri Satya": {
-      "MON": {
+      "MON": {},
+      "TUE": {
         "11:15-12:15": [
           {
             "branch": "ECE-2",
@@ -16330,9 +16331,7 @@
             "isContinued": false,
             "rawFaculty": "KJR, PRSS"
           }
-        ]
-      },
-      "TUE": {
+        ],
         "09:00-10:00": [
           {
             "branch": "MECH",
@@ -16355,7 +16354,7 @@
         ]
       },
       "WED": {
-        "11:15-12:15": [
+        "09:00-10:00": [
           {
             "branch": "ECE-2",
             "subject": "DLD",
@@ -18987,7 +18986,7 @@
             "rawFaculty": "NGB, CHAN"
           }
         ],
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "ECE-2",
             "subject": "CAL & LA",
@@ -19139,7 +19138,7 @@
             "rawFaculty": "CHVS, SSAS"
           }
         ],
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "ECE-2",
             "subject": "CAL & LA",
@@ -24154,15 +24153,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -24178,6 +24168,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -24198,7 +24197,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 33,
@@ -29370,15 +29369,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -29394,6 +29384,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -29414,7 +29413,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 33,
@@ -47240,15 +47239,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47264,6 +47254,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47284,7 +47283,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr. KJR": {
       "sno": 32,
@@ -47300,15 +47299,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47324,6 +47314,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47344,7 +47343,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Dr.KJR": {
       "sno": 32,
@@ -47360,15 +47359,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47384,6 +47374,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47404,7 +47403,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mr. KJR": {
       "sno": 32,
@@ -47420,15 +47419,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47444,6 +47434,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47464,7 +47463,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Mrs. KJR": {
       "sno": 32,
@@ -47480,15 +47479,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47504,6 +47494,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47524,7 +47523,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. KJR": {
       "sno": 32,
@@ -47540,15 +47539,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47564,6 +47554,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47584,7 +47583,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "Ms. K Jhansi Rani": {
       "sno": 32,
@@ -47600,15 +47599,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-2",
-          "subject": "Digital Logic Design",
-          "code": "DLD",
-          "room": "G-403",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-2",
           "subject": "Digital Logic Design Lab",
           "code": "DLD LAB",
           "room": "A-406",
@@ -47624,6 +47614,15 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-2",
+          "subject": "Digital Logic Design",
+          "code": "DLD",
+          "room": "G-403",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
         },
         {
           "branch": "ECE-1",
@@ -47644,7 +47643,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-2 → Digital Logic Design Lab (DLD LAB) – 4 lab = 4 periods\nMECH → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design (DLD) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods"
     },
     "PRSS": {
       "sno": 33,
