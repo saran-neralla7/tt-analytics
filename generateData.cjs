@@ -147,18 +147,20 @@ if (sDeptSheet || sSummarySheet) {
       facultyList.push(facObj);
     }
   });
-} else if (s3Sheet) {
-  // Fallback to Sheet3 + Sheet2 calculation
+}
+
+// Augment with any faculty defined in Sheet3 that may not be in the summary sheet
+if (s3Sheet) {
   const s3Rows = XLSX.utils.sheet_to_json(s3Sheet);
   s3Rows.forEach(r => {
-    const sno = r['S.No'];
-    const fullName = (r.Faculty_Name || '').trim();
     const rawShort = (r.Name_short || '').trim();
     const clean = rawShort.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
-    const dept = (r.Department || '').trim();
-    const designation = (r.Designation || '').trim();
+    const fullName = (r.Faculty_Name || '').trim();
+    if (clean && fullName && !facultyByClean[clean] && !facultyByClean[clean.toUpperCase()]) {
+      const sno = r['S.No'] || facultyList.length + 1;
+      const dept = (r.Department || '').trim() || 'General';
+      const designation = (r.Designation || 'Assistant Professor').trim();
 
-    if (clean && fullName) {
       const facObj = {
         sno,
         fullName,
@@ -187,6 +189,9 @@ if (sDeptSheet || sSummarySheet) {
       facultyList.push(facObj);
     }
   });
+}
+
+if (!sDeptSheet && !sSummarySheet && s2Rows.length > 0) {
 
   // Calculate load from Sheet2 if summary sheet was absent
   s2Rows.forEach(row => {
@@ -325,8 +330,8 @@ function matchFacultyInText(text) {
     tokens.forEach(tok => {
       const cleanTok = tok.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)/i, '').replace(/[\.,]$/, '').trim();
       if (!cleanTok || nonFacultyWords.has(cleanTok.toUpperCase())) return;
-      if (facultyByClean[cleanTok]) {
-        matched.add(facultyByClean[cleanTok].fullName);
+      if (facultyByClean[cleanTok] || facultyByClean[cleanTok.toUpperCase()]) {
+        matched.add((facultyByClean[cleanTok] || facultyByClean[cleanTok.toUpperCase()]).fullName);
       }
     });
   });
@@ -379,7 +384,7 @@ function parseCellContent(val) {
     return [{ subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false }];
   }
   
-  const isLab = upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA');
+  const isLab = (upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA')) && !upper.includes('TUT');
   let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
 
   // Multi-subject parallel session (e.g. FDS / PCS \n KR / CHVVD \n G-405, G-406)
@@ -392,7 +397,7 @@ function parseCellContent(val) {
 
     if (subParts.length >= 2 && facParts.length >= 2) {
       return subParts.map((sub, i) => {
-        const isItemLab = sub.toUpperCase().includes('LAB') || sub.toUpperCase().includes('PRACTICAL') || sub.toUpperCase().includes('3DDA');
+        const isItemLab = (sub.toUpperCase().includes('LAB') || sub.toUpperCase().includes('PRACTICAL') || sub.toUpperCase().includes('3DDA')) && !sub.toUpperCase().includes('TUT');
         const facRaw = facParts[i] || '';
         const facResolved = resolveFacultyNames(facRaw);
         const room = roomParts[i] || roomParts[0] || '';
@@ -669,17 +674,17 @@ facultyList.forEach(fac => {
   for (const [day, daySlots] of Object.entries(sched)) {
     for (const [slot, items] of Object.entries(daySlots)) {
       items.forEach(it => {
-        const isLab = Boolean(it.isLab || (it.subject && it.subject.toLowerCase().includes('lab')));
         const isTut = Boolean(it.subject && (it.subject.toLowerCase().includes('tut') || it.subject.toLowerCase().includes('tutorial')));
-        if (isLab) {
-          schedLab += 1;
-        } else if (isTut) {
+        const isLab = !isTut && Boolean(it.isLab || (it.subject && it.subject.toLowerCase().includes('lab')));
+        if (isTut) {
           schedTut += 1;
+        } else if (isLab) {
+          schedLab += 1;
         } else {
           schedTheory += 1;
         }
 
-        const type = isLab ? 'lab' : (isTut ? 'tutorial' : 'theory');
+        const type = isTut ? 'tutorial' : (isLab ? 'lab' : 'theory');
         const key = `${it.branch}__${it.subject}__${type}`;
         if (!courseMap.has(key)) {
           courseMap.set(key, {
