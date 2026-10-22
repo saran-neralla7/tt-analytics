@@ -2183,8 +2183,8 @@
         "12:15-01:15": [
           {
             "subject": "CAL & LA Tut.",
-            "faculty": "Dr. Ch Appala Naidu, Dr. N Giribabu, Dr. A Suseelatha",
-            "rawFaculty": "CHAN, NGB , ASL",
+            "faculty": "Dr. Ch Appala Naidu, Dr. K L Sai Prasad, Dr. A Suseelatha",
+            "rawFaculty": "CHAN, KLSP, ASL",
             "room": "G-403",
             "isLab": false
           },
@@ -11635,6 +11635,3082 @@
       ]
     }
   },
+  "activitiesData": {
+    "categories": [
+      "Sports & Yoga",
+      "Counselling",
+      "Library",
+      "All Activities"
+    ],
+    "byActivity": {
+      "Sports & Yoga": {
+        "WED": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "CIVIL",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "Counselling": {
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "WED": {
+          "12:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-2",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "CSE-2",
+              "day": "WED",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {
+          "02:15-03:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "THU": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        }
+      },
+      "Library": {
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "WED": {
+          "12:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "TUE": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "THU": {
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        }
+      },
+      "All Activities": {
+        "WED": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-2",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "CSE-2",
+              "day": "WED",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "CIVIL",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ]
+        },
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      }
+    },
+    "byBranch": {
+      "CHEMICAL": {
+        "MON": {},
+        "TUE": {},
+        "WED": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {},
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "CHEMICAL",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "CIVIL": {
+        "MON": {},
+        "TUE": {},
+        "WED": {
+          "12:15-01:15": [
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CIVIL",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "CIVIL",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {}
+      },
+      "EEE": {
+        "MON": {},
+        "TUE": {
+          "02:15-03:15": [
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "EEE",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "EEE",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {}
+      },
+      "MECH": {
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {},
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        }
+      },
+      "MECH-ROBOTICS": {
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {},
+        "WED": {},
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY /  COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {}
+      },
+      "ECE-1": {
+        "MON": {},
+        "TUE": {
+          "03:15-04:15": [
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {},
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-1",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "ECE-2": {
+        "MON": {},
+        "TUE": {},
+        "WED": {
+          "12:15-01:15": [
+            {
+              "branch": "ECE-2",
+              "day": "WED",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {
+          "12:15-01:15": [
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "ECE-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "ECE-3": {
+        "MON": {},
+        "TUE": {
+          "03:15-04:15": [
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {},
+        "FRI": {
+          "12:15-01:15": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / LIBRARY",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": true
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "CSE-1": {
+        "MON": {},
+        "TUE": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "CSE-1",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ]
+        }
+      },
+      "CSE-2": {
+        "MON": {},
+        "TUE": {},
+        "WED": {
+          "02:15-03:15": [
+            {
+              "branch": "CSE-2",
+              "day": "WED",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "CSE(AI&ML)-1": {
+        "MON": {},
+        "TUE": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "WED": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "THU": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE(AI&ML)-1",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ]
+        },
+        "FRI": {}
+      },
+      "CSE(AI&ML)-2": {
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {},
+        "WED": {},
+        "THU": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ]
+        },
+        "FRI": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "FRI",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        }
+      },
+      "CSE (CS & DS)": {
+        "MON": {
+          "03:15-04:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "MON",
+              "slot": "03:15-04:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            }
+          ]
+        },
+        "TUE": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "YOGA / SPORTS",
+              "isSports": true,
+              "isCounselling": false,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "LIBRARY",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "02:15-03:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "02:15-03:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "WED": {},
+        "THU": {
+          "12:15-01:15": [
+            {
+              "branch": "CSE (CS & DS)",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ]
+        },
+        "FRI": {}
+      }
+    },
+    "masterSchedule": {
+      "MON": {
+        "03:15-04:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "MECH",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      "TUE": {
+        "12:15-01:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "EEE",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "EEE",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-3",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      "WED": {
+        "03:15-04:15": [
+          {
+            "branch": "CHEMICAL",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CIVIL",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-2",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE-2",
+            "day": "WED",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ]
+      },
+      "THU": {
+        "03:15-04:15": [
+          {
+            "branch": "CIVIL",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "EEE",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY /  COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-2",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ]
+      },
+      "FRI": {
+        "03:15-04:15": [
+          {
+            "branch": "CHEMICAL",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY /  COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "CHEMICAL",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-2",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE-1",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE-2",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ]
+      }
+    },
+    "branchStats": [
+      {
+        "sno": 1,
+        "branch": "CHEMICAL",
+        "sports": 2,
+        "counselling": 1,
+        "library": 1,
+        "total": 3,
+        "sessions": [
+          {
+            "branch": "CHEMICAL",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CHEMICAL",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY /  COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "CHEMICAL",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 2,
+        "branch": "CIVIL",
+        "sports": 2,
+        "counselling": 1,
+        "library": 1,
+        "total": 3,
+        "sessions": [
+          {
+            "branch": "CIVIL",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CIVIL",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "CIVIL",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 3,
+        "branch": "EEE",
+        "sports": 2,
+        "counselling": 1,
+        "library": 1,
+        "total": 3,
+        "sessions": [
+          {
+            "branch": "EEE",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "EEE",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "EEE",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 4,
+        "branch": "MECH",
+        "sports": 4,
+        "counselling": 2,
+        "library": 2,
+        "total": 6,
+        "sessions": [
+          {
+            "branch": "MECH",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "MECH",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          }
+        ]
+      },
+      {
+        "sno": 5,
+        "branch": "MECH-ROBOTICS",
+        "sports": 2,
+        "counselling": 1,
+        "library": 1,
+        "total": 3,
+        "sessions": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY /  COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 6,
+        "branch": "ECE-1",
+        "sports": 3,
+        "counselling": 1,
+        "library": 1,
+        "total": 4,
+        "sessions": [
+          {
+            "branch": "ECE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-1",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-1",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 7,
+        "branch": "ECE-2",
+        "sports": 2,
+        "counselling": 2,
+        "library": 0,
+        "total": 4,
+        "sessions": [
+          {
+            "branch": "ECE-2",
+            "day": "WED",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-2",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-2",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 8,
+        "branch": "ECE-3",
+        "sports": 3,
+        "counselling": 1,
+        "library": 1,
+        "total": 4,
+        "sessions": [
+          {
+            "branch": "ECE-3",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING / LIBRARY",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": true
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 9,
+        "branch": "CSE-1",
+        "sports": 2,
+        "counselling": 2,
+        "library": 1,
+        "total": 5,
+        "sessions": [
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "TUE",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-1",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ]
+      },
+      {
+        "sno": 10,
+        "branch": "CSE-2",
+        "sports": 2,
+        "counselling": 2,
+        "library": 1,
+        "total": 5,
+        "sessions": [
+          {
+            "branch": "CSE-2",
+            "day": "WED",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE-2",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 11,
+        "branch": "CSE(AI&ML)-1",
+        "sports": 2,
+        "counselling": 2,
+        "library": 1,
+        "total": 5,
+        "sessions": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-1",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ]
+      },
+      {
+        "sno": 12,
+        "branch": "CSE(AI&ML)-2",
+        "sports": 2,
+        "counselling": 1,
+        "library": 1,
+        "total": 4,
+        "sessions": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "FRI",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ]
+      },
+      {
+        "sno": 13,
+        "branch": "CSE (CS & DS)",
+        "sports": 3,
+        "counselling": 2,
+        "library": 1,
+        "total": 6,
+        "sessions": [
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "MON",
+            "slot": "03:15-04:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "YOGA / SPORTS",
+            "isSports": true,
+            "isCounselling": false,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "12:15-01:15",
+            "label": "LIBRARY",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "TUE",
+            "slot": "02:15-03:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "CSE (CS & DS)",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "totalSessions": 55,
+      "sportsSessions": 31,
+      "counsellingSessions": 19,
+      "librarySessions": 13,
+      "activeBranches": 13
+    }
+  },
   "masterFacultyTimetables": {
     "Faculty-2": {
       "MON": {},
@@ -18519,6 +21595,16 @@
             "isContinued": false,
             "rawFaculty": "NGB, CHAN, KLSP"
           }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "ECE-2",
+            "subject": "CAL & LA Tut.",
+            "room": "G-403",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHAN, KLSP, ASL"
+          }
         ]
       },
       "THU": {
@@ -18883,7 +21969,7 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHAN, NGB , ASL"
+            "rawFaculty": "CHAN, KLSP, ASL"
           }
         ]
       },
@@ -19167,7 +22253,7 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHAN, NGB , ASL"
+            "rawFaculty": "CHAN, KLSP, ASL"
           }
         ]
       },
@@ -19432,14 +22518,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "TPK, NGB"
-          },
-          {
-            "branch": "ECE-2",
-            "subject": "CAL & LA Tut.",
-            "room": "G-403",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHAN, NGB , ASL"
           }
         ]
       },
@@ -25575,8 +28653,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -25624,6 +28702,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -25642,7 +28729,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 48,
@@ -26139,8 +29226,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -26170,15 +29257,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -26206,7 +29284,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 55,
@@ -30923,8 +34001,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -30972,6 +34050,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -30990,7 +34077,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 48,
@@ -31487,8 +34574,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -31518,15 +34605,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -31554,7 +34632,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 55,
@@ -55811,8 +58889,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -55860,6 +58938,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -55878,7 +58965,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. KLSP": {
       "sno": 47,
@@ -55889,8 +58976,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -55938,6 +59025,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -55956,7 +59052,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.KLSP": {
       "sno": 47,
@@ -55967,8 +59063,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -56016,6 +59112,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -56034,7 +59139,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. KLSP": {
       "sno": 47,
@@ -56045,8 +59150,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -56094,6 +59199,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -56112,7 +59226,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. KLSP": {
       "sno": 47,
@@ -56123,8 +59237,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -56172,6 +59286,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -56190,7 +59313,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. KLSP": {
       "sno": 47,
@@ -56201,8 +59324,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -56250,6 +59373,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -56268,7 +59400,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. K L Sai Prasad": {
       "sno": 47,
@@ -56279,8 +59411,8 @@
       "designation": "Professor",
       "theoryLoad": 3,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 10,
+      "tutLoad": 8,
+      "totalLoad": 11,
       "assignedCourses": [
         {
           "branch": "ECE-3",
@@ -56328,6 +59460,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "ECE-2",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-403",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -56346,7 +59487,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nEEE → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "KVSS": {
       "sno": 48,
@@ -59759,8 +62900,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -59790,15 +62931,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -59826,7 +62958,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. NGB": {
       "sno": 54,
@@ -59837,8 +62969,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -59868,15 +63000,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -59904,7 +63027,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.NGB": {
       "sno": 54,
@@ -59915,8 +63038,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -59946,15 +63069,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -59982,7 +63096,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. NGB": {
       "sno": 54,
@@ -59993,8 +63107,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -60024,15 +63138,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -60060,7 +63165,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. NGB": {
       "sno": 54,
@@ -60071,8 +63176,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -60102,15 +63207,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -60138,7 +63234,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. NGB": {
       "sno": 54,
@@ -60149,8 +63245,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -60180,15 +63276,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -60216,7 +63303,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. N Giribabu": {
       "sno": 54,
@@ -60227,8 +63314,8 @@
       "designation": "Assistant Professor - SG",
       "theoryLoad": 6,
       "labLoad": 2,
-      "tutLoad": 5,
-      "totalLoad": 13,
+      "tutLoad": 4,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-2",
@@ -60258,15 +63345,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -60294,7 +63372,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-3 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "SAK": {
       "sno": 55,

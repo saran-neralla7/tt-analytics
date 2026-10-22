@@ -1162,12 +1162,131 @@ const labSheetsData = {
 
 console.log(`Dedicated lab rooms: ${Object.keys(roomLabs).length}, Consolidated course labs: ${Object.keys(consolidatedLabs).length}, Lab Summary items: ${labSummary.length}`);
 
+// 6. Parse and Structure Sports, Yoga, Counselling & Library Data directly from Timetable_Final
+const activityCategories = ['Sports & Yoga', 'Counselling', 'Library', 'All Activities'];
+const byActivity = {
+  'Sports & Yoga': {},
+  'Counselling': {},
+  'Library': {},
+  'All Activities': {}
+};
+
+const byBranchActivities = {};
+knownBranches.forEach(b => {
+  byBranchActivities[b] = {};
+  dayNames.forEach(d => byBranchActivities[b][d] = {});
+});
+
+const branchActivityStatsMap = {};
+knownBranches.forEach(b => {
+  branchActivityStatsMap[b] = {
+    branch: b,
+    sports: 0,
+    counselling: 0,
+    library: 0,
+    total: 0,
+    sessions: []
+  };
+});
+
+const masterActivitySchedule = {};
+dayNames.forEach(d => masterActivitySchedule[d] = {});
+
+let curActDay = '', curActBranch = '';
+for (let r = 1; r < rowsFinal.length; r++) {
+  const row = rowsFinal[r];
+  if (row[0] && row[0].trim()) curActDay = row[0].trim().toUpperCase();
+  if (row[1] && row[1].trim()) curActBranch = row[1].trim();
+  if (!dayNames.includes(curActDay) || !curActBranch || !knownBranches.includes(curActBranch)) continue;
+
+  slotCols.forEach(({ slot, c }) => {
+    const val = String(row[c] || '').trim();
+    if (!val || ['BREAK', 'LUNCH'].includes(val.toUpperCase())) return;
+    const upper = val.toUpperCase();
+
+    const isSports = upper.includes('SPORT') || upper.includes('YOGA');
+    const isCounselling = upper.includes('COUNSEL');
+    const isLibrary = upper.includes('LIBRARY');
+
+    if (isSports || isCounselling || isLibrary) {
+      const displayLabel = val.replace(/\r\n/g, ' / ').replace(/\n/g, ' / ');
+      const sessionObj = {
+        branch: curActBranch,
+        day: curActDay,
+        slot,
+        label: displayLabel,
+        isSports,
+        isCounselling,
+        isLibrary
+      };
+
+      if (!byBranchActivities[curActBranch][curActDay][slot]) {
+        byBranchActivities[curActBranch][curActDay][slot] = [];
+      }
+      byBranchActivities[curActBranch][curActDay][slot].push(sessionObj);
+
+      if (!masterActivitySchedule[curActDay][slot]) {
+        masterActivitySchedule[curActDay][slot] = [];
+      }
+      masterActivitySchedule[curActDay][slot].push(sessionObj);
+
+      if (isSports) {
+        if (!byActivity['Sports & Yoga'][curActDay]) byActivity['Sports & Yoga'][curActDay] = {};
+        if (!byActivity['Sports & Yoga'][curActDay][slot]) byActivity['Sports & Yoga'][curActDay][slot] = [];
+        byActivity['Sports & Yoga'][curActDay][slot].push(sessionObj);
+        branchActivityStatsMap[curActBranch].sports += 1;
+      }
+      if (isCounselling) {
+        if (!byActivity['Counselling'][curActDay]) byActivity['Counselling'][curActDay] = {};
+        if (!byActivity['Counselling'][curActDay][slot]) byActivity['Counselling'][curActDay][slot] = [];
+        byActivity['Counselling'][curActDay][slot].push(sessionObj);
+        branchActivityStatsMap[curActBranch].counselling += 1;
+      }
+      if (isLibrary) {
+        if (!byActivity['Library'][curActDay]) byActivity['Library'][curActDay] = {};
+        if (!byActivity['Library'][curActDay][slot]) byActivity['Library'][curActDay][slot] = [];
+        byActivity['Library'][curActDay][slot].push(sessionObj);
+        branchActivityStatsMap[curActBranch].library += 1;
+      }
+
+      if (!byActivity['All Activities'][curActDay]) byActivity['All Activities'][curActDay] = {};
+      if (!byActivity['All Activities'][curActDay][slot]) byActivity['All Activities'][curActDay][slot] = [];
+      byActivity['All Activities'][curActDay][slot].push(sessionObj);
+
+      branchActivityStatsMap[curActBranch].total += 1;
+      branchActivityStatsMap[curActBranch].sessions.push(sessionObj);
+    }
+  });
+}
+
+const branchActivityStats = knownBranches.map((b, idx) => ({
+  sno: idx + 1,
+  ...branchActivityStatsMap[b]
+}));
+
+const activitiesData = {
+  categories: activityCategories,
+  byActivity,
+  byBranch: byBranchActivities,
+  masterSchedule: masterActivitySchedule,
+  branchStats: branchActivityStats,
+  totals: {
+    totalSessions: branchActivityStats.reduce((sum, b) => sum + b.total, 0),
+    sportsSessions: branchActivityStats.reduce((sum, b) => sum + b.sports, 0),
+    counsellingSessions: branchActivityStats.reduce((sum, b) => sum + b.counselling, 0),
+    librarySessions: branchActivityStats.reduce((sum, b) => sum + b.library, 0),
+    activeBranches: branchActivityStats.filter(b => b.total > 0).length
+  }
+};
+console.log(`Sports, Yoga & Counselling: ${activitiesData.totals.totalSessions} sessions across ${activitiesData.totals.activeBranches} branches`);
+
 // Write output (only counting faculty with assigned workload in facultyList)
 const output = {
   timetableData,
   branchLegends,
   classTeachers,
   labSheetsData,
+  activitiesData,
   masterFacultyTimetables,
   facultyList: activeFacultyList,
   allFacultyList: facultyList,

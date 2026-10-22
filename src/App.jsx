@@ -6,6 +6,7 @@ import DepartmentView from './components/DepartmentView';
 import MasterView from './components/MasterView';
 import IndividualView from './components/IndividualView';
 import LabView from './components/LabView';
+import SportsActivityView from './components/SportsActivityView';
 import RoomsView from './components/RoomsView';
 import FacultyWorkloadView from './components/FacultyWorkloadView';
 import SlotDetailModal from './components/SlotDetailModal';
@@ -21,6 +22,7 @@ export default function App() {
   const [timetableData] = useState(initialData.timetableData || {});
   const [branchLegends] = useState(initialData.branchLegends || {});
   const [labSheetsData] = useState(initialData.labSheetsData || {});
+  const [activitiesData] = useState(initialData.activitiesData || {});
   const [facultyList] = useState(initialData.facultyList || []);
   const syncStatus = 'uploaded';
   const activeFileName = '1st Sem TIME TABLE 2026-2027_1.1.xlsx';
@@ -99,6 +101,17 @@ export default function App() {
             labSheetsData={labSheetsData}
             universityInfo={universityInfo}
             onSlotClick={handleSlotClick}
+            onNavigateToSports={() => setActiveTab('sports')}
+          />
+        )}
+
+        {activeTab === 'sports' && (
+          <SportsActivityView
+            timetableData={timetableData}
+            activitiesData={activitiesData}
+            universityInfo={universityInfo}
+            onSlotClick={handleSlotClick}
+            onNavigateToLab={() => setActiveTab('lab')}
           />
         )}
 

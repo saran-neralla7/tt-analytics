@@ -3,7 +3,7 @@ import { days, periodSlots } from '../data/mockData';
 import { FlaskConical, Clock, Layers, Users, Building, Table, BookOpen, Filter, FileSpreadsheet, Search } from 'lucide-react';
 import initialData from '../data/initialData.json';
 
-export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick }) {
+export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick, onNavigateToSports }) {
   // 1. Available Lab Data from initialData / props
   const consolidatedLabs = useMemo(() => {
     return labSheetsData.consolidatedLabs || initialData.labSheetsData?.consolidatedLabs || {};
@@ -193,6 +193,16 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
           >
             <FileSpreadsheet className="w-4 h-4" /> Lab Sheets Summary
           </button>
+
+          {onNavigateToSports && (
+            <button
+              onClick={onNavigateToSports}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-300 cursor-pointer shadow-xs active:scale-95"
+              title="View Sports, Yoga & Counselling Timetable"
+            >
+              <span>🏃</span> Sports & Counselling →
+            </button>
+          )}
         </div>
       </div>
 
