@@ -81,8 +81,8 @@
         "11:15-12:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
-            "rawFaculty": "PBSKR, VVLUR",
+            "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
+            "rawFaculty": "PBSKR, NVL",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -90,8 +90,8 @@
         "12:15-01:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
-            "rawFaculty": "PBSKR, VVLUR",
+            "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
+            "rawFaculty": "PBSKR, NVL",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -156,7 +156,7 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "COUNSELLING / LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -330,8 +330,8 @@
         "02:15-03:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
-            "rawFaculty": "NVL, IRS",
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
+            "rawFaculty": "NVL, BMF",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -339,8 +339,8 @@
         "03:15-04:15": [
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
-            "rawFaculty": "NVL, IRS",
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
+            "rawFaculty": "NVL, BMF",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -504,12 +504,6 @@
           }
         ],
         "03:15-04:15": [
-          {
-            "subject": "LIBRARY /  COUNSELLING",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
           {
             "subject": "YOGA / SPORTS",
             "faculty": "",
@@ -824,12 +818,6 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "COUNSELLING / LIBRARY",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
             "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
@@ -906,8 +894,8 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
-            "rawFaculty": "JRR, VVLUR, BMF",
+            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
+            "rawFaculty": "JRR, VVLUR, IRS",
             "room": "COMP. LAB-4",
             "isLab": true
           }
@@ -923,8 +911,8 @@
           },
           {
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
-            "rawFaculty": "JRR, VVLUR, BMF",
+            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
+            "rawFaculty": "JRR, VVLUR, IRS",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true
@@ -1031,6 +1019,20 @@
             "faculty": "Mr. CH VVD Prasad, Dr. Bh Padma",
             "rawFaculty": "CHVVDP, BHP",
             "room": "G-404",
+            "isLab": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
             "isLab": false
           }
         ]
@@ -1170,8 +1172,8 @@
           },
           {
             "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. J RajaRatnam, Dr. I Rajasekhar, Dr. BM Florence",
-            "rawFaculty": "JRR, IRS, BMF",
+            "faculty": "Dr. J RajaRatnam, Dr. I Rajasekhar, Dr. N Vijaya Lakshmi",
+            "rawFaculty": "JRR, IRS, NVL",
             "room": "G-404",
             "isLab": false
           }
@@ -1321,12 +1323,6 @@
         "03:15-04:15": [
           {
             "subject": "YOGA / SPORTS",
-            "faculty": "",
-            "room": "",
-            "isLab": false
-          },
-          {
-            "subject": "COUNSELLING / LIBRARY",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -1982,7 +1978,7 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "COUNSELLING / LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -2536,7 +2532,7 @@
             "isLab": false
           },
           {
-            "subject": "COUNSELLING / LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -2894,7 +2890,7 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -3148,7 +3144,7 @@
             "isLab": false
           },
           {
-            "subject": "YOGA / SPORTS",
+            "subject": "COUNSELLING",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -3409,7 +3405,7 @@
             "isLab": false
           },
           {
-            "subject": "LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -3668,7 +3664,16 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "LIBRARY",
+            "subject": "ENV. STD.",
+            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
+            "rawFaculty": "GS, VBR",
+            "room": "G-302",
+            "isLab": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -3677,15 +3682,6 @@
             "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
-            "isLab": false
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "subject": "ENV. STD.",
-            "faculty": "Mrs. G Sravani, Mr. V Bhaskar Rao",
-            "rawFaculty": "GS, VBR",
-            "room": "G-302",
             "isLab": false
           }
         ]
@@ -3887,7 +3883,13 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "COUNSELLING",
+            "subject": "YOGA / SPORTS",
+            "faculty": "",
+            "room": "",
+            "isLab": false
+          },
+          {
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -3905,8 +3907,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad",
-            "rawFaculty": "SKS, ADP",
+            "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
+            "rawFaculty": "KS, ADP",
             "room": "COMP. LAB-3",
             "isLab": true
           }
@@ -3922,8 +3924,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad",
-            "rawFaculty": "SKS, ADP",
+            "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
+            "rawFaculty": "KS, ADP",
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
@@ -4007,8 +4009,8 @@
         "02:15-03:15": [
           {
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
-            "rawFaculty": "VVVSN, PVR",
+            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
+            "rawFaculty": "VVVSN, PVR, RP",
             "room": "PHY LAB",
             "isLab": true
           },
@@ -4023,8 +4025,8 @@
         "03:15-04:15": [
           {
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
-            "rawFaculty": "VVVSN, PVR",
+            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
+            "rawFaculty": "VVVSN, PVR, RP",
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true
@@ -4068,8 +4070,8 @@
           },
           {
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
-            "rawFaculty": "BN, CHSL",
+            "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
+            "rawFaculty": "BN, PSSA, CHSL",
             "room": "PHY LAB",
             "isLab": true
           }
@@ -4085,8 +4087,8 @@
           },
           {
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
-            "rawFaculty": "BN, CHSL",
+            "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
+            "rawFaculty": "BN, PSSA, CHSL",
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true
@@ -4225,7 +4227,7 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "LIBRARY",
+            "subject": "YOGA / SPORTS",
             "faculty": "",
             "room": "",
             "isLab": false
@@ -4406,14 +4408,14 @@
             "subject": "PCS LAB",
             "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
             "rawFaculty": "CHVVD, MBS, ADP",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true
           },
           {
             "subject": "AITA LAB",
             "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
             "rawFaculty": "MVPL, TAJ, GSK",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true
           }
         ],
@@ -4422,7 +4424,7 @@
             "subject": "PCS LAB",
             "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
             "rawFaculty": "CHVVD, MBS, ADP",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true
           },
@@ -4430,7 +4432,7 @@
             "subject": "AITA LAB",
             "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
             "rawFaculty": "MVPL, TAJ, GSK",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
           }
@@ -6379,8 +6381,8 @@
               "raw": "CIVIL / ESS. ENG. LAB",
               "branch": "CIVIL",
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
-              "facultyShort": "NVL, IRS"
+              "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
+              "facultyShort": "NVL, BMF"
             },
             "11:15-01:15": {
               "raw": "ECE-1 / ESS. ENG. LAB",
@@ -6393,8 +6395,8 @@
               "raw": "MECH / ESS. ENG. LAB",
               "branch": "MECH",
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
-              "facultyShort": "JRR, VVLUR, BMF"
+              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
+              "facultyShort": "JRR, VVLUR, IRS"
             }
           },
           "TUE": {
@@ -6402,8 +6404,8 @@
               "raw": "CHEMICAL / ESS. ENG. LAB",
               "branch": "CHEMICAL",
               "subject": "ESS. ENG. LAB",
-              "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
-              "facultyShort": "PBSKR, VVLUR"
+              "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
+              "facultyShort": "PBSKR, NVL"
             },
             "02:15-04:15": {
               "raw": "ECE-2 / ESS. ENG. LAB",
@@ -6543,11 +6545,11 @@
           },
           "THU": {
             "09:00-11:00": {
-              "raw": "CSE (CS & DS) / AITA LAB",
+              "raw": "CSE (CS & DS) / PCS LAB",
               "branch": "CSE (CS & DS)",
-              "subject": "AITA LAB",
-              "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
-              "facultyShort": "MVPL, TAJ, GSK"
+              "subject": "PCS LAB",
+              "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
+              "facultyShort": "CHVVD, MBS, ADP"
             },
             "02:15-04:15": {
               "raw": "CSE-1 / AITA LAB",
@@ -6591,6 +6593,11 @@
             "sno": 2,
             "shortName": "PPSTC LAB",
             "fullName": "Programming for Problem solving through C lab"
+          },
+          {
+            "sno": 3,
+            "shortName": "PCS LAB",
+            "fullName": "Principles of Cyber Security Lab"
           }
         ]
       },
@@ -6791,8 +6798,8 @@
               "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
               "branch": "CSE(AI&ML)-2",
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad",
-              "facultyShort": "SKS, ADP"
+              "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
+              "facultyShort": "KS, ADP"
             },
             "11:15-01:15": {
               "raw": "EEE / AITA LAB",
@@ -6827,11 +6834,11 @@
           },
           "THU": {
             "09:00-11:00": {
-              "raw": "CSE (CS & DS) / PCS LAB",
+              "raw": "CSE (CS & DS) / AITA LAB",
               "branch": "CSE (CS & DS)",
-              "subject": "PCS LAB",
-              "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
-              "facultyShort": "CHVVD, MBS, ADP"
+              "subject": "AITA LAB",
+              "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
+              "facultyShort": "MVPL, TAJ, GSK"
             },
             "02:15-04:15": {
               "raw": "CSE-1 / FWD LAB",
@@ -6885,21 +6892,16 @@
           },
           {
             "sno": 3,
-            "shortName": "PCS LAB",
-            "fullName": "Principles of Cyber Security Lab"
-          },
-          {
-            "sno": 4,
             "shortName": "FWD LAB",
             "fullName": "Fundamentals of Web Designing Lab"
           },
           {
-            "sno": 5,
+            "sno": 4,
             "shortName": "FAI & ML LAB",
             "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
           },
           {
-            "sno": 6,
+            "sno": 5,
             "shortName": "PPSTC LAB",
             "fullName": "Programming for Problem solving through C lab"
           }
@@ -6944,8 +6946,8 @@
               "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
               "branch": "CSE(AI&ML)-2",
               "subject": "ENGG. PHY. LAB",
-              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
-              "facultyShort": "VVVSN, PVR"
+              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
+              "facultyShort": "VVVSN, PVR, RP"
             }
           },
           "THU": {
@@ -6967,8 +6969,8 @@
               "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
               "branch": "CSE(AI&ML)-2",
               "subject": "ENGG. PHY. LAB",
-              "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
-              "facultyShort": "BN, CHSL"
+              "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
+              "facultyShort": "BN, PSSA, CHSL"
             }
           },
           "FRI": {
@@ -7537,8 +7539,8 @@
             {
               "branch": "CIVIL",
               "room": "COMP. LAB-4",
-              "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
-              "facultyShort": "NVL, IRS",
+              "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
+              "facultyShort": "NVL, BMF",
               "raw": "CIVIL/COMP. LAB-4"
             }
           ],
@@ -7555,8 +7557,8 @@
             {
               "branch": "MECH",
               "room": "COMP. LAB-4",
-              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
-              "facultyShort": "JRR, VVLUR, BMF",
+              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
+              "facultyShort": "JRR, VVLUR, IRS",
               "raw": "MECH/COMP. LAB-4"
             }
           ]
@@ -7566,8 +7568,8 @@
             {
               "branch": "CHEMICAL",
               "room": "COMP. LAB-4",
-              "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
-              "facultyShort": "PBSKR, VVLUR",
+              "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
+              "facultyShort": "PBSKR, NVL",
               "raw": "CHEMICAL/COMP. LAB-4"
             }
           ],
@@ -7762,10 +7764,10 @@
           "09:00-11:00": [
             {
               "branch": "CSE (CS & DS)",
-              "room": "COMP. LAB-2",
+              "room": "COMP. LAB-3",
               "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
               "facultyShort": "MVPL, TAJ, GSK",
-              "raw": "CSE (CS & DS)/COMP. LAB-2"
+              "raw": "CSE (CS & DS)/COMP. LAB-3"
             }
           ],
           "02:15-04:15": [
@@ -8115,8 +8117,8 @@
             {
               "branch": "CSE(AI&ML)-2",
               "room": "PHY LAB",
-              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
-              "facultyShort": "VVVSN, PVR",
+              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
+              "facultyShort": "VVVSN, PVR, RP",
               "raw": "CSE(AI&ML)-2/PHY LAB"
             }
           ]
@@ -8144,8 +8146,8 @@
             {
               "branch": "CSE(AI&ML)-2",
               "room": "PHY LAB",
-              "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
-              "facultyShort": "BN, CHSL",
+              "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
+              "facultyShort": "BN, PSSA, CHSL",
               "raw": "CSE(AI&ML)-2/PHY LAB"
             }
           ]
@@ -8196,10 +8198,10 @@
           "09:00-11:00": [
             {
               "branch": "CSE (CS & DS)",
-              "room": "COMP. LAB-3",
+              "room": "COMP. LAB-2",
               "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
               "facultyShort": "CHVVD, MBS, ADP",
-              "raw": "CSE (CS & DS)/COMP. LAB-3"
+              "raw": "CSE (CS & DS)/COMP. LAB-2"
             }
           ]
         },
@@ -8344,8 +8346,8 @@
             {
               "branch": "CSE(AI&ML)-2",
               "room": "COMP. LAB-3",
-              "faculty": "Mr. A Dhanunjaya Prasad",
-              "facultyShort": "SKS, ADP",
+              "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
+              "facultyShort": "KS, ADP",
               "raw": "CSE(AI&ML)-2/COMP. LAB-3"
             }
           ]
@@ -8681,9 +8683,9 @@
           "11:15-01:15": [
             {
               "subject": "ESS. ENG. LAB",
-              "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
+              "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
               "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nPBSKR, VVLUR\nCOMP. LAB-4"
+              "raw": "ESS. ENG. LAB\nPBSKR, NVL\nCOMP. LAB-4"
             }
           ]
         },
@@ -8722,9 +8724,9 @@
           "02:15-04:15": [
             {
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
+              "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
               "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nNVL, IRS\nCOMP. LAB-4"
+              "raw": "ESS. ENG. LAB\nNVL, BMF\nCOMP. LAB-4"
             }
           ]
         },
@@ -8833,9 +8835,9 @@
             },
             {
               "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
+              "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
               "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nJRR, VVLUR, BMF\nCOMP. LAB-4"
+              "raw": "ESS. ENG. LAB\nJRR, VVLUR, IRS\nCOMP. LAB-4"
             }
           ]
         },
@@ -9488,9 +9490,9 @@
             },
             {
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad",
+              "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
               "room": "COMP. LAB-3",
-              "raw": "FAI & ML LAB\nSKS, ADP\nCOMP. LAB-3"
+              "raw": "FAI & ML LAB\nKS, ADP\nCOMP. LAB-3"
             }
           ],
           "02:15-04:15": [
@@ -9506,9 +9508,9 @@
           "02:15-04:15": [
             {
               "subject": "ENGG. PHY. LAB",
-              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
+              "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
               "room": "PHY LAB",
-              "raw": "ENGG. PHY. LAB\nVVVSN, PVR\nPHY LAB"
+              "raw": "ENGG. PHY. LAB\nVVVSN, PVR, RP\nPHY LAB"
             },
             {
               "subject": "PPSTC LAB",
@@ -9528,9 +9530,9 @@
             },
             {
               "subject": "ENGG. PHY. LAB",
-              "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
+              "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
               "room": "PHY LAB",
-              "raw": "ENGG. PHY. LAB\nBN, CHSL\nPHY LAB"
+              "raw": "ENGG. PHY. LAB\nBN, PSSA, CHSL\nPHY LAB"
             }
           ]
         },
@@ -9574,14 +9576,14 @@
             {
               "subject": "PCS LAB",
               "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
-              "room": "COMP. LAB-3",
-              "raw": "PCS LAB\nCHVVD, MBS, ADP\nCOMP. LAB-3"
+              "room": "COMP. LAB-2",
+              "raw": "PCS LAB\nCHVVD, MBS, ADP\nCOMP. LAB-2"
             },
             {
               "subject": "AITA LAB",
               "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
-              "room": "COMP. LAB-2",
-              "raw": "AITA LAB\nMVPL, TAJ, GSK\nCOMP. LAB-2"
+              "room": "COMP. LAB-3",
+              "raw": "AITA LAB\nMVPL, TAJ, GSK\nCOMP. LAB-3"
             }
           ],
           "02:15-04:15": [
@@ -10414,8 +10416,8 @@
             "raw": "CIVIL / ESS. ENG. LAB",
             "branch": "CIVIL",
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. N Vijaya Lakshmi, Dr. I Rajasekhar",
-            "facultyShort": "NVL, IRS"
+            "faculty": "Dr. N Vijaya Lakshmi, Dr. BM Florence",
+            "facultyShort": "NVL, BMF"
           },
           "11:15-01:15": {
             "raw": "ECE-1 / ESS. ENG. LAB",
@@ -10428,8 +10430,8 @@
             "raw": "MECH / ESS. ENG. LAB",
             "branch": "MECH",
             "subject": "ESS. ENG. LAB",
-            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. BM Florence",
-            "facultyShort": "JRR, VVLUR, BMF"
+            "faculty": "Dr. J RajaRatnam, Dr. VVL Usha Ramani, Dr. I Rajasekhar",
+            "facultyShort": "JRR, VVLUR, IRS"
           }
         },
         "TUE": {
@@ -10437,8 +10439,8 @@
             "raw": "CHEMICAL / ESS. ENG. LAB",
             "branch": "CHEMICAL",
             "subject": "ESS. ENG. LAB",
-            "faculty": "Mr. PBS Krishnamuraju, Dr. VVL Usha Ramani",
-            "facultyShort": "PBSKR, VVLUR"
+            "faculty": "Mr. PBS Krishnamuraju, Dr. N Vijaya Lakshmi",
+            "facultyShort": "PBSKR, NVL"
           },
           "02:15-04:15": {
             "raw": "ECE-2 / ESS. ENG. LAB",
@@ -10578,11 +10580,11 @@
         },
         "THU": {
           "09:00-11:00": {
-            "raw": "CSE (CS & DS) / AITA LAB",
+            "raw": "CSE (CS & DS) / PCS LAB",
             "branch": "CSE (CS & DS)",
-            "subject": "AITA LAB",
-            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
-            "facultyShort": "MVPL, TAJ, GSK"
+            "subject": "PCS LAB",
+            "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
+            "facultyShort": "CHVVD, MBS, ADP"
           },
           "02:15-04:15": {
             "raw": "CSE-1 / AITA LAB",
@@ -10626,6 +10628,11 @@
           "sno": 2,
           "shortName": "PPSTC LAB",
           "fullName": "Programming for Problem solving through C lab"
+        },
+        {
+          "sno": 3,
+          "shortName": "PCS LAB",
+          "fullName": "Principles of Cyber Security Lab"
         }
       ]
     },
@@ -10826,8 +10833,8 @@
             "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad",
-            "facultyShort": "SKS, ADP"
+            "faculty": "Ms. K Swathi, Mr. A Dhanunjaya Prasad",
+            "facultyShort": "KS, ADP"
           },
           "11:15-01:15": {
             "raw": "EEE / AITA LAB",
@@ -10862,11 +10869,11 @@
         },
         "THU": {
           "09:00-11:00": {
-            "raw": "CSE (CS & DS) / PCS LAB",
+            "raw": "CSE (CS & DS) / AITA LAB",
             "branch": "CSE (CS & DS)",
-            "subject": "PCS LAB",
-            "faculty": "Mr. CH VVD Prasad, Dr. M Bhanu Sridhar, Mr. A Dhanunjaya Prasad",
-            "facultyShort": "CHVVD, MBS, ADP"
+            "subject": "AITA LAB",
+            "faculty": "Dr. MV Pankaj Lahari, Ms. Taj, Dr. G Santosh Kumar",
+            "facultyShort": "MVPL, TAJ, GSK"
           },
           "02:15-04:15": {
             "raw": "CSE-1 / FWD LAB",
@@ -10920,21 +10927,16 @@
         },
         {
           "sno": 3,
-          "shortName": "PCS LAB",
-          "fullName": "Principles of Cyber Security Lab"
-        },
-        {
-          "sno": 4,
           "shortName": "FWD LAB",
           "fullName": "Fundamentals of Web Designing Lab"
         },
         {
-          "sno": 5,
+          "sno": 4,
           "shortName": "FAI & ML LAB",
           "fullName": "Foundations of Artificial Intelligence & Machine Learning Lab"
         },
         {
-          "sno": 6,
+          "sno": 5,
           "shortName": "PPSTC LAB",
           "fullName": "Programming for Problem solving through C lab"
         }
@@ -10979,8 +10981,8 @@
             "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari",
-            "facultyShort": "VVVSN, PVR"
+            "faculty": "Mr. VVV Satyanarayana, Dr. PV Rajeswari, Dr. R Praveena",
+            "facultyShort": "VVVSN, PVR, RP"
           }
         },
         "THU": {
@@ -11002,8 +11004,8 @@
             "raw": "CSE(AI&ML)-2 / ENGG. PHY. LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "ENGG. PHY. LAB",
-            "faculty": "Dr. B Nagarjun, Dr. Ch S Lakshmi",
-            "facultyShort": "BN, CHSL"
+            "faculty": "Dr. B Nagarjun, Mr. PSS Appalacharyulu, Dr. Ch S Lakshmi",
+            "facultyShort": "BN, PSSA, CHSL"
           }
         },
         "FRI": {
@@ -13131,7 +13133,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -13141,7 +13143,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -13389,7 +13391,7 @@
             "rawFaculty": "PM, VBR"
           }
         ],
-        "03:15-04:15": [
+        "02:15-03:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "ENV. STD.",
@@ -13521,7 +13523,7 @@
             "rawFaculty": "KR, NVSK, GS"
           }
         ],
-        "03:15-04:15": [
+        "02:15-03:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "ENV. STD.",
@@ -14153,7 +14155,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "SKS, ADP"
+            "rawFaculty": "KS, ADP"
           }
         ],
         "10:00-11:00": [
@@ -14163,7 +14165,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "SKS, ADP"
+            "rawFaculty": "KS, ADP"
           }
         ]
       },
@@ -14194,7 +14196,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -14204,7 +14206,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -15166,6 +15168,26 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "KS, SLA"
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "KS, ADP"
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "KS, ADP"
           }
         ]
       },
@@ -16795,7 +16817,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -16805,7 +16827,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -16836,24 +16858,24 @@
     },
     "Dr. BM Florence": {
       "MON": {
-        "09:00-10:00": [
+        "02:15-03:15": [
           {
-            "branch": "MECH",
+            "branch": "CIVIL",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "NVL, BMF"
           }
         ],
-        "10:00-11:00": [
+        "03:15-04:15": [
           {
-            "branch": "MECH",
+            "branch": "CIVIL",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "NVL, BMF"
           }
         ]
       },
@@ -16940,16 +16962,6 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "BMF, NVL, CHA"
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "MECH",
-            "subject": "ESS. ENG. Tut.",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "JRR, IRS, BMF"
           }
         ]
       },
@@ -17130,24 +17142,24 @@
     },
     "Dr. I Rajasekhar": {
       "MON": {
-        "02:15-03:15": [
+        "09:00-10:00": [
           {
-            "branch": "CIVIL",
+            "branch": "MECH",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "NVL, IRS"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ],
-        "03:15-04:15": [
+        "10:00-11:00": [
           {
-            "branch": "CIVIL",
+            "branch": "MECH",
             "subject": "ESS. ENG. LAB",
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "NVL, IRS"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ]
       },
@@ -17243,7 +17255,7 @@
             "room": "G-404",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "JRR, IRS, BMF"
+            "rawFaculty": "JRR, IRS, NVL"
           }
         ]
       },
@@ -17289,7 +17301,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ],
         "10:00-11:00": [
@@ -17299,7 +17311,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ]
       },
@@ -17395,7 +17407,7 @@
             "room": "G-404",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "JRR, IRS, BMF"
+            "rawFaculty": "JRR, IRS, NVL"
           }
         ]
       },
@@ -17421,7 +17433,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "NVL, IRS"
+            "rawFaculty": "NVL, BMF"
           }
         ],
         "03:15-04:15": [
@@ -17431,7 +17443,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "NVL, IRS"
+            "rawFaculty": "NVL, BMF"
           }
         ],
         "11:15-12:15": [
@@ -17456,6 +17468,26 @@
         ]
       },
       "TUE": {
+        "11:15-12:15": [
+          {
+            "branch": "CHEMICAL",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "PBSKR, NVL"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CHEMICAL",
+            "subject": "ESS. ENG. LAB",
+            "room": "COMP. LAB-4",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "PBSKR, NVL"
+          }
+        ],
         "03:15-04:15": [
           {
             "branch": "EEE",
@@ -17508,6 +17540,16 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "BMF, NVL, CHA"
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "MECH",
+            "subject": "ESS. ENG. Tut.",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "JRR, IRS, NVL"
           }
         ]
       },
@@ -17563,7 +17605,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ],
         "10:00-11:00": [
@@ -17573,32 +17615,11 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "JRR, VVLUR, BMF"
+            "rawFaculty": "JRR, VVLUR, IRS"
           }
         ]
       },
-      "TUE": {
-        "11:15-12:15": [
-          {
-            "branch": "CHEMICAL",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "PBSKR, VVLUR"
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CHEMICAL",
-            "subject": "ESS. ENG. LAB",
-            "room": "COMP. LAB-4",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "PBSKR, VVLUR"
-          }
-        ]
-      },
+      "TUE": {},
       "WED": {
         "09:00-10:00": [
           {
@@ -17716,7 +17737,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "PBSKR, VVLUR"
+            "rawFaculty": "PBSKR, NVL"
           }
         ],
         "12:15-01:15": [
@@ -17726,7 +17747,7 @@
             "room": "COMP. LAB-4",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "PBSKR, VVLUR"
+            "rawFaculty": "PBSKR, NVL"
           }
         ],
         "03:15-04:15": [
@@ -17878,7 +17899,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -17888,7 +17909,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -18070,7 +18091,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -18080,7 +18101,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "PCS LAB",
-            "room": "COMP. LAB-3",
+            "room": "COMP. LAB-2",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "CHVVD, MBS, ADP"
@@ -20491,7 +20512,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -20501,7 +20522,7 @@
           {
             "branch": "CSE (CS & DS)",
             "subject": "AITA LAB",
-            "room": "COMP. LAB-2",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "MVPL, TAJ, GSK"
@@ -20535,7 +20556,28 @@
           }
         ]
       },
-      "WED": {},
+      "WED": {
+        "02:15-03:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "ENGG. PHY. LAB",
+            "room": "PHY LAB",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "VVVSN, PVR, RP"
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "ENGG. PHY. LAB",
+            "room": "PHY LAB",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "VVVSN, PVR, RP"
+          }
+        ]
+      },
       "THU": {},
       "FRI": {
         "10:00-11:00": [
@@ -20644,7 +20686,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BN, CHSL"
+            "rawFaculty": "BN, PSSA, CHSL"
           }
         ],
         "12:15-01:15": [
@@ -20654,7 +20696,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BN, CHSL"
+            "rawFaculty": "BN, PSSA, CHSL"
           }
         ]
       },
@@ -21050,7 +21092,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BN, CHSL"
+            "rawFaculty": "BN, PSSA, CHSL"
           }
         ],
         "12:15-01:15": [
@@ -21060,7 +21102,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BN, CHSL"
+            "rawFaculty": "BN, PSSA, CHSL"
           }
         ]
       },
@@ -21393,7 +21435,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "VVVSN, PVR"
+            "rawFaculty": "VVVSN, PVR, RP"
           }
         ],
         "03:15-04:15": [
@@ -21403,7 +21445,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "VVVSN, PVR"
+            "rawFaculty": "VVVSN, PVR, RP"
           }
         ]
       },
@@ -21923,7 +21965,28 @@
           }
         ]
       },
-      "THU": {},
+      "THU": {
+        "11:15-12:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "ENGG. PHY. LAB",
+            "room": "PHY LAB",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "BN, PSSA, CHSL"
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "ENGG. PHY. LAB",
+            "room": "PHY LAB",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "BN, PSSA, CHSL"
+          }
+        ]
+      },
       "FRI": {
         "11:15-12:15": [
           {
@@ -22009,7 +22072,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "VVVSN, PVR"
+            "rawFaculty": "VVVSN, PVR, RP"
           }
         ],
         "03:15-04:15": [
@@ -22019,7 +22082,7 @@
             "room": "PHY LAB",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "VVVSN, PVR"
+            "rawFaculty": "VVVSN, PVR, RP"
           }
         ],
         "11:15-12:15": [
@@ -22796,7 +22859,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -23243,7 +23306,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -23631,9 +23694,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -23649,6 +23712,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -23690,7 +23762,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     {
       "sno": 25,
@@ -24449,7 +24521,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -24475,17 +24547,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -24495,6 +24567,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -24524,15 +24605,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -24542,7 +24614,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 38,
@@ -24635,25 +24707,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -24698,7 +24761,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     {
       "sno": 40,
@@ -24786,9 +24849,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -24801,6 +24864,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -24845,6 +24917,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -24854,7 +24935,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 42,
@@ -24864,9 +24945,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -24888,15 +24969,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -24950,7 +25022,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 43,
@@ -25082,7 +25154,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -25151,7 +25223,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -26445,9 +26517,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -26459,6 +26531,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -26468,7 +26549,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 65,
@@ -27123,9 +27204,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -27164,6 +27245,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -27182,7 +27272,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 76,
@@ -28012,7 +28102,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -28459,7 +28549,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -28847,9 +28937,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -28865,6 +28955,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -28906,7 +29005,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     {
       "sno": 25,
@@ -29665,7 +29764,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -29691,17 +29790,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -29711,6 +29810,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -29740,15 +29848,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -29758,7 +29857,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 38,
@@ -29851,25 +29950,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -29914,7 +30004,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     {
       "sno": 40,
@@ -30002,9 +30092,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -30017,6 +30107,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -30061,6 +30160,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -30070,7 +30178,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 42,
@@ -30080,9 +30188,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -30104,15 +30212,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -30166,7 +30265,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 43,
@@ -30298,7 +30397,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -30367,7 +30466,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -31661,9 +31760,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -31675,6 +31774,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -31684,7 +31792,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 65,
@@ -32339,9 +32447,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -32380,6 +32488,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -32398,7 +32515,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 76,
@@ -37512,7 +37629,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37590,7 +37707,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37668,7 +37785,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37746,7 +37863,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37824,7 +37941,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37902,7 +38019,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -37980,7 +38097,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40587,7 +40704,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40665,7 +40782,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40743,7 +40860,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40821,7 +40938,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40899,7 +41016,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -40977,7 +41094,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -41055,7 +41172,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43621,9 +43738,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43639,6 +43756,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43680,7 +43806,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Dr. KS": {
       "sno": 24,
@@ -43690,9 +43816,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43708,6 +43834,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43749,7 +43884,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Dr.KS": {
       "sno": 24,
@@ -43759,9 +43894,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43777,6 +43912,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43818,7 +43962,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Mr. KS": {
       "sno": 24,
@@ -43828,9 +43972,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43846,6 +43990,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43887,7 +44040,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Mrs. KS": {
       "sno": 24,
@@ -43897,9 +44050,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43915,6 +44068,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -43956,7 +44118,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Ms. KS": {
       "sno": 24,
@@ -43966,9 +44128,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -43984,6 +44146,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -44025,7 +44196,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "Ms. K Swathi": {
       "sno": 24,
@@ -44035,9 +44206,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 3,
-      "labLoad": 10,
+      "labLoad": 12,
       "tutLoad": 0,
-      "totalLoad": 13,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -44053,6 +44224,15 @@
           "subject": "3D Design and Animation",
           "code": "3DDA",
           "room": "G-303",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -44094,7 +44274,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods"
     },
     "SLA": {
       "sno": 25,
@@ -48975,7 +49155,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49062,7 +49242,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49149,7 +49329,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49236,7 +49416,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49323,7 +49503,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49410,7 +49590,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49497,7 +49677,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
-          "room": "COMP. LAB-2",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -49523,17 +49703,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49543,6 +49723,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49572,15 +49761,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49590,7 +49770,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr. BMF": {
       "sno": 37,
@@ -49601,17 +49781,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49621,6 +49801,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49650,15 +49839,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49668,7 +49848,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr.BMF": {
       "sno": 37,
@@ -49679,17 +49859,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49699,6 +49879,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49728,15 +49917,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49746,7 +49926,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Mr. BMF": {
       "sno": 37,
@@ -49757,17 +49937,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49777,6 +49957,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49806,15 +49995,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49824,7 +50004,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Mrs. BMF": {
       "sno": 37,
@@ -49835,17 +50015,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49855,6 +50035,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49884,15 +50073,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49902,7 +50082,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Ms. BMF": {
       "sno": 37,
@@ -49913,17 +50093,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -49933,6 +50113,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -49962,15 +50151,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -49980,7 +50160,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr. BM Florence": {
       "sno": 37,
@@ -49991,17 +50171,17 @@
       "designation": "Assistant Professor",
       "theoryLoad": 0,
       "labLoad": 10,
-      "tutLoad": 4,
-      "totalLoad": 14,
+      "tutLoad": 3,
+      "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "MECH",
+          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 4,
+          "hours": 2,
           "type": "lab",
-          "loadDetail": "4 lab = 4 periods"
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "EEE",
@@ -50011,6 +50191,15 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "ECE-3",
@@ -50040,15 +50229,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "MECH",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -50058,7 +50238,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "CHA": {
       "sno": 38,
@@ -50619,25 +50799,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -50682,7 +50853,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Dr. IRS": {
       "sno": 39,
@@ -50697,25 +50868,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -50760,7 +50922,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Dr.IRS": {
       "sno": 39,
@@ -50775,25 +50937,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -50838,7 +50991,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Mr. IRS": {
       "sno": 39,
@@ -50853,25 +51006,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -50916,7 +51060,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Mrs. IRS": {
       "sno": 39,
@@ -50931,25 +51075,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -50994,7 +51129,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Ms. IRS": {
       "sno": 39,
@@ -51009,25 +51144,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51072,7 +51198,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "Dr. I Rajasekhar": {
       "sno": 39,
@@ -51087,25 +51213,16 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
-          "hours": 2,
+          "hours": 4,
           "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
+          "loadDetail": "4 lab = 4 periods"
         },
         {
           "branch": "ECE-2",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "MECH",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51150,7 +51267,7 @@
           "loadDetail": "2 tutorial = 2 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
+      "assignments": "MECH → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 2 tutorial = 2 periods"
     },
     "JRR": {
       "sno": 40,
@@ -51706,9 +51823,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -51721,6 +51838,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51765,6 +51891,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -51774,7 +51909,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. NVL": {
       "sno": 41,
@@ -51784,9 +51919,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -51799,6 +51934,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51843,6 +51987,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -51852,7 +52005,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.NVL": {
       "sno": 41,
@@ -51862,9 +52015,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -51877,6 +52030,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51921,6 +52083,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -51930,7 +52101,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. NVL": {
       "sno": 41,
@@ -51940,9 +52111,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -51955,6 +52126,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -51999,6 +52179,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -52008,7 +52197,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. NVL": {
       "sno": 41,
@@ -52018,9 +52207,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -52033,6 +52222,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52077,6 +52275,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -52086,7 +52293,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. NVL": {
       "sno": 41,
@@ -52096,9 +52303,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -52111,6 +52318,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52155,6 +52371,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -52164,7 +52389,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. N Vijaya Lakshmi": {
       "sno": 41,
@@ -52174,9 +52399,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 6,
-      "tutLoad": 4,
-      "totalLoad": 10,
+      "labLoad": 8,
+      "tutLoad": 5,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CIVIL",
@@ -52189,6 +52414,15 @@
         },
         {
           "branch": "ECE-1",
+          "subject": "Essential English Lab",
+          "code": "ESS. ENG. LAB",
+          "room": "COMP. LAB-4",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52233,6 +52467,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "MECH",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -52242,7 +52485,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "VVLUR": {
       "sno": 42,
@@ -52252,9 +52495,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52276,15 +52519,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52338,7 +52572,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr. VVLUR": {
       "sno": 42,
@@ -52348,9 +52582,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52372,15 +52606,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52434,7 +52659,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr.VVLUR": {
       "sno": 42,
@@ -52444,9 +52669,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52468,15 +52693,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52530,7 +52746,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Mr. VVLUR": {
       "sno": 42,
@@ -52540,9 +52756,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52564,15 +52780,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52626,7 +52833,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Mrs. VVLUR": {
       "sno": 42,
@@ -52636,9 +52843,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52660,15 +52867,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52722,7 +52920,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Ms. VVLUR": {
       "sno": 42,
@@ -52732,9 +52930,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52756,15 +52954,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52818,7 +53007,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "Dr. VVL Usha Ramani": {
       "sno": 42,
@@ -52828,9 +53017,9 @@
       "dept": "English",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 10,
       "tutLoad": 3,
-      "totalLoad": 15,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "ECE-1",
@@ -52852,15 +53041,6 @@
         },
         {
           "branch": "MECH",
-          "subject": "Essential English Lab",
-          "code": "ESS. ENG. LAB",
-          "room": "COMP. LAB-4",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CHEMICAL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -52914,7 +53094,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → ESS. ENG. Tut. . (ESS. ENG. Tut. .) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-2 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods"
     },
     "PBSKR": {
       "sno": 43,
@@ -53568,7 +53748,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53628,7 +53808,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53688,7 +53868,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53748,7 +53928,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53808,7 +53988,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53868,7 +54048,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53928,7 +54108,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -53997,7 +54177,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54066,7 +54246,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54135,7 +54315,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54204,7 +54384,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54273,7 +54453,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54342,7 +54522,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -54411,7 +54591,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63319,9 +63499,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63333,6 +63513,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63342,7 +63531,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr. RP": {
       "sno": 64,
@@ -63352,9 +63541,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63366,6 +63555,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63375,7 +63573,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr.RP": {
       "sno": 64,
@@ -63385,9 +63583,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63399,6 +63597,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63408,7 +63615,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Mr. RP": {
       "sno": 64,
@@ -63418,9 +63625,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63432,6 +63639,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63441,7 +63657,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Mrs. RP": {
       "sno": 64,
@@ -63451,9 +63667,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63465,6 +63681,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63474,7 +63699,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Ms. RP": {
       "sno": 64,
@@ -63484,9 +63709,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63498,6 +63723,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63507,7 +63741,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr. R Praveena": {
       "sno": 64,
@@ -63517,9 +63751,9 @@
       "dept": "Physics",
       "designation": "Associate Professor",
       "theoryLoad": 3,
-      "labLoad": 2,
+      "labLoad": 4,
       "tutLoad": 0,
-      "totalLoad": 5,
+      "totalLoad": 7,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -63531,6 +63765,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -63540,7 +63783,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE (CS & DS) → Engineering Physics (ENGG.PHY) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "BN": {
       "sno": 65,
@@ -68065,9 +68308,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68106,6 +68349,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68124,7 +68376,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr. PSSA": {
       "sno": 75,
@@ -68134,9 +68386,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68175,6 +68427,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68193,7 +68454,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Dr.PSSA": {
       "sno": 75,
@@ -68203,9 +68464,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68244,6 +68505,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68262,7 +68532,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Mr. PSSA": {
       "sno": 75,
@@ -68272,9 +68542,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68313,6 +68583,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68331,7 +68610,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Mrs. PSSA": {
       "sno": 75,
@@ -68341,9 +68620,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68382,6 +68661,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68400,7 +68688,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Ms. PSSA": {
       "sno": 75,
@@ -68410,9 +68698,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68451,6 +68739,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68469,7 +68766,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "Mr. PSS Appalacharyulu": {
       "sno": 75,
@@ -68479,9 +68776,9 @@
       "dept": "Physics",
       "designation": "Assistant Professor",
       "theoryLoad": 0,
-      "labLoad": 12,
+      "labLoad": 14,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -68520,6 +68817,15 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Engineering Physics lab",
+          "code": "ENGG. PHY. LAB",
+          "room": "PHY LAB",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE (CS & DS)",
           "subject": "Engineering Physics lab",
           "code": "ENGG. PHY. LAB",
@@ -68538,7 +68844,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
+      "assignments": "CSE-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Engineering Physics lab (ENGG. PHY. LAB) – 2 lab = 2 periods"
     },
     "VVVSN": {
       "sno": 76,
@@ -69012,7 +69318,7 @@
           "branch": "CSE (CS & DS)",
           "subject": "Principles of Cyber Security Lab",
           "code": "PCS LAB",
-          "room": "COMP. LAB-3",
+          "room": "COMP. LAB-2",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
