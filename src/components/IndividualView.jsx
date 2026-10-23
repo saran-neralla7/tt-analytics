@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
-import { UserCheck, Filter, Users, Table, Printer, Calendar, LayoutGrid } from 'lucide-react';
+import { UserCheck, Filter, Users, Table, Printer, Calendar, LayoutGrid, Maximize2, X, ChevronLeft, ChevronRight, Search, Hash, BookOpen } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import { getSubjectStyle } from '../utils/subjectColors';
 import DepartmentTimetableGrid from './DepartmentTimetableGrid';
@@ -109,7 +109,9 @@ function FacultyTimetableCard({
   isMultiView = false, 
   index = 1, 
   totalCount = 1,
-  selectedDay = 'ALL'
+  selectedDay = 'ALL',
+  contentMode = 'subjects',
+  onOpenModal = null
 }) {
   const facFull = facultyObj.fullName;
   const facShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
@@ -327,12 +329,36 @@ function FacultyTimetableCard({
           {universityInfo.name}
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-2 mt-1">
-          <h3 className="text-xs sm:text-sm font-black text-blue-900 uppercase font-mono">
-            INDIVIDUAL FACULTY TIMETABLE: <span className="underline decoration-blue-600 font-extrabold">{facFull}</span>
-            {facShort && (
-              <span className="ml-1.5 text-blue-700">({facShort})</span>
+          <h3 className="text-xs sm:text-sm font-black text-blue-900 uppercase font-mono flex items-center gap-1.5">
+            <span>INDIVIDUAL FACULTY TIMETABLE:</span>
+            {onOpenModal ? (
+              <button
+                onClick={() => onOpenModal(facultyObj)}
+                className="underline decoration-blue-600 font-extrabold text-blue-900 hover:text-blue-700 hover:bg-blue-50 px-1.5 py-0.5 rounded transition-all cursor-pointer inline-flex items-center gap-1 text-left"
+                title="Click to open Fullscreen Modal Timetable"
+              >
+                <span>{facFull}</span>
+                {facShort && (
+                  <span className="text-blue-700">({facShort})</span>
+                )}
+                <Maximize2 className="w-3.5 h-3.5 text-blue-600 ml-0.5 inline opacity-80 hover:opacity-100" />
+              </button>
+            ) : (
+              <span className="underline decoration-blue-600 font-extrabold">
+                {facFull} {facShort && <span className="ml-1 text-blue-700">({facShort})</span>}
+              </span>
             )}
           </h3>
+          {onOpenModal && (
+            <button
+              onClick={() => onOpenModal(facultyObj)}
+              className="no-print inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-2xs transition-all cursor-pointer ml-1"
+              title="Open Fullscreen Modal Timetable"
+            >
+              <Maximize2 className="w-3 h-3" />
+              <span>Fullscreen</span>
+            </button>
+          )}
           {selectedDay !== 'ALL' && (
             <span className="px-2.5 py-0.5 rounded text-[11px] font-black bg-blue-700 text-white shadow-xs uppercase tracking-wider font-mono">
               📅 {dayLabel.toUpperCase()}
@@ -544,6 +570,22 @@ function FacultyTimetableCard({
                                 {h1Others.length > 0 ? (
                                   h1Others.map((cellItem, iIdx) => {
                                     const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                                    if (contentMode === 'numbers') {
+                                      return (
+                                        <div 
+                                          key={iIdx}
+                                          className={`w-full h-full py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${style.bg} print:bg-white`}
+                                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                                        >
+                                          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-700 text-white font-black text-xs font-mono shadow-xs">
+                                            1
+                                          </span>
+                                          <div className="font-black text-[10px] text-slate-900 mt-0.5 truncate max-w-[80px]">
+                                            {cellItem.subject}
+                                          </div>
+                                        </div>
+                                      );
+                                    }
                                     return (
                                       <div 
                                         key={iIdx}
@@ -575,6 +617,22 @@ function FacultyTimetableCard({
                                 {h2Others.length > 0 ? (
                                   h2Others.map((cellItem, iIdx) => {
                                     const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                                    if (contentMode === 'numbers') {
+                                      return (
+                                        <div 
+                                          key={iIdx}
+                                          className={`w-full h-full py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${style.bg} print:bg-white`}
+                                          style={style.inlineBg ? { backgroundColor: style.inlineBg } : undefined}
+                                        >
+                                          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-700 text-white font-black text-xs font-mono shadow-xs">
+                                            1
+                                          </span>
+                                          <div className="font-black text-[10px] text-slate-900 mt-0.5 truncate max-w-[80px]">
+                                            {cellItem.subject}
+                                          </div>
+                                        </div>
+                                      );
+                                    }
                                     return (
                                       <div 
                                         key={iIdx}
@@ -606,6 +664,25 @@ function FacultyTimetableCard({
                             <div className="flex-1 w-full flex flex-col divide-y divide-gray-300/90 print:divide-black">
                               {sharedLabs.map((labItem, lIdx) => {
                                 const labStyle = getSubjectStyle(labItem.subject, labItem.isLab);
+                                if (contentMode === 'numbers') {
+                                  return (
+                                    <div 
+                                      key={lIdx}
+                                      className={`flex-1 w-full py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${labStyle.bg} print:bg-white`}
+                                      style={labStyle.inlineBg ? { backgroundColor: labStyle.inlineBg } : undefined}
+                                    >
+                                      <div className="flex items-center gap-1 font-mono font-black">
+                                        <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-purple-700 text-white text-sm shadow-xs">
+                                          2
+                                        </span>
+                                        <span className="text-[10px] font-bold text-purple-950">(1+1)</span>
+                                      </div>
+                                      <div className="font-black text-[10.5px] text-slate-900 mt-0.5 truncate max-w-[120px]">
+                                        {labItem.subject}
+                                      </div>
+                                    </div>
+                                  );
+                                }
                                 return (
                                   <div 
                                     key={lIdx}
@@ -636,6 +713,41 @@ function FacultyTimetableCard({
                     if (currentItems.length === 1) {
                       const cellItem = currentItems[0];
                       const style = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                      const isLab = Boolean(cellItem.isLab || cellItem.subject?.toUpperCase().includes('LAB') || cellItem.subject?.toUpperCase().includes('3DDA'));
+                      const countVal = (colSpan === 2 && isLab) ? 2 : 1;
+
+                      if (contentMode === 'numbers') {
+                        return (
+                          <td 
+                            key={slot.id} 
+                            colSpan={colSpan}
+                            onClick={() => onSlotClick && onSlotClick(currentItems, day, colSpan === 2 ? `${slot.time} - ${periodSlots[sIdx + 1]?.time}` : slot.time, facFull)}
+                            className={`p-1.5 sm:p-2 border-r border-gray-300 border-b-2 border-slate-600 print:border-black align-middle transition-all cursor-pointer ${style.bg} hover:brightness-95 print:p-0.5 print:bg-white`}
+                            style={{
+                              height: '1px',
+                              ...(style.inlineBg ? { backgroundColor: style.inlineBg } : {})
+                            }}
+                            title={`${cellItem.subject} • ${isLab ? 'Lab: 2 Periods (1+1)' : 'Theory: 1 Period'}`}
+                          >
+                            <div className="flex flex-col justify-center items-center text-center min-h-[44px] print:min-h-[35px]">
+                              <div className="flex items-center gap-1.5">
+                                <span className={`inline-flex items-center justify-center ${countVal === 2 ? 'w-8 h-8 text-base bg-purple-700' : 'w-7 h-7 text-sm bg-blue-700'} rounded-full text-white font-black shadow-xs font-mono`}>
+                                  {countVal}
+                                </span>
+                                {countVal === 2 && (
+                                  <span className="text-[11px] font-black text-purple-950 font-mono">(1+1)</span>
+                                )}
+                              </div>
+                              <div className="text-[11px] font-black uppercase tracking-tight text-slate-900 mt-1 truncate max-w-[140px]">
+                                {cellItem.subject}
+                              </div>
+                              <div className="text-[9.5px] text-slate-700 font-semibold truncate max-w-[140px]">
+                                {isLab ? `Lab (${cellItem.branch})` : `Sec: ${cellItem.branch}`}
+                              </div>
+                            </div>
+                          </td>
+                        );
+                      }
 
                       return (
                         <td 
@@ -679,6 +791,29 @@ function FacultyTimetableCard({
                         <div className="flex flex-col h-full min-h-full w-full min-h-[48px] divide-y divide-gray-300/90 print:divide-black">
                           {currentItems.map((cellItem, bIdx) => {
                             const itemStyle = getSubjectStyle(cellItem.subject, cellItem.isLab);
+                            const isItemLab = Boolean(cellItem.isLab || cellItem.subject?.toUpperCase().includes('LAB') || cellItem.subject?.toUpperCase().includes('3DDA'));
+                            const count = isItemLab ? 2 : 1;
+
+                            if (contentMode === 'numbers') {
+                              return (
+                                <div 
+                                  key={bIdx} 
+                                  className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} print:bg-white`}
+                                  style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
+                                >
+                                  <div className="flex items-center gap-1 font-mono font-black">
+                                    <span className={`inline-flex items-center justify-center ${isItemLab ? 'w-5 h-5 bg-purple-700' : 'w-5 h-5 bg-blue-700'} text-white rounded-full text-[10px]`}>
+                                      {count}
+                                    </span>
+                                    {isItemLab && <span className="text-[9px] text-purple-950 font-bold">(1+1)</span>}
+                                  </div>
+                                  <div className="text-[10px] font-black uppercase tracking-tight text-slate-900 mt-0.5 truncate max-w-[120px]">
+                                    {cellItem.subject}
+                                  </div>
+                                </div>
+                              );
+                            }
+
                             return (
                               <div 
                                 key={bIdx} 
@@ -859,7 +994,7 @@ function getFacultyDaySchedule(facObj, day, timetableData) {
  * Daily Faculty Matrix Component
  * Displays a single, dense table view of all faculty schedules for a specific day (e.g. Monday).
  */
-function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSelectFaculty }) {
+function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSelectFaculty, contentMode = 'subjects', onOpenModal = null }) {
   const dayName = day === 'MON' ? 'Monday' : day === 'TUE' ? 'Tuesday' : day === 'WED' ? 'Wednesday' : day === 'THU' ? 'Thursday' : day === 'FRI' ? 'Friday' : day;
 
   return (
@@ -873,9 +1008,14 @@ function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSe
             Faculty Teaching Schedule Matrix
           </h3>
         </div>
-        <span className="text-xs text-slate-300 font-mono">
-          Total Faculty: <strong className="text-white">{facultyList.length}</strong>
-        </span>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-slate-300 font-mono">
+            Mode: <strong className="text-blue-300 uppercase">{contentMode}</strong>
+          </span>
+          <span className="text-xs text-slate-300 font-mono">
+            Total Faculty: <strong className="text-white">{facultyList.length}</strong>
+          </span>
+        </div>
       </div>
 
       <div className="overflow-x-auto">
@@ -919,11 +1059,15 @@ function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSe
                   </td>
                   <td className="py-2 px-3 text-left border-r border-gray-200">
                     <button
-                      onClick={() => onSelectFaculty && onSelectFaculty(fac.fullName)}
-                      className="text-left font-bold text-blue-900 hover:text-blue-700 hover:underline cursor-pointer block leading-tight text-xs"
-                      title="Click to view individual card"
+                      onClick={() => {
+                        if (onOpenModal) onOpenModal(fac);
+                        else if (onSelectFaculty) onSelectFaculty(fac.fullName);
+                      }}
+                      className="text-left font-bold text-blue-900 hover:text-blue-700 hover:underline cursor-pointer flex items-center gap-1 group leading-tight text-xs"
+                      title="Click to open full-screen modal timetable"
                     >
-                      {fac.fullName}
+                      <span>{fac.fullName}</span>
+                      <Maximize2 className="w-3 h-3 text-blue-500 opacity-60 group-hover:opacity-100 transition-opacity shrink-0" />
                     </button>
                     {fac.shortName && (
                       <span className="text-[10px] text-slate-500 font-mono">({fac.shortName})</span>
@@ -957,12 +1101,34 @@ function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSe
                         className="py-1 px-1 border-r border-gray-200 align-middle"
                       >
                         {items.map((item, iIdx) => {
-                          const style = getSubjectStyle(item.subject);
+                          const isLab = Boolean(item.isLab || item.subject?.toUpperCase().includes('LAB') || item.subject?.toUpperCase().includes('3DDA'));
+                          const style = getSubjectStyle(item.subject, isLab);
+
+                          if (contentMode === 'numbers') {
+                            return (
+                              <div
+                                key={iIdx}
+                                onClick={() => onSlotClick && onSlotClick({ ...item, day, slot: slot.time })}
+                                className={`p-1 rounded text-center cursor-pointer shadow-2xs border ${style.bg} ${style.border} hover:scale-105 transition-transform my-0.5`}
+                                title={`${item.subject} • ${item.branch}${item.room ? ` • Room ${item.room}` : ''}`}
+                              >
+                                <span className={`inline-flex items-center justify-center font-mono font-black text-[11px] px-1.5 py-0.5 rounded ${
+                                  isLab ? 'bg-purple-700 text-white' : 'bg-blue-700 text-white'
+                                }`}>
+                                  {isLab ? '2 (1+1)' : '1'}
+                                </span>
+                                <div className="text-[9.5px] font-bold text-slate-900 truncate mt-0.5 max-w-[80px] mx-auto">
+                                  {item.branch}
+                                </div>
+                              </div>
+                            );
+                          }
+
                           return (
                             <div
                               key={iIdx}
                               onClick={() => onSlotClick && onSlotClick({ ...item, day, slot: slot.time })}
-                              className={`p-1 rounded text-[10.5px] font-bold leading-tight cursor-pointer shadow-2xs border ${style.bg} ${style.text} ${style.border} hover:scale-[1.02] transition-transform`}
+                              className={`p-1 rounded text-[10.5px] font-bold leading-tight cursor-pointer shadow-2xs border ${style.bg} ${style.text} ${style.border} hover:scale-[1.02] transition-transform my-0.5`}
                               title={`${item.subject} • ${item.branch}${item.room ? ` • Room ${item.room}` : ''}`}
                             >
                               <div className="font-black truncate text-[11px]">
@@ -998,6 +1164,396 @@ function DailyFacultyMatrix({ day, facultyList, timetableData, onSlotClick, onSe
             })}
           </tbody>
         </table>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Faculty Directory Grid Component
+ * Displays a clean, searchable list/cards of all faculty members with department, designation, workload pills, and course tags.
+ * Clicking a faculty card opens the Full-Screen Modal Timetable.
+ */
+function FacultyDirectoryGrid({ facultyList, onOpenModal }) {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filtered = useMemo(() => {
+    let list = facultyList;
+    if (searchTerm.trim()) {
+      const q = searchTerm.toLowerCase().trim();
+      list = list.filter(f => 
+        (f.fullName && f.fullName.toLowerCase().includes(q)) ||
+        (f.shortName && f.shortName.toLowerCase().includes(q)) ||
+        (f.dept && f.dept.toLowerCase().includes(q)) ||
+        (f.designation && f.designation.toLowerCase().includes(q)) ||
+        (f.assignedCourses && f.assignedCourses.some(c => 
+          (c.subject && c.subject.toLowerCase().includes(q)) || 
+          (c.code && c.code.toLowerCase().includes(q)) ||
+          (c.branch && c.branch.toLowerCase().includes(q))
+        ))
+      );
+    }
+    return list;
+  }, [facultyList, searchTerm]);
+
+  return (
+    <div className="w-full space-y-4">
+      {/* Search & Stats Bar */}
+      <div className="bg-white rounded-xl border-2 border-slate-700 p-3 sm:p-4 shadow-sm flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2 flex-1 min-w-[260px] max-w-md bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500">
+          <Search className="w-4 h-4 text-slate-500 shrink-0" />
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Search faculty by name, code, designation, subject..."
+            className="w-full bg-transparent text-xs sm:text-sm font-semibold text-slate-900 outline-none placeholder:text-slate-400"
+          />
+          {searchTerm && (
+            <button
+              onClick={() => setSearchTerm('')}
+              className="text-slate-400 hover:text-slate-600 text-xs font-bold cursor-pointer"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
+        </div>
+
+        <div className="flex items-center gap-3 text-xs font-mono">
+          <span className="text-slate-600">
+            Showing <strong className="text-blue-900 font-black">{filtered.length}</strong> of {facultyList.length} Faculty
+          </span>
+          <span className="text-slate-300">|</span>
+          <span className="text-slate-500 hidden sm:inline text-[11px]">
+            💡 Click any faculty name or card to open full-screen interactive timetable
+          </span>
+        </div>
+      </div>
+
+      {/* Grid of Faculty Cards */}
+      {filtered.length === 0 ? (
+        <div className="bg-white rounded-xl border border-dashed border-slate-300 p-12 text-center text-slate-500 text-sm">
+          No faculty members found matching "{searchTerm}".
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {filtered.map((f) => {
+            const cleanShort = (f.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+            const courses = f.assignedCourses || [];
+
+            return (
+              <div
+                key={f.fullName}
+                onClick={() => onOpenModal && onOpenModal(f)}
+                className="group bg-white rounded-xl border-2 border-slate-700 hover:border-blue-600 hover:shadow-lg transition-all p-4 cursor-pointer flex flex-col justify-between relative overflow-hidden text-left"
+              >
+                {/* Top Accent Strip */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 group-hover:h-1.5 transition-all" />
+
+                <div>
+                  {/* Department & Short Code Badges */}
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-slate-800 text-white">
+                      {f.dept || 'General'}
+                    </span>
+                    {cleanShort && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-blue-50 text-blue-800 border border-blue-200">
+                        {cleanShort}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Faculty Full Name */}
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="font-serif font-black text-slate-900 text-sm sm:text-base leading-snug group-hover:text-blue-700 transition-colors">
+                      {f.fullName}
+                    </h3>
+                    <Maximize2 className="w-4 h-4 text-slate-400 group-hover:text-blue-600 shrink-0 mt-0.5 transition-colors" />
+                  </div>
+
+                  {/* Designation */}
+                  {f.designation && (
+                    <div className="text-xs font-semibold text-slate-600 mt-0.5">
+                      {f.designation}
+                    </div>
+                  )}
+
+                  {/* Workload Breakdown Pills */}
+                  <div className="flex items-center gap-1.5 mt-3 pt-2.5 border-t border-slate-100 text-[11px] font-mono">
+                    <span className="px-1.5 py-0.5 rounded bg-blue-50 text-blue-900 border border-blue-200 font-bold" title="Theory Load">
+                      Th: {f.theoryLoad || 0}
+                    </span>
+                    <span className="px-1.5 py-0.5 rounded bg-purple-50 text-purple-900 border border-purple-200 font-bold" title="Lab Load">
+                      Lab: {f.labLoad || 0}
+                    </span>
+                    {f.tutLoad > 0 && (
+                      <span className="px-1.5 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-bold" title="Tutorial Load">
+                        Tut: {f.tutLoad || 0}
+                      </span>
+                    )}
+                    <span className="ml-auto px-2 py-0.5 rounded-full bg-emerald-600 text-white font-black text-[11px]">
+                      {f.totalLoad || 0}h
+                    </span>
+                  </div>
+
+                  {/* Assigned Subjects Chips */}
+                  {courses.length > 0 && (
+                    <div className="mt-3 space-y-1">
+                      <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                        Assigned Courses ({courses.length}):
+                      </div>
+                      <div className="flex flex-wrap gap-1 max-h-16 overflow-hidden">
+                        {courses.slice(0, 3).map((c, cIdx) => (
+                          <span
+                            key={cIdx}
+                            className={`px-1.5 py-0.5 rounded text-[10px] font-bold border truncate max-w-[170px] ${
+                              c.type === 'lab'
+                                ? 'bg-purple-50 text-purple-800 border-purple-200'
+                                : 'bg-slate-100 text-slate-800 border-slate-200'
+                            }`}
+                            title={`${c.subject} (${c.branch})`}
+                          >
+                            <span className="font-mono text-slate-900 font-black">{c.branch}</span>: {c.subject}
+                          </span>
+                        ))}
+                        {courses.length > 3 && (
+                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-500">
+                            +{courses.length - 3} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Footer Action */}
+                <div className="mt-4 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-700 group-hover:text-blue-900">
+                  <span className="flex items-center gap-1">
+                    <span>View Timetable</span>
+                    <span className="text-base leading-none">→</span>
+                  </span>
+                  <span className="text-[10.5px] font-mono text-slate-400">Modal Popup</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Faculty Fullscreen Modal Popup Component
+ * Opens an interactive, full-screen overlay displaying the selected faculty's complete timetable,
+ * with day tabs, prev/next navigation between faculty, subjects/numbers toggle, and print trigger.
+ */
+function FacultyModalPopup({
+  isOpen,
+  facultyObj,
+  onClose,
+  allFaculty = [],
+  onSelectFaculty,
+  timetableData,
+  universityInfo,
+  onSlotClick,
+  initialDay = 'ALL',
+  initialContentMode = 'subjects'
+}) {
+  const [modalDay, setModalDay] = useState(initialDay);
+  const [modalContentMode, setModalContentMode] = useState(initialContentMode);
+
+  // Sync state when props change
+  useEffect(() => {
+    if (isOpen) {
+      setModalDay(initialDay);
+      setModalContentMode(initialContentMode);
+    }
+  }, [isOpen, initialDay, initialContentMode]);
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+      else if (e.key === 'ArrowLeft') handlePrev();
+      else if (e.key === 'ArrowRight') handleNext();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, facultyObj, allFaculty]);
+
+  if (!isOpen || !facultyObj) return null;
+
+  // Prev / Next faculty index
+  const currentIndex = allFaculty.findIndex(f => f.fullName === facultyObj.fullName);
+  const hasPrev = currentIndex > 0;
+  const hasNext = currentIndex >= 0 && currentIndex < allFaculty.length - 1;
+
+  const handlePrev = () => {
+    if (hasPrev && onSelectFaculty) {
+      onSelectFaculty(allFaculty[currentIndex - 1]);
+    }
+  };
+
+  const handleNext = () => {
+    if (hasNext && onSelectFaculty) {
+      onSelectFaculty(allFaculty[currentIndex + 1]);
+    }
+  };
+
+  const dayTabs = [
+    { id: 'ALL', label: 'Full Week' },
+    { id: 'MON', label: 'Mon' },
+    { id: 'TUE', label: 'Tue' },
+    { id: 'WED', label: 'Wed' },
+    { id: 'THU', label: 'Thu' },
+    { id: 'FRI', label: 'Fri' },
+    ...(getActiveDays(timetableData).includes('SAT') ? [{ id: 'SAT', label: 'Sat' }] : [])
+  ];
+
+  const cleanShort = (facultyObj.shortName || '').replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
+
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/80 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 md:p-6 animate-in fade-in duration-200">
+      {/* Modal Container */}
+      <div 
+        className="w-full max-w-[1500px] max-h-[96vh] bg-slate-100 rounded-2xl shadow-2xl border-2 border-slate-700 flex flex-col overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Sticky Header Bar */}
+        <div className="bg-slate-900 text-white px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3 border-b-2 border-slate-700 shrink-0">
+          {/* Faculty Title & Navigation */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <button
+              onClick={handlePrev}
+              disabled={!hasPrev}
+              className={`p-1.5 rounded-lg border border-slate-700 transition-colors ${
+                hasPrev ? 'bg-slate-800 hover:bg-slate-700 text-white cursor-pointer' : 'opacity-30 cursor-not-allowed text-slate-500'
+              }`}
+              title="Previous Faculty (Left Arrow)"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={!hasNext}
+              className={`p-1.5 rounded-lg border border-slate-700 transition-colors ${
+                hasNext ? 'bg-slate-800 hover:bg-slate-700 text-white cursor-pointer' : 'opacity-30 cursor-not-allowed text-slate-500'
+              }`}
+              title="Next Faculty (Right Arrow)"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+
+            <div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm sm:text-base font-serif font-black text-white tracking-wide">
+                  {facultyObj.fullName}
+                </h2>
+                {cleanShort && (
+                  <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-blue-900/80 text-blue-200 border border-blue-700">
+                    {cleanShort}
+                  </span>
+                )}
+                <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-slate-300">
+                  {facultyObj.dept || 'General'}
+                </span>
+              </div>
+              <div className="text-[11px] text-slate-400 font-mono flex items-center gap-2 mt-0.5">
+                <span>{facultyObj.designation || 'Faculty'}</span>
+                <span>•</span>
+                <span>Workload: <strong className="text-emerald-400">{facultyObj.totalLoad || 0} Hrs/Wk</strong></span>
+                {allFaculty.length > 0 && (
+                  <>
+                    <span>•</span>
+                    <span className="text-slate-500">{currentIndex + 1} of {allFaculty.length}</span>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Controls: Day Tabs + Content Mode Toggle + Close */}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            {/* Day Selector Pills */}
+            <div className="inline-flex items-center p-1 bg-slate-800 rounded-xl border border-slate-700 gap-1">
+              {dayTabs.map(tab => (
+                <button
+                  key={tab.id}
+                  onClick={() => setModalDay(tab.id)}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    modalDay === tab.id
+                      ? 'bg-blue-600 text-white shadow-xs'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-700/60'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Toggle Subjects vs Numbers */}
+            <div className="inline-flex items-center p-1 bg-slate-800 rounded-xl border border-slate-700 gap-1">
+              <button
+                onClick={() => setModalContentMode('subjects')}
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  modalContentMode === 'subjects'
+                    ? 'bg-blue-600 text-white shadow-xs'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-700/60'
+                }`}
+                title="Show subject names"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Subjects</span>
+              </button>
+              <button
+                onClick={() => setModalContentMode('numbers')}
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  modalContentMode === 'numbers'
+                    ? 'bg-blue-600 text-white shadow-xs'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-700/60'
+                }`}
+                title="Show period counts: 1 for Theory, 2 (1+1) for Lab"
+              >
+                <Hash className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Numbers (1/2)</span>
+              </button>
+            </div>
+
+            {/* Print Modal Timetable */}
+            <button
+              onClick={() => window.print()}
+              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors cursor-pointer"
+              title="Print Timetable"
+            >
+              <Printer className="w-4 h-4" />
+            </button>
+
+            {/* Close Button */}
+            <button
+              onClick={onClose}
+              className="p-1.5 rounded-lg bg-rose-600/80 hover:bg-rose-600 text-white transition-colors cursor-pointer shadow-xs ml-1"
+              title="Close (Escape)"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* Modal Scrollable Body */}
+        <div className="p-3 sm:p-5 overflow-y-auto flex-1">
+          <FacultyTimetableCard
+            facultyObj={facultyObj}
+            timetableData={timetableData}
+            universityInfo={universityInfo}
+            onSlotClick={onSlotClick}
+            showBreakdown={true}
+            isMultiView={false}
+            selectedDay={modalDay}
+            contentMode={modalContentMode}
+          />
+        </div>
       </div>
     </div>
   );
@@ -1042,6 +1598,15 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
   // Day tab filter state: 'ALL' (Full Week) or 'MON', 'TUE', 'WED', 'THU', 'FRI', ('SAT')
   const [selectedDay, setSelectedDay] = useState('ALL');
   const [dayViewMode, setDayViewMode] = useState('cards'); // 'cards' | 'matrix'
+
+  // Full week view mode: 'directory' (faculty names list) | 'cards' (full timetable cards stack)
+  const [fullWeekViewMode, setFullWeekViewMode] = useState('directory');
+
+  // Day view content mode: 'subjects' (show subject name) | 'numbers' (show counts: 1 for theory, 2 for lab)
+  const [dayContentMode, setDayContentMode] = useState('subjects');
+
+  // Modal faculty for full-screen timetable popup
+  const [modalFaculty, setModalFaculty] = useState(null);
 
   // Dynamic available days list
   const availableDays = useMemo(() => {
@@ -1219,6 +1784,38 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             </select>
           </div>
 
+          {selectedDay === 'ALL' && selectedFaculty === 'ALL' && (
+            <>
+              <span className="text-gray-300 hidden sm:inline">|</span>
+              <div className="flex items-center bg-gray-100 p-0.5 rounded-lg border border-gray-300">
+                <button
+                  onClick={() => setFullWeekViewMode('directory')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    fullWeekViewMode === 'directory'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                  title="View faculty names directory with modal popups"
+                >
+                  <Users className="w-3.5 h-3.5" />
+                  <span>Faculty Names</span>
+                </button>
+                <button
+                  onClick={() => setFullWeekViewMode('cards')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    fullWeekViewMode === 'cards'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                  title="View full timetable cards stacked"
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                  <span>Full Timetables</span>
+                </button>
+              </div>
+            </>
+          )}
+
           {selectedDay !== 'ALL' && selectedFaculty === 'ALL' && (
             <>
               <span className="text-gray-300 hidden sm:inline">|</span>
@@ -1244,6 +1841,36 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                 >
                   <Table className="w-3.5 h-3.5" />
                   <span>Matrix Grid</span>
+                </button>
+              </div>
+            </>
+          )}
+
+          {selectedDay !== 'ALL' && (
+            <>
+              <span className="text-gray-300 hidden sm:inline">|</span>
+              <div className="flex items-center bg-gray-100 p-0.5 rounded-lg border border-gray-300" title="Toggle between Subject Names and Period Count Numbers (1 for Theory, 2 for Lab)">
+                <button
+                  onClick={() => setDayContentMode('subjects')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    dayContentMode === 'subjects'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>Subjects</span>
+                </button>
+                <button
+                  onClick={() => setDayContentMode('numbers')}
+                  className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    dayContentMode === 'numbers'
+                      ? 'bg-blue-700 text-white shadow-2xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  <Hash className="w-3.5 h-3.5" />
+                  <span>Numbers (1/2)</span>
                 </button>
               </div>
             </>
@@ -1553,7 +2180,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
         </div>
       )}
 
-      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One or Daily Matrix) */}
+      {/* RENDER INDIVIDUAL TIMETABLES (Single or All-in-Department One by One or Daily Matrix or Faculty Directory Grid) */}
       {selectedFaculty !== 'ALL' ? (
         currentFacultyObj ? (
           <div className={printTarget === 'department' ? 'print:hidden' : ''}>
@@ -1565,6 +2192,8 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               showBreakdown={true}
               isMultiView={false}
               selectedDay={selectedDay}
+              contentMode={selectedDay !== 'ALL' ? dayContentMode : 'subjects'}
+              onOpenModal={(fac) => setModalFaculty(fac)}
             />
           </div>
         ) : (
@@ -1572,6 +2201,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             No faculty found matching the selection.
           </div>
         )
+      ) : selectedDay === 'ALL' && fullWeekViewMode === 'directory' ? (
+        <div className={printTarget === 'department' ? 'print:hidden' : ''}>
+          <FacultyDirectoryGrid
+            facultyList={filteredFacultyList}
+            onOpenModal={(fac) => setModalFaculty(fac)}
+          />
+        </div>
       ) : dayViewMode === 'matrix' && selectedDay !== 'ALL' ? (
         <div className={printTarget === 'department' ? 'print:hidden' : ''}>
           <DailyFacultyMatrix
@@ -1579,7 +2215,13 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
             facultyList={filteredFacultyList}
             timetableData={timetableData}
             onSlotClick={onSlotClick}
-            onSelectFaculty={(name) => setSelectedFaculty(name)}
+            onSelectFaculty={(name) => {
+              const fObj = filteredFacultyList.find(f => f.fullName === name);
+              if (fObj) setModalFaculty(fObj);
+              else setSelectedFaculty(name);
+            }}
+            contentMode={dayContentMode}
+            onOpenModal={(fac) => setModalFaculty(fac)}
           />
         </div>
       ) : (
@@ -1596,6 +2238,8 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
               index={idx + 1}
               totalCount={filteredFacultyList.length}
               selectedDay={selectedDay}
+              contentMode={selectedDay !== 'ALL' ? dayContentMode : 'subjects'}
+              onOpenModal={(fac) => setModalFaculty(fac)}
             />
           ))}
         </div>
@@ -1613,6 +2257,20 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
           />
         </div>
       )}
+
+      {/* FULL-SCREEN MODAL POPUP FOR FACULTY TIMETABLE */}
+      <FacultyModalPopup
+        isOpen={Boolean(modalFaculty)}
+        facultyObj={modalFaculty}
+        onClose={() => setModalFaculty(null)}
+        allFaculty={filteredFacultyList}
+        onSelectFaculty={(fac) => setModalFaculty(fac)}
+        timetableData={timetableData}
+        universityInfo={universityInfo}
+        onSlotClick={onSlotClick}
+        initialDay={selectedDay}
+        initialContentMode={dayContentMode}
+      />
     </div>
   );
 }
