@@ -284,12 +284,14 @@ function FacultyTimetableCard({
       });
   }, [facultyObj, facultySchedule, showBreakdown]);
 
-  // Compute workload metrics
+  // Compute workload metrics (academic teaching hours)
   let totalHours = 0;
   activeDays.forEach(day => {
     Object.values(facultySchedule[day] || {}).forEach(items => {
-      items.forEach(() => {
-        totalHours += 1;
+      items.forEach((it) => {
+        if (!it.isNonAcademic && !it.subject?.toUpperCase().includes('COUNSEL') && !it.subject?.toUpperCase().includes('LIBRARY') && !it.subject?.toUpperCase().includes('SPORT') && !it.subject?.toUpperCase().includes('YOGA')) {
+          totalHours += 1;
+        }
       });
     });
   });
@@ -301,6 +303,9 @@ function FacultyTimetableCard({
     let dayTh = 0, dayLab = 0, dayTut = 0;
     Object.values(daySched).forEach(items => {
       items.forEach(it => {
+        if (it.isNonAcademic || it.subject?.toUpperCase().includes('COUNSEL') || it.subject?.toUpperCase().includes('LIBRARY') || it.subject?.toUpperCase().includes('SPORT') || it.subject?.toUpperCase().includes('YOGA')) {
+          return;
+        }
         if (it.isLab) dayLab++;
         else if (it.isTutorial || it.subject?.toUpperCase().includes('TUT')) dayTut++;
         else dayTh++;

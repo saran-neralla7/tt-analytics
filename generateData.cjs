@@ -380,8 +380,37 @@ function parseCellContent(val) {
   const upper = val.toUpperCase();
   if (!val || upper === 'BREAK' || upper === 'LUNCH') return null;
 
-  if (upper === 'YOGA' || upper === 'SPORTS' || upper.includes('YOGA /') || upper.includes('YOGA/') || upper.includes('YOGA\n') || upper.includes('LIBRARY') || upper.includes('COUNSELLING')) {
-    return [{ subject: val.replace(/\n/g, ' / '), faculty: '', room: '', isLab: false }];
+  const isNonAcademic = upper.includes('COUNSEL') || upper.includes('LIBRARY') || upper.includes('SPORT') || upper.includes('YOGA');
+  if (isNonAcademic) {
+    let lines = val.split('\n').map(l => l.trim()).filter(Boolean);
+    if (lines.length >= 3) {
+      return [{
+        subject: lines[0],
+        faculty: resolveFacultyNames(lines[1]),
+        rawFaculty: lines[1],
+        room: lines[2],
+        isLab: false,
+        isNonAcademic: true
+      }];
+    } else if (lines.length === 2) {
+      const second = lines[1];
+      const { facultyStr, roomStr } = extractRoomFromEnd(second);
+      if (roomStr) {
+        return [{
+          subject: lines[0],
+          faculty: resolveFacultyNames(facultyStr),
+          rawFaculty: facultyStr,
+          room: roomStr,
+          isLab: false,
+          isNonAcademic: true
+        }];
+      } else if (second.startsWith('G-') || second.startsWith('E-') || second.startsWith('C-') || second.startsWith('A-')) {
+        return [{ subject: lines[0], faculty: '', rawFaculty: '', room: second, isLab: false, isNonAcademic: true }];
+      } else {
+        return [{ subject: lines[0], faculty: resolveFacultyNames(second), rawFaculty: second, room: '', isLab: false, isNonAcademic: true }];
+      }
+    }
+    return [{ subject: val.replace(/\n/g, ' / '), faculty: '', rawFaculty: '', room: '', isLab: false, isNonAcademic: true }];
   }
   
   const isLab = (upper.includes('LAB') || upper.includes('PRACTICAL') || upper.includes('3DDA')) && !upper.includes('TUT');
@@ -611,7 +640,7 @@ facultyList.forEach(f => {
   masterFacultyTimetables[f.fullName] = { MON: {}, TUE: {}, WED: {}, THU: {}, FRI: {} };
 });
 
-function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isContinued = false, rawFaculty = '') {
+function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isContinued = false, rawFaculty = '', isNonAcademic = false) {
   if (!masterFacultyTimetables[facName] || !masterFacultyTimetables[facName][day]) return;
   const list = masterFacultyTimetables[facName][day][slot] || [];
   let cleanSubj = (subject || '').split('\n')[0].trim();
@@ -622,7 +651,7 @@ function addFacultySlot(facName, day, slot, branch, subject, room, isLab, isCont
     return xNorm === normS || xNorm.includes(normS) || normS.includes(xNorm);
   });
   if (!exists) {
-    list.push({ branch, subject: cleanSubj, room, isLab, isContinued, rawFaculty });
+    list.push({ branch, subject: cleanSubj, room, isLab, isContinued, rawFaculty, isNonAcademic });
     masterFacultyTimetables[facName][day][slot] = list;
   }
 }
@@ -652,9 +681,9 @@ for (let r = 1; r < rowsFinal.length; r++) {
       if (facs.length === 0) return;
 
       facs.forEach(fn => {
-        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false, parsed.rawFaculty || '');
+        addFacultySlot(fn, curDay, slot, curBranch, parsed.subject, parsed.room, parsed.isLab, false, parsed.rawFaculty || '', parsed.isNonAcademic || false);
         if (parsed.isLab && nextSlot) {
-          addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true, parsed.rawFaculty || '');
+          addFacultySlot(fn, curDay, nextSlot, curBranch, parsed.subject, parsed.room, parsed.isLab, true, parsed.rawFaculty || '', parsed.isNonAcademic || false);
         }
       });
     });
@@ -674,6 +703,9 @@ facultyList.forEach(fac => {
   for (const [day, daySlots] of Object.entries(sched)) {
     for (const [slot, items] of Object.entries(daySlots)) {
       items.forEach(it => {
+        if (it.isNonAcademic || it.subject.toUpperCase().includes('COUNSEL') || it.subject.toUpperCase().includes('LIBRARY') || it.subject.toUpperCase().includes('SPORT') || it.subject.toUpperCase().includes('YOGA')) {
+          return;
+        }
         const isTut = Boolean(it.subject && (it.subject.toLowerCase().includes('tut') || it.subject.toLowerCase().includes('tutorial')));
         const isLab = !isTut && Boolean(it.isLab || (it.subject && it.subject.toLowerCase().includes('lab')));
         if (isTut) {
@@ -1209,12 +1241,17 @@ for (let r = 1; r < rowsFinal.length; r++) {
     const isLibrary = upper.includes('LIBRARY');
 
     if (isSports || isCounselling || isLibrary) {
+      const parsedList = parseCellContent(val);
+      const firstParsed = parsedList && parsedList[0];
       const displayLabel = val.replace(/\r\n/g, ' / ').replace(/\n/g, ' / ');
       const sessionObj = {
         branch: curActBranch,
         day: curActDay,
         slot,
         label: displayLabel,
+        faculty: firstParsed?.faculty || '',
+        rawFaculty: firstParsed?.rawFaculty || '',
+        room: firstParsed?.room || '',
         isSports,
         isCounselling,
         isLibrary
