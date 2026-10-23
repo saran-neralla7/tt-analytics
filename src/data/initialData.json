@@ -426,9 +426,9 @@
       "WED": {
         "09:00-10:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. G Santosh Kumar",
-            "rawFaculty": "GSK",
+            "subject": "COM",
+            "faculty": "Dr. P Srinivas Rao",
+            "rawFaculty": "PSR",
             "room": "E-410",
             "isLab": false
           }
@@ -444,9 +444,9 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "COM",
-            "faculty": "Dr. P Srinivas Rao",
-            "rawFaculty": "PSR",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. G Santosh Kumar",
+            "rawFaculty": "GSK",
             "room": "E-410",
             "isLab": false
           }
@@ -1489,20 +1489,11 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isLab": false,
-            "isNonAcademic": true
-          },
-          {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isLab": false,
-            "isNonAcademic": true
+            "subject": "COM",
+            "faculty": "Dr. P Srinivas Rao",
+            "rawFaculty": "PSR",
+            "room": "G-408",
+            "isLab": false
           }
         ],
         "12:15-01:15": [
@@ -1525,11 +1516,20 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "CAL & LA Tut.",
-            "faculty": "Dr. B Bharathi, Dr. T Poornakantha",
-            "rawFaculty": "BB, TPK",
-            "room": "G-408",
-            "isLab": false
+            "subject": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isLab": false,
+            "isNonAcademic": true
+          },
+          {
+            "subject": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isLab": false,
+            "isNonAcademic": true
           }
         ]
       },
@@ -1581,20 +1581,11 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isLab": false,
-            "isNonAcademic": true
-          },
-          {
-            "subject": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isLab": false,
-            "isNonAcademic": true
+            "subject": "CAL & LA Tut.",
+            "faculty": "Dr. B Bharathi, Dr. T Poornakantha",
+            "rawFaculty": "BB, TPK",
+            "room": "G-408",
+            "isLab": false
           }
         ]
       },
@@ -1620,11 +1611,20 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "COM",
-            "faculty": "Dr. P Srinivas Rao",
-            "rawFaculty": "PSR",
-            "room": "G-408",
-            "isLab": false
+            "subject": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isLab": false,
+            "isNonAcademic": true
+          },
+          {
+            "subject": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isLab": false,
+            "isNonAcademic": true
           }
         ],
         "12:15-01:15": [
@@ -12219,11 +12219,11 @@
               "isLibrary": false
             }
           ],
-          "11:15-12:15": [
+          "03:15-04:15": [
             {
               "branch": "MECH-ROBOTICS",
               "day": "WED",
-              "slot": "11:15-12:15",
+              "slot": "03:15-04:15",
               "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
@@ -12272,6 +12272,18 @@
               "faculty": "Dr. S Ashok Kumar",
               "rawFaculty": "SAK",
               "room": "G-305",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12366,20 +12378,6 @@
               "faculty": "Dr. PV Rajeswari",
               "rawFaculty": "PVR",
               "room": "G-305",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
-          "03:15-04:15": [
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "THU",
-              "slot": "03:15-04:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12593,11 +12591,13 @@
               "isSports": false,
               "isCounselling": false,
               "isLibrary": true
-            },
+            }
+          ],
+          "12:15-01:15": [
             {
-              "branch": "MECH-ROBOTICS",
+              "branch": "ECE-2",
               "day": "WED",
-              "slot": "11:15-12:15",
+              "slot": "12:15-01:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12607,11 +12607,11 @@
               "isLibrary": true
             }
           ],
-          "12:15-01:15": [
+          "03:15-04:15": [
             {
-              "branch": "ECE-2",
+              "branch": "MECH-ROBOTICS",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "03:15-04:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12670,6 +12670,20 @@
               "branch": "MECH",
               "day": "FRI",
               "slot": "03:15-04:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12748,18 +12762,6 @@
           "03:15-04:15": [
             {
               "branch": "CSE(AI&ML)-2",
-              "day": "THU",
-              "slot": "03:15-04:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "MECH-ROBOTICS",
               "day": "THU",
               "slot": "03:15-04:15",
               "label": "LIBRARY",
@@ -12953,6 +12955,30 @@
               "isSports": true,
               "isCounselling": false,
               "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "WED",
+              "slot": "03:15-04:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
             }
           ],
           "02:15-03:15": [
@@ -12996,30 +13022,6 @@
           "11:15-12:15": [
             {
               "branch": "CSE(AI&ML)-1",
-              "day": "WED",
-              "slot": "11:15-12:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "WED",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "MECH-ROBOTICS",
               "day": "WED",
               "slot": "11:15-12:15",
               "label": "LIBRARY",
@@ -13111,6 +13113,30 @@
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
             }
           ],
           "03:15-04:15": [
@@ -13372,30 +13398,6 @@
               "room": "",
               "isSports": true,
               "isCounselling": false,
-              "isLibrary": false
-            },
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "THU",
-              "slot": "03:15-04:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "THU",
-              "slot": "03:15-04:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
               "isLibrary": false
             }
           ],
@@ -14142,38 +14144,10 @@
         },
         "TUE": {},
         "WED": {
-          "11:15-12:15": [
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "WED",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "MECH-ROBOTICS",
-              "day": "WED",
-              "slot": "11:15-12:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            }
-          ]
-        },
-        "THU": {
           "03:15-04:15": [
             {
               "branch": "MECH-ROBOTICS",
-              "day": "THU",
+              "day": "WED",
               "slot": "03:15-04:15",
               "label": "LIBRARY",
               "faculty": "",
@@ -14185,7 +14159,7 @@
             },
             {
               "branch": "MECH-ROBOTICS",
-              "day": "THU",
+              "day": "WED",
               "slot": "03:15-04:15",
               "label": "COUNSELLING",
               "faculty": "",
@@ -14197,7 +14171,35 @@
             }
           ]
         },
-        "FRI": {}
+        "THU": {},
+        "FRI": {
+          "11:15-12:15": [
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "MECH-ROBOTICS",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ]
+        }
       },
       "ECE-1": {
         "MON": {
@@ -15336,6 +15338,30 @@
             "isSports": true,
             "isCounselling": false,
             "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "WED",
+            "slot": "03:15-04:15",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
           }
         ],
         "02:15-03:15": [
@@ -15379,30 +15405,6 @@
         "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
-            "day": "WED",
-            "slot": "11:15-12:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "day": "WED",
-            "slot": "11:15-12:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "MECH-ROBOTICS",
             "day": "WED",
             "slot": "11:15-12:15",
             "label": "LIBRARY",
@@ -15588,30 +15590,6 @@
             "isSports": true,
             "isCounselling": false,
             "isLibrary": false
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "day": "THU",
-            "slot": "03:15-04:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "day": "THU",
-            "slot": "03:15-04:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
           }
         ],
         "11:15-12:15": [
@@ -15706,6 +15684,30 @@
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
           }
         ],
         "03:15-04:15": [
@@ -16126,42 +16128,18 @@
           {
             "branch": "MECH-ROBOTICS",
             "day": "WED",
-            "slot": "11:15-12:15",
-            "label": "COUNSELLING",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
+            "isCounselling": false,
+            "isLibrary": true
           },
           {
             "branch": "MECH-ROBOTICS",
             "day": "WED",
-            "slot": "11:15-12:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "day": "THU",
-            "slot": "03:15-04:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "MECH-ROBOTICS",
-            "day": "THU",
             "slot": "03:15-04:15",
             "label": "COUNSELLING",
             "faculty": "",
@@ -16170,6 +16148,30 @@
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "MECH-ROBOTICS",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
           }
         ]
       },
@@ -17834,7 +17836,7 @@
         ]
       },
       "WED": {
-        "11:15-12:15": [
+        "09:00-10:00": [
           {
             "branch": "CIVIL",
             "subject": "COM",
@@ -17864,6 +17866,17 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "RN, PSR",
+            "isNonAcademic": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "subject": "COM",
+            "room": "G-408",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "PSR",
             "isNonAcademic": false
           }
         ]
@@ -17898,17 +17911,6 @@
             "branch": "CIVIL",
             "subject": "COM",
             "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "PSR",
-            "isNonAcademic": false
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "MECH-ROBOTICS",
-            "subject": "COM",
-            "room": "G-408",
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "PSR",
@@ -18565,7 +18567,7 @@
         ]
       },
       "WED": {
-        "09:00-10:00": [
+        "11:15-12:15": [
           {
             "branch": "CIVIL",
             "subject": "SUS. ENGG.",
@@ -24963,17 +24965,6 @@
             "rawFaculty": "BB, SAK, ASL",
             "isNonAcademic": false
           }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "MECH-ROBOTICS",
-            "subject": "CAL & LA Tut.",
-            "room": "G-408",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BB, TPK",
-            "isNonAcademic": false
-          }
         ]
       },
       "THU": {
@@ -25007,6 +24998,17 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "BB",
+            "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "subject": "CAL & LA Tut.",
+            "room": "G-408",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BB, TPK",
             "isNonAcademic": false
           }
         ]
@@ -25749,17 +25751,6 @@
             "rawFaculty": "TPK, NGB",
             "isNonAcademic": false
           }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "MECH-ROBOTICS",
-            "subject": "CAL & LA Tut.",
-            "room": "G-408",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BB, TPK",
-            "isNonAcademic": false
-          }
         ]
       },
       "THU": {
@@ -25771,6 +25762,17 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "SAK, TPK, KLSP",
+            "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "MECH-ROBOTICS",
+            "subject": "CAL & LA Tut.",
+            "room": "G-408",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BB, TPK",
             "isNonAcademic": false
           }
         ]
