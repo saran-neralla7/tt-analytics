@@ -279,15 +279,6 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. D Manasa",
-            "rawFaculty": "DM",
-            "room": "E-411",
-            "isLab": false
-          }
-        ],
-        "03:15-04:15": [
-          {
             "subject": "COUNSELLING",
             "faculty": "Dr. M Rama Rajeswari",
             "rawFaculty": "MRR",
@@ -302,6 +293,15 @@
             "room": "",
             "isLab": false,
             "isNonAcademic": true
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. D Manasa",
+            "rawFaculty": "DM",
+            "room": "E-411",
+            "isLab": false
           }
         ]
       }
@@ -2866,15 +2866,6 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. B Santosh Kumar",
-            "rawFaculty": "BSK",
-            "room": "E-412",
-            "isLab": false
-          }
-        ],
-        "12:15-01:15": [
-          {
             "subject": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
@@ -2889,6 +2880,15 @@
             "room": "",
             "isLab": false,
             "isNonAcademic": true
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "subject": "ESAM",
+            "faculty": "Dr. B Santosh Kumar",
+            "rawFaculty": "BSK",
+            "room": "E-412",
+            "isLab": false
           }
         ],
         "02:15-03:15": [
@@ -3793,7 +3793,7 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "LIBRARY",
+            "subject": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
@@ -3871,7 +3871,7 @@
             "isLab": false
           },
           {
-            "subject": "COUNSELLING",
+            "subject": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
@@ -12233,18 +12233,6 @@
           ],
           "11:15-12:15": [
             {
-              "branch": "CSE(AI&ML)-1",
-              "day": "WED",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
               "branch": "MECH-ROBOTICS",
               "day": "WED",
               "slot": "11:15-12:15",
@@ -12259,11 +12247,11 @@
           ]
         },
         "FRI": {
-          "03:15-04:15": [
+          "02:15-03:15": [
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / MRR / E-411",
               "faculty": "Dr. M Rama Rajeswari",
               "rawFaculty": "MRR",
@@ -12271,7 +12259,49 @@
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / MVPL / G-304",
+              "faculty": "Dr. MV Pankaj Lahari",
+              "rawFaculty": "MVPL",
+              "room": "G-304",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING / SAK / G-305",
+              "faculty": "Dr. S Ashok Kumar",
+              "rawFaculty": "SAK",
+              "room": "G-305",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
             },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "03:15-04:15": [
             {
               "branch": "CSE(AI&ML)-2",
               "day": "FRI",
@@ -12292,46 +12322,6 @@
               "faculty": "",
               "rawFaculty": "",
               "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
-          "12:15-01:15": [
-            {
-              "branch": "CSE-1",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING / MVPL / G-304",
-              "faculty": "Dr. MV Pankaj Lahari",
-              "rawFaculty": "MVPL",
-              "room": "G-304",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
-          "11:15-12:15": [
-            {
-              "branch": "CSE-2",
-              "day": "FRI",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING / SAK / G-305",
-              "faculty": "Dr. S Ashok Kumar",
-              "rawFaculty": "SAK",
-              "room": "G-305",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12398,6 +12388,18 @@
           "12:15-01:15": [
             {
               "branch": "CSE (CS & DS)",
+              "day": "TUE",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "CSE(AI&ML)-1",
               "day": "TUE",
               "slot": "12:15-01:15",
               "label": "COUNSELLING",
@@ -12581,6 +12583,18 @@
           ],
           "11:15-12:15": [
             {
+              "branch": "CSE(AI&ML)-1",
+              "day": "WED",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            },
+            {
               "branch": "MECH-ROBOTICS",
               "day": "WED",
               "slot": "11:15-12:15",
@@ -12595,23 +12609,11 @@
           ]
         },
         "FRI": {
-          "03:15-04:15": [
+          "02:15-03:15": [
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "MECH",
-              "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12633,11 +12635,27 @@
               "isSports": false,
               "isCounselling": false,
               "isLibrary": true
-            },
+            }
+          ],
+          "11:15-12:15": [
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "12:15-01:15",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
+            {
+              "branch": "MECH",
+              "day": "FRI",
+              "slot": "03:15-04:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12756,18 +12774,6 @@
           "12:15-01:15": [
             {
               "branch": "CSE (CS & DS)",
-              "day": "TUE",
-              "slot": "12:15-01:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "CSE(AI&ML)-1",
               "day": "TUE",
               "slot": "12:15-01:15",
               "label": "LIBRARY",
@@ -13004,13 +13010,13 @@
               "branch": "CSE(AI&ML)-1",
               "day": "WED",
               "slot": "11:15-12:15",
-              "label": "COUNSELLING",
+              "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
+              "isCounselling": false,
+              "isLibrary": true
             },
             {
               "branch": "MECH-ROBOTICS",
@@ -13039,11 +13045,11 @@
           ]
         },
         "FRI": {
-          "03:15-04:15": [
+          "02:15-03:15": [
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / MRR / E-411",
               "faculty": "Dr. M Rama Rajeswari",
               "rawFaculty": "MRR",
@@ -13055,7 +13061,21 @@
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -13064,6 +13084,58 @@
               "isCounselling": false,
               "isLibrary": true
             },
+            {
+              "branch": "CSE-1",
+              "day": "FRI",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING / MVPL / G-304",
+              "faculty": "Dr. MV Pankaj Lahari",
+              "rawFaculty": "MVPL",
+              "room": "G-304",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "11:15-12:15": [
+            {
+              "branch": "CSE-2",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING / SAK / G-305",
+              "faculty": "Dr. S Ashok Kumar",
+              "rawFaculty": "SAK",
+              "room": "G-305",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "03:15-04:15": [
             {
               "branch": "CSE(AI&ML)-2",
               "day": "FRI",
@@ -13132,70 +13204,6 @@
               "faculty": "",
               "rawFaculty": "",
               "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
-          "12:15-01:15": [
-            {
-              "branch": "CSE-1",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "CSE-1",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING / MVPL / G-304",
-              "faculty": "Dr. MV Pankaj Lahari",
-              "rawFaculty": "MVPL",
-              "room": "G-304",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "12:15-01:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            }
-          ],
-          "11:15-12:15": [
-            {
-              "branch": "CSE-2",
-              "day": "FRI",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING / SAK / G-305",
-              "faculty": "Dr. S Ashok Kumar",
-              "rawFaculty": "SAK",
-              "room": "G-305",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -13610,13 +13618,13 @@
               "branch": "CSE(AI&ML)-1",
               "day": "TUE",
               "slot": "12:15-01:15",
-              "label": "LIBRARY",
+              "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
+              "isCounselling": true,
+              "isLibrary": false
             }
           ],
           "02:15-03:15": [
@@ -13844,11 +13852,11 @@
         },
         "THU": {},
         "FRI": {
-          "03:15-04:15": [
+          "02:15-03:15": [
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / MRR / E-411",
               "faculty": "Dr. M Rama Rajeswari",
               "rawFaculty": "MRR",
@@ -13860,7 +13868,7 @@
             {
               "branch": "CHEMICAL",
               "day": "FRI",
-              "slot": "03:15-04:15",
+              "slot": "02:15-03:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -14427,11 +14435,11 @@
         "WED": {},
         "THU": {},
         "FRI": {
-          "12:15-01:15": [
+          "11:15-12:15": [
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "12:15-01:15",
+              "slot": "11:15-12:15",
               "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
@@ -14443,7 +14451,7 @@
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "12:15-01:15",
+              "slot": "11:15-12:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -14643,13 +14651,13 @@
               "branch": "CSE(AI&ML)-1",
               "day": "TUE",
               "slot": "12:15-01:15",
-              "label": "LIBRARY",
+              "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
+              "isCounselling": true,
+              "isLibrary": false
             }
           ]
         },
@@ -14685,13 +14693,13 @@
               "branch": "CSE(AI&ML)-1",
               "day": "WED",
               "slot": "11:15-12:15",
-              "label": "COUNSELLING",
+              "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
+              "isCounselling": false,
+              "isLibrary": true
             }
           ]
         },
@@ -15077,13 +15085,13 @@
             "branch": "CSE(AI&ML)-1",
             "day": "TUE",
             "slot": "12:15-01:15",
-            "label": "LIBRARY",
+            "label": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
+            "isCounselling": true,
+            "isLibrary": false
           }
         ],
         "02:15-03:15": [
@@ -15383,13 +15391,13 @@
             "branch": "CSE(AI&ML)-1",
             "day": "WED",
             "slot": "11:15-12:15",
-            "label": "COUNSELLING",
+            "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
+            "isCounselling": false,
+            "isLibrary": true
           },
           {
             "branch": "MECH-ROBOTICS",
@@ -15630,11 +15638,11 @@
         ]
       },
       "FRI": {
-        "03:15-04:15": [
+        "02:15-03:15": [
           {
             "branch": "CHEMICAL",
             "day": "FRI",
-            "slot": "03:15-04:15",
+            "slot": "02:15-03:15",
             "label": "COUNSELLING / MRR / E-411",
             "faculty": "Dr. M Rama Rajeswari",
             "rawFaculty": "MRR",
@@ -15646,7 +15654,21 @@
           {
             "branch": "CHEMICAL",
             "day": "FRI",
-            "slot": "03:15-04:15",
+            "slot": "02:15-03:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "CSE-1",
+            "day": "FRI",
+            "slot": "12:15-01:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -15655,6 +15677,58 @@
             "isCounselling": false,
             "isLibrary": true
           },
+          {
+            "branch": "CSE-1",
+            "day": "FRI",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING / MVPL / G-304",
+            "faculty": "Dr. MV Pankaj Lahari",
+            "rawFaculty": "MVPL",
+            "room": "G-304",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "CSE-2",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING / SAK / G-305",
+            "faculty": "Dr. S Ashok Kumar",
+            "rawFaculty": "SAK",
+            "room": "G-305",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ],
+        "03:15-04:15": [
           {
             "branch": "CSE(AI&ML)-2",
             "day": "FRI",
@@ -15727,70 +15801,6 @@
             "isCounselling": true,
             "isLibrary": false
           }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "CSE-1",
-            "day": "FRI",
-            "slot": "12:15-01:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "CSE-1",
-            "day": "FRI",
-            "slot": "12:15-01:15",
-            "label": "COUNSELLING / MVPL / G-304",
-            "faculty": "Dr. MV Pankaj Lahari",
-            "rawFaculty": "MVPL",
-            "room": "G-304",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "ECE-3",
-            "day": "FRI",
-            "slot": "12:15-01:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "ECE-3",
-            "day": "FRI",
-            "slot": "12:15-01:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "CSE-2",
-            "day": "FRI",
-            "slot": "11:15-12:15",
-            "label": "COUNSELLING / SAK / G-305",
-            "faculty": "Dr. S Ashok Kumar",
-            "rawFaculty": "SAK",
-            "room": "G-305",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          }
         ]
       }
     },
@@ -15842,7 +15852,7 @@
           {
             "branch": "CHEMICAL",
             "day": "FRI",
-            "slot": "03:15-04:15",
+            "slot": "02:15-03:15",
             "label": "COUNSELLING / MRR / E-411",
             "faculty": "Dr. M Rama Rajeswari",
             "rawFaculty": "MRR",
@@ -15854,7 +15864,7 @@
           {
             "branch": "CHEMICAL",
             "day": "FRI",
-            "slot": "03:15-04:15",
+            "slot": "02:15-03:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -16380,7 +16390,7 @@
           {
             "branch": "ECE-3",
             "day": "FRI",
-            "slot": "12:15-01:15",
+            "slot": "11:15-12:15",
             "label": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
@@ -16392,7 +16402,7 @@
           {
             "branch": "ECE-3",
             "day": "FRI",
-            "slot": "12:15-01:15",
+            "slot": "11:15-12:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -16579,13 +16589,13 @@
             "branch": "CSE(AI&ML)-1",
             "day": "TUE",
             "slot": "12:15-01:15",
-            "label": "LIBRARY",
+            "label": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
+            "isCounselling": true,
+            "isLibrary": false
           },
           {
             "branch": "CSE(AI&ML)-1",
@@ -16603,13 +16613,13 @@
             "branch": "CSE(AI&ML)-1",
             "day": "WED",
             "slot": "11:15-12:15",
-            "label": "COUNSELLING",
+            "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
+            "isCounselling": false,
+            "isLibrary": true
           },
           {
             "branch": "CSE(AI&ML)-1",
@@ -17136,7 +17146,7 @@
             "isNonAcademic": false
           }
         ],
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "ECE-3",
             "subject": "ESAM",
@@ -17689,7 +17699,7 @@
         ]
       },
       "FRI": {
-        "03:15-04:15": [
+        "02:15-03:15": [
           {
             "branch": "CHEMICAL",
             "subject": "COUNSELLING",
@@ -18331,7 +18341,7 @@
         ]
       },
       "FRI": {
-        "02:15-03:15": [
+        "03:15-04:15": [
           {
             "branch": "CHEMICAL",
             "subject": "SUS. ENGG.",
