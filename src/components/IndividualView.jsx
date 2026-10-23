@@ -1744,6 +1744,12 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     return computeDeptStats(selectedDept);
   }, [facultyMembers, selectedDept]);
 
+  // Currently selected faculty object if single view
+  const currentFacultyObj = useMemo(() => {
+    if (selectedFaculty === 'ALL') return null;
+    return facultyMembers.find(f => f.fullName === selectedFaculty) || filteredFacultyList[0];
+  }, [facultyMembers, filteredFacultyList, selectedFaculty]);
+
   // Total period counts scheduled on the currently selected day
   const daySummaryStats = useMemo(() => {
     if (selectedDay === 'ALL') return null;
@@ -1774,12 +1780,6 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     totalPeriods = totalTh + totalLab + totalTut;
     return { totalPeriods, totalTh, totalLab, totalTut, activeFacultyCount };
   }, [selectedFaculty, currentFacultyObj, filteredFacultyList, selectedDay, timetableData]);
-
-  // Currently selected faculty object if single view
-  const currentFacultyObj = useMemo(() => {
-    if (selectedFaculty === 'ALL') return null;
-    return facultyMembers.find(f => f.fullName === selectedFaculty) || filteredFacultyList[0];
-  }, [facultyMembers, filteredFacultyList, selectedFaculty]);
 
   const isDeptPrint = printTarget === 'department';
   const isDeptConsolidatedMode = isDeptPrint;
