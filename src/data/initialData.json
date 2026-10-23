@@ -453,6 +453,15 @@
         ],
         "12:15-01:15": [
           {
+            "subject": "AITA",
+            "faculty": "Dr. V Adinarayana",
+            "rawFaculty": "VA",
+            "room": "E-410",
+            "isLab": false
+          }
+        ],
+        "02:15-03:15": [
+          {
             "subject": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -467,15 +476,6 @@
             "room": "E-410",
             "isLab": false,
             "isNonAcademic": true
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "subject": "AITA",
-            "faculty": "Dr. V Adinarayana",
-            "rawFaculty": "VA",
-            "room": "E-410",
-            "isLab": false
           }
         ],
         "03:15-04:15": [
@@ -2341,7 +2341,7 @@
             "isLab": false
           },
           {
-            "subject": "COUNSELLING",
+            "subject": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
@@ -2429,7 +2429,7 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "LIBRARY",
+            "subject": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
@@ -2857,15 +2857,6 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. KVS Sarma",
-            "rawFaculty": "KVSS",
-            "room": "E-412",
-            "isLab": false
-          }
-        ],
-        "11:15-12:15": [
-          {
             "subject": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
@@ -2880,6 +2871,15 @@
             "room": "",
             "isLab": false,
             "isNonAcademic": true
+          }
+        ],
+        "11:15-12:15": [
+          {
+            "subject": "CAL & LA",
+            "faculty": "Dr. KVS Sarma",
+            "rawFaculty": "KVSS",
+            "room": "E-412",
+            "isLab": false
           }
         ],
         "12:15-01:15": [
@@ -12205,27 +12205,15 @@
               "isLibrary": false
             }
           ],
-          "12:15-01:15": [
+          "02:15-03:15": [
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / GSK / E-410",
               "faculty": "Dr. G Santosh Kumar",
               "rawFaculty": "GSK",
               "room": "E-410",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-2",
-              "day": "WED",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12287,18 +12275,6 @@
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
             }
           ],
           "03:15-04:15": [
@@ -12318,6 +12294,20 @@
               "branch": "MECH",
               "day": "FRI",
               "slot": "03:15-04:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "10:00-11:00": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "10:00-11:00",
               "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
@@ -12350,6 +12340,18 @@
               "faculty": "Dr. Ch Rajesh",
               "rawFaculty": "CHR",
               "room": "G-302",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-2",
+              "day": "THU",
+              "slot": "12:15-01:15",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12553,11 +12555,11 @@
               "isLibrary": true
             }
           ],
-          "12:15-01:15": [
+          "02:15-03:15": [
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12565,9 +12567,7 @@
               "isSports": false,
               "isCounselling": false,
               "isLibrary": true
-            }
-          ],
-          "02:15-03:15": [
+            },
             {
               "branch": "CSE-2",
               "day": "WED",
@@ -12598,6 +12598,20 @@
               "branch": "MECH-ROBOTICS",
               "day": "WED",
               "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "ECE-2",
+              "day": "WED",
+              "slot": "12:15-01:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12637,11 +12651,11 @@
               "isLibrary": true
             }
           ],
-          "11:15-12:15": [
+          "10:00-11:00": [
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "11:15-12:15",
+              "slot": "10:00-11:00",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12706,18 +12720,6 @@
             },
             {
               "branch": "CSE(AI&ML)-1",
-              "day": "THU",
-              "slot": "12:15-01:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
-            },
-            {
-              "branch": "ECE-2",
               "day": "THU",
               "slot": "12:15-01:15",
               "label": "LIBRARY",
@@ -12953,11 +12955,11 @@
               "isLibrary": false
             }
           ],
-          "12:15-01:15": [
+          "02:15-03:15": [
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -12969,7 +12971,7 @@
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / GSK / E-410",
               "faculty": "Dr. G Santosh Kumar",
               "rawFaculty": "GSK",
@@ -12978,20 +12980,6 @@
               "isCounselling": true,
               "isLibrary": false
             },
-            {
-              "branch": "ECE-2",
-              "day": "WED",
-              "slot": "12:15-01:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
-          "02:15-03:15": [
             {
               "branch": "CSE-2",
               "day": "WED",
@@ -13034,6 +13022,20 @@
               "branch": "MECH-ROBOTICS",
               "day": "WED",
               "slot": "11:15-12:15",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
+            }
+          ],
+          "12:15-01:15": [
+            {
+              "branch": "ECE-2",
+              "day": "WED",
+              "slot": "12:15-01:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -13109,30 +13111,6 @@
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "11:15-12:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "11:15-12:15",
-              "label": "LIBRARY",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
-              "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
             }
           ],
           "03:15-04:15": [
@@ -13207,6 +13185,32 @@
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
+            }
+          ],
+          "10:00-11:00": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "10:00-11:00",
+              "label": "COUNSELLING",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            },
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "10:00-11:00",
+              "label": "LIBRARY",
+              "faculty": "",
+              "rawFaculty": "",
+              "room": "",
+              "isSports": false,
+              "isCounselling": false,
+              "isLibrary": true
             }
           ]
         },
@@ -13288,13 +13292,13 @@
               "branch": "ECE-2",
               "day": "THU",
               "slot": "12:15-01:15",
-              "label": "LIBRARY",
+              "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
+              "isCounselling": true,
+              "isLibrary": false
             }
           ],
           "03:15-04:15": [
@@ -13884,11 +13888,11 @@
         "MON": {},
         "TUE": {},
         "WED": {
-          "12:15-01:15": [
+          "02:15-03:15": [
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -13900,7 +13904,7 @@
             {
               "branch": "CIVIL",
               "day": "WED",
-              "slot": "12:15-01:15",
+              "slot": "02:15-03:15",
               "label": "COUNSELLING / GSK / E-410",
               "faculty": "Dr. G Santosh Kumar",
               "rawFaculty": "GSK",
@@ -14319,13 +14323,13 @@
               "branch": "ECE-2",
               "day": "WED",
               "slot": "12:15-01:15",
-              "label": "COUNSELLING",
+              "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
+              "isCounselling": false,
+              "isLibrary": true
             }
           ]
         },
@@ -14335,13 +14339,13 @@
               "branch": "ECE-2",
               "day": "THU",
               "slot": "12:15-01:15",
-              "label": "LIBRARY",
+              "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
               "room": "",
               "isSports": false,
-              "isCounselling": false,
-              "isLibrary": true
+              "isCounselling": true,
+              "isLibrary": false
             }
           ],
           "03:15-04:15": [
@@ -14435,11 +14439,11 @@
         "WED": {},
         "THU": {},
         "FRI": {
-          "11:15-12:15": [
+          "10:00-11:00": [
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "11:15-12:15",
+              "slot": "10:00-11:00",
               "label": "COUNSELLING",
               "faculty": "",
               "rawFaculty": "",
@@ -14451,7 +14455,7 @@
             {
               "branch": "ECE-3",
               "day": "FRI",
-              "slot": "11:15-12:15",
+              "slot": "10:00-11:00",
               "label": "LIBRARY",
               "faculty": "",
               "rawFaculty": "",
@@ -15334,11 +15338,11 @@
             "isLibrary": false
           }
         ],
-        "12:15-01:15": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "day": "WED",
-            "slot": "12:15-01:15",
+            "slot": "02:15-03:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -15350,7 +15354,7 @@
           {
             "branch": "CIVIL",
             "day": "WED",
-            "slot": "12:15-01:15",
+            "slot": "02:15-03:15",
             "label": "COUNSELLING / GSK / E-410",
             "faculty": "Dr. G Santosh Kumar",
             "rawFaculty": "GSK",
@@ -15359,20 +15363,6 @@
             "isCounselling": true,
             "isLibrary": false
           },
-          {
-            "branch": "ECE-2",
-            "day": "WED",
-            "slot": "12:15-01:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          }
-        ],
-        "02:15-03:15": [
           {
             "branch": "CSE-2",
             "day": "WED",
@@ -15415,6 +15405,20 @@
             "branch": "MECH-ROBOTICS",
             "day": "WED",
             "slot": "11:15-12:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
+          }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "ECE-2",
+            "day": "WED",
+            "slot": "12:15-01:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -15503,13 +15507,13 @@
             "branch": "ECE-2",
             "day": "THU",
             "slot": "12:15-01:15",
-            "label": "LIBRARY",
+            "label": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
             "room": "",
             "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
+            "isCounselling": true,
+            "isLibrary": false
           }
         ],
         "03:15-04:15": [
@@ -15702,30 +15706,6 @@
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
-          },
-          {
-            "branch": "ECE-3",
-            "day": "FRI",
-            "slot": "11:15-12:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "ECE-3",
-            "day": "FRI",
-            "slot": "11:15-12:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
           }
         ],
         "03:15-04:15": [
@@ -15800,6 +15780,32 @@
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "10:00-11:00",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          },
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "10:00-11:00",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
           }
         ]
       }
@@ -15886,7 +15892,7 @@
           {
             "branch": "CIVIL",
             "day": "WED",
-            "slot": "12:15-01:15",
+            "slot": "02:15-03:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -15898,7 +15904,7 @@
           {
             "branch": "CIVIL",
             "day": "WED",
-            "slot": "12:15-01:15",
+            "slot": "02:15-03:15",
             "label": "COUNSELLING / GSK / E-410",
             "faculty": "Dr. G Santosh Kumar",
             "rawFaculty": "GSK",
@@ -16285,18 +16291,6 @@
             "branch": "ECE-2",
             "day": "WED",
             "slot": "12:15-01:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "ECE-2",
-            "day": "THU",
-            "slot": "12:15-01:15",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -16304,6 +16298,18 @@
             "isSports": false,
             "isCounselling": false,
             "isLibrary": true
+          },
+          {
+            "branch": "ECE-2",
+            "day": "THU",
+            "slot": "12:15-01:15",
+            "label": "COUNSELLING",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
           },
           {
             "branch": "ECE-2",
@@ -16390,7 +16396,7 @@
           {
             "branch": "ECE-3",
             "day": "FRI",
-            "slot": "11:15-12:15",
+            "slot": "10:00-11:00",
             "label": "COUNSELLING",
             "faculty": "",
             "rawFaculty": "",
@@ -16402,7 +16408,7 @@
           {
             "branch": "ECE-3",
             "day": "FRI",
-            "slot": "11:15-12:15",
+            "slot": "10:00-11:00",
             "label": "LIBRARY",
             "faculty": "",
             "rawFaculty": "",
@@ -18570,7 +18576,7 @@
             "isNonAcademic": false
           }
         ],
-        "12:15-01:15": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "subject": "COUNSELLING",
@@ -21455,7 +21461,7 @@
         ]
       },
       "WED": {
-        "02:15-03:15": [
+        "12:15-01:15": [
           {
             "branch": "CIVIL",
             "subject": "AITA",
@@ -24563,7 +24569,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "11:15-12:15": [
           {
             "branch": "ECE-3",
             "subject": "CAL & LA",
