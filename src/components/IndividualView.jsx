@@ -298,22 +298,27 @@ function FacultyTimetableCard({
     });
   });
 
-  // Calculate day-specific workload when a specific day is selected
-  const dayLoad = useMemo(() => {
-    if (selectedDay === 'ALL') return null;
-    const daySched = facultySchedule[selectedDay] || {};
+  // Calculate day-specific workload helper
+  const getDayLoad = (dayKey) => {
+    const daySched = facultySchedule[dayKey] || {};
     let dayTh = 0, dayLab = 0, dayTut = 0;
     Object.values(daySched).forEach(items => {
       items.forEach(it => {
         if (it.isNonAcademic || it.subject?.toUpperCase().includes('COUNSEL') || it.subject?.toUpperCase().includes('LIBRARY') || it.subject?.toUpperCase().includes('SPORT') || it.subject?.toUpperCase().includes('YOGA')) {
           return;
         }
-        if (it.isLab) dayLab++;
+        if (it.isLab || it.subject?.toUpperCase().includes('LAB') || it.subject?.toUpperCase().includes('3DDA')) dayLab++;
         else if (it.isTutorial || it.subject?.toUpperCase().includes('TUT')) dayTut++;
         else dayTh++;
       });
     });
     return { theory: dayTh, lab: dayLab, tut: dayTut, total: dayTh + dayLab + dayTut };
+  };
+
+  // Calculate day-specific workload when a specific day is selected
+  const dayLoad = useMemo(() => {
+    if (selectedDay === 'ALL') return null;
+    return getDayLoad(selectedDay);
   }, [facultySchedule, selectedDay]);
 
   const dayLabel = selectedDay === 'MON' ? 'Monday' : selectedDay === 'TUE' ? 'Tuesday' : selectedDay === 'WED' ? 'Wednesday' : selectedDay === 'THU' ? 'Thursday' : selectedDay === 'FRI' ? 'Friday' : selectedDay;
@@ -465,6 +470,9 @@ function FacultyTimetableCard({
                   )}
                 </th>
               ))}
+              <th className="py-2.5 px-2 border-l-2 border-slate-700 print:border-black bg-blue-100/90 text-blue-950 font-black w-16 sm:w-20 print:w-[9%] text-xs print:text-[8.5pt] uppercase tracking-wide">
+                Total
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y-2 divide-slate-600 print:divide-black">
@@ -838,10 +846,49 @@ function FacultyTimetableCard({
                       </td>
                     );
                   })}
+
+                  {/* Day Total Count Column */}
+                  {(() => {
+                    const rowLoad = getDayLoad(day);
+                    return (
+                      <td className="py-2 px-1 font-mono font-black text-center border-l-2 border-slate-700 border-b-2 border-slate-600 print:border-black bg-blue-50/70 align-middle print:py-0.5 print:px-0.5">
+                        <div className="flex flex-col items-center justify-center">
+                          <span className={`inline-flex items-center justify-center px-2 py-0.5 rounded-full font-black text-xs sm:text-sm font-mono shadow-xs ${
+                            rowLoad.total > 0
+                              ? 'bg-blue-700 text-white'
+                              : 'bg-slate-200 text-slate-500'
+                          }`}>
+                            {rowLoad.total}
+                          </span>
+                          {rowLoad.total > 0 && (
+                            <span className="text-[9.5px] font-bold text-slate-600 mt-0.5 whitespace-nowrap print:text-[7pt]">
+                              {rowLoad.theory > 0 ? `${rowLoad.theory}Th` : ''}
+                              {rowLoad.theory > 0 && rowLoad.lab > 0 ? ' ' : ''}
+                              {rowLoad.lab > 0 ? `${rowLoad.lab}Lab` : ''}
+                              {(rowLoad.theory > 0 || rowLoad.lab > 0) && rowLoad.tut > 0 ? ' ' : ''}
+                              {rowLoad.tut > 0 ? `${rowLoad.tut}Tut` : ''}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                    );
+                  })()}
                 </tr>
               );
             })}
           </tbody>
+          {activeDays.length > 1 && (
+            <tfoot>
+              <tr className="bg-slate-100 font-black text-slate-900 border-t-2 border-slate-700 print:border-black text-xs">
+                <td colSpan={periodSlots.length + 1} className="py-2 px-3 text-right uppercase tracking-wider text-[11px] font-bold">
+                  Weekly Teaching Total:
+                </td>
+                <td className="py-2 px-1 text-center font-mono font-black text-emerald-900 bg-emerald-100/60 border-l-2 border-slate-700 text-sm">
+                  {facultyObj.totalLoad || totalHours} Hrs
+                </td>
+              </tr>
+            </tfoot>
+          )}
         </table>
       </div>
 
@@ -1697,6 +1744,37 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
     return computeDeptStats(selectedDept);
   }, [facultyMembers, selectedDept]);
 
+  // Total period counts scheduled on the currently selected day
+  const daySummaryStats = useMemo(() => {
+    if (selectedDay === 'ALL') return null;
+    let totalPeriods = 0, totalTh = 0, totalLab = 0, totalTut = 0, activeFacultyCount = 0;
+    const targetList = (selectedFaculty !== 'ALL' && currentFacultyObj) ? [currentFacultyObj] : filteredFacultyList;
+    targetList.forEach(fac => {
+      const sched = getFacultyDaySchedule(fac, selectedDay, timetableData);
+      let facDayPeriods = 0;
+      Object.values(sched).forEach(items => {
+        items.forEach(it => {
+          if (it.isNonAcademic || it.subject?.toUpperCase().includes('COUNSEL') || it.subject?.toUpperCase().includes('LIBRARY') || it.subject?.toUpperCase().includes('SPORT') || it.subject?.toUpperCase().includes('YOGA')) {
+            return;
+          }
+          if (it.isLab || it.subject?.toUpperCase().includes('LAB') || it.subject?.toUpperCase().includes('3DDA')) {
+            totalLab++;
+            facDayPeriods++;
+          } else if (it.isTutorial || it.subject?.toUpperCase().includes('TUT')) {
+            totalTut++;
+            facDayPeriods++;
+          } else {
+            totalTh++;
+            facDayPeriods++;
+          }
+        });
+      });
+      if (facDayPeriods > 0) activeFacultyCount++;
+    });
+    totalPeriods = totalTh + totalLab + totalTut;
+    return { totalPeriods, totalTh, totalLab, totalTut, activeFacultyCount };
+  }, [selectedFaculty, currentFacultyObj, filteredFacultyList, selectedDay, timetableData]);
+
   // Currently selected faculty object if single view
   const currentFacultyObj = useMemo(() => {
     if (selectedFaculty === 'ALL') return null;
@@ -2157,7 +2235,7 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
       {/* Day Overview Banner when a specific day is selected */}
       {selectedDay !== 'ALL' && (
         <div className="no-print mb-4 p-3 bg-blue-50/80 rounded-xl border border-blue-200 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="font-extrabold text-blue-900 uppercase font-mono tracking-wide">
               Showing {activeDayObj.label} Timetables
             </span>
@@ -2173,9 +2251,23 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
                 </span>
               </>
             )}
+            {daySummaryStats && (
+              <>
+                <span className="text-slate-400">•</span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-700 text-white font-mono font-black text-xs shadow-xs">
+                  <span>{activeDayObj.label} Total:</span>
+                  <span>{daySummaryStats.totalPeriods} Periods</span>
+                </span>
+                <span className="text-slate-600 font-semibold text-[11px]">
+                  ({daySummaryStats.totalTh} Theory, {daySummaryStats.totalLab} Lab{daySummaryStats.totalTut > 0 ? `, ${daySummaryStats.totalTut} Tut` : ''})
+                </span>
+              </>
+            )}
           </div>
           <div className="text-slate-600 font-mono text-[11px]">
-            {selectedFaculty === 'ALL' ? `${filteredFacultyList.length} faculty in view` : '1 faculty in view'}
+            {selectedFaculty === 'ALL' 
+              ? `${filteredFacultyList.length} faculty in view (${daySummaryStats?.activeFacultyCount || 0} active today)` 
+              : '1 faculty in view'}
           </div>
         </div>
       )}
