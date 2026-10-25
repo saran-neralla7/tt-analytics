@@ -1268,8 +1268,8 @@
           },
           {
             "subject": "CAL & LA Tut.",
-            "faculty": "Dr. S Ashok Kumar, Dr. Ch V Sreedhar, Dr. A Suseelatha",
-            "rawFaculty": "SAK, CHVS, ASL",
+            "faculty": "Dr. S Ashok Kumar, Dr. Ch V Sreedhar, Dr. KVS Sarma",
+            "rawFaculty": "SAK, CHVS, KVSS",
             "room": "G-404",
             "isLab": false
           }
@@ -1681,8 +1681,8 @@
           },
           {
             "subject": "CAL & LA Tut.",
-            "faculty": "Dr. Ch V Sreedhar, Dr. SS Ayyappa Sastri, Dr. KVS Sarma",
-            "rawFaculty": "CHVS, SSAS, KVSS",
+            "faculty": "Dr. Ch V Sreedhar, Dr. SS Ayyappa Sastri, Dr. A Suseelatha",
+            "rawFaculty": "CHVS, SSAS, ASL",
             "room": "G-402",
             "isLab": false
           }
@@ -2271,8 +2271,8 @@
         "12:15-01:15": [
           {
             "subject": "CAL & LA Tut.",
-            "faculty": "Dr. Ch Appala Naidu, Dr. K L Sai Prasad, Dr. A Suseelatha",
-            "rawFaculty": "CHAN, KLSP, ASL",
+            "faculty": "Dr. Ch Appala Naidu, Dr. K L Sai Prasad, Dr. T Poornakantha",
+            "rawFaculty": "CHAN, KLSP, TPK",
             "room": "G-403",
             "isLab": false
           },
@@ -4759,8 +4759,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "ASL\nBB",
         "facultyFullName": "Dr. A Suseelatha\nDr. B Bharathi",
-        "tutorialShort": "ASL\nBB\nCHVS\nASL\nBB\nCHAN",
-        "tutorialFullName": "Dr. A Suseelatha\nDr. B Bharathi\nDr. Ch V Sreedhar\nDr. A Suseelatha\nDr. B Bharathi\nDr. Ch Appala Naidu",
+        "tutorialShort": "ASL\nBB\nCHVS\nKLSP",
+        "tutorialFullName": "Dr. A Suseelatha\nDr. B Bharathi\nDr. Ch V Sreedhar\nDr. K L Sai Prasad",
         "room": "G-304",
         "isLab": false
       },
@@ -4825,8 +4825,8 @@
         "subjectShort": "3DDA",
         "facultyShort": "KS\nSLA",
         "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
-        "tutorialShort": "",
-        "tutorialFullName": "",
+        "tutorialShort": "KS\nSLA",
+        "tutorialFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
         "room": "G-304",
         "isLab": true
       },
@@ -4882,8 +4882,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "BB\nSAK",
         "facultyFullName": "Dr. B Bharathi\nDr. S Ashok Kumar",
-        "tutorialShort": "BB\nSAK\nASL\nBB\nKLSP\nCHAN",
-        "tutorialFullName": "Dr. B Bharathi\nDr. S Ashok Kumar\nDr. A Suseelatha\nDr. B Bharathi\nDr. K L Sai Prasad\nDr. Ch Appala Naidu",
+        "tutorialShort": "BB\nSAK\nCHAN\nKLSP\nASL",
+        "tutorialFullName": "Dr. B Bharathi\nDr. S Ashok Kumar\nDr. Ch Appala Naidu\nDr. K L Sai Prasad\nDr. A Suseelatha",
         "room": "G-305",
         "isLab": false
       },
@@ -4948,8 +4948,8 @@
         "subjectShort": "3DDA",
         "facultyShort": "SLA\nKS",
         "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
-        "tutorialShort": "",
-        "tutorialFullName": "",
+        "tutorialShort": "SLA\nKS",
+        "tutorialFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
         "room": "G-305",
         "isLab": true
       },
@@ -5005,8 +5005,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "NGB\nCHAN",
         "facultyFullName": "Dr. N Giribabu\nDr. Ch Appala Naidu",
-        "tutorialShort": "NGB\nKLSP\nTPK\nNGB\nCHAN\nKLSP",
-        "tutorialFullName": "Dr. N Giribabu\nDr. K L Sai Prasad\nDr. T Poornakantha\nDr. N Giribabu\nDr. Ch Appala Naidu\nDr. K L Sai Prasad",
+        "tutorialShort": "NGB\nCHAN\nKLSP\nTPK",
+        "tutorialFullName": "Dr. N Giribabu\nDr. Ch Appala Naidu\nDr. K L Sai Prasad\nDr. T Poornakantha",
         "room": "G-302",
         "isLab": false
       },
@@ -5071,8 +5071,8 @@
         "subjectShort": "3DDA",
         "facultyShort": "SLA\nKS",
         "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
-        "tutorialShort": "",
-        "tutorialFullName": "",
+        "tutorialShort": "AYH\nSLA",
+        "tutorialFullName": "Dr. A. Yaswanth\nMs. S Laxmi Aparna",
         "room": "G-302",
         "isLab": true
       },
@@ -5128,8 +5128,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "TPK\nNGB",
         "facultyFullName": "Dr. T Poornakantha\nDr. N Giribabu",
-        "tutorialShort": "TPK\nBB\nASL\nTPK\nNGB\nCHVS",
-        "tutorialFullName": "Dr. T Poornakantha\nDr. B Bharathi\nDr. A Suseelatha\nDr. T Poornakantha\nDr. N Giribabu\nDr. Ch V Sreedhar",
+        "tutorialShort": "TPK\nNGB\nCHVS",
+        "tutorialFullName": "Dr. T Poornakantha\nDr. N Giribabu\nDr. Ch V Sreedhar",
         "room": "G-303",
         "isLab": false
       },
@@ -5194,8 +5194,8 @@
         "subjectShort": "3DDA",
         "facultyShort": "KS\nSLA",
         "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
-        "tutorialShort": "",
-        "tutorialFullName": "",
+        "tutorialShort": "AYH\nKS",
+        "tutorialFullName": "Dr. A. Yaswanth\nMs. K Swathi",
         "room": "G-303",
         "isLab": true
       },
@@ -5251,8 +5251,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "SAK\nTPK",
         "facultyFullName": "Dr. S Ashok Kumar\nDr. T Poornakantha",
-        "tutorialShort": "SAK\nTPK\nKVSS\nSAK\nTPK\nKLSP",
-        "tutorialFullName": "Dr. S Ashok Kumar\nDr. T Poornakantha\nDr. KVS Sarma\nDr. S Ashok Kumar\nDr. T Poornakantha\nDr. K L Sai Prasad",
+        "tutorialShort": "SAK\nTPK\nKLSP\nKVSS",
+        "tutorialFullName": "Dr. S Ashok Kumar\nDr. T Poornakantha\nDr. K L Sai Prasad\nDr. KVS Sarma",
         "room": "G-405",
         "isLab": false
       },
@@ -5328,8 +5328,8 @@
         "subjectShort": "3DDA",
         "facultyShort": "SLA\nKS",
         "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
-        "tutorialShort": "",
-        "tutorialFullName": "",
+        "tutorialShort": "SLA\nKS",
+        "tutorialFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
         "room": "G-405",
         "isLab": true
       },
@@ -5396,8 +5396,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "CHVS\nSSAS",
         "facultyFullName": "Dr. Ch V Sreedhar\nDr. SS Ayyappa Sastri",
-        "tutorialShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
-        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
+        "tutorialShort": "CHVS\nSSAS\nASL",
+        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
         "room": "G-302",
         "isLab": false
       },
@@ -5541,8 +5541,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "CHAN\nCHVS",
         "facultyFullName": "Dr. Ch Appala Naidu\nDr. Ch V Sreedhar",
-        "tutorialShort": "CHVS\nSSAS\nKVSS\nCHAN\nNGB\nASL",
-        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. KVS Sarma\nDr. Ch Appala Naidu\nDr. N Giribabu\nDr. A Suseelatha",
+        "tutorialShort": "CHAN\nKLSP\nTPK\nCHVS\nKVSS",
+        "tutorialFullName": "Dr. Ch Appala Naidu\nDr. K L Sai Prasad\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. KVS Sarma",
         "room": "G-403",
         "isLab": false
       },
@@ -5675,8 +5675,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "KVSS",
         "facultyFullName": "Dr. KVS Sarma",
-        "tutorialShort": "KVSS\nCHVS\nKLSP",
-        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. K L Sai Prasad",
+        "tutorialShort": "KVSS\nCHVS\nCHAN",
+        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. Ch Appala Naidu",
         "room": "E-412",
         "isLab": false
       },
@@ -5809,8 +5809,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "SAK\nKVSS",
         "facultyFullName": "Dr. S Ashok Kumar\nDr. KVS Sarma",
-        "tutorialShort": "SAK\nCHAN\nNGB\nSAK\nCHVS\nASL",
-        "tutorialFullName": "Dr. S Ashok Kumar\nDr. Ch Appala Naidu\nDr. N Giribabu\nDr. S Ashok Kumar\nDr. Ch V Sreedhar\nDr. A Suseelatha",
+        "tutorialShort": "SAK\nCHAN\nNGB\nCHVS\nKVSS",
+        "tutorialFullName": "Dr. S Ashok Kumar\nDr. Ch Appala Naidu\nDr. N Giribabu\nDr. Ch V Sreedhar\nDr. KVS Sarma",
         "room": "G-404",
         "isLab": false
       },
@@ -6077,8 +6077,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "SSAS",
         "facultyFullName": "Dr. SS Ayyappa Sastri",
-        "tutorialShort": "SSAS\nCHVS\nSAK",
-        "tutorialFullName": "Dr. SS Ayyappa Sastri\nDr. Ch V Sreedhar\nDr. S Ashok Kumar",
+        "tutorialShort": "SSAS\nKVSS",
+        "tutorialFullName": "Dr. SS Ayyappa Sastri\nDr. KVS Sarma",
         "room": "E-410",
         "isLab": false
       },
@@ -6211,8 +6211,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "ASL",
         "facultyFullName": "Dr. A Suseelatha",
-        "tutorialShort": "ASL\nCHAN\nKLSP",
-        "tutorialFullName": "Dr. A Suseelatha\nDr. Ch Appala Naidu\nDr. K L Sai Prasad",
+        "tutorialShort": "ASL\nKLSP",
+        "tutorialFullName": "Dr. A Suseelatha\nDr. K L Sai Prasad",
         "room": "E-411",
         "isLab": false
       },
@@ -6345,8 +6345,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "BB",
         "facultyFullName": "Dr. B Bharathi",
-        "tutorialShort": "BB\nCHAN\nTPK",
-        "tutorialFullName": "Dr. B Bharathi\nDr. Ch Appala Naidu\nDr. T Poornakantha",
+        "tutorialShort": "BB\nTPK",
+        "tutorialFullName": "Dr. B Bharathi\nDr. T Poornakantha",
         "room": "G-408",
         "isLab": false
       },
@@ -23871,7 +23871,7 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHAN, KLSP, ASL",
+            "rawFaculty": "CHAN, KLSP, TPK",
             "isNonAcademic": false
           }
         ]
@@ -23938,17 +23938,6 @@
     },
     "Dr. KVS Sarma": {
       "MON": {
-        "02:15-03:15": [
-          {
-            "branch": "ECE-1",
-            "subject": "CAL & LA Tut.",
-            "room": "G-402",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHVS, SSAS, KVSS",
-            "isNonAcademic": false
-          }
-        ],
         "10:00-11:00": [
           {
             "branch": "ECE-3",
@@ -24066,6 +24055,17 @@
             "rawFaculty": "SAK, KVSS",
             "isNonAcademic": false
           }
+        ],
+        "12:15-01:15": [
+          {
+            "branch": "MECH",
+            "subject": "CAL & LA Tut.",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SAK, CHVS, KVSS",
+            "isNonAcademic": false
+          }
         ]
       }
     },
@@ -24089,7 +24089,7 @@
             "room": "G-402",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHVS, SSAS, KVSS",
+            "rawFaculty": "CHVS, SSAS, ASL",
             "isNonAcademic": false
           }
         ]
@@ -24192,6 +24192,17 @@
             "rawFaculty": "ASL, BB",
             "isNonAcademic": false
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "ECE-1",
+            "subject": "CAL & LA Tut.",
+            "room": "G-402",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHVS, SSAS, ASL",
+            "isNonAcademic": false
+          }
         ]
       },
       "TUE": {
@@ -24249,17 +24260,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "CHVS, SSAS, ASL",
-            "isNonAcademic": false
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "ECE-2",
-            "subject": "CAL & LA Tut.",
-            "room": "G-403",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "CHAN, KLSP, ASL",
             "isNonAcademic": false
           }
         ]
@@ -24330,17 +24330,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "KLSP, CHAN, ASL",
-            "isNonAcademic": false
-          }
-        ],
-        "12:15-01:15": [
-          {
-            "branch": "MECH",
-            "subject": "CAL & LA Tut.",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SAK, CHVS, ASL",
             "isNonAcademic": false
           }
         ]
@@ -24613,7 +24602,7 @@
             "room": "G-403",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHAN, KLSP, ASL",
+            "rawFaculty": "CHAN, KLSP, TPK",
             "isNonAcademic": false
           }
         ]
@@ -24687,7 +24676,7 @@
             "room": "G-402",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "CHVS, SSAS, KVSS",
+            "rawFaculty": "CHVS, SSAS, ASL",
             "isNonAcademic": false
           }
         ],
@@ -24838,7 +24827,7 @@
             "room": "G-404",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "SAK, CHVS, ASL",
+            "rawFaculty": "SAK, CHVS, KVSS",
             "isNonAcademic": false
           }
         ]
@@ -25170,7 +25159,7 @@
             "room": "G-404",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "SAK, CHVS, ASL",
+            "rawFaculty": "SAK, CHVS, KVSS",
             "isNonAcademic": false
           }
         ]
@@ -25267,6 +25256,15 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "TPK, NGB",
+            "isNonAcademic": false
+          },
+          {
+            "branch": "ECE-2",
+            "subject": "CAL & LA Tut.",
+            "room": "G-403",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHAN, KLSP, TPK",
             "isNonAcademic": false
           }
         ]
@@ -31879,15 +31877,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -31940,9 +31929,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -32010,8 +32008,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -32021,6 +32019,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -32050,24 +32057,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -32084,21 +32073,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     {
       "sno": 51,
@@ -32545,8 +32525,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -32589,9 +32569,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -32612,10 +32592,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     {
       "sno": 57,
@@ -37754,15 +37734,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -37815,9 +37786,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -37885,8 +37865,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -37896,6 +37876,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -37925,24 +37914,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -37959,21 +37930,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     {
       "sno": 51,
@@ -38420,8 +38382,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -38464,9 +38426,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -38487,10 +38449,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     {
       "sno": 57,
@@ -65413,15 +65375,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65474,9 +65427,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65494,15 +65456,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65555,9 +65508,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65575,15 +65537,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65636,9 +65589,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65656,15 +65618,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65717,9 +65670,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65737,15 +65699,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65798,9 +65751,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65818,15 +65780,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65879,9 +65832,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -65899,15 +65861,6 @@
       "totalLoad": 11,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "ECE-3",
           "subject": "Calculus and Linear Algebra",
           "code": "CAL & LA",
@@ -65960,9 +65913,18 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
+          "branch": "MECH",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-404",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "ECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "11"
@@ -66354,8 +66316,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66365,6 +66327,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66394,24 +66365,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66428,21 +66381,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Dr. ASL": {
       "sno": 50,
@@ -66453,8 +66397,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66464,6 +66408,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66493,24 +66446,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66527,21 +66462,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Dr.ASL": {
       "sno": 50,
@@ -66552,8 +66478,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66563,6 +66489,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66592,24 +66527,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66626,21 +66543,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Mr. ASL": {
       "sno": 50,
@@ -66651,8 +66559,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66662,6 +66570,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66691,24 +66608,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66725,21 +66624,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Mrs. ASL": {
       "sno": 50,
@@ -66750,8 +66640,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66761,6 +66651,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66790,24 +66689,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66824,21 +66705,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Ms. ASL": {
       "sno": 50,
@@ -66849,8 +66721,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66860,6 +66732,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66889,24 +66770,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -66923,21 +66786,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "Dr. A Suseelatha": {
       "sno": 50,
@@ -66948,8 +66802,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 8,
-      "totalLoad": 14,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66959,6 +66813,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-402",
+          "hours": 2,
+          "type": "tutorial",
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "CHEMICAL",
@@ -66988,24 +66851,6 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-402",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "ECE-2",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-403",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "CSE-2",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -67022,21 +66867,12 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "MECH",
-          "subject": "CAL & LA Tut.",
-          "code": "CAL & LA Tut.",
-          "room": "G-404",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCHEMICAL → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCHEMICAL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nEEE → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "13"
     },
     "BB": {
       "sno": 51,
@@ -70099,8 +69935,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70143,9 +69979,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70166,10 +70002,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Dr. TPK": {
       "sno": 56,
@@ -70180,8 +70016,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70224,9 +70060,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70247,10 +70083,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Dr.TPK": {
       "sno": 56,
@@ -70261,8 +70097,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70305,9 +70141,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70328,10 +70164,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Mr. TPK": {
       "sno": 56,
@@ -70342,8 +70178,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70386,9 +70222,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70409,10 +70245,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Mrs. TPK": {
       "sno": 56,
@@ -70423,8 +70259,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70467,9 +70303,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70490,10 +70326,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Ms. TPK": {
       "sno": 56,
@@ -70504,8 +70340,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70548,9 +70384,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70571,10 +70407,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "Dr. T Poornakantha": {
       "sno": 56,
@@ -70585,8 +70421,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 6,
-      "totalLoad": 12,
+      "tutLoad": 7,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70629,9 +70465,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-403",
-          "hours": 1,
+          "hours": 2,
           "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
+          "loadDetail": "2 tutorial = 2 periods"
         },
         {
           "branch": "MECH-ROBOTICS",
@@ -70652,10 +70488,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "13"
     },
     "BVSAK": {
       "sno": 57,

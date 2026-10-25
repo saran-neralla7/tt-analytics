@@ -634,6 +634,47 @@ for (let r = 1; r < rowsFinal.length; r++) {
 
 console.log(`Parsed timetableData for ${Object.keys(timetableData).length} branches from Timetable_Final`);
 
+// 3.5 Sync branchLegends tutorial & class faculty directly from Timetable_Final (Authoritative source)
+Object.entries(timetableData).forEach(([branch, daysObj]) => {
+  const tutMap = {};
+  Object.values(daysObj).forEach(dayObj => {
+    Object.values(dayObj).forEach(slots => {
+      slots.forEach(s => {
+        const subj = s.subject || '';
+        if (/tut/i.test(subj)) {
+          const baseSubj = subj.replace(/\s*Tut\.?.*$/i, '').trim();
+          if (!tutMap[baseSubj]) tutMap[baseSubj] = { shorts: [], fulls: [] };
+          if (s.rawFaculty) {
+            s.rawFaculty.split(/[,;\n]/).forEach(sf => {
+              const clean = sf.trim();
+              if (clean && !tutMap[baseSubj].shorts.includes(clean)) {
+                tutMap[baseSubj].shorts.push(clean);
+              }
+            });
+          }
+          if (s.faculty) {
+            s.faculty.split(/[,;\n]/).forEach(ff => {
+              const clean = ff.trim();
+              if (clean && !tutMap[baseSubj].fulls.includes(clean)) {
+                tutMap[baseSubj].fulls.push(clean);
+              }
+            });
+          }
+        }
+      });
+    });
+  });
+
+  const legendList = branchLegends[branch] || [];
+  legendList.forEach(leg => {
+    const base = (leg.subjectShort || '').trim();
+    if (tutMap[base] && tutMap[base].shorts.length > 0) {
+      leg.tutorialShort = tutMap[base].shorts.join('\n');
+      leg.tutorialFullName = tutMap[base].fulls.join('\n');
+    }
+  });
+});
+
 // 4. Pre-compute masterFacultyTimetables directly from Timetable_Final
 const masterFacultyTimetables = {};
 facultyList.forEach(f => {
