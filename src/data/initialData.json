@@ -1334,18 +1334,18 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. B Bharathi",
-            "rawFaculty": "BB",
+            "subject": "PPSTC",
+            "faculty": "Mrs. DMV Priya",
+            "rawFaculty": "DMVP",
             "room": "G-408",
             "isLab": false
           }
         ],
         "02:15-03:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mrs. DMV Priya",
-            "rawFaculty": "DMVP",
+            "subject": "CAL & LA",
+            "faculty": "Dr. B Bharathi",
+            "rawFaculty": "BB",
             "room": "G-408",
             "isLab": false
           }
@@ -3632,8 +3632,8 @@
         "11:15-12:15": [
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-            "rawFaculty": "ADP, DMVP, SVM",
+            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
+            "rawFaculty": "ADP, MBS, SVM",
             "room": "COMP. LAB-3",
             "isLab": true
           },
@@ -3648,8 +3648,8 @@
         "12:15-01:15": [
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-            "rawFaculty": "ADP, DMVP, SVM",
+            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
+            "rawFaculty": "ADP, MBS, SVM",
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
@@ -3730,8 +3730,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-            "rawFaculty": "ADP, MBS, CA",
+            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
+            "rawFaculty": "ADP, DMVP, CA",
             "room": "COMP. LAB-1",
             "isLab": true
           }
@@ -3747,8 +3747,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-            "rawFaculty": "ADP, MBS, CA",
+            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
+            "rawFaculty": "ADP, DMVP, CA",
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true
@@ -6827,8 +6827,8 @@
               "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
               "branch": "CSE(AI&ML)-1",
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-              "facultyShort": "ADP, MBS, CA"
+              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
+              "facultyShort": "ADP, DMVP, CA"
             },
             "09:00-11:00": {
               "raw": "MECH / PPSTC LAB",
@@ -6964,8 +6964,8 @@
               "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
               "branch": "CSE(AI&ML)-1",
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-              "facultyShort": "ADP, DMVP, SVM"
+              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
+              "facultyShort": "ADP, MBS, SVM"
             },
             "09:00-11:00": {
               "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
@@ -8558,8 +8558,8 @@
             {
               "branch": "CSE(AI&ML)-1",
               "room": "COMP. LAB-3",
-              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-              "facultyShort": "ADP, DMVP, SVM",
+              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
+              "facultyShort": "ADP, MBS, SVM",
               "raw": "CSE(AI&ML)-1/COMP. LAB-3"
             }
           ],
@@ -8578,8 +8578,8 @@
             {
               "branch": "CSE(AI&ML)-1",
               "room": "COMP. LAB-1",
-              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-              "facultyShort": "ADP, MBS, CA",
+              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
+              "facultyShort": "ADP, DMVP, CA",
               "raw": "CSE(AI&ML)-1/COMP. LAB-1"
             }
           ],
@@ -9642,9 +9642,9 @@
           "11:15-01:15": [
             {
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
+              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
               "room": "COMP. LAB-3",
-              "raw": "FAI & ML LAB\nADP, DMVP, SVM\nCOMP. LAB-3"
+              "raw": "FAI & ML LAB\nADP, MBS, SVM\nCOMP. LAB-3"
             },
             {
               "subject": "AITA LAB",
@@ -9672,9 +9672,9 @@
             },
             {
               "subject": "FAI & ML LAB",
-              "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
+              "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
               "room": "COMP. LAB-1",
-              "raw": "FAI & ML LAB\nADP, MBS, CA\nCOMP. LAB-1"
+              "raw": "FAI & ML LAB\nADP, DMVP, CA\nCOMP. LAB-1"
             }
           ]
         },
@@ -10930,8 +10930,8 @@
             "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Ms. C Aparna",
-            "facultyShort": "ADP, MBS, CA"
+            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Ms. C Aparna",
+            "facultyShort": "ADP, DMVP, CA"
           },
           "09:00-11:00": {
             "raw": "MECH / PPSTC LAB",
@@ -11067,8 +11067,8 @@
             "raw": "CSE(AI&ML)-1 / FAI & ML LAB",
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB",
-            "faculty": "Mr. A Dhanunjaya Prasad, Mrs. DMV Priya, Mr. S Vinod Manikantha",
-            "facultyShort": "ADP, DMVP, SVM"
+            "faculty": "Mr. A Dhanunjaya Prasad, Dr. M Bhanu Sridhar, Mr. S Vinod Manikantha",
+            "facultyShort": "ADP, MBS, SVM"
           },
           "09:00-11:00": {
             "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
@@ -18983,7 +18983,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "ADP, DMVP, SVM",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
         ],
@@ -18994,7 +18994,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "ADP, DMVP, SVM",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
         ]
@@ -19018,7 +19018,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, DMVP, CA",
             "isNonAcademic": false
           }
         ],
@@ -19029,7 +19029,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, DMVP, CA",
             "isNonAcademic": false
           }
         ],
@@ -19761,29 +19761,7 @@
             "isNonAcademic": false
           }
         ],
-        "11:15-12:15": [
-          {
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "ADP, DMVP, SVM",
-            "isNonAcademic": false
-          }
-        ],
         "12:15-01:15": [
-          {
-            "branch": "CSE(AI&ML)-1",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "ADP, DMVP, SVM",
-            "isNonAcademic": false
-          }
-        ],
-        "02:15-03:15": [
           {
             "branch": "MECH-ROBOTICS",
             "subject": "PPSTC",
@@ -19815,6 +19793,28 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "BHP, DMVP",
+            "isNonAcademic": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "ADP, DMVP, CA",
+            "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "ADP, DMVP, CA",
             "isNonAcademic": false
           }
         ]
@@ -20002,7 +20002,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, DMVP, CA",
             "isNonAcademic": false
           }
         ],
@@ -20013,7 +20013,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, DMVP, CA",
             "isNonAcademic": false
           }
         ]
@@ -23263,30 +23263,31 @@
       }
     },
     "Dr. M Bhanu Sridhar": {
-      "MON": {},
-      "TUE": {
-        "02:15-03:15": [
+      "MON": {
+        "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-1",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
         ],
-        "03:15-04:15": [
+        "12:15-01:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-1",
+            "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "ADP, MBS, CA",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
-        ],
+        ]
+      },
+      "TUE": {
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -23657,7 +23658,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "ADP, DMVP, SVM",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
         ],
@@ -23668,7 +23669,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "ADP, DMVP, SVM",
+            "rawFaculty": "ADP, MBS, SVM",
             "isNonAcademic": false
           }
         ]
@@ -24359,7 +24360,7 @@
             "isNonAcademic": false
           }
         ],
-        "12:15-01:15": [
+        "02:15-03:15": [
           {
             "branch": "MECH-ROBOTICS",
             "subject": "CAL & LA",
@@ -29810,15 +29811,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -29835,6 +29827,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -29864,7 +29865,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -31592,7 +31593,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -35667,15 +35668,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -35692,6 +35684,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -35721,7 +35722,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -37449,7 +37450,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50852,15 +50853,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -50877,6 +50869,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -50906,7 +50907,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -50933,15 +50934,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -50958,6 +50950,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -50987,7 +50988,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51014,15 +51015,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -51039,6 +51031,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -51068,7 +51069,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51095,15 +51096,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -51120,6 +51112,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -51149,7 +51150,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51176,15 +51177,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -51201,6 +51193,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -51230,7 +51231,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51257,15 +51258,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -51282,6 +51274,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -51311,7 +51312,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51338,15 +51339,6 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-1",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -51363,6 +51355,15 @@
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-1",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
         },
         {
           "branch": "CSE (CS & DS)",
@@ -51392,7 +51393,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
+      "assignments": "CSE (CS & DS) → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nMECH-ROBOTICS → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCHEMICAL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE (CS & DS) → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCHEMICAL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nMECH-ROBOTICS → PPSTC  LAB (PPSTC  LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -63362,7 +63363,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63425,7 +63426,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63488,7 +63489,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63551,7 +63552,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63614,7 +63615,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63677,7 +63678,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -63740,7 +63741,7 @@
           "branch": "CSE(AI&ML)-1",
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
-          "room": "COMP. LAB-1",
+          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
