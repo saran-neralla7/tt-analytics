@@ -294,9 +294,9 @@
       "MON": {
         "09:00-10:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. G Santosh Kumar",
-            "rawFaculty": "GSK",
+            "subject": "AITA",
+            "faculty": "Dr. V Adinarayana",
+            "rawFaculty": "VA",
             "room": "E-410",
             "isLab": false
           }
@@ -428,18 +428,18 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. G Santosh Kumar",
-            "rawFaculty": "GSK",
+            "subject": "CAL & LA",
+            "faculty": "Dr. SS Ayyappa Sastri",
+            "rawFaculty": "SSAS",
             "room": "E-410",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "AITA",
-            "faculty": "Dr. V Adinarayana",
-            "rawFaculty": "VA",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. G Santosh Kumar",
+            "rawFaculty": "GSK",
             "room": "E-410",
             "isLab": false
           }
@@ -476,27 +476,27 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "S&G",
-            "faculty": "Mr. P Manikanta",
-            "rawFaculty": "PM",
+            "subject": "PPSTC",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
             "room": "E-410",
             "isLab": false
           }
         ],
         "11:15-12:15": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. SS Ayyappa Sastri",
-            "rawFaculty": "SSAS",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. G Santosh Kumar",
+            "rawFaculty": "GSK",
             "room": "E-410",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
+            "subject": "ESS. ENG. Tut.",
+            "faculty": "Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
+            "rawFaculty": "NVL, PBSKR",
             "room": "E-410",
             "isLab": false
           }
@@ -571,9 +571,9 @@
         ],
         "03:15-04:15": [
           {
-            "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
-            "rawFaculty": "NVL, PBSKR",
+            "subject": "S&G",
+            "faculty": "Mr. P Manikanta",
+            "rawFaculty": "PM",
             "room": "E-410",
             "isLab": false
           }
@@ -1597,9 +1597,9 @@
       "MON": {
         "09:00-10:00": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
-            "rawFaculty": "MRR, BSK",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya, Dr. G Santosh Kumar",
+            "rawFaculty": "BV, GSK",
             "room": "G-402",
             "isLab": false
           }
@@ -1708,9 +1708,9 @@
       "TUE": {
         "09:00-10:00": [
           {
-            "subject": "DLD",
-            "faculty": "Dr. I Srinivas Rao, Mrs. V Sridevi",
-            "rawFaculty": "ISR, VS",
+            "subject": "ESAM",
+            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+            "rawFaculty": "MRR, BSK",
             "room": "G-402",
             "isLab": false
           }
@@ -1775,9 +1775,9 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya, Dr. G Santosh Kumar",
-            "rawFaculty": "BV, GSK",
+            "subject": "DLD",
+            "faculty": "Dr. I Srinivas Rao, Mrs. V Sridevi",
+            "rawFaculty": "ISR, VS",
             "room": "G-402",
             "isLab": false
           }
@@ -2532,9 +2532,9 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya",
-            "rawFaculty": "BV",
+            "subject": "CAL & LA",
+            "faculty": "Dr. KVS Sarma",
+            "rawFaculty": "KVSS",
             "room": "E-412",
             "isLab": false
           }
@@ -2795,9 +2795,9 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. KVS Sarma",
-            "rawFaculty": "KVSS",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya",
+            "rawFaculty": "BV",
             "room": "E-412",
             "isLab": false
           }
@@ -3803,9 +3803,9 @@
         "02:15-03:15": [
           {
             "subject": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
+            "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+            "rawFaculty": "CHR, BN",
+            "room": "G-302",
             "isLab": false,
             "isNonAcademic": true
           },
@@ -12212,10 +12212,10 @@
               "branch": "CSE(AI&ML)-1",
               "day": "WED",
               "slot": "02:15-03:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
+              "label": "COUNSELLING / CHR, BN / G-302",
+              "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+              "rawFaculty": "CHR, BN",
+              "room": "G-302",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12778,10 +12778,10 @@
               "branch": "CSE(AI&ML)-1",
               "day": "WED",
               "slot": "02:15-03:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
+              "label": "COUNSELLING / CHR, BN / G-302",
+              "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+              "rawFaculty": "CHR, BN",
+              "room": "G-302",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -14214,10 +14214,10 @@
               "branch": "CSE(AI&ML)-1",
               "day": "WED",
               "slot": "02:15-03:15",
-              "label": "COUNSELLING",
-              "faculty": "",
-              "rawFaculty": "",
-              "room": "",
+              "label": "COUNSELLING / CHR, BN / G-302",
+              "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+              "rawFaculty": "CHR, BN",
+              "room": "G-302",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -14887,10 +14887,10 @@
             "branch": "CSE(AI&ML)-1",
             "day": "WED",
             "slot": "02:15-03:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
+            "label": "COUNSELLING / CHR, BN / G-302",
+            "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+            "rawFaculty": "CHR, BN",
+            "room": "G-302",
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
@@ -15915,10 +15915,10 @@
             "branch": "CSE(AI&ML)-1",
             "day": "WED",
             "slot": "02:15-03:15",
-            "label": "COUNSELLING",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
+            "label": "COUNSELLING / CHR, BN / G-302",
+            "faculty": "Dr. Ch Rajesh, Dr. B Nagarjun",
+            "rawFaculty": "CHR, BN",
+            "room": "G-302",
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
@@ -16299,17 +16299,6 @@
     },
     "Dr. B Santosh Kumar": {
       "MON": {
-        "09:00-10:00": [
-          {
-            "branch": "ECE-1",
-            "subject": "ESAM",
-            "room": "G-402",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "MRR, BSK",
-            "isNonAcademic": false
-          }
-        ],
         "12:15-01:15": [
           {
             "branch": "ECE-3",
@@ -16323,6 +16312,17 @@
         ]
       },
       "TUE": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "ESAM",
+            "room": "G-402",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "MRR, BSK",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-3",
@@ -16863,17 +16863,6 @@
     },
     "Dr. M Rama Rajeswari": {
       "MON": {
-        "09:00-10:00": [
-          {
-            "branch": "ECE-1",
-            "subject": "ESAM",
-            "room": "G-402",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "MRR, BSK",
-            "isNonAcademic": false
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -16920,6 +16909,17 @@
         ]
       },
       "TUE": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "ESAM",
+            "room": "G-402",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "MRR, BSK",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -17704,6 +17704,17 @@
     },
     "Dr. B Vidya": {
       "MON": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-1",
+            "subject": "SUS. ENGG.",
+            "room": "G-402",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BV, GSK",
+            "isNonAcademic": false
+          }
+        ],
         "10:00-11:00": [
           {
             "branch": "ECE-1",
@@ -17713,15 +17724,6 @@
             "isContinued": false,
             "rawFaculty": "CHVS, BV",
             "isNonAcademic": true
-          },
-          {
-            "branch": "ECE-3",
-            "subject": "SUS. ENGG.",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BV",
-            "isNonAcademic": false
           }
         ],
         "11:15-12:15": [
@@ -17756,17 +17758,6 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "BV, PM",
-            "isNonAcademic": false
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "ECE-1",
-            "subject": "SUS. ENGG.",
-            "room": "G-402",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BV, GSK",
             "isNonAcademic": false
           }
         ]
@@ -17830,6 +17821,17 @@
             "rawFaculty": "DM, BV",
             "isNonAcademic": false
           }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "SUS. ENGG.",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BV",
+            "isNonAcademic": false
+          }
         ]
       }
     },
@@ -17837,12 +17839,12 @@
       "MON": {
         "09:00-10:00": [
           {
-            "branch": "CIVIL",
+            "branch": "ECE-1",
             "subject": "SUS. ENGG.",
-            "room": "E-410",
+            "room": "G-402",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "GSK",
+            "rawFaculty": "BV, GSK",
             "isNonAcademic": false
           }
         ],
@@ -17880,21 +17882,9 @@
           }
         ]
       },
-      "TUE": {
-        "02:15-03:15": [
-          {
-            "branch": "ECE-1",
-            "subject": "SUS. ENGG.",
-            "room": "G-402",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BV, GSK",
-            "isNonAcademic": false
-          }
-        ]
-      },
+      "TUE": {},
       "WED": {
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CIVIL",
             "subject": "SUS. ENGG.",
@@ -17918,6 +17908,17 @@
         ]
       },
       "THU": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "SUS. ENGG.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "GSK",
+            "isNonAcademic": false
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "CSE (CS & DS)",
@@ -18084,17 +18085,6 @@
         ]
       },
       "THU": {
-        "10:00-11:00": [
-          {
-            "branch": "CIVIL",
-            "subject": "S&G",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "PM",
-            "isNonAcademic": false
-          }
-        ],
         "12:15-01:15": [
           {
             "branch": "CSE (CS & DS)",
@@ -18108,6 +18098,17 @@
         ]
       },
       "FRI": {
+        "03:15-04:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "S&G",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "PM",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "CSE (CS & DS)",
@@ -19289,7 +19290,7 @@
         ]
       },
       "THU": {
-        "12:15-01:15": [
+        "10:00-11:00": [
           {
             "branch": "CIVIL",
             "subject": "PPSTC",
@@ -19298,7 +19299,9 @@
             "isContinued": false,
             "rawFaculty": "BBK",
             "isNonAcademic": false
-          },
+          }
+        ],
+        "12:15-01:15": [
           {
             "branch": "CSE-1",
             "subject": "PPSTC",
@@ -20653,7 +20656,7 @@
         ]
       },
       "TUE": {
-        "09:00-10:00": [
+        "02:15-03:15": [
           {
             "branch": "ECE-1",
             "subject": "DLD",
@@ -20740,6 +20743,17 @@
     },
     "Dr. V Adinarayana": {
       "MON": {
+        "09:00-10:00": [
+          {
+            "branch": "CIVIL",
+            "subject": "AITA",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "VA",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
@@ -20787,19 +20801,7 @@
           }
         ]
       },
-      "WED": {
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "AITA",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "VA",
-            "isNonAcademic": false
-          }
-        ]
-      },
+      "WED": {},
       "THU": {
         "10:00-11:00": [
           {
@@ -21074,7 +21076,7 @@
         ]
       },
       "TUE": {
-        "09:00-10:00": [
+        "02:15-03:15": [
           {
             "branch": "ECE-1",
             "subject": "DLD",
@@ -22867,6 +22869,17 @@
             "isNonAcademic": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "NVL, PBSKR",
+            "isNonAcademic": false
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "EEE",
@@ -22902,17 +22915,6 @@
         ]
       },
       "FRI": {
-        "03:15-04:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "NVL, PBSKR",
-            "isNonAcademic": false
-          }
-        ],
         "10:00-11:00": [
           {
             "branch": "ECE-3",
@@ -23187,6 +23189,17 @@
             "isNonAcademic": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "NVL, PBSKR",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "MECH-ROBOTICS",
@@ -23200,26 +23213,6 @@
         ]
       },
       "FRI": {
-        "03:15-04:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "NVL, PBSKR",
-            "isNonAcademic": false
-          },
-          {
-            "branch": "MECH",
-            "subject": "COUNSELLING",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "PKM, PBSKR",
-            "isNonAcademic": true
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -23240,6 +23233,17 @@
             "isContinued": false,
             "rawFaculty": "JRR, IRS, PBSKR",
             "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "MECH",
+            "subject": "COUNSELLING",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "PKM, PBSKR",
+            "isNonAcademic": true
           }
         ]
       }
@@ -23931,6 +23935,17 @@
             "isNonAcademic": false
           }
         ],
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "CAL & LA",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KVSS",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-3",
@@ -24027,17 +24042,6 @@
         ]
       },
       "FRI": {
-        "11:15-12:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "CAL & LA",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KVSS",
-            "isNonAcademic": false
-          }
-        ],
         "09:00-10:00": [
           {
             "branch": "MECH",
@@ -24090,6 +24094,17 @@
         ]
       },
       "WED": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "CAL & LA",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SSAS",
+            "isNonAcademic": false
+          }
+        ],
         "03:15-04:15": [
           {
             "branch": "CIVIL",
@@ -24125,17 +24140,6 @@
         ]
       },
       "THU": {
-        "11:15-12:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "CAL & LA",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SSAS",
-            "isNonAcademic": false
-          }
-        ],
         "03:15-04:15": [
           {
             "branch": "ECE-1",
@@ -26465,6 +26469,17 @@
             "isNonAcademic": false
           }
         ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "COUNSELLING",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHR, BN",
+            "isNonAcademic": true
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "CSE(AI&ML)-2",
@@ -26762,6 +26777,17 @@
             "isContinued": true,
             "rawFaculty": "BRB, CHR, BN",
             "isNonAcademic": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE(AI&ML)-1",
+            "subject": "COUNSELLING",
+            "room": "G-302",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "CHR, BN",
+            "isNonAcademic": true
           }
         ]
       },
@@ -28366,19 +28392,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -28420,7 +28446,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 3,
@@ -28574,15 +28600,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -28600,6 +28617,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -28609,7 +28635,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 6,
@@ -28864,10 +28890,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -28891,15 +28917,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -28907,9 +28924,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
       "sno": 11,
@@ -28924,10 +28950,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -28951,10 +28977,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -28987,7 +29013,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     {
       "sno": 12,
@@ -30106,6 +30132,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -30122,15 +30157,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -30169,7 +30195,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -31057,6 +31083,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -31073,18 +31108,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 42,
@@ -31222,19 +31248,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -31258,7 +31284,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 44,
@@ -31559,6 +31585,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -31585,15 +31620,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -31612,7 +31638,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 49,
@@ -33687,19 +33713,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -33741,7 +33767,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     {
       "sno": 3,
@@ -33895,15 +33921,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -33921,6 +33938,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -33930,7 +33956,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 6,
@@ -34185,10 +34211,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -34212,15 +34238,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -34228,9 +34245,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     {
       "sno": 11,
@@ -34245,10 +34271,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -34272,10 +34298,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -34308,7 +34334,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     {
       "sno": 12,
@@ -35427,6 +35453,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -35443,15 +35478,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -35490,7 +35516,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     {
       "sno": 29,
@@ -36378,6 +36404,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -36394,18 +36429,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 42,
@@ -36543,19 +36569,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -36579,7 +36605,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 44,
@@ -36880,6 +36906,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -36906,15 +36941,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -36933,7 +36959,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     {
       "sno": 49,
@@ -39864,19 +39890,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -39918,7 +39944,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. BSK": {
       "sno": 2,
@@ -39933,19 +39959,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -39987,7 +40013,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr.BSK": {
       "sno": 2,
@@ -40002,19 +40028,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -40056,7 +40082,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mr. BSK": {
       "sno": 2,
@@ -40071,19 +40097,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -40125,7 +40151,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Mrs. BSK": {
       "sno": 2,
@@ -40140,19 +40166,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -40194,7 +40220,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Ms. BSK": {
       "sno": 2,
@@ -40209,19 +40235,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -40263,7 +40289,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "Dr. B Santosh Kumar": {
       "sno": 2,
@@ -40278,19 +40304,19 @@
       "totalLoad": 17,
       "assignedCourses": [
         {
-          "branch": "ECE-1",
+          "branch": "ECE-3",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "G-402",
+          "room": "E-412",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Energy Systems and Advanced Materials",
           "code": "ESAM",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -40332,7 +40358,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
+      "assignments": "ECE-3 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nMECH → Chemistry of Materials (COM) – 1 theory = 1 periods\nMECH → Chemistry Lab (CHEM LAB) – 4 lab = 4 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods\nECE-3 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods"
     },
     "KVNL": {
       "sno": 3,
@@ -41314,15 +41340,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41340,6 +41357,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41349,7 +41375,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr. MRR": {
       "sno": 5,
@@ -41365,15 +41391,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41391,6 +41408,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41400,7 +41426,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr.MRR": {
       "sno": 5,
@@ -41416,15 +41442,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41442,6 +41459,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41451,7 +41477,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Mr. MRR": {
       "sno": 5,
@@ -41467,15 +41493,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41493,6 +41510,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41502,7 +41528,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Mrs. MRR": {
       "sno": 5,
@@ -41518,15 +41544,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41544,6 +41561,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41553,7 +41579,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Ms. MRR": {
       "sno": 5,
@@ -41569,15 +41595,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41595,6 +41612,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41604,7 +41630,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "Dr. M Rama Rajeswari": {
       "sno": 5,
@@ -41620,15 +41646,6 @@
       "assignedCourses": [
         {
           "branch": "ECE-1",
-          "subject": "Energy Systems and Advanced Materials",
-          "code": "ESAM",
-          "room": "G-402",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
-          "branch": "ECE-1",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
           "room": "CHEM. LAB.",
@@ -41646,6 +41663,15 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
+          "branch": "ECE-1",
+          "subject": "Energy Systems and Advanced Materials",
+          "code": "ESAM",
+          "room": "G-402",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Engineering Chemistry Lab",
           "code": "ENGG. CHEM LAB",
@@ -41655,7 +41681,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
+      "assignments": "ECE-1 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 6 lab = 6 periods\nECE-2 → Engineering Chemistry Lab (ENGG. CHEM LAB) – 4 lab = 4 periods\nECE-1 → Energy Systems and Advanced Materials (ESAM) – 3 theory = 3 periods\nEEE → Engineering Chemistry Lab (ENGG. CHEM LAB) – 2 lab = 2 periods"
     },
     "PSR": {
       "sno": 6,
@@ -43350,10 +43376,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43377,15 +43403,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43393,9 +43410,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr. BV": {
       "sno": 10,
@@ -43410,10 +43436,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43437,15 +43463,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43453,9 +43470,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr.BV": {
       "sno": 10,
@@ -43470,10 +43496,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43497,15 +43523,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43513,9 +43530,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Mr. BV": {
       "sno": 10,
@@ -43530,10 +43556,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43557,15 +43583,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43573,9 +43590,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Mrs. BV": {
       "sno": 10,
@@ -43590,10 +43616,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43617,15 +43643,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43633,9 +43650,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Ms. BV": {
       "sno": 10,
@@ -43650,10 +43676,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43677,15 +43703,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43693,9 +43710,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "Dr. B Vidya": {
       "sno": 10,
@@ -43710,10 +43736,10 @@
       "totalLoad": 10,
       "assignedCourses": [
         {
-          "branch": "ECE-3",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-412",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43737,15 +43763,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-1",
-          "subject": "Sustainable Engineering",
-          "code": "SUS. ENGG.",
-          "room": "G-402",
-          "hours": 2,
-          "type": "theory",
-          "loadDetail": "2 theory = 2 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
@@ -43753,9 +43770,18 @@
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "Sustainable Engineering",
+          "code": "SUS. ENGG.",
+          "room": "E-412",
+          "hours": 2,
+          "type": "theory",
+          "loadDetail": "2 theory = 2 periods"
         }
       ],
-      "assignments": "ECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nMECH-ROBOTICS → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Surveying and Geomatics Lab (S&G LAB) – 2 lab = 2 periods\nECE-2 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-3 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods"
     },
     "GSK": {
       "sno": 11,
@@ -43770,10 +43796,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43797,10 +43823,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43833,7 +43859,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Dr. GSK": {
       "sno": 11,
@@ -43848,10 +43874,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43875,10 +43901,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43911,7 +43937,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Dr.GSK": {
       "sno": 11,
@@ -43926,10 +43952,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43953,10 +43979,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -43989,7 +44015,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Mr. GSK": {
       "sno": 11,
@@ -44004,10 +44030,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44031,10 +44057,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44067,7 +44093,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Mrs. GSK": {
       "sno": 11,
@@ -44082,10 +44108,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44109,10 +44135,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44145,7 +44171,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Ms. GSK": {
       "sno": 11,
@@ -44160,10 +44186,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44187,10 +44213,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44223,7 +44249,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "Dr. G Santosh Kumar": {
       "sno": 11,
@@ -44238,10 +44264,10 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
-          "branch": "CIVIL",
+          "branch": "ECE-1",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "E-410",
+          "room": "G-402",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44265,10 +44291,10 @@
           "loadDetail": "2 theory = 2 periods"
         },
         {
-          "branch": "ECE-1",
+          "branch": "CIVIL",
           "subject": "Sustainable Engineering",
           "code": "SUS. ENGG.",
-          "room": "G-402",
+          "room": "E-410",
           "hours": 2,
           "type": "theory",
           "loadDetail": "2 theory = 2 periods"
@@ -44301,7 +44327,7 @@
           "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
+      "assignments": "ECE-1 → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nECE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCIVIL → Sustainable Engineering (SUS. ENGG.) – 2 theory = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nMECH → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods"
     },
     "PM": {
       "sno": 12,
@@ -52044,6 +52070,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52060,15 +52095,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52107,7 +52133,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. VA": {
       "sno": 28,
@@ -52122,6 +52148,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52138,15 +52173,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52185,7 +52211,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr.VA": {
       "sno": 28,
@@ -52200,6 +52226,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52216,15 +52251,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52263,7 +52289,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mr. VA": {
       "sno": 28,
@@ -52278,6 +52304,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52294,15 +52329,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52341,7 +52367,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Mrs. VA": {
       "sno": 28,
@@ -52356,6 +52382,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52372,15 +52407,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52419,7 +52445,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Ms. VA": {
       "sno": 28,
@@ -52434,6 +52460,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52450,15 +52485,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52497,7 +52523,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "Dr. V Adinarayana": {
       "sno": 28,
@@ -52512,6 +52538,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-410",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -52528,15 +52563,6 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-410",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
         },
         {
           "branch": "CSE(AI&ML)-1",
@@ -52575,7 +52601,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
+      "assignments": "CIVIL → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-2 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-1 → Digital Logic Design Lab (DLD LAB) – 2 lab = 2 periods\nCIVIL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods"
     },
     "MN": {
       "sno": 29,
@@ -58377,6 +58403,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58393,18 +58428,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. NVL": {
       "sno": 41,
@@ -58473,6 +58499,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58489,18 +58524,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.NVL": {
       "sno": 41,
@@ -58569,6 +58595,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58585,18 +58620,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. NVL": {
       "sno": 41,
@@ -58665,6 +58691,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58681,18 +58716,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. NVL": {
       "sno": 41,
@@ -58761,6 +58787,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58777,18 +58812,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. NVL": {
       "sno": 41,
@@ -58857,6 +58883,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58873,18 +58908,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. N Vijaya Lakshmi": {
       "sno": 41,
@@ -58953,6 +58979,15 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "EEE",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -58969,18 +59004,9 @@
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "CIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "VVLUR": {
       "sno": 42,
@@ -59640,19 +59666,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59676,7 +59702,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. PBSKR": {
       "sno": 43,
@@ -59727,19 +59753,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59763,7 +59789,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.PBSKR": {
       "sno": 43,
@@ -59814,19 +59840,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59850,7 +59876,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. PBSKR": {
       "sno": 43,
@@ -59901,19 +59927,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -59937,7 +59963,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. PBSKR": {
       "sno": 43,
@@ -59988,19 +60014,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -60024,7 +60050,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. PBSKR": {
       "sno": 43,
@@ -60075,19 +60101,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -60111,7 +60137,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. PBS Krishnamuraju": {
       "sno": 43,
@@ -60162,19 +60188,19 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "MECH-ROBOTICS",
+          "branch": "CIVIL",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-408",
+          "room": "E-410",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
+          "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
-          "room": "E-410",
+          "room": "E-408",
           "hours": 1,
           "type": "tutorial",
           "loadDetail": "1 tutorial = 1 periods"
@@ -60198,7 +60224,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods"
     },
     "MBS": {
       "sno": 44,
@@ -62155,6 +62181,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62181,15 +62216,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62208,7 +62234,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. KVSS": {
       "sno": 48,
@@ -62233,6 +62259,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62259,15 +62294,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62286,7 +62312,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr.KVSS": {
       "sno": 48,
@@ -62311,6 +62337,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62337,15 +62372,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62364,7 +62390,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mr. KVSS": {
       "sno": 48,
@@ -62389,6 +62415,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62415,15 +62450,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62442,7 +62468,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Mrs. KVSS": {
       "sno": 48,
@@ -62467,6 +62493,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62493,15 +62528,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62520,7 +62546,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Ms. KVSS": {
       "sno": 48,
@@ -62545,6 +62571,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62571,15 +62606,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62598,7 +62624,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "Dr. KVS Sarma": {
       "sno": 48,
@@ -62623,6 +62649,15 @@
         },
         {
           "branch": "ECE-3",
+          "subject": "Calculus and Linear Algebra",
+          "code": "CAL & LA",
+          "room": "E-412",
+          "hours": 3,
+          "type": "theory",
+          "loadDetail": "3 theory = 3 periods"
+        },
+        {
+          "branch": "ECE-3",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "E-412",
@@ -62649,15 +62684,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "Calculus and Linear Algebra",
-          "code": "CAL & LA",
-          "room": "E-412",
-          "hours": 3,
-          "type": "theory",
-          "loadDetail": "3 theory = 3 periods"
-        },
-        {
           "branch": "CIVIL",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -62676,7 +62702,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
+      "assignments": "ECE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-3 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nECE-3 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCIVIL → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods"
     },
     "SSAS": {
       "sno": 49,
