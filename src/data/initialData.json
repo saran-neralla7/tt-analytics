@@ -3087,8 +3087,8 @@
           },
           {
             "subject": "CAL & LA Tut.",
-            "faculty": "Dr. A Suseelatha, Dr. B Bharathi, Dr. K L Sai Prasad",
-            "rawFaculty": "ASL, BB, KLSP",
+            "faculty": "Dr. A Suseelatha, Dr. T Poornakantha, Dr. K L Sai Prasad",
+            "rawFaculty": "ASL, TPK, KLSP",
             "room": "G-304",
             "isLab": false
           }
@@ -4220,20 +4220,21 @@
       "THU": {
         "09:00-10:00": [
           {
-            "subject": "AITA",
-            "faculty": "Mr. K AyyaRaju, Mr. PK DAS",
-            "rawFaculty": "KAR, PKD",
+            "subject": "FAI & ML",
+            "faculty": "Ms. S Laxmi Aparna, Ms. K Swathi",
+            "rawFaculty": "SLA, KS",
             "room": "G-303",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "FAI & ML",
-            "faculty": "Ms. S Laxmi Aparna, Ms. K Swathi",
-            "rawFaculty": "SLA, KS",
+            "subject": "COUNSELLING",
+            "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
+            "rawFaculty": "DC, VVVSN",
             "room": "G-303",
-            "isLab": false
+            "isLab": false,
+            "isNonAcademic": true
           }
         ],
         "11:15-12:15": [
@@ -4293,21 +4294,20 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. T Poornakantha, Dr. N Giribabu",
-            "rawFaculty": "TPK, NGB",
+            "subject": "AITA",
+            "faculty": "Mr. K AyyaRaju, Mr. PK DAS",
+            "rawFaculty": "KAR, PKD",
             "room": "G-303",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "COUNSELLING",
-            "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
-            "rawFaculty": "DC, VVVSN",
+            "subject": "CAL & LA",
+            "faculty": "Dr. T Poornakantha, Dr. N Giribabu",
+            "rawFaculty": "TPK, NGB",
             "room": "G-303",
-            "isLab": false,
-            "isNonAcademic": true
+            "isLab": false
           }
         ],
         "11:15-12:15": [
@@ -4759,8 +4759,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "ASL\nBB",
         "facultyFullName": "Dr. A Suseelatha\nDr. B Bharathi",
-        "tutorialShort": "ASL\nBB\nCHVS\nKLSP",
-        "tutorialFullName": "Dr. A Suseelatha\nDr. B Bharathi\nDr. Ch V Sreedhar\nDr. K L Sai Prasad",
+        "tutorialShort": "ASL\nBB\nCHVS\nTPK\nKLSP",
+        "tutorialFullName": "Dr. A Suseelatha\nDr. B Bharathi\nDr. Ch V Sreedhar\nDr. T Poornakantha\nDr. K L Sai Prasad",
         "room": "G-304",
         "isLab": false
       },
@@ -12155,18 +12155,6 @@
           ],
           "10:00-11:00": [
             {
-              "branch": "CSE(AI&ML)-2",
-              "day": "FRI",
-              "slot": "10:00-11:00",
-              "label": "COUNSELLING / DC, VVVSN / G-303",
-              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
-              "rawFaculty": "DC, VVVSN",
-              "room": "G-303",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
               "branch": "ECE-3",
               "day": "FRI",
               "slot": "10:00-11:00",
@@ -12328,6 +12316,20 @@
               "faculty": "Dr. Ch Appala Naidu, Dr. Rani Nanda",
               "rawFaculty": "CHAN, RN",
               "room": "G-403",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "10:00-11:00": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "10:00-11:00",
+              "label": "COUNSELLING / DC, VVVSN / G-303",
+              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
+              "rawFaculty": "DC, VVVSN",
+              "room": "G-303",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -12883,32 +12885,6 @@
               "isLibrary": true
             }
           ],
-          "10:00-11:00": [
-            {
-              "branch": "CSE(AI&ML)-2",
-              "day": "FRI",
-              "slot": "10:00-11:00",
-              "label": "COUNSELLING / DC, VVVSN / G-303",
-              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
-              "rawFaculty": "DC, VVVSN",
-              "room": "G-303",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            },
-            {
-              "branch": "ECE-3",
-              "day": "FRI",
-              "slot": "10:00-11:00",
-              "label": "COUNSELLING / MN, NVL / E-412",
-              "faculty": "Dr. M Neelima, Dr. N Vijaya Lakshmi",
-              "rawFaculty": "MN, NVL",
-              "room": "E-412",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ],
           "03:15-04:15": [
             {
               "branch": "ECE-1",
@@ -12966,6 +12942,20 @@
               "faculty": "Ms. P KiranMayi, Mr. PBS Krishnamuraju",
               "rawFaculty": "PKM, PBSKR",
               "room": "G-404",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
+          "10:00-11:00": [
+            {
+              "branch": "ECE-3",
+              "day": "FRI",
+              "slot": "10:00-11:00",
+              "label": "COUNSELLING / MN, NVL / E-412",
+              "faculty": "Dr. M Neelima, Dr. N Vijaya Lakshmi",
+              "rawFaculty": "MN, NVL",
+              "room": "E-412",
               "isSports": false,
               "isCounselling": true,
               "isLibrary": false
@@ -13073,6 +13063,18 @@
               "isSports": false,
               "isCounselling": false,
               "isLibrary": true
+            },
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "10:00-11:00",
+              "label": "COUNSELLING / DC, VVVSN / G-303",
+              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
+              "rawFaculty": "DC, VVVSN",
+              "room": "G-303",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
             }
           ],
           "11:15-12:15": [
@@ -14326,6 +14328,20 @@
         "TUE": {},
         "WED": {},
         "THU": {
+          "10:00-11:00": [
+            {
+              "branch": "CSE(AI&ML)-2",
+              "day": "THU",
+              "slot": "10:00-11:00",
+              "label": "COUNSELLING / DC, VVVSN / G-303",
+              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
+              "rawFaculty": "DC, VVVSN",
+              "room": "G-303",
+              "isSports": false,
+              "isCounselling": true,
+              "isLibrary": false
+            }
+          ],
           "03:15-04:15": [
             {
               "branch": "CSE(AI&ML)-2",
@@ -14341,22 +14357,7 @@
             }
           ]
         },
-        "FRI": {
-          "10:00-11:00": [
-            {
-              "branch": "CSE(AI&ML)-2",
-              "day": "FRI",
-              "slot": "10:00-11:00",
-              "label": "COUNSELLING / DC, VVVSN / G-303",
-              "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
-              "rawFaculty": "DC, VVVSN",
-              "room": "G-303",
-              "isSports": false,
-              "isCounselling": true,
-              "isLibrary": false
-            }
-          ]
-        }
+        "FRI": {}
       },
       "CSE (CS & DS)": {
         "MON": {
@@ -15026,6 +15027,18 @@
             "isSports": false,
             "isCounselling": false,
             "isLibrary": true
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "THU",
+            "slot": "10:00-11:00",
+            "label": "COUNSELLING / DC, VVVSN / G-303",
+            "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
+            "rawFaculty": "DC, VVVSN",
+            "room": "G-303",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
           }
         ],
         "11:15-12:15": [
@@ -15160,32 +15173,6 @@
             "isLibrary": true
           }
         ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "day": "FRI",
-            "slot": "10:00-11:00",
-            "label": "COUNSELLING / DC, VVVSN / G-303",
-            "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
-            "rawFaculty": "DC, VVVSN",
-            "room": "G-303",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          },
-          {
-            "branch": "ECE-3",
-            "day": "FRI",
-            "slot": "10:00-11:00",
-            "label": "COUNSELLING / MN, NVL / E-412",
-            "faculty": "Dr. M Neelima, Dr. N Vijaya Lakshmi",
-            "rawFaculty": "MN, NVL",
-            "room": "E-412",
-            "isSports": false,
-            "isCounselling": true,
-            "isLibrary": false
-          }
-        ],
         "03:15-04:15": [
           {
             "branch": "ECE-1",
@@ -15243,6 +15230,20 @@
             "faculty": "Ms. P KiranMayi, Mr. PBS Krishnamuraju",
             "rawFaculty": "PKM, PBSKR",
             "room": "G-404",
+            "isSports": false,
+            "isCounselling": true,
+            "isLibrary": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "ECE-3",
+            "day": "FRI",
+            "slot": "10:00-11:00",
+            "label": "COUNSELLING / MN, NVL / E-412",
+            "faculty": "Dr. M Neelima, Dr. N Vijaya Lakshmi",
+            "rawFaculty": "MN, NVL",
+            "room": "E-412",
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
@@ -16020,18 +16021,6 @@
           {
             "branch": "CSE(AI&ML)-2",
             "day": "THU",
-            "slot": "03:15-04:15",
-            "label": "LIBRARY",
-            "faculty": "",
-            "rawFaculty": "",
-            "room": "",
-            "isSports": false,
-            "isCounselling": false,
-            "isLibrary": true
-          },
-          {
-            "branch": "CSE(AI&ML)-2",
-            "day": "FRI",
             "slot": "10:00-11:00",
             "label": "COUNSELLING / DC, VVVSN / G-303",
             "faculty": "Dr. D Chandravathi, Mr. VVV Satyanarayana",
@@ -16040,6 +16029,18 @@
             "isSports": false,
             "isCounselling": true,
             "isLibrary": false
+          },
+          {
+            "branch": "CSE(AI&ML)-2",
+            "day": "THU",
+            "slot": "03:15-04:15",
+            "label": "LIBRARY",
+            "faculty": "",
+            "rawFaculty": "",
+            "room": "",
+            "isSports": false,
+            "isCounselling": false,
+            "isLibrary": true
           }
         ]
       },
@@ -18704,6 +18705,17 @@
             "rawFaculty": "DC, AS, KMK",
             "isNonAcademic": false
           }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "COUNSELLING",
+            "room": "G-303",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "DC, VVVSN",
+            "isNonAcademic": true
+          }
         ]
       },
       "FRI": {
@@ -18738,17 +18750,6 @@
             "isContinued": true,
             "rawFaculty": "DC, MA, KJR",
             "isNonAcademic": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "COUNSELLING",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "DC, VVVSN",
-            "isNonAcademic": true
           }
         ]
       }
@@ -20286,7 +20287,7 @@
             "isNonAcademic": false
           }
         ],
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "CSE(AI&ML)-2",
             "subject": "FAI & ML",
@@ -20485,7 +20486,7 @@
             "isNonAcademic": false
           }
         ],
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "CSE(AI&ML)-2",
             "subject": "FAI & ML",
@@ -21778,17 +21779,6 @@
             "isNonAcademic": false
           }
         ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KAR, PKD",
-            "isNonAcademic": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -21812,7 +21802,19 @@
           }
         ]
       },
-      "FRI": {}
+      "FRI": {
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA",
+            "room": "G-303",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KAR, PKD",
+            "isNonAcademic": false
+          }
+        ]
+      }
     },
     "Dr. A Ravi Shankar": {
       "MON": {
@@ -23885,7 +23887,7 @@
             "room": "G-304",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "ASL, BB, KLSP",
+            "rawFaculty": "ASL, TPK, KLSP",
             "isNonAcademic": false
           }
         ],
@@ -24295,7 +24297,7 @@
             "room": "G-304",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "ASL, BB, KLSP",
+            "rawFaculty": "ASL, TPK, KLSP",
             "isNonAcademic": false
           }
         ]
@@ -24451,17 +24453,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "ASL, BB",
-            "isNonAcademic": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE-1",
-            "subject": "CAL & LA Tut.",
-            "room": "G-304",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "ASL, BB, KLSP",
             "isNonAcademic": false
           }
         ],
@@ -24965,7 +24956,7 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "CSE(AI&ML)-2",
             "subject": "CAL & LA",
@@ -25271,6 +25262,17 @@
         ]
       },
       "THU": {
+        "10:00-11:00": [
+          {
+            "branch": "CSE-1",
+            "subject": "CAL & LA Tut.",
+            "room": "G-304",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "ASL, TPK, KLSP",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -25295,7 +25297,7 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "CSE(AI&ML)-2",
             "subject": "CAL & LA",
@@ -27689,19 +27691,7 @@
           }
         ]
       },
-      "THU": {
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "AITA",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "KAR, PKD",
-            "isNonAcademic": false
-          }
-        ]
-      },
+      "THU": {},
       "FRI": {
         "02:15-03:15": [
           {
@@ -27712,6 +27702,17 @@
             "isContinued": false,
             "rawFaculty": "KVNL, KAR",
             "isNonAcademic": true
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "AITA",
+            "room": "G-303",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "KAR, PKD",
+            "isNonAcademic": false
           }
         ],
         "11:15-12:15": [
@@ -28164,7 +28165,19 @@
           }
         ]
       },
-      "THU": {},
+      "THU": {
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "COUNSELLING",
+            "room": "G-303",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "DC, VVVSN",
+            "isNonAcademic": true
+          }
+        ]
+      },
       "FRI": {
         "02:15-03:15": [
           {
@@ -28186,17 +28199,6 @@
             "isContinued": true,
             "rawFaculty": "NVSK, VVVSN, PSSA",
             "isNonAcademic": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "COUNSELLING",
-            "room": "G-303",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "DC, VVVSN",
-            "isNonAcademic": true
           }
         ],
         "12:15-01:15": [
@@ -29402,7 +29404,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -30744,15 +30746,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -30760,9 +30753,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -32090,8 +32092,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -32125,9 +32127,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -32148,7 +32150,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -32159,7 +32161,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     {
       "sno": 52,
@@ -32526,8 +32528,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -32575,6 +32577,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -32593,10 +32604,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     {
       "sno": 57,
@@ -34032,7 +34043,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -35259,7 +35270,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -36601,15 +36612,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -36617,9 +36619,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -37947,8 +37958,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -37982,9 +37993,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -38005,7 +38016,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -38016,7 +38027,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     {
       "sno": 52,
@@ -38383,8 +38394,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -38432,6 +38443,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -38450,10 +38470,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     {
       "sno": 57,
@@ -39889,7 +39909,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -47804,7 +47824,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -47866,7 +47886,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -47928,7 +47948,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -47990,7 +48010,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -48052,7 +48072,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -48114,7 +48134,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -48176,7 +48196,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -57168,15 +57188,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57184,9 +57195,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57257,15 +57277,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57273,9 +57284,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57346,15 +57366,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57362,9 +57373,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57435,15 +57455,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57451,9 +57462,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57524,15 +57544,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57540,9 +57551,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57613,15 +57633,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57629,9 +57640,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -57702,15 +57722,6 @@
           "loadDetail": "1 theory = 1 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "G-303",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "ECE-2",
           "subject": "AI Tools and Applications Lab",
           "code": "AITA LAB",
@@ -57718,9 +57729,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "G-303",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCHEMICAL → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -66884,8 +66904,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66919,9 +66939,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -66942,7 +66962,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -66953,7 +66973,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Dr. BB": {
       "sno": 51,
@@ -66964,8 +66984,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -66999,9 +67019,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67022,7 +67042,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67033,7 +67053,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Dr.BB": {
       "sno": 51,
@@ -67044,8 +67064,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -67079,9 +67099,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67102,7 +67122,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67113,7 +67133,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Mr. BB": {
       "sno": 51,
@@ -67124,8 +67144,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -67159,9 +67179,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67182,7 +67202,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67193,7 +67213,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Mrs. BB": {
       "sno": 51,
@@ -67204,8 +67224,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -67239,9 +67259,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67262,7 +67282,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67273,7 +67293,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Ms. BB": {
       "sno": 51,
@@ -67284,8 +67304,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -67319,9 +67339,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67342,7 +67362,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67353,7 +67373,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "Dr. B Bharathi": {
       "sno": 51,
@@ -67364,8 +67384,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 9,
       "labLoad": 0,
-      "tutLoad": 5,
-      "totalLoad": 14,
+      "tutLoad": 4,
+      "totalLoad": 13,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -67399,9 +67419,9 @@
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
           "room": "G-304",
-          "hours": 2,
+          "hours": 1,
           "type": "tutorial",
-          "loadDetail": "2 tutorial = 2 periods"
+          "loadDetail": "1 tutorial = 1 periods"
         },
         {
           "branch": "CSE-2",
@@ -67422,7 +67442,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE-1 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nMECH-ROBOTICS → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -67433,7 +67453,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "14 + 1"
+      "displayLoad": "13 + 1"
     },
     "CHAN": {
       "sno": 52,
@@ -69936,8 +69956,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -69985,6 +70005,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70003,10 +70032,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Dr. TPK": {
       "sno": 56,
@@ -70017,8 +70046,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70066,6 +70095,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70084,10 +70122,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Dr.TPK": {
       "sno": 56,
@@ -70098,8 +70136,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70147,6 +70185,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70165,10 +70212,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Mr. TPK": {
       "sno": 56,
@@ -70179,8 +70226,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70228,6 +70275,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70246,10 +70302,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Mrs. TPK": {
       "sno": 56,
@@ -70260,8 +70316,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70309,6 +70365,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70327,10 +70392,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Ms. TPK": {
       "sno": 56,
@@ -70341,8 +70406,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70390,6 +70455,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70408,10 +70482,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "Dr. T Poornakantha": {
       "sno": 56,
@@ -70422,8 +70496,8 @@
       "designation": "Assistant Professor",
       "theoryLoad": 6,
       "labLoad": 0,
-      "tutLoad": 7,
-      "totalLoad": 13,
+      "tutLoad": 8,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE (CS & DS)",
@@ -70471,6 +70545,15 @@
           "loadDetail": "2 tutorial = 2 periods"
         },
         {
+          "branch": "CSE-1",
+          "subject": "CAL & LA Tut.",
+          "code": "CAL & LA Tut.",
+          "room": "G-304",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "MECH-ROBOTICS",
           "subject": "CAL & LA Tut.",
           "code": "CAL & LA Tut.",
@@ -70489,10 +70572,10 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CSE (CS & DS) → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE (CS & DS) → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE(AI&ML)-2 → Calculus and Linear Algebra (CAL & LA) – 3 theory = 3 periods\nCSE(AI&ML)-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nECE-2 → CAL & LA Tut. (CAL & LA Tut.) – 2 tutorial = 2 periods\nCSE-1 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → CAL & LA Tut. (CAL & LA Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "13"
+      "displayLoad": "14"
     },
     "BVSAK": {
       "sno": 57,
@@ -80160,7 +80243,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80231,7 +80314,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80302,7 +80385,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80373,7 +80456,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80444,7 +80527,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80515,7 +80598,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
@@ -80586,7 +80669,7 @@
       "counsellingLoad": 1,
       "counselSessions": [
         {
-          "day": "FRI",
+          "day": "THU",
           "slot": "10:00-11:00",
           "branch": "CSE(AI&ML)-2",
           "room": "G-303",
