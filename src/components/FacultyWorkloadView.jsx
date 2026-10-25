@@ -2,6 +2,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { UserCheck, Search, Filter, Clock, Award, Briefcase, Users, BookOpen, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
 import initialData from '../data/initialData.json';
 import FacultyAvailabilitySubtab from './FacultyAvailabilitySubtab';
+import FacultyCounsellingSubtab from './FacultyCounsellingSubtab';
 
 export default function FacultyWorkloadView({ 
   universityInfo, 
@@ -30,15 +31,29 @@ export default function FacultyWorkloadView({
       let theoryLoad = 0;
       let tutLoad = 0;
       let labLoad = 0;
+      let counsellingLoad = 0;
+      const counsellingSessions = [];
 
-      Object.values(sched).forEach(daySlots => {
-        Object.values(daySlots || {}).forEach(items => {
+      Object.entries(sched).forEach(([day, daySlots]) => {
+        Object.entries(daySlots || {}).forEach(([slot, items]) => {
           const itemList = Array.isArray(items) ? items : items ? [items] : [];
           itemList.forEach(it => {
             const subj = (it.subject || '').trim();
-            const isLab = it.isLab || /lab/i.test(subj);
-            const isTut = it.isTutorial || /tut/i.test(subj);
-            if (isLab) {
+            const isNonAcad = Boolean(it.isNonAcademic || /counsel/i.test(subj));
+            const isTut = !isNonAcad && Boolean(it.isTutorial || /tut/i.test(subj));
+            const isLab = !isNonAcad && !isTut && Boolean(it.isLab || /lab/i.test(subj));
+
+            if (isNonAcad) {
+              counsellingLoad += 1;
+              counsellingSessions.push({
+                day,
+                slot,
+                branch: it.branch,
+                room: it.room || '',
+                subject: it.subject,
+                rawFaculty: it.rawFaculty || ''
+              });
+            } else if (isLab) {
               labLoad += 1;
             } else if (isTut) {
               tutLoad += 1;
@@ -49,11 +64,17 @@ export default function FacultyWorkloadView({
         });
       });
 
+      const teachingLoad = theoryLoad + tutLoad + labLoad;
+
       map[f.fullName] = {
         theoryLoad,
         tutLoad,
         labLoad,
-        totalLoad: theoryLoad + tutLoad + labLoad
+        teachingLoad,
+        counsellingLoad,
+        counsellingSessions,
+        totalLoad: teachingLoad, // Official base teaching load
+        displayLoad: counsellingLoad > 0 ? `${teachingLoad} + ${counsellingLoad}` : `${teachingLoad}`
       };
     });
 
@@ -146,8 +167,10 @@ export default function FacultyWorkloadView({
   const displaySummaryFaculty = useMemo(() => {
     if (totalSortOrder === 'none') return filteredFaculty;
     return [...filteredFaculty].sort((a, b) => {
-      const aTotal = facultyWorkloadMap[a.fullName]?.totalLoad ?? 0;
-      const bTotal = facultyWorkloadMap[b.fullName]?.totalLoad ?? 0;
+      const aInfo = facultyWorkloadMap[a.fullName];
+      const bInfo = facultyWorkloadMap[b.fullName];
+      const aTotal = (aInfo?.teachingLoad ?? 0) + (aInfo?.counsellingLoad ?? 0);
+      const bTotal = (bInfo?.teachingLoad ?? 0) + (bInfo?.counsellingLoad ?? 0);
       if (totalSortOrder === 'desc') {
         return bTotal - aTotal;
       } else {
@@ -194,12 +217,59 @@ export default function FacultyWorkloadView({
     return filteredFaculty.reduce((acc, f) => acc + (facultyWorkloadMap[f.fullName]?.labLoad || 0), 0);
   }, [filteredFaculty, facultyWorkloadMap]);
 
+  const totalCounsellingHours = useMemo(() => {
+    return filteredFaculty.reduce((acc, f) => acc + (facultyWorkloadMap[f.fullName]?.counsellingLoad || 0), 0);
+  }, [filteredFaculty, facultyWorkloadMap]);
+
   const totalHoursTaught = totalTheoryHours + totalTutHours + totalLabHours;
   const avgWorkload = totalFacultyCount > 0 ? (totalHoursTaught / totalFacultyCount).toFixed(1) : 0;
 
+  // Dedicated counselling faculty list & filters
+  const [counsellingSearch, setCounsellingSearch] = useState('');
+  const [counsellingDept, setCounsellingDept] = useState('ALL');
+  const [counsellingDay, setCounsellingDay] = useState('ALL');
+
+  const allCounsellingFaculty = useMemo(() => {
+    return facultyList
+      .filter(f => {
+        const info = facultyWorkloadMap[f.fullName];
+        return info && info.counsellingLoad > 0;
+      })
+      .map((f, idx) => {
+        const info = facultyWorkloadMap[f.fullName] || { teachingLoad: f.totalLoad, counsellingLoad: 0, counsellingSessions: [] };
+        return {
+          ...f,
+          counsellingIndex: idx + 1,
+          teachingLoad: info.teachingLoad,
+          counsellingLoad: info.counsellingLoad,
+          counsellingSessions: info.counsellingSessions,
+          displayLoad: `${info.teachingLoad} + ${info.counsellingLoad}`
+        };
+      });
+  }, [facultyList, facultyWorkloadMap]);
+
+  const filteredCounsellingFaculty = useMemo(() => {
+    return allCounsellingFaculty.filter(f => {
+      if (counsellingDept !== 'ALL' && (f.dept?.trim() || 'General') !== counsellingDept) return false;
+      if (counsellingDay !== 'ALL' && !f.counsellingSessions.some(s => s.day === counsellingDay)) return false;
+      if (counsellingSearch.trim()) {
+        const q = counsellingSearch.toLowerCase().trim();
+        const matchesName = f.fullName.toLowerCase().includes(q);
+        const matchesDept = (f.dept || '').toLowerCase().includes(q);
+        const matchesSession = f.counsellingSessions.some(s => 
+          (s.branch || '').toLowerCase().includes(q) || 
+          (s.room || '').toLowerCase().includes(q) ||
+          (s.day || '').toLowerCase().includes(q)
+        );
+        if (!matchesName && !matchesDept && !matchesSession) return false;
+      }
+      return true;
+    });
+  }, [allCounsellingFaculty, counsellingDept, counsellingDay, counsellingSearch]);
+
   return (
     <div className="w-full max-w-full px-2 sm:px-4 py-4">
-      {/* 3 Subtabs: Faculty Workload Summary | Detailed Course Allocations | Faculty Availability */}
+      {/* 4 Subtabs: Faculty Workload Summary | Counselling Workload | Detailed Course Allocations | Faculty Availability */}
       <div className="no-print flex items-center justify-between gap-4 mb-6 border-b border-gray-200 pb-3">
         <div className="flex flex-wrap items-center gap-2">
           {/* Subtab 1: Summary (Pure numbers from Timetable_Final) */}
@@ -215,7 +285,25 @@ export default function FacultyWorkloadView({
             <span>Faculty Workload Summary</span>
           </button>
 
-          {/* Subtab 2: Detailed Course Allocations (Older View with full class strings) */}
+          {/* Subtab 2: Dedicated Counselling Workload Tab */}
+          <button
+            onClick={() => setActiveSubtab('counselling')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              activeSubtab === 'counselling'
+                ? 'bg-indigo-700 text-white shadow-xs ring-2 ring-indigo-600/30'
+                : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50'
+            }`}
+          >
+            <Users className="w-4 h-4 text-indigo-500" />
+            <span>Counselling Workload</span>
+            <span className={`text-[11px] font-mono px-2 py-0.5 rounded-full font-bold ${
+              activeSubtab === 'counselling' ? 'bg-indigo-950 text-white' : 'bg-indigo-100 text-indigo-900 border border-indigo-200'
+            }`}>
+              {allCounsellingFaculty.length}
+            </span>
+          </button>
+
+          {/* Subtab 3: Detailed Course Allocations (Older View with full class strings) */}
           <button
             onClick={() => setActiveSubtab('detailed')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
@@ -228,7 +316,7 @@ export default function FacultyWorkloadView({
             <span>Detailed Course Allocations</span>
           </button>
 
-          {/* Subtab 3: Faculty Availability */}
+          {/* Subtab 4: Faculty Availability */}
           <button
             onClick={() => setActiveSubtab('availability')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
@@ -247,6 +335,12 @@ export default function FacultyWorkloadView({
         <FacultyAvailabilitySubtab
           facultyList={facultyList}
           timetableData={timetableData}
+          universityInfo={universityInfo}
+          onSlotClick={onSlotClick}
+        />
+      ) : activeSubtab === 'counselling' ? (
+        <FacultyCounsellingSubtab
+          counsellingFaculty={allCounsellingFaculty}
           universityInfo={universityInfo}
           onSlotClick={onSlotClick}
         />
@@ -322,7 +416,7 @@ export default function FacultyWorkloadView({
             </div>
 
             {/* Summary Metrics Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
               <div className="bg-blue-50/70 p-3.5 rounded-lg border border-blue-100 flex items-center gap-3">
                 <div className="p-2.5 bg-blue-100 text-blue-700 rounded-lg">
                   <Briefcase className="w-4 h-4" />
@@ -338,8 +432,18 @@ export default function FacultyWorkloadView({
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs text-emerald-700 font-medium">Total Teaching Hours (Timetable_Final)</div>
-                  <div className="text-base font-bold text-emerald-950">{totalHoursTaught} Hrs / Week</div>
+                  <div className="text-xs text-emerald-700 font-medium">Teaching Hours (Timetable_Final)</div>
+                  <div className="text-base font-bold text-emerald-950">{totalHoursTaught} Hrs / Wk</div>
+                </div>
+              </div>
+
+              <div className="bg-indigo-50/70 p-3.5 rounded-lg border border-indigo-100 flex items-center gap-3">
+                <div className="p-2.5 bg-indigo-100 text-indigo-700 rounded-lg">
+                  <Users className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs text-indigo-700 font-medium">Counselling Workload</div>
+                  <div className="text-base font-bold text-indigo-950">{totalCounsellingHours} Hrs / Wk</div>
                 </div>
               </div>
 
@@ -348,8 +452,8 @@ export default function FacultyWorkloadView({
                   <Award className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs text-purple-700 font-medium">Average Load / Faculty</div>
-                  <div className="text-base font-bold text-purple-950">{avgWorkload} Hrs / Week</div>
+                  <div className="text-xs text-purple-700 font-medium">Average Teaching Load</div>
+                  <div className="text-base font-bold text-purple-950">{avgWorkload} Hrs / Wk</div>
                 </div>
               </div>
             </div>
@@ -389,13 +493,16 @@ export default function FacultyWorkloadView({
                     <th className="py-3 px-4 border-r border-gray-300 bg-purple-50/70 text-purple-950 font-black text-center w-36 sm:w-40">
                       Lab Workload
                     </th>
+                    <th className="py-3 px-3 border-r border-gray-300 bg-indigo-50/70 text-indigo-950 font-black text-center w-28 sm:w-32">
+                      Counselling
+                    </th>
                     <th 
                       onClick={handleTotalSortToggle}
-                      className="py-3 px-4 w-32 bg-emerald-50/70 hover:bg-emerald-100/90 text-emerald-950 font-black text-center cursor-pointer select-none transition-colors border-l border-emerald-200"
+                      className="py-3 px-4 w-36 bg-emerald-50/70 hover:bg-emerald-100/90 text-emerald-950 font-black text-center cursor-pointer select-none transition-colors border-l border-emerald-200"
                       title="Click to sort by Total Workload (Descending / Ascending / Default)"
                     >
                       <div className="flex items-center justify-center gap-1.5">
-                        <span>Total</span>
+                        <span>Total (Th+Lab+Coun)</span>
                         {totalSortOrder === 'desc' ? (
                           <ArrowDown className="w-4 h-4 text-emerald-800" />
                         ) : totalSortOrder === 'asc' ? (
@@ -484,11 +591,37 @@ export default function FacultyWorkloadView({
                           )}
                         </td>
 
-                        {/* Total Teaching Hours (ONLY NUMBER) */}
+                        {/* Counselling Workload (ONLY NUMBER) */}
+                        <td className="py-3 px-3 border-r border-gray-200 text-center align-middle bg-indigo-50/20">
+                          {loadInfo.counsellingLoad > 0 ? (
+                            <span className="font-mono font-black text-indigo-900 bg-indigo-100/90 px-2 py-0.5 rounded border border-indigo-200 text-sm sm:text-base">
+                              +{loadInfo.counsellingLoad}
+                            </span>
+                          ) : (
+                            <span className="font-mono font-bold text-slate-400 text-sm sm:text-base">0</span>
+                          )}
+                        </td>
+
+                        {/* Total Workload (Teaching + Counselling, e.g. 13 + 2) */}
                         <td className="py-3 px-4 text-center align-middle bg-emerald-50/40">
-                          <span className="font-mono font-black text-emerald-950 text-base sm:text-lg">
-                            {loadInfo.totalLoad}
-                          </span>
+                          {loadInfo.counsellingLoad > 0 ? (
+                            <div className="inline-flex items-center justify-center gap-1 font-mono">
+                              <span className="font-black text-emerald-950 text-base sm:text-lg">
+                                {loadInfo.teachingLoad}
+                              </span>
+                              <span className="text-indigo-600 font-black text-sm">+</span>
+                              <span 
+                                className="font-black text-indigo-700 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded text-sm sm:text-base cursor-help"
+                                title={`${loadInfo.teachingLoad} Teaching + ${loadInfo.counsellingLoad} Counselling Hours`}
+                              >
+                                {loadInfo.counsellingLoad}
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="font-mono font-black text-emerald-950 text-base sm:text-lg">
+                              {loadInfo.teachingLoad}
+                            </span>
+                          )}
                         </td>
                       </tr>
                     );
@@ -510,8 +643,19 @@ export default function FacultyWorkloadView({
                     <td className="py-3 px-4 border-r border-gray-300 text-center font-mono font-black text-purple-950 bg-purple-100/60 text-sm sm:text-base">
                       {totalLabHours}
                     </td>
+                    <td className="py-3 px-3 border-r border-gray-300 text-center font-mono font-black text-indigo-950 bg-indigo-100/60 text-sm sm:text-base">
+                      {totalCounsellingHours}
+                    </td>
                     <td className="py-3 px-4 text-center font-mono font-black text-emerald-950 bg-emerald-100/60 text-base sm:text-lg">
-                      {totalHoursTaught}
+                      {totalCounsellingHours > 0 ? (
+                        <div className="inline-flex items-center justify-center gap-1 font-mono">
+                          <span>{totalHoursTaught}</span>
+                          <span className="text-indigo-600 font-bold">+</span>
+                          <span className="text-indigo-800 bg-indigo-50 border border-indigo-200 px-1 py-0.2 rounded text-sm">{totalCounsellingHours}</span>
+                        </div>
+                      ) : (
+                        totalHoursTaught
+                      )}
                     </td>
                   </tr>
                 </tfoot>
@@ -591,7 +735,7 @@ export default function FacultyWorkloadView({
             </div>
 
             {/* Summary Metrics Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
               <div className="bg-blue-50/70 p-3.5 rounded-lg border border-blue-100 flex items-center gap-3">
                 <div className="p-2.5 bg-blue-100 text-blue-700 rounded-lg">
                   <Briefcase className="w-4 h-4" />
@@ -607,8 +751,18 @@ export default function FacultyWorkloadView({
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs text-emerald-700 font-medium">Total Teaching Hours (Timetable_Final)</div>
-                  <div className="text-base font-bold text-emerald-950">{totalHoursTaught} Hrs / Week</div>
+                  <div className="text-xs text-emerald-700 font-medium">Teaching Hours (Timetable_Final)</div>
+                  <div className="text-base font-bold text-emerald-950">{totalHoursTaught} Hrs / Wk</div>
+                </div>
+              </div>
+
+              <div className="bg-indigo-50/70 p-3.5 rounded-lg border border-indigo-100 flex items-center gap-3">
+                <div className="p-2.5 bg-indigo-100 text-indigo-700 rounded-lg">
+                  <Users className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs text-indigo-700 font-medium">Counselling Workload</div>
+                  <div className="text-base font-bold text-indigo-950">{totalCounsellingHours} Hrs / Wk</div>
                 </div>
               </div>
 
@@ -617,8 +771,8 @@ export default function FacultyWorkloadView({
                   <Award className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs text-purple-700 font-medium">Average Load / Faculty</div>
-                  <div className="text-base font-bold text-purple-950">{avgWorkload} Hrs / Week</div>
+                  <div className="text-xs text-purple-700 font-medium">Average Teaching Load</div>
+                  <div className="text-base font-bold text-purple-950">{avgWorkload} Hrs / Wk</div>
                 </div>
               </div>
             </div>
@@ -701,12 +855,18 @@ export default function FacultyWorkloadView({
                           {loadInfo.labLoad} hrs
                         </td>
                         <td className="py-2.5 px-1.5 text-center font-black text-blue-950 bg-blue-50/60 border-r-2 border-slate-500 border-b-2 border-slate-600 text-xs whitespace-nowrap">
-                          {loadInfo.totalLoad} hrs/wk
+                          {loadInfo.counsellingLoad > 0 ? (
+                            <span title={`${loadInfo.teachingLoad} Teaching + ${loadInfo.counsellingLoad} Counselling`}>
+                              {loadInfo.teachingLoad} + {loadInfo.counsellingLoad} hrs/wk
+                            </span>
+                          ) : (
+                            <span>{loadInfo.totalLoad} hrs/wk</span>
+                          )}
                         </td>
                         <td className="py-2.5 px-3 text-slate-800 border-b-2 border-slate-600 text-xs leading-relaxed">
-                          {item.assignments ? (
-                            <div className="space-y-1">
-                              {item.assignments.split('\n').filter(Boolean).map((line, lIdx) => (
+                          <div className="space-y-1">
+                            {item.assignments ? (
+                              item.assignments.split('\n').filter(Boolean).map((line, lIdx) => (
                                 <div 
                                   key={lIdx} 
                                   className="bg-slate-50/90 border border-slate-200 rounded px-2.5 py-1 text-slate-900 font-semibold whitespace-nowrap text-[11px] sm:text-[11.5px] leading-tight flex items-center shadow-2xs"
@@ -714,11 +874,27 @@ export default function FacultyWorkloadView({
                                 >
                                   {line}
                                 </div>
-                              ))}
-                            </div>
-                          ) : (
-                            <span className="text-gray-400 italic">No assigned classes listed</span>
-                          )}
+                              ))
+                            ) : null}
+
+                            {loadInfo.counsellingSessions && loadInfo.counsellingSessions.length > 0 && (
+                              <div 
+                                className="bg-indigo-50 border border-indigo-200 rounded px-2.5 py-1 text-indigo-950 font-semibold whitespace-nowrap text-[11px] sm:text-[11.5px] leading-tight flex items-center shadow-2xs"
+                                title="Assigned Student Mentorship & Counselling Hours"
+                              >
+                                <span className="font-bold text-indigo-700 mr-1.5">🤝 Counselling:</span>
+                                {loadInfo.counsellingSessions.map((cs, cIdx) => (
+                                  <span key={cIdx} className="mr-2">
+                                    {cs.branch} ({cs.day} {cs.slot}{cs.room ? ` @ ${cs.room}` : ''})
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+
+                            {!item.assignments && (!loadInfo.counsellingSessions || loadInfo.counsellingSessions.length === 0) && (
+                              <span className="text-gray-400 italic">No assigned classes listed</span>
+                            )}
+                          </div>
                         </td>
                       </tr>
                     );

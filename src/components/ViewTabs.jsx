@@ -7,6 +7,7 @@ export default function ViewTabs({ activeTab, onTabChange }) {
     { id: 'department', label: 'Department' },
     { id: 'individual', label: 'Individual' },
     { id: 'lab', label: 'Lab' },
+    { id: 'subjects', label: 'Subject Schedules' },
     { id: 'sports', label: 'Sports & Counselling' },
     { id: 'rooms', label: 'Rooms & Vacancy' },
     { id: 'workload', label: 'Faculty Workload' },

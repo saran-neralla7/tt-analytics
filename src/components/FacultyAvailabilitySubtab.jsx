@@ -997,7 +997,7 @@ export default function FacultyAvailabilitySubtab({
                       )}
 
                       <td className="py-2 px-3 text-center font-bold text-gray-800 border-l border-gray-200">
-                        {fac.totalLoad || 0} hrs
+                        {fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs
                       </td>
                     </tr>
                   ))
@@ -1071,7 +1071,7 @@ export default function FacultyAvailabilitySubtab({
                           className="text-gray-500 text-[10.5px] font-medium font-mono cursor-help"
                           title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
                         >
-                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="font-bold text-slate-700">{fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs/wk</span>
                           <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
@@ -1191,7 +1191,7 @@ export default function FacultyAvailabilitySubtab({
                           className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
                           title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
                         >
-                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="font-bold text-slate-700">{fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs/wk</span>
                           <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
@@ -1279,7 +1279,7 @@ export default function FacultyAvailabilitySubtab({
                           className="text-gray-500 text-[10.5px] font-medium font-mono cursor-help"
                           title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
                         >
-                          <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                          <span className="font-bold text-slate-700">{fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs/wk</span>
                           <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                         </span>
                       </div>
@@ -1431,7 +1431,7 @@ export default function FacultyAvailabilitySubtab({
                             className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
                             title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
                           >
-                            <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                            <span className="font-bold text-slate-700">{fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs/wk</span>
                             <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                           </span>
                         </div>
@@ -1578,7 +1578,7 @@ export default function FacultyAvailabilitySubtab({
                             className="font-mono text-[10.5px] text-gray-500 font-medium cursor-help"
                             title={`Theory: ${fac.theoryLoad || 0}h | Lab: ${fac.labLoad || 0}h | Tutorial: ${fac.tutLoad || 0}h`}
                           >
-                            <span className="font-bold text-slate-700">{fac.totalLoad || 0} hrs/wk</span>
+                            <span className="font-bold text-slate-700">{fac.counsellingLoad > 0 ? `${fac.totalLoad} + ${fac.counsellingLoad}` : (fac.totalLoad || 0)} hrs/wk</span>
                             <span className="text-[9.5px] text-slate-400 font-sans ml-1">(T:{fac.theoryLoad || 0} L:{fac.labLoad || 0} Tut:{fac.tutLoad || 0})</span>
                           </span>
                         </div>

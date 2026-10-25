@@ -3,7 +3,7 @@ import { days, periodSlots } from '../data/mockData';
 import { FlaskConical, Clock, Layers, Users, Building, Table, BookOpen, Filter, FileSpreadsheet, Search } from 'lucide-react';
 import initialData from '../data/initialData.json';
 
-export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick, onNavigateToSports }) {
+export default function LabView({ timetableData, labSheetsData = {}, universityInfo, onSlotClick, onNavigateToSports, onNavigateToSubjects }) {
   // 1. Available Lab Data from initialData / props
   const consolidatedLabs = useMemo(() => {
     return labSheetsData.consolidatedLabs || initialData.labSheetsData?.consolidatedLabs || {};
@@ -193,6 +193,16 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
           >
             <FileSpreadsheet className="w-4 h-4" /> Lab Sheets Summary
           </button>
+
+          {onNavigateToSubjects && (
+            <button
+              onClick={onNavigateToSubjects}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-black transition-all bg-blue-50 text-blue-800 hover:bg-blue-100 border border-blue-300 cursor-pointer shadow-xs active:scale-95"
+              title="View CAL & LA, Essential English, and PPSTC Schedules"
+            >
+              <span>📚</span> Core Subject Schedules →
+            </button>
+          )}
 
           {onNavigateToSports && (
             <button

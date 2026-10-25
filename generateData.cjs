@@ -741,6 +741,29 @@ facultyList.forEach(fac => {
   fac.tutLoad = schedTut;
   fac.totalLoad = schedTheory + schedLab + schedTut;
 
+  // Extract counselling hours and sessions from masterFacultyTimetables
+  let counselHours = 0;
+  const counselSessions = [];
+  for (const [day, daySlots] of Object.entries(sched)) {
+    for (const [slot, items] of Object.entries(daySlots)) {
+      items.forEach(it => {
+        if (it.isNonAcademic || (it.subject && it.subject.toUpperCase().includes('COUNSEL'))) {
+          counselHours += 1;
+          counselSessions.push({
+            day,
+            slot,
+            branch: it.branch,
+            room: it.room || '',
+            subject: it.subject
+          });
+        }
+      });
+    }
+  }
+  fac.counsellingLoad = counselHours;
+  fac.counselSessions = counselSessions;
+  fac.displayLoad = counselHours > 0 ? `${fac.totalLoad} + ${counselHours}` : `${fac.totalLoad}`;
+
   if (courseMap.size > 0) {
     fac.assignedCourses = Array.from(courseMap.values()).map(c => {
       const matchRow = s2Rows.find(r => (r.sub_short || '').trim().toUpperCase() === c.code.toUpperCase());

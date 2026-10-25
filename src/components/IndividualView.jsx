@@ -402,11 +402,11 @@ function FacultyTimetableCard({
                 </span>
               )}
               <span className="mx-2 text-slate-300">|</span>
-              <span className="text-slate-500">Weekly Total: <strong className="text-slate-800">{facultyObj.totalLoad || totalHours} Hrs/Wk</strong></span>
+              <span className="text-slate-500">Weekly Total: <strong className="text-slate-800">{facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs/Wk</strong></span>
             </span>
           ) : (
             <span>
-              Official Workload: <span className="font-bold text-slate-900">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Theory: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})
+              Official Workload: <span className="font-bold text-slate-900">{facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs/Wk</span> (Theory: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0}{facultyObj.counsellingLoad > 0 ? `, Counselling: ${facultyObj.counsellingLoad}` : ''})
             </span>
           )}
         </div>
@@ -434,9 +434,9 @@ function FacultyTimetableCard({
         </div>
         <div className="font-mono text-xs print:text-[8.5pt]">
           {selectedDay !== 'ALL' && dayLoad ? (
-            <span>{dayLabel}: <span className="font-black text-black">{dayLoad.total} Hrs</span> (Weekly: {facultyObj.totalLoad || totalHours} Hrs)</span>
+            <span>{dayLabel}: <span className="font-black text-black">{dayLoad.total} Hrs</span> (Weekly: {facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs)</span>
           ) : (
-            <span>Workload: <span className="font-black text-black">{facultyObj.totalLoad || totalHours} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0})</span>
+            <span>Workload: <span className="font-black text-black">{facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs/Wk</span> (Th: {facultyObj.theoryLoad || 0}, Lab: {facultyObj.labLoad || 0}, Tut: {facultyObj.tutLoad || 0}{facultyObj.counsellingLoad > 0 ? `, Counsel: ${facultyObj.counsellingLoad}` : ''})</span>
           )}
         </div>
       </div>
@@ -884,7 +884,7 @@ function FacultyTimetableCard({
                   Weekly Teaching Total:
                 </td>
                 <td className="py-2 px-1 text-center font-mono font-black text-emerald-900 bg-emerald-100/60 border-l-2 border-slate-700 text-sm">
-                  {facultyObj.totalLoad || totalHours} Hrs
+                  {facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs
                 </td>
               </tr>
             </tfoot>
@@ -912,8 +912,13 @@ function FacultyTimetableCard({
               <span className="bg-amber-600 text-white px-2.5 py-0.5 rounded text-[11px]">
                 Tut: {facultyObj.tutLoad || 0} Hrs
               </span>
+              {facultyObj.counsellingLoad > 0 && (
+                <span className="bg-indigo-600 text-white px-2.5 py-0.5 rounded text-[11px] font-bold">
+                  Counsel: {facultyObj.counsellingLoad} Hrs
+                </span>
+              )}
               <span className="bg-emerald-600 text-white px-2.5 py-0.5 rounded text-[11px] font-bold">
-                Total: {facultyObj.totalLoad || totalHours} Hrs/Wk
+                Total: {facultyObj.counsellingLoad > 0 ? `${facultyObj.totalLoad} + ${facultyObj.counsellingLoad}` : (facultyObj.totalLoad || totalHours)} Hrs/Wk
               </span>
             </div>
           </div>
@@ -2198,7 +2203,17 @@ export default function IndividualView({ timetableData, universityInfo, facultyL
 
                         {/* Total Workload */}
                         <td className="py-2 px-2 font-mono font-black text-emerald-800 text-sm text-center align-middle">
-                          {f.totalLoad || 0}
+                          {f.counsellingLoad > 0 ? (
+                            <span className="inline-flex items-center justify-center gap-1">
+                              <span>{f.totalLoad || 0}</span>
+                              <span className="text-indigo-600 font-bold text-xs">+</span>
+                              <span className="text-indigo-800 bg-indigo-50 border border-indigo-200 px-1 py-0.2 rounded text-xs" title={`${f.counsellingLoad} Counselling Hours`}>
+                                {f.counsellingLoad}
+                              </span>
+                            </span>
+                          ) : (
+                            f.totalLoad || 0
+                          )}
                         </td>
                       </tr>
                     );

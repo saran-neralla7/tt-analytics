@@ -6,6 +6,7 @@ import DepartmentView from './components/DepartmentView';
 import MasterView from './components/MasterView';
 import IndividualView from './components/IndividualView';
 import LabView from './components/LabView';
+import SubjectIntegratedView from './components/SubjectIntegratedView';
 import SportsActivityView from './components/SportsActivityView';
 import RoomsView from './components/RoomsView';
 import FacultyWorkloadView from './components/FacultyWorkloadView';
@@ -102,6 +103,15 @@ export default function App() {
             universityInfo={universityInfo}
             onSlotClick={handleSlotClick}
             onNavigateToSports={() => setActiveTab('sports')}
+            onNavigateToSubjects={() => setActiveTab('subjects')}
+          />
+        )}
+
+        {activeTab === 'subjects' && (
+          <SubjectIntegratedView
+            timetableData={timetableData}
+            universityInfo={universityInfo}
+            onSlotClick={handleSlotClick}
           />
         )}
 
