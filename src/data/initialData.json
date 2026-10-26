@@ -544,15 +544,6 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
-            "room": "E-410",
-            "isLab": false
-          }
-        ],
-        "12:15-01:15": [
-          {
             "subject": "CAL & LA",
             "faculty": "Dr. SS Ayyappa Sastri",
             "rawFaculty": "SSAS",
@@ -560,11 +551,20 @@
             "isLab": false
           }
         ],
-        "02:15-03:15": [
+        "12:15-01:15": [
           {
             "subject": "COM",
             "faculty": "Dr. P Srinivas Rao",
             "rawFaculty": "PSR",
+            "room": "E-410",
+            "isLab": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "subject": "PPSTC",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
             "room": "E-410",
             "isLab": false
           }
@@ -2673,9 +2673,9 @@
         ],
         "12:15-01:15": [
           {
-            "subject": "AITA",
-            "faculty": "Dr. MV Pankaj Lahari",
-            "rawFaculty": "MVPL",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. B Vidya",
+            "rawFaculty": "BV",
             "room": "E-412",
             "isLab": false
           }
@@ -2776,9 +2776,9 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. CH VVD Prasad",
-            "rawFaculty": "CHVVDP",
+            "subject": "AITA",
+            "faculty": "Dr. MV Pankaj Lahari",
+            "rawFaculty": "MVPL",
             "room": "E-412",
             "isLab": false
           }
@@ -2795,18 +2795,18 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. B Vidya",
-            "rawFaculty": "BV",
+            "subject": "ESAM",
+            "faculty": "Dr. B Santosh Kumar",
+            "rawFaculty": "BSK",
             "room": "E-412",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "ESAM",
-            "faculty": "Dr. B Santosh Kumar",
-            "rawFaculty": "BSK",
+            "subject": "PPSTC",
+            "faculty": "Mr. CH VVD Prasad",
+            "rawFaculty": "CHVVDP",
             "room": "E-412",
             "isLab": false
           }
@@ -3158,18 +3158,18 @@
         ],
         "10:00-11:00": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna",
-            "rawFaculty": "DAK, BBK",
+            "subject": "FWD",
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "rawFaculty": "SVM, MA",
             "room": "G-304",
             "isLab": false
           }
         ],
         "11:15-12:15": [
           {
-            "subject": "FWD",
-            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
-            "rawFaculty": "SVM, MA",
+            "subject": "PPSTC",
+            "faculty": "Mr. D Arun Kumar, Mr. B Bala Krishna",
+            "rawFaculty": "DAK, BBK",
             "room": "G-304",
             "isLab": false
           }
@@ -16463,7 +16463,7 @@
             "isNonAcademic": false
           }
         ],
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "ECE-3",
             "subject": "ESAM",
@@ -17215,7 +17215,7 @@
         ]
       },
       "FRI": {
-        "02:15-03:15": [
+        "12:15-01:15": [
           {
             "branch": "CIVIL",
             "subject": "COM",
@@ -17776,6 +17776,17 @@
             "isNonAcademic": false
           }
         ],
+        "12:15-01:15": [
+          {
+            "branch": "ECE-3",
+            "subject": "SUS. ENGG.",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BV",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "MECH-ROBOTICS",
@@ -17821,17 +17832,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "DM, BV",
-            "isNonAcademic": false
-          }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "SUS. ENGG.",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BV",
             "isNonAcademic": false
           }
         ]
@@ -19339,7 +19339,7 @@
         ]
       },
       "FRI": {
-        "11:15-12:15": [
+        "02:15-03:15": [
           {
             "branch": "CIVIL",
             "subject": "PPSTC",
@@ -19350,7 +19350,7 @@
             "isNonAcademic": false
           }
         ],
-        "10:00-11:00": [
+        "11:15-12:15": [
           {
             "branch": "CSE-1",
             "subject": "PPSTC",
@@ -19516,7 +19516,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "11:15-12:15": [
           {
             "branch": "CSE-1",
             "subject": "PPSTC",
@@ -19704,7 +19704,7 @@
         ]
       },
       "FRI": {
-        "11:15-12:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE-1",
             "subject": "FWD",
@@ -22033,17 +22033,6 @@
         ]
       },
       "WED": {
-        "12:15-01:15": [
-          {
-            "branch": "ECE-3",
-            "subject": "AITA",
-            "room": "E-412",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "MVPL",
-            "isNonAcademic": false
-          }
-        ],
         "09:00-10:00": [
           {
             "branch": "EEE",
@@ -22124,7 +22113,19 @@
           }
         ]
       },
-      "FRI": {}
+      "FRI": {
+        "09:00-10:00": [
+          {
+            "branch": "ECE-3",
+            "subject": "AITA",
+            "room": "E-412",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "MVPL",
+            "isNonAcademic": false
+          }
+        ]
+      }
     },
     "Dr. BM Florence": {
       "MON": {
@@ -23595,7 +23596,7 @@
             "isNonAcademic": false
           }
         ],
-        "09:00-10:00": [
+        "12:15-01:15": [
           {
             "branch": "ECE-3",
             "subject": "PPSTC",
@@ -23772,7 +23773,7 @@
         ]
       },
       "FRI": {
-        "11:15-12:15": [
+        "10:00-11:00": [
           {
             "branch": "CSE-1",
             "subject": "FWD",
@@ -24160,7 +24161,7 @@
         ]
       },
       "FRI": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CIVIL",
             "subject": "CAL & LA",
@@ -28217,20 +28218,6 @@
         ]
       }
     },
-    "Ms. G Sathee Laxmi": {
-      "MON": {},
-      "TUE": {},
-      "WED": {},
-      "THU": {},
-      "FRI": {}
-    },
-    "Ch Sowjanya": {
-      "MON": {},
-      "TUE": {},
-      "WED": {},
-      "THU": {},
-      "FRI": {}
-    },
     "Dr. A. Yaswanth": {
       "MON": {
         "10:00-11:00": [
@@ -30882,15 +30869,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -30925,9 +30903,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -36739,15 +36726,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -36782,9 +36760,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -39902,40 +39889,6 @@
         }
       ],
       "displayLoad": "11 + 1"
-    },
-    {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
     },
     {
       "sno": 77,
@@ -58212,15 +58165,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58255,9 +58199,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58310,15 +58263,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58353,9 +58297,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58408,15 +58361,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58451,9 +58395,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58506,15 +58459,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58549,9 +58493,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58604,15 +58557,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58647,9 +58591,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58702,15 +58655,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58745,9 +58689,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -58800,15 +58753,6 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "ECE-3",
-          "subject": "AI Tools and Applications",
-          "code": "AITA",
-          "room": "E-412",
-          "hours": 1,
-          "type": "theory",
-          "loadDetail": "1 theory = 1 periods"
-        },
-        {
           "branch": "EEE",
           "subject": "Fundamentals of Electrical and Electronics Engineering Lab",
           "code": "FEEE LAB",
@@ -58843,9 +58787,18 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
+        },
+        {
+          "branch": "ECE-3",
+          "subject": "AI Tools and Applications",
+          "code": "AITA",
+          "room": "E-412",
+          "hours": 1,
+          "type": "theory",
+          "loadDetail": "1 theory = 1 periods"
         }
       ],
-      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → AI Tools and Applications (AITA) – 1 theory = 1 periods\nECE-3 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-2 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nEEE → Fundamentals of Electrical and Electronics Engineering Lab (FEEE LAB) – 2 lab = 2 periods\nCSE (CS & DS) → AI Tools and Applications (AITA) – 1 theory = 1 periods\nCSE (CS & DS) → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nCSE-1 → AI Tools and Applications Lab (AITA LAB) – 2 lab = 2 periods\nECE-3 → AI Tools and Applications (AITA) – 1 theory = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -80599,244 +80552,6 @@
         }
       ],
       "displayLoad": "11 + 1"
-    },
-    "GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Dr. GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Dr.GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Mr. GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Mrs. GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Ms. GSL": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Ms. G Sathee Laxmi": {
-      "sno": 24,
-      "fullName": "Ms. G Sathee Laxmi",
-      "shortName": "GSL",
-      "cleanShort": "GSL",
-      "dept": "CSE",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Dr. CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Dr.CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Mr. CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Mrs. CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Ms. CHS": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
-    },
-    "Ch Sowjanya": {
-      "sno": 38,
-      "fullName": "Ch Sowjanya",
-      "shortName": "CHS",
-      "cleanShort": "CHS",
-      "dept": "English",
-      "designation": "Assistant Professor",
-      "theoryLoad": 0,
-      "labLoad": 0,
-      "tutLoad": 0,
-      "totalLoad": 0,
-      "assignedCourses": [],
-      "assignments": "",
-      "counsellingLoad": 0,
-      "counselSessions": [],
-      "displayLoad": "0"
     },
     "AYH": {
       "sno": 77,
