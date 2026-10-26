@@ -53,17 +53,61 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
       });
     });
 
+    // Dedicated Laboratory rooms set
+    const KNOWN_LAB_ROOMS = new Set([
+      'COMP. LAB-1', 'COMP. LAB-2', 'COMP. LAB-3', 'COMP. LAB-4',
+      'CHEM. LAB.', 'PHY LAB', 'A-406', 'A-301,302', 'A-303,304', 
+      'C-208', 'E-319',
+      'GVPCE CHEM. LAB. (B6-102)', 'GVPCE MECH. LAB (B12-103)', 'GVPCE SUR. LAB (B11-101)'
+    ]);
+
+    // Helper to determine if a room is a laboratory vs a classroom
+    const isLabRoom = (r) => {
+      if (!r) return false;
+      const trimmed = r.trim();
+      const upper = trimmed.toUpperCase();
+      if (KNOWN_LAB_ROOMS.has(trimmed) || KNOWN_LAB_ROOMS.has(upper)) return true;
+      if (
+        upper.includes('LAB') ||
+        upper.startsWith('A-') ||
+        upper === 'C-208' ||
+        upper === 'E-319' ||
+        upper.startsWith('A-301') ||
+        upper.startsWith('A-303')
+      ) {
+        return true;
+      }
+      // Check if all sessions scheduled in this room across the timetable are lab sessions
+      const daysObj = schedules[r] || {};
+      let totalSessions = 0;
+      let labSessions = 0;
+      Object.values(daysObj).forEach((slotsObj) => {
+        Object.values(slotsObj).forEach((items) => {
+          items.forEach((it) => {
+            totalSessions++;
+            if (it.isLab || (it.subject && it.subject.toUpperCase().includes('LAB'))) {
+              labSessions++;
+            }
+          });
+        });
+      });
+      if (totalSessions > 0 && labSessions === totalSessions) {
+        return true;
+      }
+      return false;
+    };
+
     const all = Array.from(roomsSet).sort((a, b) => {
-      // Put Classrooms first (G-, E-, C-), then Labs
-      const isLabA = a.includes('LAB') || a.startsWith('A-');
-      const isLabB = b.includes('LAB') || b.startsWith('A-');
+      // Put Classrooms first (E-, G-, etc.), then Labs
+      const isLabA = isLabRoom(a);
+      const isLabB = isLabRoom(b);
       if (isLabA && !isLabB) return 1;
       if (!isLabA && isLabB) return -1;
       return a.localeCompare(b);
     });
 
-    const labs = all.filter(r => r.toUpperCase().includes('LAB') || r.startsWith('A-'));
-    const classrooms = all.filter(r => !labs.includes(r));
+    const labs = all.filter(r => isLabRoom(r));
+    const classrooms = all.filter(r => !isLabRoom(r));
 
     return {
       allRoomsList: all,
