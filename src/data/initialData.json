@@ -487,9 +487,9 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "CAL & LA Tut.",
-            "faculty": "Dr. SS Ayyappa Sastri, Dr. KVS Sarma",
-            "rawFaculty": "SSAS, KVSS",
+            "subject": "CAL & LA",
+            "faculty": "Dr. SS Ayyappa Sastri",
+            "rawFaculty": "SSAS",
             "room": "E-410",
             "isLab": false
           }
@@ -544,9 +544,9 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "CAL & LA",
-            "faculty": "Dr. SS Ayyappa Sastri",
-            "rawFaculty": "SSAS",
+            "subject": "CAL & LA Tut.",
+            "faculty": "Dr. SS Ayyappa Sastri, Dr. KVS Sarma",
+            "rawFaculty": "SSAS, KVSS",
             "room": "E-410",
             "isLab": false
           }
@@ -23804,26 +23804,6 @@
         ]
       },
       "THU": {
-        "11:15-12:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "CAL & LA Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SSAS, KVSS",
-            "isNonAcademic": false
-          },
-          {
-            "branch": "MECH",
-            "subject": "CAL & LA",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SAK, KVSS",
-            "isNonAcademic": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -23834,9 +23814,31 @@
             "rawFaculty": "CHVS, TPK, KVSS",
             "isNonAcademic": false
           }
+        ],
+        "11:15-12:15": [
+          {
+            "branch": "MECH",
+            "subject": "CAL & LA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SAK, KVSS",
+            "isNonAcademic": false
+          }
         ]
       },
       "FRI": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "CAL & LA Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SSAS, KVSS",
+            "isNonAcademic": false
+          }
+        ],
         "09:00-10:00": [
           {
             "branch": "MECH",
@@ -23938,11 +23940,11 @@
         "11:15-12:15": [
           {
             "branch": "CIVIL",
-            "subject": "CAL & LA Tut.",
+            "subject": "CAL & LA",
             "room": "E-410",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "SSAS, KVSS",
+            "rawFaculty": "SSAS",
             "isNonAcademic": false
           }
         ],
@@ -23962,11 +23964,11 @@
         "11:15-12:15": [
           {
             "branch": "CIVIL",
-            "subject": "CAL & LA",
+            "subject": "CAL & LA Tut.",
             "room": "E-410",
             "isLab": false,
             "isContinued": false,
-            "rawFaculty": "SSAS",
+            "rawFaculty": "SSAS, KVSS",
             "isNonAcademic": false
           }
         ]
