@@ -331,9 +331,9 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Mr. B Bala Krishna",
-            "rawFaculty": "BBK",
+            "subject": "ESS. ENG. Tut.",
+            "faculty": "Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
+            "rawFaculty": "NVL, PBSKR",
             "room": "E-410",
             "isLab": false
           }
@@ -486,18 +486,18 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "SUS. ENGG.",
-            "faculty": "Dr. G Santosh Kumar",
-            "rawFaculty": "GSK",
+            "subject": "CAL & LA Tut.",
+            "faculty": "Dr. SS Ayyappa Sastri, Dr. KVS Sarma",
+            "rawFaculty": "SSAS, KVSS",
             "room": "E-410",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "ESS. ENG. Tut.",
-            "faculty": "Dr. N Vijaya Lakshmi, Mr. PBS Krishnamuraju",
-            "rawFaculty": "NVL, PBSKR",
+            "subject": "SUS. ENGG.",
+            "faculty": "Dr. G Santosh Kumar",
+            "rawFaculty": "GSK",
             "room": "E-410",
             "isLab": false
           }
@@ -562,9 +562,9 @@
         ],
         "02:15-03:15": [
           {
-            "subject": "CAL & LA Tut.",
-            "faculty": "Dr. SS Ayyappa Sastri, Dr. KVS Sarma",
-            "rawFaculty": "SSAS, KVSS",
+            "subject": "PPSTC",
+            "faculty": "Mr. B Bala Krishna",
+            "rawFaculty": "BBK",
             "room": "E-410",
             "isLab": false
           }
@@ -17943,7 +17943,7 @@
         ]
       },
       "THU": {
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CIVIL",
             "subject": "SUS. ENGG.",
@@ -19143,32 +19143,23 @@
             "isNonAcademic": false
           }
         ],
-        "02:15-03:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "PPSTC",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "BBK",
-            "isNonAcademic": false
-          },
-          {
-            "branch": "CSE-2",
-            "subject": "FWD LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "SVM, BBK",
-            "isNonAcademic": false
-          }
-        ],
         "09:00-10:00": [
           {
             "branch": "CSE-2",
             "subject": "FWD",
             "room": "G-305",
             "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SVM, BBK",
+            "isNonAcademic": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE-2",
+            "subject": "FWD LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
             "isContinued": false,
             "rawFaculty": "SVM, BBK",
             "isNonAcademic": false
@@ -19281,6 +19272,17 @@
         ]
       },
       "FRI": {
+        "02:15-03:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "PPSTC",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "BBK",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "CSE-1",
@@ -22619,6 +22621,17 @@
     },
     "Dr. N Vijaya Lakshmi": {
       "MON": {
+        "02:15-03:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "NVL, PBSKR",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -22702,17 +22715,6 @@
         ]
       },
       "THU": {
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "NVL, PBSKR",
-            "isNonAcademic": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "CIVIL",
@@ -22948,6 +22950,17 @@
     },
     "Mr. PBS Krishnamuraju": {
       "MON": {
+        "02:15-03:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "ESS. ENG. Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "NVL, PBSKR",
+            "isNonAcademic": false
+          }
+        ],
         "11:15-12:15": [
           {
             "branch": "ECE-1",
@@ -23042,17 +23055,6 @@
         ]
       },
       "THU": {
-        "12:15-01:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "ESS. ENG. Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "NVL, PBSKR",
-            "isNonAcademic": false
-          }
-        ],
         "02:15-03:15": [
           {
             "branch": "MECH-ROBOTICS",
@@ -23795,6 +23797,26 @@
         ]
       },
       "THU": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "CAL & LA Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SSAS, KVSS",
+            "isNonAcademic": false
+          },
+          {
+            "branch": "MECH",
+            "subject": "CAL & LA",
+            "room": "G-404",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SAK, KVSS",
+            "isNonAcademic": false
+          }
+        ],
         "02:15-03:15": [
           {
             "branch": "ECE-2",
@@ -23805,31 +23827,9 @@
             "rawFaculty": "CHVS, TPK, KVSS",
             "isNonAcademic": false
           }
-        ],
-        "11:15-12:15": [
-          {
-            "branch": "MECH",
-            "subject": "CAL & LA",
-            "room": "G-404",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SAK, KVSS",
-            "isNonAcademic": false
-          }
         ]
       },
       "FRI": {
-        "02:15-03:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "CAL & LA Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SSAS, KVSS",
-            "isNonAcademic": false
-          }
-        ],
         "09:00-10:00": [
           {
             "branch": "MECH",
@@ -23928,6 +23928,17 @@
         ]
       },
       "THU": {
+        "11:15-12:15": [
+          {
+            "branch": "CIVIL",
+            "subject": "CAL & LA Tut.",
+            "room": "E-410",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SSAS, KVSS",
+            "isNonAcademic": false
+          }
+        ],
         "03:15-04:15": [
           {
             "branch": "ECE-1",
@@ -23949,17 +23960,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "SSAS",
-            "isNonAcademic": false
-          }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "CIVIL",
-            "subject": "CAL & LA Tut.",
-            "room": "E-410",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SSAS, KVSS",
             "isNonAcademic": false
           }
         ]
@@ -29374,10 +29374,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -29392,10 +29392,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -29410,7 +29410,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -31012,6 +31012,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -31058,15 +31067,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -31093,7 +31093,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -31217,6 +31217,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -31253,15 +31262,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -31289,7 +31289,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -35132,10 +35132,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -35150,10 +35150,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -35168,7 +35168,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -36770,6 +36770,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -36816,15 +36825,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -36851,7 +36851,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -36975,6 +36975,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -37011,15 +37020,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -37047,7 +37047,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -48726,10 +48726,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48744,10 +48744,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48762,7 +48762,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -48789,10 +48789,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48807,10 +48807,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48825,7 +48825,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -48852,10 +48852,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48870,10 +48870,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48888,7 +48888,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -48915,10 +48915,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48933,10 +48933,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48951,7 +48951,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -48978,10 +48978,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -48996,10 +48996,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -49014,7 +49014,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49041,10 +49041,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -49059,10 +49059,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -49077,7 +49077,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49104,10 +49104,10 @@
           "loadDetail": "2 lab = 2 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "Programming for Problem solving through C",
-          "code": "PPSTC",
-          "room": "E-410",
+          "branch": "CSE-2",
+          "subject": "Fundamentals of Web Designing",
+          "code": "FWD",
+          "room": "G-305",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -49122,10 +49122,10 @@
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-2",
-          "subject": "Fundamentals of Web Designing",
-          "code": "FWD",
-          "room": "G-305",
+          "branch": "CIVIL",
+          "subject": "Programming for Problem solving through C",
+          "code": "PPSTC",
+          "room": "GVPCE (B13-201)",
           "hours": 3,
           "type": "theory",
           "loadDetail": "3 theory = 3 periods"
@@ -49140,7 +49140,7 @@
           "loadDetail": "3 theory = 3 periods"
         }
       ],
-      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
+      "assignments": "CIVIL → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-2 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-2 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCIVIL → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -60246,6 +60246,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60292,15 +60301,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60327,7 +60327,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60353,6 +60353,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60399,15 +60408,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60434,7 +60434,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60460,6 +60460,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60506,15 +60515,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60541,7 +60541,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60567,6 +60567,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60613,15 +60622,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60648,7 +60648,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60674,6 +60674,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60720,15 +60729,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60755,7 +60755,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60781,6 +60781,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60827,15 +60836,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60862,7 +60862,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -60888,6 +60888,15 @@
       "totalLoad": 13,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -60934,15 +60943,6 @@
         },
         {
           "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
-          "branch": "CIVIL",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
           "room": "COMP. LAB-4",
@@ -60969,7 +60969,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-3 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nEEE → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -61681,6 +61681,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -61717,15 +61726,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -61753,7 +61753,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -61779,6 +61779,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -61815,15 +61824,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -61851,7 +61851,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -61877,6 +61877,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -61913,15 +61922,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -61949,7 +61949,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -61975,6 +61975,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -62011,15 +62020,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -62047,7 +62047,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -62073,6 +62073,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -62109,15 +62118,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -62145,7 +62145,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -62171,6 +62171,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -62207,15 +62216,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -62243,7 +62243,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -62269,6 +62269,15 @@
       "totalLoad": 12,
       "assignedCourses": [
         {
+          "branch": "CIVIL",
+          "subject": "ESS. ENG. Tut.",
+          "code": "ESS. ENG. Tut.",
+          "room": "E-410",
+          "hours": 1,
+          "type": "tutorial",
+          "loadDetail": "1 tutorial = 1 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Essential English Lab",
           "code": "ESS. ENG. LAB",
@@ -62305,15 +62314,6 @@
           "loadDetail": "1 tutorial = 1 periods"
         },
         {
-          "branch": "CIVIL",
-          "subject": "ESS. ENG. Tut.",
-          "code": "ESS. ENG. Tut.",
-          "room": "E-410",
-          "hours": 1,
-          "type": "tutorial",
-          "loadDetail": "1 tutorial = 1 periods"
-        },
-        {
           "branch": "MECH-ROBOTICS",
           "subject": "ESS. ENG. Tut.",
           "code": "ESS. ENG. Tut.",
@@ -62341,7 +62341,7 @@
           "loadDetail": "1 tutorial = 1 periods"
         }
       ],
-      "assignments": "ECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
+      "assignments": "CIVIL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-1 → Essential English Lab (ESS. ENG. LAB) – 4 lab = 4 periods\nCHEMICAL → Essential English Lab (ESS. ENG. LAB) – 2 lab = 2 periods\nEEE → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nCHEMICAL → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH-ROBOTICS → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nECE-2 → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods\nMECH → ESS. ENG. Tut. (ESS. ENG. Tut.) – 1 tutorial = 1 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
