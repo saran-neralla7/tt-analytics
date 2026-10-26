@@ -3114,8 +3114,8 @@
         "02:15-03:15": [
           {
             "subject": "FWD LAB",
-            "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
-            "rawFaculty": "SVM, DAK",
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "rawFaculty": "SVM, MA",
             "room": "COMP. LAB-3",
             "isLab": true
           },
@@ -3130,8 +3130,8 @@
         "03:15-04:15": [
           {
             "subject": "FWD LAB",
-            "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
-            "rawFaculty": "SVM, DAK",
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "rawFaculty": "SVM, MA",
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
@@ -4083,8 +4083,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
-            "rawFaculty": "SLA, CA",
+            "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
+            "rawFaculty": "SLA, ADP",
             "room": "COMP. LAB-3",
             "isLab": true
           }
@@ -4100,8 +4100,8 @@
           },
           {
             "subject": "FAI & ML LAB",
-            "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
-            "rawFaculty": "SLA, CA",
+            "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
+            "rawFaculty": "SLA, ADP",
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true
@@ -4192,8 +4192,8 @@
           },
           {
             "subject": "PPSTC LAB",
-            "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
-            "rawFaculty": "MA, YPR",
+            "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
+            "rawFaculty": "DC, YPR",
             "room": "COMP. LAB-1",
             "isLab": true
           }
@@ -4209,8 +4209,8 @@
           },
           {
             "subject": "PPSTC LAB",
-            "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
-            "rawFaculty": "MA, YPR",
+            "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
+            "rawFaculty": "DC, YPR",
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true
@@ -6857,8 +6857,8 @@
               "raw": "CSE(AI&ML)-2 / PPSTC LAB",
               "branch": "CSE(AI&ML)-2",
               "subject": "PPSTC LAB",
-              "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
-              "facultyShort": "MA, YPR"
+              "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
+              "facultyShort": "DC, YPR"
             }
           },
           "THU": {
@@ -6987,8 +6987,8 @@
               "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
               "branch": "CSE(AI&ML)-2",
               "subject": "FAI & ML LAB",
-              "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
-              "facultyShort": "SLA, CA"
+              "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
+              "facultyShort": "SLA, ADP"
             },
             "11:15-01:15": {
               "raw": "EEE / AITA LAB",
@@ -7033,8 +7033,8 @@
               "raw": "CSE-1 / FWD LAB",
               "branch": "CSE-1",
               "subject": "FWD LAB",
-              "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
-              "facultyShort": "SVM, DAK"
+              "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+              "facultyShort": "SVM, MA"
             },
             "11:15-01:15": {
               "raw": "ECE-3 / PPSTC LAB",
@@ -8139,8 +8139,8 @@
             {
               "branch": "CSE(AI&ML)-2",
               "room": "COMP. LAB-1",
-              "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
-              "facultyShort": "MA, YPR",
+              "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
+              "facultyShort": "DC, YPR",
               "raw": "CSE(AI&ML)-2/COMP. LAB-1"
             },
             {
@@ -8534,8 +8534,8 @@
             {
               "branch": "CSE-1",
               "room": "COMP. LAB-3",
-              "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
-              "facultyShort": "SVM, DAK",
+              "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+              "facultyShort": "SVM, MA",
               "raw": "CSE-1/COMP. LAB-3"
             }
           ]
@@ -8587,8 +8587,8 @@
             {
               "branch": "CSE(AI&ML)-2",
               "room": "COMP. LAB-3",
-              "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
-              "facultyShort": "SLA, CA",
+              "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
+              "facultyShort": "SLA, ADP",
               "raw": "CSE(AI&ML)-2/COMP. LAB-3"
             }
           ]
@@ -9532,9 +9532,9 @@
           "02:15-04:15": [
             {
               "subject": "FWD LAB",
-              "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
+              "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
               "room": "COMP. LAB-3",
-              "raw": "FWD LAB\nSVM, DAK\nCOMP. LAB-3"
+              "raw": "FWD LAB\nSVM, MA\nCOMP. LAB-3"
             },
             {
               "subject": "AITA LAB",
@@ -9739,9 +9739,9 @@
             },
             {
               "subject": "FAI & ML LAB",
-              "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
+              "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
               "room": "COMP. LAB-3",
-              "raw": "FAI & ML LAB\nSLA, CA\nCOMP. LAB-3"
+              "raw": "FAI & ML LAB\nSLA, ADP\nCOMP. LAB-3"
             }
           ],
           "02:15-04:15": [
@@ -9763,9 +9763,9 @@
             },
             {
               "subject": "PPSTC LAB",
-              "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
+              "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
               "room": "COMP. LAB-1",
-              "raw": "PPSTC LAB\nMA, YPR\nCOMP. LAB-1"
+              "raw": "PPSTC LAB\nDC, YPR\nCOMP. LAB-1"
             }
           ]
         },
@@ -10960,8 +10960,8 @@
             "raw": "CSE(AI&ML)-2 / PPSTC LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "PPSTC LAB",
-            "faculty": "Mr. M Anil, Mr. Y Prasad Reddy",
-            "facultyShort": "MA, YPR"
+            "faculty": "Dr. D Chandravathi, Mr. Y Prasad Reddy",
+            "facultyShort": "DC, YPR"
           }
         },
         "THU": {
@@ -11090,8 +11090,8 @@
             "raw": "CSE(AI&ML)-2 / FAI & ML LAB",
             "branch": "CSE(AI&ML)-2",
             "subject": "FAI & ML LAB",
-            "faculty": "Ms. S Laxmi Aparna, Ms. C Aparna",
-            "facultyShort": "SLA, CA"
+            "faculty": "Ms. S Laxmi Aparna, Mr. A Dhanunjaya Prasad",
+            "facultyShort": "SLA, ADP"
           },
           "11:15-01:15": {
             "raw": "EEE / AITA LAB",
@@ -11136,8 +11136,8 @@
             "raw": "CSE-1 / FWD LAB",
             "branch": "CSE-1",
             "subject": "FWD LAB",
-            "faculty": "Mr. S Vinod Manikantha, Mr. D Arun Kumar",
-            "facultyShort": "SVM, DAK"
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "facultyShort": "SVM, MA"
           },
           "11:15-01:15": {
             "raw": "ECE-3 / PPSTC LAB",
@@ -18682,6 +18682,28 @@
             "rawFaculty": "MA, DC",
             "isNonAcademic": false
           }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "DC, YPR",
+            "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "PPSTC LAB",
+            "room": "COMP. LAB-1",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "DC, YPR",
+            "isNonAcademic": false
+          }
         ]
       },
       "THU": {
@@ -19010,6 +19032,28 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "ADP, CA",
+            "isNonAcademic": false
+          }
+        ],
+        "09:00-10:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "SLA, ADP",
+            "isNonAcademic": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE(AI&ML)-2",
+            "subject": "FAI & ML LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
+            "rawFaculty": "SLA, ADP",
             "isNonAcademic": false
           }
         ]
@@ -19393,28 +19437,6 @@
             "isNonAcademic": false
           }
         ],
-        "02:15-03:15": [
-          {
-            "branch": "CSE-1",
-            "subject": "FWD LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "SVM, DAK",
-            "isNonAcademic": false
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "CSE-1",
-            "subject": "FWD LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "SVM, DAK",
-            "isNonAcademic": false
-          }
-        ],
         "11:15-12:15": [
           {
             "branch": "ECE-2",
@@ -19512,28 +19534,6 @@
             "rawFaculty": "MA, DC",
             "isNonAcademic": false
           }
-        ],
-        "02:15-03:15": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "MA, YPR",
-            "isNonAcademic": false
-          }
-        ],
-        "03:15-04:15": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "PPSTC LAB",
-            "room": "COMP. LAB-1",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "MA, YPR",
-            "isNonAcademic": false
-          }
         ]
       },
       "THU": {
@@ -19544,6 +19544,28 @@
             "room": "G-304",
             "isLab": false,
             "isContinued": false,
+            "rawFaculty": "SVM, MA",
+            "isNonAcademic": false
+          }
+        ],
+        "02:15-03:15": [
+          {
+            "branch": "CSE-1",
+            "subject": "FWD LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": false,
+            "rawFaculty": "SVM, MA",
+            "isNonAcademic": false
+          }
+        ],
+        "03:15-04:15": [
+          {
+            "branch": "CSE-1",
+            "subject": "FWD LAB",
+            "room": "COMP. LAB-3",
+            "isLab": true,
+            "isContinued": true,
             "rawFaculty": "SVM, MA",
             "isNonAcademic": false
           }
@@ -19839,28 +19861,6 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "ADP, CA",
-            "isNonAcademic": false
-          }
-        ],
-        "09:00-10:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": false,
-            "rawFaculty": "SLA, CA",
-            "isNonAcademic": false
-          }
-        ],
-        "10:00-11:00": [
-          {
-            "branch": "CSE(AI&ML)-2",
-            "subject": "FAI & ML LAB",
-            "room": "COMP. LAB-3",
-            "isLab": true,
-            "isContinued": true,
-            "rawFaculty": "SLA, CA",
             "isNonAcademic": false
           }
         ]
@@ -20247,7 +20247,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "SLA, CA",
+            "rawFaculty": "SLA, ADP",
             "isNonAcademic": false
           }
         ],
@@ -20258,7 +20258,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "SLA, CA",
+            "rawFaculty": "SLA, ADP",
             "isNonAcademic": false
           }
         ]
@@ -23557,7 +23557,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "SVM, DAK",
+            "rawFaculty": "SVM, MA",
             "isNonAcademic": false
           }
         ],
@@ -23568,7 +23568,7 @@
             "room": "COMP. LAB-3",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "SVM, DAK",
+            "rawFaculty": "SVM, MA",
             "isNonAcademic": false
           }
         ]
@@ -25624,7 +25624,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "MA, YPR",
+            "rawFaculty": "DC, YPR",
             "isNonAcademic": false
           }
         ],
@@ -25635,7 +25635,7 @@
             "room": "COMP. LAB-1",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "MA, YPR",
+            "rawFaculty": "DC, YPR",
             "isNonAcademic": false
           }
         ],
@@ -29182,9 +29182,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -29205,6 +29205,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -29214,7 +29223,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -29225,7 +29234,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     {
       "sno": 17,
@@ -29307,9 +29316,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -29330,6 +29339,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -29348,10 +29366,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     {
       "sno": 19,
@@ -29424,9 +29442,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -29463,21 +29481,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     {
       "sno": 21,
@@ -29519,25 +29528,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -29622,9 +29631,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -29649,15 +29658,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -29690,10 +29690,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     {
       "sno": 24,
@@ -34949,9 +34949,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -34972,6 +34972,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -34981,7 +34990,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -34992,7 +35001,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     {
       "sno": 17,
@@ -35074,9 +35083,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -35097,6 +35106,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -35115,10 +35133,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     {
       "sno": 19,
@@ -35191,9 +35209,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -35230,21 +35248,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     {
       "sno": 21,
@@ -35286,25 +35295,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -35389,9 +35398,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -35416,15 +35425,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -35457,10 +35457,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     {
       "sno": 24,
@@ -47424,9 +47424,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47447,6 +47447,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47456,7 +47465,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47467,7 +47476,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Dr. DC": {
       "sno": 16,
@@ -47477,9 +47486,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47500,6 +47509,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47509,7 +47527,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47520,7 +47538,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Dr.DC": {
       "sno": 16,
@@ -47530,9 +47548,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47553,6 +47571,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47562,7 +47589,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47573,7 +47600,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Mr. DC": {
       "sno": 16,
@@ -47583,9 +47610,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47606,6 +47633,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47615,7 +47651,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47626,7 +47662,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Mrs. DC": {
       "sno": 16,
@@ -47636,9 +47672,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47659,6 +47695,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47668,7 +47713,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47679,7 +47724,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Ms. DC": {
       "sno": 16,
@@ -47689,9 +47734,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47712,6 +47757,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47721,7 +47775,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47732,7 +47786,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "Dr. D Chandravathi": {
       "sno": 16,
@@ -47742,9 +47796,9 @@
       "dept": "CSE",
       "designation": "Associate Professor",
       "theoryLoad": 6,
-      "labLoad": 4,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 10,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -47765,6 +47819,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "CSE(AI&ML)-1",
           "subject": "Programming for Problem solving through C lab",
           "code": "PPSTC LAB",
@@ -47774,7 +47837,7 @@
           "loadDetail": "4 lab = 4 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE(AI&ML)-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods",
       "counsellingLoad": 1,
       "counselSessions": [
         {
@@ -47785,7 +47848,7 @@
           "subject": "COUNSELLING"
         }
       ],
-      "displayLoad": "10 + 1"
+      "displayLoad": "12 + 1"
     },
     "KR": {
       "sno": 17,
@@ -48299,9 +48362,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48322,6 +48385,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48340,10 +48412,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Dr. ADP": {
       "sno": 18,
@@ -48353,9 +48425,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48376,6 +48448,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48394,10 +48475,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Dr.ADP": {
       "sno": 18,
@@ -48407,9 +48488,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48430,6 +48511,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48448,10 +48538,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Mr. ADP": {
       "sno": 18,
@@ -48461,9 +48551,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48484,6 +48574,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48502,10 +48601,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Mrs. ADP": {
       "sno": 18,
@@ -48515,9 +48614,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48538,6 +48637,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48556,10 +48664,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Ms. ADP": {
       "sno": 18,
@@ -48569,9 +48677,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48592,6 +48700,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48610,10 +48727,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "Mr. A Dhanunjaya Prasad": {
       "sno": 18,
@@ -48623,9 +48740,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 6,
+      "labLoad": 8,
       "tutLoad": 0,
-      "totalLoad": 12,
+      "totalLoad": 14,
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
@@ -48646,6 +48763,15 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
+          "code": "FAI & ML LAB",
+          "room": "COMP. LAB-3",
+          "hours": 2,
+          "type": "lab",
+          "loadDetail": "2 lab = 2 periods"
+        },
+        {
           "branch": "ECE-1",
           "subject": "Programming for Problem solving through C",
           "code": "PPSTC",
@@ -48664,10 +48790,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 4 lab = 4 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nECE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "12"
+      "displayLoad": "14"
     },
     "BBK": {
       "sno": 19,
@@ -49118,9 +49244,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49157,21 +49283,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Dr. DAK": {
       "sno": 20,
@@ -49181,9 +49298,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49220,21 +49337,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Dr.DAK": {
       "sno": 20,
@@ -49244,9 +49352,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49283,21 +49391,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Mr. DAK": {
       "sno": 20,
@@ -49307,9 +49406,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49346,21 +49445,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Mrs. DAK": {
       "sno": 20,
@@ -49370,9 +49460,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49409,21 +49499,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Ms. DAK": {
       "sno": 20,
@@ -49433,9 +49514,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49472,21 +49553,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "Mr. D Arun Kumar": {
       "sno": 20,
@@ -49496,9 +49568,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 6,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 14,
+      "totalLoad": 12,
       "assignedCourses": [
         {
           "branch": "CSE-1",
@@ -49535,21 +49607,12 @@
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-1 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nECE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nECE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "14"
+      "displayLoad": "12"
     },
     "MA": {
       "sno": 21,
@@ -49591,25 +49654,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49654,25 +49717,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49717,25 +49780,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49780,25 +49843,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49843,25 +49906,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49906,25 +49969,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -49969,25 +50032,25 @@
           "loadDetail": "3 theory = 3 periods"
         },
         {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Programming for Problem solving through C lab",
-          "code": "PPSTC LAB",
-          "room": "COMP. LAB-1",
+          "branch": "CSE-1",
+          "subject": "Fundamentals of Web Designing Lab",
+          "code": "FWD LAB",
+          "room": "COMP. LAB-3",
           "hours": 4,
           "type": "lab",
           "loadDetail": "4 lab = 4 periods"
         },
         {
-          "branch": "CSE-1",
-          "subject": "Fundamentals of Web Designing Lab",
-          "code": "FWD LAB",
-          "room": "COMP. LAB-3",
+          "branch": "CSE(AI&ML)-2",
+          "subject": "Programming for Problem solving through C lab",
+          "code": "PPSTC LAB",
+          "room": "COMP. LAB-1",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 4 lab = 4 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing (FWD) – 3 theory = 3 periods\nCSE-1 → Fundamentals of Web Designing Lab (FWD LAB) – 4 lab = 4 periods\nCSE(AI&ML)-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "15"
@@ -50504,9 +50567,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50531,15 +50594,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50572,10 +50626,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Dr. CA": {
       "sno": 23,
@@ -50585,9 +50639,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50612,15 +50666,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50653,10 +50698,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Dr.CA": {
       "sno": 23,
@@ -50666,9 +50711,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50693,15 +50738,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50734,10 +50770,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Mr. CA": {
       "sno": 23,
@@ -50747,9 +50783,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50774,15 +50810,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50815,10 +50842,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Mrs. CA": {
       "sno": 23,
@@ -50828,9 +50855,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50855,15 +50882,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50896,10 +50914,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Ms. CA": {
       "sno": 23,
@@ -50909,9 +50927,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -50936,15 +50954,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -50977,10 +50986,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "Ms. C Aparna": {
       "sno": 23,
@@ -50990,9 +50999,9 @@
       "dept": "CSE",
       "designation": "Assistant Professor",
       "theoryLoad": 9,
-      "labLoad": 8,
+      "labLoad": 6,
       "tutLoad": 0,
-      "totalLoad": 17,
+      "totalLoad": 15,
       "assignedCourses": [
         {
           "branch": "CSE-2",
@@ -51017,15 +51026,6 @@
           "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
           "code": "FAI & ML LAB",
           "room": "COMP. LAB-1",
-          "hours": 2,
-          "type": "lab",
-          "loadDetail": "2 lab = 2 periods"
-        },
-        {
-          "branch": "CSE(AI&ML)-2",
-          "subject": "Foundations of Artificial Intelligence & Machine Learning Lab",
-          "code": "FAI & ML LAB",
-          "room": "COMP. LAB-3",
           "hours": 2,
           "type": "lab",
           "loadDetail": "2 lab = 2 periods"
@@ -51058,10 +51058,10 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE(AI&ML)-1 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods\nEEE → Programming for Problem solving through C (PPSTC) – 3 theory = 3 periods\nCSE-2 → Programming for Problem solving through C lab (PPSTC LAB) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
-      "displayLoad": "17"
+      "displayLoad": "15"
     },
     "KS": {
       "sno": 24,
