@@ -129,6 +129,7 @@ export default function App() {
           <RoomsView
             timetableData={timetableData}
             universityInfo={universityInfo}
+            roomCapacities={initialData.roomCapacities || {}}
             onSlotClick={handleSlotClick}
           />
         )}

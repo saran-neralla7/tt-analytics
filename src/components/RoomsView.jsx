@@ -20,10 +20,17 @@ import {
   CheckSquare,
   Square,
   Printer,
-  RotateCcw
+  RotateCcw,
+  Users
 } from 'lucide-react';
+import initialData from '../data/initialData.json';
 
-export default function RoomsView({ timetableData, universityInfo, onSlotClick }) {
+export default function RoomsView({ 
+  timetableData, 
+  universityInfo, 
+  onSlotClick, 
+  roomCapacities = initialData.roomCapacities || {} 
+}) {
   // 1. Compile room schedules across all 13 branches in timetableData
   const { allRoomsList, classroomsList, labsList, roomSchedules } = useMemo(() => {
     const schedules = {};
@@ -539,8 +546,13 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                     {/* Header: Room Name & Status Badge */}
                     <div className="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-slate-200/80">
                       <div>
-                        <div className="text-sm font-black text-slate-900 font-mono tracking-tight">
-                          {item.room}
+                        <div className="text-sm font-black text-slate-900 font-mono tracking-tight flex items-center gap-1.5">
+                          <span>{item.room}</span>
+                          {roomCapacities[item.room] && (
+                            <span className="text-[10px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.2 rounded font-sans" title={`Seating Capacity: ${roomCapacities[item.room]} Seats`}>
+                              {roomCapacities[item.room]} seats
+                            </span>
+                          )}
                         </div>
                         <div className="text-[10.5px] font-bold text-slate-500 uppercase">
                           {item.type}
@@ -643,7 +655,14 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                     {filteredRoomStatusList.map((item) => (
                       <tr key={item.room} className="hover:bg-slate-50">
                         <td className="py-2.5 px-3 text-left font-black text-slate-900 border-r border-slate-300 font-mono text-xs">
-                          {item.room}
+                          <div className="flex items-center justify-between gap-1.5">
+                            <span>{item.room}</span>
+                            {roomCapacities[item.room] && (
+                              <span className="text-[10px] font-bold text-slate-600 bg-slate-100 border border-slate-300 px-1.5 py-0.5 rounded shadow-2xs font-sans" title={`Seating Capacity: ${roomCapacities[item.room]}`}>
+                                {roomCapacities[item.room]} cap
+                              </span>
+                            )}
+                          </div>
                         </td>
                         <td className="py-2 px-2 border-r border-slate-300 text-[10.5px] font-bold text-slate-500">
                           {item.type}
@@ -841,6 +860,11 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                       className="rounded text-purple-600 focus:ring-purple-500 cursor-pointer"
                                     />
                                     <span className="font-mono text-[11px] truncate">{room}</span>
+                                    {roomCapacities[room] && (
+                                      <span className="ml-auto text-[9.5px] font-bold text-purple-700 bg-purple-100/90 px-1 rounded font-sans">
+                                        {roomCapacities[room]}
+                                      </span>
+                                    )}
                                   </label>
                                 );
                               })}
@@ -892,6 +916,11 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                       className="rounded text-teal-600 focus:ring-teal-500 cursor-pointer"
                                     />
                                     <span className="font-mono text-[11px] truncate">{room}</span>
+                                    {roomCapacities[room] && (
+                                      <span className="ml-auto text-[9.5px] font-bold text-purple-700 bg-purple-100/90 px-1 rounded font-sans">
+                                        {roomCapacities[room]}
+                                      </span>
+                                    )}
                                   </label>
                                 );
                               })}
@@ -1139,15 +1168,20 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                             setSelectedRoom(room);
                                             setViewMode('timetable');
                                           }}
-                                          title={`${room} (${isLab ? 'Laboratory' : 'Classroom'}) - Click to view weekly timetable`}
-                                          className={`px-2 py-0.5 rounded text-[11px] font-mono font-black transition-all shadow-2xs hover:scale-105 cursor-pointer ${
+                                          title={`${room} (${isLab ? 'Laboratory' : 'Classroom'})${roomCapacities[room] ? ` - Seating Capacity: ${roomCapacities[room]} Seats` : ''} - Click to view weekly timetable`}
+                                          className={`px-2 py-0.5 rounded text-[11px] font-mono font-black transition-all shadow-2xs hover:scale-105 cursor-pointer inline-flex items-center gap-1 ${
                                             isLab
                                               ? 'bg-teal-50 text-teal-900 border border-teal-300 hover:bg-teal-100'
                                               : 'bg-emerald-50 text-emerald-900 border border-emerald-300 hover:bg-emerald-100'
                                           }`}
                                         >
-                                          {isLab && <FlaskConical className="w-2.5 h-2.5 inline mr-1 text-teal-700" />}
-                                          {room}
+                                          {isLab && <FlaskConical className="w-2.5 h-2.5 inline text-teal-700" />}
+                                          <span>{room}</span>
+                                          {roomCapacities[room] && (
+                                            <span className="text-[9.5px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-emerald-200 font-sans">
+                                              {roomCapacities[room]}
+                                            </span>
+                                          )}
                                         </button>
                                       );
                                     })}
@@ -1183,13 +1217,18 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                         <div
                                           key={room}
                                           onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
-                                          title={`${room}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                          title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
                                           className="p-1 rounded bg-rose-50 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 transition-all shadow-2xs cursor-pointer text-left"
                                         >
                                           <div className="flex items-center justify-between font-mono font-black text-rose-950 text-[10.5px]">
-                                            <span className="flex items-center gap-0.5">
+                                            <span className="flex items-center gap-1">
                                               {isLab && <FlaskConical className="w-2.5 h-2.5 text-teal-700 inline" />}
-                                              {room}
+                                              <span>{room}</span>
+                                              {roomCapacities[room] && (
+                                                <span className="text-[9px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-rose-200 font-sans">
+                                                  {roomCapacities[room]}
+                                                </span>
+                                              )}
                                             </span>
                                             <span className="text-[9.5px] font-bold text-blue-700">
                                               {sess[0]?.branch}
@@ -1227,10 +1266,15 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                             setSelectedRoom(room);
                                             setViewMode('timetable');
                                           }}
-                                          title={`${room} - Click to view schedule`}
-                                          className="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold bg-emerald-100/90 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 cursor-pointer shadow-2xs"
+                                          title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''} - Click to view schedule`}
+                                          className="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold bg-emerald-100/90 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
                                         >
-                                          {room}
+                                          <span>{room}</span>
+                                          {roomCapacities[room] && (
+                                            <span className="text-[8.5px] font-bold text-emerald-800 bg-white/80 px-0.5 rounded font-sans">
+                                              ({roomCapacities[room]})
+                                            </span>
+                                          )}
                                         </span>
                                       ))}
                                       {displayVacant.length > 15 && (
@@ -1257,10 +1301,15 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                                           <span
                                             key={room}
                                             onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
-                                            title={`${room}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
-                                            className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold bg-rose-100/90 text-rose-950 border border-rose-300 hover:bg-rose-200 cursor-pointer shadow-2xs"
+                                            title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                            className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold bg-rose-100/90 text-rose-950 border border-rose-300 hover:bg-rose-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
                                           >
-                                            {room}
+                                            <span>{room}</span>
+                                            {roomCapacities[room] && (
+                                              <span className="text-[8.5px] font-bold text-rose-800 bg-white/80 px-0.5 rounded font-sans">
+                                                ({roomCapacities[room]})
+                                              </span>
+                                            )}
                                           </span>
                                         );
                                       })}
@@ -1330,14 +1379,14 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
                 <optgroup label="Classrooms">
                   {classroomsList.map((r) => (
                     <option key={r} value={r}>
-                      {r} (Classroom)
+                      {r} {roomCapacities[r] ? `(${roomCapacities[r]} Seats)` : ''} (Classroom)
                     </option>
                   ))}
                 </optgroup>
                 <optgroup label="Laboratories">
                   {labsList.map((r) => (
                     <option key={r} value={r}>
-                      {r} (Lab)
+                      {r} {roomCapacities[r] ? `(${roomCapacities[r]} Seats)` : ''} (Lab)
                     </option>
                   ))}
                 </optgroup>
@@ -1351,11 +1400,16 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
               <h2 className="text-sm font-bold text-gray-900 tracking-wide uppercase font-serif">
                 {universityInfo.name}
               </h2>
-              <h3 className="text-xs sm:text-sm font-black text-purple-900 mt-1 uppercase font-mono">
-                ROOM MASTER TIMETABLE: <span className="underline decoration-purple-600">{selectedRoom}</span>
-                <span className="ml-2 px-2 py-0.5 rounded text-[10.5px] font-bold bg-purple-100 text-purple-950 border border-purple-300">
+              <h3 className="text-xs sm:text-sm font-black text-purple-900 mt-1 uppercase font-mono flex flex-wrap items-center justify-center gap-2">
+                <span>ROOM MASTER TIMETABLE: <span className="underline decoration-purple-600">{selectedRoom}</span></span>
+                <span className="px-2 py-0.5 rounded text-[10.5px] font-bold bg-purple-100 text-purple-950 border border-purple-300">
                   {labsList.includes(selectedRoom) ? 'Laboratory' : 'Classroom'}
                 </span>
+                {roomCapacities[selectedRoom] && (
+                  <span className="px-2.5 py-0.5 rounded text-[11px] font-bold bg-blue-100 text-blue-950 border border-blue-300 font-sans flex items-center gap-1">
+                    <Users className="w-3 h-3 text-blue-700 inline" /> Capacity: {roomCapacities[selectedRoom]} Seats
+                  </span>
+                )}
               </h3>
               <p className="text-xs text-gray-500 mt-0.5 font-mono">
                 Academic Year {universityInfo.academicYear} | Weekly Class & Lab Room Allocation

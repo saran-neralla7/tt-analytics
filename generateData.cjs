@@ -572,6 +572,21 @@ if (ctSheet) {
 }
 console.log(`Class teachers parsed for: ${Object.keys(classTeachers).length} branches`);
 
+// 2.6 Parse Rooms_Capacity sheet
+const rcSheet = wb.Sheets['Rooms_Capacity'] || wb.Sheets['Room_Capacity'] || wb.Sheets['rooms_capacity'];
+const roomCapacities = {};
+if (rcSheet) {
+  const rcRows = XLSX.utils.sheet_to_json(rcSheet);
+  rcRows.forEach(r => {
+    const room = (r.Room_No || r['Room No'] || r.Room_no || r.Room || '').trim();
+    const cap = Number(r['Seating Capacity'] || r.Capacity || r['Seating_Capacity'] || r.capacity);
+    if (room && !isNaN(cap)) {
+      roomCapacities[room] = cap;
+    }
+  });
+}
+console.log(`Rooms capacity parsed for: ${Object.keys(roomCapacities).length} rooms`);
+
 // 3. Parse Timetable_Final into timetableData (authoritative sheet for branch schedules)
 const wsFinal = wb.Sheets['Timetable_Final'] || wb.Sheets['Timetable_Master'];
 const rowsFinal = XLSX.utils.sheet_to_json(wsFinal, { header: 1, defval: '' });
@@ -1386,6 +1401,7 @@ const output = {
   timetableData,
   branchLegends,
   classTeachers,
+  roomCapacities,
   labSheetsData,
   activitiesData,
   masterFacultyTimetables,
