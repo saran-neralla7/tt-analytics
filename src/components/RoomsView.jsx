@@ -176,6 +176,36 @@ export default function RoomsView({
   const [dropdownSearchRoom, setDropdownSearchRoom] = useState('');
   const roomDropdownRef = useRef(null);
 
+  // Cell expand/collapse state: tracks which slot cells have their room lists open.
+  // By default, initialize with all cells expanded, or allow user to toggle each individually or expand/collapse all!
+  const [collapsedCells, setCollapsedCells] = useState(() => new Set());
+
+  const toggleCellExpand = (cellKey) => {
+    setCollapsedCells((prev) => {
+      const next = new Set(prev);
+      if (next.has(cellKey)) {
+        next.delete(cellKey); // expanded
+      } else {
+        next.add(cellKey); // collapsed
+      }
+      return next;
+    });
+  };
+
+  const handleExpandAllCells = () => {
+    setCollapsedCells(new Set());
+  };
+
+  const handleCollapseAllCells = () => {
+    const allKeys = new Set();
+    activeDaysList.forEach((d) => {
+      academicSlots.forEach((s) => {
+        allKeys.add(`${d}_${s}`);
+      });
+    });
+    setCollapsedCells(allKeys);
+  };
+
   // Sync matrixSelectedRooms when matrixMonitoredRoomsList changes
   useEffect(() => {
     if (matrixMonitoredRoomsList.length > 0) {
@@ -742,8 +772,18 @@ export default function RoomsView({
                 </div>
               </div>
 
-              {/* Action Buttons: Reset & Print */}
+              {/* Action Buttons: Reset, Expand/Collapse All & Print */}
               <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={collapsedCells.size === 0 ? handleCollapseAllCells : handleExpandAllCells}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
+                  title={collapsedCells.size === 0 ? "Collapse all slot dropdowns" : "Expand all slot dropdowns"}
+                >
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${collapsedCells.size === 0 ? 'rotate-180' : ''}`} />
+                  {collapsedCells.size === 0 ? 'Collapse All' : 'Expand All'}
+                </button>
+
                 <button
                   type="button"
                   onClick={() => {
@@ -751,6 +791,7 @@ export default function RoomsView({
                     setMatrixStatusFilter('VACANT');
                     setMatrixSelectedRooms(new Set(matrixMonitoredRoomsList));
                     setMatrixSearchQuery('');
+                    setCollapsedCells(new Set());
                   }}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
                   title="Reset filters to default"
@@ -1159,192 +1200,233 @@ export default function RoomsView({
                           const vacantPct = totalMonitored > 0 ? Math.round((slotVacantRooms.length / totalMonitored) * 100) : 0;
                           const occupiedPct = totalMonitored > 0 ? Math.round((slotOccupiedRooms.length / totalMonitored) * 100) : 0;
 
+                          const cellKey = `${day}_${slot}`;
+                          const isCollapsed = collapsedCells.has(cellKey);
+
                           return (
                             <td
                               key={slot}
-                              className="p-2 border-r border-slate-300 align-top min-w-[170px] max-w-[240px] bg-white"
+                              className="p-2 border-r border-slate-300 align-top min-w-[170px] max-w-[240px] bg-white transition-all"
                             >
                               {/* MODE 1: VACANT ONLY */}
                               {matrixStatusFilter === 'VACANT' && (
                                 <div className="space-y-1.5">
-                                  {/* Header Badge */}
-                                  <div className="flex items-center justify-between text-[11px] font-black text-emerald-800 bg-emerald-100/90 px-2 py-1 rounded border border-emerald-300 shadow-2xs">
+                                  {/* Clickable Header Badge Dropdown Trigger */}
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleCellExpand(cellKey)}
+                                    title={isCollapsed ? "Click to expand rooms list" : "Click to collapse rooms list"}
+                                    className="w-full flex items-center justify-between text-[11px] font-black text-emerald-800 bg-emerald-100/90 hover:bg-emerald-200/90 px-2 py-1 rounded border border-emerald-300 shadow-2xs transition-all cursor-pointer select-none"
+                                  >
                                     <span className="flex items-center gap-1">
                                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700" />
                                       <span>{displayVacant.length} Free</span>
                                     </span>
-                                    <span className="text-[10px] text-emerald-700 font-mono font-bold">
-                                      {vacantPct}%
+                                    <span className="flex items-center gap-1">
+                                      <span className="text-[10px] text-emerald-700 font-mono font-bold">
+                                        {vacantPct}%
+                                      </span>
+                                      <ChevronDown className={`w-3.5 h-3.5 text-emerald-700 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
                                     </span>
-                                  </div>
+                                  </button>
 
-                                  {/* List of Vacant Room Pills */}
-                                  <div className="flex flex-wrap gap-1 max-h-[190px] overflow-y-auto p-0.5">
-                                    {displayVacant.map((room) => {
-                                      const isLab = labsList.includes(room);
-                                      return (
-                                        <button
-                                          key={room}
-                                          type="button"
-                                          onClick={() => {
-                                            setSelectedRoom(room);
-                                            setViewMode('timetable');
-                                          }}
-                                          title={`${room} (${isLab ? 'Laboratory' : 'Classroom'})${roomCapacities[room] ? ` - Seating Capacity: ${roomCapacities[room]} Seats` : ''} - Click to view weekly timetable`}
-                                          className={`px-2 py-0.5 rounded text-[11px] font-mono font-black transition-all shadow-2xs hover:scale-105 cursor-pointer inline-flex items-center gap-1 ${
-                                            isLab
-                                              ? 'bg-teal-50 text-teal-900 border border-teal-300 hover:bg-teal-100'
-                                              : 'bg-emerald-50 text-emerald-900 border border-emerald-300 hover:bg-emerald-100'
-                                          }`}
-                                        >
-                                          {isLab && <FlaskConical className="w-2.5 h-2.5 inline text-teal-700" />}
-                                          <span>{room}</span>
-                                          {roomCapacities[room] && (
-                                            <span className="text-[9.5px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-emerald-200 font-sans">
-                                              {roomCapacities[room]}
-                                            </span>
-                                          )}
-                                        </button>
-                                      );
-                                    })}
-                                    {displayVacant.length === 0 && (
-                                      <div className="w-full text-center py-3 text-slate-400 italic text-[11px]">
-                                        0 Rooms Vacant
-                                      </div>
-                                    )}
-                                  </div>
+                                  {/* List of Vacant Room Pills (collapsible) */}
+                                  {!isCollapsed && (
+                                    <div className="flex flex-wrap gap-1 max-h-[190px] overflow-y-auto p-0.5">
+                                      {displayVacant.map((room) => {
+                                        const isLab = labsList.includes(room);
+                                        return (
+                                          <button
+                                            key={room}
+                                            type="button"
+                                            onClick={() => {
+                                              setSelectedRoom(room);
+                                              setViewMode('timetable');
+                                            }}
+                                            title={`${room} (${isLab ? 'Laboratory' : 'Classroom'})${roomCapacities[room] ? ` - Seating Capacity: ${roomCapacities[room]} Seats` : ''} - Click to view weekly timetable`}
+                                            className={`px-2 py-0.5 rounded text-[11px] font-mono font-black transition-all shadow-2xs hover:scale-105 cursor-pointer inline-flex items-center gap-1 ${
+                                              isLab
+                                                ? 'bg-teal-50 text-teal-900 border border-teal-300 hover:bg-teal-100'
+                                                : 'bg-emerald-50 text-emerald-900 border border-emerald-300 hover:bg-emerald-100'
+                                            }`}
+                                          >
+                                            {isLab && <FlaskConical className="w-2.5 h-2.5 inline text-teal-700" />}
+                                            <span>{room}</span>
+                                            {roomCapacities[room] && (
+                                              <span className="text-[9.5px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-emerald-200 font-sans">
+                                                {roomCapacities[room]}
+                                              </span>
+                                            )}
+                                          </button>
+                                        );
+                                      })}
+                                      {displayVacant.length === 0 && (
+                                        <div className="w-full text-center py-3 text-slate-400 italic text-[11px]">
+                                          0 Rooms Vacant
+                                        </div>
+                                      )}
+                                    </div>
+                                  )}
                                 </div>
                               )}
 
                               {/* MODE 2: OCCUPIED ONLY */}
                               {matrixStatusFilter === 'OCCUPIED' && (
                                 <div className="space-y-1.5">
-                                  {/* Header Badge */}
-                                  <div className="flex items-center justify-between text-[11px] font-black text-rose-800 bg-rose-100/90 px-2 py-1 rounded border border-rose-300 shadow-2xs">
+                                  {/* Clickable Header Badge Dropdown Trigger */}
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleCellExpand(cellKey)}
+                                    title={isCollapsed ? "Click to expand occupied rooms list" : "Click to collapse occupied rooms list"}
+                                    className="w-full flex items-center justify-between text-[11px] font-black text-rose-800 bg-rose-100/90 hover:bg-rose-200/90 px-2 py-1 rounded border border-rose-300 shadow-2xs transition-all cursor-pointer select-none"
+                                  >
                                     <span className="flex items-center gap-1">
                                       <XCircle className="w-3.5 h-3.5 text-rose-700" />
                                       <span>{displayOccupied.length} In Use</span>
                                     </span>
-                                    <span className="text-[10px] text-rose-700 font-mono font-bold">
-                                      {occupiedPct}%
+                                    <span className="flex items-center gap-1">
+                                      <span className="text-[10px] text-rose-700 font-mono font-bold">
+                                        {occupiedPct}%
+                                      </span>
+                                      <ChevronDown className={`w-3.5 h-3.5 text-rose-700 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
                                     </span>
-                                  </div>
+                                  </button>
 
-                                  {/* List of Occupied Room Pills */}
-                                  <div className="flex flex-col gap-1 max-h-[220px] overflow-y-auto p-0.5">
-                                    {displayOccupied.map((room) => {
-                                      const sess = roomSchedules[room]?.[day]?.[slot] || [];
-                                      const isLab = labsList.includes(room);
-                                      return (
-                                        <div
-                                          key={room}
-                                          onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
-                                          title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
-                                          className="p-1 rounded bg-rose-50 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 transition-all shadow-2xs cursor-pointer text-left"
-                                        >
-                                          <div className="flex items-center justify-between font-mono font-black text-rose-950 text-[10.5px]">
-                                            <span className="flex items-center gap-1">
-                                              {isLab && <FlaskConical className="w-2.5 h-2.5 text-teal-700 inline" />}
-                                              <span>{room}</span>
-                                              {roomCapacities[room] && (
-                                                <span className="text-[9px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-rose-200 font-sans">
-                                                  {roomCapacities[room]}
-                                                </span>
-                                              )}
-                                            </span>
-                                            <span className="text-[9.5px] font-bold text-blue-700">
-                                              {sess[0]?.branch}
-                                            </span>
+                                  {/* List of Occupied Room Pills (collapsible) */}
+                                  {!isCollapsed && (
+                                    <div className="flex flex-col gap-1 max-h-[220px] overflow-y-auto p-0.5">
+                                      {displayOccupied.map((room) => {
+                                        const sess = roomSchedules[room]?.[day]?.[slot] || [];
+                                        const isLab = labsList.includes(room);
+                                        return (
+                                          <div
+                                            key={room}
+                                            onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
+                                            title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                            className="p-1 rounded bg-rose-50 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 transition-all shadow-2xs cursor-pointer text-left"
+                                          >
+                                            <div className="flex items-center justify-between font-mono font-black text-rose-950 text-[10.5px]">
+                                              <span className="flex items-center gap-1">
+                                                {isLab && <FlaskConical className="w-2.5 h-2.5 text-teal-700 inline" />}
+                                                <span>{room}</span>
+                                                {roomCapacities[room] && (
+                                                  <span className="text-[9px] font-bold text-slate-700 bg-white/90 px-1 rounded border border-rose-200 font-sans">
+                                                    {roomCapacities[room]}
+                                                  </span>
+                                                )}
+                                              </span>
+                                              <span className="text-[9.5px] font-bold text-blue-700">
+                                                {sess[0]?.branch}
+                                              </span>
+                                            </div>
+                                            <div className="text-[9.5px] text-slate-700 font-medium truncate mt-0.5">
+                                              {sess[0]?.subject}
+                                            </div>
                                           </div>
-                                          <div className="text-[9.5px] text-slate-700 font-medium truncate mt-0.5">
-                                            {sess[0]?.subject}
-                                          </div>
+                                        );
+                                      })}
+                                      {displayOccupied.length === 0 && (
+                                        <div className="w-full text-center py-3 text-emerald-600 font-bold text-[11px]">
+                                          All Rooms Free
                                         </div>
-                                      );
-                                    })}
-                                    {displayOccupied.length === 0 && (
-                                      <div className="w-full text-center py-3 text-emerald-600 font-bold text-[11px]">
-                                        All Rooms Free
-                                      </div>
-                                    )}
-                                  </div>
+                                      )}
+                                    </div>
+                                  )}
                                 </div>
                               )}
 
                               {/* MODE 3: BOTH (VACANT & OCCUPIED) */}
                               {matrixStatusFilter === 'BOTH' && (
                                 <div className="space-y-2">
-                                  {/* Vacant sub-section */}
-                                  <div>
-                                    <div className="text-[10px] font-black uppercase tracking-wider text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200 flex items-center justify-between mb-1">
-                                      <span>Vacant ({displayVacant.length})</span>
-                                      <span className="font-mono">{vacantPct}%</span>
-                                    </div>
-                                    <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
-                                      {displayVacant.slice(0, 15).map((room) => (
-                                        <span
-                                          key={room}
-                                          onClick={() => {
-                                            setSelectedRoom(room);
-                                            setViewMode('timetable');
-                                          }}
-                                          title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''} - Click to view schedule`}
-                                          className="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold bg-emerald-100/90 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
-                                        >
-                                          <span>{room}</span>
-                                          {roomCapacities[room] && (
-                                            <span className="text-[8.5px] font-bold text-emerald-800 bg-white/80 px-0.5 rounded font-sans">
-                                              ({roomCapacities[room]})
+                                  {/* Toggle button for both */}
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleCellExpand(cellKey)}
+                                    className="w-full flex items-center justify-between text-[10.5px] font-black text-slate-800 bg-slate-100 hover:bg-slate-200 px-2 py-1 rounded border border-slate-300 shadow-2xs transition-all cursor-pointer select-none"
+                                  >
+                                    <span className="flex items-center gap-1.5">
+                                      <span className="text-emerald-700">{displayVacant.length} Free</span>
+                                      <span className="text-slate-400">•</span>
+                                      <span className="text-rose-700">{displayOccupied.length} In Use</span>
+                                    </span>
+                                    <ChevronDown className={`w-3.5 h-3.5 text-slate-600 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
+                                  </button>
+
+                                  {!isCollapsed && (
+                                    <>
+                                      {/* Vacant sub-section */}
+                                      <div>
+                                        <div className="text-[10px] font-black uppercase tracking-wider text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200 flex items-center justify-between mb-1">
+                                          <span>Vacant ({displayVacant.length})</span>
+                                          <span className="font-mono">{vacantPct}%</span>
+                                        </div>
+                                        <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
+                                          {displayVacant.slice(0, 15).map((room) => (
+                                            <span
+                                              key={room}
+                                              onClick={() => {
+                                                setSelectedRoom(room);
+                                                setViewMode('timetable');
+                                              }}
+                                              title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''} - Click to view schedule`}
+                                              className="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold bg-emerald-100/90 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
+                                            >
+                                              <span>{room}</span>
+                                              {roomCapacities[room] && (
+                                                <span className="text-[8.5px] font-bold text-emerald-800 bg-white/80 px-0.5 rounded font-sans">
+                                                  ({roomCapacities[room]})
+                                                </span>
+                                              )}
+                                            </span>
+                                          ))}
+                                          {displayVacant.length > 15 && (
+                                            <span className="text-[9px] text-emerald-700 font-bold self-center">
+                                              +{displayVacant.length - 15} more
                                             </span>
                                           )}
-                                        </span>
-                                      ))}
-                                      {displayVacant.length > 15 && (
-                                        <span className="text-[9px] text-emerald-700 font-bold self-center">
-                                          +{displayVacant.length - 15} more
-                                        </span>
-                                      )}
-                                      {displayVacant.length === 0 && (
-                                        <span className="text-[9.5px] text-slate-400 italic">None</span>
-                                      )}
-                                    </div>
-                                  </div>
+                                          {displayVacant.length === 0 && (
+                                            <span className="text-[9.5px] text-slate-400 italic">None</span>
+                                          )}
+                                        </div>
+                                      </div>
 
-                                  {/* Occupied sub-section */}
-                                  <div>
-                                    <div className="text-[10px] font-black uppercase tracking-wider text-rose-800 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200 flex items-center justify-between mb-1">
-                                      <span>In Use ({displayOccupied.length})</span>
-                                      <span className="font-mono">{occupiedPct}%</span>
-                                    </div>
-                                    <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
-                                      {displayOccupied.slice(0, 10).map((room) => {
-                                        const sess = roomSchedules[room]?.[day]?.[slot] || [];
-                                        return (
-                                          <span
-                                            key={room}
-                                            onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
-                                            title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
-                                            className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold bg-rose-100/90 text-rose-950 border border-rose-300 hover:bg-rose-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
-                                          >
-                                            <span>{room}</span>
-                                            {roomCapacities[room] && (
-                                              <span className="text-[8.5px] font-bold text-rose-800 bg-white/80 px-0.5 rounded font-sans">
-                                                ({roomCapacities[room]})
+                                      {/* Occupied sub-section */}
+                                      <div>
+                                        <div className="text-[10px] font-black uppercase tracking-wider text-rose-800 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200 flex items-center justify-between mb-1">
+                                          <span>In Use ({displayOccupied.length})</span>
+                                          <span className="font-mono">{occupiedPct}%</span>
+                                        </div>
+                                        <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
+                                          {displayOccupied.slice(0, 10).map((room) => {
+                                            const sess = roomSchedules[room]?.[day]?.[slot] || [];
+                                            return (
+                                              <span
+                                                key={room}
+                                                onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
+                                                title={`${room}${roomCapacities[room] ? ` (Capacity: ${roomCapacities[room]})` : ''}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                                className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold bg-rose-100/90 text-rose-950 border border-rose-300 hover:bg-rose-200 cursor-pointer shadow-2xs inline-flex items-center gap-0.5"
+                                              >
+                                                <span>{room}</span>
+                                                {roomCapacities[room] && (
+                                                  <span className="text-[8.5px] font-bold text-rose-800 bg-white/80 px-0.5 rounded font-sans">
+                                                    ({roomCapacities[room]})
+                                                  </span>
+                                                )}
                                               </span>
-                                            )}
-                                          </span>
-                                        );
-                                      })}
-                                      {displayOccupied.length > 10 && (
-                                        <span className="text-[9px] text-rose-700 font-bold self-center">
-                                          +{displayOccupied.length - 10} more
-                                        </span>
-                                      )}
-                                      {displayOccupied.length === 0 && (
-                                        <span className="text-[9.5px] text-slate-400 italic">None</span>
-                                      )}
-                                    </div>
-                                  </div>
+                                            );
+                                          })}
+                                          {displayOccupied.length > 10 && (
+                                            <span className="text-[9px] text-rose-700 font-bold self-center">
+                                              +{displayOccupied.length - 10} more
+                                            </span>
+                                          )}
+                                          {displayOccupied.length === 0 && (
+                                            <span className="text-[9.5px] text-slate-400 italic">None</span>
+                                          )}
+                                        </div>
+                                      </div>
+                                    </>
+                                  )}
                                 </div>
                               )}
                             </td>
