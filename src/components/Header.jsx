@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Printer, CheckCircle2, AlertCircle, FileCheck } from 'lucide-react';
+import { Printer, CheckCircle2, AlertCircle, FileCheck, Download } from 'lucide-react';
 import PrintFormatToggle from './PrintFormatToggle';
 import { triggerPrint } from '../utils/printUtils';
 
@@ -11,8 +11,28 @@ export default function Header({
 }) {
   const [showStickyBar, setShowStickyBar] = useState(false);
   const [printFormat, setPrintFormat] = useState('a4-portrait');
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isAppInstalled, setIsAppInstalled] = useState(false);
 
   useEffect(() => {
+    // Check if app is already running as standalone PWA
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+      setIsAppInstalled(true);
+    }
+
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+
+    const handleAppInstalled = () => {
+      setIsAppInstalled(true);
+      setDeferredPrompt(null);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener('appinstalled', handleAppInstalled);
+
     const handleScroll = () => {
       // Show sticky bar once user scrolls down past the main header banner (~220px)
       if (window.scrollY > 220) {
@@ -23,8 +43,25 @@ export default function Header({
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', handleAppInstalled);
+    };
   }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) {
+      alert("To install TT Analytics on iOS Safari: tap the Share button below, then choose 'Add to Home Screen'.");
+      return;
+    }
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      setIsAppInstalled(true);
+    }
+    setDeferredPrompt(null);
+  };
 
   const handlePrint = () => {
     triggerPrint(printFormat);
@@ -57,6 +94,16 @@ export default function Header({
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            {!isAppInstalled && (
+              <button
+                onClick={handleInstallClick}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-lg text-emerald-800 bg-emerald-100/90 hover:bg-emerald-200 border border-emerald-300 shadow-2xs transition-all active:scale-95 cursor-pointer"
+                title="Install app to your device"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Install App</span>
+              </button>
+            )}
             <PrintFormatToggle 
               selectedFormat={printFormat} 
               onFormatChange={setPrintFormat} 
@@ -101,6 +148,16 @@ export default function Header({
           </div>
 
           <div className="flex items-center flex-wrap gap-2">
+            {!isAppInstalled && (
+              <button
+                onClick={handleInstallClick}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-bold rounded-lg text-emerald-900 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 shadow-xs transition-all active:scale-95 cursor-pointer"
+                title="Install app to your device"
+              >
+                <Download className="w-4 h-4 text-emerald-700" />
+                <span>Install App</span>
+              </button>
+            )}
             <PrintFormatToggle 
               selectedFormat={printFormat} 
               onFormatChange={setPrintFormat} 
