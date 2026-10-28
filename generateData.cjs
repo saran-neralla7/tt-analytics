@@ -612,7 +612,11 @@ let curDay = '', curBranch = '';
 for (let r = 1; r < rowsFinal.length; r++) {
   const row = rowsFinal[r];
   if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
-  if (row[1] && row[1].trim()) curBranch = row[1].trim();
+  if (row[1] && row[1].trim()) {
+    let b = row[1].trim();
+    if (b === 'ECE-VLSI') b = 'ECE-3';
+    curBranch = b;
+  }
   if (!dayNames.includes(curDay) || !curBranch || !timetableData[curBranch]) continue;
 
   if (!branchSessionsMap[curBranch]) branchSessionsMap[curBranch] = {};
@@ -1307,7 +1311,11 @@ let curActDay = '', curActBranch = '';
 for (let r = 1; r < rowsFinal.length; r++) {
   const row = rowsFinal[r];
   if (row[0] && row[0].trim()) curActDay = row[0].trim().toUpperCase();
-  if (row[1] && row[1].trim()) curActBranch = row[1].trim();
+  if (row[1] && row[1].trim()) {
+    let b = row[1].trim();
+    if (b === 'ECE-VLSI') b = 'ECE-3';
+    curActBranch = b;
+  }
   if (!dayNames.includes(curActDay) || !curActBranch || !knownBranches.includes(curActBranch)) continue;
 
   slotCols.forEach(({ slot, c }) => {
