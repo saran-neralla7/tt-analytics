@@ -353,8 +353,8 @@
         "09:00-10:00": [
           {
             "subject": "S&G LAB",
-            "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "rawFaculty": "BV, PM",
+            "faculty": "Mr. P Manikanta, Dr. B Vidya",
+            "rawFaculty": "PM, BV",
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true
           }
@@ -362,8 +362,8 @@
         "10:00-11:00": [
           {
             "subject": "S&G LAB",
-            "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "rawFaculty": "BV, PM",
+            "faculty": "Mr. P Manikanta, Dr. B Vidya",
+            "rawFaculty": "PM, BV",
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true
@@ -1925,8 +1925,8 @@
         "11:15-12:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
-            "rawFaculty": "BSK, MRR",
+            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+            "rawFaculty": "MRR, BSK",
             "room": "CHEM. LAB.",
             "isLab": true
           },
@@ -1948,8 +1948,8 @@
         "12:15-01:15": [
           {
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
-            "rawFaculty": "BSK, MRR",
+            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+            "rawFaculty": "MRR, BSK",
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true
@@ -4821,6 +4821,17 @@
       },
       {
         "sno": 7,
+        "subjectFullName": "3D Design and Animation Tutorial",
+        "subjectShort": "3DDA Tut.",
+        "facultyShort": "KS\nSLA",
+        "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
+        "tutorialShort": "",
+        "tutorialFullName": "",
+        "room": "G-304",
+        "isLab": false
+      },
+      {
+        "sno": 8,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
         "facultyShort": "KS\nSLA",
@@ -4831,7 +4842,7 @@
         "isLab": true
       },
       {
-        "sno": 8,
+        "sno": 9,
         "subjectFullName": "Engineering Physics lab",
         "subjectShort": "ENGG. PHY. LAB",
         "facultyShort": "VSJ\nNSSVRR\nPSSA\nDSK\nCHR\nNVSK",
@@ -4842,33 +4853,33 @@
         "isLab": true
       },
       {
-        "sno": 9,
+        "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "DAK\nBBK\nBDS\nDAK\nDM\nYPR",
-        "facultyFullName": "Mr. D Arun Kumar\nMr. B Bala Krishna\nMs. B Divya Sati\nMr. D Arun Kumar\nDr. D Manasa\nMr. Y Prasad Reddy",
+        "facultyShort": "DAK\nPM\nNGB\nDAK\nBDS\nYPR",
+        "facultyFullName": "Mr. D Arun Kumar\nMr. P Manikanta\nDr. N Giribabu\nMr. D Arun Kumar\nMs. B Divya Sati\nMr. Y Prasad Reddy",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "MVPL\nMBK\nISR\nMBK\nPKM\nBVSAK",
-        "facultyFullName": "Dr. MV Pankaj Lahari\nDr. M Bhaskar Kumar\nDr. I Srinivas Rao\nDr. M Bhaskar Kumar\nMs. P KiranMayi\nDr. BVS Arun Kumar",
+        "facultyShort": "MVPL\nMBK\nTAJ\nMBK\nVA\nBVSAK",
+        "facultyFullName": "Dr. MV Pankaj Lahari\nDr. M Bhaskar Kumar\nMs. Taj\nDr. M Bhaskar Kumar\nDr. V Adinarayana\nDr. BVS Arun Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 12,
         "subjectFullName": "Fundamentals of Web Designing Lab",
         "subjectShort": "FWD LAB",
-        "facultyShort": "SVM\nMA\nBBK\nSVM\nMBS\nDAK",
-        "facultyFullName": "Mr. S Vinod Manikantha\nMr. M Anil\nMr. B Bala Krishna\nMr. S Vinod Manikantha\nDr. M Bhanu Sridhar\nMr. D Arun Kumar",
+        "facultyShort": "SVM\nMA\nSVM\nMA",
+        "facultyFullName": "Mr. S Vinod Manikantha\nMr. M Anil\nMr. S Vinod Manikantha\nMr. M Anil",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -4944,6 +4955,17 @@
       },
       {
         "sno": 7,
+        "subjectFullName": "3D Design and Animation Tutorial",
+        "subjectShort": "3DDA Tut.",
+        "facultyShort": "SLA\nKS",
+        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
+        "tutorialShort": "",
+        "tutorialFullName": "",
+        "room": "G-305",
+        "isLab": false
+      },
+      {
+        "sno": 8,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
         "facultyShort": "SLA\nKS",
@@ -4954,7 +4976,7 @@
         "isLab": true
       },
       {
-        "sno": 8,
+        "sno": 9,
         "subjectFullName": "Engineering Physics lab",
         "subjectShort": "ENGG. PHY. LAB",
         "facultyShort": "BRB\nCHR\nBN\nPVR\nVSJ\nCHSL",
@@ -4965,7 +4987,7 @@
         "isLab": true
       },
       {
-        "sno": 9,
+        "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
         "facultyShort": "KR\nNVSK\nGS\nKR\nCA\nGS",
@@ -4976,7 +4998,7 @@
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
         "facultyShort": "TAJ\nPKD\nBVSAK\nPKM\nTAJ\nMVPL",
@@ -4987,11 +5009,11 @@
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 12,
         "subjectFullName": "Fundamentals of Web Designing Lab",
         "subjectShort": "FWD LAB",
-        "facultyShort": "SVM\nDC\nADP\nSVM\nDC\nBBK",
-        "facultyFullName": "Mr. S Vinod Manikantha\nDr. D Chandravathi\nMr. A Dhanunjaya Prasad\nMr. S Vinod Manikantha\nDr. D Chandravathi\nMr. B Bala Krishna",
+        "facultyShort": "SVM\nBBK\nSVM\nBBK",
+        "facultyFullName": "Mr. S Vinod Manikantha\nMr. B Bala Krishna\nMr. S Vinod Manikantha\nMr. B Bala Krishna",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5067,17 +5089,28 @@
       },
       {
         "sno": 7,
+        "subjectFullName": "3D Design and Animation Tutorial",
+        "subjectShort": "3DDA Tut.",
+        "facultyShort": "AYH\nSLA",
+        "facultyFullName": "Dr. A. Yaswanth\nMs. S Laxmi Aparna",
+        "tutorialShort": "",
+        "tutorialFullName": "",
+        "room": "G-302",
+        "isLab": false
+      },
+      {
+        "sno": 8,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "SLA\nKS",
-        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
+        "facultyShort": "AYH\nSLA",
+        "facultyFullName": "Dr. A. Yaswanth\nMs. S Laxmi Aparna",
         "tutorialShort": "AYH\nSLA",
         "tutorialFullName": "Dr. A. Yaswanth\nMs. S Laxmi Aparna",
         "room": "G-302",
         "isLab": true
       },
       {
-        "sno": 8,
+        "sno": 9,
         "subjectFullName": "Engineering Physics lab",
         "subjectShort": "ENGG. PHY. LAB",
         "facultyShort": "CHR\nVSJ\nBRB\nNVSK\nVVVSN\nPSSA",
@@ -5088,33 +5121,33 @@
         "isLab": true
       },
       {
-        "sno": 9,
+        "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "DC\nARS\nKMK\nDC\nMA\nKJR",
-        "facultyFullName": "Dr. D Chandravathi\nDr. A Ravi Shankar\nMs. K Manikyakanthi\nDr. D Chandravathi\nMr. M Anil\nMs. K Jhansi Rani",
+        "facultyShort": "DC\nAS\nKMK\nDC\nAS\nKJR",
+        "facultyFullName": "Dr. D Chandravathi\nDr. Anand Solanki\nMs. K Manikyakanthi\nDr. D Chandravathi\nDr. Anand Solanki\nMs. K Jhansi Rani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "VA\nPSSA\nBN\nDSK\nNSSVRR\nBRB",
-        "facultyFullName": "Dr. V Adinarayana\nMr. PSS Appalacharyulu\nDr. B Nagarjun\nDr. D Santhosh Kumar\nDr. NSSV Raja Rao\nDr. B Rajesh Babu",
+        "facultyShort": "VA\nPSSA\nBN\nDSK\nNSSVRR\nMBK",
+        "facultyFullName": "Dr. V Adinarayana\nMr. PSS Appalacharyulu\nDr. B Nagarjun\nDr. D Santhosh Kumar\nDr. NSSV Raja Rao\nDr. M Bhaskar Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 12,
         "subjectFullName": "Foundations of Artificial Intelligence & Machine Learning Lab",
         "subjectShort": "FAI & ML LAB",
-        "facultyShort": "ADP\nDMVP\nSVM\nADP\nMBS\nCA",
-        "facultyFullName": "Mr. A Dhanunjaya Prasad\nMrs. DMV Priya\nMr. S Vinod Manikantha\nMr. A Dhanunjaya Prasad\nDr. M Bhanu Sridhar\nMs. C Aparna",
+        "facultyShort": "ADP\nCA\nADP\nMBS",
+        "facultyFullName": "Mr. A Dhanunjaya Prasad\nMs. C Aparna\nMr. A Dhanunjaya Prasad\nDr. M Bhanu Sridhar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1, COMP. LAB-3",
@@ -5190,17 +5223,28 @@
       },
       {
         "sno": 7,
+        "subjectFullName": "3D Design and Animation Tutorial",
+        "subjectShort": "3DDA Tut.",
+        "facultyShort": "AYH\nKS",
+        "facultyFullName": "Dr. A. Yaswanth\nMs. K Swathi",
+        "tutorialShort": "",
+        "tutorialFullName": "",
+        "room": "G-303",
+        "isLab": false
+      },
+      {
+        "sno": 8,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
-        "facultyShort": "KS\nSLA",
-        "facultyFullName": "Ms. K Swathi\nMs. S Laxmi Aparna",
+        "facultyShort": "AYH\nKS",
+        "facultyFullName": "Dr. A. Yaswanth\nMs. K Swathi",
         "tutorialShort": "AYH\nKS",
         "tutorialFullName": "Dr. A. Yaswanth\nMs. K Swathi",
         "room": "G-303",
         "isLab": true
       },
       {
-        "sno": 8,
+        "sno": 9,
         "subjectFullName": "Engineering Physics lab",
         "subjectShort": "ENGG. PHY. LAB",
         "facultyShort": "VVVSN\nPVR\nRP\nBN\nPSSA\nCHSL",
@@ -5211,33 +5255,33 @@
         "isLab": true
       },
       {
-        "sno": 9,
+        "sno": 10,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "MA\nYPR\nPM\nDC\nARS\nPRSS",
-        "facultyFullName": "Mr. M Anil\nMr. Y Prasad Reddy\nMr. P Manikanta\nDr. D Chandravathi\nDr. A Ravi Shankar\nMs. PR Sri Satya",
+        "facultyShort": "DC\nYPR\nMA\nARS",
+        "facultyFullName": "Dr. D Chandravathi\nMr. Y Prasad Reddy\nMr. M Anil\nDr. A Ravi Shankar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 11,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "KAR\nVA\nVBR\nKAR\nNSSVRR\nBN",
-        "facultyFullName": "Mr. K AyyaRaju\nDr. V Adinarayana\nMr. V Bhaskar Rao\nMr. K AyyaRaju\nDr. NSSV Raja Rao\nDr. B Nagarjun",
+        "facultyShort": "KAR\nPKM\nKAR\nNSSVRR",
+        "facultyFullName": "Mr. K AyyaRaju\nMs. P KiranMayi\nMr. K AyyaRaju\nDr. NSSV Raja Rao",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 12,
         "subjectFullName": "Foundations of Artificial Intelligence & Machine Learning Lab",
         "subjectShort": "FAI & ML LAB",
-        "facultyShort": "SLA\nKS\nCA\nSLA\nKS\nADP",
-        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi\nMs. C Aparna\nMs. S Laxmi Aparna\nMs. K Swathi\nMr. A Dhanunjaya Prasad",
+        "facultyShort": "KS\nCA\nSLA\nADP",
+        "facultyFullName": "Ms. K Swathi\nMs. C Aparna\nMs. S Laxmi Aparna\nMr. A Dhanunjaya Prasad",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5324,6 +5368,17 @@
       },
       {
         "sno": 8,
+        "subjectFullName": "3D Design and Animation Tut.",
+        "subjectShort": "3DDA Tut.",
+        "facultyShort": "SLA\nKS",
+        "facultyFullName": "Ms. S Laxmi Aparna\nMs. K Swathi",
+        "tutorialShort": "",
+        "tutorialFullName": "",
+        "room": "G-405",
+        "isLab": false
+      },
+      {
+        "sno": 9,
         "subjectFullName": "3D Design and Animation",
         "subjectShort": "3DDA",
         "facultyShort": "SLA\nKS",
@@ -5334,7 +5389,7 @@
         "isLab": true
       },
       {
-        "sno": 9,
+        "sno": 10,
         "subjectFullName": "Engineering Physics lab",
         "subjectShort": "ENGG. PHY. LAB",
         "facultyShort": "CHSL\nKAR\nPVR\nRP\nNSSVRR\nPSSA",
@@ -5345,7 +5400,7 @@
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 11,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
         "facultyShort": "BHP\nDMVP\nKMK\nBHP\nPM\nNVSK",
@@ -5356,18 +5411,18 @@
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 12,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "PKD\nTAJ\nPSSA\nMVPL\nTAJ\nGSK",
-        "facultyFullName": "Mr. PK DAS\nMs. Taj\nMr. PSS Appalacharyulu\nDr. MV Pankaj Lahari\nMs. Taj\nDr. G Santosh Kumar",
+        "facultyShort": "PKD\nDSK\nPSSA\nMVPL\nTAJ\nVBR",
+        "facultyFullName": "Mr. PK DAS\nDr. D Santhosh Kumar\nMr. PSS Appalacharyulu\nDr. MV Pankaj Lahari\nMs. Taj\nMr. V Bhaskar Rao",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
         "isLab": true
       },
       {
-        "sno": 12,
+        "sno": 13,
         "subjectFullName": "Foundations of Data Science Lab",
         "subjectShort": "FDS LAB",
         "facultyShort": "KR\nBHP",
@@ -5378,11 +5433,11 @@
         "isLab": true
       },
       {
-        "sno": 13,
+        "sno": 14,
         "subjectFullName": "Principles of Cyber Security Lab",
         "subjectShort": "PCS LAB",
-        "facultyShort": "CHVVDP\nMBS\nADP",
-        "facultyFullName": "Mr. CH VVD Prasad\nDr. M Bhanu Sridhar\nMr. A Dhanunjaya Prasad",
+        "facultyShort": "CHVVDP\nMBS",
+        "facultyFullName": "Mr. CH VVD Prasad\nDr. M Bhanu Sridhar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5403,17 +5458,6 @@
       },
       {
         "sno": 2,
-        "subjectFullName": "Calculus and Linear Algebra Tutorial",
-        "subjectShort": "CAL & LA Tut",
-        "facultyShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
-        "facultyFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
-        "tutorialShort": "CHVS\nKVSS\nTPK\nCHVS\nSSAS\nASL",
-        "tutorialFullName": "Dr. Ch V Sreedhar\nDr. KVS Sarma\nDr. T Poornakantha\nDr. Ch V Sreedhar\nDr. SS Ayyappa Sastri\nDr. A Suseelatha",
-        "room": "G-402",
-        "isLab": false
-      },
-      {
-        "sno": 3,
         "subjectFullName": "Energy Systems and Advanced Materials",
         "subjectShort": "ESAM",
         "facultyShort": "MRR\nBSK",
@@ -5424,7 +5468,7 @@
         "isLab": false
       },
       {
-        "sno": 4,
+        "sno": 3,
         "subjectFullName": "Programming for Problem solving through C",
         "subjectShort": "PPSTC",
         "facultyShort": "MBS\nADP",
@@ -5435,7 +5479,7 @@
         "isLab": false
       },
       {
-        "sno": 5,
+        "sno": 4,
         "subjectFullName": "AI Tools and Applications",
         "subjectShort": "AITA",
         "facultyShort": "GSK\nPKM",
@@ -5446,7 +5490,7 @@
         "isLab": false
       },
       {
-        "sno": 6,
+        "sno": 5,
         "subjectFullName": "Digital Logic Design",
         "subjectShort": "DLD",
         "facultyShort": "ISR\nVS",
@@ -5457,7 +5501,7 @@
         "isLab": false
       },
       {
-        "sno": 7,
+        "sno": 6,
         "subjectFullName": "Sustainable Engineering",
         "subjectShort": "SUS. ENGG.",
         "facultyShort": "BV\nGSK",
@@ -5468,7 +5512,7 @@
         "isLab": false
       },
       {
-        "sno": 8,
+        "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
         "facultyShort": "CHA\nJRR\nVVLUR\nVVLUR\nIRS\nJRR",
@@ -5479,18 +5523,18 @@
         "isLab": false
       },
       {
-        "sno": 9,
+        "sno": 8,
         "subjectFullName": "Engineering Chemistry Lab",
         "subjectShort": "ENGG. CHEM LAB",
-        "facultyShort": "MRR\nPSR\nKVNL\nRN\nMRR\nSA\nMRR\nKVP",
-        "facultyFullName": "Dr. M Rama Rajeswari\nDr. P Srinivas Rao\nDr. KV NagaLakshmi\nDr. Rani Nanda\nDr. M Rama Rajeswari\nMr. S Ashok\nDr. M Rama Rajeswari\nDr. KV Padmavathi",
+        "facultyShort": "MRR\nPSR\nKVNL\nSA\nMRR\nSA\nMRR\nBSK",
+        "facultyFullName": "Dr. M Rama Rajeswari\nDr. P Srinivas Rao\nDr. KV NagaLakshmi\nMr. S Ashok\nDr. M Rama Rajeswari\nMr. S Ashok\nDr. M Rama Rajeswari\nDr. B Santosh Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "CHEM. LAB.",
         "isLab": true
       },
       {
-        "sno": 10,
+        "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
         "facultyShort": "MBS\nARS\nVVVSN\nMBS\nADP\nKJR",
@@ -5501,29 +5545,29 @@
         "isLab": true
       },
       {
-        "sno": 11,
+        "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "GSK\nPKM\nVBR\nPKM\nTAJ\nVBR",
-        "facultyFullName": "Dr. G Santosh Kumar\nMs. P KiranMayi\nMr. V Bhaskar Rao\nMs. P KiranMayi\nMs. Taj\nMr. V Bhaskar Rao",
+        "facultyShort": "GSK\nPKM\nVBR\nPKM\nTAJ\nGSK",
+        "facultyFullName": "Dr. G Santosh Kumar\nMs. P KiranMayi\nMr. V Bhaskar Rao\nMs. P KiranMayi\nMs. Taj\nDr. G Santosh Kumar",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2, COMP. LAB-3",
         "isLab": true
       },
       {
-        "sno": 12,
+        "sno": 11,
         "subjectFullName": "Digital Logic Design Lab",
         "subjectShort": "DLD LAB",
-        "facultyShort": "ISR\nBDS\nISR\nVS\nMN\nDBVJ\nMN\nVA",
-        "facultyFullName": "Dr. I Srinivas Rao\nMs. B Divya Sati\nDr. I Srinivas Rao\nMrs. V Sridevi\nDr. M Neelima\nDr. DBV Jagannadham\nDr. M Neelima\nDr. V Adinarayana",
+        "facultyShort": "ISR\nBDS\nVS\nMN\nVS\nDBVJ\nISR\nVA",
+        "facultyFullName": "Dr. I Srinivas Rao\nMs. B Divya Sati\nMrs. V Sridevi\nDr. M Neelima\nMrs. V Sridevi\nDr. DBV Jagannadham\nDr. I Srinivas Rao\nDr. V Adinarayana",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-406",
         "isLab": true
       },
       {
-        "sno": 13,
+        "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
         "facultyShort": "VVLUR\nPBSKR\nNVL\nCHA\nPBSKR\nIRS",
@@ -5605,10 +5649,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "BMF\nIRS\nCHA",
-        "facultyFullName": "Dr. BM Florence\nDr. I Rajasekhar\nDr. Ch Alekya",
-        "tutorialShort": "BMF\nIRS\nCHA",
-        "tutorialFullName": "Dr. BM Florence\nDr. I Rajasekhar\nDr. Ch Alekya",
+        "facultyShort": "BMF\nIRS\nCHA\nBMF\nIRS\nPBSKR",
+        "facultyFullName": "Dr. BM Florence\nDr. I Rajasekhar\nDr. Ch Alekya\nDr. BM Florence\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
+        "tutorialShort": "",
+        "tutorialFullName": "",
         "room": "G-403",
         "isLab": false
       },
@@ -5616,8 +5660,8 @@
         "sno": 8,
         "subjectFullName": "Engineering Chemistry Lab",
         "subjectShort": "ENGG. CHEM LAB",
-        "facultyShort": "RN\nMRR\nRN\nKVNL\nSA\nPSR\nRN\nKVP",
-        "facultyFullName": "Dr. Rani Nanda\nDr. M Rama Rajeswari\nDr. Rani Nanda\nDr. KV NagaLakshmi\nMr. S Ashok\nDr. P Srinivas Rao\nDr. Rani Nanda\nDr. KV Padmavathi",
+        "facultyShort": "RN\nMRR\nRN\nMRR\nRN\nPSR\nRN\nKVP",
+        "facultyFullName": "Dr. Rani Nanda\nDr. M Rama Rajeswari\nDr. Rani Nanda\nDr. M Rama Rajeswari\nDr. Rani Nanda\nDr. P Srinivas Rao\nDr. Rani Nanda\nDr. KV Padmavathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "CHEM. LAB.",
@@ -5627,8 +5671,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "KR\nAS\nNVSK\nDAK\nMN\nBDS",
-        "facultyFullName": "Dr. K Rohini\nDr. Anand Solanki\nMr. NV Siva Krishna\nMr. D Arun Kumar\nDr. M Neelima\nMs. B Divya Sati",
+        "facultyShort": "DAK\nPRSS\nMN\nDAK\nNVSK\nBDS",
+        "facultyFullName": "Mr. D Arun Kumar\nMs. PR Sri Satya\nDr. M Neelima\nMr. D Arun Kumar\nMr. NV Siva Krishna\nMs. B Divya Sati",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "C-208",
@@ -5649,8 +5693,8 @@
         "sno": 11,
         "subjectFullName": "Digital Logic Design Lab",
         "subjectShort": "DLD LAB",
-        "facultyShort": "KJR\nDBVJ\nKJR\nVA\nPRSS\nVS\nPRSS\nBDS",
-        "facultyFullName": "Ms. K Jhansi Rani\nDr. DBV Jagannadham\nMs. K Jhansi Rani\nDr. V Adinarayana\nMs. PR Sri Satya\nMrs. V Sridevi\nMs. PR Sri Satya\nMs. B Divya Sati",
+        "facultyShort": "KJR\nDBVJ\nKJR\nVA\nPRSS\nMN\nPRSS\nBDS",
+        "facultyFullName": "Ms. K Jhansi Rani\nDr. DBV Jagannadham\nMs. K Jhansi Rani\nDr. V Adinarayana\nMs. PR Sri Satya\nDr. M Neelima\nMs. PR Sri Satya\nMs. B Divya Sati",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-406",
@@ -5660,23 +5704,23 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "IRS\nCHA\nJRR\nBMF\nVVLUR\nCHA",
-        "facultyFullName": "Dr. I Rajasekhar\nDr. Ch Alekya\nDr. J RajaRatnam\nDr. BM Florence\nDr. VVL Usha Ramani\nDr. Ch Alekya",
+        "facultyShort": "IRS\nPBSKR\nBMF\nBMF\nVVLUR\nCHA",
+        "facultyFullName": "Dr. I Rajasekhar\nMr. PBS Krishnamuraju\nDr. BM Florence\nDr. BM Florence\nDr. VVL Usha Ramani\nDr. Ch Alekya",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
         "isLab": true
       }
     ],
-    "ECE-3": [
+    "ECE-VLSI": [
       {
         "sno": 1,
         "subjectFullName": "Calculus and Linear Algebra",
         "subjectShort": "CAL & LA",
         "facultyShort": "KVSS",
         "facultyFullName": "Dr. KVS Sarma",
-        "tutorialShort": "KVSS\nCHVS\nCHAN",
-        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. Ch Appala Naidu",
+        "tutorialShort": "KVSS\nCHVS\nKLSP",
+        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. K L Sai Prasad",
         "room": "E-412",
         "isLab": false
       },
@@ -5739,10 +5783,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "VVLUR\nNVL\nJRR",
-        "facultyFullName": "Dr. VVL Usha Ramani\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam",
-        "tutorialShort": "VVLUR\nNVL\nJRR",
-        "tutorialFullName": "Dr. VVL Usha Ramani\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam",
+        "facultyShort": "VVLUR\nJRR\nNVL",
+        "facultyFullName": "Dr. VVL Usha Ramani\nDr. J RajaRatnam\nDr. N Vijaya Lakshmi",
+        "tutorialShort": "",
+        "tutorialFullName": "",
         "room": "E-412",
         "isLab": false
       },
@@ -5750,8 +5794,8 @@
         "sno": 8,
         "subjectFullName": "Engineering Chemistry Lab",
         "subjectShort": "ENGG. CHEM LAB",
-        "facultyShort": "BSK\nSA\nBSK\nSA",
-        "facultyFullName": "Dr. B Santosh Kumar\nMr. S Ashok\nDr. B Santosh Kumar\nMr. S Ashok",
+        "facultyShort": "BSK\nKVP\nBSK\nSA",
+        "facultyFullName": "Dr. B Santosh Kumar\nDr. KV Padmavathi\nDr. B Santosh Kumar\nMr. S Ashok",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "CHEM. LAB.",
@@ -5761,8 +5805,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "CHVVDP\nYPR\nNGB",
-        "facultyFullName": "Mr. CH VVD Prasad\nMr. Y Prasad Reddy\nDr. N Giribabu",
+        "facultyShort": "CHVVDP\nYPR\nVS",
+        "facultyFullName": "Mr. CH VVD Prasad\nMr. Y Prasad Reddy\nMrs. V Sridevi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -5772,8 +5816,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "MVPL\nMBK\nBRB",
-        "facultyFullName": "Dr. MV Pankaj Lahari\nDr. M Bhaskar Kumar\nDr. B Rajesh Babu",
+        "facultyShort": "MVPL\nBRB\nCHR",
+        "facultyFullName": "Dr. MV Pankaj Lahari\nDr. B Rajesh Babu\nDr. Ch Rajesh",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-301,302",
@@ -5873,10 +5917,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "JRR\nIRS\nBMF\nJRR\nIRS\nPBSKR",
-        "facultyFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar\nDr. BM Florence\nDr. J RajaRatnam\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
-        "tutorialShort": "JRR\nIRS",
-        "tutorialFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar",
+        "facultyShort": "JRR\nIRS\nNVL\nJRR\nIRS\nPBSKR",
+        "facultyFullName": "Dr. J RajaRatnam\nDr. I Rajasekhar\nDr. N Vijaya Lakshmi\nDr. J RajaRatnam\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
+        "tutorialShort": "",
+        "tutorialFullName": "",
         "room": "G-404",
         "isLab": false
       },
@@ -5928,8 +5972,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "JRR\nVVLUR\nBMF\nIRS\nBMF\nJRR",
-        "facultyFullName": "Dr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. BM Florence\nDr. I Rajasekhar\nDr. BM Florence\nDr. J RajaRatnam",
+        "facultyShort": "JRR\nVVLUR\nIRS\nIRS\nCHA\nJRR",
+        "facultyFullName": "Dr. J RajaRatnam\nDr. VVL Usha Ramani\nDr. I Rajasekhar\nDr. I Rajasekhar\nDr. Ch Alekya\nDr. J RajaRatnam",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -6007,10 +6051,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "BMF\nNVL\nPBSKR",
-        "facultyFullName": "Dr. BM Florence\nDr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju",
-        "tutorialShort": "BMF\nNVL\nPBSKR",
-        "tutorialFullName": "Dr. BM Florence\nDr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju",
+        "facultyShort": "BMF\nNVL\nCHA",
+        "facultyFullName": "Dr. BM Florence\nDr. N Vijaya Lakshmi\nDr. Ch Alekya",
+        "tutorialShort": "BMF\nNVL\nCHA",
+        "tutorialFullName": "Dr. BM Florence\nDr. N Vijaya Lakshmi\nDr. Ch Alekya",
         "room": "E-409",
         "isLab": false
       },
@@ -6018,8 +6062,8 @@
         "sno": 8,
         "subjectFullName": "Engineering Chemistry Lab",
         "subjectShort": "ENGG. CHEM LAB",
-        "facultyShort": "SA\nPSR\nSA\nRN",
-        "facultyFullName": "Mr. S Ashok\nDr. P Srinivas Rao\nMr. S Ashok\nDr. Rani Nanda",
+        "facultyShort": "SA\nPSR\nSA\nMRR",
+        "facultyFullName": "Mr. S Ashok\nDr. P Srinivas Rao\nMr. S Ashok\nDr. M Rama Rajeswari",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "CHEM. LAB.",
@@ -6029,8 +6073,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "CA\nVS\nVVVSN",
-        "facultyFullName": "Ms. C Aparna\nMrs. V Sridevi\nMr. VVV Satyanarayana",
+        "facultyShort": "CA\nDM\nVVVSN",
+        "facultyFullName": "Ms. C Aparna\nDr. D Manasa\nMr. VVV Satyanarayana",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -6141,10 +6185,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "NVL\nIRS\nPBSKR",
-        "facultyFullName": "Dr. N Vijaya Lakshmi\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
-        "tutorialShort": "NVL\nIRS\nPBSKR",
-        "tutorialFullName": "Dr. N Vijaya Lakshmi\nDr. I Rajasekhar\nMr. PBS Krishnamuraju",
+        "facultyShort": "NVL\nJRR",
+        "facultyFullName": "Dr. N Vijaya Lakshmi\nDr. J RajaRatnam",
+        "tutorialShort": "NVL\nJRR",
+        "tutorialFullName": "Dr. N Vijaya Lakshmi\nDr. J RajaRatnam",
         "room": "E-410",
         "isLab": false
       },
@@ -6152,8 +6196,8 @@
         "sno": 8,
         "subjectFullName": "Chemistry Lab",
         "subjectShort": "CHEM LAB",
-        "facultyShort": "PSR\nKVP\nMRR",
-        "facultyFullName": "Dr. P Srinivas Rao\nDr. KV Padmavathi\nDr. M Rama Rajeswari",
+        "facultyShort": "PSR\nKVP",
+        "facultyFullName": "Dr. P Srinivas Rao\nDr. KV Padmavathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -6163,8 +6207,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "BBK\nYPR\nAS",
-        "facultyFullName": "Mr. B Bala Krishna\nMr. Y Prasad Reddy\nDr. Anand Solanki",
+        "facultyShort": "BBK\nAS",
+        "facultyFullName": "Mr. B Bala Krishna\nDr. Anand Solanki",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -6174,8 +6218,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "VA\nDSK\nTAJ",
-        "facultyFullName": "Dr. V Adinarayana\nDr. D Santhosh Kumar\nMs. Taj",
+        "facultyShort": "VA\nTAJ",
+        "facultyFullName": "Dr. V Adinarayana\nMs. Taj",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -6196,8 +6240,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "NVL\nPBSKR\nIRS",
-        "facultyFullName": "Dr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju\nDr. I Rajasekhar",
+        "facultyShort": "NVL\nBMF",
+        "facultyFullName": "Dr. N Vijaya Lakshmi\nDr. BM Florence",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -6275,10 +6319,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "PBSKR\nJRR\nNVL",
-        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. J RajaRatnam\nDr. N Vijaya Lakshmi",
-        "tutorialShort": "PBSKR\nJRR\nNVL",
-        "tutorialFullName": "Mr. PBS Krishnamuraju\nDr. J RajaRatnam\nDr. N Vijaya Lakshmi",
+        "facultyShort": "PBSKR\nNVL",
+        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi",
+        "tutorialShort": "PBSKR\nNVL",
+        "tutorialFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi",
         "room": "E-411",
         "isLab": false
       },
@@ -6286,8 +6330,8 @@
         "sno": 8,
         "subjectFullName": "Physical and Analytical Chemistry Lab",
         "subjectShort": "PAC LAB",
-        "facultyShort": "KVNL\nKVP\nBSK",
-        "facultyFullName": "Dr. KV NagaLakshmi\nDr. KV Padmavathi\nDr. B Santosh Kumar",
+        "facultyShort": "KVNL\nKVP",
+        "facultyFullName": "Dr. KV NagaLakshmi\nDr. KV Padmavathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -6297,8 +6341,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "DMVP\nVS\nKMK",
-        "facultyFullName": "Mrs. DMV Priya\nMrs. V Sridevi\nMs. K Manikyakanthi",
+        "facultyShort": "DMVP\nVS",
+        "facultyFullName": "Mrs. DMV Priya\nMrs. V Sridevi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-3",
@@ -6308,8 +6352,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "KAR\nVA\nPKD",
-        "facultyFullName": "Mr. K AyyaRaju\nDr. V Adinarayana\nMr. PK DAS",
+        "facultyShort": "KAR\nPKD",
+        "facultyFullName": "Mr. K AyyaRaju\nMr. PK DAS",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-2",
@@ -6330,8 +6374,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "PBSKR\nNVL\nVVLUR",
-        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi\nDr. VVL Usha Ramani",
+        "facultyShort": "PBSKR\nNVL",
+        "facultyFullName": "Mr. PBS Krishnamuraju\nDr. N Vijaya Lakshmi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -6409,10 +6453,10 @@
         "sno": 7,
         "subjectFullName": "Essential English Tutorial",
         "subjectShort": "ESS. ENG. Tut",
-        "facultyShort": "CHA\nPBSKR\nVVLUR",
-        "facultyFullName": "Dr. Ch Alekya\nMr. PBS Krishnamuraju\nDr. VVL Usha Ramani",
-        "tutorialShort": "CHA\nPBSKR\nVVLUR",
-        "tutorialFullName": "Dr. Ch Alekya\nMr. PBS Krishnamuraju\nDr. VVL Usha Ramani",
+        "facultyShort": "CHA\nVVLUR",
+        "facultyFullName": "Dr. Ch Alekya\nDr. VVL Usha Ramani",
+        "tutorialShort": "CHA\nVVLUR",
+        "tutorialFullName": "Dr. Ch Alekya\nDr. VVL Usha Ramani",
         "room": "G-408",
         "isLab": false
       },
@@ -6420,8 +6464,8 @@
         "sno": 8,
         "subjectFullName": "Chemistry Lab",
         "subjectShort": "CHEM LAB",
-        "facultyShort": "PSR\nKVP\nMRR",
-        "facultyFullName": "Dr. P Srinivas Rao\nDr. KV Padmavathi\nDr. M Rama Rajeswari",
+        "facultyShort": "PSR\nKVP",
+        "facultyFullName": "Dr. P Srinivas Rao\nDr. KV Padmavathi",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE CHEM. LAB. (B6-102)",
@@ -6431,8 +6475,8 @@
         "sno": 9,
         "subjectFullName": "Programming for Problem solving through C lab",
         "subjectShort": "PPSTC LAB",
-        "facultyShort": "DMVP\nBDS\nVVVSN",
-        "facultyFullName": "Mrs. DMV Priya\nMs. B Divya Sati\nMr. VVV Satyanarayana",
+        "facultyShort": "DMVP\nBDS",
+        "facultyFullName": "Mrs. DMV Priya\nMs. B Divya Sati",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-1",
@@ -6442,8 +6486,8 @@
         "sno": 10,
         "subjectFullName": "AI Tools and Applications Lab",
         "subjectShort": "AITA LAB",
-        "facultyShort": "ISR\nCHR\nCHSL",
-        "facultyFullName": "Dr. I Srinivas Rao\nDr. Ch Rajesh\nDr. Ch S Lakshmi",
+        "facultyShort": "ISR\nBRB",
+        "facultyFullName": "Dr. I Srinivas Rao\nDr. B Rajesh Babu",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "A-301,302",
@@ -6453,8 +6497,8 @@
         "sno": 11,
         "subjectFullName": "Elements of Mechanical Engineering Lab",
         "subjectShort": "EME LAB",
-        "facultyShort": "KMK\nYPR\nBVSAK",
-        "facultyFullName": "Ms. K Manikyakanthi\nMr. Y Prasad Reddy\nDr. BVS Arun Kumar",
+        "facultyShort": "KMK\nYPR",
+        "facultyFullName": "Ms. K Manikyakanthi\nMr. Y Prasad Reddy",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "GVPCE MECH. LAB (B12-103)",
@@ -6464,8 +6508,8 @@
         "sno": 12,
         "subjectFullName": "Essential English Lab",
         "subjectShort": "ESS. ENG. LAB",
-        "facultyShort": "CHA\nNVL\nPBSKR",
-        "facultyFullName": "Dr. Ch Alekya\nDr. N Vijaya Lakshmi\nMr. PBS Krishnamuraju",
+        "facultyShort": "CHA\nVVLUR",
+        "facultyFullName": "Dr. Ch Alekya\nDr. VVL Usha Ramani",
         "tutorialShort": "",
         "tutorialFullName": "",
         "room": "COMP. LAB-4",
@@ -6949,8 +6993,8 @@
               "raw": "CIVIL / S&G LAB",
               "branch": "CIVIL",
               "subject": "S&G LAB",
-              "faculty": "Dr. B Vidya, Mr. P Manikanta",
-              "facultyShort": "BV, PM"
+              "faculty": "Mr. P Manikanta, Dr. B Vidya",
+              "facultyShort": "PM, BV"
             }
           },
           "WED": {},
@@ -7235,7 +7279,7 @@
           {
             "sno": 2,
             "shortName": "3DDA Tut.",
-            "fullName": "3DDA Tut."
+            "fullName": "3D Design and Animation Tut."
           }
         ]
       },
@@ -7266,7 +7310,7 @@
           {
             "sno": 1,
             "shortName": "3DDA Tut.",
-            "fullName": "3DDA Tut."
+            "fullName": "3D Design and Animation Tut."
           },
           {
             "sno": 2,
@@ -7464,8 +7508,8 @@
               "raw": "ECE-1 / ENGG. CHEM LAB",
               "branch": "ECE-1",
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
-              "facultyShort": "BSK, MRR"
+              "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+              "facultyShort": "MRR, BSK"
             },
             "02:15-04:15": {
               "raw": "ECE-VLSI / ENGG. CHEM LAB",
@@ -8247,8 +8291,8 @@
             {
               "branch": "CIVIL",
               "room": "GVPCE SUR. LAB (B11-101)",
-              "faculty": "Dr. B Vidya, Mr. P Manikanta",
-              "facultyShort": "BV, PM",
+              "faculty": "Mr. P Manikanta, Dr. B Vidya",
+              "facultyShort": "PM, BV",
               "raw": "CIVIL/GVPCE SUR. LAB (B11-101)"
             }
           ]
@@ -8495,7 +8539,7 @@
           ]
         }
       },
-      "3DDA Tut.": {
+      "3D Design and Animation Tut.": {
         "MON": {},
         "TUE": {},
         "WED": {
@@ -8698,8 +8742,8 @@
             {
               "branch": "ECE-1",
               "room": "CHEM. LAB.",
-              "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
-              "facultyShort": "BSK, MRR",
+              "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+              "facultyShort": "MRR, BSK",
               "raw": "ECE-1/CHEM. LAB."
             }
           ],
@@ -8984,9 +9028,9 @@
           "09:00-11:00": [
             {
               "subject": "S&G LAB",
-              "faculty": "Dr. B Vidya, Mr. P Manikanta",
+              "faculty": "Mr. P Manikanta, Dr. B Vidya",
               "room": "GVPCE SUR. LAB (B11-101)",
-              "raw": "S&G LAB\nBV, PM\nGVPCE SUR. LAB (B11-101)"
+              "raw": "S&G LAB\nPM, BV\nGVPCE SUR. LAB (B11-101)"
             }
           ],
           "02:15-04:15": [
@@ -9304,9 +9348,9 @@
           "11:15-01:15": [
             {
               "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
+              "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
               "room": "CHEM. LAB.",
-              "raw": "ENGG. CHEM LAB\nBSK, MRR\nCHEM. LAB."
+              "raw": "ENGG. CHEM LAB\nMRR, BSK\nCHEM. LAB."
             },
             {
               "subject": "DLD LAB",
@@ -10001,7 +10045,7 @@
         "labName": "Programming for Problem solving through C lab",
         "subShort": "PPSTC LAB",
         "roomNo": "COMP. LAB-1, COMP. LAB-2, C-208, COMP. LAB-3",
-        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15\nECE-1: TUE 11:15-01:15, THU 11:15-01:15\nECE-2: TUE 02:15-04:15, WED 02:15-04:15\nECE-3: Not Allotted\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: WED 11:15-01:15\nCIVIL: MON 11:15-01:15\nCHEMICAL: FRI 11:15-01:15\nMECH-ROBOTICS: Not Allotted",
+        "branches": "CSE-1: MON 02:15-04:15, TUE 11:15-01:15\nCSE-2: WED 11:15-01:15, THU 09:00-11:00\nCSE(AI&ML)-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE(AI&ML)-2: WED 02:15-04:15, THU 11:15-01:15\nCSE (CS & DS): WED 09:00-11:00, FRI 11:15-01:15\nECE-1: TUE 11:15-01:15, THU 11:15-01:15\nECE-2: TUE 02:15-04:15, WED 02:15-04:15\nECE-VLSI: THU 11:15-01:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: WED 11:15-01:15\nCIVIL: MON 11:15-01:15\nCHEMICAL: FRI 11:15-01:15\nMECH-ROBOTICS: Not Allotted",
         "branchStatusList": [
           {
             "branch": "CSE-1",
@@ -10053,11 +10097,11 @@
             "status": "ALLOTTED"
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "required": 1,
-            "allotted": 0,
-            "slots": "Not Allotted",
-            "status": "PENDING"
+            "allotted": 1,
+            "slots": "THU 11:15-01:15",
+            "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
@@ -10096,18 +10140,18 @@
           }
         ],
         "required": 21,
-        "allotted": 19,
-        "pending": 2,
+        "allotted": 20,
+        "pending": 1,
         "extra": 0,
         "labHours": 2,
-        "remarks": "Pending: 2"
+        "remarks": "Pending: 1"
       },
       {
         "sno": 4,
         "labName": "AI Tools and Applications Lab",
         "subShort": "AITA LAB",
         "roomNo": "COMP. LAB-2, A-303, 304, COMP. LAB-3, A-301, 302",
-        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15\nCSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00\nCSE (CS & DS): WED 02:15-04:15, THU 09:00-11:00\nECE-1: MON 02:15-04:15, WED 09:00-11:00\nECE-2: THU 02:15-04:15, FRI 02:15-04:15\nECE-3: Not Allotted\nMECH: THU 02:15-04:15, FRI 11:15-01:15\nEEE: TUE 11:15-01:15\nCIVIL: FRI 09:00-11:00\nCHEMICAL: WED 11:15-01:15\nMECH-ROBOTICS: WED 09:00-11:00",
+        "branches": "CSE-1: THU 02:15-04:15, FRI 02:15-04:15\nCSE-2: MON 02:15-04:15, TUE 02:15-04:15\nCSE(AI&ML)-1: MON 11:15-01:15, TUE 02:15-04:15\nCSE(AI&ML)-2: MON 09:00-11:00, TUE 09:00-11:00\nCSE (CS & DS): WED 02:15-04:15, THU 09:00-11:00\nECE-1: MON 02:15-04:15, WED 09:00-11:00\nECE-2: THU 02:15-04:15, FRI 02:15-04:15\nECE-VLSI: MON 02:15-04:15\nMECH: THU 02:15-04:15, FRI 11:15-01:15\nEEE: TUE 11:15-01:15\nCIVIL: FRI 09:00-11:00\nCHEMICAL: WED 11:15-01:15\nMECH-ROBOTICS: WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "CSE-1",
@@ -10159,11 +10203,11 @@
             "status": "ALLOTTED"
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "required": 1,
-            "allotted": 0,
-            "slots": "Not Allotted",
-            "status": "PENDING"
+            "allotted": 1,
+            "slots": "MON 02:15-04:15",
+            "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
@@ -10202,11 +10246,11 @@
           }
         ],
         "required": 21,
-        "allotted": 20,
-        "pending": 1,
+        "allotted": 21,
+        "pending": 0,
         "extra": 0,
         "labHours": 2,
-        "remarks": "Pending: 1"
+        "remarks": "All allotted"
       },
       {
         "sno": 5,
@@ -10315,7 +10359,7 @@
         "labName": "Engineering Chemistry Lab",
         "subShort": "ENGG. CHEM LAB",
         "roomNo": "CHEM. LAB.",
-        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-3: Not Allotted\nEEE: MON 09:00-11:00, WED 09:00-11:00",
+        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-VLSI: THU 02:15-04:15, FRI 02:15-04:15\nEEE: MON 09:00-11:00, WED 09:00-11:00",
         "branchStatusList": [
           {
             "branch": "ECE-1",
@@ -10332,11 +10376,11 @@
             "status": "ALLOTTED"
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "required": 2,
-            "allotted": 0,
-            "slots": "Not Allotted",
-            "status": "PENDING"
+            "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
+            "status": "ALLOTTED"
           },
           {
             "branch": "EEE",
@@ -10347,18 +10391,18 @@
           }
         ],
         "required": 12,
-        "allotted": 10,
-        "pending": 2,
+        "allotted": 12,
+        "pending": 0,
         "extra": 0,
         "labHours": 2,
-        "remarks": "Pending: 2"
+        "remarks": "All allotted"
       },
       {
         "sno": 10,
         "labName": "Digital Logic Design Lab",
         "subShort": "DLD LAB",
         "roomNo": "A-406",
-        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-3: Not Allotted",
+        "branches": "ECE-1: MON 11:15-01:15, TUE 11:15-01:15, WED 11:15-01:15, THU 11:15-01:15\nECE-2: MON 02:15-04:15, TUE 02:15-04:15, WED 02:15-04:15, FRI 11:15-01:15\nECE-VLSI: THU 02:15-04:15, FRI 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "ECE-1",
@@ -10375,26 +10419,26 @@
             "status": "ALLOTTED"
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "required": 2,
-            "allotted": 0,
-            "slots": "Not Allotted",
-            "status": "PENDING"
+            "allotted": 2,
+            "slots": "THU 02:15-04:15, FRI 02:15-04:15",
+            "status": "ALLOTTED"
           }
         ],
         "required": 10,
-        "allotted": 8,
-        "pending": 2,
+        "allotted": 10,
+        "pending": 0,
         "extra": 0,
         "labHours": 2,
-        "remarks": "Pending: 2"
+        "remarks": "All allotted"
       },
       {
         "sno": 11,
         "labName": "Essential English Lab",
         "subShort": "ESS. ENG. LAB",
         "roomNo": "COMP. LAB-4",
-        "branches": "ECE-1: MON 11:15-01:15, WED 11:15-01:15\nECE-2: MON 02:15-04:15, FRI 11:15-01:15\nECE-3: Not Allotted\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: THU 09:00-11:00\nCIVIL: WED 09:00-11:00\nCHEMICAL: TUE 11:15-01:15\nMECH-ROBOTICS: FRI 02:15-04:15",
+        "branches": "ECE-1: MON 11:15-01:15, WED 11:15-01:15\nECE-2: MON 02:15-04:15, FRI 11:15-01:15\nECE-VLSI: WED 02:15-04:15\nMECH: MON 09:00-11:00, TUE 09:00-11:00\nEEE: THU 09:00-11:00\nCIVIL: WED 09:00-11:00\nCHEMICAL: TUE 11:15-01:15\nMECH-ROBOTICS: FRI 02:15-04:15",
         "branchStatusList": [
           {
             "branch": "ECE-1",
@@ -10411,11 +10455,11 @@
             "status": "ALLOTTED"
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "required": 1,
-            "allotted": 0,
-            "slots": "Not Allotted",
-            "status": "PENDING"
+            "allotted": 1,
+            "slots": "WED 02:15-04:15",
+            "status": "ALLOTTED"
           },
           {
             "branch": "MECH",
@@ -10454,11 +10498,11 @@
           }
         ],
         "required": 11,
-        "allotted": 10,
-        "pending": 1,
+        "allotted": 11,
+        "pending": 0,
         "extra": 0,
         "labHours": 2,
-        "remarks": "Pending: 1"
+        "remarks": "All allotted"
       },
       {
         "sno": 12,
@@ -10616,8 +10660,8 @@
     ],
     "labSummaryTotals": {
       "required": 112,
-      "allotted": 104,
-      "pending": 8,
+      "allotted": 111,
+      "pending": 1,
       "extra": 0
     },
     "GVPCE CHEM. LAB. (B6-102)": {
@@ -11062,8 +11106,8 @@
             "raw": "CIVIL / S&G LAB",
             "branch": "CIVIL",
             "subject": "S&G LAB",
-            "faculty": "Dr. B Vidya, Mr. P Manikanta",
-            "facultyShort": "BV, PM"
+            "faculty": "Mr. P Manikanta, Dr. B Vidya",
+            "facultyShort": "PM, BV"
           }
         },
         "WED": {},
@@ -11348,7 +11392,7 @@
         {
           "sno": 2,
           "shortName": "3DDA Tut.",
-          "fullName": "3DDA Tut."
+          "fullName": "3D Design and Animation Tut."
         }
       ]
     },
@@ -11379,7 +11423,7 @@
         {
           "sno": 1,
           "shortName": "3DDA Tut.",
-          "fullName": "3DDA Tut."
+          "fullName": "3D Design and Animation Tut."
         },
         {
           "sno": 2,
@@ -11577,8 +11621,8 @@
             "raw": "ECE-1 / ENGG. CHEM LAB",
             "branch": "ECE-1",
             "subject": "ENGG. CHEM LAB",
-            "faculty": "Dr. B Santosh Kumar, Dr. M Rama Rajeswari",
-            "facultyShort": "BSK, MRR"
+            "faculty": "Dr. M Rama Rajeswari, Dr. B Santosh Kumar",
+            "facultyShort": "MRR, BSK"
           },
           "02:15-04:15": {
             "raw": "ECE-VLSI / ENGG. CHEM LAB",
@@ -16445,7 +16489,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BSK, MRR",
+            "rawFaculty": "MRR, BSK",
             "isNonAcademic": false
           }
         ],
@@ -16456,7 +16500,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BSK, MRR",
+            "rawFaculty": "MRR, BSK",
             "isNonAcademic": false
           }
         ],
@@ -17031,7 +17075,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BSK, MRR",
+            "rawFaculty": "MRR, BSK",
             "isNonAcademic": false
           }
         ],
@@ -17042,7 +17086,7 @@
             "room": "CHEM. LAB.",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BSK, MRR",
+            "rawFaculty": "MRR, BSK",
             "isNonAcademic": false
           }
         ]
@@ -17769,7 +17813,7 @@
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BV, PM",
+            "rawFaculty": "PM, BV",
             "isNonAcademic": false
           }
         ],
@@ -17780,7 +17824,7 @@
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BV, PM",
+            "rawFaculty": "PM, BV",
             "isNonAcademic": false
           }
         ]
@@ -18068,7 +18112,7 @@
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": false,
-            "rawFaculty": "BV, PM",
+            "rawFaculty": "PM, BV",
             "isNonAcademic": false
           }
         ],
@@ -18079,7 +18123,7 @@
             "room": "GVPCE SUR. LAB (B11-101)",
             "isLab": true,
             "isContinued": true,
-            "rawFaculty": "BV, PM",
+            "rawFaculty": "PM, BV",
             "isNonAcademic": false
           }
         ],
@@ -29750,7 +29794,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -29768,7 +29812,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -29786,7 +29830,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -29822,7 +29866,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -29839,7 +29883,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -29858,7 +29902,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -29867,7 +29911,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -29894,7 +29938,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -29930,7 +29974,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -29947,7 +29991,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -33822,7 +33866,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -33840,7 +33884,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -33857,7 +33901,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -35517,7 +35561,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -35535,7 +35579,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -35553,7 +35597,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -35589,7 +35633,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -35606,7 +35650,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -35625,7 +35669,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -35634,7 +35678,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -35661,7 +35705,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -35697,7 +35741,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -35714,7 +35758,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -39589,7 +39633,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -39607,7 +39651,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -39624,7 +39668,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -51118,7 +51162,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51136,7 +51180,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51154,7 +51198,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51190,7 +51234,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51207,7 +51251,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51226,7 +51270,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51244,7 +51288,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51262,7 +51306,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51298,7 +51342,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51315,7 +51359,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51334,7 +51378,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51352,7 +51396,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51370,7 +51414,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51406,7 +51450,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51423,7 +51467,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51442,7 +51486,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51460,7 +51504,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51478,7 +51522,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51514,7 +51558,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51531,7 +51575,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51550,7 +51594,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51568,7 +51612,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51586,7 +51630,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51622,7 +51666,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51639,7 +51683,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51658,7 +51702,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51676,7 +51720,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51694,7 +51738,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51730,7 +51774,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51747,7 +51791,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51766,7 +51810,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51784,7 +51828,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -51802,7 +51846,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51838,7 +51882,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51855,7 +51899,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51874,7 +51918,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51883,7 +51927,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -51910,7 +51954,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -51946,7 +51990,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -51963,7 +52007,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -51982,7 +52026,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -51991,7 +52035,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52018,7 +52062,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52054,7 +52098,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52071,7 +52115,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -52090,7 +52134,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -52099,7 +52143,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52126,7 +52170,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52162,7 +52206,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52179,7 +52223,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -52198,7 +52242,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -52207,7 +52251,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52234,7 +52278,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52270,7 +52314,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52287,7 +52331,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -52306,7 +52350,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -52315,7 +52359,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52342,7 +52386,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52378,7 +52422,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52395,7 +52439,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -52414,7 +52458,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -52423,7 +52467,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52450,7 +52494,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52486,7 +52530,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52503,7 +52547,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -52522,7 +52566,7 @@
       "assignedCourses": [
         {
           "branch": "CSE-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-305",
           "hours": 1,
@@ -52531,7 +52575,7 @@
         },
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -52558,7 +52602,7 @@
         },
         {
           "branch": "CSE-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-304",
           "hours": 1,
@@ -52594,7 +52638,7 @@
         },
         {
           "branch": "CSE (CS & DS)",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-405",
           "hours": 1,
@@ -52611,7 +52655,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning Lab (FAI & ML LAB) – 2 lab = 2 periods\nCSE-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → Foundations of Artificial Intelligence & Machine Learning (FAI & ML) – 3 theory = 3 periods\nCSE (CS & DS) → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE (CS & DS) → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "17"
@@ -79622,7 +79666,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79640,7 +79684,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79657,7 +79701,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79676,7 +79720,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79694,7 +79738,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79711,7 +79755,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79730,7 +79774,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79748,7 +79792,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79765,7 +79809,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79784,7 +79828,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79802,7 +79846,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79819,7 +79863,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79838,7 +79882,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79856,7 +79900,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79873,7 +79917,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79892,7 +79936,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79910,7 +79954,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79927,7 +79971,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
@@ -79946,7 +79990,7 @@
       "assignedCourses": [
         {
           "branch": "CSE(AI&ML)-1",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-302",
           "hours": 1,
@@ -79964,7 +80008,7 @@
         },
         {
           "branch": "CSE(AI&ML)-2",
-          "subject": "3DDA Tut.",
+          "subject": "3D Design and Animation Tutorial",
           "code": "3DDA Tut.",
           "room": "G-303",
           "hours": 1,
@@ -79981,7 +80025,7 @@
           "loadDetail": "2 lab = 2 periods"
         }
       ],
-      "assignments": "CSE(AI&ML)-1 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3DDA Tut. (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
+      "assignments": "CSE(AI&ML)-1 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-1 → 3D Design and Animation (3DDA) – 2 lab = 2 periods\nCSE(AI&ML)-2 → 3D Design and Animation Tutorial (3DDA Tut.) – 1 tutorial = 1 periods\nCSE(AI&ML)-2 → 3D Design and Animation (3DDA) – 2 lab = 2 periods",
       "counsellingLoad": 0,
       "counselSessions": [],
       "displayLoad": "6"
