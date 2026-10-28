@@ -177,33 +177,34 @@ export default function RoomsView({
   const roomDropdownRef = useRef(null);
 
   // Cell expand/collapse state: tracks which slot cells have their room lists open.
-  // By default, initialize with all cells expanded, or allow user to toggle each individually or expand/collapse all!
-  const [collapsedCells, setCollapsedCells] = useState(() => new Set());
+  // User requirement: First the list will be displayed CLOSED (collapsed by default).
+  // If clicked, then the dropdown opens.
+  const [expandedCells, setExpandedCells] = useState(() => new Set());
 
   const toggleCellExpand = (cellKey) => {
-    setCollapsedCells((prev) => {
+    setExpandedCells((prev) => {
       const next = new Set(prev);
       if (next.has(cellKey)) {
-        next.delete(cellKey); // expanded
+        next.delete(cellKey); // collapse
       } else {
-        next.add(cellKey); // collapsed
+        next.add(cellKey); // expand
       }
       return next;
     });
   };
 
   const handleExpandAllCells = () => {
-    setCollapsedCells(new Set());
-  };
-
-  const handleCollapseAllCells = () => {
     const allKeys = new Set();
     activeDaysList.forEach((d) => {
       academicSlots.forEach((s) => {
         allKeys.add(`${d}_${s}`);
       });
     });
-    setCollapsedCells(allKeys);
+    setExpandedCells(allKeys);
+  };
+
+  const handleCollapseAllCells = () => {
+    setExpandedCells(new Set());
   };
 
   // Sync matrixSelectedRooms when matrixMonitoredRoomsList changes
@@ -776,12 +777,12 @@ export default function RoomsView({
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={collapsedCells.size === 0 ? handleCollapseAllCells : handleExpandAllCells}
+                  onClick={expandedCells.size === 0 ? handleExpandAllCells : handleCollapseAllCells}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
-                  title={collapsedCells.size === 0 ? "Collapse all slot dropdowns" : "Expand all slot dropdowns"}
+                  title={expandedCells.size === 0 ? "Expand all slot dropdowns" : "Collapse all slot dropdowns"}
                 >
-                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${collapsedCells.size === 0 ? 'rotate-180' : ''}`} />
-                  {collapsedCells.size === 0 ? 'Collapse All' : 'Expand All'}
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${expandedCells.size > 0 ? 'rotate-180' : ''}`} />
+                  {expandedCells.size === 0 ? 'Expand All' : 'Collapse All'}
                 </button>
 
                 <button
@@ -791,7 +792,7 @@ export default function RoomsView({
                     setMatrixStatusFilter('VACANT');
                     setMatrixSelectedRooms(new Set(matrixMonitoredRoomsList));
                     setMatrixSearchQuery('');
-                    setCollapsedCells(new Set());
+                    setExpandedCells(new Set());
                   }}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
                   title="Reset filters to default"
@@ -1201,7 +1202,7 @@ export default function RoomsView({
                           const occupiedPct = totalMonitored > 0 ? Math.round((slotOccupiedRooms.length / totalMonitored) * 100) : 0;
 
                           const cellKey = `${day}_${slot}`;
-                          const isCollapsed = collapsedCells.has(cellKey);
+                          const isExpanded = expandedCells.has(cellKey);
 
                           return (
                             <td
@@ -1215,7 +1216,7 @@ export default function RoomsView({
                                   <button
                                     type="button"
                                     onClick={() => toggleCellExpand(cellKey)}
-                                    title={isCollapsed ? "Click to expand rooms list" : "Click to collapse rooms list"}
+                                    title={isExpanded ? "Click to collapse rooms list" : "Click to expand rooms list"}
                                     className="w-full flex items-center justify-between text-[11px] font-black text-emerald-800 bg-emerald-100/90 hover:bg-emerald-200/90 px-2 py-1 rounded border border-emerald-300 shadow-2xs transition-all cursor-pointer select-none"
                                   >
                                     <span className="flex items-center gap-1">
@@ -1226,12 +1227,12 @@ export default function RoomsView({
                                       <span className="text-[10px] text-emerald-700 font-mono font-bold">
                                         {vacantPct}%
                                       </span>
-                                      <ChevronDown className={`w-3.5 h-3.5 text-emerald-700 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
+                                      <ChevronDown className={`w-3.5 h-3.5 text-emerald-700 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                                     </span>
                                   </button>
 
-                                  {/* List of Vacant Room Pills (collapsible) */}
-                                  {!isCollapsed && (
+                                  {/* List of Vacant Room Pills (collapsible, closed by default) */}
+                                  {isExpanded && (
                                     <div className="flex flex-wrap gap-1 max-h-[190px] overflow-y-auto p-0.5">
                                       {displayVacant.map((room) => {
                                         const isLab = labsList.includes(room);
@@ -1277,7 +1278,7 @@ export default function RoomsView({
                                   <button
                                     type="button"
                                     onClick={() => toggleCellExpand(cellKey)}
-                                    title={isCollapsed ? "Click to expand occupied rooms list" : "Click to collapse occupied rooms list"}
+                                    title={isExpanded ? "Click to collapse occupied rooms list" : "Click to expand occupied rooms list"}
                                     className="w-full flex items-center justify-between text-[11px] font-black text-rose-800 bg-rose-100/90 hover:bg-rose-200/90 px-2 py-1 rounded border border-rose-300 shadow-2xs transition-all cursor-pointer select-none"
                                   >
                                     <span className="flex items-center gap-1">
@@ -1288,12 +1289,12 @@ export default function RoomsView({
                                       <span className="text-[10px] text-rose-700 font-mono font-bold">
                                         {occupiedPct}%
                                       </span>
-                                      <ChevronDown className={`w-3.5 h-3.5 text-rose-700 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
+                                      <ChevronDown className={`w-3.5 h-3.5 text-rose-700 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                                     </span>
                                   </button>
 
-                                  {/* List of Occupied Room Pills (collapsible) */}
-                                  {!isCollapsed && (
+                                  {/* List of Occupied Room Pills (collapsible, closed by default) */}
+                                  {isExpanded && (
                                     <div className="flex flex-col gap-1 max-h-[220px] overflow-y-auto p-0.5">
                                       {displayOccupied.map((room) => {
                                         const sess = roomSchedules[room]?.[day]?.[slot] || [];
@@ -1349,10 +1350,10 @@ export default function RoomsView({
                                       <span className="text-slate-400">•</span>
                                       <span className="text-rose-700">{displayOccupied.length} In Use</span>
                                     </span>
-                                    <ChevronDown className={`w-3.5 h-3.5 text-slate-600 transition-transform ${isCollapsed ? '' : 'rotate-180'}`} />
+                                    <ChevronDown className={`w-3.5 h-3.5 text-slate-600 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
                                   </button>
 
-                                  {!isCollapsed && (
+                                  {isExpanded && (
                                     <>
                                       {/* Vacant sub-section */}
                                       <div>
