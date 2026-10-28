@@ -769,6 +769,27 @@ Object.entries(timetableData).forEach(([branch, daysObj]) => {
       leg.tutorialFullName = tutMap[base].fulls.join('\n');
     }
   });
+
+  // Also sync primary classroom from Timetable_Final for theory courses
+  const roomCounts = {};
+  Object.values(daysObj).forEach(dayObj => {
+    Object.values(dayObj).forEach(slots => {
+      slots.forEach(s => {
+        if (!s.isLab && !s.isNonAcademic && s.room && s.room.trim()) {
+          const r = s.room.trim();
+          roomCounts[r] = (roomCounts[r] || 0) + 1;
+        }
+      });
+    });
+  });
+  const topRoom = Object.entries(roomCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
+  if (topRoom) {
+    legendList.forEach(leg => {
+      if (!leg.isLab && leg.room && !leg.room.includes('LAB') && !leg.room.includes('GVPCE')) {
+        leg.room = topRoom;
+      }
+    });
+  }
 });
 
 // 4. Pre-compute masterFacultyTimetables directly from Timetable_Final
