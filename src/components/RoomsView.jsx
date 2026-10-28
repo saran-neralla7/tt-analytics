@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { 
   Building, 
@@ -14,7 +14,13 @@ import {
   Table, 
   LayoutGrid,
   FlaskConical,
-  DoorOpen
+  DoorOpen,
+  ChevronDown,
+  Check,
+  CheckSquare,
+  Square,
+  Printer,
+  RotateCcw
 } from 'lucide-react';
 
 export default function RoomsView({ timetableData, universityInfo, onSlotClick }) {
@@ -136,6 +142,87 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
   const [selectedRoom, setSelectedRoom] = useState(allRoomsList[0] || 'G-304');
   const [roomSearchQuery, setRoomSearchQuery] = useState('');
 
+  // Weekly Day-Wise Vacancy Matrix Filter States
+  const [matrixSelectedRooms, setMatrixSelectedRooms] = useState(() => new Set(allRoomsList));
+  const [matrixDayFilter, setMatrixDayFilter] = useState('ALL'); // 'ALL' | 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT'
+  const [matrixStatusFilter, setMatrixStatusFilter] = useState('VACANT'); // 'VACANT' | 'OCCUPIED' | 'BOTH'
+  const [matrixSearchQuery, setMatrixSearchQuery] = useState('');
+  const [isRoomDropdownOpen, setIsRoomDropdownOpen] = useState(false);
+  const [dropdownSearchRoom, setDropdownSearchRoom] = useState('');
+  const roomDropdownRef = useRef(null);
+
+  // Sync matrixSelectedRooms if initial set was empty
+  useEffect(() => {
+    if (allRoomsList.length > 0 && matrixSelectedRooms.size === 0) {
+      setMatrixSelectedRooms(new Set(allRoomsList));
+    }
+  }, [allRoomsList]);
+
+  // Click outside listener for the multi-select room dropdown
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (roomDropdownRef.current && !roomDropdownRef.current.contains(event.target)) {
+        setIsRoomDropdownOpen(false);
+      }
+    }
+    if (isRoomDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isRoomDropdownOpen]);
+
+  // Multi-select room helper handlers
+  const handleToggleRoom = (r) => {
+    setMatrixSelectedRooms((prev) => {
+      const next = new Set(prev);
+      if (next.has(r)) {
+        next.delete(r);
+      } else {
+        next.add(r);
+      }
+      return next;
+    });
+  };
+
+  const handleSelectAllRooms = () => {
+    setMatrixSelectedRooms(new Set(allRoomsList));
+  };
+
+  const handleSelectOnlyClassrooms = () => {
+    setMatrixSelectedRooms(new Set(classroomsList));
+  };
+
+  const handleSelectOnlyLabs = () => {
+    setMatrixSelectedRooms(new Set(labsList));
+  };
+
+  const handleClearAllRooms = () => {
+    setMatrixSelectedRooms(new Set());
+  };
+
+  const roomDropdownLabel = useMemo(() => {
+    if (matrixSelectedRooms.size === 0) return 'No Rooms Selected';
+    if (matrixSelectedRooms.size === allRoomsList.length) return `All Rooms & Labs (${allRoomsList.length})`;
+    if (matrixSelectedRooms.size === classroomsList.length && classroomsList.every(r => matrixSelectedRooms.has(r))) {
+      return `Classrooms Only (${classroomsList.length})`;
+    }
+    if (matrixSelectedRooms.size === labsList.length && labsList.every(r => matrixSelectedRooms.has(r))) {
+      return `Laboratories Only (${labsList.length})`;
+    }
+    return `${matrixSelectedRooms.size} Rooms Selected`;
+  }, [matrixSelectedRooms, allRoomsList, classroomsList, labsList]);
+
+  const selectedRoomsArray = useMemo(() => {
+    return allRoomsList.filter(r => matrixSelectedRooms.has(r));
+  }, [allRoomsList, matrixSelectedRooms]);
+
+  const matrixDaysToDisplay = useMemo(() => {
+    if (matrixDayFilter === 'ALL') return activeDaysList;
+    return activeDaysList.filter(d => d === matrixDayFilter);
+  }, [activeDaysList, matrixDayFilter]);
+
   // Auto-detect "Available Right Now"
   const handleSelectRightNow = () => {
     const now = new Date();
@@ -221,6 +308,17 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
             }`}
           >
             <DoorOpen className="w-4 h-4" /> Room & Lab Vacancy Locator
+          </button>
+
+          <button
+            onClick={() => setViewMode('weekly-matrix')}
+            className={`flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-black rounded-lg transition-all ${
+              viewMode === 'weekly-matrix'
+                ? 'bg-blue-700 text-white shadow-md'
+                : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-300'
+            }`}
+          >
+            <Calendar className="w-4 h-4" /> Day-Wise Vacant Rooms Matrix
           </button>
 
           <button
@@ -586,7 +684,634 @@ export default function RoomsView({ timetableData, universityInfo, onSlotClick }
       )}
 
       {/* ============================================================ */}
-      {/* VIEW 2: BY ROOM TIMETABLE (WEEKLY SCHEDULE)                  */}
+      {/* VIEW 2: DAY-WISE VACANT ROOMS MATRIX (DAYS × TIME SLOTS)    */}
+      {/* ============================================================ */}
+      {viewMode === 'weekly-matrix' && (
+        <div className="space-y-6">
+          {/* Controls & Filter Bar */}
+          <div className="no-print bg-white p-4 sm:p-5 rounded-xl border border-slate-300 shadow-sm space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-2">
+                <span className="p-2 bg-blue-50 text-blue-700 rounded-lg">
+                  <Calendar className="w-5 h-5" />
+                </span>
+                <div>
+                  <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide">
+                    Day-Wise Vacant & Occupied Rooms Matrix
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Comprehensive cross-sectional matrix showing vacant or occupied rooms for every day and academic time period
+                  </p>
+                </div>
+              </div>
+
+              {/* Action Buttons: Reset & Print */}
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMatrixDayFilter('ALL');
+                    setMatrixStatusFilter('VACANT');
+                    setMatrixSelectedRooms(new Set(allRoomsList));
+                    setMatrixSearchQuery('');
+                  }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
+                  title="Reset filters to default"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" /> Reset
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => window.print()}
+                  className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white text-xs font-bold shadow-xs transition-all cursor-pointer"
+                  title="Print this matrix"
+                >
+                  <Printer className="w-3.5 h-3.5" /> Print Matrix
+                </button>
+              </div>
+            </div>
+
+            {/* Filter Controls Row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+              {/* 1. ROOM SELECTION DROPDOWN WITH CHECKBOXES */}
+              <div className="relative" ref={roomDropdownRef}>
+                <label className="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  Room Selection ({selectedRoomsArray.length}):
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setIsRoomDropdownOpen(!isRoomDropdownOpen)}
+                  className="w-full bg-slate-50 border border-slate-300 hover:border-slate-400 text-slate-900 text-xs font-bold rounded-lg px-3 py-2 text-left flex items-center justify-between focus:ring-2 focus:ring-blue-500 focus:bg-white cursor-pointer transition-all shadow-xs"
+                >
+                  <span className="truncate pr-2 font-mono">{roomDropdownLabel}</span>
+                  <ChevronDown className={`w-4 h-4 text-slate-500 transition-transform ${isRoomDropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {/* Popover Dropdown Panel */}
+                {isRoomDropdownOpen && (
+                  <div className="absolute left-0 mt-1.5 w-80 sm:w-96 bg-white rounded-xl shadow-2xl border-2 border-slate-300 z-50 p-3 space-y-3">
+                    {/* Quick Preset Buttons */}
+                    <div className="flex flex-wrap items-center gap-1.5 pb-2 border-b border-slate-200 text-xs">
+                      <button
+                        type="button"
+                        onClick={handleSelectAllRooms}
+                        className="px-2.5 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-800 font-bold border border-blue-200 cursor-pointer text-[11px]"
+                      >
+                        All ({allRoomsList.length})
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleSelectOnlyClassrooms}
+                        className="px-2.5 py-1 rounded bg-purple-50 hover:bg-purple-100 text-purple-800 font-bold border border-purple-200 cursor-pointer text-[11px]"
+                      >
+                        Classrooms ({classroomsList.length})
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleSelectOnlyLabs}
+                        className="px-2.5 py-1 rounded bg-teal-50 hover:bg-teal-100 text-teal-800 font-bold border border-teal-200 cursor-pointer text-[11px]"
+                      >
+                        Labs ({labsList.length})
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleClearAllRooms}
+                        className="px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold border border-slate-300 cursor-pointer text-[11px] ml-auto"
+                      >
+                        Clear
+                      </button>
+                    </div>
+
+                    {/* Room Search input */}
+                    <div className="relative">
+                      <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
+                      <input
+                        type="text"
+                        value={dropdownSearchRoom}
+                        onChange={(e) => setDropdownSearchRoom(e.target.value)}
+                        placeholder="Search rooms..."
+                        className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 font-mono"
+                      />
+                    </div>
+
+                    {/* Scrollable Room List */}
+                    <div className="max-h-64 overflow-y-auto space-y-3 pr-1 text-xs">
+                      {/* Classrooms Group */}
+                      {classroomsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
+                        <div>
+                          <div className="flex items-center justify-between pb-1 mb-1.5 border-b border-slate-200">
+                            <span className="font-black text-slate-800 text-[11px] uppercase tracking-wider flex items-center gap-1">
+                              <Building className="w-3 h-3 text-purple-600" /> Classrooms ({classroomsList.length})
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const allSelected = classroomsList.every(r => matrixSelectedRooms.has(r));
+                                setMatrixSelectedRooms(prev => {
+                                  const next = new Set(prev);
+                                  classroomsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
+                                  return next;
+                                });
+                              }}
+                              className="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer"
+                            >
+                              {classroomsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
+                            </button>
+                          </div>
+                          <div className="grid grid-cols-2 gap-1.5">
+                            {classroomsList
+                              .filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase()))
+                              .map(room => {
+                                const checked = matrixSelectedRooms.has(room);
+                                return (
+                                  <label
+                                    key={room}
+                                    onClick={() => handleToggleRoom(room)}
+                                    className={`flex items-center gap-2 p-1.5 rounded border text-xs cursor-pointer select-none transition-all ${
+                                      checked
+                                        ? 'bg-purple-50/70 border-purple-300 text-purple-950 font-bold'
+                                        : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                                    }`}
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      checked={checked}
+                                      onChange={() => {}}
+                                      className="rounded text-purple-600 focus:ring-purple-500 cursor-pointer"
+                                    />
+                                    <span className="font-mono text-[11px] truncate">{room}</span>
+                                  </label>
+                                );
+                              })}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Laboratories Group */}
+                      {labsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
+                        <div>
+                          <div className="flex items-center justify-between pb-1 mb-1.5 border-b border-slate-200">
+                            <span className="font-black text-slate-800 text-[11px] uppercase tracking-wider flex items-center gap-1">
+                              <FlaskConical className="w-3 h-3 text-teal-600" /> Laboratories ({labsList.length})
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const allSelected = labsList.every(r => matrixSelectedRooms.has(r));
+                                setMatrixSelectedRooms(prev => {
+                                  const next = new Set(prev);
+                                  labsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
+                                  return next;
+                                });
+                              }}
+                              className="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer"
+                            >
+                              {labsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
+                            </button>
+                          </div>
+                          <div className="grid grid-cols-2 gap-1.5">
+                            {labsList
+                              .filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase()))
+                              .map(room => {
+                                const checked = matrixSelectedRooms.has(room);
+                                return (
+                                  <label
+                                    key={room}
+                                    onClick={() => handleToggleRoom(room)}
+                                    className={`flex items-center gap-2 p-1.5 rounded border text-xs cursor-pointer select-none transition-all ${
+                                      checked
+                                        ? 'bg-teal-50/70 border-teal-300 text-teal-950 font-bold'
+                                        : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                                    }`}
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      checked={checked}
+                                      onChange={() => {}}
+                                      className="rounded text-teal-600 focus:ring-teal-500 cursor-pointer"
+                                    />
+                                    <span className="font-mono text-[11px] truncate">{room}</span>
+                                  </label>
+                                );
+                              })}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Popover Footer */}
+                    <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-xs font-bold">
+                      <span className="text-slate-500 text-[11px]">
+                        {matrixSelectedRooms.size} of {allRoomsList.length} selected
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setIsRoomDropdownOpen(false)}
+                        className="px-3 py-1 bg-blue-700 text-white rounded-lg hover:bg-blue-800 text-xs font-bold cursor-pointer"
+                      >
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 2. DAY OF WEEK SELECTOR */}
+              <div>
+                <label className="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  Day of Week:
+                </label>
+                <select
+                  value={matrixDayFilter}
+                  onChange={(e) => setMatrixDayFilter(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs font-bold rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:bg-white cursor-pointer transition-all shadow-xs"
+                >
+                  <option value="ALL">All Days (Monday – Friday)</option>
+                  {activeDaysList.map((d) => (
+                    <option key={d} value={d}>
+                      {d === 'MON' ? 'Monday (MON)' : d === 'TUE' ? 'Tuesday (TUE)' : d === 'WED' ? 'Wednesday (WED)' : d === 'THU' ? 'Thursday (THU)' : d === 'FRI' ? 'Friday (FRI)' : 'Saturday (SAT)'}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* 3. STATUS DISPLAY FILTER */}
+              <div>
+                <label className="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  Status Display:
+                </label>
+                <select
+                  value={matrixStatusFilter}
+                  onChange={(e) => setMatrixStatusFilter(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs font-bold rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:bg-white cursor-pointer transition-all shadow-xs"
+                >
+                  <option value="VACANT">Vacant Rooms Only</option>
+                  <option value="OCCUPIED">Occupied Rooms Only</option>
+                  <option value="BOTH">Both (Vacant & Occupied)</option>
+                </select>
+              </div>
+
+              {/* 4. QUICK SEARCH */}
+              <div>
+                <label className="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  Quick Search:
+                </label>
+                <div className="relative">
+                  <Search className="w-4 h-4 text-slate-400 absolute left-3 top-2.5" />
+                  <input
+                    type="text"
+                    value={matrixSearchQuery}
+                    onChange={(e) => setMatrixSearchQuery(e.target.value)}
+                    placeholder="Filter by room name..."
+                    className="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded-lg focus:ring-2 focus:ring-blue-500 focus:bg-white placeholder-slate-400 shadow-xs font-mono"
+                  />
+                  {matrixSearchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setMatrixSearchQuery('')}
+                      className="absolute right-2.5 top-2.5 text-xs text-slate-400 hover:text-slate-600 font-bold"
+                    >
+                      ×
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Metrics Bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
+              <span className="p-2 bg-blue-50 text-blue-700 rounded-lg">
+                <Building className="w-5 h-5" />
+              </span>
+              <div>
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Rooms Monitored</div>
+                <div className="text-base font-black text-slate-900 font-mono">{selectedRoomsArray.length} Rooms</div>
+              </div>
+            </div>
+
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
+              <span className="p-2 bg-emerald-50 text-emerald-700 rounded-lg">
+                <CheckCircle2 className="w-5 h-5" />
+              </span>
+              <div>
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Classrooms Filtered</div>
+                <div className="text-base font-black text-emerald-800 font-mono">
+                  {classroomsList.filter(r => matrixSelectedRooms.has(r)).length} of {classroomsList.length}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
+              <span className="p-2 bg-teal-50 text-teal-700 rounded-lg">
+                <FlaskConical className="w-5 h-5" />
+              </span>
+              <div>
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Laboratories Filtered</div>
+                <div className="text-base font-black text-teal-800 font-mono">
+                  {labsList.filter(r => matrixSelectedRooms.has(r)).length} of {labsList.length}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
+              <span className="p-2 bg-purple-50 text-purple-700 rounded-lg">
+                <Filter className="w-5 h-5" />
+              </span>
+              <div>
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Active Mode</div>
+                <div className="text-xs font-black text-purple-900 uppercase">
+                  {matrixStatusFilter === 'VACANT' ? 'Vacant Rooms' : matrixStatusFilter === 'OCCUPIED' ? 'Occupied Rooms' : 'Vacant + Occupied'}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ============================================================ */}
+          {/* THE MASTER DAY-WISE VACANCY MATRIX TABLE                     */}
+          {/* ============================================================ */}
+          <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card">
+            {/* Header Banner */}
+            <div className="text-center py-3.5 px-6 border-b-2 border-slate-700 bg-slate-50">
+              <h2 className="text-sm font-bold text-slate-900 tracking-wide uppercase font-serif">
+                {universityInfo.name}
+              </h2>
+              <h3 className="text-xs sm:text-sm font-black text-slate-900 mt-1 uppercase font-mono tracking-wider">
+                WEEKLY ROOM VACANCY & ALLOCATION MATRIX • {matrixDayFilter === 'ALL' ? 'ALL ACADEMIC DAYS' : (matrixDayFilter === 'MON' ? 'MONDAY' : matrixDayFilter === 'TUE' ? 'TUESDAY' : matrixDayFilter === 'WED' ? 'WEDNESDAY' : matrixDayFilter === 'THU' ? 'THURSDAY' : matrixDayFilter === 'FRI' ? 'FRIDAY' : 'SATURDAY')}
+              </h3>
+              <p className="text-[11px] text-slate-500 mt-0.5">
+                {matrixStatusFilter === 'VACANT' && 'Displaying all vacant and unallocated rooms available for academic use or booking'}
+                {matrixStatusFilter === 'OCCUPIED' && 'Displaying all occupied rooms and their active section & course allocations'}
+                {matrixStatusFilter === 'BOTH' && 'Displaying comprehensive status for both vacant and occupied rooms across each slot'}
+              </p>
+            </div>
+
+            {/* Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs border-collapse border-2 border-slate-700 min-w-[1000px]">
+                <thead>
+                  <tr className="bg-slate-100 text-slate-900 font-black border-b-2 border-slate-700 uppercase tracking-wider text-[11px]">
+                    <th className="py-3 px-3 border-r-2 border-slate-400 text-center w-28 bg-slate-200/90 font-mono">
+                      DAY
+                    </th>
+                    {academicSlots.map((slot) => (
+                      <th key={slot} className="py-3 px-2 border-r border-slate-300 text-center font-mono">
+                        {slot}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y-2 divide-slate-400">
+                  {matrixDaysToDisplay.map((day) => {
+                    const fullDayName = day === 'MON' ? 'MONDAY' : day === 'TUE' ? 'TUESDAY' : day === 'WED' ? 'WEDNESDAY' : day === 'THU' ? 'THURSDAY' : day === 'FRI' ? 'FRIDAY' : 'SATURDAY';
+
+                    return (
+                      <tr key={day} className="hover:bg-slate-50/50 transition-colors">
+                        {/* Row Header: Day Name */}
+                        <td className="py-4 px-3 text-center border-r-2 border-slate-400 bg-slate-100 font-mono font-black text-slate-900 align-middle">
+                          <div className="text-sm font-black text-blue-950">{fullDayName}</div>
+                          <div className="text-[10px] font-bold text-slate-500 mt-0.5 uppercase tracking-wider">
+                            ({day})
+                          </div>
+                        </td>
+
+                        {/* Slots */}
+                        {academicSlots.map((slot) => {
+                          const slotVacantRooms = selectedRoomsArray.filter(
+                            (r) => (roomSchedules[r]?.[day]?.[slot] || []).length === 0
+                          );
+                          const slotOccupiedRooms = selectedRoomsArray.filter(
+                            (r) => (roomSchedules[r]?.[day]?.[slot] || []).length > 0
+                          );
+
+                          const q = matrixSearchQuery.toLowerCase().trim();
+                          const displayVacant = q
+                            ? slotVacantRooms.filter((r) => r.toLowerCase().includes(q))
+                            : slotVacantRooms;
+                          const displayOccupied = q
+                            ? slotOccupiedRooms.filter((r) => {
+                                const matchesRoom = r.toLowerCase().includes(q);
+                                const sess = roomSchedules[r]?.[day]?.[slot] || [];
+                                const matchesSess = sess.some(
+                                  (s) =>
+                                    (s.branch || '').toLowerCase().includes(q) ||
+                                    (s.subject || '').toLowerCase().includes(q) ||
+                                    (s.faculty || '').toLowerCase().includes(q)
+                                );
+                                return matchesRoom || matchesSess;
+                              })
+                            : slotOccupiedRooms;
+
+                          const totalMonitored = selectedRoomsArray.length;
+                          const vacantPct = totalMonitored > 0 ? Math.round((slotVacantRooms.length / totalMonitored) * 100) : 0;
+                          const occupiedPct = totalMonitored > 0 ? Math.round((slotOccupiedRooms.length / totalMonitored) * 100) : 0;
+
+                          return (
+                            <td
+                              key={slot}
+                              className="p-2 border-r border-slate-300 align-top min-w-[170px] max-w-[240px] bg-white"
+                            >
+                              {/* MODE 1: VACANT ONLY */}
+                              {matrixStatusFilter === 'VACANT' && (
+                                <div className="space-y-1.5">
+                                  {/* Header Badge */}
+                                  <div className="flex items-center justify-between text-[11px] font-black text-emerald-800 bg-emerald-100/90 px-2 py-1 rounded border border-emerald-300 shadow-2xs">
+                                    <span className="flex items-center gap-1">
+                                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700" />
+                                      <span>{displayVacant.length} Free</span>
+                                    </span>
+                                    <span className="text-[10px] text-emerald-700 font-mono font-bold">
+                                      {vacantPct}%
+                                    </span>
+                                  </div>
+
+                                  {/* List of Vacant Room Pills */}
+                                  <div className="flex flex-wrap gap-1 max-h-[190px] overflow-y-auto p-0.5">
+                                    {displayVacant.map((room) => {
+                                      const isLab = labsList.includes(room);
+                                      return (
+                                        <button
+                                          key={room}
+                                          type="button"
+                                          onClick={() => {
+                                            setSelectedRoom(room);
+                                            setViewMode('timetable');
+                                          }}
+                                          title={`${room} (${isLab ? 'Laboratory' : 'Classroom'}) - Click to view weekly timetable`}
+                                          className={`px-2 py-0.5 rounded text-[11px] font-mono font-black transition-all shadow-2xs hover:scale-105 cursor-pointer ${
+                                            isLab
+                                              ? 'bg-teal-50 text-teal-900 border border-teal-300 hover:bg-teal-100'
+                                              : 'bg-emerald-50 text-emerald-900 border border-emerald-300 hover:bg-emerald-100'
+                                          }`}
+                                        >
+                                          {isLab && <FlaskConical className="w-2.5 h-2.5 inline mr-1 text-teal-700" />}
+                                          {room}
+                                        </button>
+                                      );
+                                    })}
+                                    {displayVacant.length === 0 && (
+                                      <div className="w-full text-center py-3 text-slate-400 italic text-[11px]">
+                                        0 Rooms Vacant
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* MODE 2: OCCUPIED ONLY */}
+                              {matrixStatusFilter === 'OCCUPIED' && (
+                                <div className="space-y-1.5">
+                                  {/* Header Badge */}
+                                  <div className="flex items-center justify-between text-[11px] font-black text-rose-800 bg-rose-100/90 px-2 py-1 rounded border border-rose-300 shadow-2xs">
+                                    <span className="flex items-center gap-1">
+                                      <XCircle className="w-3.5 h-3.5 text-rose-700" />
+                                      <span>{displayOccupied.length} In Use</span>
+                                    </span>
+                                    <span className="text-[10px] text-rose-700 font-mono font-bold">
+                                      {occupiedPct}%
+                                    </span>
+                                  </div>
+
+                                  {/* List of Occupied Room Pills */}
+                                  <div className="flex flex-col gap-1 max-h-[220px] overflow-y-auto p-0.5">
+                                    {displayOccupied.map((room) => {
+                                      const sess = roomSchedules[room]?.[day]?.[slot] || [];
+                                      const isLab = labsList.includes(room);
+                                      return (
+                                        <div
+                                          key={room}
+                                          onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
+                                          title={`${room}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                          className="p-1 rounded bg-rose-50 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 transition-all shadow-2xs cursor-pointer text-left"
+                                        >
+                                          <div className="flex items-center justify-between font-mono font-black text-rose-950 text-[10.5px]">
+                                            <span className="flex items-center gap-0.5">
+                                              {isLab && <FlaskConical className="w-2.5 h-2.5 text-teal-700 inline" />}
+                                              {room}
+                                            </span>
+                                            <span className="text-[9.5px] font-bold text-blue-700">
+                                              {sess[0]?.branch}
+                                            </span>
+                                          </div>
+                                          <div className="text-[9.5px] text-slate-700 font-medium truncate mt-0.5">
+                                            {sess[0]?.subject}
+                                          </div>
+                                        </div>
+                                      );
+                                    })}
+                                    {displayOccupied.length === 0 && (
+                                      <div className="w-full text-center py-3 text-emerald-600 font-bold text-[11px]">
+                                        All Rooms Free
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* MODE 3: BOTH (VACANT & OCCUPIED) */}
+                              {matrixStatusFilter === 'BOTH' && (
+                                <div className="space-y-2">
+                                  {/* Vacant sub-section */}
+                                  <div>
+                                    <div className="text-[10px] font-black uppercase tracking-wider text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200 flex items-center justify-between mb-1">
+                                      <span>Vacant ({displayVacant.length})</span>
+                                      <span className="font-mono">{vacantPct}%</span>
+                                    </div>
+                                    <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
+                                      {displayVacant.slice(0, 15).map((room) => (
+                                        <span
+                                          key={room}
+                                          onClick={() => {
+                                            setSelectedRoom(room);
+                                            setViewMode('timetable');
+                                          }}
+                                          title={`${room} - Click to view schedule`}
+                                          className="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold bg-emerald-100/90 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 cursor-pointer shadow-2xs"
+                                        >
+                                          {room}
+                                        </span>
+                                      ))}
+                                      {displayVacant.length > 15 && (
+                                        <span className="text-[9px] text-emerald-700 font-bold self-center">
+                                          +{displayVacant.length - 15} more
+                                        </span>
+                                      )}
+                                      {displayVacant.length === 0 && (
+                                        <span className="text-[9.5px] text-slate-400 italic">None</span>
+                                      )}
+                                    </div>
+                                  </div>
+
+                                  {/* Occupied sub-section */}
+                                  <div>
+                                    <div className="text-[10px] font-black uppercase tracking-wider text-rose-800 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200 flex items-center justify-between mb-1">
+                                      <span>In Use ({displayOccupied.length})</span>
+                                      <span className="font-mono">{occupiedPct}%</span>
+                                    </div>
+                                    <div className="flex flex-wrap gap-1 max-h-[100px] overflow-y-auto p-0.5">
+                                      {displayOccupied.slice(0, 10).map((room) => {
+                                        const sess = roomSchedules[room]?.[day]?.[slot] || [];
+                                        return (
+                                          <span
+                                            key={room}
+                                            onClick={() => sess.length > 0 && onSlotClick && onSlotClick(sess, day, slot, sess[0]?.branch)}
+                                            title={`${room}: ${sess.map((s) => `${s.branch} - ${s.subject}`).join(', ')}`}
+                                            className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold bg-rose-100/90 text-rose-950 border border-rose-300 hover:bg-rose-200 cursor-pointer shadow-2xs"
+                                          >
+                                            {room}
+                                          </span>
+                                        );
+                                      })}
+                                      {displayOccupied.length > 10 && (
+                                        <span className="text-[9px] text-rose-700 font-bold self-center">
+                                          +{displayOccupied.length - 10} more
+                                        </span>
+                                      )}
+                                      {displayOccupied.length === 0 && (
+                                        <span className="text-[9.5px] text-slate-400 italic">None</span>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Matrix Table Footer Legend */}
+            <div className="bg-slate-50 px-4 py-2.5 border-t-2 border-slate-700 flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div className="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 font-medium">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-3 h-3 rounded bg-emerald-100 border border-emerald-300 inline-block"></span>
+                  <span>Classroom (Vacant)</span>
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-3 h-3 rounded bg-teal-100 border border-teal-300 inline-block"></span>
+                  <span>Laboratory (Vacant)</span>
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-3 h-3 rounded bg-rose-100 border border-rose-300 inline-block"></span>
+                  <span>Occupied / Active Class</span>
+                </span>
+              </div>
+              <div className="text-[11px] font-bold text-slate-500 font-mono">
+                Showing {selectedRoomsArray.length} Selected Rooms Across {matrixDaysToDisplay.length} Academic Days
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ============================================================ */}
+      {/* VIEW 3: BY ROOM TIMETABLE (WEEKLY SCHEDULE)                  */}
       {/* ============================================================ */}
       {viewMode === 'timetable' && (
         <div className="space-y-6">
