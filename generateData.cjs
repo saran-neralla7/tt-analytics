@@ -557,9 +557,21 @@ if (ctSheet) {
   const ctRows = XLSX.utils.sheet_to_json(ctSheet);
   ctRows.forEach(r => {
     const rawBranch = (r['Branch Name'] || '').trim();
-    const teacher = (r['Class Teacher Name'] || '').replace(/\r\n/g, '\n').replace(/\r/g, '').trim();
+    let teacher = (r['Class Teacher Name'] || '')
+      .replace(/\r\n/g, '\n')
+      .replace(/\r/g, '')
+      .trim();
     if (!rawBranch || !teacher) return;
     
+    // Clean up known typos and spacing in teacher names
+    teacher = teacher
+      .replace(/kumat\b/gi, 'Kumar')
+      .replace(/Dr\.V\s*/g, 'Dr. V ')
+      .replace(/Dr\.\s*D\.\s*Santosh/gi, 'Dr. D. Santosh')
+      .replace(/\n+/g, ', ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
     classTeachers[rawBranch] = teacher;
     const normB = rawBranch
       .replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)')
@@ -586,8 +598,23 @@ if (ctcSheet) {
     if (bCol) currentBranch = bCol;
     if (!currentBranch) continue;
 
-    const ct = String(row[4] || '').trim();
-    const cn = String(row[5] || '').trim();
+    let ct = String(row[4] || '').trim();
+    let cn = String(row[5] || '').trim();
+
+    // Clean up typos and standardize spacing
+    ct = ct
+      .replace(/kumat\b/gi, 'Kumar')
+      .replace(/kumar\b/gi, 'Kumar')
+      .replace(/Dr\.V\s*/g, 'Dr. V ')
+      .replace(/Dr\.\s*D\.\s*Santosh/gi, 'Dr. D. Santosh')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    cn = cn
+      .replace(/kumat\b/gi, 'Kumar')
+      .replace(/kumar\b/gi, 'Kumar')
+      .replace(/\s+/g, ' ')
+      .trim();
 
     const registerEntry = (bName) => {
       if (!branchCounsellors[bName]) {
