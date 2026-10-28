@@ -550,7 +550,7 @@ knownBranches.forEach(b => {
 });
 console.log(`Branch legends parsed for: ${Object.keys(branchLegends).length} branches`);
 
-// 2.5 Parse Class_Teachers sheet
+// 2.5 Parse Class_Teachers and Class_Teach_Counsellors sheet
 const ctSheet = wb.Sheets['Class_Teachers'];
 const classTeachers = {};
 if (ctSheet) {
@@ -568,9 +568,59 @@ if (ctSheet) {
     classTeachers[normB] = teacher;
     if (normB === 'CSE(AI&ML)-1') classTeachers['CSE (AI & ML)-1'] = teacher;
     if (normB === 'CSE(AI&ML)-2') classTeachers['CSE (AI & ML)-2'] = teacher;
+    if (normB === 'ECE-3') classTeachers['ECE-VLSI'] = teacher;
   });
 }
 console.log(`Class teachers parsed for: ${Object.keys(classTeachers).length} branches`);
+
+// 2.55 Parse Class_Teach_Counsellors sheet for detailed counselling & roll number allocations
+const ctcSheet = wb.Sheets['Class_Teach_Counsellors'];
+const branchCounsellors = {};
+if (ctcSheet) {
+  const ctcRows = XLSX.utils.sheet_to_json(ctcSheet, { header: 1, defval: '' });
+  let currentBranch = '';
+
+  for (let r = 3; r < ctcRows.length; r++) {
+    const row = ctcRows[r];
+    const bCol = String(row[1] || '').trim();
+    if (bCol) currentBranch = bCol;
+    if (!currentBranch) continue;
+
+    const ct = String(row[4] || '').trim();
+    const cn = String(row[5] || '').trim();
+
+    const registerEntry = (bName) => {
+      if (!branchCounsellors[bName]) {
+        branchCounsellors[bName] = {
+          branch: bName,
+          strength: row[3] || '',
+          classTeachersWithRolls: [],
+          counsellorsWithRolls: [],
+          allCounsellingFaculty: []
+        };
+      }
+      if (ct && !branchCounsellors[bName].classTeachersWithRolls.includes(ct)) {
+        branchCounsellors[bName].classTeachersWithRolls.push(ct);
+        branchCounsellors[bName].allCounsellingFaculty.push(ct);
+      }
+      if (cn && !branchCounsellors[bName].counsellorsWithRolls.includes(cn)) {
+        branchCounsellors[bName].counsellorsWithRolls.push(cn);
+        branchCounsellors[bName].allCounsellingFaculty.push(cn);
+      }
+    };
+
+    registerEntry(currentBranch);
+    const normB = currentBranch
+      .replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (normB !== currentBranch) registerEntry(normB);
+    if (normB === 'CSE(AI&ML)-1') registerEntry('CSE (AI & ML)-1');
+    if (normB === 'CSE(AI&ML)-2') registerEntry('CSE (AI & ML)-2');
+    if (normB === 'ECE-3') registerEntry('ECE-VLSI');
+  }
+}
+console.log(`Branch counsellors parsed for: ${Object.keys(branchCounsellors).length} branch keys`);
 
 // 2.6 Parse Rooms_Capacity sheet
 const rcSheet = wb.Sheets['Rooms_Capacity'] || wb.Sheets['Room_Capacity'] || wb.Sheets['rooms_capacity'];
@@ -1409,6 +1459,7 @@ const output = {
   timetableData,
   branchLegends,
   classTeachers,
+  branchCounsellors,
   roomCapacities,
   labSheetsData,
   activitiesData,

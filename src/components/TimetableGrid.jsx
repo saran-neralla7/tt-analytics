@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { days, periodSlots, getActiveDays } from '../data/mockData';
 import { getSubjectStyle } from '../utils/subjectColors';
 import { getFacultyShortNames } from '../utils/facultyShortNames';
-import { BookOpen, ChevronDown, GraduationCap } from 'lucide-react';
+import { BookOpen, ChevronDown, GraduationCap, Users } from 'lucide-react';
 import initialData from '../data/initialData.json';
 
 // Helper to wrap long branch names into two clean stacked lines
@@ -572,20 +572,51 @@ export default function TimetableGrid({
             initialData.classTeachers[branchKey.replace(/\s+/g, '')]
           )) || '';
 
+          // Counsellors info from Class_Teach_Counsellors sheet
+          const counsellorData = (initialData.branchCounsellors && (
+            initialData.branchCounsellors[branchKey] ||
+            initialData.branchCounsellors[normKey] ||
+            initialData.branchCounsellors[branchInfo?.fullName] ||
+            initialData.branchCounsellors[branchKey.replace(/\s+/g, '')] ||
+            (normKey === 'ECE-3' ? initialData.branchCounsellors['ECE-VLSI'] : null)
+          )) || null;
+
+          const counsellorsList = counsellorData?.counsellorsWithRolls || [];
+
           return (
             <div className={`branch-legend-card p-3 sm:p-5 bg-slate-50/80 border-t-2 border-slate-700 print:bg-white print:border-t-2 print:border-black print:p-0 print:mt-1 ${legendSizeClass}`}>
-              {/* Class Teacher Banner: Prominent with larger font on top of subjects & faculty list */}
-              {classTeacherName && (
-                <div className="mb-3 py-2 px-3.5 bg-blue-50/90 border border-blue-300 rounded-lg shadow-2xs print:border print:border-black print:bg-white print:py-1 print:px-2 print:mb-1.5 flex flex-wrap items-baseline gap-2">
-                  <div className="flex items-center gap-1.5">
-                    <GraduationCap className="w-4 h-4 text-blue-700 print:hidden" />
-                    <span className="text-xs sm:text-sm print:text-[11pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
-                      Class Teacher{classTeacherName.includes(',') || classTeacherName.includes('\n') ? 's' : ''}:
-                    </span>
-                  </div>
-                  <span className="text-sm sm:text-base print:text-[12pt] font-black text-blue-900 print:text-black font-sans whitespace-pre-line leading-snug">
-                    {classTeacherName}
-                  </span>
+              {/* Class Teacher & Counsellors Banner: Displayed beside each other prominently on top of subjects list */}
+              {(classTeacherName || counsellorsList.length > 0) && (
+                <div className="mb-3 py-2.5 px-3.5 bg-blue-50/90 border border-blue-300 rounded-lg shadow-2xs print:border print:border-black print:bg-white print:py-1 print:px-2 print:mb-1.5 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                  {/* Left: Class Teacher(s) */}
+                  {classTeacherName && (
+                    <div className="flex flex-wrap items-baseline gap-2">
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        <GraduationCap className="w-4 h-4 text-blue-700 print:hidden" />
+                        <span className="text-xs sm:text-sm print:text-[11pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
+                          Class Teacher{classTeacherName.includes(',') || classTeacherName.includes('\n') ? 's' : ''}:
+                        </span>
+                      </div>
+                      <span className="text-sm sm:text-base print:text-[12pt] font-black text-blue-900 print:text-black font-sans whitespace-pre-line leading-snug">
+                        {classTeacherName}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Right: Counsellors (beside Class Teacher) */}
+                  {counsellorsList.length > 0 && (
+                    <div className="flex flex-wrap items-baseline gap-2 pt-1 md:pt-0 border-t md:border-t-0 md:border-l border-blue-200 md:pl-3">
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        <Users className="w-4 h-4 text-emerald-700 print:hidden" />
+                        <span className="text-xs sm:text-sm print:text-[11pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
+                          Counsellor{counsellorsList.length > 1 ? 's' : ''}:
+                        </span>
+                      </div>
+                      <span className="text-xs sm:text-sm print:text-[11pt] font-bold text-emerald-950 print:text-black font-sans leading-snug">
+                        {counsellorsList.join(', ')}
+                      </span>
+                    </div>
+                  )}
                 </div>
               )}
 
