@@ -3149,18 +3149,18 @@
       "FRI": {
         "09:00-10:00": [
           {
-            "subject": "ENGG.PHY",
-            "faculty": "Dr.V Siva Jahnavy, Dr. D Santhosh Kumar",
-            "rawFaculty": "VSJ, DSK",
+            "subject": "FWD",
+            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
+            "rawFaculty": "SVM, MA",
             "room": "G-304",
             "isLab": false
           }
         ],
         "10:00-11:00": [
           {
-            "subject": "FWD",
-            "faculty": "Mr. S Vinod Manikantha, Mr. M Anil",
-            "rawFaculty": "SVM, MA",
+            "subject": "ENGG.PHY",
+            "faculty": "Dr.V Siva Jahnavy, Dr. D Santhosh Kumar",
+            "rawFaculty": "VSJ, DSK",
             "room": "G-304",
             "isLab": false
           }
@@ -19608,7 +19608,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "CSE-1",
             "subject": "FWD",
@@ -23599,7 +23599,7 @@
         ]
       },
       "FRI": {
-        "10:00-11:00": [
+        "09:00-10:00": [
           {
             "branch": "CSE-1",
             "subject": "FWD",
@@ -23607,15 +23607,6 @@
             "isLab": false,
             "isContinued": false,
             "rawFaculty": "SVM, MA",
-            "isNonAcademic": false
-          },
-          {
-            "branch": "CSE-2",
-            "subject": "FWD",
-            "room": "G-305",
-            "isLab": false,
-            "isContinued": false,
-            "rawFaculty": "SVM, BBK",
             "isNonAcademic": false
           }
         ],
@@ -23638,6 +23629,17 @@
             "isLab": true,
             "isContinued": true,
             "rawFaculty": "SVM, MA",
+            "isNonAcademic": false
+          }
+        ],
+        "10:00-11:00": [
+          {
+            "branch": "CSE-2",
+            "subject": "FWD",
+            "room": "G-305",
+            "isLab": false,
+            "isContinued": false,
+            "rawFaculty": "SVM, BBK",
             "isNonAcademic": false
           }
         ]
@@ -26992,7 +26994,7 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "CSE-1",
             "subject": "ENGG.PHY",
@@ -27423,7 +27425,7 @@
         ]
       },
       "FRI": {
-        "09:00-10:00": [
+        "10:00-11:00": [
           {
             "branch": "CSE-1",
             "subject": "ENGG.PHY",
