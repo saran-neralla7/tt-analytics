@@ -150,16 +150,25 @@ export default function RoomsView({
   const [roomSearchQuery, setRoomSearchQuery] = useState('');
 
   // Weekly Day-Wise Vacancy Matrix Filter States
-  // In this tab, user requested to ONLY display rooms that are present in the Rooms_Capacity sheet
-  const capacityRoomsList = useMemo(() => {
+  // In this tab:
+  // - Classrooms: ONLY include rooms given in Rooms_Capacity sheet
+  // - Laboratories: Include all lab rooms
+  const matrixClassroomsList = useMemo(() => {
     const capKeys = Object.keys(roomCapacities || {});
-    // Filter allRoomsList to keep original sorted order for rooms that have capacity defined
-    const matched = allRoomsList.filter(r => capKeys.includes(r));
-    // Fallback: if no capacity entries exist yet, fallback to allRoomsList
-    return matched.length > 0 ? matched : allRoomsList;
-  }, [allRoomsList, roomCapacities]);
+    const matched = classroomsList.filter(r => capKeys.includes(r));
+    return matched.length > 0 ? matched : classroomsList;
+  }, [classroomsList, roomCapacities]);
 
-  const [matrixSelectedRooms, setMatrixSelectedRooms] = useState(() => new Set(capacityRoomsList));
+  const matrixLabsList = useMemo(() => {
+    return labsList;
+  }, [labsList]);
+
+  const matrixMonitoredRoomsList = useMemo(() => {
+    // Classrooms first, then Labs
+    return [...matrixClassroomsList, ...matrixLabsList];
+  }, [matrixClassroomsList, matrixLabsList]);
+
+  const [matrixSelectedRooms, setMatrixSelectedRooms] = useState(() => new Set(matrixMonitoredRoomsList));
   const [matrixDayFilter, setMatrixDayFilter] = useState('ALL'); // 'ALL' | 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT'
   const [matrixStatusFilter, setMatrixStatusFilter] = useState('VACANT'); // 'VACANT' | 'OCCUPIED' | 'BOTH'
   const [matrixSearchQuery, setMatrixSearchQuery] = useState('');
@@ -167,12 +176,12 @@ export default function RoomsView({
   const [dropdownSearchRoom, setDropdownSearchRoom] = useState('');
   const roomDropdownRef = useRef(null);
 
-  // Sync matrixSelectedRooms when capacityRoomsList changes
+  // Sync matrixSelectedRooms when matrixMonitoredRoomsList changes
   useEffect(() => {
-    if (capacityRoomsList.length > 0) {
-      setMatrixSelectedRooms(new Set(capacityRoomsList));
+    if (matrixMonitoredRoomsList.length > 0) {
+      setMatrixSelectedRooms(new Set(matrixMonitoredRoomsList));
     }
-  }, [capacityRoomsList]);
+  }, [matrixMonitoredRoomsList]);
 
   // Click outside listener for the multi-select room dropdown
   useEffect(() => {
@@ -189,15 +198,6 @@ export default function RoomsView({
     };
   }, [isRoomDropdownOpen]);
 
-  // Capacity rooms breakdown for Classrooms and Labs in matrix tab
-  const matrixClassroomsList = useMemo(() => {
-    return capacityRoomsList.filter(r => classroomsList.includes(r));
-  }, [capacityRoomsList, classroomsList]);
-
-  const matrixLabsList = useMemo(() => {
-    return capacityRoomsList.filter(r => labsList.includes(r));
-  }, [capacityRoomsList, labsList]);
-
   // Multi-select room helper handlers for the Matrix tab
   const handleToggleRoom = (r) => {
     setMatrixSelectedRooms((prev) => {
@@ -212,7 +212,7 @@ export default function RoomsView({
   };
 
   const handleSelectAllRooms = () => {
-    setMatrixSelectedRooms(new Set(capacityRoomsList));
+    setMatrixSelectedRooms(new Set(matrixMonitoredRoomsList));
   };
 
   const handleSelectOnlyClassrooms = () => {
@@ -229,7 +229,7 @@ export default function RoomsView({
 
   const roomDropdownLabel = useMemo(() => {
     if (matrixSelectedRooms.size === 0) return 'No Rooms Selected';
-    if (matrixSelectedRooms.size === capacityRoomsList.length) return `All Capacity Rooms (${capacityRoomsList.length})`;
+    if (matrixSelectedRooms.size === matrixMonitoredRoomsList.length) return `All Rooms & Labs (${matrixMonitoredRoomsList.length})`;
     if (matrixClassroomsList.length > 0 && matrixSelectedRooms.size === matrixClassroomsList.length && matrixClassroomsList.every(r => matrixSelectedRooms.has(r))) {
       return `Classrooms Only (${matrixClassroomsList.length})`;
     }
@@ -237,11 +237,11 @@ export default function RoomsView({
       return `Laboratories Only (${matrixLabsList.length})`;
     }
     return `${matrixSelectedRooms.size} Rooms Selected`;
-  }, [matrixSelectedRooms, capacityRoomsList, matrixClassroomsList, matrixLabsList]);
+  }, [matrixSelectedRooms, matrixMonitoredRoomsList, matrixClassroomsList, matrixLabsList]);
 
   const selectedRoomsArray = useMemo(() => {
-    return capacityRoomsList.filter(r => matrixSelectedRooms.has(r));
-  }, [capacityRoomsList, matrixSelectedRooms]);
+    return matrixMonitoredRoomsList.filter(r => matrixSelectedRooms.has(r));
+  }, [matrixMonitoredRoomsList, matrixSelectedRooms]);
 
   const matrixDaysToDisplay = useMemo(() => {
     if (matrixDayFilter === 'ALL') return activeDaysList;
@@ -749,7 +749,7 @@ export default function RoomsView({
                   onClick={() => {
                     setMatrixDayFilter('ALL');
                     setMatrixStatusFilter('VACANT');
-                    setMatrixSelectedRooms(new Set(capacityRoomsList));
+                    setMatrixSelectedRooms(new Set(matrixMonitoredRoomsList));
                     setMatrixSearchQuery('');
                   }}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
@@ -795,7 +795,7 @@ export default function RoomsView({
                         onClick={handleSelectAllRooms}
                         className="px-2.5 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-800 font-bold border border-blue-200 cursor-pointer text-[11px]"
                       >
-                        All ({capacityRoomsList.length})
+                        All ({matrixMonitoredRoomsList.length})
                       </button>
                       {matrixClassroomsList.length > 0 && (
                         <button
@@ -954,7 +954,7 @@ export default function RoomsView({
                     {/* Popover Footer */}
                     <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-xs font-bold">
                       <span className="text-slate-500 text-[11px]">
-                        {matrixSelectedRooms.size} of {capacityRoomsList.length} selected
+                        {matrixSelectedRooms.size} of {matrixMonitoredRoomsList.length} selected
                       </span>
                       <button
                         type="button"
