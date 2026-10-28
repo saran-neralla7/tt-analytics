@@ -150,7 +150,16 @@ export default function RoomsView({
   const [roomSearchQuery, setRoomSearchQuery] = useState('');
 
   // Weekly Day-Wise Vacancy Matrix Filter States
-  const [matrixSelectedRooms, setMatrixSelectedRooms] = useState(() => new Set(allRoomsList));
+  // In this tab, user requested to ONLY display rooms that are present in the Rooms_Capacity sheet
+  const capacityRoomsList = useMemo(() => {
+    const capKeys = Object.keys(roomCapacities || {});
+    // Filter allRoomsList to keep original sorted order for rooms that have capacity defined
+    const matched = allRoomsList.filter(r => capKeys.includes(r));
+    // Fallback: if no capacity entries exist yet, fallback to allRoomsList
+    return matched.length > 0 ? matched : allRoomsList;
+  }, [allRoomsList, roomCapacities]);
+
+  const [matrixSelectedRooms, setMatrixSelectedRooms] = useState(() => new Set(capacityRoomsList));
   const [matrixDayFilter, setMatrixDayFilter] = useState('ALL'); // 'ALL' | 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT'
   const [matrixStatusFilter, setMatrixStatusFilter] = useState('VACANT'); // 'VACANT' | 'OCCUPIED' | 'BOTH'
   const [matrixSearchQuery, setMatrixSearchQuery] = useState('');
@@ -158,12 +167,12 @@ export default function RoomsView({
   const [dropdownSearchRoom, setDropdownSearchRoom] = useState('');
   const roomDropdownRef = useRef(null);
 
-  // Sync matrixSelectedRooms if initial set was empty
+  // Sync matrixSelectedRooms when capacityRoomsList changes
   useEffect(() => {
-    if (allRoomsList.length > 0 && matrixSelectedRooms.size === 0) {
-      setMatrixSelectedRooms(new Set(allRoomsList));
+    if (capacityRoomsList.length > 0) {
+      setMatrixSelectedRooms(new Set(capacityRoomsList));
     }
-  }, [allRoomsList]);
+  }, [capacityRoomsList]);
 
   // Click outside listener for the multi-select room dropdown
   useEffect(() => {
@@ -180,7 +189,16 @@ export default function RoomsView({
     };
   }, [isRoomDropdownOpen]);
 
-  // Multi-select room helper handlers
+  // Capacity rooms breakdown for Classrooms and Labs in matrix tab
+  const matrixClassroomsList = useMemo(() => {
+    return capacityRoomsList.filter(r => classroomsList.includes(r));
+  }, [capacityRoomsList, classroomsList]);
+
+  const matrixLabsList = useMemo(() => {
+    return capacityRoomsList.filter(r => labsList.includes(r));
+  }, [capacityRoomsList, labsList]);
+
+  // Multi-select room helper handlers for the Matrix tab
   const handleToggleRoom = (r) => {
     setMatrixSelectedRooms((prev) => {
       const next = new Set(prev);
@@ -194,15 +212,15 @@ export default function RoomsView({
   };
 
   const handleSelectAllRooms = () => {
-    setMatrixSelectedRooms(new Set(allRoomsList));
+    setMatrixSelectedRooms(new Set(capacityRoomsList));
   };
 
   const handleSelectOnlyClassrooms = () => {
-    setMatrixSelectedRooms(new Set(classroomsList));
+    setMatrixSelectedRooms(new Set(matrixClassroomsList));
   };
 
   const handleSelectOnlyLabs = () => {
-    setMatrixSelectedRooms(new Set(labsList));
+    setMatrixSelectedRooms(new Set(matrixLabsList));
   };
 
   const handleClearAllRooms = () => {
@@ -211,19 +229,19 @@ export default function RoomsView({
 
   const roomDropdownLabel = useMemo(() => {
     if (matrixSelectedRooms.size === 0) return 'No Rooms Selected';
-    if (matrixSelectedRooms.size === allRoomsList.length) return `All Rooms & Labs (${allRoomsList.length})`;
-    if (matrixSelectedRooms.size === classroomsList.length && classroomsList.every(r => matrixSelectedRooms.has(r))) {
-      return `Classrooms Only (${classroomsList.length})`;
+    if (matrixSelectedRooms.size === capacityRoomsList.length) return `All Capacity Rooms (${capacityRoomsList.length})`;
+    if (matrixClassroomsList.length > 0 && matrixSelectedRooms.size === matrixClassroomsList.length && matrixClassroomsList.every(r => matrixSelectedRooms.has(r))) {
+      return `Classrooms Only (${matrixClassroomsList.length})`;
     }
-    if (matrixSelectedRooms.size === labsList.length && labsList.every(r => matrixSelectedRooms.has(r))) {
-      return `Laboratories Only (${labsList.length})`;
+    if (matrixLabsList.length > 0 && matrixSelectedRooms.size === matrixLabsList.length && matrixLabsList.every(r => matrixSelectedRooms.has(r))) {
+      return `Laboratories Only (${matrixLabsList.length})`;
     }
     return `${matrixSelectedRooms.size} Rooms Selected`;
-  }, [matrixSelectedRooms, allRoomsList, classroomsList, labsList]);
+  }, [matrixSelectedRooms, capacityRoomsList, matrixClassroomsList, matrixLabsList]);
 
   const selectedRoomsArray = useMemo(() => {
-    return allRoomsList.filter(r => matrixSelectedRooms.has(r));
-  }, [allRoomsList, matrixSelectedRooms]);
+    return capacityRoomsList.filter(r => matrixSelectedRooms.has(r));
+  }, [capacityRoomsList, matrixSelectedRooms]);
 
   const matrixDaysToDisplay = useMemo(() => {
     if (matrixDayFilter === 'ALL') return activeDaysList;
@@ -731,7 +749,7 @@ export default function RoomsView({
                   onClick={() => {
                     setMatrixDayFilter('ALL');
                     setMatrixStatusFilter('VACANT');
-                    setMatrixSelectedRooms(new Set(allRoomsList));
+                    setMatrixSelectedRooms(new Set(capacityRoomsList));
                     setMatrixSearchQuery('');
                   }}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-all cursor-pointer"
@@ -777,22 +795,26 @@ export default function RoomsView({
                         onClick={handleSelectAllRooms}
                         className="px-2.5 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-800 font-bold border border-blue-200 cursor-pointer text-[11px]"
                       >
-                        All ({allRoomsList.length})
+                        All ({capacityRoomsList.length})
                       </button>
-                      <button
-                        type="button"
-                        onClick={handleSelectOnlyClassrooms}
-                        className="px-2.5 py-1 rounded bg-purple-50 hover:bg-purple-100 text-purple-800 font-bold border border-purple-200 cursor-pointer text-[11px]"
-                      >
-                        Classrooms ({classroomsList.length})
-                      </button>
-                      <button
-                        type="button"
-                        onClick={handleSelectOnlyLabs}
-                        className="px-2.5 py-1 rounded bg-teal-50 hover:bg-teal-100 text-teal-800 font-bold border border-teal-200 cursor-pointer text-[11px]"
-                      >
-                        Labs ({labsList.length})
-                      </button>
+                      {matrixClassroomsList.length > 0 && (
+                        <button
+                          type="button"
+                          onClick={handleSelectOnlyClassrooms}
+                          className="px-2.5 py-1 rounded bg-purple-50 hover:bg-purple-100 text-purple-800 font-bold border border-purple-200 cursor-pointer text-[11px]"
+                        >
+                          Classrooms ({matrixClassroomsList.length})
+                        </button>
+                      )}
+                      {matrixLabsList.length > 0 && (
+                        <button
+                          type="button"
+                          onClick={handleSelectOnlyLabs}
+                          className="px-2.5 py-1 rounded bg-teal-50 hover:bg-teal-100 text-teal-800 font-bold border border-teal-200 cursor-pointer text-[11px]"
+                        >
+                          Labs ({matrixLabsList.length})
+                        </button>
+                      )}
                       <button
                         type="button"
                         onClick={handleClearAllRooms}
@@ -817,29 +839,29 @@ export default function RoomsView({
                     {/* Scrollable Room List */}
                     <div className="max-h-64 overflow-y-auto space-y-3 pr-1 text-xs">
                       {/* Classrooms Group */}
-                      {classroomsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
+                      {matrixClassroomsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
                         <div>
                           <div className="flex items-center justify-between pb-1 mb-1.5 border-b border-slate-200">
                             <span className="font-black text-slate-800 text-[11px] uppercase tracking-wider flex items-center gap-1">
-                              <Building className="w-3 h-3 text-purple-600" /> Classrooms ({classroomsList.length})
+                              <Building className="w-3 h-3 text-purple-600" /> Classrooms ({matrixClassroomsList.length})
                             </span>
                             <button
                               type="button"
                               onClick={() => {
-                                const allSelected = classroomsList.every(r => matrixSelectedRooms.has(r));
+                                const allSelected = matrixClassroomsList.every(r => matrixSelectedRooms.has(r));
                                 setMatrixSelectedRooms(prev => {
                                   const next = new Set(prev);
-                                  classroomsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
+                                  matrixClassroomsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
                                   return next;
                                 });
                               }}
                               className="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer"
                             >
-                              {classroomsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
+                              {matrixClassroomsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
                             </button>
                           </div>
                           <div className="grid grid-cols-2 gap-1.5">
-                            {classroomsList
+                            {matrixClassroomsList
                               .filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase()))
                               .map(room => {
                                 const checked = matrixSelectedRooms.has(room);
@@ -873,29 +895,29 @@ export default function RoomsView({
                       )}
 
                       {/* Laboratories Group */}
-                      {labsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
+                      {matrixLabsList.filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase())).length > 0 && (
                         <div>
                           <div className="flex items-center justify-between pb-1 mb-1.5 border-b border-slate-200">
                             <span className="font-black text-slate-800 text-[11px] uppercase tracking-wider flex items-center gap-1">
-                              <FlaskConical className="w-3 h-3 text-teal-600" /> Laboratories ({labsList.length})
+                              <FlaskConical className="w-3 h-3 text-teal-600" /> Laboratories ({matrixLabsList.length})
                             </span>
                             <button
                               type="button"
                               onClick={() => {
-                                const allSelected = labsList.every(r => matrixSelectedRooms.has(r));
+                                const allSelected = matrixLabsList.every(r => matrixSelectedRooms.has(r));
                                 setMatrixSelectedRooms(prev => {
                                   const next = new Set(prev);
-                                  labsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
+                                  matrixLabsList.forEach(r => allSelected ? next.delete(r) : next.add(r));
                                   return next;
                                 });
                               }}
                               className="text-[10px] font-bold text-blue-600 hover:underline cursor-pointer"
                             >
-                              {labsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
+                              {matrixLabsList.every(r => matrixSelectedRooms.has(r)) ? 'Deselect All' : 'Select All'}
                             </button>
                           </div>
                           <div className="grid grid-cols-2 gap-1.5">
-                            {labsList
+                            {matrixLabsList
                               .filter(r => !dropdownSearchRoom || r.toLowerCase().includes(dropdownSearchRoom.toLowerCase()))
                               .map(room => {
                                 const checked = matrixSelectedRooms.has(room);
@@ -932,7 +954,7 @@ export default function RoomsView({
                     {/* Popover Footer */}
                     <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-xs font-bold">
                       <span className="text-slate-500 text-[11px]">
-                        {matrixSelectedRooms.size} of {allRoomsList.length} selected
+                        {matrixSelectedRooms.size} of {capacityRoomsList.length} selected
                       </span>
                       <button
                         type="button"
@@ -1028,7 +1050,7 @@ export default function RoomsView({
               <div>
                 <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Classrooms Filtered</div>
                 <div className="text-base font-black text-emerald-800 font-mono">
-                  {classroomsList.filter(r => matrixSelectedRooms.has(r)).length} of {classroomsList.length}
+                  {matrixClassroomsList.filter(r => matrixSelectedRooms.has(r)).length} of {matrixClassroomsList.length}
                 </div>
               </div>
             </div>
@@ -1040,7 +1062,7 @@ export default function RoomsView({
               <div>
                 <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Laboratories Filtered</div>
                 <div className="text-base font-black text-teal-800 font-mono">
-                  {labsList.filter(r => matrixSelectedRooms.has(r)).length} of {labsList.length}
+                  {matrixLabsList.filter(r => matrixSelectedRooms.has(r)).length} of {matrixLabsList.length}
                 </div>
               </div>
             </div>
