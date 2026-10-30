@@ -18,7 +18,7 @@ const wb = XLSX.readFile(excelPath);
 
 const knownBranches = [
   'CHEMICAL', 'CIVIL', 'EEE', 'MECH', 'MECH-ROBOTICS',
-  'ECE-1', 'ECE-2', 'ECE-3', 'CSE-1', 'CSE-2',
+  'ECE-1', 'ECE-2', 'ECE-VLSI', 'CSE-1', 'CSE-2',
   'CSE(AI&ML)-1', 'CSE(AI&ML)-2', 'CSE (CS & DS)'
 ];
 
@@ -691,7 +691,7 @@ for (let r = 1; r < rowsFinal.length; r++) {
   if (row[0] && row[0].trim()) curDay = row[0].trim().toUpperCase();
   if (row[1] && row[1].trim()) {
     let b = row[1].trim();
-    if (b === 'ECE-VLSI') b = 'ECE-3';
+    // b remains ECE-VLSI
     curBranch = b;
   }
   if (!dayNames.includes(curDay) || !curBranch || !timetableData[curBranch]) continue;
@@ -1411,7 +1411,7 @@ for (let r = 1; r < rowsFinal.length; r++) {
   if (row[0] && row[0].trim()) curActDay = row[0].trim().toUpperCase();
   if (row[1] && row[1].trim()) {
     let b = row[1].trim();
-    if (b === 'ECE-VLSI') b = 'ECE-3';
+    // b remains ECE-VLSI
     curActBranch = b;
   }
   if (!dayNames.includes(curActDay) || !curActBranch || !knownBranches.includes(curActBranch)) continue;

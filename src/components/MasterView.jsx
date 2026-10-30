@@ -20,7 +20,7 @@ export const branchClassrooms = {
   'EEE': 'E-409',
   'CIVIL': 'E-410',
   'CHEMICAL': 'E-411',
-  'ECE-3': 'E-412'
+  'ECE-VLSI': 'E-412'
 };
 
 // Preferred branch order matching the official university timetable document
@@ -37,7 +37,7 @@ export const preferredBranchOrder = [
   'EEE',
   'CIVIL',
   'CHEMICAL',
-  'ECE-3'
+  'ECE-VLSI'
 ];
 
 export default function MasterView({ timetableData, branchLegends = {}, universityInfo, facultyList = [], onSlotClick }) {

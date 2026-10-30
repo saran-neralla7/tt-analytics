@@ -2488,7 +2488,7 @@
         ]
       }
     },
-    "ECE-3": {
+    "ECE-VLSI": {
       "MON": {
         "09:00-10:00": [
           {
@@ -5650,8 +5650,8 @@
         "subjectShort": "CAL & LA",
         "facultyShort": "KVSS",
         "facultyFullName": "Dr. KVS Sarma",
-        "tutorialShort": "KVSS\nCHVS\nKLSP",
-        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. K L Sai Prasad",
+        "tutorialShort": "KVSS\nCHVS\nCHAN",
+        "tutorialFullName": "Dr. KVS Sarma\nDr. Ch V Sreedhar\nDr. Ch Appala Naidu",
         "room": "E-412",
         "isLab": false
       },
@@ -9666,12 +9666,68 @@
           ]
         }
       },
-      "ECE-3": {
-        "MON": {},
+      "ECE-VLSI": {
+        "MON": {
+          "02:15-04:15": [
+            {
+              "subject": "AITA LAB",
+              "faculty": "Dr. MV Pankaj Lahari, Dr. B Rajesh Babu, Dr. Ch Rajesh",
+              "room": "A-301,302",
+              "raw": "AITA LAB\nMVPL, BRB, CHR\nA-301,302"
+            }
+          ]
+        },
         "TUE": {},
-        "WED": {},
-        "THU": {},
-        "FRI": {}
+        "WED": {
+          "02:15-04:15": [
+            {
+              "subject": "ESS. ENG. LAB",
+              "faculty": "Dr. VVL Usha Ramani, Dr. I Rajasekhar, Dr. J RajaRatnam",
+              "room": "COMP. LAB-4",
+              "raw": "ESS. ENG. LAB\nVVLUR, IRS, JRR\nCOMP. LAB-4"
+            }
+          ]
+        },
+        "THU": {
+          "11:15-01:15": [
+            {
+              "subject": "PPSTC LAB",
+              "faculty": "Mr. CH VVD Prasad, Mr. Y Prasad Reddy, Mrs. V Sridevi",
+              "room": "COMP. LAB-3",
+              "raw": "PPSTC LAB\nCHVVDP, YPR, VS\nCOMP. LAB-3"
+            }
+          ],
+          "02:15-04:15": [
+            {
+              "subject": "ENGG. CHEM LAB",
+              "faculty": "Dr. B Santosh Kumar, Dr. KV NagaLakshmi",
+              "room": "CHEM. LAB.",
+              "raw": "ENGG. CHEM LAB\nBSK, KVNL\nCHEM. LAB."
+            },
+            {
+              "subject": "DLD LAB",
+              "faculty": "Dr. M Neelima, Ms. B Divya Sati",
+              "room": "A-406",
+              "raw": "DLD LAB\nMN, BDS\nA-406"
+            }
+          ]
+        },
+        "FRI": {
+          "02:15-04:15": [
+            {
+              "subject": "DLD LAB",
+              "faculty": "Dr. M Neelima, Dr. DBV Jagannadham",
+              "room": "A-406",
+              "raw": "DLD LAB\nMN, DBVJ\nA-406"
+            },
+            {
+              "subject": "ENGG. CHEM LAB",
+              "faculty": "Dr. B Santosh Kumar, Mr. S Ashok",
+              "room": "CHEM. LAB.",
+              "raw": "ENGG. CHEM LAB\nBSK, SA\nCHEM. LAB."
+            }
+          ]
+        }
       },
       "CSE-1": {
         "MON": {
@@ -10061,69 +10117,6 @@
               "faculty": "Dr. Bh Padma, Mr. P Manikanta, Mr. NV Siva Krishna",
               "room": "COMP. LAB-1",
               "raw": "PPSTC LAB\nBHP, PM, NVSK\nCOMP. LAB-1"
-            }
-          ]
-        }
-      },
-      "ECE-VLSI": {
-        "MON": {
-          "02:15-04:15": [
-            {
-              "subject": "AITA LAB",
-              "faculty": "Dr. MV Pankaj Lahari, Dr. B Rajesh Babu, Dr. Ch Rajesh",
-              "room": "A-301,302",
-              "raw": "AITA LAB\nMVPL, BRB, CHR\nA-301,302"
-            }
-          ]
-        },
-        "TUE": {},
-        "WED": {
-          "02:15-04:15": [
-            {
-              "subject": "ESS. ENG. LAB",
-              "faculty": "Dr. VVL Usha Ramani, Dr. I Rajasekhar, Dr. J RajaRatnam",
-              "room": "COMP. LAB-4",
-              "raw": "ESS. ENG. LAB\nVVLUR, IRS, JRR\nCOMP. LAB-4"
-            }
-          ]
-        },
-        "THU": {
-          "11:15-01:15": [
-            {
-              "subject": "PPSTC LAB",
-              "faculty": "Mr. CH VVD Prasad, Mr. Y Prasad Reddy, Mrs. V Sridevi",
-              "room": "COMP. LAB-3",
-              "raw": "PPSTC LAB\nCHVVDP, YPR, VS\nCOMP. LAB-3"
-            }
-          ],
-          "02:15-04:15": [
-            {
-              "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. B Santosh Kumar, Dr. KV NagaLakshmi",
-              "room": "CHEM. LAB.",
-              "raw": "ENGG. CHEM LAB\nBSK, KVNL\nCHEM. LAB."
-            },
-            {
-              "subject": "DLD LAB",
-              "faculty": "Dr. M Neelima, Ms. B Divya Sati",
-              "room": "A-406",
-              "raw": "DLD LAB\nMN, BDS\nA-406"
-            }
-          ]
-        },
-        "FRI": {
-          "02:15-04:15": [
-            {
-              "subject": "DLD LAB",
-              "faculty": "Dr. M Neelima, Dr. DBV Jagannadham",
-              "room": "A-406",
-              "raw": "DLD LAB\nMN, DBVJ\nA-406"
-            },
-            {
-              "subject": "ENGG. CHEM LAB",
-              "faculty": "Dr. B Santosh Kumar, Mr. S Ashok",
-              "room": "CHEM. LAB.",
-              "raw": "ENGG. CHEM LAB\nBSK, SA\nCHEM. LAB."
             }
           ]
         }
@@ -12238,7 +12231,7 @@
               "isLibrary": false
             },
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -12250,7 +12243,7 @@
               "isLibrary": false
             },
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -12400,7 +12393,7 @@
           ],
           "10:00-11:00": [
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "FRI",
               "slot": "10:00-11:00",
               "label": "COUNSELLING / MN, NVL / E-412",
@@ -12811,7 +12804,7 @@
           ],
           "10:00-11:00": [
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "FRI",
               "slot": "10:00-11:00",
               "label": "COUNSELLING / MN, NVL / E-412",
@@ -13149,7 +13142,7 @@
               "isLibrary": false
             },
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -13161,7 +13154,7 @@
               "isLibrary": false
             },
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -13537,12 +13530,12 @@
           ]
         }
       },
-      "ECE-3": {
+      "ECE-VLSI": {
         "MON": {},
         "TUE": {
           "03:15-04:15": [
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -13554,7 +13547,7 @@
               "isLibrary": false
             },
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "TUE",
               "slot": "03:15-04:15",
               "label": "YOGA / SPORTS",
@@ -13572,7 +13565,7 @@
         "FRI": {
           "10:00-11:00": [
             {
-              "branch": "ECE-3",
+              "branch": "ECE-VLSI",
               "day": "FRI",
               "slot": "10:00-11:00",
               "label": "COUNSELLING / MN, NVL / E-412",
@@ -14096,7 +14089,7 @@
             "isLibrary": false
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "TUE",
             "slot": "03:15-04:15",
             "label": "YOGA / SPORTS",
@@ -14108,7 +14101,7 @@
             "isLibrary": false
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "TUE",
             "slot": "03:15-04:15",
             "label": "YOGA / SPORTS",
@@ -14424,7 +14417,7 @@
         ],
         "10:00-11:00": [
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "FRI",
             "slot": "10:00-11:00",
             "label": "COUNSELLING / MN, NVL / E-412",
@@ -14751,14 +14744,14 @@
       },
       {
         "sno": 8,
-        "branch": "ECE-3",
+        "branch": "ECE-VLSI",
         "sports": 2,
         "counselling": 1,
         "library": 0,
         "total": 3,
         "sessions": [
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "TUE",
             "slot": "03:15-04:15",
             "label": "YOGA / SPORTS",
@@ -14770,7 +14763,7 @@
             "isLibrary": false
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "TUE",
             "slot": "03:15-04:15",
             "label": "YOGA / SPORTS",
@@ -14782,7 +14775,7 @@
             "isLibrary": false
           },
           {
-            "branch": "ECE-3",
+            "branch": "ECE-VLSI",
             "day": "FRI",
             "slot": "10:00-11:00",
             "label": "COUNSELLING / MN, NVL / E-412",
@@ -79199,7 +79192,7 @@
     "MECH-ROBOTICS",
     "ECE-1",
     "ECE-2",
-    "ECE-3",
+    "ECE-VLSI",
     "CSE-1",
     "CSE-2",
     "CSE(AI&ML)-1",

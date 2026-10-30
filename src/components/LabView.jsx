@@ -62,7 +62,7 @@ export default function LabView({ timetableData, labSheetsData = {}, universityI
     if (keys.length > 0) return keys;
     return [
       'CSE-1', 'CSE-2', 'CSE(AI&ML)-1', 'CSE(AI&ML)-2', 'CSE (CS & DS)',
-      'ECE-1', 'ECE-2', 'ECE-3', 'MECH', 'EEE', 'CIVIL', 'CHEMICAL', 'MECH-ROBOTICS'
+      'ECE-1', 'ECE-2', 'ECE-VLSI', 'MECH', 'EEE', 'CIVIL', 'CHEMICAL', 'MECH-ROBOTICS'
     ];
   }, [masterLabSchedule]);
 

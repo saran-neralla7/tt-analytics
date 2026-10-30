@@ -110,7 +110,7 @@ export async function parseExcelFile(file) {
         // List of recognized academic branches
         const knownBranches = [
           'CHEMICAL', 'CIVIL', 'EEE', 'MECH', 'MECH-ROBOTICS',
-          'ECE-1', 'ECE-2', 'ECE-3', 'CSE-1', 'CSE-2',
+          'ECE-1', 'ECE-2', 'ECE-VLSI', 'CSE-1', 'CSE-2',
           'CSE(AI&ML)-1', 'CSE(AI&ML)-2', 'CSE (CS & DS)'
         ];
 

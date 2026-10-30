@@ -46,12 +46,18 @@ export const getActiveDays = (timetableData) => {
 
 export const branches = [
   { id: 'CHEMICAL', name: 'CHEMICAL', fullName: 'Chemical Engineering' },
-  { id: 'CSE-1', name: 'CSE-1', fullName: 'Computer Science & Engineering - 1' },
-  { id: 'CSE-2', name: 'CSE-2', fullName: 'Computer Science & Engineering - 2' },
-  { id: 'ECE-1', name: 'ECE-1', fullName: 'Electronics & Communication Engg - 1' },
   { id: 'CIVIL', name: 'CIVIL', fullName: 'Civil Engineering' },
   { id: 'EEE', name: 'EEE', fullName: 'Electrical & Electronics Engineering' },
-  { id: 'MECH', name: 'MECHANICAL', fullName: 'Mechanical Engineering' }
+  { id: 'MECH', name: 'MECH', fullName: 'Mechanical Engineering' },
+  { id: 'MECH-ROBOTICS', name: 'MECH-ROBOTICS', fullName: 'Mechanical Engineering (Robotics)' },
+  { id: 'ECE-1', name: 'ECE-1', fullName: 'Electronics & Communication Engg - 1' },
+  { id: 'ECE-2', name: 'ECE-2', fullName: 'Electronics & Communication Engg - 2' },
+  { id: 'ECE-VLSI', name: 'ECE-VLSI', fullName: 'ECE (VLSI Design and Technology)' },
+  { id: 'CSE-1', name: 'CSE-1', fullName: 'Computer Science & Engineering - 1' },
+  { id: 'CSE-2', name: 'CSE-2', fullName: 'Computer Science & Engineering - 2' },
+  { id: 'CSE(AI&ML)-1', name: 'CSE(AI&ML)-1', fullName: 'CSE (Artificial Intelligence & Machine Learning) - 1' },
+  { id: 'CSE(AI&ML)-2', name: 'CSE(AI&ML)-2', fullName: 'CSE (Artificial Intelligence & Machine Learning) - 2' },
+  { id: 'CSE (CS & DS)', name: 'CSE (CS & DS)', fullName: 'CSE (Cyber Security & Data Science)' }
 ];
 
 export const sampleTimetableData = {
