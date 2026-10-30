@@ -3938,18 +3938,18 @@
         ],
         "11:15-12:15": [
           {
-            "subject": "PPSTC",
-            "faculty": "Dr. D Chandravathi, Mr. M Anil",
-            "rawFaculty": "DC, MA",
+            "subject": "FAI & ML",
+            "faculty": "Mr. A Dhanunjaya Prasad, Ms. C Aparna",
+            "rawFaculty": "ADP, CA",
             "room": "G-302",
             "isLab": false
           }
         ],
         "12:15-01:15": [
           {
-            "subject": "FAI & ML",
-            "faculty": "Mr. A Dhanunjaya Prasad, Ms. C Aparna",
-            "rawFaculty": "ADP, CA",
+            "subject": "PPSTC",
+            "faculty": "Dr. D Chandravathi, Mr. M Anil",
+            "rawFaculty": "DC, MA",
             "room": "G-302",
             "isLab": false
           }
@@ -19066,7 +19066,7 @@
         ]
       },
       "FRI": {
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "PPSTC",
@@ -19420,7 +19420,7 @@
         ]
       },
       "FRI": {
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML",
@@ -19429,7 +19429,9 @@
             "isContinued": false,
             "rawFaculty": "ADP, CA",
             "isNonAcademic": false
-          },
+          }
+        ],
+        "12:15-01:15": [
           {
             "branch": "ECE-1",
             "subject": "PPSTC",
@@ -19949,7 +19951,7 @@
             "isNonAcademic": false
           }
         ],
-        "11:15-12:15": [
+        "12:15-01:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "PPSTC",
@@ -20314,7 +20316,7 @@
             "isNonAcademic": false
           }
         ],
-        "12:15-01:15": [
+        "11:15-12:15": [
           {
             "branch": "CSE(AI&ML)-1",
             "subject": "FAI & ML",
