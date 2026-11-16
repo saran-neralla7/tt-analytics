@@ -149,44 +149,50 @@ if (sDeptSheet || sSummarySheet) {
   });
 }
 
-// Augment with any faculty defined in Sheet3 that may not be in the summary sheet
+// Sheet3 is the authoritative master source for faculty roster, designations, and departments
 if (s3Sheet) {
   const s3Rows = XLSX.utils.sheet_to_json(s3Sheet);
   s3Rows.forEach(r => {
     const rawShort = (r.Name_short || '').trim();
     const clean = rawShort.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s*/i, '').trim();
     const fullName = (r.Faculty_Name || '').trim();
-    if (clean && fullName && !facultyByClean[clean] && !facultyByClean[clean.toUpperCase()]) {
-      const sno = r['S.No'] || facultyList.length + 1;
-      const dept = (r.Department || '').trim() || 'General';
-      const designation = (r.Designation || 'Assistant Professor').trim();
+    const designation = (r.Designation || '').trim();
+    const dept = (r.Department || '').trim();
 
-      const facObj = {
-        sno,
-        fullName,
-        shortName: rawShort,
-        cleanShort: clean,
-        dept,
-        designation,
-        theoryLoad: 0,
-        labLoad: 0,
-        tutLoad: 0,
-        totalLoad: 0,
-        assignedCourses: [],
-        assignments: ''
-      };
+    if (clean && fullName) {
+      const existing = facultyByClean[clean] || facultyByClean[clean.toUpperCase()];
+      if (existing) {
+        if (designation) existing.designation = designation;
+        if (dept && (!existing.dept || existing.dept === 'General')) existing.dept = dept;
+      } else {
+        const sno = r['S.No'] || facultyList.length + 1;
+        const facObj = {
+          sno,
+          fullName,
+          shortName: rawShort,
+          cleanShort: clean,
+          dept: dept || 'General',
+          designation: designation || 'Assistant Professor',
+          theoryLoad: 0,
+          labLoad: 0,
+          tutLoad: 0,
+          totalLoad: 0,
+          assignedCourses: [],
+          assignments: ''
+        };
 
-      facultyMap[rawShort] = facObj;
-      facultyMap[clean] = facObj;
-      facultyMap[`Dr. ${clean}`] = facObj;
-      facultyMap[`Dr.${clean}`] = facObj;
-      facultyMap[`Mr. ${clean}`] = facObj;
-      facultyMap[`Mrs. ${clean}`] = facObj;
-      facultyMap[`Ms. ${clean}`] = facObj;
-      facultyMap[fullName] = facObj;
-      facultyByClean[clean] = facObj;
-      facultyByClean[clean.toUpperCase()] = facObj;
-      facultyList.push(facObj);
+        facultyMap[rawShort] = facObj;
+        facultyMap[clean] = facObj;
+        facultyMap[`Dr. ${clean}`] = facObj;
+        facultyMap[`Dr.${clean}`] = facObj;
+        facultyMap[`Mr. ${clean}`] = facObj;
+        facultyMap[`Mrs. ${clean}`] = facObj;
+        facultyMap[`Ms. ${clean}`] = facObj;
+        facultyMap[fullName] = facObj;
+        facultyByClean[clean] = facObj;
+        facultyByClean[clean.toUpperCase()] = facObj;
+        facultyList.push(facObj);
+      }
     }
   });
 }
@@ -593,6 +599,8 @@ if (ctcSheet) {
   let currentBranch = '';
 
   for (let r = 3; r < ctcRows.length; r++) {
+    // The main class teachers & counsellors table runs from r=3 to r=22 (ended by total row at r=23)
+    if (r >= 23) break;
     const row = ctcRows[r];
     const bCol = String(row[1] || '').trim();
     if (bCol) currentBranch = bCol;
