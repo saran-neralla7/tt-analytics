@@ -6449,22 +6449,22 @@
     ]
   },
   "classTeachers": {
-    "CSE-1": "Dr. V Siva Jahnavy, Dr. D. Santosh Kumar",
-    "CSE-2": "Dr. S Ashok Kumar, Dr. PV Rajeswari",
-    "CSE (AI & ML)-1": "Dr. Ch Rajesh, Dr. N Giribabu",
-    "CSE(AI&ML)-1": "Dr. Ch Rajesh, Dr. N Giribabu",
-    "CSE (AI & ML)-2": "Dr. D Chandravathi",
-    "CSE(AI&ML)-2": "Dr. D Chandravathi",
-    "CSE (CS & DS)": "CS - Dr. MV Pankaj Lahari, DS - Dr. Ch S Lakshmi",
-    "MECH": "P KiranMayi, Dr. Anand Solanki",
-    "MECH-ROBOTICS": "Dr. B Bharathi",
-    "ECE-1": "Dr. VVL Usha Ramani, Dr. Ch V Sreedhar",
-    "ECE-2": "Ms. PR Sri Satya, Dr. Ch Appala Naidu",
-    "ECE-3": "Dr. M Neelima",
-    "ECE-VLSI": "Dr. M Neelima",
-    "EEE": "Dr. A Ravi Shankar",
-    "CIVIL": "Dr. G Santosh Kumar",
-    "CHEMICAL": "Dr. S Padma"
+    "CSE-1": "Dr. V Siva Jahnavy (1-30), Dr. D. Santosh Kumar (61-90)",
+    "CSE-2": "Dr. PV Rajeswari (121-150), Dr. S Ashok Kumar (181-210)",
+    "CSE (AI & ML)-1": "Dr. Ch Rajesh (1-30), Dr. N Giribabu (61-90)",
+    "CSE(AI&ML)-1": "Dr. Ch Rajesh (1-30), Dr. N Giribabu (61-90)",
+    "CSE (AI & ML)-2": "Dr. D Chandravathi (121-156)",
+    "CSE(AI&ML)-2": "Dr. D Chandravathi (121-156)",
+    "CSE (CS & DS)": "CS - Dr. MV Pankaj Lahari (CS: 1-30), DS - Dr. Ch S Lakshmi (DS: 1-24)",
+    "MECH": "P KiranMayi (1-35), Dr. Anand Solanki (71-105)",
+    "MECH-ROBOTICS": "Dr. B Bharathi (1-22)",
+    "ECE-1": "Dr. VVL Usha Ramani (1-30), Dr. Ch V Sreedhar (61-90)",
+    "ECE-2": "Mrs. PR Sri Satya (121-155), Dr. Ch Appala Naidu (191-225)",
+    "ECE-3": "Dr. M Neelima (1-29)",
+    "ECE-VLSI": "Dr. M Neelima (1-29)",
+    "EEE": "Dr. A Ravi Shankar (1-30)",
+    "CIVIL": "Dr. G Santosh Kumar (1-21)",
+    "CHEMICAL": "Dr. S Padma (1-24)"
   },
   "branchCounsellors": {
     "CSE-1": {
@@ -6483,6 +6483,16 @@
         "V Bhaskar Rao (31-60)",
         "Dr. D. Santosh Kumar (61-90)",
         "Y Prasad Reddy (91-120)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSE0001 - 26UECSE0060 (60)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSE0061 - 26UECSE0120 (60)"
+        }
       ]
     },
     "CSE-2": {
@@ -6494,13 +6504,23 @@
       ],
       "counsellorsWithRolls": [
         "Taj (151-180)",
-        "Dr. B.Rajesh Babu (211-242)"
+        "Dr. B.Rajesh Babu (211-243)"
       ],
       "allCounsellingFaculty": [
         "Dr. PV Rajeswari (121-150)",
         "Taj (151-180)",
         "Dr. S Ashok Kumar (181-210)",
-        "Dr. B.Rajesh Babu (211-242)"
+        "Dr. B.Rajesh Babu (211-243)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSE0121 - 26UECSE0180 (60)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSE0181 - 26UECSE0243 (63)"
+        }
       ]
     },
     "CSE (AI & ML)-1": {
@@ -6519,6 +6539,24 @@
         "Dr. B. Nagarjuna (31-60)",
         "Dr. N Giribabu (61-90)",
         "G Sravani (91-120)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0001 - 26UECSM0060 (60)"
+        },
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0001 - 26UECSM0060 (60)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0061 - 26UECSM0120 (60)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0061 - 26UECSM0120 (60)"
+        }
       ]
     },
     "CSE(AI&ML)-1": {
@@ -6537,6 +6575,16 @@
         "Dr. B. Nagarjuna (31-60)",
         "Dr. N Giribabu (61-90)",
         "G Sravani (91-120)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0001 - 26UECSM0060 (60)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0061 - 26UECSM0120 (60)"
+        }
       ]
     },
     "CSE (AI & ML)-2": {
@@ -6551,6 +6599,24 @@
       "allCounsellingFaculty": [
         "Dr. D Chandravathi (121-156)",
         "Mr. VVV Satyanarayana (157-193)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0121 - 26UECSM0156 (36)"
+        },
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0121 - 26UECSM0156 (36)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0157 - 26UECSM0193 (37)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0157 - 26UECSM0193 (37)"
+        }
       ]
     },
     "CSE(AI&ML)-2": {
@@ -6565,6 +6631,16 @@
       "allCounsellingFaculty": [
         "Dr. D Chandravathi (121-156)",
         "Mr. VVV Satyanarayana (157-193)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSM0121 - 26UECSM0156 (36)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSM0157 - 26UECSM0193 (37)"
+        }
       ]
     },
     "CSE (CS & DS)": {
@@ -6575,14 +6651,28 @@
         "DS - Dr. Ch S Lakshmi (DS: 1-24)"
       ],
       "counsellorsWithRolls": [
-        "Mr. PSS Appalacharyulu (CS: 31-60)",
-        "Mr. PK Das (CS: 61-88)"
+        "Mr. PSS Appalacharyulu (CS: 31-53)",
+        "Mr. PK Das (CS: 54-89)"
       ],
       "allCounsellingFaculty": [
         "CS - Dr. MV Pankaj Lahari (CS: 1-30)",
-        "Mr. PSS Appalacharyulu (CS: 31-60)",
+        "Mr. PSS Appalacharyulu (CS: 31-53)",
         "DS - Dr. Ch S Lakshmi (DS: 1-24)",
-        "Mr. PK Das (CS: 61-88)"
+        "Mr. PK Das (CS: 54-89)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECSC0001 - 26UECSC0053 (53)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UECSC0054 - 26UECSC0089 (36)"
+        },
+        {
+          "batch": "Batch-1",
+          "range": "26UECSD0001 - 26UECSD0024 (24)"
+        }
       ]
     },
     "MECH": {
@@ -6601,20 +6691,36 @@
         "Mr. PBS Krishnamuraju (36-70)",
         "Dr. Anand Solanki (71-105)",
         "Dr. M Bhaskar Kumar (106-141)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEMEC0001 - 26UEMEC0070 (69)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEMEC0071 - 26UEMEC0141 (70)"
+        }
       ]
     },
     "MECH-ROBOTICS": {
       "branch": "MECH-ROBOTICS",
-      "strength": 43,
+      "strength": 44,
       "classTeachersWithRolls": [
         "Dr. B Bharathi (1-22)"
       ],
       "counsellorsWithRolls": [
-        "Dr. Ch Alekya (23-43)"
+        "Dr. Ch Alekya (23-44)"
       ],
       "allCounsellingFaculty": [
         "Dr. B Bharathi (1-22)",
-        "Dr. Ch Alekya (23-43)"
+        "Dr. Ch Alekya (23-44)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEMRB0001 - 26UEMRB0044 (44)"
+        }
       ]
     },
     "ECE-1": {
@@ -6633,6 +6739,24 @@
         "Mrs. V Sridevi (31-60)",
         "Dr. Ch V Sreedhar (61-90)",
         "Dr. B Vidya (91-120)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEECE0001 - 26UEECE0030 (30)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEECE0031 - 26UEECE0060 (30)"
+        },
+        {
+          "batch": "Batch-3",
+          "range": "26UEECE0061 - 26UEECE0090 (30)"
+        },
+        {
+          "batch": "Batch-4",
+          "range": "26UEECE0091 - 26UEECE0120 (30)"
+        }
       ]
     },
     "ECE-2": {
@@ -6640,45 +6764,83 @@
       "strength": 143,
       "classTeachersWithRolls": [
         "Mrs. PR Sri Satya (121-155)",
-        "Dr. Ch Appala Naidu (192-227)"
+        "Dr. Ch Appala Naidu (191-225)"
       ],
       "counsellorsWithRolls": [
-        "Dr. I Rajasekhar (156-191)",
-        "Dr. Rani Nanda (228-263)"
+        "Dr. I Rajasekhar (156-190)",
+        "Dr. Rani Nanda (226-263)"
       ],
       "allCounsellingFaculty": [
         "Mrs. PR Sri Satya (121-155)",
-        "Dr. I Rajasekhar (156-191)",
-        "Dr. Ch Appala Naidu (192-227)",
-        "Dr. Rani Nanda (228-263)"
+        "Dr. I Rajasekhar (156-190)",
+        "Dr. Ch Appala Naidu (191-225)",
+        "Dr. Rani Nanda (226-263)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEECE0121 - 26UEECE0155 (35)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEECE0156 - 26UEECE0190 (35)"
+        },
+        {
+          "batch": "Batch-3",
+          "range": "26UEECE0191 - 26UEECE0225 (35)"
+        },
+        {
+          "batch": "Batch-4",
+          "range": "26UEECE0226 - 26UEECE0263 (38)"
+        }
       ]
     },
     "ECE-3": {
       "branch": "ECE-3",
-      "strength": 59,
+      "strength": 60,
       "classTeachersWithRolls": [
-        "Dr. M Neelima (1-30)"
+        "Dr. M Neelima (1-29)"
       ],
       "counsellorsWithRolls": [
-        "Dr. N Vijaya Lakshmi (31-59)"
+        "Dr. N Vijaya Lakshmi (30-60)"
       ],
       "allCounsellingFaculty": [
-        "Dr. M Neelima (1-30)",
-        "Dr. N Vijaya Lakshmi (31-59)"
+        "Dr. M Neelima (1-29)",
+        "Dr. N Vijaya Lakshmi (30-60)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEECV0001 - 26UEECV0029 (29)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEECV0030 - 26UEECV0060 (31)"
+        }
       ]
     },
     "ECE-VLSI": {
       "branch": "ECE-VLSI",
-      "strength": 59,
+      "strength": 60,
       "classTeachersWithRolls": [
-        "Dr. M Neelima (1-30)"
+        "Dr. M Neelima (1-29)"
       ],
       "counsellorsWithRolls": [
-        "Dr. N Vijaya Lakshmi (31-59)"
+        "Dr. N Vijaya Lakshmi (30-60)"
       ],
       "allCounsellingFaculty": [
-        "Dr. M Neelima (1-30)",
-        "Dr. N Vijaya Lakshmi (31-59)"
+        "Dr. M Neelima (1-29)",
+        "Dr. N Vijaya Lakshmi (30-60)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEECV0001 - 26UEECV0029 (29)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEECV0030 - 26UEECV0060 (31)"
+        }
       ]
     },
     "EEE": {
@@ -6693,6 +6855,16 @@
       "allCounsellingFaculty": [
         "Dr. A Ravi Shankar (1-30)",
         "Dr. BM Florence (31-61)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UEEEE0001 - 26UEEEE0030 (30)"
+        },
+        {
+          "batch": "Batch-2",
+          "range": "26UEEEE0031 - 26UEEEE0061 (31)"
+        }
       ]
     },
     "CIVIL": {
@@ -6707,6 +6879,12 @@
       "allCounsellingFaculty": [
         "Dr. G Santosh Kumar (1-21)",
         "Mr. P Manikanta (21-42)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECIV0001 - 26UECIV0042 (42)"
+        }
       ]
     },
     "CHEMICAL": {
@@ -6721,6 +6899,12 @@
       "allCounsellingFaculty": [
         "Dr. S Padma (1-24)",
         "Mr. K AyyaRaju (25-47)"
+      ],
+      "labBatches": [
+        {
+          "batch": "Batch-1",
+          "range": "26UECHE0001 - 26UECHE0047 (47)"
+        }
       ]
     }
   },

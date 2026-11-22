@@ -565,12 +565,6 @@ export default function TimetableGrid({
 
           const branchKey = (selectedBranch || branchInfo?.name || branchInfo?.code || '').trim();
           const normKey = branchKey.replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)').trim();
-          const classTeacherName = (initialData.classTeachers && (
-            initialData.classTeachers[branchKey] ||
-            initialData.classTeachers[normKey] ||
-            initialData.classTeachers[branchInfo?.fullName] ||
-            initialData.classTeachers[branchKey.replace(/\s+/g, '')]
-          )) || '';
 
           // Counsellors info from Class_Teach_Counsellors sheet
           const counsellorData = (initialData.branchCounsellors && (
@@ -580,6 +574,16 @@ export default function TimetableGrid({
             initialData.branchCounsellors[branchKey.replace(/\s+/g, '')] ||
             (normKey === 'ECE-3' ? initialData.branchCounsellors['ECE-VLSI'] : null)
           )) || null;
+
+          const classTeachersWithRolls = counsellorData?.classTeachersWithRolls || [];
+          const classTeacherName = (classTeachersWithRolls.length > 0)
+            ? classTeachersWithRolls.join(', ')
+            : ((initialData.classTeachers && (
+                initialData.classTeachers[branchKey] ||
+                initialData.classTeachers[normKey] ||
+                initialData.classTeachers[branchInfo?.fullName] ||
+                initialData.classTeachers[branchKey.replace(/\s+/g, '')]
+              )) || '');
 
           const counsellorsList = counsellorData?.counsellorsWithRolls || [];
 

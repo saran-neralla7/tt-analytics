@@ -655,6 +655,42 @@ if (ctcSheet) {
     if (normB === 'CSE(AI&ML)-2') registerEntry('CSE (AI & ML)-2');
     if (normB === 'ECE-3') registerEntry('ECE-VLSI');
   }
+
+  // Also parse lab batches and student roll ranges from r = 27 onwards
+  let currentBatchBranch = '';
+  for (let r = 27; r < ctcRows.length; r++) {
+    const row = ctcRows[r];
+    if (row[3] === 1205 || r >= 56) break;
+    const bCol = String(row[1] || '').trim();
+    if (bCol) currentBatchBranch = bCol;
+    if (!currentBatchBranch) continue;
+    const batchName = String(row[4] || '').trim();
+    const rollRange = String(row[5] || '').trim();
+    if (batchName || rollRange) {
+      const addBatch = (bName) => {
+        if (branchCounsellors[bName]) {
+          if (!branchCounsellors[bName].labBatches) branchCounsellors[bName].labBatches = [];
+          branchCounsellors[bName].labBatches.push({ batch: batchName, range: rollRange });
+        }
+      };
+      addBatch(currentBatchBranch);
+      const normB = currentBatchBranch
+        .replace(/\s*\(\s*AI\s*&\s*ML\s*\)\s*/i, '(AI&ML)')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (normB !== currentBatchBranch) addBatch(normB);
+      if (normB === 'CSE(AI&ML)-1') addBatch('CSE (AI & ML)-1');
+      if (normB === 'CSE(AI&ML)-2') addBatch('CSE (AI & ML)-2');
+      if (normB === 'ECE-3') addBatch('ECE-VLSI');
+    }
+  }
+
+  // Synchronize classTeachers to include student roll numbers directly from Class_Teach_Counsellors
+  Object.keys(branchCounsellors).forEach(bName => {
+    if (branchCounsellors[bName]?.classTeachersWithRolls?.length > 0) {
+      classTeachers[bName] = branchCounsellors[bName].classTeachersWithRolls.join(', ');
+    }
+  });
 }
 console.log(`Branch counsellors parsed for: ${Object.keys(branchCounsellors).length} branch keys`);
 
