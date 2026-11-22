@@ -492,14 +492,15 @@ if (s2Sheet) {
     const b = r.Branch;
     if (!b) return;
     if (!branchLegends[b]) branchLegends[b] = [];
+    const isTutCourse = (r.Subject_Name && /tutorial/i.test(r.Subject_Name)) || (r.sub_short && /tut/i.test(r.sub_short));
     branchLegends[b].push({
       sno: branchLegends[b].length + 1,
       subjectFullName: r.Subject_Name || '',
       subjectShort: r.sub_short || '',
       facultyShort: r.Name_short || '',
       facultyFullName: r.Faculty_Name || '',
-      tutorialShort: r.Tutorial_Short || '',
-      tutorialFullName: r.Tutorial_Name || '',
+      tutorialShort: isTutCourse ? '' : (r.Tutorial_Short || ''),
+      tutorialFullName: isTutCourse ? '' : (r.Tutorial_Name || ''),
       room: r.Room_no || '',
       isLab: Boolean(r.Lab_Hours || (r.sub_short && r.sub_short.toUpperCase().includes('LAB')) || (r.Subject_Name && r.Subject_Name.toLowerCase().includes('lab')))
     });
@@ -772,9 +773,11 @@ Object.entries(timetableData).forEach(([branch, daysObj]) => {
   const legendList = branchLegends[branch] || [];
   legendList.forEach(leg => {
     const base = (leg.subjectShort || '').trim();
-    if (tutMap[base] && tutMap[base].shorts.length > 0) {
-      leg.tutorialShort = tutMap[base].shorts.join('\n');
-      leg.tutorialFullName = tutMap[base].fulls.join('\n');
+    if (!/tut/i.test(base) && !/tutorial/i.test(leg.subjectFullName || '')) {
+      if (tutMap[base] && tutMap[base].shorts.length > 0) {
+        leg.tutorialShort = tutMap[base].shorts.join('\n');
+        leg.tutorialFullName = tutMap[base].fulls.join('\n');
+      }
     }
   });
 

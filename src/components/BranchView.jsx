@@ -14,7 +14,7 @@ export default function BranchView({
   onSlotClick
 }) {
   const [useShortNames, setUseShortNames] = useState(false);
-  const [printFormat, setPrintFormat] = useState('a3-landscape');
+  const [printFormat, setPrintFormat] = useState('a4-portrait');
 
   const availableBranchKeys = Object.keys(timetableData).length > 0 
     ? Object.keys(timetableData) 

@@ -8,8 +8,8 @@ export const PRINT_FORMATS = {
     size: 'A4',
     orientation: 'portrait',
     cssSize: 'A4 portrait',
-    margin: '4mm 4mm',
-    bodyFontSize: '8pt',
+    margin: '3.5mm 4mm',
+    bodyFontSize: '7.8pt',
     description: 'Best for Branch, Faculty & 1-page compact rosters'
   },
   A4_LANDSCAPE: {

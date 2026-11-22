@@ -183,41 +183,41 @@ export default function TimetableGrid({
   return (
     <div className="w-full bg-white rounded-xl shadow-md border-2 border-slate-700 overflow-hidden timetable-card my-6 print:my-0 print:border-black print:rounded-none">
       {/* Official University Header - ONLY FOR PRINT! Exact Match to Photo */}
-      <div className="print-only w-full py-1.5 px-4 border-b-2 border-black bg-white mb-2">
-        <div className="flex items-center justify-between gap-4">
-          {/* Official Crest Logo - Larger as requested */}
-          <div className="w-20 flex-shrink-0 flex items-center justify-start">
+      <div className="print-only w-full py-1.5 px-4 print:py-0.5 print:px-2 border-b-2 border-black bg-white mb-2 print:mb-1">
+        <div className="flex items-center justify-between gap-4 print:gap-2">
+          {/* Official Crest Logo */}
+          <div className="w-20 print:w-14 flex-shrink-0 flex items-center justify-start">
             <img 
               src={universityInfo.logo || '/gvpihlr.png'} 
               alt="GVPIHLR Logo" 
-              className="h-20 w-20 object-contain drop-shadow-xs"
+              className="h-20 w-20 print:h-12 print:w-12 object-contain drop-shadow-xs"
             />
           </div>
 
           {/* Institution Title & Details */}
           <div className="text-center flex-1">
-            <h1 className="text-[12.5pt] font-black uppercase font-serif tracking-tight text-black leading-tight">
+            <h1 className="text-[12.5pt] print:text-[10pt] font-black uppercase font-serif tracking-tight text-black leading-tight">
               {universityInfo.name}
             </h1>
-            <p className="text-[7.5pt] text-black font-semibold leading-tight mt-0.5">
+            <p className="text-[7.5pt] print:text-[6.5pt] text-black font-semibold leading-tight mt-0.5 print:mt-0">
               {universityInfo.statusText}
             </p>
-            <p className="text-[7pt] text-black leading-tight">
+            <p className="text-[7pt] print:text-[6pt] text-black leading-tight">
               {universityInfo.address}
             </p>
-            <div className="mt-1 flex items-center justify-center gap-3">
-              <span className="text-[8.5pt] font-black text-black uppercase tracking-wide font-sans">
+            <div className="mt-1 print:mt-0.5 flex items-center justify-center gap-3">
+              <span className="text-[8.5pt] print:text-[7.5pt] font-black text-black uppercase tracking-wide font-sans">
                 TENTATIVE TIME TABLE FOR THE ACADEMIC YEAR {universityInfo.academicYear}
               </span>
             </div>
-            <div className="text-[9.5pt] font-black text-blue-950 font-sans tracking-tight">
+            <div className="text-[9.5pt] print:text-[8pt] font-black text-blue-950 print:text-black font-sans tracking-tight">
               {universityInfo.semester || 'B.Tech 1st Sem'} — {branchInfo?.fullName || selectedBranch} 
               {branchLegend?.[0]?.room ? ` (Classroom: ${branchLegend[0].room})` : ''}
             </div>
           </div>
 
           {/* Empty spacer for perfect center symmetry (right box with branch name removed) */}
-          <div className="w-20 flex-shrink-0"></div>
+          <div className="w-20 print:w-14 flex-shrink-0"></div>
         </div>
       </div>
 
@@ -226,28 +226,28 @@ export default function TimetableGrid({
         <table className="w-full text-xs text-center border-collapse table-fixed min-w-[1000px] border-2 border-slate-700 print:min-w-0 print:border-black branch-main-timetable">
           <thead>
             <tr className="bg-gray-100 text-gray-800 font-bold border-b-2 border-slate-700 print:border-b-2 print:border-black uppercase tracking-wider">
-              <th className="col-day py-2.5 px-2 border-r-2 border-slate-700 print:border-r-[2.5pt] print:border-black w-16 print:w-14 text-xs print:text-[10pt] font-black text-slate-900 print:text-black">Day</th>
+              <th className="col-day py-2.5 px-2 print:py-1 print:px-1 border-r-2 border-slate-700 print:border-r-[2pt] print:border-black w-16 print:w-11 text-xs print:text-[8pt] font-black text-slate-900 print:text-black">Day</th>
               <th className="py-2.5 px-1 border-r-2 border-slate-500 print:border-black w-24 sm:w-28 text-xs sm:text-sm font-black text-slate-900 print:hidden">Branch</th>
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black ${
+                  className={`py-2.5 px-1 print:py-1 print:px-0.5 border-r border-gray-300 print:border-black ${
                     slot.type === 'break' 
-                      ? 'bg-amber-100/80 text-amber-950 font-black w-16 print:w-12 text-center' 
+                      ? 'bg-amber-100/80 text-amber-950 font-black w-16 print:w-10 text-center' 
                       : 'text-slate-950'
                   }`}
                 >
                   {slot.type === 'break' && slot.time.includes('-') ? (
                     <div className="flex flex-col items-center justify-center leading-tight">
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
                         {slot.time.split('-')[0]}–
                       </span>
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
                         {slot.time.split('-')[1]}
                       </span>
                     </div>
                   ) : (
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[8.5pt] tracking-tight block">
+                    <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
                       {slot.time}
                     </span>
                   )}
@@ -263,7 +263,7 @@ export default function TimetableGrid({
               return (
                 <tr key={day} className="border-b-2 border-slate-600 print:border-b print:border-black hover:bg-gray-50/80 transition-colors">
                   {/* Day Header Column - Short name MON, TUE, WED, THU, FRI with Full Dark Line After */}
-                  <td className="col-day py-3 px-2 print:py-2 print:px-1 font-black text-gray-900 print:text-black bg-gray-100/60 print:bg-white border-r-2 border-slate-700 print:border-r-[2.5pt] print:border-black border-b-2 border-slate-600 print:border-b print:border-black uppercase tracking-wide align-middle print:text-[10pt] font-sans">
+                  <td className="col-day py-3 px-2 print:py-1 print:px-1 font-black text-gray-900 print:text-black bg-gray-100/60 print:bg-white border-r-2 border-slate-700 print:border-r-[2pt] print:border-black border-b-2 border-slate-600 print:border-b print:border-black uppercase tracking-wide align-middle print:text-[8pt] font-sans">
                     {day}
                   </td>
                   
@@ -287,8 +287,8 @@ export default function TimetableGrid({
                           key={slot.id} 
                           className="p-1 font-black border-r border-gray-300 print:border-r print:border-black border-b-2 border-slate-600 print:border-b print:border-black align-middle select-none text-center bg-amber-50/70 text-amber-950 print:bg-white print:text-black"
                         >
-                          <div className="flex items-center justify-center min-h-[52px] print:min-h-[44px]">
-                            <span className="text-base sm:text-lg print:text-[14pt] font-black uppercase tracking-wider font-serif">
+                          <div className="flex items-center justify-center min-h-[52px] print:min-h-[32px]">
+                            <span className="text-base sm:text-lg print:text-[10pt] font-black uppercase tracking-wider font-serif">
                               {char}
                             </span>
                           </div>
@@ -354,16 +354,16 @@ export default function TimetableGrid({
                           style={{ height: '1px' }}
                           title="Click to view full course & faculty details (2-Hour Merged Lab Session)"
                         >
-                          <div className="flex flex-col h-full min-h-full w-full min-h-[70px] print:min-h-[54px] divide-y divide-gray-300/90 print:divide-black">
+                          <div className="flex flex-col h-full min-h-full w-full min-h-[70px] print:min-h-[34px] divide-y divide-gray-300/90 print:divide-black">
                             {/* Top: 2-Hour Merged Lab Session spanning entire 2-hour width */}
                             {sharedLab && (
                               <div 
-                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${sharedStyle.bg} hover:brightness-95 ${
+                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 print:py-0.5 print:px-1 flex flex-col justify-center items-center text-center transition-all ${sharedStyle.bg} hover:brightness-95 ${
                                   isSharedHighlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                 }`}
                                 style={sharedStyle.inlineBg ? { backgroundColor: sharedStyle.inlineBg } : undefined}
                               >
-                                <div className={`font-black tracking-tight text-[11.5px] print:text-[8.5pt] leading-snug ${sharedStyle.text}`}>
+                                <div className={`font-black tracking-tight text-[11.5px] print:text-[7.5pt] leading-snug ${sharedStyle.text}`}>
                                   {sharedLab.subject}
                                 </div>
 
@@ -372,14 +372,14 @@ export default function TimetableGrid({
                                     <div className="no-print text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight">
                                       {useShortNames ? `(${getFacultyShortNames(sharedLab.faculty)})` : sharedLab.faculty}
                                     </div>
-                                    <div className="print-only font-bold text-[7.5pt] mt-0.5 leading-tight text-slate-900">
+                                    <div className="print-only font-bold text-[6.5pt] mt-0.5 leading-tight text-slate-900">
                                       ({getFacultyShortNames(sharedLab.faculty)})
                                     </div>
                                   </>
                                 )}
 
                                 {sharedLab.room && (
-                                  <div className="mt-0.5 text-[10px] print:text-[7pt] font-black text-slate-800 tracking-normal font-sans">
+                                  <div className="mt-0.5 text-[10px] print:text-[6.5pt] font-black text-slate-800 tracking-normal font-sans">
                                     {sharedLab.room}
                                   </div>
                                 )}
@@ -390,12 +390,12 @@ export default function TimetableGrid({
                             <div className="flex-1 shrink-0 min-h-fit w-full flex divide-x divide-gray-300/90 print:divide-black">
                               {h1Item && (
                                 <div 
-                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${h1Style.bg} hover:brightness-95 ${
+                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${h1Style.bg} hover:brightness-95 ${
                                     isH1Highlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                   }`}
                                   style={h1Style.inlineBg ? { backgroundColor: h1Style.inlineBg } : undefined}
                                 >
-                                  <div className={`font-black tracking-tight text-[11px] print:text-[8pt] leading-snug ${h1Style.text}`}>
+                                  <div className={`font-black tracking-tight text-[11px] print:text-[7.5pt] leading-snug ${h1Style.text}`}>
                                     {h1Item.subject}
                                   </div>
                                   {h1Item.faculty && (
@@ -403,13 +403,13 @@ export default function TimetableGrid({
                                       <div className="no-print text-slate-800 font-semibold text-[9px] mt-0.5 leading-tight">
                                         {useShortNames ? `(${getFacultyShortNames(h1Item.faculty)})` : h1Item.faculty}
                                       </div>
-                                      <div className="print-only font-bold text-[7pt] mt-0.5 leading-tight text-slate-900">
+                                      <div className="print-only font-bold text-[6.5pt] mt-0.5 leading-tight text-slate-900">
                                         ({getFacultyShortNames(h1Item.faculty)})
                                       </div>
                                     </>
                                   )}
                                   {h1Item.room && (
-                                    <div className="mt-0.5 text-[9.5px] print:text-[7pt] font-black text-slate-800 tracking-normal font-sans">
+                                    <div className="mt-0.5 text-[9.5px] print:text-[6.5pt] font-black text-slate-800 tracking-normal font-sans">
                                       {h1Item.room}
                                     </div>
                                   )}
@@ -418,12 +418,12 @@ export default function TimetableGrid({
 
                               {h2Item && (
                                 <div 
-                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 flex flex-col justify-center items-center text-center transition-all ${h2Style.bg} hover:brightness-95 ${
+                                  className={`flex-1 shrink-0 min-h-fit py-1.5 px-1 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${h2Style.bg} hover:brightness-95 ${
                                     isH2Highlight ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                   }`}
                                   style={h2Style.inlineBg ? { backgroundColor: h2Style.inlineBg } : undefined}
                                 >
-                                  <div className={`font-black tracking-tight text-[11px] print:text-[8pt] leading-snug ${h2Style.text}`}>
+                                  <div className={`font-black tracking-tight text-[11px] print:text-[7.5pt] leading-snug ${h2Style.text}`}>
                                     {h2Item.subject}
                                   </div>
                                   {h2Item.faculty && (
@@ -431,13 +431,13 @@ export default function TimetableGrid({
                                       <div className="no-print text-slate-800 font-semibold text-[9px] mt-0.5 leading-tight">
                                         {useShortNames ? `(${getFacultyShortNames(h2Item.faculty)})` : h2Item.faculty}
                                       </div>
-                                      <div className="print-only font-bold text-[7pt] mt-0.5 leading-tight text-slate-900">
+                                      <div className="print-only font-bold text-[6.5pt] mt-0.5 leading-tight text-slate-900">
                                         ({getFacultyShortNames(h2Item.faculty)})
                                       </div>
                                     </>
                                   )}
                                   {h2Item.room && (
-                                    <div className="mt-0.5 text-[9.5px] print:text-[7pt] font-black text-slate-800 tracking-normal font-sans">
+                                    <div className="mt-0.5 text-[9.5px] print:text-[6.5pt] font-black text-slate-800 tracking-normal font-sans">
                                       {h2Item.room}
                                     </div>
                                   )}
@@ -471,8 +471,8 @@ export default function TimetableGrid({
                           }}
                           title="Click to view full course & faculty details"
                         >
-                          <div className="flex flex-col justify-center items-center text-center min-h-[52px] print:min-h-[40px] py-0.5">
-                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] print:text-[9.5pt] leading-snug cell-subject ${style.text}`}>
+                          <div className="flex flex-col justify-center items-center text-center min-h-[52px] print:min-h-[32px] py-0.5 print:py-0">
+                            <div className={`font-black tracking-tight text-[12px] sm:text-[12.5px] print:text-[8pt] leading-snug cell-subject ${style.text}`}>
                               {cellItem.subject}
                             </div>
 
@@ -481,14 +481,14 @@ export default function TimetableGrid({
                                 <div className="no-print text-slate-800 font-semibold text-[10px] sm:text-[10.5px] mt-0.5 leading-tight cell-faculty">
                                   {useShortNames ? `(${getFacultyShortNames(cellItem.faculty)})` : cellItem.faculty}
                                 </div>
-                                <div className="print-only font-bold text-[8pt] mt-0.5 leading-tight text-slate-900 cell-faculty-print">
+                                <div className="print-only font-bold text-[6.8pt] mt-0.5 leading-tight text-slate-900 cell-faculty-print">
                                   ({getFacultyShortNames(cellItem.faculty)})
                                 </div>
                               </>
                             )}
 
                             {cellItem.room && (
-                              <div className="mt-0.5 text-[10px] sm:text-[10.5px] print:text-[7.5pt] font-black text-slate-800 tracking-normal font-sans cell-room">
+                              <div className="mt-0.5 text-[10px] sm:text-[10.5px] print:text-[6.5pt] font-black text-slate-800 tracking-normal font-sans cell-room">
                                 {cellItem.room}
                               </div>
                             )}
@@ -517,12 +517,12 @@ export default function TimetableGrid({
                             return (
                               <div 
                                 key={bIdx}
-                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 ${
+                                className={`flex-1 shrink-0 min-h-fit w-full py-1.5 px-1.5 print:py-0.5 print:px-0.5 flex flex-col justify-center items-center text-center transition-all ${itemStyle.bg} hover:brightness-95 ${
                                   isHighlighted ? 'ring-2 ring-blue-600 ring-inset font-bold z-10' : ''
                                 }`}
                                 style={itemStyle.inlineBg ? { backgroundColor: itemStyle.inlineBg } : undefined}
                               >
-                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] print:text-[8pt] leading-snug cell-subject ${itemStyle.text}`}>
+                                <div className={`font-black tracking-tight text-[11px] sm:text-[11.5px] print:text-[7.5pt] leading-snug cell-subject ${itemStyle.text}`}>
                                   {cellItem.subject}
                                 </div>
 
@@ -531,14 +531,14 @@ export default function TimetableGrid({
                                     <div className="no-print text-slate-800 font-semibold text-[9.5px] sm:text-[10px] mt-0.5 leading-tight cell-faculty">
                                       {useShortNames ? `(${getFacultyShortNames(cellItem.faculty)})` : cellItem.faculty}
                                     </div>
-                                    <div className="print-only font-bold text-[7pt] mt-0.5 leading-tight text-slate-900 cell-faculty-print">
+                                    <div className="print-only font-bold text-[6.5pt] mt-0.5 leading-tight text-slate-900 cell-faculty-print">
                                       ({getFacultyShortNames(cellItem.faculty)})
                                     </div>
                                   </>
                                 )}
 
                                 {cellItem.room && (
-                                  <div className="mt-0.5 text-[9.5px] sm:text-[10px] print:text-[6.8pt] font-black text-slate-800 tracking-normal font-sans cell-room">
+                                  <div className="mt-0.5 text-[9.5px] sm:text-[10px] print:text-[6.5pt] font-black text-slate-800 tracking-normal font-sans cell-room">
                                     {cellItem.room}
                                   </div>
                                 )}
@@ -587,7 +587,7 @@ export default function TimetableGrid({
             <div className={`branch-legend-card p-3 sm:p-5 bg-slate-50/80 border-t-2 border-slate-700 print:bg-white print:border-t-2 print:border-black print:p-0 print:mt-1 ${legendSizeClass}`}>
               {/* Class Teacher & Counsellors Banner: Displayed beside each other prominently on top of subjects list */}
               {(classTeacherName || counsellorsList.length > 0) && (
-                <div className="mb-3 py-2 px-3.5 bg-blue-50/80 border border-blue-200 rounded-lg shadow-2xs print:border print:border-black print:bg-white print:py-1 print:px-2 print:mb-1.5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-[13px]">
+                <div className="mb-3 py-2 px-3.5 bg-blue-50/80 border border-blue-200 rounded-lg shadow-2xs print:border print:border-black print:bg-white print:py-0.5 print:px-2 print:mb-1 print:text-[7.5pt] flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-[13px]">
                   {/* Left: Class Teacher(s) */}
                   {classTeacherName && (
                     <div className="inline-flex items-center gap-2 flex-wrap">
@@ -633,7 +633,7 @@ export default function TimetableGrid({
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <BookOpen className="w-4 h-4 text-blue-600 print:hidden" />
-                  <h4 className="text-xs sm:text-sm print:text-[9.5pt] font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
+                  <h4 className="text-xs sm:text-sm print:text-[8pt] print:mt-0.5 print:mb-0.5 font-black text-slate-900 print:text-black uppercase tracking-wider font-sans">
                     Course & Faculty Allocation Details ({branchInfo?.fullName || selectedBranch})
                   </h4>
                   {isCollapsibleLegend && (
@@ -667,13 +667,13 @@ export default function TimetableGrid({
                 <table className={`w-full text-left text-xs border border-slate-300 print:border-black bg-white rounded-lg print:rounded-none shadow-2xs print:shadow-none branch-legend-table ${legendSizeClass}`}>
                   <thead>
                     <tr className="bg-slate-100 print:bg-white text-slate-900 print:text-black font-black border-b border-slate-300 print:border-black text-[11px] uppercase tracking-wider">
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-12 print:w-8 border-r border-slate-300 print:border-black text-center">S.No</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-28 print:w-24 border-r border-slate-300 print:border-black text-center">Subject Short Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 min-w-[180px] print:w-64 border-r border-slate-300 print:border-black">Subject Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-32 print:w-28 border-r border-slate-300 print:border-black text-center">Faculty Short Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 min-w-[220px] print:w-72 border-r border-slate-300 print:border-black">Faculty Name</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-20 print:w-16 border-r border-slate-300 print:border-black text-center">Room No</th>
-                      <th className="py-2 px-2.5 print:py-1.5 print:px-2 w-20 print:w-16 text-center">Type</th>
+                      <th className="py-2 px-1 print:py-1 print:px-1 w-12 print:w-[5%] border-r border-slate-300 print:border-black text-center">S.No</th>
+                      <th className="py-2 px-1.5 print:py-1 print:px-1 w-28 print:w-[14%] border-r border-slate-300 print:border-black text-center">Subject Short Name</th>
+                      <th className="py-2 px-2 print:py-1 print:px-1.5 min-w-[180px] print:w-[28%] border-r border-slate-300 print:border-black">Subject Name</th>
+                      <th className="py-2 px-1.5 print:py-1 print:px-1 w-32 print:w-[14%] border-r border-slate-300 print:border-black text-center">Faculty Short Name</th>
+                      <th className="py-2 px-2 print:py-1 print:px-1.5 min-w-[220px] print:w-[27%] border-r border-slate-300 print:border-black">Faculty Name</th>
+                      <th className="py-2 px-1 print:py-1 print:px-1 w-20 print:w-[6%] border-r border-slate-300 print:border-black text-center">Room No</th>
+                      <th className="py-2 px-1 print:py-1 print:px-1 w-20 print:w-[6%] text-center">Type</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 print:divide-black text-[11px]">
@@ -689,8 +689,16 @@ export default function TimetableGrid({
                       const shortLines = formatFacultyLines(finalShortList);
                       const fullLines = formatFacultyLines(rawFacultyList);
 
-                      const rawTutFacultyList = extractFacultyList(item.tutorialFullName);
-                      const rawTutShortList = extractFacultyList(item.tutorialShort).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean);
+                      // Avoid redundant tutorial repetition if this course is already a tutorial or has identical faculty
+                      const isAlreadyTutorial = (item.subjectShort && /tut/i.test(item.subjectShort)) || 
+                                                (item.subjectFullName && /tutorial/i.test(item.subjectFullName));
+                      const isIdenticalTut = (item.tutorialShort && item.facultyShort && item.tutorialShort.trim() === item.facultyShort.trim()) ||
+                                             (item.tutorialFullName && item.facultyFullName && item.tutorialFullName.trim() === item.facultyFullName.trim());
+
+                      const shouldShowTutorial = !isAlreadyTutorial && !isIdenticalTut;
+
+                      const rawTutFacultyList = shouldShowTutorial ? extractFacultyList(item.tutorialFullName) : [];
+                      const rawTutShortList = shouldShowTutorial ? extractFacultyList(item.tutorialShort).map(s => s.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Prof\.)\s*/i, '').trim()).filter(Boolean) : [];
                       
                       const finalTutShortList = rawTutShortList.length > 0
                         ? rawTutShortList
@@ -701,61 +709,61 @@ export default function TimetableGrid({
 
                       return (
                         <tr key={idx} className="hover:bg-slate-50/80 print:hover:bg-white transition-colors">
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 font-mono text-center text-slate-700 print:text-black border-r border-slate-200 print:border-black font-bold">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 font-mono text-center text-slate-700 print:text-black border-r border-slate-200 print:border-black font-bold">
                             {item.sno || idx + 1}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black font-bold text-center">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black font-bold text-center">
                             <span className={`inline-block px-2 py-0.5 rounded font-mono font-black text-[11px] print:p-0 print:border-0 print:bg-white print:text-black border ${style.bg} ${style.border} ${style.text}`}>
                               {item.subjectShort}
                             </span>
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 font-bold text-slate-900 print:text-black border-r border-slate-200 print:border-black">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1.5 font-bold text-slate-900 print:text-black border-r border-slate-200 print:border-black leading-tight">
                             {item.subjectFullName}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black text-center align-middle">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black text-center align-middle">
                             <div className="font-mono font-bold text-slate-900 print:text-black text-[11px] flex flex-col items-center justify-center space-y-0.5">
                               {shortLines.length > 0 ? (
                                 shortLines.map((line, lIdx) => (
-                                  <div key={lIdx} className="leading-tight whitespace-nowrap">{line}</div>
+                                  <div key={lIdx} className="leading-tight break-words">{line}</div>
                                 ))
                               ) : (
                                 '—'
                               )}
                             </div>
                             {tutShortLines.length > 0 && (
-                              <div className="tut-text text-[10px] text-slate-600 print:text-black font-semibold mt-1 flex flex-col items-center justify-center space-y-0.5">
+                              <div className="tut-text text-[10px] text-slate-600 print:text-black font-semibold mt-0.5 flex flex-col items-center justify-center space-y-0.5">
                                 {tutShortLines.map((line, lIdx) => (
-                                  <div key={lIdx} className="leading-tight whitespace-nowrap">
+                                  <div key={lIdx} className="leading-tight break-words">
                                     {lIdx === 0 ? <><span className="font-bold">Tut: </span>{line}</> : line}
                                   </div>
                                 ))}
                               </div>
                             )}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black align-middle">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1.5 border-r border-slate-200 print:border-black align-middle">
                             <div className="font-semibold text-slate-900 print:text-black flex flex-col space-y-0.5">
                               {fullLines.length > 0 ? (
                                 fullLines.map((line, lIdx) => (
-                                  <div key={lIdx} className="leading-tight">{line}</div>
+                                  <div key={lIdx} className="leading-tight break-words">{line}</div>
                                 ))
                               ) : (
                                 item.facultyFullName || '—'
                               )}
                             </div>
                             {tutFullLines.length > 0 && (
-                              <div className="tut-text text-[10px] text-slate-600 print:text-black mt-1 flex flex-col space-y-0.5">
+                              <div className="tut-text text-[10px] text-slate-600 print:text-black mt-0.5 flex flex-col space-y-0.5">
                                 {tutFullLines.map((line, lIdx) => (
-                                  <div key={lIdx} className="leading-tight">
+                                  <div key={lIdx} className="leading-tight break-words">
                                     {lIdx === 0 ? <><span className="font-bold">Tut: </span>{line}</> : line}
                                   </div>
                                 ))}
                               </div>
                             )}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 border-r border-slate-200 print:border-black font-mono font-bold text-slate-800 print:text-black text-center">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 border-r border-slate-200 print:border-black font-mono font-bold text-slate-800 print:text-black text-center">
                             {item.room || '—'}
                           </td>
-                          <td className="py-1.5 px-2.5 print:py-1.5 print:px-2 text-center">
+                          <td className="py-1.5 px-2.5 print:py-0.5 print:px-1 text-center">
                             <span className={`px-2 py-0.5 rounded text-[10px] print:p-0 print:border-0 print:bg-white print:text-black font-bold ${
                               item.isLab 
                                 ? 'bg-purple-100 text-purple-900 border border-purple-200' 
