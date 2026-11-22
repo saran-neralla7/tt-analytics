@@ -1534,16 +1534,16 @@ export default function RoomsView({
                         }`}
                       >
                         {slot.type === 'break' && slot.time.includes('-') ? (
-                          <div className="flex flex-col items-center justify-center leading-tight">
-                            <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                          <div className="flex flex-col items-center justify-center leading-[1.05] py-0.5">
+                            <span className="font-black text-slate-950 text-[10px] sm:text-xs tracking-tight whitespace-nowrap block">
                               {slot.time.split('-')[0]}–
                             </span>
-                            <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                            <span className="font-black text-slate-950 text-[10px] sm:text-xs tracking-tight whitespace-nowrap block">
                               {slot.time.split('-')[1]}
                             </span>
                           </div>
                         ) : (
-                          <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block">
+                          <span className="font-black text-slate-950 text-[11px] sm:text-xs tracking-tight whitespace-nowrap block">
                             {slot.time}
                           </span>
                         )}

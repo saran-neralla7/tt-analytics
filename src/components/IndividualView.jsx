@@ -450,21 +450,21 @@ function FacultyTimetableCard({
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-0.5 print:px-0.5 ${
+                  className={`py-2.5 px-1 border-r border-gray-300 print:border-black print:py-0.5 print:px-0.5 align-middle ${
                     slot.type === 'break' ? 'bg-amber-100/80 text-amber-950 font-black w-14 sm:w-16 print:w-[5.25%] print:bg-gray-100' : 'text-slate-950 print:w-[13.5%]'
                   }`}
                 >
                   {slot.type === 'break' && slot.time.includes('-') ? (
-                    <div className="flex flex-col items-center justify-center leading-tight">
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[6.8pt] print:leading-tight">
+                    <div className="flex flex-col items-center justify-center leading-[1.05] py-0.5 print:py-0">
+                      <span className="font-black text-slate-950 text-[10px] sm:text-xs tracking-tight whitespace-nowrap block print:text-[6.5pt] print:leading-[1.05]">
                         {slot.time.split('-')[0]}–
                       </span>
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[6.8pt] print:leading-tight">
+                      <span className="font-black text-slate-950 text-[10px] sm:text-xs tracking-tight whitespace-nowrap block print:text-[6.5pt] print:leading-[1.05]">
                         {slot.time.split('-')[1]}
                       </span>
                     </div>
                   ) : (
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] tracking-tight block print:text-[7.2pt] print:leading-tight">
+                    <span className="font-black text-slate-950 text-[11px] sm:text-xs md:text-[12.5px] tracking-tight whitespace-nowrap block print:text-[7pt] print:leading-tight">
                       {slot.time}
                     </span>
                   )}

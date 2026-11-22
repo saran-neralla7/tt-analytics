@@ -203,7 +203,8 @@ th, td {
   }
 
   .branch-print-page .branch-main-timetable thead tr {
-    height: 22px !important;
+    height: 25px !important;
+    min-height: 25px !important;
   }
 
   .branch-print-page .branch-main-timetable tbody tr {
@@ -211,10 +212,11 @@ th, td {
   }
 
   .branch-print-page .branch-main-timetable th {
-    font-size: 7.5pt !important;
+    font-size: 7.2pt !important;
     font-weight: 900 !important;
-    padding: 1.5px 1px !important;
+    padding: 1px 0.5px !important;
     border: 1.5px solid #000 !important;
+    vertical-align: middle !important;
   }
 
   .branch-print-page .branch-main-timetable td {

@@ -231,23 +231,23 @@ export default function TimetableGrid({
               {periodSlots.map((slot) => (
                 <th 
                   key={slot.id} 
-                  className={`py-2.5 px-1 print:py-1 print:px-0.5 border-r border-gray-300 print:border-black ${
+                  className={`py-2 px-1 print:py-0.5 print:px-0.5 border-r border-gray-300 print:border-black align-middle ${
                     slot.type === 'break' 
                       ? 'bg-amber-100/80 text-amber-950 font-black w-16 print:w-10 text-center' 
                       : 'text-slate-950'
                   }`}
                 >
                   {slot.type === 'break' && slot.time.includes('-') ? (
-                    <div className="flex flex-col items-center justify-center leading-tight">
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
+                    <div className="flex flex-col items-center justify-center leading-[1.05] py-0.5 print:py-0">
+                      <span className="font-black text-slate-950 text-[10px] sm:text-xs print:text-[6.5pt] print:leading-[1.05] tracking-tight whitespace-nowrap block">
                         {slot.time.split('-')[0]}–
                       </span>
-                      <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
+                      <span className="font-black text-slate-950 text-[10px] sm:text-xs print:text-[6.5pt] print:leading-[1.05] tracking-tight whitespace-nowrap block">
                         {slot.time.split('-')[1]}
                       </span>
                     </div>
                   ) : (
-                    <span className="font-black text-slate-950 text-xs sm:text-[13px] print:text-[7.5pt] tracking-tight block">
+                    <span className="font-black text-slate-950 text-[11px] sm:text-xs md:text-[12.5px] print:text-[7pt] tracking-tight whitespace-nowrap block px-0.5">
                       {slot.time}
                     </span>
                   )}
